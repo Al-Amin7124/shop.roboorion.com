@@ -108,7 +108,7 @@
         cards.forEach((card, idx) => {
             const nameEl  = card.querySelector('.productName');
             const codeEl  = card.querySelector('.productCode');
-            const priceEl = card.querySelector('.productPrice .text-red-500');
+            var priceEl = card.querySelector('.productPrice .offer-price');
             const imgEl   = card.querySelector('img');
 
             if (!nameEl) return;
@@ -418,7 +418,7 @@
 
         const nameEl  = infoCol?.querySelector('.productName');
         const codeEl  = infoCol?.querySelector('.productCode');
-        const priceEl = infoCol?.querySelector('.productPrice');
+        const priceEl = document.querySelector('.productPrice .offer-price');
         const imgEl   = document.getElementById('mainImage');
 
         const product = {
