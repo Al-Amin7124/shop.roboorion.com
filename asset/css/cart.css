@@ -1,0 +1,361 @@
+/* ============================================================
+   Robo Orion – Cart System  (cart.css)
+   Drop this file in: asset/css/cart.css
+   Add to product.html <head>: <link href="asset/css/cart.css" rel="stylesheet">
+   ============================================================ */
+
+/* ── Floating Cart Button ─────────────────────────────────── */
+#ro-cart-fab {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 900;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 0.65rem 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(37,99,235,0.45);
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+    white-space: nowrap;
+}
+#ro-cart-fab:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(37,99,235,0.5);
+}
+#ro-cart-fab .fab-count {
+    background: #ef4444;
+    color: #fff;
+    border-radius: 50%;
+    min-width: 20px;
+    height: 20px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3px;
+    transition: transform 0.2s;
+}
+#ro-cart-fab .fab-count.bump { transform: scale(1.4); }
+#ro-cart-fab.hidden { display: none; }
+
+/* ── Overlay ──────────────────────────────────────────────── */
+#ro-cart-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15,23,42,0.5);
+    backdrop-filter: blur(2px);
+    z-index: 950;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+#ro-cart-overlay.open { opacity: 1; pointer-events: all; }
+
+/* ── Drawer ───────────────────────────────────────────────── */
+#ro-cart-drawer {
+    position: fixed;
+    top: 0; right: 0;
+    width: min(440px, 100vw);
+    height: 100%;
+    background: #fff;
+    z-index: 960;
+    transform: translateX(100%);
+    transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+    display: flex;
+    flex-direction: column;
+    box-shadow: -8px 0 40px rgba(0,0,0,0.12);
+}
+#ro-cart-drawer.open { transform: translateX(0); }
+
+/* ── Drawer Header ────────────────────────────────────────── */
+.ro-cart-header {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8fafc;
+}
+.ro-cart-header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.ro-cart-header h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+.ro-cart-header .ro-header-badge {
+    background: #2563eb;
+    color: #fff;
+    font-size: 0.68rem;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 1px 8px;
+}
+.ro-close-btn {
+    background: #f1f5f9;
+    border: none;
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #64748b;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.15s, color 0.15s;
+}
+.ro-close-btn:hover { background: #fee2e2; color: #ef4444; }
+
+/* ── Items List ───────────────────────────────────────────── */
+.ro-cart-items {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0.75rem 1.25rem;
+}
+.ro-cart-items::-webkit-scrollbar { width: 4px; }
+.ro-cart-items::-webkit-scrollbar-track { background: transparent; }
+.ro-cart-items::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+
+.ro-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 0.75rem;
+    color: #94a3b8;
+    text-align: center;
+    padding: 2rem;
+}
+.ro-empty svg { opacity: 0.35; }
+.ro-empty p { font-size: 0.9rem; }
+.ro-empty span { font-size: 0.8rem; color: #cbd5e1; }
+
+/* ── Single Cart Item ─────────────────────────────────────── */
+.ro-cart-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f1f5f9;
+    animation: roSlideIn 0.22s ease;
+}
+@keyframes roSlideIn {
+    from { opacity: 0; transform: translateX(14px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+.ro-item-img {
+    width: 56px; height: 56px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 1px solid #e2e8f0;
+    background: #f8fafc;
+}
+.ro-item-info { flex: 1; min-width: 0; }
+.ro-item-name {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #1e293b;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.ro-item-code { font-size: 0.7rem; color: #94a3b8; margin-top: 2px; }
+.ro-item-price { font-size: 0.8rem; color: #ef4444; font-weight: 700; margin-top: 3px; }
+
+.ro-qty-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.4rem;
+    flex-shrink: 0;
+}
+.ro-qty-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: #f1f5f9;
+    border-radius: 6px;
+    padding: 2px;
+}
+.ro-qty-btn {
+    background: #fff;
+    border: none;
+    width: 26px; height: 26px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #2563eb;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.15s;
+    line-height: 1;
+}
+.ro-qty-btn:hover { background: #dbeafe; }
+.ro-qty-num { font-size: 0.85rem; font-weight: 700; min-width: 22px; text-align: center; color: #1e293b; }
+.ro-item-subtotal { font-size: 0.75rem; color: #64748b; }
+.ro-remove-btn {
+    background: none; border: none;
+    color: #cbd5e1; cursor: pointer;
+    font-size: 0.8rem;
+    transition: color 0.15s;
+    padding: 2px 4px;
+}
+.ro-remove-btn:hover { color: #ef4444; }
+
+/* ── Footer ───────────────────────────────────────────────── */
+.ro-cart-footer {
+    border-top: 1px solid #e2e8f0;
+    padding: 1rem 1.25rem 1.25rem;
+    background: #f8fafc;
+}
+.ro-summary-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-bottom: 0.35rem;
+}
+.ro-total-row {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px dashed #e2e8f0;
+}
+.ro-total-row span:last-child { color: #ef4444; }
+
+/* WhatsApp button */
+.ro-whatsapp-btn {
+    width: 100%;
+    background: #25d366;
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.92rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background 0.15s, transform 0.12s;
+    margin-bottom: 0.55rem;
+    box-shadow: 0 4px 14px rgba(37,211,102,0.35);
+}
+.ro-whatsapp-btn:hover { background: #1ebe5d; transform: translateY(-1px); }
+.ro-whatsapp-btn:active { transform: scale(0.98); }
+
+.ro-clear-btn {
+    width: 100%;
+    background: transparent;
+    color: #94a3b8;
+    border: 1px solid #e2e8f0;
+    padding: 0.55rem;
+    border-radius: 8px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.78rem;
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+}
+.ro-clear-btn:hover { color: #ef4444; border-color: #fca5a5; }
+
+/* ── Toast ────────────────────────────────────────────────── */
+#ro-toast {
+    position: fixed;
+    bottom: 5rem;
+    right: 1.5rem;
+    background: #1e293b;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    z-index: 999;
+    transform: translateY(20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s, transform 0.25s;
+    border-left: 3px solid #2563eb;
+    max-width: 260px;
+}
+#ro-toast.show { opacity: 1; transform: translateY(0); }
+
+/* ── Add to Cart button state ─────────────────────────────── */
+.ro-added {
+    background: #dcfce7 !important;
+    color: #16a34a !important;
+    border-color: #86efac !important;
+}
+
+/* ── Delivery Options ─────────────────────────────────────── */
+.ro-delivery-section {
+    margin-bottom: 0.75rem;
+    padding: 0.75rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+.ro-delivery-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 0.5rem;
+}
+.ro-delivery-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.ro-delivery-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.45rem 0.65rem;
+    border-radius: 6px;
+    border: 1.5px solid #e2e8f0;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+    background: #fff;
+}
+.ro-delivery-option input[type="radio"] {
+    accent-color: #2563eb;
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+}
+.ro-delivery-option.active {
+    border-color: #2563eb;
+    background: #eff6ff;
+}
+.ro-delivery-name {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #1e293b;
+    flex: 1;
+}
+.ro-delivery-price {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #2563eb;
+}
