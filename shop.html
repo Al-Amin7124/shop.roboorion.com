@@ -327,7 +327,7 @@
                                             <button onclick="filterCategory('18650-batteries')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">18650 Batteries</button>
                                             <button onclick="filterCategory('battery-packs')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Battery Packs</button>
                                             <button onclick="filterCategory('chargers')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Chargers</button>
-                                            <button onclick="filterCategory('power-supply')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Chargers</button>
+                                            <button onclick="filterCategory('power-supply')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Power Supply</button>
                                             <button onclick="filterCategory('charge-controllers')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Charge Controllers</button>
                                             <button onclick="filterCategory('bms-protection')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">BMS / Protection Boards</button>
                                         </div>
@@ -442,28 +442,130 @@
                                 <i class="fa-solid fa-xmark"></i>
                             </button>
                         </div>
-                        <div class="p-3 max-h-72 overflow-y-auto">
-                            <button onclick="filterCategory('all'); toggleMobileSidebar()" class="w-full text-left px-3 py-2 text-sm font-semibold text-blue-600 bg-blue-50 rounded-lg mb-1">
-                                <i class="fa-solid fa-border-all text-xs mr-2"></i>All Products
+                        <div class="p-3 max-h-96 overflow-y-auto">
+
+                            <!-- All Products -->
+                            <button onclick="filterCategory('all')" class="cat-root-btn w-full text-left px-3 py-2 text-sm font-semibold text-blue-600 bg-blue-50 rounded-lg mb-1 flex items-center gap-2">
+                                <i class="fa-solid fa-border-all text-xs"></i>
+                                All Products
                             </button>
-                            <button onclick="filterCategory('batteries'); toggleMobileSidebar()" class="w-full text-left px-3 py-1.5 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors duration-200">
-                                <i class="fa-solid fa-battery-full text-xs mr-2 text-gray-400"></i>Batteries & Power
-                            </button>
-                            <button onclick="filterCategory('converter-modules'); toggleMobileSidebar()" class="w-full text-left px-3 py-1.5 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors duration-200">
-                                <i class="fa-solid fa-puzzle-piece text-xs mr-2 text-gray-400"></i>Converter Modules
-                            </button>
-                            <button onclick="filterCategory('amplifiers'); toggleMobileSidebar()" class="w-full text-left px-3 py-1.5 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors duration-200">
-                                <i class="fa-solid fa-volume-high text-xs mr-2 text-gray-400"></i>Amplifiers
-                            </button>
-                            <button onclick="filterCategory('chargers'); toggleMobileSidebar()" class="w-full text-left px-3 py-1.5 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors duration-200">
-                                <i class="fa-solid fa-plug text-xs mr-2 text-gray-400"></i>Chargers
-                            </button>
-                            <button onclick="filterCategory('power-supplies'); toggleMobileSidebar()" class="w-full text-left px-3 py-1.5 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors duration-200">
-                                <i class="fa-solid fa-bolt text-xs mr-2 text-gray-400"></i>Power Supplies
-                            </button>
-                            <button onclick="filterCategory('ic-chips'); toggleMobileSidebar()" class="w-full text-left px-3 py-1.5 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors duration-200">
-                                <i class="fa-solid fa-microchip text-xs mr-2 text-gray-400"></i>IC Chips
-                            </button>
+
+                            <!-- Electronics -->
+                            <div class="cat-group mt-1">
+                                <button onclick="toggleCat('mob-cat-electronics')"
+                                    class="cat-root-btn w-full text-left px-3 py-2 text-sm font-semibold text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors duration-200 flex items-center justify-between">
+                                    <span class="flex items-center gap-2">
+                                        <i class="fa-solid fa-microchip text-xs text-blue-500"></i>
+                                        Electronics
+                                    </span>
+                                    <i class="fa-solid fa-chevron-right text-xs text-gray-400 cat-arrow transition-transform duration-200" style="transform: rotate(90deg)"></i>
+                                </button>
+                                <div id="mob-cat-electronics" class="cat-children pl-2 mt-1 space-y-0.5">
+
+                                    <!-- Audio & Speakers -->
+                                    <div class="cat-subgroup">
+                                        <button onclick="toggleCat('mob-cat-audio')"
+                                            class="w-full text-left px-3 py-1.5 text-xs font-semibold text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors duration-200 flex items-center justify-between">
+                                            <span class="flex items-center gap-1.5">
+                                                <i class="fa-solid fa-volume-high text-xs text-gray-400"></i>
+                                                Audio & Speakers
+                                            </span>
+                                            <i class="fa-solid fa-chevron-right text-xs text-gray-300 cat-arrow transition-transform duration-200"></i>
+                                        </button>
+                                        <div id="mob-cat-audio" class="cat-children hidden pl-4 mt-0.5 space-y-0.5">
+                                            <button onclick="filterCategory('bluetooth-speakers')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Bluetooth Speakers</button>
+                                            <button onclick="filterCategory('subwoofers')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Subwoofers</button>
+                                            <button onclick="filterCategory('amplifiers')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Amplifiers</button>
+                                            <button onclick="filterCategory('audio-modules')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Audio Modules</button>
+                                            <button onclick="filterCategory('audio-accessories')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Audio Accessories</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Batteries & Power -->
+                                    <div class="cat-subgroup">
+                                        <button onclick="toggleCat('mob-cat-batteries')"
+                                            class="w-full text-left px-3 py-1.5 text-xs font-semibold text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors duration-200 flex items-center justify-between">
+                                            <span class="flex items-center gap-1.5">
+                                                <i class="fa-solid fa-battery-full text-xs text-gray-400"></i>
+                                                Batteries & Power
+                                            </span>
+                                            <i class="fa-solid fa-chevron-right text-xs text-gray-300 cat-arrow transition-transform duration-200"></i>
+                                        </button>
+                                        <div id="mob-cat-batteries" class="cat-children hidden pl-4 mt-0.5 space-y-0.5">
+                                            <button onclick="filterCategory('lithium-batteries')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Lithium Batteries</button>
+                                            <button onclick="filterCategory('li-po-batteries')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Li-Po Batteries</button>
+                                            <button onclick="filterCategory('18650-batteries')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">18650 Batteries</button>
+                                            <button onclick="filterCategory('battery-packs')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Battery Packs</button>
+                                            <button onclick="filterCategory('chargers')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Chargers</button>
+                                            <button onclick="filterCategory('power-supply')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Power Supply</button>
+                                            <button onclick="filterCategory('charge-controllers')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Charge Controllers</button>
+                                            <button onclick="filterCategory('bms-protection')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">BMS / Protection Boards</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Components & Modules -->
+                                    <div class="cat-subgroup">
+                                        <button onclick="toggleCat('mob-cat-components')"
+                                            class="w-full text-left px-3 py-1.5 text-xs font-semibold text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors duration-200 flex items-center justify-between">
+                                            <span class="flex items-center gap-1.5">
+                                                <i class="fa-solid fa-puzzle-piece text-xs text-gray-400"></i>
+                                                Components & Modules
+                                            </span>
+                                            <i class="fa-solid fa-chevron-right text-xs text-gray-300 cat-arrow transition-transform duration-200"></i>
+                                        </button>
+                                        <div id="mob-cat-components" class="cat-children hidden pl-4 mt-0.5 space-y-0.5">
+                                            <button onclick="filterCategory('resistors')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Resistors</button>
+                                            <button onclick="filterCategory('capacitors')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Capacitors</button>
+                                            <button onclick="filterCategory('transistors')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Transistors</button>
+                                            <button onclick="filterCategory('ic-chips')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">IC Chips</button>
+                                            <button onclick="filterCategory('sensors')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Sensors</button>
+                                            <button onclick="filterCategory('converter-modules')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Converter Modules</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- DIY Electronics -->
+                                    <div class="cat-subgroup">
+                                        <button onclick="toggleCat('mob-cat-diy')"
+                                            class="w-full text-left px-3 py-1.5 text-xs font-semibold text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors duration-200 flex items-center justify-between">
+                                            <span class="flex items-center gap-1.5">
+                                                <i class="fa-solid fa-screwdriver-wrench text-xs text-gray-400"></i>
+                                                DIY Electronics
+                                            </span>
+                                            <i class="fa-solid fa-chevron-right text-xs text-gray-300 cat-arrow transition-transform duration-200"></i>
+                                        </button>
+                                        <div id="mob-cat-diy" class="cat-children hidden pl-4 mt-0.5 space-y-0.5">
+                                            <button onclick="filterCategory('arduino')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Arduino Boards</button>
+                                            <button onclick="filterCategory('raspberry-pi')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Raspberry Pi Accessories</button>
+                                            <button onclick="filterCategory('development-boards')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Development Boards</button>
+                                            <button onclick="filterCategory('breadboards')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Breadboards</button>
+                                            <button onclick="filterCategory('jumper-wires')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Jumper Wires</button>
+                                            <button onclick="filterCategory('diy-kits')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">DIY Kits</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Tools & Equipment -->
+                                    <div class="cat-subgroup">
+                                        <button onclick="toggleCat('mob-cat-tools')"
+                                            class="w-full text-left px-3 py-1.5 text-xs font-semibold text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors duration-200 flex items-center justify-between">
+                                            <span class="flex items-center gap-1.5">
+                                                <i class="fa-solid fa-wrench text-xs text-gray-400"></i>
+                                                Tools & Equipment
+                                            </span>
+                                            <i class="fa-solid fa-chevron-right text-xs text-gray-300 cat-arrow transition-transform duration-200"></i>
+                                        </button>
+                                        <div id="mob-cat-tools" class="cat-children hidden pl-4 mt-0.5 space-y-0.5">
+                                            <button onclick="filterCategory('soldering-tools')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Soldering Tools</button>
+                                            <button onclick="filterCategory('multimeters')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Multimeters</button>
+                                            <button onclick="filterCategory('power-supplies')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Power Supplies</button>
+                                            <button onclick="filterCategory('wire-strippers')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Wire Strippers</button>
+                                            <button onclick="filterCategory('repair-tools')" class="cat-leaf w-full text-left px-2 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors duration-200">Electronic Repair Tools</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- /Electronics -->
+
                         </div>
                     </div>
 

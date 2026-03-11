@@ -161,6 +161,12 @@ function filterCategory(cat) {
 
     applyFilters();
 
+    // Auto-close mobile sidebar after selecting a category
+    var sidebar = document.getElementById('mobile-sidebar');
+    if (sidebar && window.innerWidth < 1024) {
+        sidebar.classList.add('hidden');
+    }
+
     var label = document.getElementById('active-filter-label');
     var name  = document.getElementById('active-filter-name');
     if (label && name) {
