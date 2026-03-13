@@ -74,6 +74,9 @@
     display: flex;
     flex-direction: column;
     box-shadow: -8px 0 40px rgba(0,0,0,0.12);
+
+    display: flex;
+    flex-direction: column;
 }
 #ro-cart-drawer.open { transform: translateX(0); }
 
@@ -220,6 +223,10 @@
 
 /* ── Footer ───────────────────────────────────────────────── */
 .ro-cart-footer {
+    flex-shrink: 0;
+    overflow-y: auto;
+    max-height: 55vh;
+
     border-top: 1px solid #e2e8f0;
     padding: 1rem 1.25rem 1.25rem;
     background: #f8fafc;
@@ -358,4 +365,65 @@
     font-size: 0.78rem;
     font-weight: 700;
     color: #2563eb;
+}
+
+/* ── Coupon ───────────────────────────────────────────────── */
+.ro-coupon-section {
+    margin-bottom: 0.75rem;
+    padding: 0.75rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+.ro-coupon-row {
+    display: flex;
+    gap: 0.4rem;
+}
+.ro-coupon-input {
+    flex: 1;
+    padding: 0.45rem 0.65rem;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: border-color 0.15s;
+}
+.ro-coupon-input:focus {
+    border-color: #2563eb;
+}
+.ro-coupon-btn {
+    padding: 0.45rem 0.85rem;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+.ro-coupon-btn:hover {
+    background: #1d4ed8;
+}
+.ro-coupon-msg {
+    margin-top: 0.4rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+.ro-coupon-msg.success {
+    color: #16a34a;
+}
+.ro-coupon-msg.error {
+    color: #dc2626;
+}
+.ro-coupon-discount-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.78rem;
+    color: #16a34a;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    padding: 0 0.25rem;
 }

@@ -16,6 +16,11 @@
     const WA_NUMBER  = '8801999506021';
     const CART_KEY   = 'robo_orion_cart';
     const STORE_NAME = 'Robo Orion';
+    /* ── COUPONS ─────────────────────────────────────────────── */
+    const COUPONS = {
+        'ROBOORION10': { discount: 10, type: 'percent', expiry: '2026-12-31', label: '10% off' },
+        'ORION50':     { discount: 50, type: 'flat',    expiry: '2026-06-30', label: 'BDT 50 off' },
+    };
 
     /* ── INJECT HTML ─────────────────────────────────────── */
     document.body.insertAdjacentHTML('beforeend', `
@@ -91,7 +96,15 @@
                     </svg>
                     Order via WhatsApp
                 </button>
-                <button class="ro-clear-btn" onclick="ROCart.clearCart()">🗑 Clear Cart</button>
+                <!-- Coupon Section -->
+<div class="ro-coupon-section">
+    <div class="ro-coupon-row">
+        <input type="text" id="ro-coupon-input" placeholder="Enter coupon code" class="ro-coupon-input">
+        <button onclick="ROCart.applyCoupon()" class="ro-coupon-btn">Apply</button>
+    </div>
+    <div id="ro-coupon-msg"></div>
+</div>
+<button class="ro-clear-btn" onclick="ROCart.clearCart()">🗑 Clear Cart</button>
             </div>
         </div>
 
@@ -157,6 +170,7 @@
 
     /* ── PRODUCT LOOKUP ──────────────────────────────────── */
     let PRODUCTS = [];
+    let APPLIED_COUPON = null;
 
     function fixImagePath(img) {
         if (!img) return '';
@@ -220,10 +234,54 @@
     }
 
     function clearCart() {
-        saveCart([]);
+    saveCart([]);
+    removeCoupon();
+    updateUI();
+    showToast('Cart cleared');
+}
+
+    /* ── COUPON ──────────────────────────────────────────────── */
+function applyCoupon() {
+    const input   = document.getElementById('ro-coupon-input');
+    const msgEl   = document.getElementById('ro-coupon-msg');
+    if (!input || !msgEl) return;
+
+    const code    = input.value.trim().toUpperCase();
+    const coupon  = COUPONS[code];
+    const today   = new Date().toISOString().split('T')[0];
+
+    msgEl.className = 'ro-coupon-msg';
+
+    if (!coupon) {
+        APPLIED_COUPON = null;
+        msgEl.classList.add('error');
+        msgEl.textContent = '✕ Invalid coupon code.';
         updateUI();
-        showToast('Cart cleared');
+        return;
     }
+
+    if (today > coupon.expiry) {
+        APPLIED_COUPON = null;
+        msgEl.classList.add('error');
+        msgEl.textContent = `✕ This coupon expired on ${coupon.expiry}.`;
+        updateUI();
+        return;
+    }
+
+    APPLIED_COUPON = { code, ...coupon };
+    msgEl.classList.add('success');
+    msgEl.textContent = `✓ Coupon applied — ${coupon.label}!`;
+    updateUI();
+}
+
+function removeCoupon() {
+    APPLIED_COUPON = null;
+    const input = document.getElementById('ro-coupon-input');
+    const msgEl = document.getElementById('ro-coupon-msg');
+    if (input) input.value = '';
+    if (msgEl) { msgEl.className = 'ro-coupon-msg'; msgEl.textContent = ''; }
+    updateUI();
+}
 
     /* ── WHATSAPP ORDER ──────────────────────────────────── */
     function orderWhatsApp() {
@@ -247,8 +305,8 @@
         ${lines.join('\n\n')}
 
        ─────────────────
-        🛵 *Delivery: ${getDeliveryCharge() === 70 ? 'Inside Dhaka' : 'Outside Dhaka'} — BDT ${getDeliveryCharge()}*
-        💰 *Total: BDT ${total + getDeliveryCharge()}*
+${APPLIED_COUPON ? `🎟 *Coupon: ${APPLIED_COUPON.code} (${APPLIED_COUPON.label})* — − BDT ${APPLIED_COUPON.type === 'percent' ? Math.round(total * APPLIED_COUPON.discount / 100) : Math.min(APPLIED_COUPON.discount, total)}\n` : ''}🛵 *Delivery: ${getDeliveryCharge() === 70 ? 'Inside Dhaka' : 'Outside Dhaka'} — BDT ${getDeliveryCharge()}*
+💰 *Total: BDT ${total - (APPLIED_COUPON ? (APPLIED_COUPON.type === 'percent' ? Math.round(total * APPLIED_COUPON.discount / 100) : Math.min(APPLIED_COUPON.discount, total)) : 0) + getDeliveryCharge()}*
         ─────────────────
         Please confirm my order. Thank you! 🙏`;
 
@@ -335,10 +393,35 @@
         document.getElementById('ro-item-count-label').textContent = `${totalQty} item${totalQty !== 1 ? 's' : ''}`;
         document.getElementById('ro-products-subtotal').textContent = `BDT ${total}`;
 
+        // Coupon discount (applied to product total only)
+        let discount = 0;
+        if (APPLIED_COUPON) {
+            if (APPLIED_COUPON.type === 'percent') {
+                discount = Math.round(total * APPLIED_COUPON.discount / 100);
+            } else if (APPLIED_COUPON.type === 'flat') {
+                discount = Math.min(APPLIED_COUPON.discount, total);
+            }
+        }
+
+        // Show/hide discount row
+        let discountRow = document.getElementById('ro-discount-row');
+        if (discount > 0) {
+            if (!discountRow) {
+                const subtotalRow = document.getElementById('ro-products-subtotal').closest('.ro-summary-row');
+                discountRow = document.createElement('div');
+                discountRow.id = 'ro-discount-row';
+                discountRow.className = 'ro-coupon-discount-row';
+                subtotalRow.insertAdjacentElement('afterend', discountRow);
+            }
+            discountRow.innerHTML = `<span>Discount (${APPLIED_COUPON.code})</span><span>− BDT ${discount}</span>`;
+        } else if (discountRow) {
+            discountRow.remove();
+        }
+
         // Delivery charge
         const deliveryCharge = getDeliveryCharge();
         document.getElementById('ro-delivery-charge').textContent = `BDT ${deliveryCharge}`;
-        document.getElementById('ro-total-price').textContent = `BDT ${total + deliveryCharge}`;
+        document.getElementById('ro-total-price').textContent = `BDT ${total - discount + deliveryCharge}`;
     }
 
     /* ── DRAWER ──────────────────────────────────────────── */
@@ -497,6 +580,5 @@ function init() {
         localStorage.setItem('robo_orion_products', JSON.stringify(saved));
     }
 
-    window.ROCart = { addItem, changeQty, removeItem, clearCart, openDrawer, closeDrawer, orderWhatsApp, registerProduct };
-
+    window.ROCart = { addItem, changeQty, removeItem, clearCart, openDrawer, closeDrawer, orderWhatsApp, registerProduct, applyCoupon };
 })();

@@ -191,7 +191,7 @@
                 <!-- Center: Nav Links (desktop only) -->
                 <ul class="hidden md:flex items-center gap-1 px-4 py-4 border-r border-gray-200">
                     <li><a href="index.html" class="px-3 py-1.5 font-dm text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors duration-200">Home</a></li>
-                    <li><a href="shop.html" class="px-3 py-1.5 font-dm text-sm font-bold text-blue-600 bg-blue-50 rounded-md">Shop</a></li>
+                    <li><a href="product.html" class="px-3 py-1.5 font-dm text-sm font-bold text-blue-600 bg-blue-50 rounded-md">Shop</a></li>
                     <li><a href="https://roboorion.com/contact.html" class="px-3 py-1.5 font-dm text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors duration-200">Contact Us</a></li>
                 </ul>
 
@@ -223,7 +223,7 @@
                         <!-- Mobile Dropdown -->
                         <div id="mobile-menu" class="absolute right-0 mt-2 hidden w-52 flex-col rounded-lg bg-white/90 backdrop-blur-xs shadow-lg p-2">
                             <a href="index.html" class="block px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 rounded-md hover:text-blue-600 transition-colors duration-200">Home</a>
-                            <a href="shop.html" class="block px-4 py-2 text-sm font-bold text-blue-600 hover:bg-slate-100 rounded-md">Shop</a>
+                            <a href="product.html" class="block px-4 py-2 text-sm font-bold text-blue-600 hover:bg-slate-100 rounded-md">Shop</a>
                             <a href="https://roboorion.com/contact.html" class="block px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 rounded-md hover:text-blue-600 transition-colors duration-200">Contact Us</a>
                             <hr class="my-2 border-gray-200">
                             
@@ -569,19 +569,23 @@
                         </div>
                     </div>
 
+                    <!-- 1. Results label -->
+                    <p id="search-label" class="hidden text-blue-600 font-semibold text-base mb-4"></p>
+
                     <!-- Product Grid -->
                     <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 md:gap-4" id="product-grid">
 
                         <!-- YOUR EXISTING PRODUCT CARDS GO HERE — no changes needed -->
                         <!-- Product 12V Charge Controller Circuit V1 -->
-                        <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition" data-category="electronics charge-controllers">
+                        <div class="data-card-wrap product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition" data-category="electronics charge-controllers">
                             <!-- Image -->
                             <a href="products/12v-charge-controller-circuit-v1-rbo-12vccv1125.html" target="_blank">
-                                <div class="w-full aspect-[4/3]">
+                                <div class="w-full aspect-[4/3] relative">
                                     <img src="img/product/12v-charge-controller-circuit-v1-rbo-12vccv1125.png" 
                                         loading="lazy" 
                                         alt="12V Charge Controller Circuit V1" 
                                         class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
+                                        <span class="productDiscount absolute top-3 left-3 bg-red-500 text-white text-[9px] font-bold tracking-[1.5px] uppercase px-2.5 py-1 rounded">–21%</span>
                                 </div>
                             </a>
                             
@@ -612,7 +616,7 @@
                                 </div>
                                 <!-- Price -->
                                 <div class="productPrice flex justify-center items-center gap-2 mb-2">
-                                    <span class="offer-price text-red-500 font-bold text-lg">BDT 220</span> <!-- Offer price -->
+                                    <span class="offer-price text-red-500 font-bold text-lg">BDT 250</span> <!-- Offer price -->
                                     <span class="text-gray-500 line-through">BDT 320</span> <!-- Original price -->
                                 </div>
                                 <!-- Quantity + Add to Cart -->
@@ -634,14 +638,15 @@
                             </div>
                         </div>
                         <!-- Product 3A Super Mini fixed Step-Down Buck -->
-                        <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition" data-category="converter-modules">
+                        <div class="data-card-wrap product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition" data-category="converter-modules">
                             <!-- Image -->
                             <a href="products/1953-12V-24V-to-5v-3a-super-mini-super-size-dc-step-down-buck-converter-module-robo-orion-bangladesh.html" target="_blank">
-                                <div class="w-full aspect-[4/3]">
+                                <div class="w-full aspect-[4/3] relative">
                                     <img src="img/product/1953-12V-24V-to-5v-3a-super-mini-super-size-dc-step-down-buck-converter-module-robo-orion-bangladesh.jpg" 
                                         loading="lazy" 
                                         alt="12V-24V to 5V 3A Super Mini Super Size DC Step-Down Buck Converter Module" 
                                         class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
+                                        <span class="productDiscount absolute top-3 left-3 bg-red-500 text-white text-[9px] font-bold tracking-[1.5px] uppercase px-2.5 py-1 rounded">–10%</span>
                                 </div>
                             </a>
                             
@@ -697,11 +702,12 @@
                         <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition" data-category="converter-modules">
                             <!-- Image -->
                             <a href="products/2767-150w-dc-dc-boost-converter-10-32v-to-12-35v-6a-step-up-adjustable-power-supply-robo-orion-bangladesh.html" target="_blank">
-                                <div class="w-full aspect-[4/3]">
+                                <div class="w-full aspect-[4/3] relative">
                                     <img src="img/product/2767-150w-dc-dc-boost-converter-10-32v-to-12-35v-6a-step-up-adjustable-power-supply-robo-orion-bangladesh.jpg" 
                                         loading="lazy" 
                                         alt="150W DC-DC Boost Converter 10-32V to 12-35V 6A Step-Up Adjustable Power Supply" 
                                         class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
+                                        <span class="productDiscount absolute top-3 left-3 bg-red-500 text-white text-[9px] font-bold tracking-[1.5px] uppercase px-2.5 py-1 rounded">–10%</span>
                                 </div>
                             </a>
                             
@@ -757,11 +763,12 @@
                         <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition" data-category="amplifiers audio-modules audio-accessories">
                             <!-- Image -->
                             <a href="products/1433-tda2030a-18w-original-hi-fi-class-ab-audio-amplifier-ic-robo-orion-bangladesh.html" target="_blank">
-                                <div class="w-full aspect-[4/3]">
+                                <div class="w-full aspect-[4/3] relative">
                                     <img src="img/product/1433-tda2030a-18w-original-hi-fi-class-ab-audio-amplifier-ic-robo-orion-bangladesh.jpg" 
                                         loading="lazy" 
                                         alt="TDA2030A 18W Original Hi-Fi Class AB Audio Amplifier IC" 
                                         class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
+                                        <span class="productDiscount absolute top-3 left-3 bg-red-500 text-white text-[9px] font-bold tracking-[1.5px] uppercase px-2.5 py-1 rounded">–10%</span>
                                 </div>
                             </a>
                             
@@ -817,11 +824,12 @@
                         <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition" data-category="amplifiers audio-modules audio-accessories">
                             <!-- Image -->
                             <a href="products/1434-tda2030a-18w-original-hi-fi-class-ab-audio-amplifier-ic-pack-of-4-robo-orion-bangladesh.html" target="_blank">
-                                <div class="w-full aspect-[4/3]">
+                                <div class="w-full aspect-[4/3] relative">
                                     <img src="img/product/1434-tda2030a-18w-original-hi-fi-class-ab-audio-amplifier-ic-pack-of-4-robo-orion-bangladesh.jpg" 
                                         loading="lazy" 
                                         alt="TDA2030A 18W Original Hi-Fi Class AB Audio Amplifier IC - Pack of 4" 
                                         class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
+                                        <span class="productDiscount absolute top-3 left-3 bg-red-500 text-white text-[9px] font-bold tracking-[1.5px] uppercase px-2.5 py-1 rounded">–10%</span>
                                 </div>
                             </a>
                             
@@ -877,11 +885,12 @@
                         <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition" data-category="bms-protection">
                             <!-- Image -->
                             <a href="products/1822-tp4056-1a-li-ion-lithium-battery-charging-module-with-current-protection-type-c-robo-orion-bangladesh.html" target="_blank">
-                                <div class="w-full aspect-[4/3]">
+                                <div class="w-full aspect-[4/3] relative">
                                     <img src="img/product/1822-tp4056-1a-li-ion-lithium-battery-charging-module-with-current-protection-type-c-robo-orion-bangladesh.jpg" 
                                         loading="lazy" 
                                         alt="TP4056 1A Li-ion lithium Battery Charging Module With Current Protection - Type C" 
                                         class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
+                                        <span class="productDiscount absolute top-3 left-3 bg-red-500 text-white text-[9px] font-bold tracking-[1.5px] uppercase px-2.5 py-1 rounded">–10%</span>
                                 </div>
                             </a>
                             
@@ -937,11 +946,12 @@
                         <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition" data-category="soldering-tools">
                             <!-- Image -->
                             <a href="products/900m-t-k-series-soldering-iron-tips-professional-conical-lead-free-black-soldering-bit.html" target="_blank">
-                                <div class="w-full aspect-[4/3]">
+                                <div class="w-full aspect-[4/3] relative">
                                     <img src="img/product/900m-t-k-series-soldering-iron-tips-professional-conical-lead-free-black-soldering-bit.jpg" 
                                         loading="lazy" 
                                         alt="900M-T-K Series Soldering Iron Tips - Professional Conical Lead-Free Black Soldering Bit 60w" 
                                         class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
+                                        <span class="productDiscount absolute top-3 left-3 bg-red-500 text-white text-[9px] font-bold tracking-[1.5px] uppercase px-2.5 py-1 rounded">–10%</span>
                                 </div>
                             </a>
                             
@@ -998,11 +1008,12 @@
                         <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition" data-category="chargers">
                             <!-- Image -->
                             <a href="products/12603-12.6v-3a-dc-charger-power-supply-adapter-for-3-cell-lithium-ion-battery-packs-robo-orion-bangladesh.html" target="_blank">
-                                <div class="w-full aspect-[4/3]">
+                                <div class="w-full aspect-[4/3] relative">
                                     <img src="img/product/12603-12.6v-3a-dc-charger-power-supply-adapter-for-3-cell-lithium-ion-battery-packs-robo-orion-bangladesh.jpg" 
                                         loading="lazy" 
                                         alt="12.6V 3A DC Charger - Power Supply Adapter for 3-Cell Lithium-Ion Battery Packs" 
                                         class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
+                                        <span class="productDiscount absolute top-3 left-3 bg-red-500 text-white text-[9px] font-bold tracking-[1.5px] uppercase px-2.5 py-1 rounded">–10%</span>
                                 </div>
                             </a>
                             
@@ -1059,11 +1070,12 @@
                         <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition" data-category="lithium-batteries 18650-batteries">
                             <!-- Image -->
                             <a href="products/3200mah-original-panasonic-ncr18650bd-18650-lithium-ion-battery-10a-high-drain-made-in-japan-robo-orion-bangladesh.html" target="_blank">
-                                <div class="w-full aspect-[4/3]">
+                                <div class="w-full aspect-[4/3] relative">
                                     <img src="img/product/3200mah-original-panasonic-ncr18650bd-18650-lithium-ion-battery-10a-high-drain-made-in-japan-robo-orion-bangladesh.jpg" 
                                         loading="lazy" 
                                         alt="3200mAh Original Panasonic NCR18650BD 18650 Lithium-Ion Battery - 10A High-Drain (Made in Japan)" 
                                         class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
+                                        <span class="productDiscount absolute top-3 left-3 bg-red-500 text-white text-[9px] font-bold tracking-[1.5px] uppercase px-2.5 py-1 rounded">–10%</span>
                                 </div>
                             </a>
                             
@@ -1120,11 +1132,12 @@
                         <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition" data-category="lithium-batteries 18650-batteries">
                             <!-- Image -->
                             <a href="products/1687-3.7v-18650-rechargeable-lithium-ion-battery-good-quality-robo-orion-bangladesh.html" target="_blank">
-                                <div class="w-full aspect-[4/3]">
+                                <div class="w-full aspect-[4/3] relative">
                                     <img src="img/product/1687-3.7v-18650-rechargeable-lithium-ion-battery-good-quality-robo-orion-bangladesh.jpg" 
                                         loading="lazy" 
                                         alt="3.7v 18650 Rechargeable Lithium-Ion Battery - Good Quality" 
                                         class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
+                                        <span class="productDiscount absolute top-3 left-3 bg-red-500 text-white text-[9px] font-bold tracking-[1.5px] uppercase px-2.5 py-1 rounded">–10%</span>
                                 </div>
                             </a>
                             
@@ -1180,11 +1193,12 @@
                         <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition" data-category="lithium-batteries 18650-batteries">
                             <!-- Image -->
                             <a href="products/2677-2600mah-swy18650-rechargeable-li-ion-battery-original-high-power-cell-robo-orion-bangladesh.html" target="_blank">
-                                <div class="w-full aspect-[4/3]">
+                                <div class="w-full aspect-[4/3] relative">
                                     <img src="img/product/2677-2600mah-swy18650-rechargeable-li-ion-battery-original-high-power-cell-robo-orion-bangladesh.jpg" 
                                         loading="lazy" 
                                         alt="2600mAh 3.7V SWY18650 Rechargeable Li-ion Battery - Original High-Power Cell" 
                                         class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
+                                        <span class="productDiscount absolute top-3 left-3 bg-red-500 text-white text-[9px] font-bold tracking-[1.5px] uppercase px-2.5 py-1 rounded">–10%</span>
                                 </div>
                             </a>
                             
@@ -1240,11 +1254,12 @@
                         <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition" data-category="converter-modules">
                             <!-- Image -->
                             <a href="products/3953-mini-mp1584en-dc-dc-buck-adjustable-step-down-module-robo-orion-bangladesh.html" target="_blank">
-                                <div class="w-full aspect-[4/3]">
+                                <div class="w-full aspect-[4/3] relative">
                                     <img src="img/product/3953-mini-mp1584en-dc-dc-buck-adjustable-step-down-module-robo-orion-bangladesh.webp" 
                                         loading="lazy" 
                                         alt="Mini MP1584EN DC-DC BUCK Adjustable Step Down Module" 
                                         class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
+                                        <span class="productDiscount absolute top-3 left-3 bg-red-500 text-white text-[9px] font-bold tracking-[1.5px] uppercase px-2.5 py-1 rounded">–10%</span>
                                 </div>
                             </a>
                             
@@ -1300,11 +1315,12 @@
                         <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition" data-category="converter-modules">
                             <!-- Image -->
                             <a href="products/1855-hw-411a-lm2596-dc-to-dc-buck-converter-step-down-module-power-supply-robo-orion-bangladesh.html" target="_blank">
-                                <div class="w-full aspect-[4/3]">
+                                <div class="w-full aspect-[4/3] relative">
                                     <img src="img/product/1855-hw-411a-lm2596-dc-to-dc-buck-converter-step-down-module-power-supply-robo-orion-bangladesh.webp" 
                                         loading="lazy" 
                                         alt="HW-411A LM2596 DC To Dc Buck Converter Step Down Module Power Supply" 
                                         class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
+                                        <span class="productDiscount absolute top-3 left-3 bg-red-500 text-white text-[9px] font-bold tracking-[1.5px] uppercase px-2.5 py-1 rounded">–10%</span>
                                 </div>
                             </a>
                             
@@ -1360,11 +1376,12 @@
                         <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition" data-category="power-supply">
                             <!-- Image -->
                             <a href="products/12v-5a-liteon-power-supply-adapter.html" target="_blank">
-                                <div class="w-full aspect-[4/3]">
+                                <div class="w-full aspect-[4/3] relative">
                                     <img src="img/product/12v-5a-liteon-power-supply-adapter.jpg" 
                                         loading="lazy" 
                                         alt="12V 5A Liteon Power Supply Adapter" 
                                         class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
+                                        <span class="productDiscount absolute top-3 left-3 bg-red-500 text-white text-[9px] font-bold tracking-[1.5px] uppercase px-2.5 py-1 rounded">–10%</span>
                                 </div>
                             </a>
                             
@@ -1420,11 +1437,12 @@
                         <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition" data-category="converter-modules">
                             <!-- Image -->
                             <a href="products/730-dc-dc-boost-module-xl6009-robo-orion-bangladesh.html" target="_blank">
-                                <div class="w-full aspect-[4/3]">
+                                <div class="w-full aspect-[4/3] relative">
                                     <img src="img/product/730-dc-dc-boost-module-xl6009-robo-orion-bangladesh.webp" 
                                         loading="lazy" 
                                         alt="DC-DC Boost Module XL6009" 
                                         class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
+                                        <span class="productDiscount absolute top-3 left-3 bg-red-500 text-white text-[9px] font-bold tracking-[1.5px] uppercase px-2.5 py-1 rounded">–10%</span>
                                 </div>
                             </a>
                             
@@ -1480,11 +1498,12 @@
                         <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition" data-category="li-po-batteries">
                             <!-- Image -->
                             <a href="products/bigmax-3.7v-10000mah-li-po-rechargeable-battery-high-capacity-lithium-polymer-battery-pack-robo-orion-bangladesh.html" target="_blank">
-                                <div class="w-full aspect-[4/3]">
+                                <div class="w-full aspect-[4/3] relative">
                                     <img src="img/product/BigMax 3.7V 10000mAh Li-Po Rechargeable Battery – High Capacity Lithium Polymer Battery Pack.jpg" 
                                         loading="lazy" 
                                         alt="BigMax 3.7V 10000mAh Li-Po Rechargeable Battery – High Capacity Lithium Polymer Battery Pack" 
                                         class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
+                                        <span class="productDiscount absolute top-3 left-3 bg-red-500 text-white text-[9px] font-bold tracking-[1.5px] uppercase px-2.5 py-1 rounded">–10%</span>
                                 </div>
                             </a>
                             
@@ -1536,6 +1555,7 @@
                                 </div>
                             </div>
                         </div>
+                        
 
                     </div>
 
@@ -1717,80 +1737,89 @@
 <script src="asset/js/cart.js"></script>
 
 <script>
-// Real-time search functionality
 (function() {
-    const searchInput = document.getElementById('searchInput');
-    const clearBtn = document.getElementById('clearSearch');
+    const searchInput  = document.getElementById('searchInput');
+    const clearBtn     = document.getElementById('clearSearch');
     const resultsCount = document.getElementById('resultsCount');
-    
-    // Get all product cards
+    const label        = document.getElementById('search-label');
     const productCards = document.querySelectorAll('.product-card');
-    
-    console.log('Search initialized. Found', productCards.length, 'products'); // Debug log
-    
-    if (!searchInput || productCards.length === 0) {
-        console.error('Search input or product cards not found');
-        return;
-    }
-    
-    // Search function
+
+    if (!searchInput || productCards.length === 0) return;
+
     function performSearch() {
-    const searchTerm = searchInput.value.toLowerCase().trim();
-    let visibleCount = 0;
-    
-    productCards.forEach(card => {
-        const productName = card.querySelector('.productName')?.textContent.toLowerCase() || '';
-        const productCode = card.querySelector('.productCode')?.textContent.toLowerCase() || '';
-        const productBrand = card.querySelector('.productBrand')?.textContent.toLowerCase() || '';
-        const productPrice = card.querySelector('.productPrice')?.textContent.toLowerCase() || '';
-        
-        const searchableText = productName + ' ' + productCode + ' ' + productBrand + ' ' + productPrice;
-        
-        // Normalize: remove special chars and spaces
-        function normalize(text) {
-            return text.replace(/[\s\-_.,/#!$%^&*;:{}=\-`~()]/g, '').toLowerCase();
-        }
-        
-        // Split search term into words for better matching
-        const searchWords = searchTerm.split(/\s+/).filter(word => word.length > 0);
-        
-        // Check if all search words are found
-        const allWordsMatch = searchWords.every(word => {
-            const normalizedWord = normalize(word);
-            const normalizedText = normalize(searchableText);
-            return searchableText.includes(word) || normalizedText.includes(normalizedWord);
+        const searchTerm = searchInput.value.toLowerCase().trim();
+        let visibleCount = 0;
+
+        productCards.forEach(card => {
+            const name  = card.querySelector('.productName')?.textContent.toLowerCase()  || '';
+            const code  = card.querySelector('.productCode')?.textContent.toLowerCase()  || '';
+            const brand = card.querySelector('.productBrand')?.textContent.toLowerCase() || '';
+            const price = card.querySelector('.productPrice')?.textContent.toLowerCase() || '';
+            const text  = name + ' ' + code + ' ' + brand + ' ' + price;
+
+            function normalize(t) {
+                return t.replace(/[\s\-_.,/#!$%^&*;:{}=`~()]/g, '').toLowerCase();
+            }
+
+            const words = searchTerm.split(/\s+/).filter(w => w.length > 0);
+            const match = searchTerm === '' || words.every(w =>
+                text.includes(w) || normalize(text).includes(normalize(w))
+            );
+
+            card.style.display = match ? '' : 'none';
+            if (match) visibleCount++;
         });
-        
-        if (allWordsMatch || searchTerm === '') {
-            card.style.display = '';
-            visibleCount++;
-        } else {
-            card.style.display = 'none';
+
+        // Results label
+        if (label) {
+            if (searchTerm) {
+                label.textContent = visibleCount > 0
+                    ? `Showing ${visibleCount} result${visibleCount !== 1 ? 's' : ''} for "${searchTerm}"`
+                    : `No results found for "${searchTerm}"`;
+                label.classList.remove('hidden');
+            } else {
+                label.textContent = '';
+                label.classList.add('hidden');
+            }
         }
-    });
-    
-    if (searchTerm) {
-        resultsCount.textContent = `${visibleCount} product${visibleCount !== 1 ? 's' : ''} found`;
-        clearBtn.classList.remove('hidden');
-    } else {
-        resultsCount.textContent = '';
-        clearBtn.classList.add('hidden');
+
+        // Results count badge
+        if (resultsCount) {
+            resultsCount.textContent = searchTerm
+                ? `${visibleCount} product${visibleCount !== 1 ? 's' : ''} found`
+                : '';
+        }
+
+        // Clear button visibility
+        clearBtn?.classList.toggle('hidden', searchTerm === '');
     }
-}
-    
+
+    // Clear — single definition, handles everything
     window.clearSearch = function() {
         searchInput.value = '';
-        performSearch();
+        performSearch(); // resets label, count, cards, clear button all at once
+
+        // Clean URL param
+        const url = new URL(window.location);
+        url.searchParams.delete('search');
+        window.history.replaceState({}, '', url);
+
         searchInput.focus();
-    }
-    
+    };
+
+    // Live search
     searchInput.addEventListener('input', performSearch);
-    searchInput.addEventListener('keyup', (e) => {
-        if (e.key === 'Escape') {
-            clearSearch();
-        }
+    searchInput.addEventListener('keyup', e => {
+        if (e.key === 'Escape') window.clearSearch();
     });
-    
+
+    // URL param on load (coming from landing page)
+    const q = new URLSearchParams(window.location.search).get('search');
+    if (q) {
+        searchInput.value = q;
+        performSearch();
+    }
+
 })();
 </script>
 

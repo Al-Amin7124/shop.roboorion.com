@@ -1,0 +1,53 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.font-exo {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.font-ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.font-dm {
+    font-family: 'DM Sans', sans-serif;
+}
+
+    /* Keyframes only — cannot be expressed in Tailwind utility classes */
+    @keyframes marquee    { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+    @keyframes floatBadge { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+    @keyframes floatImg   { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+    @keyframes floatCard  { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+    @keyframes blink      { 0%,100%{opacity:1} 50%{opacity:0.3} }
+    @keyframes slowZoom   { from{transform:scale(1.05)} to{transform:scale(1.12)} }
+    @keyframes fadeUp     { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:translateY(0)} }
+
+    .anim-marquee      { animation: marquee 30s linear infinite; }
+    .anim-float-badge  { animation: floatBadge 3s ease-in-out infinite; }
+    .anim-float-img    { animation: floatImg 5s ease-in-out infinite; }
+    .anim-float-card   { animation: floatCard 4s ease-in-out infinite; }
+    .anim-blink        { animation: blink 1.4s infinite; }
+    .anim-slow-zoom    { animation: slowZoom 18s ease-in-out infinite alternate; }
+    .anim-fu-1 { animation: fadeUp .7s ease .10s both; }
+    .anim-fu-2 { animation: fadeUp .7s ease .20s both; }
+    .anim-fu-3 { animation: fadeUp .7s ease .35s both; }
+    .anim-fu-4 { animation: fadeUp .7s ease .50s both; }
+    .anim-fu-5 { animation: fadeUp .7s ease .65s both; }
+    .anim-fu-v { animation: fadeUp .9s ease .40s both; }
+
+    /* Scroll-reveal */
+    .reveal { opacity:0; transform:translateY(32px); transition:opacity .65s ease, transform .65s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+    .reveal-d1 { transition-delay:.08s; }
+    .reveal-d2 { transition-delay:.16s; }
+    .reveal-d3 { transition-delay:.24s; }
+
+    /* Product card — hover-slide overlay + image zoom */
+    .quick-add { bottom:-44px; transition:bottom .35s cubic-bezier(.25,.46,.45,.94); }
+    .product-card:hover .quick-add { bottom:0; }
+    .card-img { transition:transform .6s ease; }
+    .product-card:hover .card-img { transform:scale(1.06); }
+
+    /* Tab active */
+    .ftab.active { background:#3B82F6; color:#fff; }

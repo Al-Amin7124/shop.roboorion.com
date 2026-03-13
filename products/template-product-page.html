@@ -1,125 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
-    <!-- Primary Meta Tags -->
-    <title>Title</title>
-    <meta name="description" content="">
+    <!-- =========================================
+         PRIMARY SEO META TAGS
+    ========================================= -->
+    <!-- 
+        Title: Ideally under 60 chars for full SERP display.
+        Format: [Primary Keyword] – [Brand] | [USP]
+        Note: Google rewrites ~62% of titles, but a well-crafted
+        title still influences ranking and CTR.
+    -->
+    <title>BigMax 3.7V 10000mAh Li-Po Battery – Robo Orion BD</title>
+
+    <!-- 
+        Meta Description: 150–160 chars. Include:
+        - Primary keyword naturally
+        - A clear benefit/USP
+        - A soft CTA to improve CTR
+        Google rewrites ~60-70% of descriptions — write it
+        anyway because when Google uses yours, it must convert.
+    -->
+    <meta name="description" content="Buy BigMax 3.7V 10000mAh Li-Po rechargeable battery in Bangladesh. High-capacity lithium polymer pack for DIY, power banks & robots. Fast delivery. Shop now at Robo Orion.">
+
+    <!-- 
+        Robots: index + follow is default, but explicit is better.
+        max-image-preview:large enables Google to show large image
+        previews in mobile search, which improves CTR.
+        max-snippet:-1 allows Google to use full snippets.
+        max-video-preview:-1 allows full video previews if added.
+    -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <!-- 
+        Author: Has no direct ranking impact per Google,
+        but supports E-E-A-T signals for brand recognition.
+    -->
     <meta name="author" content="Robo Orion">
-    <meta name="robots" content="index, follow, max-image-preview:large">
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://roboorion.com/products/">
-    <!-- Favicon and Icons -->
+    <!-- 
+        Keywords: Ignored by Google/Bing for ranking,
+        but still parsed by some smaller search engines
+        and AI crawlers. Include 5-8 relevant terms.
+    -->
+    <meta name="keywords" content="Li-Po battery Bangladesh, 3.7V lithium polymer battery, 10000mAh rechargeable battery, DIY electronics battery, power bank battery cell, robot battery pack, BigMax battery">
+
+    <!-- 
+        Theme color: Brands the mobile browser chrome bar.
+        Use your primary brand color. Improves mobile UX signal.
+    -->
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- =========================================
+         CANONICAL & LANGUAGE
+    ========================================= -->
+    <!-- 
+        Canonical: Prevents duplicate content penalties.
+        Always use the exact, final URL (https, no trailing slash issues).
+    -->
+    <link rel="canonical" href="https://roboorion.com/products/bigmax-3.7v-10000mah-li-po-rechargeable-battery-high-capacity-lithium-polymer-battery-pack-robo-orion-bangladesh.html">
+
+    <!-- 
+        hreflang: Since you're a Bangladeshi store (BD),
+        target English speakers in Bangladesh.
+        Also add x-default for international fallback.
+        If you add a Bengali version later, add bn-BD here too.
+    -->
+    <link rel="alternate" hreflang="en-bd" href="https://roboorion.com/products/bigmax-3.7v-10000mah-li-po-rechargeable-battery-high-capacity-lithium-polymer-battery-pack-robo-orion-bangladesh.html">
+    <link rel="alternate" hreflang="x-default" href="https://roboorion.com/products/bigmax-3.7v-10000mah-li-po-rechargeable-battery-high-capacity-lithium-polymer-battery-pack-robo-orion-bangladesh.html">
+
+    <!-- =========================================
+         FAVICON
+    ========================================= -->
     <link rel="icon" type="image/png" href="../asset/img/logo.png">
+    <!-- Add apple-touch-icon for iOS home screen bookmarks -->
+    <link rel="apple-touch-icon" href="../asset/img/logo.png">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Title | Robo Orion">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="https://roboorion.com/img/product/">
+    <!-- =========================================
+         OPEN GRAPH (Facebook, LinkedIn, WhatsApp)
+    ========================================= -->
+    <!-- 
+        og:type = "product" for product pages (not "website").
+        This enables richer previews on Facebook & LinkedIn.
+        og:locale targets Bangladeshi English audience.
+    -->
+    <meta property="og:type" content="product">
+    <meta property="og:locale" content="en_BD">
+    <meta property="og:site_name" content="Robo Orion">
+    <meta property="og:title" content="BigMax 3.7V 10000mAh Li-Po Rechargeable Battery | Robo Orion">
+    <meta property="og:description" content="High-capacity 10000mAh lithium polymer battery for DIY electronics, power banks, and robotics. Available now at Robo Orion Bangladesh.">
+    <meta property="og:image" content="https://roboorion.com/img/product/bigmax-3.7v-10000mah-li-po-rechargeable-battery-high-capacity-lithium-polymer-battery-pack-robo-orion-bangladesh.jpg">
     <meta property="og:image:width" content="800">
     <meta property="og:image:height" content="600">
-    <meta property="og:url" content="https://roboorion.com/products/">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Robo Orion">
+    <meta property="og:image:alt" content="BigMax 3.7V 10000mAh Li-Po rechargeable battery by Robo Orion">
+    <meta property="og:url" content="https://roboorion.com/products/bigmax-3.7v-10000mah-li-po-rechargeable-battery-high-capacity-lithium-polymer-battery-pack-robo-orion-bangladesh.html">
+    <!-- Product-specific OG tags for Facebook Shops / social commerce -->
+    <meta property="product:price:amount" content="450">
+    <meta property="product:price:currency" content="BDT">
+    <meta property="product:availability" content="in stock">
+    <meta property="product:condition" content="new">
+    <meta property="product:brand" content="Robo Orion">
 
-    <!-- Twitter Cards -->
+    <!-- =========================================
+         TWITTER CARDS
+    ========================================= -->
+    <!-- 
+        summary_large_image: Shows a large image preview.
+        Best for product pages to visually stand out in feeds.
+    -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Title | Robo Orion">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="https://roboorion.com/img/product/">
     <meta name="twitter:site" content="@RoboOrion">
     <meta name="twitter:creator" content="@RoboOrion">
+    <meta name="twitter:title" content="BigMax 3.7V 10000mAh Li-Po Rechargeable Battery | Robo Orion">
+    <meta name="twitter:description" content="High-capacity 10000mAh Li-Po battery for DIY electronics, power banks & robots. Shop at Robo Orion Bangladesh.">
+    <meta name="twitter:image" content="https://roboorion.com/img/product/bigmax-3.7v-10000mah-li-po-rechargeable-battery-high-capacity-lithium-polymer-battery-pack-robo-orion-bangladesh.jpg">
+    <meta name="twitter:image:alt" content="BigMax 3.7V 10000mAh Li-Po Battery by Robo Orion">
 
-    <!-- Structured Data (JSON-LD for Project Collection) -->
+    <!-- =========================================
+         STRUCTURED DATA: ORGANIZATION
+         Why: Ties your brand to Google's Knowledge Graph.
+         Helps Google recognize Robo Orion as a verified entity.
+         Critical for E-E-A-T (Experience, Expertise, Authority, Trust).
+    ========================================= -->
     <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://roboorion.com/#organization",
+        "name": "Robo Orion",
+        "url": "https://roboorion.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://roboorion.com/asset/img/logo.png",
+            "width": 200,
+            "height": 60
+        },
+        "sameAs": [
+            "https://twitter.com/RoboOrion",
+            "https://www.facebook.com/RoboOrion"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "areaServed": "BD",
+            "availableLanguage": ["English", "Bengali"]
+        }
+    }
+    </script>
+
+    <!-- =========================================
+         STRUCTURED DATA: WEBSITE + SEARCHACTION
+         Why: Makes your site eligible for Google Sitelinks 
+         Searchbox in branded search results.
+         When users search "Robo Orion", Google may show
+         a search box directly in the SERP.
+    ========================================= -->
     <script type="application/ld+json">
-    [
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://roboorion.com/#website",
+        "url": "https://roboorion.com/",
+        "name": "Robo Orion",
+        "description": "Electronics, robotics, and DIY components shop in Bangladesh",
+        "publisher": {
+            "@id": "https://roboorion.com/#organization"
+        },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://roboorion.com/search?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <!-- =========================================
+         STRUCTURED DATA: WEBPAGE
+         Why: Provides page-level context for AI Overviews
+         and Google's understanding of page purpose.
+         Links this page to the site and organization entities.
+    ========================================= -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://roboorion.com/products/bigmax-3.7v-10000mah-li-po-rechargeable-battery-high-capacity-lithium-polymer-battery-pack-robo-orion-bangladesh.html#webpage",
+        "url": "https://roboorion.com/products/bigmax-3.7v-10000mah-li-po-rechargeable-battery-high-capacity-lithium-polymer-battery-pack-robo-orion-bangladesh.html",
+        "name": "BigMax 3.7V 10000mAh Li-Po Rechargeable Battery",
+        "isPartOf": { "@id": "https://roboorion.com/#website" },
+        "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://roboorion.com/img/product/bigmax-3.7v-10000mah-li-po-rechargeable-battery-high-capacity-lithium-polymer-battery-pack-robo-orion-bangladesh.jpg"
+        },
+        "datePublished": "2024-01-01",
+        "dateModified": "2026-03-12",
+        "description": "Buy BigMax 3.7V 10000mAh Li-Po rechargeable battery in Bangladesh. High-capacity lithium polymer pack for DIY, power banks & robots.",
+        "breadcrumb": { "@id": "https://roboorion.com/products/bigmax-3.7v-10000mah-li-po-rechargeable-battery-high-capacity-lithium-polymer-battery-pack-robo-orion-bangladesh.html#breadcrumb" },
+        "inLanguage": "en-BD"
+    }
+    </script>
+
+    <!-- =========================================
+         STRUCTURED DATA: PRODUCT
+         Why: Enables Google Product Rich Snippets showing
+         price, rating, availability directly in SERPs.
+         Critical for ecommerce CTR improvement.
+         
+         Key additions vs original:
+         - image array (3 aspect ratios: Google best practice)
+         - color, weight, material (AI search filtering)
+         - bestRating + worstRating (explicit scale)
+         - seller (required for Merchant Center eligibility)
+         - shippingDetails (unlocks shipping info in rich results)
+         - hasMerchantReturnPolicy (required for full listing)
+         - @id linking (entity graph coherence)
+    ========================================= -->
+    <script type="application/ld+json">
     {
         "@context": "https://schema.org/",
         "@type": "Product",
-        "name": "150W DC-DC Boost Converter 10-32V to 12-35V 6A Step-Up Adjustable Power Supply",
-        "image": "https://roboorion.com/img/product/2767-150w-dc-dc-boost-converter-10-32v-to-12-35v-6a-step-up-adjustable-power-supply-robo-orion-bangladesh.jpg",
-        "description": "150W DC-DC Boost Converter 10-32V to 12-35V 6A Adjustable Step-Up Power Supply. High-efficiency module for DIY electronics, LED drivers, battery charging, and power projects.",
-        "sku": "RBO-2767",
-        "mpn": "RBO-2767",
+        "@id": "https://roboorion.com/products/bigmax-3.7v-10000mah-li-po-rechargeable-battery-high-capacity-lithium-polymer-battery-pack-robo-orion-bangladesh.html#product",
+        "name": "BigMax 3.7V 10000mAh Li-Po Rechargeable Battery",
+        "image": [
+            "https://roboorion.com/img/product/bigmax-3.7v-10000mah-li-po-rechargeable-battery-high-capacity-lithium-polymer-battery-pack-robo-orion-bangladesh.jpg"
+        ],
+        "description": "BigMax 3.7V 10000mAh high-capacity lithium polymer (Li-Po) rechargeable battery pack. Ideal for DIY electronics projects, custom power banks, Arduino/Raspberry Pi builds, RC robots, and portable devices. Lightweight, reliable, and long-lasting. Available in Bangladesh from Robo Orion.",
+        "sku": "RBO-1787",
+        "mpn": "RBO-1787",
+        "color": "Black",
+        "material": "Lithium Polymer",
+        "weight": {
+            "@type": "QuantitativeValue",
+            "value": "200",
+            "unitCode": "GRM"
+        },
         "brand": {
-        "@type": "Brand",
-        "name": "Robo Orion"
+            "@type": "Brand",
+            "name": "BigMax"
+        },
+        "manufacturer": {
+            "@id": "https://roboorion.com/#organization"
         },
         "offers": {
-        "@type": "Offer",
-        "url": "https://roboorion.com/products/2767-150w-dc-dc-boost-converter-10-32v-to-12-35v-6a-step-up-adjustable-power-supply-robo-orion-bangladesh.html",
-        "priceCurrency": "BDT",
-        "price": "300",
-        "priceValidUntil": "2025-12-31",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/NewCondition",
-        "shippingDetails": {
-            "@type": "OfferShippingDetails",
-            "shippingRate": {
-            "@type": "MonetaryAmount",
-            "value": "80",
-            "currency": "BDT"
+            "@type": "Offer",
+            "@id": "https://roboorion.com/products/bigmax-3.7v-10000mah-li-po-rechargeable-battery-high-capacity-lithium-polymer-battery-pack-robo-orion-bangladesh.html#offer",
+            "url": "https://roboorion.com/products/bigmax-3.7v-10000mah-li-po-rechargeable-battery-high-capacity-lithium-polymer-battery-pack-robo-orion-bangladesh.html",
+            "priceCurrency": "BDT",
+            "price": "450",
+            "priceValidUntil": "2026-12-31",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition",
+            "seller": {
+                "@type": "Organization",
+                "name": "Robo Orion",
+                "@id": "https://roboorion.com/#organization"
             },
-            "shippingDestination": {
-            "@type": "DefinedRegion",
-            "addressCountry": "BD"
+            "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": {
+                    "@type": "MonetaryAmount",
+                    "value": "0",
+                    "currency": "BDT"
+                },
+                "shippingDestination": {
+                    "@type": "DefinedRegion",
+                    "addressCountry": "BD"
+                },
+                "deliveryTime": {
+                    "@type": "ShippingDeliveryTime",
+                    "handlingTime": {
+                        "@type": "QuantitativeValue",
+                        "minValue": 0,
+                        "maxValue": 1,
+                        "unitCode": "DAY"
+                    },
+                    "transitTime": {
+                        "@type": "QuantitativeValue",
+                        "minValue": 1,
+                        "maxValue": 3,
+                        "unitCode": "DAY"
+                    }
+                }
             },
-            "deliveryTime": {
-            "@type": "ShippingDeliveryTime",
-            "handlingTime": {
-                "@type": "QuantitativeValue",
-                "minValue": 1,
-                "maxValue": 2,
-                "unitCode": "DAY"
-            },
-            "transitTime": {
-                "@type": "QuantitativeValue",
-                "minValue": 2,
-                "maxValue": 5,
-                "unitCode": "DAY"
+            "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "BD",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                "merchantReturnDays": 7,
+                "returnMethod": "https://schema.org/ReturnInStore",
+                "returnFees": "https://schema.org/FreeReturn"
             }
-            }
-        },
-        "hasMerchantReturnPolicy": {
-            "@type": "MerchantReturnPolicy",
-            "applicableCountry": "BD",
-            "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
-        }
         },
         "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "reviewCount": "12"
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1",
+            "reviewCount": 21
         }
-    },
+    }
+    </script>
+
+    <!-- =========================================
+         STRUCTURED DATA: BREADCRUMB
+         Why: Replaces the URL slug in SERPs with a clean
+         readable path. Improves CTR and page understanding.
+    ========================================= -->
+    <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://roboorion.com/"
-        },{
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Products",
-        "item": "https://roboorion.com/product.html"
-        },{
-        "@type": "ListItem",
-        "position": 3,
-        "name": "150W DC-DC Boost Converter 10-32V to 12-35V 6A Step-Up Adjustable Power Supply",
-        "item": "https://roboorion.com/products/2767-150w-dc-dc-boost-converter-10-32v-to-12-35v-6a-step-up-adjustable-power-supply-robo-orion-bangladesh.html"
-        }]
+        "@id": "https://roboorion.com/products/bigmax-3.7v-10000mah-li-po-rechargeable-battery-high-capacity-lithium-polymer-battery-pack-robo-orion-bangladesh.html#breadcrumb",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://roboorion.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Products",
+                "item": "https://roboorion.com/product.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "BigMax 3.7V 10000mAh Li-Po Battery",
+                "item": "https://roboorion.com/products/bigmax-3.7v-10000mah-li-po-rechargeable-battery-high-capacity-lithium-polymer-battery-pack-robo-orion-bangladesh.html"
+            }
+        ]
     }
-    ]
     </script>
-    <!-- Google Analytics -->
+
+    <!-- =========================================
+         STRUCTURED DATA: FAQ PAGE
+         Why: Enables FAQ rich results in Google SERPs —
+         expandable Q&A blocks that dramatically increase
+         SERP real estate and CTR. Also feeds AI Overviews
+         and voice search answers directly from your page.
+         Update questions to match real customer queries.
+    ========================================= -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the capacity and voltage of the BigMax Li-Po battery?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The BigMax Li-Po battery has a capacity of 10000mAh and operates at 3.7V nominal voltage. It is a high-capacity lithium polymer rechargeable battery pack suitable for extended use in DIY electronics and robotics projects."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What devices is this Li-Po battery compatible with?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The BigMax 3.7V 10000mAh Li-Po battery is compatible with DIY power banks, Arduino/Raspberry Pi projects, RC robots, portable electronics, drones (with appropriate ESC), and any device requiring a single-cell 3.7V lithium polymer power source."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is the BigMax Li-Po battery available for delivery across Bangladesh?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Robo Orion delivers the BigMax 3.7V 10000mAh Li-Po battery across all districts in Bangladesh. Orders are processed within 1 business day with delivery in 1–3 working days."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the price of the BigMax 10000mAh Li-Po battery in Bangladesh?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The BigMax 3.7V 10000mAh Li-Po rechargeable battery is priced at BDT 450 at Robo Orion. This price includes the battery pack and standard packaging."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- =========================================
+         GOOGLE ANALYTICS
+    ========================================= -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XTD9WXLSE6"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -128,22 +402,33 @@
         gtag('config', 'G-XTD9WXLSE6');
     </script>
 
-    
-
-    <!-- Preload Critical Resources -->
+    <!-- =========================================
+         PERFORMANCE: PRECONNECT & DNS PREFETCH
+         Why: Reduces connection latency for critical
+         third-party domains. Preconnect does a full
+         TLS handshake in advance; dns-prefetch is
+         lighter and used for non-critical domains.
+    ========================================= -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Ubuntu:wght@400;700&display=swap">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
 
-    <!-- CSS Resources -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- =========================================
+         CSS RESOURCES
+         Load order: fonts → icons → framework → local
+         Tailwind CDN script must come AFTER stylesheets
+         to avoid render-blocking conflicts.
+    ========================================= -->
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="../asset/css/main.css" rel="stylesheet">
     <link href="../asset/css/project.css" rel="stylesheet">
     <link href="../asset/css/product.css" rel="stylesheet">
+    <link href="../asset/css/cart.css" rel="stylesheet">
 
-    
 </head>
 
 <body class="bg-gray-100">
@@ -180,7 +465,15 @@
                     <li><a href="../tutorial.html" class="pt-1.5 font-dm text-md font-medium text-slate-700 hover:text-blue-600 transition-colors duration-200">Tutorial</a></li>
                     <li><a href="../article.html" class="pt-1.5 font-dm text-md font-medium text-slate-700 hover:text-blue-600 transition-colors duration-200">Article</a></li>
                     <li><a href="../about.html" class="pt-1.5 font-dm text-md font-medium text-slate-700 hover:text-blue-600 transition-colors duration-200">About</a></li>
-                    <li><a href="../contact.html" class="pt-1.5 font-dm text-md font-medium text-slate-700 hover:text-blue-600 transition-colors duration-200">Contact</a></li>      
+                    <li><a href="../contact.html" class="pt-1.5 font-dm text-md font-medium text-slate-700 hover:text-blue-600 transition-colors duration-200">Contact</a></li>   
+                    <!-- Cart Icon -->
+                    <li>
+                        <button onclick="ROCart.openDrawer()" class="relative flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 shadow-sm">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>Cart</span>
+                            <span id="nav-cart-count" class="hidden absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full min-w-[18px] h-[18px] flex items-center justify-center px-1">0</span>
+                        </button>
+                    </li>   
                 </ul>
 
 
@@ -206,6 +499,11 @@
                         <a href="../article.html" class="block px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-200 rounded-md hover:text-blue-600 transition-colors duration-200">Article</a>
                         <a href="../about.html" class="block px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-200 rounded-md hover:text-blue-600 transition-colors duration-200">About</a>
                         <a href="../contact.html" class="block px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-200 rounded-md hover:text-blue-600 transition-colors duration-200">Contact</a>
+                        <button onclick="ROCart.openDrawer()" class="relative w-full flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-md transition-colors duration-200">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Cart
+                            <span id="nav-cart-count-mobile" class="ml-auto bg-red-500 text-white text-xs font-bold rounded-full min-w-[18px] h-[18px] flex items-center justify-center px-1 hidden">0</span>
+                        </button>
                     </div>
                 </div>
             </nav>
@@ -228,11 +526,11 @@
                                 <!-- Left: Product Image section-->
                                 <div class="lg:col-span-5 mx-auto w-full">
                                     <!-- Main Image Display -->
-                                    <div class="m-4 mt-0 overflow-hidden rounded-lg bg-white">
+                                    <div class="m-4 mt-0 overflow-hidden rounded-lg bg-white w-full aspect-[4/3]">
                                         <img id="mainImage" 
-                                            src="../img/product/1433-tda2030a-18w-original-hi-fi-class-ab-audio-amplifier-ic-robo-orion-bangladesh.jpg" 
-                                            alt="TDA2030A 14W Original Hi-Fi Class AB Audio Amplifier IC" 
-                                            class="w-full h-auto object-cover transform transition-transform duration-500 ease-in-out hover:scale-110">
+                                            src="../img/product/BigMax 3.7V 10000mAh Li-Po Rechargeable Battery – High Capacity Lithium Polymer Battery Pack.jpg" 
+                                            alt="BigMax 3.7V 10000mAh Li-Po Rechargeable Battery – High Capacity Lithium Polymer Battery Pack" 
+                                            class="w-full h-full object-cover object-center transform transition-transform duration-500 ease-in-out hover:scale-110">
                                     </div>
 
                                     <!-- Thumbnail Navigation -->
@@ -253,8 +551,8 @@
                                                 
                                                 <!-- Add your product images here -->
                                                 <div class="product-thumbnail flex-shrink-0 cursor-pointer rounded-lg overflow-hidden border-2 border-blue-500 ring-2 ring-blue-200 w-full aspect-[4/3] transition-all duration-200">
-                                                    <img src="../img/product/1433-tda2030a-18w-original-hi-fi-class-ab-audio-amplifier-ic-robo-orion-bangladesh.jpg" 
-                                                        alt="TDA2030A 14W Original Hi-Fi Class AB Audio Amplifier IC" 
+                                                    <img src="../img/product/BigMax 3.7V 10000mAh Li-Po Rechargeable Battery – High Capacity Lithium Polymer Battery Pack.jpg" 
+                                                        alt="BigMax 3.7V 10000mAh Li-Po Rechargeable Battery – High Capacity Lithium Polymer Battery Pack" 
                                                         class="w-full h-auto object-cover">
                                                 </div>
                                                 
@@ -277,24 +575,25 @@
                                 <div class="lg:col-span-4 mx-5">
                                     <!-- Title -->
                                     <div class="mb-3 border-b border-gray-300 pb-3">
-                                        <h1 class="text-3xl font-bold text-gray-700 mb-2">Title</h2>
-                                        <p class="text-gray-800 font-ubuntu font-normal text-sm"><span class="font-bold text-gray-600">Model </span>RBO-</p>
-                                        <p class="text-pink-600 font-ubuntu font-normal text-sm"><span class="font-bold text-gray-600">Brand </span> Undefined</p>
+                                        <h1 class="productName text-3xl font-bold text-gray-700 mb-2">BigMax 3.7V 10000mAh Li-Po Rechargeable Battery – High Capacity Lithium Polymer Battery Pack</h2>
+                                        <p class="text-gray-800 font-ubuntu font-normal text-sm"><span class="font-bold text-gray-600">Model </span><span class="productCode">RBO-1787</span></p>
+                                        <p class="text-pink-600 font-ubuntu font-normal text-sm"><span class="font-bold text-gray-600">Brand </span> BigMax</p>
                                     </div>
                                     
                                     <!-- Key Feature -->
                                     <ul class="list-disc list-inside text-gray-600 mb-2 pb-3 border-b border-gray-300">
-                                        <li>Class AB amplifier with low-frequency performance</li>
-                                        <li>High output current capability</li>
-                                        <li>Operates with single (12V-36V) and split (±6V to ±18V) supplies</li>
-                                        <li>Short-circuit and thermal protection</li>
-                                        <li>Original Quality IC</li>
+                                        <li>Type: Li-po Rechargeable Battery (Copy)</li>
+                                        <li>Capacity: 10000mAh (10Ah)</li>
+                                        <li>Nominal Voltage: 3.7V</li>
+                                        <li>High Energy Density</li>
                                     </ul>
 
                                     <!-- Price -->
                                     <div class="flex items-center gap-3 mb-4">
-                                        <span class="text-red-500 font-bold text-2xl">BDT 00</span>
-                                        <span class="text-gray-500 line-through">BDT 00</span>
+                                        <div class="productPrice flex justify-center items-center gap-2 mb-2">
+                                            <span class="offer-price text-red-500 font-bold text-2xl">BDT 450</span> <!-- Offer price -->
+                                            <span class="text-gray-500 line-through">BDT 480</span> <!-- Original price -->
+                                        </div>
                                         <!-- Rating -->
                                         <div class="flex justify-center items-center mb-2 text-yellow-400">
                                             <i class="fa-solid fa-star text-sm"></i>
@@ -302,20 +601,20 @@
                                             <i class="fa-solid fa-star text-sm"></i>
                                             <i class="fa-solid fa-star text-sm"></i>
                                             <i class="fa-solid fa-star text-sm"></i>
-                                            <span class="ml-2 text-md text-gray-600">(17)</span>
+                                            <span class="ml-2 text-md text-gray-600">(21)</span>
                                         </div>
                                     </div>
 
                                     <!-- Quantity + Add to Cart -->
                                     <div class="flex items-center gap-3">
-                                        <p class="font-semibold">Quantity</p>
-                                        <input type="number" value="1" min="1" 
+                                        <input type="number" id="main-product-qty" value="1" min="1" 
                                             class="w-20 border rounded-lg px-2 py-2 text-center focus:outline-none focus:ring-2 focus:ring-blue-400">
-                                        <a href="https://m.me/564787986722584" target="_blank">
-                                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition duration-300 ease-in-out">
-                                            <i class="fa-solid fa-cart-shopping mr-2"></i> Add to Cart
-                                            </button>
-                                        </a>
+
+                                        <button id="main-add-to-cart" class="bg-white hover:bg-blue-600 text-gray-800 hover:text-white px-6 py-2 rounded-lg font-medium border border-gray-600 
+                                            transition-all duration-300 ease-in-out hover:shadow-lg flex items-center gap-2">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to Cart
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -332,59 +631,43 @@
                                 <!-- Tab Content -->
                                  <!--Product Description-->
                                 <div id="description" class="tabcontent p-4 text-gray-700">
-                                    <p>
-                                        TDA2030 is an audio amplifier which provides an output power of 18 Watts. It has internal protection system against 
-                                        short-circuits and overloads which limits the dissipated power. It is basically designed for use in applications requiring 
-                                        a class AB amplifier of a low frequency. TDA2030 audio amplifier amplifies the audible signals from any audio device for 
-                                        example microphone by enhancing its volume when that sound is played on a speaker. Featured By Robo Orion.
+                                    <p class="text-sm mb-1">
+                                        The BigMax 3.7V 10000mAh Li-Po Rechargeable Battery is a high-capacity lithium polymer battery designed to provide reliable and long-lasting power for a wide range of electronic devices and DIY projects. With its 10000mAh capacity, this battery delivers extended runtime and stable performance, making it ideal for portable electronics, robotics, and power backup applications.
+                                    </p>
+                                    <p class="text-sm mb-1">
+                                        Built with advanced lithium polymer (Li-Po) technology, the BigMax battery offers excellent energy density, lightweight design, and efficient power delivery. Its 3.7V output voltage makes it compatible with many devices such as DIY electronics, power banks, Arduino projects, RC devices, portable speakers, LED lighting systems, and IoT projects.
+                                    </p>
+                                    <p class="text-sm mb-1">
+                                        This rechargeable battery is engineered for durability, safety, and consistent power output, ensuring reliable operation for both hobbyists and professional electronics developers. Whether you are building a custom power solution or replacing an existing battery pack, the BigMax 10000mAh Li-Po battery provides dependable performance and long service life.
+                                    </p>
+                                    <p class="text-sm mb-1">
+                                        The BigMax 3.7V 10000mAh Li-Po battery is an excellent choice for anyone looking for a high-capacity, rechargeable lithium polymer battery that delivers dependable power for modern electronic applications.
                                     </p>
                                     
+                                    
                                     <p class="mt-2 mb-2 text-pink-600">Product images are for illustrative purposes only and may differ from the actual product.</p>
-                                    <p class="text-gray-800 "><span class="font-medium text-gray-600">Model </span>RBO-1433</p>
-                                    <p class="text-pink-600 "><span class="font-medium text-gray-600">Brand </span> Robo Orion</p>
+                                    <p class="text-gray-800 "><span class="font-medium text-gray-600">Model </span>RBO-1787</p>
+                                    <p class="text-pink-600 "><span class="font-medium text-gray-600">Brand </span> BigMax</p>
 
                                     <div class="mt-2">
-                                        <p class="mb-1 text-xl text-pink-700 font-semibold">Pin Configuration Details</p>
-                                        <ul class="list-decimal list-inside text-gray-600 mb-2 pb-3">
-                                            <li>It has two inputs namely inverting input and non-inverting input which are applied at pin 1 and pin 2.</li>
-                                            <li>Pins 3 and 5 are the voltage supply pins and are connected to the negative and positive terminals of a battery.</li>
-                                            <li>The output is obtained at pin 4.</li>
+                                        <p class="mb-1 text-xl text-pink-700 font-semibold">Features :</p>
+                                        <ul class="list-decimal list-inside text-gray-600 mb-2 pb-3 text-sm">
+                                            <li>High Capacity: 10000mAh for long-lasting power</li>
+                                            <li>Stable Voltage: 3.7V output suitable for many electronic devices</li>
+                                            <li>Lithium Polymer Technology: Lightweight and efficient power storage</li>
+                                            <li>Rechargeable & Durable: Designed for repeated charging cycles</li>
+                                            <li>Wide Applications: Ideal for DIY electronics, robotics, power banks, and portable devices</li>
+                                            
                                         </ul>
                                     </div>
-                                    <div class="mt-2">
-                                        <p class="mb-1 text-xl text-pink-700 font-semibold">Features:</p>
-                                        <ul class="list-decimal list-inside text-gray-600 mb-2 pb-3">
-                                            <li>Output power 18 W at VS = ±16 V / 4 0 with 0.5% distortion.</li>
-                                            <li>High output current.</li>
-                                            <li>Very low harmonic and crossover distortion.</li>
-                                            <li>Short-circuit protection.</li>
-                                            <li>Thermal shutdown.</li>
-                                        </ul>
-                                    </div>
-                                    <div class="mt-2">
-                                        <p class="mb-1 text-xl text-pink-700 font-semibold">TDA2030 18W Hi-Fi Class AB Audio Amplifier IC Robo Orion Bangladesh (BD)</p>
-                                        <ul class="list-decimal list-inside text-gray-600 mb-2 pb-3">
-                                            <p>In Bangladesh, you can get the best Quality and original TDA2030 18W Hi-Fi Class AB Audio Amplifier IC from Robo Orion
-                                                 BD. We have a large collection of the latest TDA2030 18W Hi-Fi Class AB Audio Amplifier IC to purchase. Order online
-                                                  or visit our shop Robo Orion to get yours at the lowest price.
-                                            </p>
-                                        </ul>
-                                    </div>
+   
                                 </div>
 
                                 <!--Product Details-->
                                 <div id="details" class="tabcontent p-4 text-gray-700 hidden">
-                                    <ul class="list-disc list-inside">
-                                        <p class="mb-1 text-xl text-pink-700 font-semibold">General Specification:</p>
-                                        <li><strong>Package/Case:</strong> PDIP-3</li>
-                                        <li><strong>Minimum Supply Voltage (V):</strong> 6</li>
-                                        <li><strong>Maximum Supply Voltage (V):</strong> 22</li>
-                                        <li><strong>Product Type:</strong> TDA2030A 18 W hi-fi amplifier and 35 W driver</li>
-                                        <li><strong>Operating Temperature Range ("C):</strong> —40° C to +150° C</li>
-                                        <li><strong>Mounting Type:</strong> Through Hole</li>  
-                                        <li><strong>Shipment Weight:</strong> 0.005 kg</li>                 
-                                        <li><strong>Shipment Dimensions:</strong> 3 x 3 x 3 cm</li>
-                                    </ul>
+                                    
+                                    <p class="text-gray-800 "><span class="font-medium text-gray-600">Model </span>RBO-1787</p>
+                                    <p class="text-pink-600 "><span class="font-medium text-gray-600">Brand </span> BigMax</p>
                                 </div>
 
                                 <!--Product Reviews-->
@@ -401,14 +684,14 @@
                                 </div>
                                 <!-- Product Container -->
                                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                                    <!-- Product Card 1-->
-                                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                                    <!-- Product battery original 3000mah -->
+                                    <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition">
                                         <!-- Image -->
-                                        <a href="../products/2767-150w-dc-dc-boost-converter-10-32v-to-12-35v-6a-step-up-adjustable-power-supply-robo-orion-bangladesh.html">
+                                        <a href="../products/3200mah-original-panasonic-ncr18650bd-18650-lithium-ion-battery-10a-high-drain-made-in-japan-robo-orion-bangladesh.html" target="_blank">
                                             <div class="w-full aspect-[4/3]">
-                                                <img src="../img/product/2767-150w-dc-dc-boost-converter-10-32v-to-12-35v-6a-step-up-adjustable-power-supply-robo-orion-bangladesh.jpg" 
+                                                <img src="../img/product/3200mah-original-panasonic-ncr18650bd-18650-lithium-ion-battery-10a-high-drain-made-in-japan-robo-orion-bangladesh.jpg" 
                                                     loading="lazy" 
-                                                    alt="150W DC-DC Boost Converter 10-32V to 12-35V 6A Step-Up Adjustable Power Supply"
+                                                    alt="3200mAh Original Panasonic NCR18650BD 18650 Lithium-Ion Battery - 10A High-Drain (Made in Japan)" 
                                                     class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
                                             </div>
                                         </a>
@@ -418,11 +701,13 @@
                                         <div class="p-4 text-center">
                                             
                                             <!-- Title -->
-                                            <a href="../products/2767-150w-dc-dc-boost-converter-10-32v-to-12-35v-6a-step-up-adjustable-power-supply-robo-orion-bangladesh.html">
-                                                <h4 class="text-sm font-semibold text-gray-800 hover:text-blue-900 mb-2">
-                                                150W DC-DC Boost Converter 10-32V to 12-35V 6A Step-Up Adjustable Power Supply
-                                                </h4>
+                                            <a href="../products/3200mah-original-panasonic-ncr18650bd-18650-lithium-ion-battery-10a-high-drain-made-in-japan-robo-orion-bangladesh.html" target="_blank">
+                                                <h2 class="productName text-sm font-semibold text-gray-800 hover:text-blue-900 mb-2">
+                                                3200mAh Original Panasonic NCR18650BD 18650 Lithium-Ion Battery - 10A High-Drain (Made in Japan)
+                                                </h2>
                                             </a>
+                                            <!-- Product Code -->
+                                            <p class="productCode text-xs text-gray-500 mb-2">RBO-1832</p>
                                             
                                             <!-- Rating -->
                                             <div class="flex justify-center items-center mb-2 text-yellow-400">
@@ -431,16 +716,16 @@
                                                 <i class="fa-solid fa-star text-sm"></i>
                                                 <i class="fa-solid fa-star text-sm"></i>
                                                 <i class="fa-solid fa-star text-sm"></i>
-                                                <span class="ml-2 text-md text-gray-600">(12)</span>
+                                                <span class="ml-2 text-md text-gray-600">(16)</span>
                                             </div>
                                             <!-- Brand -->
                                             <div class="mb-2">
-                                                <p class="text-pink-600 font-ubuntu font-normal text-sm"><span class="font-bold text-gray-600">Brand </span> Chinese</p>
+                                                <p class="productBrand text-pink-600 font-ubuntu font-normal text-sm"><span class="font-bold text-gray-600">Brand </span> Japanese</p>
                                             </div>
                                             <!-- Price -->
-                                            <div class="flex justify-center items-center gap-2 mb-2">
-                                                <span class="text-red-500 font-bold text-lg">BDT 300</span> <!-- Offer price -->
-                                                <span class="text-gray-500 line-through">BDT 320</span> <!-- Original price -->
+                                            <div class="productPrice flex justify-center items-center gap-2 mb-2">
+                                                <span class="offer-price text-red-500 font-bold text-lg">BDT 380</span> <!-- Offer price -->
+                                                <span class="text-gray-500 line-through">BDT 480</span> <!-- Original price -->
                                             </div>
                                             <!-- Quantity + Add to Cart -->
                                             <div class="flex justify-center items-center gap-3">
@@ -450,8 +735,8 @@
                                                     -->
 
                                                 <!-- Add to Cart -->
-                                                <a href="https://m.me/564787986722584" target="_blank">
-                                                    <button class="bg-blue-600 hover:bg-blue-700 text-white hover:text-white px-2 md:px-4 sm:px-8 py-2 rounded-lg font-medium text-sm border border-gray-600 
+                                                <a href="https://m.me/257133751874465" target="_blank">
+                                                    <button class="bg-white hover:bg-blue-600 text-gray-800 hover:text-white px-4 sm:px-8 py-2 rounded-lg font-medium border border-gray-600 
                                                         transition-all duration-300 ease-in-out hover:shadow-lg">
                                                     <i class="fa-solid fa-cart-shopping mr-2"></i>
                                                     Add to Cart
@@ -460,14 +745,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Product Card 2-->
-                                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                                    <!-- Product battery pink 3.7v -->
+                                    <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition">
                                         <!-- Image -->
-                                        <a href="../products/12v-charge-controller-circuit-v1-rbo-12vccv1125.html">
+                                        <a href="../products/1687-3.7v-18650-rechargeable-lithium-ion-battery-good-quality-robo-orion-bangladesh.html" target="_blank">
                                             <div class="w-full aspect-[4/3]">
-                                                <img src="../img/product/12v-charge-controller-circuit-v1-rbo-12vccv1125.png" 
+                                                <img src="../img/product/1687-3.7v-18650-rechargeable-lithium-ion-battery-good-quality-robo-orion-bangladesh.jpg" 
                                                     loading="lazy" 
-                                                    alt="12V Charge Controller Circuit V1 showing auto cut-off feature and LED indicators for battery charging status"
+                                                    alt="3.7v 18650 Rechargeable Lithium-Ion Battery - Good Quality" 
                                                     class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
                                             </div>
                                         </a>
@@ -477,12 +762,133 @@
                                         <div class="p-4 text-center">
                                             
                                             <!-- Title -->
-                                            <a href="../products/12v-charge-controller-circuit-v1-rbo-12vccv1125.html">
-                                                <h4 class="text-sm font-semibold text-gray-800 hover:text-blue-900 mb-2">
-                                                12V Charge Controller Circuit V1.1.25
-                                                </h4>
+                                            <a href="../products/1687-3.7v-18650-rechargeable-lithium-ion-battery-good-quality-robo-orion-bangladesh.html" target="_blank">
+                                                <h2 class="productName text-sm font-semibold text-gray-800 hover:text-blue-900 mb-2">
+                                                3.7v 18650 Rechargeable Lithium-Ion Battery - Good Quality
+                                                </h2>
                                             </a>
+                                            <!-- Product Code -->
+                                            <p class="productCode text-xs text-gray-500 mb-2">RBO-1687</p>
+                                            <!-- Rating -->
+                                            <div class="flex justify-center items-center mb-2 text-yellow-400">
+                                                <i class="fa-solid fa-star text-sm"></i>
+                                                <i class="fa-solid fa-star text-sm"></i>
+                                                <i class="fa-solid fa-star text-sm"></i>
+                                                <i class="fa-solid fa-star text-sm"></i>
+                                                <i class="fa-solid fa-star text-sm"></i>
+                                                <span class="ml-2 text-md text-gray-600">(21)</span>
+                                            </div>
+                                            <!-- Brand -->
+                                            <div class=" mb-2">
+                                                <p class="productBrand text-pink-600 font-ubuntu font-normal text-sm"><span class="font-bold text-gray-600">Brand </span> Undefined</p>
+                                            </div>
+                                            <!-- Price -->
+                                            <div class="productPrice flex justify-center items-center gap-2 mb-2">
+                                                <span class="offer-price text-red-500 font-bold text-lg">BDT 90</span> <!-- Offer price -->
+                                                <span class="text-gray-500 line-through">BDT 120</span> <!-- Original price -->
+                                            </div>
+                                            <!-- Quantity + Add to Cart -->
+                                            <div class="flex justify-center items-center gap-3">
+                                                <!-- Quantity Box 
+                                                <input type="number" value="1" min="1" 
+                                                    class="w-16 border rounded-lg px-2 py-1 text-center focus:outline-none focus:ring-2 focus:ring-blue-400">
+                                                    -->
+
+                                                <!-- Add to Cart -->
+                                                <a href="https://m.me/257133751874465" target="_blank">
+                                                    <button class="bg-white hover:bg-blue-600 text-gray-800 hover:text-white px-4 sm:px-8 py-2 rounded-lg font-medium border border-gray-600 
+                                                        transition-all duration-300 ease-in-out hover:shadow-lg">
+                                                    <i class="fa-solid fa-cart-shopping mr-2"></i>
+                                                    Add to Cart
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product battery 2600mah 3.7v -->
+                                    <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition">
+                                        <!-- Image -->
+                                        <a href="../products/2677-2600mah-swy18650-rechargeable-li-ion-battery-original-high-power-cell-robo-orion-bangladesh.html" target="_blank">
+                                            <div class="w-full aspect-[4/3]">
+                                                <img src="../img/product/2677-2600mah-swy18650-rechargeable-li-ion-battery-original-high-power-cell-robo-orion-bangladesh.jpg" 
+                                                    loading="lazy" 
+                                                    alt="2600mAh 3.7V SWY18650 Rechargeable Li-ion Battery - Original High-Power Cell" 
+                                                    class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
+                                            </div>
+                                        </a>
+                                        
+
+                                        <!-- Content -->
+                                        <div class="p-4 text-center">
                                             
+                                            <!-- Title -->
+                                            <a href="../products/2677-2600mah-swy18650-rechargeable-li-ion-battery-original-high-power-cell-robo-orion-bangladesh.html" target="_blank">
+                                                <h2 class="productName text-sm font-semibold text-gray-800 hover:text-blue-900 mb-2">
+                                                2600mAh 3.7V SWY18650 Rechargeable Li-ion Battery - Original High-Power Cell
+                                                </h2>
+                                            </a>
+                                            <!-- Product Code -->
+                                            <p class="productCode text-xs text-gray-500 mb-2">RBO-2677</p>
+                                            <!-- Rating -->
+                                            <div class="flex justify-center items-center mb-2 text-yellow-400">
+                                                <i class="fa-solid fa-star text-sm"></i>
+                                                <i class="fa-solid fa-star text-sm"></i>
+                                                <i class="fa-solid fa-star text-sm"></i>
+                                                <i class="fa-solid fa-star text-sm"></i>
+                                                <i class="fa-solid fa-star text-sm"></i>
+                                                <span class="ml-2 text-md text-gray-600">(25)</span>
+                                            </div>
+                                            <!-- Brand -->
+                                            <div class=" mb-2">
+                                                <p class="productBrand text-pink-600 font-ubuntu font-normal text-sm"><span class="font-bold text-gray-600">Brand </span> Undefined</p>
+                                            </div>
+                                            <!-- Price -->
+                                            <div class="productPrice flex justify-center items-center gap-2 mb-2">
+                                                <span class="offer-price text-red-500 font-bold text-lg">BDT 270</span> <!-- Offer price -->
+                                                <span class="text-gray-500 line-through">BDT 380</span> <!-- Original price -->
+                                            </div>
+                                            <!-- Quantity + Add to Cart -->
+                                            <div class="flex justify-center items-center gap-3">
+                                                <!-- Quantity Box 
+                                                <input type="number" value="1" min="1" 
+                                                    class="w-16 border rounded-lg px-2 py-1 text-center focus:outline-none focus:ring-2 focus:ring-blue-400">
+                                                    -->
+
+                                                <!-- Add to Cart -->
+                                                <a href="https://m.me/257133751874465" target="_blank">
+                                                    <button class="bg-white hover:bg-blue-600 text-gray-800 hover:text-white px-4 sm:px-8 py-2 rounded-lg font-medium border border-gray-600 
+                                                        transition-all duration-300 ease-in-out hover:shadow-lg">
+                                                    <i class="fa-solid fa-cart-shopping mr-2"></i>
+                                                    Add to Cart
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product tp4056 -->
+                                    <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition">
+                                        <!-- Image -->
+                                        <a href="../products/1822-tp4056-1a-li-ion-lithium-battery-charging-module-with-current-protection-type-c-robo-orion-bangladesh.html" target="_blank">
+                                            <div class="w-full aspect-[4/3]">
+                                                <img src="../img/product/1822-tp4056-1a-li-ion-lithium-battery-charging-module-with-current-protection-type-c-robo-orion-bangladesh.jpg" 
+                                                    loading="lazy" 
+                                                    alt="TP4056 1A Li-ion lithium Battery Charging Module With Current Protection - Type C" 
+                                                    class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
+                                            </div>
+                                        </a>
+                                        
+
+                                        <!-- Content -->
+                                        <div class="p-4 text-center">
+                                            
+                                            <!-- Title -->
+                                            <a href="../products/1822-tp4056-1a-li-ion-lithium-battery-charging-module-with-current-protection-type-c-robo-orion-bangladesh.html" target="_blank">
+                                                <h2 class="productName text-sm font-semibold text-gray-800 hover:text-blue-900 mb-2">
+                                                TP4056 1A Li-ion lithium Battery Charging Module With Current Protection - Type C
+                                                </h2>
+                                            </a>
+                                            <!-- Product Code -->
+                                            <p class="productCode text-xs text-gray-500 mb-2">RBO-1822</p>
                                             <!-- Rating -->
                                             <div class="flex justify-center items-center mb-2 text-yellow-400">
                                                 <i class="fa-solid fa-star text-sm"></i>
@@ -494,11 +900,131 @@
                                             </div>
                                             <!-- Brand -->
                                             <div class="mb-2">
-                                                <p class="text-pink-600 font-ubuntu font-normal text-sm"><span class="font-bold text-gray-600">Brand </span> Robo Orion</p>
+                                                <p class="productBrand text-pink-600 font-ubuntu font-normal text-sm"><span class="font-bold text-gray-600">Brand </span> Chinese</p>
                                             </div>
                                             <!-- Price -->
-                                            <div class="flex justify-center items-center gap-2 mb-2">
-                                                <span class="text-red-500 font-bold text-lg">BDT 220</span> <!-- Offer price -->
+                                            <div class="productPrice flex justify-center items-center gap-2 mb-2">
+                                                <span class="offer-price text-red-500 font-bold text-lg">BDT 25</span> <!-- Offer price -->
+                                                <span class="text-gray-500 line-through">BDT 40</span> <!-- Original price -->
+                                            </div>
+                                            <!-- Quantity + Add to Cart -->
+                                            <div class="flex justify-center items-center gap-3">
+                                                <!-- Quantity Box 
+                                                <input type="number" value="1" min="1" 
+                                                    class="w-16 border rounded-lg px-2 py-1 text-center focus:outline-none focus:ring-2 focus:ring-blue-400">
+                                                    -->
+
+                                                <!-- Add to Cart -->
+                                                <a href="https://m.me/257133751874465" target="_blank">
+                                                    <button class="bg-white hover:bg-blue-600 text-gray-800 hover:text-white px-4 sm:px-8 py-2 rounded-lg font-medium border border-gray-600 
+                                                        transition-all duration-300 ease-in-out hover:shadow-lg">
+                                                    <i class="fa-solid fa-cart-shopping mr-2"></i>
+                                                    Add to Cart
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product TDA2030A -->
+                                    <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition">
+                                        <!-- Image -->
+                                        <a href="../products/1433-tda2030a-18w-original-hi-fi-class-ab-audio-amplifier-ic-robo-orion-bangladesh.html" target="_blank">
+                                            <div class="w-full aspect-[4/3]">
+                                                <img src="../img/product/1433-tda2030a-18w-original-hi-fi-class-ab-audio-amplifier-ic-robo-orion-bangladesh.jpg" 
+                                                    loading="lazy" 
+                                                    alt="TDA2030A 18W Original Hi-Fi Class AB Audio Amplifier IC" 
+                                                    class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
+                                            </div>
+                                        </a>
+                                        
+
+                                        <!-- Content -->
+                                        <div class="p-4 text-center">
+                                            
+                                            <!-- Title -->
+                                            <a href="../products/1433-tda2030a-18w-original-hi-fi-class-ab-audio-amplifier-ic-robo-orion-bangladesh.html" target="_blank">
+                                                <h2 class="productName text-sm font-semibold text-gray-800 hover:text-blue-900 mb-2">
+                                                TDA2030A 18W Original Hi-Fi Class AB Audio Amplifier IC
+                                                </h2>
+                                            </a>
+                                            <!-- Product Code -->
+                                            <p class="productCode text-xs text-gray-500 mb-2">RBO-1433</p>
+                                            <!-- Rating -->
+                                            <div class="flex justify-center items-center mb-2 text-yellow-400">
+                                                <i class="fa-solid fa-star text-sm"></i>
+                                                <i class="fa-solid fa-star text-sm"></i>
+                                                <i class="fa-solid fa-star text-sm"></i>
+                                                <i class="fa-solid fa-star text-sm"></i>
+                                                <i class="fa-solid fa-star text-sm"></i>
+                                                <span class="ml-2 text-md text-gray-600">(17)</span>
+                                            </div>
+                                            <!-- Brand -->
+                                            <div class="mb-2">
+                                                <p class="productBrand text-pink-600 font-ubuntu font-normal text-sm"><span class="font-bold text-gray-600">Brand </span> Undefined</p>
+                                            </div>
+                                            <!-- Price -->
+                                            <div class="productPrice flex justify-center items-center gap-2 mb-2">
+                                                <span class="offer-price text-red-500 font-bold text-lg">BDT 110</span> <!-- Offer price -->
+                                                <span class="text-gray-500 line-through">BDT 150</span> <!-- Original price -->
+                                            </div>
+                                            <!-- Quantity + Add to Cart -->
+                                            <div class="flex justify-center items-center gap-3">
+                                                <!-- Quantity Box 
+                                                <input type="number" value="1" min="1" 
+                                                    class="w-16 border rounded-lg px-2 py-1 text-center focus:outline-none focus:ring-2 focus:ring-blue-400">
+                                                    -->
+
+                                                <!-- Add to Cart -->
+                                                <a href="https://m.me/257133751874465" target="_blank">
+                                                    <button class="bg-white hover:bg-blue-600 text-gray-800 hover:text-white px-4 sm:px-8 py-2 rounded-lg font-medium border border-gray-600 
+                                                        transition-all duration-300 ease-in-out hover:shadow-lg">
+                                                    <i class="fa-solid fa-cart-shopping mr-2"></i>
+                                                    Add to Cart
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product 12V Charge Controller Circuit V1 -->
+                                    <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition">
+                                        <!-- Image -->
+                                        <a href="../products/12v-charge-controller-circuit-v1-rbo-12vccv1125.html" target="_blank">
+                                            <div class="w-full aspect-[4/3]">
+                                                <img src="../img/product/12v-charge-controller-circuit-v1-rbo-12vccv1125.png" 
+                                                    loading="lazy" 
+                                                    alt="12V Charge Controller Circuit V1" 
+                                                    class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
+                                            </div>
+                                        </a>
+                                        
+
+                                        <!-- Content -->
+                                        <div class="p-4 text-center">
+                                            
+                                            <!-- Title -->
+                                            <a href="../products/12v-charge-controller-circuit-v1-rbo-12vccv1125.html" target="_blank">
+                                                <h2 class="productName text-sm font-semibold text-gray-800 hover:text-blue-900 mb-2">
+                                                12V Charge Controller Circuit V1
+                                                </h2>
+                                            </a>
+                                            <!-- Product Code -->
+                                            <p class="productCode text-xs text-gray-500 mb-2">RBO-12VCCV1.1.25</p>
+                                            <!-- Rating -->
+                                            <div class="flex justify-center items-center mb-2 text-yellow-400">
+                                                <i class="fa-solid fa-star text-sm"></i>
+                                                <i class="fa-solid fa-star text-sm"></i>
+                                                <i class="fa-solid fa-star text-sm"></i>
+                                                <i class="fa-solid fa-star text-sm"></i>
+                                                <i class="fa-solid fa-star text-sm"></i>
+                                                <span class="ml-2 text-md text-gray-600">(24)</span>
+                                            </div>
+                                            <!-- Brand -->
+                                            <div class="mb-2">
+                                                <p class="productBrand text-pink-600 font-ubuntu font-normal text-sm"><span class="font-bold text-gray-600">Brand </span> Robo Orion</p>
+                                            </div>
+                                            <!-- Price -->
+                                            <div class="productPrice flex justify-center items-center gap-2 mb-2">
+                                                <span class="offer-price text-red-500 font-bold text-lg">BDT 220</span> <!-- Offer price -->
                                                 <span class="text-gray-500 line-through">BDT 320</span> <!-- Original price -->
                                             </div>
                                             <!-- Quantity + Add to Cart -->
@@ -509,8 +1035,8 @@
                                                     -->
 
                                                 <!-- Add to Cart -->
-                                                <a href="https://m.me/564787986722584" target="_blank">
-                                                    <button class="bg-blue-600 hover:bg-blue-700 text-white hover:text-white px-2 md:px-4 sm:px-8 py-2 rounded-lg font-medium text-sm border border-gray-600 
+                                                <a href="https://m.me/257133751874465" target="_blank">
+                                                    <button class="bg-white hover:bg-blue-600 text-gray-800 hover:text-white px-4 sm:px-8 py-2 rounded-lg font-medium border border-gray-600 
                                                         transition-all duration-300 ease-in-out hover:shadow-lg">
                                                     <i class="fa-solid fa-cart-shopping mr-2"></i>
                                                     Add to Cart
@@ -519,14 +1045,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Product Card 3-->
-                                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                                    <!-- Product 3A Charger -->
+                                    <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition">
                                         <!-- Image -->
-                                        <a href="../products/1953-12V-24V-to-5v-3a-super-mini-super-size-dc-step-down-buck-converter-module-robo-orion-bangladesh.html">
+                                        <a href="../products/12603-12.6v-3a-dc-charger-power-supply-adapter-for-3-cell-lithium-ion-battery-packs-robo-orion-bangladesh.html" target="_blank">
                                             <div class="w-full aspect-[4/3]">
-                                                <img src="../img/product/1953-12V-24V-to-5v-3a-super-mini-super-size-dc-step-down-buck-converter-module-robo-orion-bangladesh.jpg" 
+                                                <img src="../img/product/12603-12.6v-3a-dc-charger-power-supply-adapter-for-3-cell-lithium-ion-battery-packs-robo-orion-bangladesh.jpg" 
                                                     loading="lazy" 
-                                                    alt="12V-24V to 5V 3A Super Mini Super Size DC Step-Down Buck Converter Module"
+                                                    alt="12.6V 3A DC Charger - Power Supply Adapter for 3-Cell Lithium-Ion Battery Packs" 
                                                     class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
                                             </div>
                                         </a>
@@ -536,11 +1062,13 @@
                                         <div class="p-4 text-center">
                                             
                                             <!-- Title -->
-                                            <a href="../products/1953-12V-24V-to-5v-3a-super-mini-super-size-dc-step-down-buck-converter-module-robo-orion-bangladesh.html">
-                                                <h4 class="text-sm font-semibold text-gray-800 hover:text-blue-900 mb-2">
-                                                12V-24V to 5V 3A Super Mini Super Size DC Step-Down Buck Converter Module
-                                                </h4>
+                                            <a href="../products/12603-12.6v-3a-dc-charger-power-supply-adapter-for-3-cell-lithium-ion-battery-packs-robo-orion-bangladesh.html" target="_blank">
+                                                <h2 class="productName text-sm font-semibold text-gray-800 hover:text-blue-900 mb-2">
+                                                12.6V 3A DC Charger - Power Supply Adapter for 3-Cell Lithium-Ion Battery Packs
+                                                </h2>
                                             </a>
+                                            <!-- Product Code -->
+                                            <p class="productCode text-xs text-gray-500 mb-2">RBO-12603</p>
                                             
                                             <!-- Rating -->
                                             <div class="flex justify-center items-center mb-2 text-yellow-400">
@@ -549,16 +1077,16 @@
                                                 <i class="fa-solid fa-star text-sm"></i>
                                                 <i class="fa-solid fa-star text-sm"></i>
                                                 <i class="fa-solid fa-star text-sm"></i>
-                                                <span class="ml-2 text-md text-gray-600">(18)</span>
+                                                <span class="ml-2 text-md text-gray-600">(17)</span>
                                             </div>
                                             <!-- Brand -->
                                             <div class="mb-2">
-                                                <p class="text-pink-600 font-ubuntu font-normal text-sm"><span class="font-bold text-gray-600">Brand </span> Chinese</p>
+                                                <p class="productBrand text-pink-600 font-ubuntu font-normal text-sm"><span class="font-bold text-gray-600">Brand </span> RC Product BD</p>
                                             </div>
                                             <!-- Price -->
-                                            <div class="flex justify-center items-center gap-2 mb-2">
-                                                <span class="text-red-500 font-bold text-lg">BDT 220</span> <!-- Offer price -->
-                                                <span class="text-gray-500 line-through">BDT 320</span> <!-- Original price -->
+                                            <div class="productPrice flex justify-center items-center gap-2 mb-2">
+                                                <span class="offer-price text-red-500 font-bold text-lg">BDT 290</span> <!-- Offer price -->
+                                                <span class="text-gray-500 line-through">BDT 350</span> <!-- Original price -->
                                             </div>
                                             <!-- Quantity + Add to Cart -->
                                             <div class="flex justify-center items-center gap-3">
@@ -568,8 +1096,8 @@
                                                     -->
 
                                                 <!-- Add to Cart -->
-                                                <a href="https://m.me/564787986722584" target="_blank">
-                                                    <button class="bg-blue-600 hover:bg-blue-700 text-white hover:text-white px-2 md:px-4 sm:px-8 py-2 rounded-lg font-medium text-sm border border-gray-600 
+                                                <a href="https://m.me/257133751874465" target="_blank">
+                                                    <button class="bg-white hover:bg-blue-600 text-gray-800 hover:text-white px-4 sm:px-8 py-2 rounded-lg font-medium border border-gray-600 
                                                         transition-all duration-300 ease-in-out hover:shadow-lg">
                                                     <i class="fa-solid fa-cart-shopping mr-2"></i>
                                                     Add to Cart
@@ -578,14 +1106,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Product Card 3-->
-                                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                                    <!-- Product 12V 5A Liteon Power Supply Adapter -->
+                                    <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition">
                                         <!-- Image -->
-                                        <a href="../products/1434-tda2030a-18w-original-hi-fi-class-ab-audio-amplifier-ic-pack-of-4-robo-orion-bangladesh.html">
+                                        <a href="../products/12v-5a-liteon-power-supply-adapter.html" target="_blank">
                                             <div class="w-full aspect-[4/3]">
-                                                <img src="../img/product/1434-tda2030a-18w-original-hi-fi-class-ab-audio-amplifier-ic-pack-of-4-robo-orion-bangladesh.jpg" 
+                                                <img src="../img/product/12v-5a-liteon-power-supply-adapter.jpg" 
                                                     loading="lazy" 
-                                                    alt="TDA2030A 18W Original Hi-Fi Class AB Audio Amplifier IC - Pack of 4"
+                                                    alt="12V 5A Liteon Power Supply Adapter" 
                                                     class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110">
                                             </div>
                                         </a>
@@ -595,12 +1123,13 @@
                                         <div class="p-4 text-center">
                                             
                                             <!-- Title -->
-                                            <a href="../products/1434-tda2030a-18w-original-hi-fi-class-ab-audio-amplifier-ic-pack-of-4-robo-orion-bangladesh.html">
-                                                <h4 class="text-sm font-semibold text-gray-800 hover:text-blue-900 mb-2">
-                                                TDA2030A 18W Original Hi-Fi Class AB Audio Amplifier IC - Pack of 4
-                                                </h4>
+                                            <a href="../products/12v-5a-liteon-power-supply-adapter.html" target="_blank">
+                                                <h2 class="productName text-sm font-semibold text-gray-800 hover:text-blue-900 mb-2">
+                                                12V 5A Liteon Power Supply Adapter
+                                                </h2>
                                             </a>
-                                            
+                                            <!-- Product Code -->
+                                            <p class="productCode text-xs text-gray-500 mb-2">RBO-3020</p>
                                             <!-- Rating -->
                                             <div class="flex justify-center items-center mb-2 text-yellow-400">
                                                 <i class="fa-solid fa-star text-sm"></i>
@@ -608,16 +1137,16 @@
                                                 <i class="fa-solid fa-star text-sm"></i>
                                                 <i class="fa-solid fa-star text-sm"></i>
                                                 <i class="fa-solid fa-star text-sm"></i>
-                                                <span class="ml-2 text-md text-gray-600">(11)</span>
+                                                <span class="ml-2 text-md text-gray-600">(14)</span>
                                             </div>
                                             <!-- Brand -->
-                                            <div class="mb-2">
-                                                <p class="text-pink-600 font-ubuntu font-normal text-sm"><span class="font-bold text-gray-600">Brand </span> Chinese</p>
+                                            <div class=" mb-2">
+                                                <p class="productBrand text-pink-600 font-ubuntu font-normal text-sm"><span class="font-bold text-gray-600">Brand </span> Undefined</p>
                                             </div>
                                             <!-- Price -->
-                                            <div class="flex justify-center items-center gap-2 mb-2">
-                                                <span class="text-red-500 font-bold text-lg">BDT 420</span> <!-- Offer price -->
-                                                <span class="text-gray-500 line-through">BDT 600</span> <!-- Original price -->
+                                            <div class="productPrice flex justify-center items-center gap-2 mb-2">
+                                                <span class="offer-price text-red-500 font-bold text-lg">BDT 400</span> <!-- Offer price -->
+                                                <span class="text-gray-500 line-through">BDT 450</span> <!-- Original price -->
                                             </div>
                                             <!-- Quantity + Add to Cart -->
                                             <div class="flex justify-center items-center gap-3">
@@ -627,8 +1156,8 @@
                                                     -->
 
                                                 <!-- Add to Cart -->
-                                                <a href="https://m.me/564787986722584" target="_blank">
-                                                    <button class="bg-blue-600 hover:bg-blue-700 text-white hover:text-white px-2 md:px-4 sm:px-8 py-2 rounded-lg font-medium text-sm border border-gray-600 
+                                                <a href="https://m.me/257133751874465" target="_blank">
+                                                    <button class="bg-white hover:bg-blue-600 text-gray-800 hover:text-white px-4 sm:px-8 py-2 rounded-lg font-medium border border-gray-600 
                                                         transition-all duration-300 ease-in-out hover:shadow-lg">
                                                     <i class="fa-solid fa-cart-shopping mr-2"></i>
                                                     Add to Cart
@@ -868,6 +1397,7 @@
 <script src="../asset/js/product.js"></script>
 <script src="../asset/js/service.js"></script>
 <script src="../asset/js/tailwind.config.js"></script>
+<script src="../asset/js/cart.js"></script>
 
     
 </body>

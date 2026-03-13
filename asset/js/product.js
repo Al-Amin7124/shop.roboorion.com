@@ -230,3 +230,145 @@ function applyFilters() {
     var noResults = document.getElementById('no-results');
     if (noResults) noResults.classList.toggle('hidden', visible > 0);
 }
+
+// ═══════════════════════════════════════════
+// search.js — works on product.html AND index.html
+// ═══════════════════════════════════════════
+
+// ── Search ────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', function () {
+
+  const searchInput  = document.getElementById('searchInput');
+  const clearBtn     = document.getElementById('clearSearch');
+  const resultsCount = document.getElementById('resultsCount');
+
+  if (!searchInput) return;
+
+  const hasGrid = !!document.getElementById('product-grid');
+
+  // ── Core search — only runs on product.html ──────────────
+  function performSearch() {
+    if (!hasGrid) return;
+
+    const searchTerm = searchInput.value.toLowerCase().trim();
+    const cards = document.querySelectorAll('#product-grid .product-card');
+    let visible = 0;
+
+    cards.forEach(card => {
+      const name  = card.querySelector('.productName')?.textContent.toLowerCase()  || '';
+      const code  = card.querySelector('.productCode')?.textContent.toLowerCase()  || '';
+      const brand = card.querySelector('.productBrand')?.textContent.toLowerCase() || '';
+      const price = card.querySelector('.productPrice')?.textContent.toLowerCase() || '';
+      const text  = name + ' ' + code + ' ' + brand + ' ' + price;
+
+      function normalize(t) {
+        return t.replace(/[\s\-_.,/#!$%^&*;:{}=`~()]/g, '').toLowerCase();
+      }
+
+      const words = searchTerm.split(/\s+/).filter(w => w.length > 0);
+      const match = searchTerm === '' || words.every(w =>
+        text.includes(w) || normalize(text).includes(normalize(w))
+      );
+
+      card.style.display = match ? '' : 'none';
+      if (match) visible++;
+    });
+
+    // Results label
+    const label = document.getElementById('search-label');
+    if (label) {
+      if (searchTerm) {
+        label.textContent = visible > 0
+          ? `Showing ${visible} result${visible !== 1 ? 's' : ''} for "${searchTerm}"`
+          : `No results found for "${searchTerm}"`;
+        label.classList.remove('hidden');
+      } else {
+        label.textContent = '';
+        label.classList.add('hidden');
+      }
+    }
+
+    // Results count badge
+    if (resultsCount) {
+      resultsCount.textContent = searchTerm
+        ? `${visible} product${visible !== 1 ? 's' : ''} found`
+        : '';
+    }
+
+    // Reset category filter when searching
+    if (searchTerm && typeof activeCategory !== 'undefined') {
+      activeCategory = 'all';
+    }
+  }
+
+  // ── Redirect — runs on index + individual product pages ──
+function redirectToSearch() {
+  const q = searchInput.value.trim();
+  if (!q) return;
+
+  // Check if we are inside a subdirectory (products folder)
+  const isSubDir = window.location.pathname.includes('/products/');
+
+  const base = isSubDir ? '../product.html' : 'product.html';
+  window.location.href = base + '?search=' + encodeURIComponent(q);
+}
+
+  // ── Clear ─────────────────────────────────────────────────
+  window.clearSearch = function () {
+    searchInput.value = '';
+    clearBtn?.classList.add('hidden');
+
+    if (hasGrid) {
+      // Reset cards
+      document.querySelectorAll('#product-grid .product-card').forEach(card => {
+        card.style.display = '';
+      });
+
+      // Hide label
+      const label = document.getElementById('search-label');
+      if (label) { label.textContent = ''; label.classList.add('hidden'); }
+
+      // Clear count badge
+      if (resultsCount) resultsCount.textContent = '';
+
+      // Clean URL param
+      const url = new URL(window.location);
+      url.searchParams.delete('search');
+      window.history.replaceState({}, '', url);
+    }
+
+    searchInput.focus();
+  };
+
+  // ── Input event ───────────────────────────────────────────
+  searchInput.addEventListener('input', () => {
+    clearBtn?.classList.toggle('hidden', searchInput.value === '');
+    if (hasGrid) performSearch();
+    // on non-grid pages: do nothing on input, wait for Enter
+  });
+
+  // ── Keyboard events ───────────────────────────────────────
+  searchInput.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      window.clearSearch();
+    }
+    if (e.key === 'Enter') {
+      if (hasGrid) {
+        performSearch(); // already filtered live, just re-run to be safe
+      } else {
+        redirectToSearch(); // index or individual product page
+      }
+    }
+  });
+
+  // ── URL param on load — only on product.html ─────────────
+  if (hasGrid) {
+    const q = new URLSearchParams(window.location.search).get('search');
+    if (q) {
+      searchInput.value = q;
+      clearBtn?.classList.remove('hidden');
+      performSearch();
+    }
+  }
+
+});
