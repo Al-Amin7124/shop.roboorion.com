@@ -280,55 +280,124 @@ document.addEventListener('DOMContentLoaded', function () {
     const hasGrid = !!document.getElementById('product-grid');
 
     function performSearch() {
-        if (!hasGrid) return;
+    if (!hasGrid) return;
 
-        const searchTerm = searchInput.value.toLowerCase().trim();
-        const cards = document.querySelectorAll('#product-grid .product-card');
-        let visible = 0;
+    const searchTerm = searchInput.value.toLowerCase().trim();
+    const cards = Array.from(document.querySelectorAll('#product-grid .product-card'));
 
-        cards.forEach(card => {
-            const name  = card.querySelector('.productName')?.textContent.toLowerCase()  || '';
-            const code  = card.querySelector('.productCode')?.textContent.toLowerCase()  || '';
-            const brand = card.querySelector('.productBrand')?.textContent.toLowerCase() || '';
-            const price = card.querySelector('.productPrice')?.textContent.toLowerCase() || '';
-            const text  = name + ' ' + code + ' ' + brand + ' ' + price;
+    if (!searchTerm) {
+        cards.forEach(card => card.style.display = '');
+        const label = document.getElementById('search-label');
+        if (label) { label.textContent = ''; label.classList.add('hidden'); }
+        if (resultsCount) resultsCount.textContent = '';
+        return;
+    }
 
-            function normalize(t) {
-                return t.replace(/[\s\-_.,/#!$%^&*;:{}=`~()]/g, '').toLowerCase();
-            }
+    function normalize(t) {
+        return t.replace(/[\s\-_.,/#!$%^&*;:{}=`~()]/g, '').toLowerCase();
+    }
 
-            const words = searchTerm.split(/\s+/).filter(w => w.length > 0);
-            const match = searchTerm === '' || words.every(w =>
-                text.includes(w) || normalize(text).includes(normalize(w))
-            );
+    function scoreCard(card) {
+        const name  = card.querySelector('.productName')?.textContent.toLowerCase()  || '';
+        const code  = card.querySelector('.productCode')?.textContent.toLowerCase()  || '';
+        const brand = card.querySelector('.productBrand')?.textContent.toLowerCase() || '';
+        const price = card.querySelector('.productPrice')?.textContent.toLowerCase() || '';
+        const cat   = (card.getAttribute('data-category') || '').toLowerCase();
 
-            card.style.display = match ? '' : 'none';
-            if (match) visible++;
+        const fullText  = name + ' ' + code + ' ' + brand + ' ' + cat;
+        const normText  = normalize(fullText);
+        const normQuery = normalize(searchTerm);
+        const words     = searchTerm.split(/\s+/).filter(w => w.length > 0);
+
+        let score = 0;
+
+        // Exact full match — highest priority
+        if (name.includes(searchTerm))  score += 100;
+        if (code.includes(searchTerm))  score += 80;
+        if (brand.includes(searchTerm)) score += 60;
+
+        // Normalized exact match (ignores punctuation/spaces)
+        if (normText.includes(normQuery)) score += 50;
+
+        // Each word match
+        words.forEach(function(word) {
+            if (name.includes(word))    score += 30;
+            if (code.includes(word))    score += 25;
+            if (brand.includes(word))   score += 20;
+            if (cat.includes(word))     score += 15;
+            if (normText.includes(normalize(word))) score += 10;
         });
 
-        const label = document.getElementById('search-label');
-        if (label) {
-            if (searchTerm) {
-                label.textContent = visible > 0
-                    ? `Showing ${visible} result${visible !== 1 ? 's' : ''} for "${searchTerm}"`
-                    : `No results found for "${searchTerm}"`;
-                label.classList.remove('hidden');
-            } else {
-                label.textContent = '';
-                label.classList.add('hidden');
+        // Fuzzy — partial character match for typo tolerance
+        // Fuzzy — sliding window substring match for typo tolerance
+words.forEach(function(word) {
+    if (word.length < 4) return;
+    const targets = [name, code, brand];
+    targets.forEach(function(target) {
+        // Check every 3-char chunk of the word against the target
+        for (var i = 0; i <= word.length - 3; i++) {
+            var chunk = word.substring(i, i + 3);
+            if (target.includes(chunk)) {
+                score += 5;
+                break; // only count once per word per target
             }
         }
+    });
+});
 
-        if (resultsCount) {
-            resultsCount.textContent = searchTerm
-                ? `${visible} product${visible !== 1 ? 's' : ''} found`
-                : '';
-        }
+        // Starts-with bonus
+        words.forEach(function(word) {
+            if (name.startsWith(word))  score += 20;
+            if (code.startsWith(word))  score += 15;
+        });
 
-        if (searchTerm && typeof activeCategory !== 'undefined') {
-            activeCategory = 'all';
-        }
+        return score;
     }
+
+    // Score all cards
+    const scored = cards.map(function(card) {
+        return { card, score: scoreCard(card) };
+    });
+
+    // Sort by score descending
+    scored.sort(function(a, b) { return b.score - a.score; });
+
+    // Show/hide and reorder in DOM
+    // Minimum score threshold to show a result
+const MIN_SCORE = 10;
+
+const grid  = document.getElementById('product-grid');
+let visible = 0;
+
+scored.forEach(function(item) {
+    if (item.score >= MIN_SCORE) {
+        item.card.style.display = '';
+        grid.appendChild(item.card);
+        visible++;
+    } else {
+        item.card.style.display = 'none';
+    }
+});
+
+    // Results label
+    const label = document.getElementById('search-label');
+    if (label) {
+        label.textContent = visible > 0
+            ? `Showing ${visible} result${visible !== 1 ? 's' : ''} for "${searchTerm}"`
+            : `No results found for "${searchTerm}"`;
+        label.classList.toggle('hidden', false);
+    }
+
+    if (resultsCount) {
+        resultsCount.textContent = visible > 0
+            ? `${visible} product${visible !== 1 ? 's' : ''} found`
+            : '';
+    }
+
+    if (searchTerm && typeof activeCategory !== 'undefined') {
+        activeCategory = 'all';
+    }
+}
 
     function redirectToSearch() {
         const q = searchInput.value.trim();
