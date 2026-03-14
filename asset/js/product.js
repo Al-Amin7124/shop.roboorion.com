@@ -334,7 +334,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const q = searchInput.value.trim();
         if (!q) return;
         const isSubDir = window.location.pathname.includes('/products/');
-        const base = isSubDir ? '../shop.html' : 'shop.html';
+        const base = isSubDir ? '../product.html' : 'product.html';
         window.location.href = base + '?search=' + encodeURIComponent(q);
     }
 
