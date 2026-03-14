@@ -117,75 +117,94 @@
     <div class="">
         <!-- nav bar -->
         <header class="sticky inset-0 z-50 border-b border-slate-100 bg-white/30 backdrop-blur-lg shadow-lg">
-            <nav  class="mx-auto flex max-w-8xl items-center gap-8 justify-between px-6 py-4 lg:px-12 transition-all duration-200 ease-in-out z-50">
-                
-                <!-- Left logo -->
-                <div class="flex items-center">
-                    <a href="https://roboorion.com/" class="flex items-center gap-2">
-                        <div class="w-9 h-9 rounded-full overflow-hidden">
+            <nav class="mx-auto flex max-w-8xl items-center gap-0 justify-between px-6 py-0 lg:px-12 transition-all duration-200 ease-in-out z-50">
+
+                <!-- Left: Logo -->
+                <div class="flex items-center flex-shrink-0 pr-4 py-4">
+                    <a href="../index.html" class="flex items-center gap-2">
+                        <div class="w-9 h-9 rounded-full overflow-hidden shadow-xl ring-1 ring-gray-400">
                             <img 
                                 src="../asset/img/logo.png" 
                                 loading="lazy" 
                                 class="w-full h-full object-cover scale-140"
                                 alt="Robo Orion Logo">
                         </div>
-                        <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-black">
-                            <span class="text-black-500 font-exo text-shadow">Robo</span>
+                        <span class="self-center text-xl sm:text-2xl font-bold whitespace-nowrap dark:text-black">
                             <span class="text-blue-500 font-ubuntu text-shadow">Orion</span>
+                            <span class="text-black-500 font-exo text-shadow">Shop</span>
                         </span>
                     </a>
                 </div>
 
-                <!-- Spacer -->
-                <div class="flex-grow hidden md:block"></div>
-                <!-- Desktop Menu -->
-                <ul class="hidden md:flex items-center gap-6">
-                    <li><a href="../index.html" class="pt-1.5 font-dm text-md font-medium text-slate-700 hover:text-blue-600 transition-colors duration-200">Home</a></li>
-                    <li><a href="../service.html" class="pt-1.5 font-dm text-md font-medium text-slate-700 hover:text-blue-600 transition-colors duration-200">Service</a></li>
-                    <li><a href="../project.html" class="pt-1.5 font-dm text-md font-medium text-slate-700 hover:text-blue-600 transition-colors duration-200">Project</a></li>
-                    <li><a href="../product.html" class="pt-1.5 font-dm text-md font-bold text-blue-600">Product</a></li>
-                    <li><a href="../tutorial.html" class="pt-1.5 font-dm text-md font-medium text-slate-700 hover:text-blue-600 transition-colors duration-200">Tutorial</a></li>
-                    <li><a href="../article.html" class="pt-1.5 font-dm text-md font-medium text-slate-700 hover:text-blue-600 transition-colors duration-200">Article</a></li>
-                    <li><a href="../about.html" class="pt-1.5 font-dm text-md font-medium text-slate-700 hover:text-blue-600 transition-colors duration-200">About</a></li>
-                    <li><a href="../contact.html" class="pt-1.5 font-dm text-md font-medium text-slate-700 hover:text-blue-600 transition-colors duration-200">Contact</a></li>   
-                    <!-- Cart Icon -->
-                    <li>
-                        <button onclick="ROCart.openDrawer()" class="relative flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 shadow-sm">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <span>Cart</span>
-                            <span id="nav-cart-count" class="hidden absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full min-w-[18px] h-[18px] flex items-center justify-center px-1">0</span>
-                        </button>
-                    </li>   
+                <!-- Search Bar (always visible) -->
+                <div class="relative flex-grow border border-blue-400 m-0 rounded-lg">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        placeholder="Search products..." 
+                        class="w-full px-4 py-[14px] pl-10 pr-10 border-0 focus:outline-none focus:ring-0 transition bg-transparent text-sm"
+                    >
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    <button 
+                        id="clearSearch" 
+                        class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 hidden transition"
+                        onclick="clearSearch()"
+                    >
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <!-- Center: Nav Links (desktop only) -->
+                <ul class="hidden md:flex items-center gap-1 px-4 py-4 border-r border-gray-200">
+                    <li><a href="../index.html" class="px-3 py-1.5 font-dm text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors duration-200">Home</a></li>
+                    <li><a href="../product.html" class="px-3 py-1.5 font-dm text-sm font-bold text-blue-600 bg-blue-50 rounded-md">Shop</a></li>
+                    <li><a href="https://roboorion.com/contact.html" class="px-3 py-1.5 font-dm text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors duration-200">Contact Us</a></li>
                 </ul>
 
-
-                <!-- Mobile Menu Button -->
-                <div class="relative md:hidden">
-                    <button id="menu-btn" class="flex items-center text-slate-900 focus:outline-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" viewBox="0 0 24 24" 
-                            stroke-width="1.5" stroke="currentColor" 
-                            class="h-7 w-7">
-                        <path stroke-linecap="round" stroke-linejoin="round" 
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
-                        </svg>
+                <!-- Right: Cart + Account (desktop) -->
+                <div class="hidden md:flex items-center gap-3 pl-4 py-4">
+                    <button onclick="ROCart.openDrawer()" class="relative flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 shadow-sm">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Cart</span>
+                        <span id="nav-cart-count" class="hidden absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full min-w-[18px] h-[18px] flex items-center justify-center px-1">0</span>
                     </button>
+                    <a class="flex items-center justify-center w-9 h-9 rounded-lg border border-gray-300 text-slate-600 hover:text-blue-600 hover:border-blue-400 transition-all duration-200">
+                        <i class="fa-regular fa-user text-sm"></i>
+                    </a>
+                </div>
 
-                    <!-- Mobile Dropdown Menu (Right aligned) -->
-                    <div id="mobile-menu" class="absolute right-0 mt-2 hidden w-48 flex-col rounded-lg bg-white/80 backdrop-blur-lg shadow-lg p-2">
-                        <a href="../index.html" class="block px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-200 rounded-md hover:text-blue-600 transition-colors duration-200">Home</a>
-                        <a href="../service.html" class="block px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-200 rounded-md hover:text-blue-600 transition-colors duration-200">Service</a>
-                        <a href="../project.html" class="block px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-200 rounded-md hover:text-blue-600 transition-colors duration-200">Project</a>
-                        <a href="../product.html" class="block px-4 py-2 text-sm font-bold text-blue-600 hover:bg-slate-200 rounded-md">Product</a>
-                        <a href="../tutorial.html" class="block px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-200 rounded-md hover:text-blue-600 transition-colors duration-200">Tutorial</a>
-                        <a href="../article.html" class="block px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-200 rounded-md hover:text-blue-600 transition-colors duration-200">Article</a>
-                        <a href="../about.html" class="block px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-200 rounded-md hover:text-blue-600 transition-colors duration-200">About</a>
-                        <a href="../contact.html" class="block px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-200 rounded-md hover:text-blue-600 transition-colors duration-200">Contact</a>
-                        <button onclick="ROCart.openDrawer()" class="relative w-full flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-md transition-colors duration-200">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            Cart
-                            <span id="nav-cart-count-mobile" class="ml-auto bg-red-500 text-white text-xs font-bold rounded-full min-w-[18px] h-[18px] flex items-center justify-center px-1 hidden">0</span>
+                <!-- Mobile: Hamburger only -->
+                <div class="flex md:hidden items-center pl-3 py-4 flex-shrink-0">
+                    <div class="relative">
+                        <button id="menu-btn" class="flex items-center text-slate-900 focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                fill="none" viewBox="0 0 24 24" 
+                                stroke-width="1.5" stroke="currentColor" 
+                                class="h-7 w-7">
+                                <path stroke-linecap="round" stroke-linejoin="round" 
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                            </svg>
                         </button>
+
+                        <!-- Mobile Dropdown -->
+                        <div id="mobile-menu" class="absolute right-0 mt-2 hidden w-52 flex-col rounded-lg bg-white/90 backdrop-blur-xs shadow-lg p-2">
+                            <a href="../index.html" class="block px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 rounded-md hover:text-blue-600 transition-colors duration-200">Home</a>
+                            <a href="../product.html" class="block px-4 py-2 text-sm font-bold text-blue-600 hover:bg-slate-100 rounded-md">Shop</a>
+                            <a href="https://roboorion.com/contact.html" class="block px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 rounded-md hover:text-blue-600 transition-colors duration-200">Contact Us</a>
+                            <hr class="my-2 border-gray-200">
+                            
+                            <!-- Cart -->
+                            <button onclick="ROCart.openDrawer()" class="relative w-full flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-md transition-colors duration-200">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Cart
+                                <span id="nav-cart-count-mobile" class="ml-auto bg-red-500 text-white text-xs font-bold rounded-full min-w-[18px] h-[18px] flex items-center justify-center px-1 hidden">0</span>
+                            </button>
+                            <!-- Account -->
+                            <a class="mt-1 w-full flex items-center gap-2 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 rounded-md hover:text-blue-600 transition-colors duration-200">
+                                <i class="fa-regular fa-user"></i>
+                                Account
+                            </a>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -924,9 +943,9 @@
                     <div class="">
                         <h4 class="font-semibold text-white mb-3">Platform</h4>
                         <ul class="space-y-2">
-                            <li><a href="../service.html" target="_blank" class="hover:text-blue-400">Services</a></li>
-                            <li><a href="../product.html" target="_blank" class="hover:text-blue-400">orion Shop</a></li>
-                            <li><a href="../project.html" target="_blank" class="hover:text-blue-400">Orion Projects</a></li>
+                            <li><a href="https://roboorion.com/service.html" target="_blank" class="hover:text-blue-400">Services</a></li>
+                            <li><a href="../index.html" class="hover:text-blue-400">orion Shop</a></li>
+                            <li><a href="https://roboorion.com/project.html" target="_blank" class="hover:text-blue-400">Orion Projects</a></li>
                         </ul>
                     </div>
 
@@ -934,9 +953,9 @@
                     <div class="">
                         <h4 class="font-semibold text-white mb-3">Solutions</h4>
                         <ul class="space-y-2">
-                            <li><a href="../smart-home" target="_blank" class="hover:text-blue-400">Smart Home</a></li>
-                            <li><a href="../smart-office" target="_blank" class="hover:text-blue-400">Smart Office</a></li>
-                            <li><a href="../iot-project" target="_blank" class="hover:text-blue-400">Smart IoT Projects</a></li>
+                            <li><a href="#" target="_blank" class="hover:text-blue-400">Smart Home</a></li>
+                            <li><a href="#" target="_blank" class="hover:text-blue-400">Smart Office</a></li>
+                            <li><a href="#" target="_blank" class="hover:text-blue-400">Smart IoT Projects</a></li>
                         </ul>
                     </div>
 
@@ -944,10 +963,10 @@
                     <div class="">
                         <h4 class="font-semibold text-white mb-3">Support</h4>
                         <ul class="space-y-2">
-                            <li><a href="../contact.html" target="_blank" class="hover:text-blue-400">Help Center</a></li>
-                            <li><a href="../contact.html" target="_blank" class="hover:text-blue-400">Online Support</a></li>
-                            <li><a href="../contact.html" target="_blank" class="hover:text-blue-400">Technical Support</a></li>
-                            <li><a href="../contact.html" target="_blank" class="hover:text-blue-400">Contact Us</a></li>
+                            <li><a href="https://roboorion.com/contact.html" target="_blank" class="hover:text-blue-400">Help Center</a></li>
+                            <li><a href="https://roboorion.com/contact.html" target="_blank" class="hover:text-blue-400">Online Support</a></li>
+                            <li><a href="https://roboorion.com/contact.html" target="_blank" class="hover:text-blue-400">Technical Support</a></li>
+                            <li><a href="https://roboorion.com/contact.html" target="_blank" class="hover:text-blue-400">Contact Us</a></li>
                         </ul>
                     </div>
 
@@ -955,11 +974,11 @@
                     <div class="">
                         <h4 class=" font-semibold text-white mb-3">Company</h4>
                         <ul class="space-y-2">
-                            <li><a href="../about.html" target="_blank" class="hover:text-blue-400">About Us</a></li>
-                            <li><a href="../news.html" target="_blank" class="hover:text-blue-400">News</a></li>
-                            <li><a href="../tutorial.html" target="_blank" class="hover:text-blue-400">Tutorial</a></li>
-                            <li><a href="../article.html" target="_blank" class="hover:text-blue-400">Article</a></li>
-                            <li><a href="../contact.html" target="_blank" class="hover:text-blue-400">Partner with Us</a></li>
+                            <li><a href="https://roboorion.com/about.html" target="_blank" class="hover:text-blue-400">About Us</a></li>
+                            <li><a href="https://roboorion.com/news.html" target="_blank" class="hover:text-blue-400">News</a></li>
+                            <li><a href="https://roboorion.com/tutorial.html" target="_blank" class="hover:text-blue-400">Tutorial</a></li>
+                            <li><a href="https://roboorion.com/article.html" target="_blank" class="hover:text-blue-400">Article</a></li>
+                            <li><a href="https://roboorion.com/contact.html" target="_blank" class="hover:text-blue-400">Partner with Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -970,7 +989,7 @@
 
                         <!-- Hotline -->
                         <div class="text-start">
-                            <a href="../contact.html" class="text-xl font-semibold hover:text-blue-400">Contact</a>
+                            <a href="https://roboorion.com/contact.html" class="text-xl font-semibold hover:text-blue-400">Contact</a>
                         </div>
 
                         <!-- Cooperation Contacts -->
@@ -1009,7 +1028,7 @@
 
                     <!-- Logo + Brand -->
                     <div class="flex items-center gap-3">
-                        <a href="../index.html" class="flex items-center gap-2">
+                        <a href="https://roboorion.com/index.html" target="_blank" class="flex items-center gap-2">
                             <!-- Logo -->
                             <div class="w-6 h-6 rounded-full overflow-hidden shadow-neon ring-2 ring-gray-500">
                                 <img 
@@ -1063,7 +1082,7 @@
 
                     <!-- Right Side: Copyright -->
                     <div class="mt-2 sm:mt-0">
-                        <p class="text-gray-400">&copy; 2025 Robo Orion. All rights reserved.</p>
+                        <p class="text-gray-400">&copy; 2026 Robo Orion. All rights reserved.</p>
                     </div>
                 </div>
             </div>
