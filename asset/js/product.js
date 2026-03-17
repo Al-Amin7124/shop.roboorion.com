@@ -457,7 +457,7 @@ function calcDiscountBadges() {
     document.querySelectorAll('.product-card').forEach(function(card) {
         const badge       = card.querySelector('.productDiscount');
         const offerEl     = card.querySelector('.offer-price');
-        const originalEl  = card.querySelector('.productPrice .line-through');
+        const originalEl = card.querySelector('.originalPrice');
 
         if (!badge || !offerEl || !originalEl) return;
 
