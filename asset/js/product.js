@@ -476,3 +476,15 @@ function calcDiscountBadges() {
 }
 
 document.addEventListener('DOMContentLoaded', calcDiscountBadges);
+
+
+document.querySelectorAll('.faq-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        var answer = this.nextElementSibling;
+        var icon = this.querySelector('.faq-icon');
+        var isOpen = !answer.classList.contains('hidden');
+        answer.classList.toggle('hidden', isOpen);
+        icon.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
+        this.setAttribute('aria-expanded', String(!isOpen));
+    });
+});
