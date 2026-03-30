@@ -148,6 +148,10 @@ var activeCategory = 'all';
 var activePriceMin = 0;
 var activePriceMax = 999999;
 
+// ── Pagination State (declared before applyFilters) ───────
+var currentPage  = 1;
+var itemsPerPage = 20;
+
 // ── Category Filter ───────────────────────────────────────
 function filterCategory(cat) {
     activeCategory = cat;
@@ -206,7 +210,6 @@ function filterPrice(min, max) {
 // ── Apply Filters ─────────────────────────────────────────
 function applyFilters() {
     var cards = document.querySelectorAll('#product-grid .product-card');
-    var visible = 0;
 
     cards.forEach(function(card) {
         var cardCat  = (card.getAttribute('data-category') || '').toLowerCase().trim();
@@ -218,19 +221,111 @@ function applyFilters() {
         var priceMatch = price >= activePriceMin && price <= activePriceMax;
 
         if (catMatch && priceMatch) {
-            card.style.display = '';
-            visible++;
+            delete card.dataset.pgHidden;
         } else {
-            card.style.display = 'none';
+            card.dataset.pgHidden = '1';
         }
     });
 
+    currentPage = 1;
+    renderPage(1);
+}
+
+// ── Pagination ────────────────────────────────────────────
+function renderPage(page) {
+    var cards      = Array.from(document.querySelectorAll('#product-grid .product-card'));
+    var visible    = cards.filter(function(c) { return !c.dataset.pgHidden; });
+    var total      = visible.length;
+    var totalPages = Math.max(1, Math.ceil(total / itemsPerPage));
+
+    currentPage = Math.max(1, Math.min(page, totalPages));
+
+    var start = (currentPage - 1) * itemsPerPage;
+    var end   = start + itemsPerPage;
+
+    // Hide all first
+    cards.forEach(function(card) {
+        card.style.display = 'none';
+    });
+
+    // Show only current page slice of visible cards
+    visible.forEach(function(card, idx) {
+        card.style.display = (idx >= start && idx < end) ? '' : 'none';
+    });
+
     var noResults = document.getElementById('no-results');
-    if (noResults) noResults.classList.toggle('hidden', visible > 0);
+    if (noResults) noResults.classList.toggle('hidden', total > 0);
+
+    renderPaginationControls(totalPages, total);
+}
+
+function renderPaginationControls(totalPages, totalVisible) {
+    var wrap      = document.getElementById('pagination-wrap');
+    var numbersEl = document.getElementById('pg-numbers');
+    var prevBtn   = document.getElementById('pg-prev');
+    var nextBtn   = document.getElementById('pg-next');
+
+    if (!wrap || !numbersEl) return;
+
+    if (totalPages <= 1) {
+        wrap.classList.add('hidden');
+        return;
+    }
+
+    wrap.classList.remove('hidden');
+    prevBtn.disabled = currentPage === 1;
+    nextBtn.disabled = currentPage === totalPages;
+
+    // Build page set: always 1, last, current, ±2 neighbors
+    var pages = new Set();
+    pages.add(1);
+    pages.add(totalPages);
+    pages.add(currentPage);
+    for (var i = currentPage - 2; i <= currentPage + 2; i++) {
+        if (i >= 1 && i <= totalPages) pages.add(i);
+    }
+
+    var sorted = Array.from(pages).sort(function(a, b) { return a - b; });
+
+    numbersEl.innerHTML = '';
+    var prev = null;
+
+    sorted.forEach(function(pg) {
+        if (prev !== null && pg - prev > 1) {
+            var dots = document.createElement('span');
+            dots.textContent = '…';
+            dots.className = 'px-2 py-2 text-sm text-gray-400 select-none';
+            numbersEl.appendChild(dots);
+        }
+
+        var btn = document.createElement('button');
+        btn.textContent = pg;
+        btn.onclick = (function(p) { return function() { changePage(p); }; })(pg);
+
+        if (pg === currentPage) {
+            btn.className = 'w-9 h-9 text-sm font-bold text-white bg-blue-600 border border-blue-600 rounded-lg transition-all duration-200';
+        } else {
+            btn.className = 'w-9 h-9 text-sm font-medium text-slate-600 bg-white border border-gray-300 rounded-lg hover:bg-blue-50 hover:text-blue-600 hover:border-blue-300 transition-all duration-200';
+        }
+
+        numbersEl.appendChild(btn);
+        prev = pg;
+    });
+}
+
+function changePage(page) {
+    renderPage(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function initPagination() {
+    document.querySelectorAll('#product-grid .product-card').forEach(function(card) {
+        delete card.dataset.pgHidden;
+    });
+    renderPage(1);
 }
 
 // ── Coupon Persistence ────────────────────────────────────
-// Coupon is saved to localStorage so it persists across all pages
 const COUPON_STORAGE_KEY = 'robo_orion_coupon';
 
 function saveCouponToStorage(coupon) {
@@ -250,26 +345,13 @@ function loadCouponFromStorage() {
     }
 }
 
-// Restore coupon UI on page load after cart.js has injected the drawer
-document.addEventListener('DOMContentLoaded', function () {
-    var saved = loadCouponFromStorage();
-    if (!saved) return;
-
-    // cart.js injects drawer HTML synchronously, but we use a small
-    // timeout to be safe in case any async scripts delay injection
-    setTimeout(function () {
-        var input = document.getElementById('ro-coupon-input');
-        var msgEl = document.getElementById('ro-coupon-msg');
-        if (input) input.value = saved.code;
-        if (msgEl) {
-            msgEl.className = 'ro-coupon-msg success';
-            msgEl.textContent = '✓ Coupon applied — ' + saved.label + '!';
-        }
-    }, 200);
-});
-
 // ── Search ────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', function () {
+
+    // Init pagination on shop page
+    if (document.getElementById('product-grid')) {
+        initPagination();
+    }
 
     const searchInput  = document.getElementById('searchInput');
     const clearBtn     = document.getElementById('clearSearch');
@@ -279,20 +361,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const hasGrid = !!document.getElementById('product-grid');
 
-    function performSearch() {
-    if (!hasGrid) return;
-
-    const searchTerm = searchInput.value.toLowerCase().trim();
-    const cards = Array.from(document.querySelectorAll('#product-grid .product-card'));
-
-    if (!searchTerm) {
-        cards.forEach(card => card.style.display = '');
-        const label = document.getElementById('search-label');
-        if (label) { label.textContent = ''; label.classList.add('hidden'); }
-        if (resultsCount) resultsCount.textContent = '';
-        return;
-    }
-
     function normalize(t) {
         return t.replace(/[\s\-_.,/#!$%^&*;:{}=`~()]/g, '').toLowerCase();
     }
@@ -301,7 +369,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const name  = card.querySelector('.productName')?.textContent.toLowerCase()  || '';
         const code  = card.querySelector('.productCode')?.textContent.toLowerCase()  || '';
         const brand = card.querySelector('.productBrand')?.textContent.toLowerCase() || '';
-        const price = card.querySelector('.productPrice')?.textContent.toLowerCase() || '';
         const cat   = (card.getAttribute('data-category') || '').toLowerCase();
 
         const fullText  = name + ' ' + code + ' ' + brand + ' ' + cat;
@@ -311,15 +378,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let score = 0;
 
-        // Exact full match — highest priority
         if (name.includes(searchTerm))  score += 100;
         if (code.includes(searchTerm))  score += 80;
         if (brand.includes(searchTerm)) score += 60;
-
-        // Normalized exact match (ignores punctuation/spaces)
         if (normText.includes(normQuery)) score += 50;
 
-        // Each word match
         words.forEach(function(word) {
             if (name.includes(word))    score += 30;
             if (code.includes(word))    score += 25;
@@ -328,24 +391,17 @@ document.addEventListener('DOMContentLoaded', function () {
             if (normText.includes(normalize(word))) score += 10;
         });
 
-        // Fuzzy — partial character match for typo tolerance
-        // Fuzzy — sliding window substring match for typo tolerance
-words.forEach(function(word) {
-    if (word.length < 4) return;
-    const targets = [name, code, brand];
-    targets.forEach(function(target) {
-        // Check every 3-char chunk of the word against the target
-        for (var i = 0; i <= word.length - 3; i++) {
-            var chunk = word.substring(i, i + 3);
-            if (target.includes(chunk)) {
-                score += 5;
-                break; // only count once per word per target
-            }
-        }
-    });
-});
+        words.forEach(function(word) {
+            if (word.length < 4) return;
+            const targets = [name, code, brand];
+            targets.forEach(function(target) {
+                for (var i = 0; i <= word.length - 3; i++) {
+                    var chunk = word.substring(i, i + 3);
+                    if (target.includes(chunk)) { score += 5; break; }
+                }
+            });
+        });
 
-        // Starts-with bonus
         words.forEach(function(word) {
             if (name.startsWith(word))  score += 20;
             if (code.startsWith(word))  score += 15;
@@ -354,50 +410,68 @@ words.forEach(function(word) {
         return score;
     }
 
-    // Score all cards
-    const scored = cards.map(function(card) {
-        return { card, score: scoreCard(card) };
-    });
+    var searchTerm = '';
 
-    // Sort by score descending
-    scored.sort(function(a, b) { return b.score - a.score; });
+    function performSearch() {
+        if (!hasGrid) return;
 
-    // Show/hide and reorder in DOM
-    // Minimum score threshold to show a result
-const MIN_SCORE = 10;
+        searchTerm = searchInput.value.toLowerCase().trim();
+        const grid  = document.getElementById('product-grid');
+        const cards = Array.from(document.querySelectorAll('#product-grid .product-card'));
 
-const grid  = document.getElementById('product-grid');
-let visible = 0;
+        if (!searchTerm) {
+            // Clear search — reset pgHidden and re-paginate
+            cards.forEach(function(card) { delete card.dataset.pgHidden; });
+            currentPage = 1;
+            renderPage(1);
+            const label = document.getElementById('search-label');
+            if (label) { label.textContent = ''; label.classList.add('hidden'); }
+            if (resultsCount) resultsCount.textContent = '';
+            return;
+        }
 
-scored.forEach(function(item) {
-    if (item.score >= MIN_SCORE) {
-        item.card.style.display = '';
-        grid.appendChild(item.card);
-        visible++;
-    } else {
-        item.card.style.display = 'none';
+        const MIN_SCORE = 10;
+
+        // Score and sort
+        const scored = cards.map(function(card) {
+            return { card: card, score: scoreCard(card) };
+        });
+        scored.sort(function(a, b) { return b.score - a.score; });
+
+        // Reorder cards in DOM by score, mark pgHidden for low scorers
+        var visible = 0;
+        scored.forEach(function(item) {
+            if (item.score >= MIN_SCORE) {
+                delete item.card.dataset.pgHidden;
+                grid.appendChild(item.card);
+                visible++;
+            } else {
+                item.card.dataset.pgHidden = '1';
+            }
+        });
+
+        // Reset to page 1 and paginate
+        currentPage = 1;
+        renderPage(1);
+
+        const label = document.getElementById('search-label');
+        if (label) {
+            label.textContent = visible > 0
+                ? `Showing ${visible} result${visible !== 1 ? 's' : ''} for "${searchTerm}"`
+                : `No results found for "${searchTerm}"`;
+            label.classList.remove('hidden');
+        }
+
+        if (resultsCount) {
+            resultsCount.textContent = visible > 0
+                ? `${visible} product${visible !== 1 ? 's' : ''} found`
+                : '';
+        }
+
+        if (searchTerm && typeof activeCategory !== 'undefined') {
+            activeCategory = 'all';
+        }
     }
-});
-
-    // Results label
-    const label = document.getElementById('search-label');
-    if (label) {
-        label.textContent = visible > 0
-            ? `Showing ${visible} result${visible !== 1 ? 's' : ''} for "${searchTerm}"`
-            : `No results found for "${searchTerm}"`;
-        label.classList.toggle('hidden', false);
-    }
-
-    if (resultsCount) {
-        resultsCount.textContent = visible > 0
-            ? `${visible} product${visible !== 1 ? 's' : ''} found`
-            : '';
-    }
-
-    if (searchTerm && typeof activeCategory !== 'undefined') {
-        activeCategory = 'all';
-    }
-}
 
     function redirectToSearch() {
         const q = searchInput.value.trim();
@@ -412,9 +486,11 @@ scored.forEach(function(item) {
         clearBtn?.classList.add('hidden');
 
         if (hasGrid) {
-            document.querySelectorAll('#product-grid .product-card').forEach(card => {
-                card.style.display = '';
+            document.querySelectorAll('#product-grid .product-card').forEach(function(card) {
+                delete card.dataset.pgHidden;
             });
+            currentPage = 1;
+            renderPage(1);
             const label = document.getElementById('search-label');
             if (label) { label.textContent = ''; label.classList.add('hidden'); }
             if (resultsCount) resultsCount.textContent = '';
@@ -426,12 +502,12 @@ scored.forEach(function(item) {
         searchInput.focus();
     };
 
-    searchInput.addEventListener('input', () => {
+    searchInput.addEventListener('input', function() {
         clearBtn?.classList.toggle('hidden', searchInput.value === '');
         if (hasGrid) performSearch();
     });
 
-    searchInput.addEventListener('keydown', e => {
+    searchInput.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') window.clearSearch();
         if (e.key === 'Enter') {
             if (hasGrid) performSearch();
@@ -455,8 +531,8 @@ scored.forEach(function(item) {
 // ── Auto-calculate discount badges ───────────────────────
 function calcDiscountBadges() {
     document.querySelectorAll('.product-card').forEach(function(card) {
-        const badge       = card.querySelector('.productDiscount');
-        const offerEl     = card.querySelector('.offer-price');
+        const badge      = card.querySelector('.productDiscount');
+        const offerEl    = card.querySelector('.offer-price');
         const originalEl = card.querySelector('.originalPrice');
 
         if (!badge || !offerEl || !originalEl) return;
@@ -477,11 +553,11 @@ function calcDiscountBadges() {
 
 document.addEventListener('DOMContentLoaded', calcDiscountBadges);
 
-
+// ── FAQ Toggle ────────────────────────────────────────────
 document.querySelectorAll('.faq-toggle').forEach(function(btn) {
     btn.addEventListener('click', function() {
         var answer = this.nextElementSibling;
-        var icon = this.querySelector('.faq-icon');
+        var icon   = this.querySelector('.faq-icon');
         var isOpen = !answer.classList.contains('hidden');
         answer.classList.toggle('hidden', isOpen);
         icon.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
