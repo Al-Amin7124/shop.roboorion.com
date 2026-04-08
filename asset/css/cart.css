@@ -427,3 +427,27 @@
     margin-bottom: 0.3rem;
     padding: 0 0.25rem;
 }
+
+/* ── Checkout Button ──────────────────────────────────── */
+.ro-checkout-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: #2563eb;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    transition: background 0.2s;
+}
+.ro-checkout-btn:hover {
+    background: #1d4ed8;
+}
