@@ -1,6 +1,7 @@
 /* ============================================================
    Robo Orion – Universal Cart System (cart.js)
    Handles BOTH the Cart Drawer and the Checkout Page
+   and Individual Product Pages
    ============================================================ */
 
 (function () {
@@ -27,7 +28,6 @@
 
     /* ── HELPERS ─────────────────────────────────────────── */
     
-    // AGGRESSIVE ELEMENT SEARCH: Looks for 'co-id' and 'ro-id'
     function getEl(id) {
         return document.getElementById('co-' + id) || document.getElementById('ro-' + id) || document.getElementById(id);
     }
@@ -75,64 +75,40 @@
 
     function calcDiscount(total) {
         if (!APPLIED_COUPON) return 0;
-
-        if (isCouponExpired(APPLIED_COUPON.expiry)) {
-            removeCoupon();
-            return 0;
-        }
-
-        if (APPLIED_COUPON.minOrder && total < APPLIED_COUPON.minOrder) {
-            removeCoupon();
-            return 0;
-        }
-
-        if (APPLIED_COUPON.type === 'percent') {
-            return Math.round(total * APPLIED_COUPON.discount / 100);
-        } else if (APPLIED_COUPON.type === 'flat') {
-            return Math.min(APPLIED_COUPON.discount, total);
-        }
+        if (isCouponExpired(APPLIED_COUPON.expiry)) { removeCoupon(); return 0; }
+        if (APPLIED_COUPON.minOrder && total < APPLIED_COUPON.minOrder) { removeCoupon(); return 0; }
+        if (APPLIED_COUPON.type === 'percent') return Math.round(total * APPLIED_COUPON.discount / 100);
+        else if (APPLIED_COUPON.type === 'flat') return Math.min(APPLIED_COUPON.discount, total);
         return 0;
     }
 
     function applyCoupon() {
         const input = getEl('coupon-input');
         const msgEl = getEl('coupon-msg');
-        if (!input) {
-            console.error("Coupon input field not found!");
-            return;
-        }
-
+        if (!input) return;
         const code = input.value.trim().toUpperCase();
         const coupon = COUPONS[code];
-
         if (msgEl) msgEl.className = isCheckoutPage ? 'co-coupon-msg' : 'ro-coupon-msg';
 
         if (!coupon) {
             removeCoupon();
             if (msgEl) { msgEl.classList.add('error'); msgEl.textContent = '✕ Invalid coupon code.'; }
-            updateUI();
-            return;
+            updateUI(); return;
         }
-
         if (isCouponExpired(coupon.expiry)) {
             removeCoupon();
             if (msgEl) { msgEl.classList.add('error'); msgEl.textContent = `✕ This coupon expired on ${coupon.expiry}.`; }
-            updateUI();
-            return;
+            updateUI(); return;
         }
-
         const total = getCart().reduce((s, i) => {
             const p = findProduct(i.id);
             return s + (p ? p.price * i.qty : 0);
         }, 0);
-
         if (coupon.minOrder && total < coupon.minOrder) {
             removeCoupon();
             if (msgEl) { msgEl.classList.add('error'); msgEl.textContent = `✕ Min order BDT ${coupon.minOrder} required.`; }
-            updateUI();
-            return;
+            updateUI(); return;
         }
-
         APPLIED_COUPON = { code, ...coupon };
         localStorage.setItem(COUPON_KEY, JSON.stringify(APPLIED_COUPON));
         if (msgEl) { msgEl.classList.add('success'); msgEl.textContent = `✓ Coupon applied — ${coupon.label}!`; }
@@ -145,24 +121,26 @@
         const input = getEl('coupon-input');
         const msgEl = getEl('coupon-msg');
         if (input) input.value = '';
-        if (msgEl) { 
-            msgEl.className = isCheckoutPage ? 'co-coupon-msg' : 'ro-coupon-msg'; 
-            msgEl.textContent = ''; 
-        }
+        if (msgEl) { msgEl.className = isCheckoutPage ? 'co-coupon-msg' : 'ro-coupon-msg'; msgEl.textContent = ''; }
         updateUI();
     }
 
     /* ── CART ACTIONS ────────────────────────────────────── */
 
-    function addItem(id) {
+    // MODIFIED: Now accepts optional quantity
+    function addItem(id, qty = 1) {
         const cart = getCart();
         const existing = cart.find(i => i.id === id);
-        if (existing) existing.qty += 1; else cart.push({ id, qty: 1 });
+        if (existing) {
+            existing.qty += qty;
+        } else {
+            cart.push({ id, qty: qty });
+        }
         saveCart(cart);
         updateUI();
         bumpBadge();
         const p = findProduct(id);
-        if (p) showToast(`✅ ${p.name.substring(0, 35)}... added!`);
+        if (p) showToast(`✅ ${qty}x ${p.name.substring(0, 30)}... added!`);
         highlightBtn(id);
     }
 
@@ -211,26 +189,21 @@
         const fabCount = getEl('fab-count');
         if (fab) fab.classList.toggle('hidden', totalQty === 0);
         if (fabCount) fabCount.textContent = totalQty;
-
         ['nav-cart-count', 'nav-cart-count-mobile'].forEach(id => {
             const el = document.getElementById(id);
             if (el) { el.textContent = totalQty; el.classList.toggle('hidden', totalQty === 0); }
         });
-
         const badge = getEl('header-badge');
         if (badge) badge.textContent = `${totalQty} item${totalQty !== 1 ? 's' : ''}`;
-
         const itemsEl = getEl('cart-items');
         const footerEl = getEl('cart-footer');
         if (!itemsEl) return;
-
         if (cart.length === 0) {
             itemsEl.innerHTML = `<div class="ro-empty"><p>Your cart is empty</p></div>`;
             if (footerEl) footerEl.style.display = 'none';
             return;
         }
         if (footerEl) footerEl.style.display = 'block';
-
         itemsEl.innerHTML = cart.map(item => {
             const p = findProduct(item.id);
             if (!p) return '';
@@ -247,11 +220,9 @@
                     <button class="ro-remove-btn" onclick="ROCart.removeItem('${p.id}')">✕ remove</button>
                 </div></div>`;
         }).join('');
-
         const discount = calcDiscount(total);
         const totalEl = getEl('total-price');
         if (totalEl) totalEl.textContent = `BDT ${total - discount}`;
-        
         let dRow = document.getElementById('ro-discount-row');
         if (discount > 0) {
             if (!dRow) {
@@ -269,10 +240,8 @@
         const badge = getEl('item-badge');
         const waBtn = getEl('wa-btn');
         if (!itemsEl) return;
-
         if (badge) badge.textContent = `${totalQty} item${totalQty !== 1 ? 's' : ''}`;
         if (waBtn) waBtn.disabled = cart.length === 0;
-
         if (cart.length === 0) {
             itemsEl.innerHTML = `<div class="co-empty"><p>Your cart is empty</p></div>`;
         } else {
@@ -293,17 +262,14 @@
                     </div></div>`;
             }).join('');
         }
-
         const discount = calcDiscount(total);
         const delivery = getDeliveryCharge();
-        
         const subtotalEl = getEl('subtotal');
         const deliveryEl = getEl('delivery-val');
         const totalEl = getEl('total');
         if (subtotalEl) subtotalEl.textContent = `BDT ${total}`;
         if (deliveryEl) deliveryEl.textContent = `BDT ${delivery}`;
         if (totalEl) totalEl.textContent = `BDT ${total - discount + delivery}`;
-
         const dRow = getEl('discount-row');
         if (dRow) {
             dRow.style.display = (discount > 0) ? 'flex' : 'none';
@@ -314,6 +280,70 @@
                 if (vEl) vEl.textContent = `- BDT ${discount}`;
             }
         }
+    }
+
+    /* ── PRODUCT SCRAPING & SETUP ──────────────────────────────── */
+
+    function setupIndividualPage() {
+        // This handles the individual product detail page logic
+        const mainBtn = document.getElementById('main-add-to-cart');
+        if (!mainBtn) return;
+
+        // 1. Scrape the main product data from the page
+        const nameEl = document.querySelector('.productName');
+        const codeEl = document.querySelector('.productCode');
+        const priceEl = document.querySelector('.productPrice .offer-price');
+        const imgEl = document.getElementById('mainImage');
+
+        if (!nameEl || !codeEl) return;
+
+        const product = {
+            id: codeEl.textContent.trim(),
+            name: nameEl.textContent.trim(),
+            code: codeEl.textContent.trim(),
+            price: parseInt(priceEl?.textContent.replace(/[^0-9]/g, '') || '0', 10),
+            img: imgEl ? imgEl.getAttribute('src') : '',
+        };
+
+        // Register the product so findProduct() works
+        PRODUCTS.push(product);
+        const saved = JSON.parse(localStorage.getItem(PROD_KEY) || '{}');
+        saved[product.id] = product;
+        localStorage.setItem(PROD_KEY, JSON.stringify(saved));
+
+        // 2. Handle the click event
+        mainBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const qtyInput = document.getElementById('main-product-qty');
+            const qty = qtyInput ? parseInt(qtyInput.value) || 1 : 1;
+            ROCart.addItem(product.id, qty);
+        });
+    }
+
+    function scrapeShopProducts() {
+        const saved = JSON.parse(localStorage.getItem(PROD_KEY) || '{}');
+        const cards = document.querySelectorAll('.product-card');
+        const products = [];
+        cards.forEach((card, idx) => {
+            const nameEl = card.querySelector('.productName');
+            const codeEl = card.querySelector('.productCode');
+            const priceEl = card.querySelector('.productPrice .offer-price');
+            if (!nameEl) return;
+            const product = {
+                id: codeEl ? codeEl.textContent.trim() : `p-${idx}`,
+                name: nameEl.textContent.trim(),
+                code: codeEl ? codeEl.textContent.trim() : '',
+                price: parseInt(priceEl?.textContent.replace(/[^0-9]/g, '') || '0', 10),
+                img: card.querySelector('img')?.getAttribute('src') || '',
+            };
+            products.push(product);
+            saved[product.id] = product;
+            const addBtn = card.querySelector('.add-to-cart');
+            if (addBtn) addBtn.addEventListener('click', (e) => { e.preventDefault(); ROCart.addItem(product.id, 1); });
+        });
+        localStorage.setItem(PROD_KEY, JSON.stringify(saved));
+        Object.values(saved).forEach(p => { if (!products.find(x => x.id === p.id)) products.push(p); });
+        return products;
     }
 
     /* ── WHATSAPP & MISC ────────────────────────────────── */
@@ -386,32 +416,6 @@
         });
     }
 
-    function scrapeProducts() {
-        const saved = JSON.parse(localStorage.getItem(PROD_KEY) || '{}');
-        const cards = document.querySelectorAll('.product-card');
-        const products = [];
-        cards.forEach((card, idx) => {
-            const nameEl = card.querySelector('.productName');
-            const codeEl = card.querySelector('.productCode');
-            const priceEl = card.querySelector('.productPrice .offer-price');
-            if (!nameEl) return;
-            const product = {
-                id: codeEl ? codeEl.textContent.trim() : `p-${idx}`,
-                name: nameEl.textContent.trim(),
-                code: codeEl ? codeEl.textContent.trim() : '',
-                price: parseInt(priceEl?.textContent.replace(/[^0-9]/g, '') || '0', 10),
-                img: card.querySelector('img')?.getAttribute('src') || '',
-            };
-            products.push(product);
-            saved[product.id] = product;
-            const addBtn = card.querySelector('.add-to-cart');
-            if (addBtn) addBtn.addEventListener('click', (e) => { e.preventDefault(); ROCart.addItem(product.id); });
-        });
-        localStorage.setItem(PROD_KEY, JSON.stringify(saved));
-        Object.values(saved).forEach(p => { if (!products.find(x => x.id === p.id)) products.push(p); });
-        return products;
-    }
-
     /* ── INIT ────────────────────────────────────────────── */
 
     function init() {
@@ -453,7 +457,10 @@
             `);
         }
 
-        PRODUCTS = scrapeProducts();
+        // HANDLE BOTH Shop Page and Individual Page
+        PRODUCTS = scrapeShopProducts();
+        setupIndividualPage();
+        
         updateUI();
         
         const inside = getEl('delivery-inside');
@@ -479,7 +486,7 @@
         orderWhatsApp, applyCoupon, removeCoupon 
     };
 
-    // BRIDGE: This allows old function names (coApplyCoupon) to work without changing HTML
+    // BRIDGE: Supports old function names in HTML
     window.coApplyCoupon = function() { ROCart.applyCoupon(); };
     window.coOrderWhatsApp = function() { ROCart.orderWhatsApp(); };
     window.changeQty = function(id, delta) { ROCart.changeQty(id, delta); };
