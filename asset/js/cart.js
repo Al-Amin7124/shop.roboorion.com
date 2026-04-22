@@ -362,7 +362,7 @@
         });
         const discount = calcDiscount(total);
         const delivery = getDeliveryCharge();
-        const message = `🛒 *Order from ${STORE_NAME}*\n\n${lines.join('\n\n')}\n\n─────────────────\n${APPLIED_COUPON ? `🎟 *Coupon: ${APPLIED_COUPON.code}* - BDT ${discount}\n` : ''}🛵 *Delivery: BDT ${delivery}*\n💰 *Total: BDT ${total - discount + delivery}*\n─────────────────\nPlease confirm! 🙏`;
+        const message = `🛒 *Order from ${STORE_NAME}*\n\n${lines.join('\n\n')}\n\n─────────────────\n${APPLIED_COUPON ? `🎟 *Coupon: ${APPLIED_COUPON.code}* - BDT ${discount}\n` : ''}🛵 *Delivery: BDT ${delivery}*\n💰 *Total: BDT ${total - discount + delivery}*\n─────────────────\nPlease confirm! `;
         window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`, '_blank');
     }
 
