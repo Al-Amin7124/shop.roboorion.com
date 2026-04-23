@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+# Disallow any shop-specific private folders (e.g., checkout, account, admin)
+Disallow: /admin/
+Disallow: /checkout/
+Disallow: /my-account/
+
+Sitemap: https://shop.roboorion.com/sitemap.xml
