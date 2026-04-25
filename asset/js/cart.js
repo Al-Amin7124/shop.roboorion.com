@@ -63,10 +63,21 @@
     }
 
     function findProduct(id) {
-        const inMemory = PRODUCTS.find(p => p.id === id);
-        if (inMemory) return { ...inMemory, img: fixImagePath(inMemory.img) };
-        
         const saved = JSON.parse(localStorage.getItem(PROD_KEY) || '{}');
+        const inMemory = PRODUCTS.find(p => p.id === id);
+
+        // If localStorage has a product-page price, it is always authoritative —
+        // use it even if the in-memory cache (from the shop listing) has a different value.
+        if (saved[id] && saved[id].priceSource === 'product-page') {
+            const product = { ...saved[id], img: fixImagePath(saved[id].img) };
+            // Keep in-memory cache in sync with the authoritative price
+            const idx = PRODUCTS.findIndex(p => p.id === id);
+            if (idx !== -1) PRODUCTS[idx] = product; else PRODUCTS.push(product);
+            return product;
+        }
+
+        if (inMemory) return { ...inMemory, img: fixImagePath(inMemory.img) };
+
         if (saved[id]) {
             const product = { ...saved[id], img: fixImagePath(saved[id].img) };
             PRODUCTS.push(product);
