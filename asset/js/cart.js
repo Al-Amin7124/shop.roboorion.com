@@ -307,6 +307,7 @@
             code: codeEl.textContent.trim(),
             price: parseFloat(priceEl?.textContent.replace(/[^0-9.]/g, '') || '0'),
             img: imgEl ? imgEl.getAttribute('src') : '',
+            priceSource: 'product-page',
         };
 
         // Register the product so findProduct() works
@@ -333,12 +334,18 @@
             const codeEl = card.querySelector('.productCode');
             const priceEl = card.querySelector('.productPrice .offer-price');
             if (!nameEl) return;
+            const productId = codeEl ? codeEl.textContent.trim() : `p-${idx}`;
+            const shopPrice = parseFloat(priceEl?.textContent.replace(/[^0-9.]/g, '') || '0');
+            // If this product was already saved from its own product page, keep that price as authoritative
+            const existingEntry = saved[productId];
+            const finalPrice = (existingEntry && existingEntry.priceSource === 'product-page') ? existingEntry.price : shopPrice;
             const product = {
-                id: codeEl ? codeEl.textContent.trim() : `p-${idx}`,
+                id: productId,
                 name: nameEl.textContent.trim(),
                 code: codeEl ? codeEl.textContent.trim() : '',
-                price: parseFloat(priceEl?.textContent.replace(/[^0-9.]/g, '') || '0'),
+                price: finalPrice,
                 img: card.querySelector('img')?.getAttribute('src') || '',
+                priceSource: (existingEntry && existingEntry.priceSource === 'product-page') ? 'product-page' : 'shop-page',
             };
             products.push(product);
             saved[product.id] = product;
