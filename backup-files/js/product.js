@@ -537,8 +537,8 @@ function calcDiscountBadges() {
 
         if (!badge || !offerEl || !originalEl) return;
 
-        const offer    = parseFloat(offerEl.textContent.replace(/[^0-9.]/g, ''));
-        const original = parseFloat(originalEl.textContent.replace(/[^0-9.]/g, ''));
+        const offer    = parseInt(offerEl.textContent.replace(/[^0-9]/g, ''), 10);
+        const original = parseInt(originalEl.textContent.replace(/[^0-9]/g, ''), 10);
 
         if (!offer || !original || original <= offer) {
             badge.style.display = 'none';

@@ -50,10 +50,6 @@
         return today.getTime() > expiryDate.getTime();
     }
 
-    function fmt(n) {
-        return parseFloat(n.toFixed(2));
-    }
-
     function fixImagePath(img) {
         if (!img) return '';
         const isProdPage = window.location.pathname.includes('/products/');
@@ -176,10 +172,10 @@
     function updateUI() {
         const cart = getCart();
         const totalQty = cart.reduce((s, i) => s + i.qty, 0);
-        const total = fmt(cart.reduce((s, i) => {
+        const total = cart.reduce((s, i) => {
             const p = findProduct(i.id);
             return s + (p ? p.price * i.qty : 0);
-        }, 0));
+        }, 0);
 
         if (isCheckoutPage) {
             renderCheckoutUI(cart, total, totalQty);
@@ -220,13 +216,13 @@
                         <span class="ro-qty-num">${item.qty}</span>
                         <button class="ro-qty-btn" onclick="ROCart.changeQty('${p.id}', 1)">+</button>
                     </div>
-                    <div class="ro-item-subtotal">BDT ${fmt(p.price * item.qty)}</div>
+                    <div class="ro-item-subtotal">BDT ${p.price * item.qty}</div>
                     <button class="ro-remove-btn" onclick="ROCart.removeItem('${p.id}')">✕ remove</button>
                 </div></div>`;
         }).join('');
         const discount = calcDiscount(total);
         const totalEl = getEl('total-price');
-        if (totalEl) totalEl.textContent = `BDT ${fmt(total - discount)}`;
+        if (totalEl) totalEl.textContent = `BDT ${total - discount}`;
         let dRow = document.getElementById('ro-discount-row');
         if (discount > 0) {
             if (!dRow) {
@@ -261,7 +257,7 @@
                             <span class="co-qty-num">${item.qty}</span>
                             <button class="co-qty-btn" onclick="ROCart.changeQty('${p.id}', 1)">+</button>
                         </div>
-                        <div class="co-item-subtotal">BDT ${fmt(p.price * item.qty)}</div>
+                        <div class="co-item-subtotal">BDT ${p.price * item.qty}</div>
                         <button class="co-remove-btn" onclick="ROCart.removeItem('${p.id}')">✕ remove</button>
                     </div></div>`;
             }).join('');
@@ -273,7 +269,7 @@
         const totalEl = getEl('total');
         if (subtotalEl) subtotalEl.textContent = `BDT ${total}`;
         if (deliveryEl) deliveryEl.textContent = `BDT ${delivery}`;
-        if (totalEl) totalEl.textContent = `BDT ${fmt(total - discount + delivery)}`;
+        if (totalEl) totalEl.textContent = `BDT ${total - discount + delivery}`;
         const dRow = getEl('discount-row');
         if (dRow) {
             dRow.style.display = (discount > 0) ? 'flex' : 'none';
@@ -305,7 +301,7 @@
             id: codeEl.textContent.trim(),
             name: nameEl.textContent.trim(),
             code: codeEl.textContent.trim(),
-            price: parseFloat(priceEl?.textContent.replace(/[^0-9.]/g, '') || '0'),
+            price: parseInt(priceEl?.textContent.replace(/[^0-9]/g, '') || '0', 10),
             img: imgEl ? imgEl.getAttribute('src') : '',
         };
 
@@ -337,7 +333,7 @@
                 id: codeEl ? codeEl.textContent.trim() : `p-${idx}`,
                 name: nameEl.textContent.trim(),
                 code: codeEl ? codeEl.textContent.trim() : '',
-                price: parseFloat(priceEl?.textContent.replace(/[^0-9.]/g, '') || '0'),
+                price: parseInt(priceEl?.textContent.replace(/[^0-9]/g, '') || '0', 10),
                 img: card.querySelector('img')?.getAttribute('src') || '',
             };
             products.push(product);
@@ -360,13 +356,13 @@
         cart.forEach((item, idx) => {
             const p = findProduct(item.id);
             if (!p) return;
-            const sub = fmt(p.price * item.qty);
-            total = fmt(total + sub);
+            const sub = p.price * item.qty;
+            total += sub;
             lines.push(`${idx + 1}. ${p.name}\n   Qty: ${item.qty} × BDT ${p.price} = BDT ${sub}`);
         });
         const discount = calcDiscount(total);
         const delivery = getDeliveryCharge();
-        const message = `🛒 *Order from ${STORE_NAME}*\n\n${lines.join('\n\n')}\n\n─────────────────\n${APPLIED_COUPON ? `🎟 *Coupon: ${APPLIED_COUPON.code}* - BDT ${discount}\n` : ''}🛵 *Delivery: BDT ${delivery}*\n💰 *Total: BDT ${fmt(total - discount + delivery)}*\n─────────────────\nPlease confirm! `;
+        const message = `🛒 *Order from ${STORE_NAME}*\n\n${lines.join('\n\n')}\n\n─────────────────\n${APPLIED_COUPON ? `🎟 *Coupon: ${APPLIED_COUPON.code}* - BDT ${discount}\n` : ''}🛵 *Delivery: BDT ${delivery}*\n💰 *Total: BDT ${total - discount + delivery}*\n─────────────────\nPlease confirm! `;
         window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`, '_blank');
     }
 
