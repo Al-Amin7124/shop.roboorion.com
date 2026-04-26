@@ -481,6 +481,16 @@
 
         // HANDLE BOTH Shop Page and Individual Page
         PRODUCTS = scrapeShopProducts();
+
+        // Immediately override any shop-scraped prices with the authoritative
+        // product-page prices stored in localStorage, so the cart drawer always
+        // shows the correct price from the very first render.
+        const _saved = JSON.parse(localStorage.getItem(PROD_KEY) || '{}');
+        PRODUCTS = PRODUCTS.map(p => {
+            const ls = _saved[p.id];
+            return (ls && ls.priceSource === 'product-page') ? { ...p, price: ls.price } : p;
+        });
+
         setupIndividualPage();
         
         updateUI();
