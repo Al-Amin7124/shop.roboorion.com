@@ -15,9 +15,9 @@
     const STORE_NAME = 'Robo Orion';
 
     const COUPONS = {
-        'ROBOORION10': { discount: 10, type: 'percent', expiry: '2026-03-31', label: '10% off',    minOrder: 0 },
-        'ROBOORION45': { discount: 45, type: 'flat',    expiry: '2026-12-31', label: 'BDT 45 off', minOrder: 500 },
-        'ROBOORION70': { discount: 70, type: 'flat',    expiry: '2026-12-31', label: 'BDT 70 off', minOrder: 0 },
+        //'ROBOORION10': { discount: 10, type: 'percent', expiry: '2026-03-31', label: '10% off',    minOrder: 0 },
+        //'ROBOORION45': { discount: 45, type: 'flat',    expiry: '2026-12-31', label: 'BDT 45 off', minOrder: 500 },
+        //'ROBOORION70': { discount: 70, type: 'flat',    expiry: '2026-12-31', label: 'BDT 70 off', minOrder: 0 },
     };
 
     /* ── STATE ───────────────────────────────────────────── */
