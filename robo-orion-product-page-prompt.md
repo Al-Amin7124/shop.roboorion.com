@@ -62,7 +62,7 @@ Browse the provided `related_products_pool`. You must output **exactly 8 product
 **10. New Products Sidebar (Chronological Logic):**
 * **Target Section:** Identify the "New Products" sidebar section in the Reference HTML.
 * **Update Source:** Use the `related_products_pool` file to populate this section.
-* **Selection Logic:** You MUST select exactly **8 cards** starting from the **bottom of the pool and moving upwards** (to prioritize the most recently added items).
+* **Selection Logic:** You MUST select exactly **8 cards** starting from the **top of the pool and moving downwards** (to prioritize the most recently added items).
 * **Structural Integrity:** Maintain the exact HTML design, CSS classes, and internal structure of the sidebar cards as found in the Reference HTML. 
 * **Data Replacement:** Replace the titles, images, links, and prices with the data from the selected pool items.
 * **Path Rule:** Apply the `../` prefix to all links and image sources within this sidebar (following Rule 5).
