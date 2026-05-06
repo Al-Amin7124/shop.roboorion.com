@@ -564,3 +564,77 @@ document.querySelectorAll('.faq-toggle').forEach(function(btn) {
         this.setAttribute('aria-expanded', String(!isOpen));
     });
 });
+
+
+// whatsapp button hover
+(function () {
+  var PHONE_NUMBER = "01999506021"; // number
+  var MESSAGE = "Hello! I came through Orion Shop. I need to know more!"; // Pre-filled message
+  var style = document.createElement("style");
+  style.innerHTML = [
+    ".wa-float {",
+    "  position: fixed;",
+    "  bottom: 24px;",
+    "  right: 24px;",
+    "  width: 56px;",
+    "  height: 56px;",
+    "  border-radius: 50%;",
+    "  background: #25D366;",
+    "  display: flex;",
+    "  align-items: center;",
+    "  justify-content: center;",
+    "  z-index: 9999;",
+    "  text-decoration: none;",
+    "  box-shadow: 0 4px 16px rgba(37,211,102,0.4);",
+    "  transition: transform 0.15s ease, box-shadow 0.15s ease;",
+    "}",
+    ".wa-float:hover {",
+    "  transform: scale(1.1);",
+    "  box-shadow: 0 6px 24px rgba(37,211,102,0.5);",
+    "}",
+    ".wa-float svg {",
+    "  width: 30px;",
+    "  height: 30px;",
+    "  fill: #ffffff;",
+    "}",
+  ].join("\n");
+  document.head.appendChild(style);
+
+  var url =
+    "https://wa.me/" +
+    PHONE_NUMBER +
+    "?text=" +
+    encodeURIComponent(MESSAGE);
+
+  var btn = document.createElement("a");
+  btn.href = url;
+  btn.target = "_blank";
+  btn.rel = "noopener noreferrer";
+  btn.className = "wa-float";
+  btn.setAttribute("aria-label", "Chat on WhatsApp");
+  btn.innerHTML =
+    '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">' +
+    '<path d="M20.472 3.524A11.955 11.955 0 0 0 12.001 0C5.373 0 .001 5.373.001 12c0 2.116.553' +
+    " 4.181 1.605 5.993L0 24l6.184-1.623A11.974 11.974 0 0 0 12.001 24c6.628 0 12-5.373" +
+    " 12-12 0-3.205-1.248-6.219-3.529-8.476zM12.001 21.954a9.934 9.934 0 0 1-5.065-1.383l-.363" +
+    "-.216-3.768.988 1.006-3.669-.237-.375A9.946 9.946 0 0 1 2.047 12c0-5.491 4.467-9.954" +
+    " 9.955-9.954 2.66 0 5.157 1.036 7.035 2.916a9.885 9.885 0 0 1 2.916 7.036c.001 5.49" +
+    "-4.466 9.956-9.952 9.956zm5.459-7.456c-.3-.149-1.77-.873-2.044-.972-.274-.099-.473-.149" +
+    "-.673.15-.199.298-.771.971-.945 1.17-.175.199-.349.224-.648.075-.299-.149-1.262-.465" +
+    "-2.403-1.484-.888-.791-1.488-1.77-1.662-2.068-.175-.299-.018-.46.131-.608.134-.134.299" +
+    "-.349.448-.523.149-.175.199-.299.299-.498.099-.199.049-.374-.025-.523-.075-.149-.673" +
+    "-1.621-.922-2.219-.242-.583-.488-.503-.673-.513-.174-.009-.373-.011-.572-.011s-.523.075" +
+    "-.797.374c-.274.299-1.046 1.021-1.046 2.49 0 1.47 1.071 2.89 1.22 3.088.149.199 2.108" +
+    " 3.219 5.108 4.512.714.308 1.271.492 1.705.63.717.228 1.37.196 1.887.119.575-.086" +
+    ' 1.771-.723 2.02-1.422.249-.699.249-1.298.174-1.422-.074-.124-.273-.199-.573-.348z"/>' +
+    "</svg>";
+
+  // Wait for DOM to be ready before appending
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function () {
+      document.body.appendChild(btn);
+    });
+  } else {
+    document.body.appendChild(btn);
+  }
+})();
