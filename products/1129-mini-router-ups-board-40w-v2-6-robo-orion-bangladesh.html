@@ -236,13 +236,17 @@
                                             <span class="ml-2 text-md text-gray-600">(22)</span>
                                         </div>
                                     </div>
-                                    <div class="flex items-center gap-3">
+                                    <div class="items-center gap-3">
                                         <label for="main-product-qty" class="sr-only">Quantity</label>
                                         <input type="number" id="main-product-qty" value="1" min="1" class="w-20 border rounded-lg px-2 py-2 text-center focus:outline-none focus:ring-2 focus:ring-blue-400" aria-label="Quantity">
-                                        <button id="main-add-to-cart" class="bg-white hover:bg-blue-600 text-gray-800 hover:text-white px-6 py-2 rounded-lg font-medium border border-gray-600 transition-all duration-300 ease-in-out hover:shadow-lg flex items-center gap-2" aria-label="Add Mini Router UPS Board to cart">
-                                            <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                        <!-- ✅ Disabled Add to Cart Button -->
+                                        <button class="add-to-cart bg-gray-100 text-gray-400 px-4 sm:px-8 py-2 rounded-lg font-medium border border-gray-200 cursor-not-allowed" disabled>
+                                            <i class="fa-solid fa-cart-shopping mr-2"></i>
                                             Add to Cart
                                         </button>
+
+                                        <!-- ✅ Unavailable hint -->
+                                    <p class="text-xs text-gray-400 mt-1">Currently unavailable</p>
                                     </div>
                                 </div>
                             </div>
