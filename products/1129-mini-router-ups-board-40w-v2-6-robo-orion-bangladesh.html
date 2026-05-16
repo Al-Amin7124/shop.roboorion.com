@@ -186,12 +186,14 @@
                             <div class="grid grid-cols-1 lg:grid-cols-9 gap-2 md:gap-6">
                                 <!-- Product Image -->
                                 <div class="lg:col-span-5 mx-auto w-full">
-                                    <div class="m-4 mt-0 overflow-hidden rounded-lg bg-white w-full aspect-[4/3]">
+                                    <div class="m-4 mt-0 overflow-hidden rounded-lg bg-white w-full aspect-[4/3] relative">
                                         <img id="mainImage"
                                             src="../img/product/1129-mini-router-ups-board-40w-v2-6-robo-orion-bangladesh.jpg"
                                             alt="Mini Router UPS Board 40W V2.6 Image"
                                             class="w-full aspect-[4/3] object-cover object-center transform transition-transform duration-500 ease-in-out hover:scale-110"
                                             width="800" height="600">
+                                            <span class="absolute top-4 right-4 bg-gray-800 text-gray-300 text-[11px] font-bold tracking-[1.5px] uppercase px-3 py-1.5 rounded">Out of Stock</span>
+                                            <div class="absolute inset-0 bg-black/10 rounded-lg"></div>
                                     </div>
                                     <div class="relative">
                                         <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 z-10 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition-all" aria-label="Previous images" style="display: none;">
@@ -236,17 +238,16 @@
                                             <span class="ml-2 text-md text-gray-600">(22)</span>
                                         </div>
                                     </div>
-                                    <div class="items-center gap-3">
-                                        <label for="main-product-qty" class="sr-only">Quantity</label>
-                                        <input type="number" id="main-product-qty" value="1" min="1" class="w-20 border rounded-lg px-2 py-2 text-center focus:outline-none focus:ring-2 focus:ring-blue-400" aria-label="Quantity">
-                                        <!-- ✅ Disabled Add to Cart Button -->
-                                        <button class="add-to-cart bg-gray-100 text-gray-400 px-4 sm:px-8 py-2 rounded-lg font-medium border border-gray-200 cursor-not-allowed" disabled>
-                                            <i class="fa-solid fa-cart-shopping mr-2"></i>
-                                            Add to Cart
-                                        </button>
-
-                                        <!-- ✅ Unavailable hint -->
-                                    <p class="text-xs text-gray-400 mt-1">Currently unavailable</p>
+                                    <div class="flex flex-col gap-2">
+                                        <div class="flex items-center gap-3">
+                                            <label for="main-product-qty" class="sr-only">Quantity</label>
+                                            <input type="number" id="main-product-qty" value="1" min="1" class="w-20 border rounded-lg px-2 py-2 text-center bg-gray-100 text-gray-500 focus:outline-none cursor-not-allowed" aria-label="Quantity" disabled>
+                                            <button id="main-add-to-cart" class="bg-gray-100 text-gray-400 px-6 py-2 rounded-lg font-medium border border-gray-200 cursor-not-allowed flex items-center gap-2" disabled aria-label="Currently out of stock">
+                                                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                                Out of Stock
+                                            </button>
+                                        </div>
+                                        <p class="text-sm text-red-500 font-medium mt-1"><i class="fa-solid fa-circle-exclamation mr-1"></i> This item is currently unavailable.</p>
                                     </div>
                                 </div>
                             </div>
