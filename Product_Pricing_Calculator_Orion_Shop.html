@@ -122,7 +122,7 @@
         <div class="field">
           <label for="productWeight">Product weight</label>
           <div class="input-row">
-            <input type="number" id="productWeight" placeholder="e.g. 500" min="0" step="0.01" value="0">
+            <input type="number" id="productWeight" placeholder="e.g. 500" min="0" step="0.01" value="5">
             <select id="weightUnit" style="padding:10px 8px;border:1px solid var(--border);border-radius:8px;font-size:14px;background:#fff;color:var(--text);">
               <option value="g">grams (g)</option>
               <option value="kg">kilograms (kg)</option>
@@ -173,13 +173,11 @@ function actualCourierCost(weightKg, perKg){
 }
 
 let fees = [
-  { name: 'Profit margin', pct: 15, basis: 'selling' },//buying
+  { name: 'Profit margin', pct: 16, basis: 'selling' },//buying
   { name: 'Packaging cost', pct: 2, basis: 'selling' },
-  { name: 'Commission Rate', pct: 13.8, basis: 'selling' },
-  { name: 'Payment Processing', pct: 1.5, basis: 'selling' },
-  { name: 'Campaign Discount', pct: 6, basis: 'selling' },
-  { name: 'Shipping Cost on 2999', pct: 0, basis: 'selling' },
-  { name: 'Delivery Cost', pct: 0.5, basis: 'selling' }
+  { name: 'Courier fee', pct: 1.2, basis: 'selling' },
+  { name: 'Cash-out charge', pct: 1.8, basis: 'selling' },
+  { name: 'Shipping Cost on 2999', pct: 0, basis: 'selling' }
 ];
 
 function renderFees(){
