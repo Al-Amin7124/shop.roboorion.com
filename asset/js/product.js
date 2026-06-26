@@ -568,7 +568,7 @@ document.querySelectorAll('.faq-toggle').forEach(function(btn) {
 
 // whatsapp button hover
 (function () {
-  var PHONE_NUMBER = "01999506021"; // number
+  var PHONE_NUMBER = "01846253277"; // number
   var MESSAGE = "Hello! I came through Orion Shop. I need to know more!"; // Pre-filled message
   var style = document.createElement("style");
   style.innerHTML = [
