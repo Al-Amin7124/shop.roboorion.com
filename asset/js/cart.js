@@ -8,7 +8,7 @@
     'use strict';
 
     /* ── CONFIG ──────────────────────────────────────────── */
-    const WA_NUMBER  = '8801999506021';
+    const WA_NUMBER  = '8801846253277';
     const CART_KEY   = 'robo_orion_cart';
     const PROD_KEY   = 'robo_orion_products';
     const COUPON_KEY = 'robo_orion_coupon';

@@ -569,7 +569,7 @@ document.querySelectorAll('.faq-toggle').forEach(function(btn) {
 // whatsapp button hover
 (function () {
   var PHONE_NUMBER = "+8801846253277"; // number
-  var MESSAGE = "Hello! I came through Orion Shop. I need to know more!"; // Pre-filled message
+  var MESSAGE = "Hi Orion Shop! I'm interested in your products. Can you help me? 👋"; // Pre-filled message
   var style = document.createElement("style");
   style.innerHTML = [
     ".wa-float {",
