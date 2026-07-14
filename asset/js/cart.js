@@ -14,10 +14,28 @@
     const COUPON_KEY = 'robo_orion_coupon';
     const STORE_NAME = 'Robo Orion';
 
+    /**
+     * Coupon definitions.
+     *
+     * Two kinds of coupons are supported:
+     *
+     * 1) STORE-WIDE  — applies to the whole cart subtotal.
+     *    Leave `productCode` as null.
+     *
+     * 2) PRODUCT-SPECIFIC — applies ONLY to the line total of the
+     *    matching product (by product code). All other items in the
+     *    cart are completely unaffected by this coupon.
+     *    Set `productCode` to the exact product code (e.g. 'ARD-001').
+     *
+     * `minOrder` for a product-specific coupon is checked against that
+     * product's own line subtotal (price × qty in cart), not the whole cart.
+     */
     const COUPONS = {
-        //'ROBOORION10': { discount: 10, type: 'percent', expiry: '2026-03-31', label: '10% off',    minOrder: 0 },
-        //'ROBOORION45': { discount: 45, type: 'flat',    expiry: '2026-12-31', label: 'BDT 45 off', minOrder: 500 },
-        //'ROBOORION70': { discount: 70, type: 'flat',    expiry: '2026-12-31', label: 'BDT 70 off', minOrder: 0 },
+        // Store-wide example:
+        // 'ROBOORION10': { discount: 10, type: 'percent', expiry: '2026-12-31', label: '10% off your order', minOrder: 0, productCode: null },
+
+        // Product-specific example (only discounts the item with code 'ARD-001'):
+        // 'ARDUINO50':   { discount: 50, type: 'flat', expiry: '2026-12-31', label: 'BDT 50 off Arduino Uno', minOrder: 0, productCode: 'ARD-001' },
     };
 
     /* ── STATE ───────────────────────────────────────────── */
@@ -27,18 +45,19 @@
     const isCheckoutPage = window.location.pathname.includes('checkout.html');
 
     /* ── HELPERS ─────────────────────────────────────────── */
-    
+
     function getEl(id) {
         return document.getElementById('co-' + id) || document.getElementById('ro-' + id) || document.getElementById(id);
     }
 
-    function getCart() { 
-        try { return JSON.parse(localStorage.getItem(CART_KEY)) || []; } 
-        catch (e) { return []; } 
+    function getCart() {
+        try { return JSON.parse(localStorage.getItem(CART_KEY)) || []; }
+        catch (e) { return []; }
     }
 
-    function saveCart(cart) { 
-        localStorage.setItem(CART_KEY, JSON.stringify(cart)); 
+    function saveCart(cart) {
+        try { localStorage.setItem(CART_KEY, JSON.stringify(cart)); }
+        catch (e) { console.error('ROCart: failed to save cart', e); }
     }
 
     function isCouponExpired(expiryDateStr) {
@@ -51,7 +70,19 @@
     }
 
     function fmt(n) {
-        return parseFloat(n.toFixed(2));
+        return parseFloat((n || 0).toFixed(2));
+    }
+
+    /** Escapes text before it is inserted via innerHTML, so product names/codes
+     *  coming from the page (or localStorage) can never break markup or attributes. */
+    function escapeHtml(str) {
+        if (str === undefined || str === null) return '';
+        return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
     }
 
     function fixImagePath(img) {
@@ -86,15 +117,54 @@
         return null;
     }
 
+    /** Subtotal (price × qty) for a single product code currently in the cart. */
+    function productLineTotal(cart, code) {
+        const item = cart.find(i => i.id === code);
+        if (!item) return 0;
+        const p = findProduct(code);
+        return p ? fmt(p.price * item.qty) : 0;
+    }
+
+    /** Subtotal for the entire cart. */
+    function cartTotal(cart) {
+        return fmt(cart.reduce((s, i) => {
+            const p = findProduct(i.id);
+            return s + (p ? p.price * i.qty : 0);
+        }, 0));
+    }
+
     /* ── COUPON LOGIC ───────────────────────────────────── */
 
-    function calcDiscount(total) {
-        if (!APPLIED_COUPON) return 0;
-        if (isCouponExpired(APPLIED_COUPON.expiry)) { removeCoupon(); return 0; }
-        if (APPLIED_COUPON.minOrder && total < APPLIED_COUPON.minOrder) { removeCoupon(); return 0; }
-        if (APPLIED_COUPON.type === 'percent') return Math.round(total * APPLIED_COUPON.discount / 100);
-        else if (APPLIED_COUPON.type === 'flat') return Math.min(APPLIED_COUPON.discount, total);
-        return 0;
+    /**
+     * Computes the currently applicable discount for a given cart.
+     * Returns: { amount, targetId, inactive }
+     *   - amount:   BDT amount to subtract from the order.
+     *   - targetId: product code the discount applies to (product-specific
+     *               coupons only), or null for store-wide coupons.
+     *   - inactive: true if a coupon is applied but not currently earning a
+     *               discount (e.g. its target product isn't in the cart).
+     */
+    function calcDiscount(cart) {
+        if (!APPLIED_COUPON) return { amount: 0, targetId: null, inactive: false };
+        if (isCouponExpired(APPLIED_COUPON.expiry)) { removeCoupon(); return { amount: 0, targetId: null, inactive: false }; }
+
+        if (APPLIED_COUPON.productCode) {
+            const targetId = APPLIED_COUPON.productCode;
+            const lineTotal = productLineTotal(cart, targetId);
+            if (lineTotal <= 0) return { amount: 0, targetId, inactive: true };
+            if (APPLIED_COUPON.minOrder && lineTotal < APPLIED_COUPON.minOrder) return { amount: 0, targetId, inactive: true };
+            const raw = APPLIED_COUPON.type === 'percent'
+                ? lineTotal * APPLIED_COUPON.discount / 100
+                : APPLIED_COUPON.discount;
+            return { amount: fmt(Math.min(raw, lineTotal)), targetId, inactive: false };
+        }
+
+        const total = cartTotal(cart);
+        if (APPLIED_COUPON.minOrder && total < APPLIED_COUPON.minOrder) return { amount: 0, targetId: null, inactive: true };
+        const raw = APPLIED_COUPON.type === 'percent'
+            ? total * APPLIED_COUPON.discount / 100
+            : APPLIED_COUPON.discount;
+        return { amount: fmt(Math.min(raw, total)), targetId: null, inactive: false };
     }
 
     function applyCoupon() {
@@ -102,9 +172,15 @@
         const msgEl = getEl('coupon-msg');
         if (!input) return;
         const code = input.value.trim().toUpperCase();
-        const coupon = COUPONS[code];
-        if (msgEl) msgEl.className = isCheckoutPage ? 'co-coupon-msg' : 'ro-coupon-msg';
+        const msgClass = isCheckoutPage ? 'co-coupon-msg' : 'ro-coupon-msg';
+        if (msgEl) msgEl.className = msgClass;
 
+        if (!code) {
+            if (msgEl) { msgEl.classList.add('error'); msgEl.textContent = 'Please enter a coupon code.'; }
+            return;
+        }
+
+        const coupon = COUPONS[code];
         if (!coupon) {
             removeCoupon();
             if (msgEl) { msgEl.classList.add('error'); msgEl.textContent = '✕ Invalid coupon code.'; }
@@ -115,18 +191,59 @@
             if (msgEl) { msgEl.classList.add('error'); msgEl.textContent = `✕ This coupon expired on ${coupon.expiry}.`; }
             updateUI(); return;
         }
-        const total = getCart().reduce((s, i) => {
-            const p = findProduct(i.id);
-            return s + (p ? p.price * i.qty : 0);
-        }, 0);
+
+        const cart = getCart();
+        if (cart.length === 0) {
+            if (msgEl) { msgEl.classList.add('error'); msgEl.textContent = 'Your cart is empty — add items before applying a coupon.'; }
+            return;
+        }
+
+        // ── Product-specific coupon ──
+        if (coupon.productCode) {
+            const targetProduct = findProduct(coupon.productCode);
+            const lineTotal = productLineTotal(cart, coupon.productCode);
+            const targetLabel = targetProduct ? targetProduct.name : coupon.productCode;
+
+            if (lineTotal <= 0) {
+                if (msgEl) {
+                    msgEl.classList.add('error');
+                    msgEl.textContent = `✕ This coupon only applies to "${targetLabel}" (code: ${coupon.productCode}). Add it to your cart to use this code.`;
+                }
+                return;
+            }
+            if (coupon.minOrder && lineTotal < coupon.minOrder) {
+                if (msgEl) {
+                    msgEl.classList.add('error');
+                    msgEl.textContent = `✕ Minimum BDT ${coupon.minOrder} of "${targetLabel}" required for this coupon.`;
+                }
+                return;
+            }
+
+            APPLIED_COUPON = { code, ...coupon };
+            localStorage.setItem(COUPON_KEY, JSON.stringify(APPLIED_COUPON));
+            if (msgEl) {
+                msgEl.classList.add('success');
+                msgEl.innerHTML = `✓ Coupon applied — ${escapeHtml(coupon.label)} on "${escapeHtml(targetLabel)}"! `
+                    + `<button type="button" class="cart-coupon-remove" data-action="remove-coupon">Remove</button>`;
+            }
+            updateUI();
+            return;
+        }
+
+        // ── Store-wide coupon ──
+        const total = cartTotal(cart);
         if (coupon.minOrder && total < coupon.minOrder) {
             removeCoupon();
-            if (msgEl) { msgEl.classList.add('error'); msgEl.textContent = `✕ Min order BDT ${coupon.minOrder} required.`; }
+            if (msgEl) { msgEl.classList.add('error'); msgEl.textContent = `✕ Minimum order of BDT ${coupon.minOrder} required.`; }
             updateUI(); return;
         }
         APPLIED_COUPON = { code, ...coupon };
         localStorage.setItem(COUPON_KEY, JSON.stringify(APPLIED_COUPON));
-        if (msgEl) { msgEl.classList.add('success'); msgEl.textContent = `✓ Coupon applied — ${coupon.label}!`; }
+        if (msgEl) {
+            msgEl.classList.add('success');
+            msgEl.innerHTML = `✓ Coupon applied — ${escapeHtml(coupon.label)}! `
+                + `<button type="button" class="cart-coupon-remove" data-action="remove-coupon">Remove</button>`;
+        }
         updateUI();
     }
 
@@ -142,7 +259,6 @@
 
     /* ── CART ACTIONS ────────────────────────────────────── */
 
-    // MODIFIED: Now accepts optional quantity
     function addItem(id, qty = 1) {
         const cart = getCart();
         const existing = cart.find(i => i.id === id);
@@ -187,10 +303,7 @@
     function updateUI() {
         const cart = getCart();
         const totalQty = cart.reduce((s, i) => s + i.qty, 0);
-        const total = fmt(cart.reduce((s, i) => {
-            const p = findProduct(i.id);
-            return s + (p ? p.price * i.qty : 0);
-        }, 0));
+        const total = cartTotal(cart);
 
         if (isCheckoutPage) {
             renderCheckoutUI(cart, total, totalQty);
@@ -216,37 +329,56 @@
         if (cart.length === 0) {
             itemsEl.innerHTML = `<div class="ro-empty"><p>Your cart is empty</p></div>`;
             if (footerEl) footerEl.style.display = 'none';
+            const dRow = document.getElementById('ro-discount-row');
+            if (dRow) dRow.remove();
             return;
         }
         if (footerEl) footerEl.style.display = 'block';
+
+        const discountInfo = calcDiscount(cart);
+
         itemsEl.innerHTML = cart.map(item => {
             const p = findProduct(item.id);
             if (!p) return '';
+            const lineTotal = fmt(p.price * item.qty);
+            const isDiscounted = discountInfo.targetId === p.id && discountInfo.amount > 0;
+            const discountedLine = isDiscounted ? fmt(lineTotal - discountInfo.amount) : lineTotal;
+            const subtotalHtml = isDiscounted
+                ? `<span class="ro-item-strike">BDT ${lineTotal}</span> BDT ${discountedLine}`
+                : `BDT ${lineTotal}`;
             return `<div class="ro-cart-item">
-                <img class="ro-item-img" src="${p.img}" alt="${p.name}">
-                <div class="ro-item-info"><div class="ro-item-name">${p.name}</div><div class="ro-item-price">BDT ${p.price}</div></div>
+                <img class="ro-item-img" src="${escapeHtml(p.img)}" alt="${escapeHtml(p.name)}">
+                <div class="ro-item-info">
+                    <div class="ro-item-name">${escapeHtml(p.name)}</div>
+                    <div class="ro-item-code">Code: ${escapeHtml(p.code || p.id)}</div>
+                    <div class="ro-item-price">BDT ${p.price}</div>
+                </div>
                 <div class="ro-qty-wrap">
                     <div class="ro-qty-controls">
-                        <button class="ro-qty-btn" onclick="ROCart.changeQty('${p.id}', -1)">−</button>
+                        <button class="ro-qty-btn" data-action="dec" data-id="${escapeHtml(p.id)}">−</button>
                         <span class="ro-qty-num">${item.qty}</span>
-                        <button class="ro-qty-btn" onclick="ROCart.changeQty('${p.id}', 1)">+</button>
+                        <button class="ro-qty-btn" data-action="inc" data-id="${escapeHtml(p.id)}">+</button>
                     </div>
-                    <div class="ro-item-subtotal">BDT ${fmt(p.price * item.qty)}</div>
-                    <button class="ro-remove-btn" onclick="ROCart.removeItem('${p.id}')">✕ remove</button>
+                    <div class="ro-item-subtotal">${subtotalHtml}</div>
+                    <button class="ro-remove-btn" data-action="remove" data-id="${escapeHtml(p.id)}">✕ remove</button>
                 </div></div>`;
         }).join('');
-        const discount = calcDiscount(total);
+
         const totalEl = getEl('total-price');
-        if (totalEl) totalEl.textContent = `BDT ${fmt(total - discount)}`;
+        if (totalEl) totalEl.textContent = `BDT ${fmt(total - discountInfo.amount)}`;
+
         let dRow = document.getElementById('ro-discount-row');
-        if (discount > 0) {
+        if (discountInfo.amount > 0) {
             if (!dRow) {
-                dRow = document.createElement('div'); dRow.id = 'ro-discount-row';
-                dRow.className = 'ro-summary-row'; dRow.style.color = 'red'; dRow.style.fontWeight = '600';
-                const label = getEl('item-count-label');
-                if (label) label.closest('.ro-summary-row').insertAdjacentElement('afterend', dRow);
+                dRow = document.createElement('div');
+                dRow.id = 'ro-discount-row';
+                dRow.className = 'ro-coupon-discount-row';
+                const couponMsgEl = document.getElementById('ro-coupon-msg');
+                if (couponMsgEl) couponMsgEl.insertAdjacentElement('afterend', dRow);
             }
-            dRow.innerHTML = `<span>Discount (${APPLIED_COUPON.code})</span><span>- BDT ${discount}</span>`;
+            const targetProduct = discountInfo.targetId ? findProduct(discountInfo.targetId) : null;
+            const label = targetProduct ? `Discount (${APPLIED_COUPON.code}) — ${targetProduct.name}` : `Discount (${APPLIED_COUPON.code})`;
+            dRow.innerHTML = `<span>${escapeHtml(label)}</span><span>- BDT ${discountInfo.amount}</span>`;
         } else if (dRow) dRow.remove();
     }
 
@@ -257,42 +389,58 @@
         if (!itemsEl) return;
         if (badge) badge.textContent = `${totalQty} item${totalQty !== 1 ? 's' : ''}`;
         if (waBtn) waBtn.disabled = cart.length === 0;
+
+        const discountInfo = calcDiscount(cart);
+
         if (cart.length === 0) {
             itemsEl.innerHTML = `<div class="co-empty"><p>Your cart is empty</p></div>`;
         } else {
             itemsEl.innerHTML = cart.map(item => {
                 const p = findProduct(item.id);
                 if (!p) return '';
+                const lineTotal = fmt(p.price * item.qty);
+                const isDiscounted = discountInfo.targetId === p.id && discountInfo.amount > 0;
+                const discountedLine = isDiscounted ? fmt(lineTotal - discountInfo.amount) : lineTotal;
+                const subtotalHtml = isDiscounted
+                    ? `<span class="co-item-strike">BDT ${lineTotal}</span> BDT ${discountedLine}`
+                    : `BDT ${lineTotal}`;
                 return `<div class="co-item">
-                    <img class="co-item-img" src="${p.img}" alt="${p.name}">
-                    <div class="co-item-info"><div class="co-item-name">${p.name}</div><div class="co-item-price">BDT ${p.price} each</div></div>
+                    <img class="co-item-img" src="${escapeHtml(p.img)}" alt="${escapeHtml(p.name)}">
+                    <div class="co-item-info">
+                        <div class="co-item-name">${escapeHtml(p.name)}</div>
+                        <div class="co-item-code">Code: ${escapeHtml(p.code || p.id)}</div>
+                        <div class="co-item-price">BDT ${p.price} each</div>
+                    </div>
                     <div class="co-qty-wrap">
                         <div class="co-qty-controls">
-                            <button class="co-qty-btn" onclick="ROCart.changeQty('${p.id}', -1)">−</button>
+                            <button class="co-qty-btn" data-action="dec" data-id="${escapeHtml(p.id)}">−</button>
                             <span class="co-qty-num">${item.qty}</span>
-                            <button class="co-qty-btn" onclick="ROCart.changeQty('${p.id}', 1)">+</button>
+                            <button class="co-qty-btn" data-action="inc" data-id="${escapeHtml(p.id)}">+</button>
                         </div>
-                        <div class="co-item-subtotal">BDT ${fmt(p.price * item.qty)}</div>
-                        <button class="co-remove-btn" onclick="ROCart.removeItem('${p.id}')">✕ remove</button>
+                        <div class="co-item-subtotal">${subtotalHtml}</div>
+                        <button class="co-remove-btn" data-action="remove" data-id="${escapeHtml(p.id)}">✕ remove</button>
                     </div></div>`;
             }).join('');
         }
-        const discount = calcDiscount(total);
+
         const delivery = getDeliveryCharge();
         const subtotalEl = getEl('subtotal');
         const deliveryEl = getEl('delivery-val');
         const totalEl = getEl('total');
         if (subtotalEl) subtotalEl.textContent = `BDT ${total}`;
         if (deliveryEl) deliveryEl.textContent = `BDT ${delivery}`;
-        if (totalEl) totalEl.textContent = `BDT ${fmt(total - discount + delivery)}`;
+        if (totalEl) totalEl.textContent = `BDT ${fmt(total - discountInfo.amount + delivery)}`;
+
         const dRow = getEl('discount-row');
         if (dRow) {
-            dRow.style.display = (discount > 0) ? 'flex' : 'none';
-            if (discount > 0) {
+            dRow.style.display = (discountInfo.amount > 0) ? 'flex' : 'none';
+            if (discountInfo.amount > 0) {
                 const lEl = document.getElementById('co-discount-label');
                 const vEl = document.getElementById('co-discount-val');
-                if (lEl) lEl.textContent = `Discount (${APPLIED_COUPON.code})`;
-                if (vEl) vEl.textContent = `- BDT ${discount}`;
+                const targetProduct = discountInfo.targetId ? findProduct(discountInfo.targetId) : null;
+                const label = targetProduct ? `Discount (${APPLIED_COUPON.code}) — ${targetProduct.name}` : `Discount (${APPLIED_COUPON.code})`;
+                if (lEl) lEl.textContent = label;
+                if (vEl) vEl.textContent = `- BDT ${discountInfo.amount}`;
             }
         }
     }
@@ -373,18 +521,27 @@
     function orderWhatsApp() {
         const cart = getCart();
         if (cart.length === 0) return;
+
+        const discountInfo = calcDiscount(cart);
         let total = 0;
         let lines = [];
+
         cart.forEach((item, idx) => {
             const p = findProduct(item.id);
             if (!p) return;
             const sub = fmt(p.price * item.qty);
             total = fmt(total + sub);
-            lines.push(`${idx + 1}. ${p.name}\n   Qty: ${item.qty} × BDT ${p.price} = BDT ${sub}`);
+            const codeLabel = p.code || p.id;
+            let line = `${idx + 1}. Code: ${codeLabel}\n   Qty: ${item.qty} × BDT ${p.price} = BDT ${sub}`;
+            if (discountInfo.targetId === p.id && discountInfo.amount > 0) {
+                line += `\n   🎟 Coupon ${APPLIED_COUPON.code}: -BDT ${discountInfo.amount}`;
+            }
+            lines.push(line);
         });
-        const discount = calcDiscount(total);
+
+        const discount = discountInfo.amount;
         const delivery = getDeliveryCharge();
-        const message = `🛒 *Order from ${STORE_NAME}*\n\n${lines.join('\n\n')}\n\n─────────────────\n${APPLIED_COUPON ? `🎟 *Coupon: ${APPLIED_COUPON.code}* - BDT ${discount}\n` : ''}🛵 *Delivery: BDT ${delivery}*\n💰 *Total: BDT ${fmt(total - discount + delivery)}*\n─────────────────\nPlease confirm! `;
+        const message = `🛒 *Order from ${STORE_NAME}*\n\n${lines.join('\n\n')}\n\n─────────────────\n${(APPLIED_COUPON && discount > 0) ? `🎟 *Coupon: ${APPLIED_COUPON.code}* - BDT ${discount}\n` : ''}🛵 *Delivery: BDT ${delivery}*\n💰 *Total: BDT ${fmt(total - discount + delivery)}*\n─────────────────\nPlease confirm! `;
         window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`, '_blank');
     }
 
@@ -413,14 +570,14 @@
         const t = document.getElementById('ro-toast');
         if (!t) return;
         t.textContent = msg; t.classList.add('show');
-        clearTimeout(toastTmr); 
+        clearTimeout(toastTmr);
         toastTmr = setTimeout(() => t.classList.remove('show'), 2600);
     }
 
     function bumpBadge() {
         const el = getEl('fab-count');
         if (!el) return;
-        el.classList.add('bump'); 
+        el.classList.add('bump');
         setTimeout(() => el.classList.remove('bump'), 300);
     }
 
@@ -429,18 +586,72 @@
             const codeEl = card.querySelector('.productCode');
             if (codeEl && codeEl.textContent.trim() === id) {
                 const btn = card.querySelector('button');
-                if (btn) { 
-                    btn.classList.add('ro-added'); 
-                    btn.innerHTML = 'Added!'; 
-                    setTimeout(() => { btn.classList.remove('ro-added'); btn.innerHTML = 'Add to Cart'; }, 1800); 
+                if (btn) {
+                    btn.classList.add('ro-added');
+                    btn.innerHTML = 'Added!';
+                    setTimeout(() => { btn.classList.remove('ro-added'); btn.innerHTML = 'Add to Cart'; }, 1800);
                 }
             }
+        });
+    }
+
+    /** Injects a tiny stylesheet only for the couple of things cart.css doesn't
+     *  already cover: the strike-through "was" price on a discounted line item,
+     *  and the inline "Remove" link inside the coupon success message.
+     *  Everything else (item code, coupon box, discount row) uses the real
+     *  classes defined in cart.css. Safe to call once. */
+    function injectDynamicStyles() {
+        if (document.getElementById('ro-cart-dynamic-style')) return;
+        const style = document.createElement('style');
+        style.id = 'ro-cart-dynamic-style';
+        style.textContent = `
+            .ro-item-strike, .co-item-strike {
+                text-decoration: line-through;
+                color: #94a3b8;
+                font-weight: 400;
+                margin-right: 6px;
+                font-size: 0.85em;
+            }
+            .cart-coupon-remove {
+                background: none;
+                border: none;
+                color: #dc2626;
+                font-size: 0.72rem;
+                font-weight: 600;
+                text-decoration: underline;
+                cursor: pointer;
+                padding: 0;
+                margin-left: 4px;
+            }
+            .cart-coupon-remove:hover { color: #b91c1c; }
+        `;
+        document.head.appendChild(style);
+    }
+
+    /* ── EVENT DELEGATION ──────────────────────────────────
+       Cart item controls use data-action/data-id attributes instead of
+       inline onclick handlers with interpolated IDs, so product codes
+       containing quotes or special characters can never break markup. */
+    function bindDelegatedEvents() {
+        document.addEventListener('click', (e) => {
+            const btn = e.target.closest('[data-action]');
+            if (!btn) return;
+            const action = btn.getAttribute('data-action');
+            const id = btn.getAttribute('data-id');
+
+            if (action === 'inc' && id) ROCart.changeQty(id, 1);
+            else if (action === 'dec' && id) ROCart.changeQty(id, -1);
+            else if (action === 'remove' && id) ROCart.removeItem(id);
+            else if (action === 'remove-coupon') ROCart.removeCoupon();
         });
     }
 
     /* ── INIT ────────────────────────────────────────────── */
 
     function init() {
+        injectDynamicStyles();
+        bindDelegatedEvents();
+
         if (!isCheckoutPage) {
             document.body.insertAdjacentHTML('beforeend', `
                 <button id="ro-cart-fab" class="hidden" onclick="ROCart.openDrawer()">
@@ -463,6 +674,14 @@
                     </div>
                     <div class="ro-cart-items" id="ro-cart-items"></div>
                     <div class="ro-cart-footer" id="ro-cart-footer" style="display:none">
+                        <div class="ro-coupon-section">
+                            <div class="ro-delivery-label">🎟 Coupon Code</div>
+                            <div class="ro-coupon-row">
+                                <input type="text" id="ro-coupon-input" placeholder="Enter coupon code" class="ro-coupon-input">
+                                <button class="ro-coupon-btn" onclick="ROCart.applyCoupon()">Apply</button>
+                            </div>
+                            <div id="ro-coupon-msg" class="ro-coupon-msg"></div>
+                        </div>
                         <div class="ro-summary-row">
                             <span id="ro-item-count-label"></span>
                             <span>Subtotal</span>
@@ -492,9 +711,9 @@
         });
 
         setupIndividualPage();
-        
+
         updateUI();
-        
+
         const inside = getEl('delivery-inside');
         const outside = getEl('delivery-outside');
         if (inside && outside) {
@@ -513,9 +732,9 @@
     }
 
     // EXPOSE PUBLIC API
-    window.ROCart = { 
-        addItem, changeQty, removeItem, clearCart, openDrawer, closeDrawer, 
-        orderWhatsApp, applyCoupon, removeCoupon 
+    window.ROCart = {
+        addItem, changeQty, removeItem, clearCart, openDrawer, closeDrawer,
+        orderWhatsApp, applyCoupon, removeCoupon
     };
 
     // BRIDGE: Supports old function names in HTML
