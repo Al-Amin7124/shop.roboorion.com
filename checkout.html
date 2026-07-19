@@ -187,6 +187,36 @@
         .co-delivery-name { font-size: 0.8rem; font-weight: 500; color: #1e293b; flex: 1; }
         .co-delivery-price { font-size: 0.78rem; font-weight: 700; color: #2563eb; }
 
+        /* ── Contact Details ── */
+        .co-contact-fields { display: flex; flex-direction: column; gap: 0.5rem; }
+        .co-text-input {
+            width: 100%;
+            padding: 0.55rem 0.7rem;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            outline: none;
+            transition: border-color 0.15s, background 0.15s;
+            font-family: inherit;
+            color: #1e293b;
+            box-sizing: border-box;
+        }
+        .co-text-input:focus { border-color: #2563eb; }
+        .co-text-input:disabled { background: #f1f5f9; color: #94a3b8; cursor: not-allowed; }
+        textarea.co-text-input { resize: vertical; min-height: 52px; }
+
+        .co-pickup-note {
+            display: none;
+            margin-top: 0.5rem;
+            font-size: 0.75rem;
+            color: #2563eb;
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-radius: 6px;
+            padding: 0.5rem 0.65rem;
+            line-height: 1.4;
+        }
+
         /* ── Coupon ── */
         .co-coupon-row { display: flex; gap: 0.4rem; }
         .co-coupon-input {
@@ -308,9 +338,22 @@
                     </div>
                     <div class="co-summary">
 
+                        <!-- Contact Details -->
+                        <div class="co-delivery-section">
+                            <div class="co-delivery-label">🧾 Contact Details</div>
+                            <div class="co-contact-fields">
+                                <input type="text" id="co-cust-name" class="co-text-input" placeholder="Full Name" autocomplete="name">
+                                <input type="tel" id="co-cust-phone" class="co-text-input" placeholder="Phone Number (e.g. 01XXXXXXXXX)" autocomplete="tel">
+                                <textarea id="co-cust-location" class="co-text-input" placeholder="Delivery Address / Location" rows="2" autocomplete="street-address"></textarea>
+                            </div>
+                            <div id="co-contact-msg" class="co-coupon-msg"></div>
+                        </div>
+
+                        <hr class="co-divider">
+
                         <!-- Delivery -->
                         <div class="co-delivery-section">
-                            <div class="co-delivery-label">🚚 Delivery Area</div>
+                            <div class="co-delivery-label">🚚 Delivery Method</div>
                             <div class="co-delivery-options">
                                 <label class="co-delivery-option active" id="co-delivery-inside-label">
                                     <input type="radio" name="co-delivery" id="co-delivery-inside" value="70" checked>
@@ -322,6 +365,14 @@
                                     <span class="co-delivery-name">Outside Dhaka</span>
                                     <span class="co-delivery-price">BDT 120</span>
                                 </label>
+                                <label class="co-delivery-option" id="co-delivery-pickup-label">
+                                    <input type="radio" name="co-delivery" id="co-delivery-pickup" value="0">
+                                    <span class="co-delivery-name">Self Pickup — Middle Badda, Dhaka</span>
+                                    <span class="co-delivery-price">Free</span>
+                                </label>
+                            </div>
+                            <div id="co-pickup-note" class="co-pickup-note">
+                                📍 Pickup Point: <strong>Middle Badda, Dhaka</strong>. We'll share the exact address and available pickup time after you confirm your order.
                             </div>
                         </div>
 

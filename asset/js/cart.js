@@ -8,11 +8,13 @@
     'use strict';
 
     /* ── CONFIG ──────────────────────────────────────────── */
-    const WA_NUMBER  = '8801846253277';
-    const CART_KEY   = 'robo_orion_cart';
-    const PROD_KEY   = 'robo_orion_products';
-    const COUPON_KEY = 'robo_orion_coupon';
-    const STORE_NAME = 'Robo Orion';
+    const WA_NUMBER    = '8801846253277';
+    const CART_KEY     = 'robo_orion_cart';
+    const PROD_KEY     = 'robo_orion_products';
+    const COUPON_KEY   = 'robo_orion_coupon';
+    const CUSTOMER_KEY = 'robo_orion_customer';
+    const STORE_NAME   = 'Robo Orion';
+    const PICKUP_LOCATION = 'Middle Badda, Dhaka';
 
     /**
      * Coupon definitions.
@@ -131,6 +133,106 @@
             const p = findProduct(i.id);
             return s + (p ? p.price * i.qty : 0);
         }, 0));
+    }
+
+    function getDeliveryCharge() {
+        const pickup = getEl('delivery-pickup');
+        if (pickup && pickup.checked) return 0;
+        const outside = getEl('delivery-outside');
+        return outside && outside.checked ? 120 : 70;
+    }
+
+    function isSelfPickup() {
+        const pickup = getEl('delivery-pickup');
+        return !!(pickup && pickup.checked);
+    }
+
+    function getDeliveryLabel() {
+        if (isSelfPickup()) return `Self Pickup — ${PICKUP_LOCATION}`;
+        const outside = getEl('delivery-outside');
+        return (outside && outside.checked) ? 'Outside Dhaka' : 'Inside Dhaka';
+    }
+
+    /** Toggles the visual "active" state on whichever delivery option is
+     *  selected, and adapts the address field when Self Pickup is chosen
+     *  (no delivery address is needed for a pickup order). */
+    function syncDeliveryUI() {
+        [
+            ['delivery-inside', 'delivery-inside-label'],
+            ['delivery-outside', 'delivery-outside-label'],
+            ['delivery-pickup', 'delivery-pickup-label'],
+        ].forEach(([radioId, labelId]) => {
+            const radio = getEl(radioId);
+            const label = getEl(labelId);
+            if (radio && label) label.classList.toggle('active', radio.checked);
+        });
+
+        const pickup = isSelfPickup();
+        const locEl = getEl('cust-location');
+        const noteEl = getEl('pickup-note');
+        if (locEl) {
+            locEl.disabled = pickup;
+            locEl.placeholder = pickup ? `Not required — pickup at ${PICKUP_LOCATION}` : 'Delivery Address / Location';
+        }
+        if (noteEl) noteEl.style.display = pickup ? 'block' : 'none';
+    }
+
+    /* ── CUSTOMER INFO ──────────────────────────────────── */
+
+    function getCustomerInfo() {
+        return {
+            name: (getEl('cust-name') || {}).value?.trim() || '',
+            phone: (getEl('cust-phone') || {}).value?.trim() || '',
+            location: (getEl('cust-location') || {}).value?.trim() || '',
+        };
+    }
+
+    function saveCustomerInfo() {
+        try { localStorage.setItem(CUSTOMER_KEY, JSON.stringify(getCustomerInfo())); }
+        catch (e) { console.error('ROCart: failed to save customer info', e); }
+    }
+
+    /** Restores a returning customer's name/phone/address, and keeps them
+     *  saved as the person types so they don't need to re-enter them later. */
+    function loadCustomerInfo() {
+        const nameEl = getEl('cust-name');
+        const phoneEl = getEl('cust-phone');
+        const locEl = getEl('cust-location');
+        if (!nameEl && !phoneEl && !locEl) return; // contact form not present on this page
+
+        try {
+            const saved = JSON.parse(localStorage.getItem(CUSTOMER_KEY) || '{}');
+            if (nameEl && saved.name) nameEl.value = saved.name;
+            if (phoneEl && saved.phone) phoneEl.value = saved.phone;
+            if (locEl && saved.location) locEl.value = saved.location;
+        } catch (e) { /* ignore malformed storage */ }
+
+        [nameEl, phoneEl, locEl].forEach(el => { if (el) el.addEventListener('input', saveCustomerInfo); });
+    }
+
+    /** Validates name/phone (always required) and address (required unless
+     *  Self Pickup is selected) before an order can be sent. Shows an inline
+     *  error and focuses the offending field instead of silently failing. */
+    function validateCustomerInfo() {
+        const nameEl = getEl('cust-name');
+        if (!nameEl) return true; // contact form isn't present on this page — nothing to validate
+
+        const msgEl = getEl('contact-msg');
+        const info = getCustomerInfo();
+
+        function fail(text, el) {
+            if (msgEl) { msgEl.className = 'co-coupon-msg error'; msgEl.textContent = '✕ ' + text; }
+            if (el) el.focus();
+            return false;
+        }
+
+        if (!info.name) return fail('Please enter your full name.', nameEl);
+        if (!info.phone) return fail('Please enter your phone number.', getEl('cust-phone'));
+        if (!/^[+0-9\s-]{7,15}$/.test(info.phone)) return fail('Please enter a valid phone number.', getEl('cust-phone'));
+        if (!isSelfPickup() && !info.location) return fail('Please enter your delivery address, or choose Self Pickup.', getEl('cust-location'));
+
+        if (msgEl) { msgEl.className = 'co-coupon-msg'; msgEl.textContent = ''; }
+        return true;
     }
 
     /* ── COUPON LOGIC ───────────────────────────────────── */
@@ -428,7 +530,7 @@
         const deliveryEl = getEl('delivery-val');
         const totalEl = getEl('total');
         if (subtotalEl) subtotalEl.textContent = `BDT ${total}`;
-        if (deliveryEl) deliveryEl.textContent = `BDT ${delivery}`;
+        if (deliveryEl) deliveryEl.textContent = delivery === 0 ? 'Free' : `BDT ${delivery}`;
         if (totalEl) totalEl.textContent = `BDT ${fmt(total - discountInfo.amount + delivery)}`;
 
         const dRow = getEl('discount-row');
@@ -521,6 +623,10 @@
     function orderWhatsApp() {
         const cart = getCart();
         if (cart.length === 0) return;
+        if (!validateCustomerInfo()) return;
+
+        const info = getCustomerInfo();
+        saveCustomerInfo();
 
         const discountInfo = calcDiscount(cart);
         let total = 0;
@@ -541,13 +647,24 @@
 
         const discount = discountInfo.amount;
         const delivery = getDeliveryCharge();
-        const message = `🛒 *Order from ${STORE_NAME}*\n\n${lines.join('\n\n')}\n\n─────────────────\n${(APPLIED_COUPON && discount > 0) ? `🎟 *Coupon: ${APPLIED_COUPON.code}* - BDT ${discount}\n` : ''}🛵 *Delivery: BDT ${delivery}*\n💰 *Total: BDT ${fmt(total - discount + delivery)}*\n─────────────────\nPlease confirm! `;
-        window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`, '_blank');
-    }
+        const deliveryLabel = getDeliveryLabel();
+        const pickup = isSelfPickup();
 
-    function getDeliveryCharge() {
-        const outside = getEl('delivery-outside');
-        return outside && outside.checked ? 120 : 70;
+        // Only build a customer-details block if the contact form exists on this page
+        let customerBlock = '';
+        if (getEl('cust-name')) {
+            customerBlock = `👤 *Customer Details*\n`
+                + `Name: ${info.name || '-'}\n`
+                + `Phone: ${info.phone || '-'}\n`
+                + `Delivery: ${deliveryLabel}\n`
+                + (pickup
+                    ? `Pickup Point: ${PICKUP_LOCATION}\n`
+                    : `Address: ${info.location || '-'}\n`)
+                + `\n`;
+        }
+
+        const message = `🛒 *Order from ${STORE_NAME}*\n\n${customerBlock}📦 *Items*\n${lines.join('\n\n')}\n\n─────────────────\n${(APPLIED_COUPON && discount > 0) ? `🎟 *Coupon: ${APPLIED_COUPON.code}* - BDT ${discount}\n` : ''}🛵 *Delivery: ${delivery === 0 ? 'Free' : `BDT ${delivery}`}*\n💰 *Total: BDT ${fmt(total - discount + delivery)}*\n─────────────────\nPlease confirm! `;
+        window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`, '_blank');
     }
 
     function openDrawer() {
@@ -711,14 +828,17 @@
         });
 
         setupIndividualPage();
+        loadCustomerInfo();
 
         updateUI();
 
         const inside = getEl('delivery-inside');
         const outside = getEl('delivery-outside');
-        if (inside && outside) {
-            [inside, outside].forEach(el => el.addEventListener('change', updateUI));
-        }
+        const pickup = getEl('delivery-pickup');
+        [inside, outside, pickup].forEach(el => {
+            if (el) el.addEventListener('change', () => { syncDeliveryUI(); updateUI(); });
+        });
+        syncDeliveryUI(); // set correct initial active/disabled state
 
         window.addEventListener('storage', (e) => {
             if (e.key === CART_KEY || e.key === COUPON_KEY) updateUI();
