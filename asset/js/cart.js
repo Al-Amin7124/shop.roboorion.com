@@ -34,7 +34,7 @@
      */
     const COUPONS = {
         // Store-wide example:
-        // 'ROBOORION10': { discount: 10, type: 'percent', expiry: '2026-12-31', label: '10% off your order', minOrder: 0, productCode: null },
+         'ROBOORION': { discount: 2, type: 'percent', expiry: '2026-12-31', label: '2% off your order', minOrder: 0, productCode: null },
 
         // Product-specific example (only discounts the item with code 'ARD-001'):
         // 'ARDUINO50':   { discount: 50, type: 'flat', expiry: '2026-12-31', label: 'BDT 50 off Arduino Uno', minOrder: 0, productCode: 'ARD-001' },
