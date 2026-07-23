@@ -59,8 +59,15 @@ Browse the provided `related_products_pool`. You must output **exactly 8 product
 *Selection Priority:* First, pick items technically related to the new product. 
 *Fallback:* If there are fewer than 8 related cards, pick random cards from the pool until you reach exactly 8. Do not alter their core HTML structure, but DO apply the `../` path rule (Rule 5).
 
+**10. New Products Sidebar (Chronological Logic):**
+* **Target Section:** Identify the "New Products" sidebar section in the Reference HTML.
+* **Update Source:** Use the `related_products_pool` file to populate this section.
+* **Selection Logic:** You MUST select exactly **8 cards** starting from the **top of the pool and moving downwards** (to prioritize the most recently added items).
+* **Structural Integrity:** Maintain the exact HTML design, CSS classes, and internal structure of the sidebar cards as found in the Reference HTML. 
+* **Data Replacement:** Replace the titles, images, links, and prices with the data from the selected pool items.
+* **Path Rule:** Apply the `../` prefix to all links and image sources within this sidebar (following Rule 5).
 
-** 10. Dynamic Card Synchronization (Session Memory)
+** 11. Dynamic Card Synchronization (Session Memory)
 This rule ensures pricing and data consistency across your entire shop ecosystem during this session.
 
 1. **The "New Source of Truth" Rule:** Once you generate "Block A (Updated Product Card)" for a product, that specific HTML snippet becomes the primary version. 
@@ -68,7 +75,7 @@ This rule ensures pricing and data consistency across your entire shop ecosystem
 3. **Cross-Page Accuracy:** If this updated product appears in the "Related Products" section of *any other* page generated later in this session, it must show the updated price, title, and link.
 4. **Validation:** Before finalizing "Block B" (Full Page), double-check that the "Related Products" section contains the most recent data generated in this chat history.
 
-**11. Output Structure:** 
+**12. Output Structure:** 
 Deliver the final result strictly in two distinct code blocks:
 *   **Block A:** Separate Product Card (Standalone HTML snippet)
 *   **Block B:** Full Product Page HTML (Integrated navigation, footer, schema, main content, and related products).

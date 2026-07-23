@@ -52,11 +52,11 @@ function priceBlockHtml(item) {
       </div>`;
   }
   const originalHtml = item.original_price != null
-    ? `<span class="originalPrice text-gray-500 line-through">BDT ${item.original_price}</span>`
+    ? `<span class="originalPrice text-gray-500 line-through"> ${item.original_price}</span>`
     : "";
   return `
       <div class="productPrice flex justify-center items-center gap-2 mb-2" itemscope itemtype="https://schema.org/Offer">
-        <span class="offer-price text-red-500 font-bold text-lg" itemprop="price" content="${item.price}">BDT ${item.price}</span>
+        <span class="offer-price text-red-500 font-bold text-lg" itemprop="price" content="${item.price}"> ${item.price}</span>
         <meta itemprop="priceCurrency" content="BDT">
         <meta itemprop="availability" content="https://schema.org/${item.in_stock === false ? "OutOfStock" : "InStock"}">
         ${originalHtml}
@@ -121,5 +121,56 @@ async function renderProducts({ containerId, jsonPath = "items.json", limit = 10
   } catch (err) {
     console.error("renderProducts error:", err);
     container.innerHTML = `<p class="text-sm text-gray-400 col-span-full text-center">Couldn't load products.</p>`;
+  }
+}
+
+/**
+ * Compact "New Products" sidebar list used on individual product pages
+ * (thumbnail + title only, no price/rating). Matches the original
+ * hand-coded markup exactly so no CSS changes are needed.
+ *
+ * USAGE (on a page inside /products/, so paths need "../"):
+ *   <div id="new-products-sidebar"></div>
+ *   <script src="../render-products.js"></script>
+ *   <script>
+ *     renderNewProductsSidebar({
+ *       containerId: "new-products-sidebar",
+ *       jsonPath: "../items.json",
+ *       basePath: "../",
+ *       limit: 8
+ *     });
+ *   </script>
+ */
+function sidebarItemHtml(item, basePath, isLast) {
+  const borderClass = isLast ? "" : " border-b border-gray-300";
+  return `
+    <div class="product-card" data-category="">
+      <a href="${basePath}${item.url}" class="flex text-sm font-medium text-gray-600 mb-2 pb-2${borderClass}">
+        <div class="max-w-20 w-full aspect-[4/3]">
+          <img src="${basePath}${item.image}" class="w-full h-full object-cover rounded-sm" alt="${item.alt || item.title}" loading="lazy" width="80" height="60">
+        </div>
+        <h3 class="productName pl-2">${item.title}</h3>
+        <p class="productCode hidden">${item.id}</p>
+      </a>
+    </div>`;
+}
+
+async function renderNewProductsSidebar({ containerId, jsonPath = "items.json", limit = 8, basePath = "" }) {
+  const container = document.getElementById(containerId);
+  if (!container) {
+    console.error(`renderNewProductsSidebar: no element with id "${containerId}" found`);
+    return;
+  }
+  try {
+    const res = await fetch(jsonPath, { cache: "no-store" });
+    if (!res.ok) throw new Error(`Failed to load ${jsonPath}: ${res.status}`);
+    const items = await res.json();
+    const latest = items.slice(0, limit);
+    container.innerHTML = latest
+      .map((item, i) => sidebarItemHtml(item, basePath, i === latest.length - 1))
+      .join("\n");
+  } catch (err) {
+    console.error("renderNewProductsSidebar error:", err);
+    container.innerHTML = `<p class="text-sm text-gray-400">Couldn't load new products.</p>`;
   }
 }

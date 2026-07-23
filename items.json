@@ -1,5 +1,24 @@
 [
   {
+  "id": "RBO-1330",
+  "title": "Arduino Nano V3.0 ATmega328P CH340G Microcontroller Board",
+  "url": "products/1330-arduino-nano-v3-atmega328p-ch340g-robo-orion-bangladesh.html",
+  "image": "img/product/1330-arduino-nano-v3-atmega328p-ch340g-robo-orion-bangladesh.jpg",
+  "alt": "Arduino Nano V3.0 ATmega328P CH340G Microcontroller Board",
+  "categories": [
+    "arduino",
+    "development-boards",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 80",
+  "rating": 5,
+  "reviews": 24,
+  "brand": "Generic",
+  "price": "BDT 370",
+  "original_price": "BDT 450",
+  "in_stock": true
+},
+  {
     "id": "RBO-1329",
     "title": "GY-521 MPU-6050 6DOF Accelerometer & Gyroscope Sensor Module",
     "url": "products/1329-6dof-accelerometer-gyroscope-gy-521-mpu-6050-robo-orion-bangladesh.html",
