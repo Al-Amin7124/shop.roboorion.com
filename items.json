@@ -1,5 +1,24 @@
 [
   {
+  "id": "RBO-1233",
+  "title": "4WD Smart Robot Car Chassis Kit",
+  "url": "products/1233-4wd-smart-robot-car-chassis-robo-orion-bangladesh.html",
+  "image": "img/product/1233-4wd-smart-robot-car-chassis-robo-orion-bangladesh.jpg",
+  "alt": "4WD Smart Robot Car Chassis Kit with 4 Motors",
+  "categories": [
+    "4wd-chassis",
+    "diy-kits",
+    "arduino"
+  ],
+  "discount": "Save BDT 265",
+  "rating": 5,
+  "reviews": 6,
+  "brand": "Generic",
+  "price": "BDT 885",
+  "original_price": "BDT 1150",
+  "in_stock": true
+},
+  {
   "id": "RBO-1332",
   "title": "Reflective Optical Sensor TCRT5000",
   "url": "products/1332-tcrt5000-reflective-optical-sensor-robo-orion-bangladesh.html",
