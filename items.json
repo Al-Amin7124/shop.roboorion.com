@@ -1,5 +1,25 @@
 [
   {
+  "id": "RBO-1334",
+  "title": "LiitoKala Lii-500 Smart Battery Charger Capacity Tester (STANDARD PACK)",
+  "url": "products/1334-liitokala-lii-500-smart-battery-charger-robo-orion-bangladesh.html",
+  "image": "img/product/1334-liitokala-lii-500-smart-battery-charger-robo-orion-bangladesh.jpg",
+  "alt": "LiitoKala Lii-500 Smart Battery Charger Capacity Tester",
+  "categories": [
+    "chargers",
+    "18650-batteries",
+    "repair-tools",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 500",
+  "rating": 5,
+  "reviews": 7,
+  "brand": "LiitoKala",
+  "price": "BDT 2250",
+  "original_price": "BDT 2750",
+  "in_stock": true
+},
+  {
   "id": "RBO-1233",
   "title": "4WD Smart Robot Car Chassis Kit",
   "url": "products/1233-4wd-smart-robot-car-chassis-robo-orion-bangladesh.html",
