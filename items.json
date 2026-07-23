@@ -1,5 +1,43 @@
 [
   {
+  "id": "RBO-1332",
+  "title": "Reflective Optical Sensor TCRT5000",
+  "url": "products/1332-tcrt5000-reflective-optical-sensor-robo-orion-bangladesh.html",
+  "image": "img/product/1332-tcrt5000-reflective-optical-sensor-robo-orion-bangladesh.jpg",
+  "alt": "Reflective Optical Sensor TCRT5000",
+  "categories": [
+    "sensors",
+    "ir-leds",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 10",
+  "rating": 5,
+  "reviews": 12,
+  "brand": "Generic",
+  "price": "BDT 15",
+  "original_price": "BDT 25",
+  "in_stock": true
+},
+  {
+  "id": "RBO-1331",
+  "title": "2WD Wheel Drive Mobile Robot Platform Chassis Kit",
+  "url": "products/1331-2wd-smart-robot-car-chassis-kit-robo-orion-bangladesh.html",
+  "image": "img/product/1331-2wd-smart-robot-car-chassis-kit-robo-orion-bangladesh.jpg",
+  "alt": "2WD Smart Robot Car Chassis Kit with BO Motors",
+  "categories": [
+    "2wd-chassis",
+    "diy-kits",
+    "arduino"
+  ],
+  "discount": "Save BDT 260",
+  "rating": 5,
+  "reviews": 8,
+  "brand": "Generic",
+  "price": "BDT 520",
+  "original_price": "BDT 780",
+  "in_stock": true
+},
+  {
   "id": "RBO-1330",
   "title": "Arduino Nano V3.0 ATmega328P CH340G Microcontroller Board",
   "url": "products/1330-arduino-nano-v3-atmega328p-ch340g-robo-orion-bangladesh.html",
