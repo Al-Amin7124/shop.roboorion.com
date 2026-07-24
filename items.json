@@ -1,5 +1,25 @@
 [
   {
+  "id": "RBO-1339",
+  "title": "LiFePO4 Battery Charger Module - Type-C | 1S 3.2V 3.6V 2.4A",
+  "url": "products/1339-1s-lifepo4-battery-charger-module-type-c-3.2v-2.4a-robo-orion-bangladesh.html",
+  "image": "img/product/1339-1s-lifepo4-battery-charger-module-type-c-3.2v-2.4a-robo-orion-bangladesh.jpg",
+  "alt": "LiFePO4 Battery Charger Module Type-C 1S 3.2V 2.4A",
+  "categories": [
+    "chargers",
+    "converter-modules",
+    "bms-protection",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 80",
+  "rating": 5,
+  "reviews": 26,
+  "brand": "Generic",
+  "price": "BDT 100",
+  "original_price": "BDT 180",
+  "in_stock": true
+},
+  {
   "id": "RBO-1338",
   "title": "Mini DC-DC Adjustable Buck-Boost Converter (2V-15V to 12V 3A)",
   "url": "products/1338-mini-dc-dc-buck-boost-converter-2v-15v-to-12v-3a-robo-orion-bangladesh.html",
