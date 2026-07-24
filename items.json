@@ -1,5 +1,82 @@
 [
   {
+  "id": "RBO-1338",
+  "title": "Mini DC-DC Adjustable Buck-Boost Converter (2V-15V to 12V 3A)",
+  "url": "products/1338-mini-dc-dc-buck-boost-converter-2v-15v-to-12v-3a-robo-orion-bangladesh.html",
+  "image": "img/product/1338-mini-dc-dc-buck-boost-converter-2v-15v-to-12v-3a-robo-orion-bangladesh.jpg",
+  "alt": "Mini DC-DC Adjustable Buck-Boost Converter 2V-15V to 12V 3A",
+  "categories": [
+    "converter-modules",
+    "power-supply",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 35",
+  "rating": 5,
+  "reviews": 23,
+  "brand": "Generic",
+  "price": "BDT 85",
+  "original_price": "BDT 120",
+  "in_stock": true
+},
+  {
+  "id": "RBO-1337",
+  "title": "Mini DC-DC Adjustable Buck-Boost Converter (2V-15V to 9V 3A)",
+  "url": "products/1337-mini-dc-dc-buck-boost-converter-2v-15v-to-9v-3a-robo-orion-bangladesh.html",
+  "image": "img/product/1337-mini-dc-dc-buck-boost-converter-2v-15v-to-9v-3a-robo-orion-bangladesh.jpg",
+  "alt": "Mini DC-DC Adjustable Buck-Boost Converter 2V-15V to 9V 3A",
+  "categories": [
+    "converter-modules",
+    "power-supply",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 35",
+  "rating": 5,
+  "reviews": 15,
+  "brand": "Generic",
+  "price": "BDT 85",
+  "original_price": "BDT 120",
+  "in_stock": true
+},
+  {
+  "id": "RBO-1336",
+  "title": "Mini DC-DC Adjustable Buck-Boost Converter (2V-15V to 5V 3A)",
+  "url": "products/1336-mini-dc-dc-buck-boost-converter-2v-15v-to-5v-3a-robo-orion-bangladesh.html",
+  "image": "img/product/1336-mini-dc-dc-buck-boost-converter-2v-15v-to-5v-3a-robo-orion-bangladesh.jpg",
+  "alt": "Mini DC-DC Adjustable Buck-Boost Converter 2V-15V to 5V 3A",
+  "categories": [
+    "converter-modules",
+    "power-supply",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 35",
+  "rating": 5,
+  "reviews": 12,
+  "brand": "Generic",
+  "price": "BDT 85",
+  "original_price": "BDT 120",
+  "in_stock": true
+},
+  {
+  "id": "RBO-1335",
+  "title": "Mini DC-DC Adjustable Buck-Boost Converter (2V-15V to 4.2V 3A)",
+  "url": "products/1335-mini-dc-dc-buck-boost-converter-2v-15v-to-4.2v-3a-robo-orion-bangladesh.html",
+  "image": "img/product/1335-mini-dc-dc-buck-boost-converter-2v-15v-to-4.2v-3a-robo-orion-bangladesh.jpg",
+  "alt": "Mini DC-DC Adjustable Buck-Boost Converter 2V-15V to 4.2V 3A",
+  "categories": [
+    "converter-modules",
+    "power-supply",
+    "chargers",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 35",
+  "rating": 5,
+  "reviews": 8,
+  "brand": "Generic",
+  "price": "BDT 85",
+  "original_price": "BDT 120",
+  "in_stock": true
+},
+  {
   "id": "RBO-1334",
   "title": "LiitoKala Lii-500 Smart Battery Charger Capacity Tester (STANDARD PACK)",
   "url": "products/1334-liitokala-lii-500-smart-battery-charger-robo-orion-bangladesh.html",

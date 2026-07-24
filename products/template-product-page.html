@@ -83,6 +83,7 @@
     <link href="../asset/css/project.css" rel="stylesheet">
     <link href="../asset/css/product.css" rel="stylesheet">
     <link href="../asset/css/cart.css" rel="stylesheet">
+    <link rel="preload" href="../items.json" as="fetch" crossorigin="anonymous">
 </head>
 
 <body class="bg-white">
@@ -477,26 +478,23 @@
 <script src="../asset/js/service.js"></script>
 <script src="../asset/js/tailwind.config.js"></script>
 <script src="../asset/js/cart.js"></script>
-<script src="../render-products.js"></script>
+<script src="../render-products.js?v=3"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    if (typeof renderNewProductsSidebar === 'function') {
-      renderNewProductsSidebar({
-        containerId: 'new-products-sidebar',
-        jsonPath: '../items.json',
-        basePath: '../',
-        limit: 8
-      });
-    }
-    if (typeof renderRelatedProducts === 'function') {
-      renderRelatedProducts({
-        containerId: 'related-products-grid',
-        jsonPath: '../items.json',
-        basePath: '../',
-        limit: 10
-        // currentId auto-detected from the page's own .productCode element
-      });
-    }
+  // No need to wait for DOMContentLoaded — the containers below already
+  // exist in the DOM by the time this script runs, since they appear
+  // earlier in the page than this <script> tag.
+  renderNewProductsSidebar({
+    containerId: 'new-products-sidebar',
+    jsonPath: '../items.json',
+    basePath: '../',
+    limit: 8
+  });
+  renderRelatedProducts({
+    containerId: 'related-products-grid',
+    jsonPath: '../items.json',
+    basePath: '../',
+    limit: 10
+    // currentId auto-detected from the page's own .productCode element
   });
 </script>
 </body>

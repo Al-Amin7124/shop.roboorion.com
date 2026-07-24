@@ -108,15 +108,35 @@ function buttonHtml(item) {
       </div>`;
 }
 
-function cardHtml(item, basePath = "") {
+/**
+ * Injects the fade-in keyframes once per page. Cards reveal themselves in
+ * sequence (first card first, then second, etc.) via animation-delay,
+ * rather than the whole grid popping in at the same instant.
+ */
+function injectFadeInStyles() {
+  if (document.getElementById("ro-fade-in-styles")) return;
+  const style = document.createElement("style");
+  style.id = "ro-fade-in-styles";
+  style.textContent = `
+    @keyframes roFadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    .ro-fade-in { opacity: 0; animation: roFadeIn 0.45s ease forwards; }
+  `;
+  document.head.appendChild(style);
+}
+
+function cardHtml(item, basePath = "", index = 0) {
   const categories = (item.categories || []).join(" ");
   const url = basePath + item.url;
   const image = basePath + item.image;
+  const delay = Math.min(index, 12) * 70; // cap so a long grid doesn't feel sluggish
+  // First couple of cards load eagerly at high priority so the very first
+  // image visibly appears before the rest; everything after stays lazy.
+  const loadingAttr = index < 2 ? `loading="eager" fetchpriority="high"` : `loading="lazy"`;
   return `
-    <article class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition" data-category="${categories}">
+    <article class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition ro-fade-in" style="animation-delay:${delay}ms" data-category="${categories}">
       <a href="${url}" target="_blank">
         <div class="w-full aspect-[4/3] relative">
-          <img src="${image}" loading="lazy" alt="${item.alt || item.title}" class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110" width="400" height="300">
+          <img src="${image}" ${loadingAttr} alt="${item.alt || item.title}" class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110" width="400" height="300">
           ${badgeHtml(item)}
         </div>
       </a>
@@ -182,6 +202,12 @@ function registerCartProducts(container) {
             priceSource: "shop-page",
           };
 
+    // Guard against binding the same button twice (e.g. if this function
+    // ever runs more than once for the same cards) — without this, a
+    // second binding would add the item twice per click.
+    if (addBtn.dataset.cartBound === "true") return;
+    addBtn.dataset.cartBound = "true";
+
     addBtn.addEventListener("click", (e) => {
       e.preventDefault();
       window.ROCart.addItem(id, 1);
@@ -195,18 +221,52 @@ function registerCartProducts(container) {
   }
 }
 
+/**
+ * Skeleton placeholders — shown the instant the script runs (before the
+ * network request even starts), so there's never a blank gap while
+ * items.json loads. Automatically replaced once real content is ready.
+ */
+function skeletonGridHtml(count) {
+  const card = `
+    <div class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 animate-pulse">
+      <div class="w-full aspect-[4/3] bg-gray-200"></div>
+      <div class="p-4 text-center">
+        <div class="h-4 bg-gray-200 rounded mb-2 mx-auto w-3/4"></div>
+        <div class="h-3 bg-gray-200 rounded mb-3 mx-auto w-1/3"></div>
+        <div class="h-3 bg-gray-200 rounded mb-3 mx-auto w-1/2"></div>
+        <div class="h-5 bg-gray-200 rounded mb-3 mx-auto w-1/3"></div>
+        <div class="h-9 bg-gray-200 rounded mx-auto w-2/3"></div>
+      </div>
+    </div>`;
+  return Array(count).fill(card).join("\n");
+}
+
+function skeletonSidebarHtml(count) {
+  const row = `
+    <div class="flex mb-2 pb-2 border-b border-gray-300 animate-pulse">
+      <div class="max-w-20 w-full aspect-[4/3] bg-gray-200 rounded-sm"></div>
+      <div class="pl-2 flex-1 flex flex-col justify-center gap-2">
+        <div class="h-3 bg-gray-200 rounded w-full"></div>
+        <div class="h-3 bg-gray-200 rounded w-2/3"></div>
+      </div>
+    </div>`;
+  return Array(count).fill(row).join("\n");
+}
+
 async function renderProducts({ containerId, jsonPath = "items.json", limit = 10 }) {
   const container = document.getElementById(containerId);
   if (!container) {
     console.error(`renderProducts: no element with id "${containerId}" found`);
     return;
   }
+  container.innerHTML = skeletonGridHtml(limit);
   try {
-    const res = await fetch(jsonPath, { cache: "no-store" });
+    const res = await fetch(jsonPath);
     if (!res.ok) throw new Error(`Failed to load ${jsonPath}: ${res.status}`);
     const items = await res.json();
     const latest = items.slice(0, limit);
-    container.innerHTML = latest.map((item) => cardHtml(item)).join("\n");
+    container.innerHTML = latest.map((item, i) => cardHtml(item, "", i)).join("\n");
+    injectFadeInStyles();
     registerCartProducts(container);
   } catch (err) {
     console.error("renderProducts error:", err);
@@ -231,10 +291,11 @@ async function renderProducts({ containerId, jsonPath = "items.json", limit = 10
  *     });
  *   </script>
  */
-function sidebarItemHtml(item, basePath, isLast) {
+function sidebarItemHtml(item, basePath, isLast, index = 0) {
   const borderClass = isLast ? "" : " border-b border-gray-300";
+  const delay = Math.min(index, 12) * 70;
   return `
-    <div class="product-card" data-category="">
+    <div class="product-card ro-fade-in" style="animation-delay:${delay}ms" data-category="">
       <a href="${basePath}${item.url}" class="flex text-sm font-medium text-gray-600 mb-2 pb-2${borderClass}">
         <div class="max-w-20 w-full aspect-[4/3]">
           <img src="${basePath}${item.image}" class="w-full h-full object-cover rounded-sm" alt="${item.alt || item.title}" loading="lazy" width="80" height="60">
@@ -251,14 +312,16 @@ async function renderNewProductsSidebar({ containerId, jsonPath = "items.json", 
     console.error(`renderNewProductsSidebar: no element with id "${containerId}" found`);
     return;
   }
+  container.innerHTML = skeletonSidebarHtml(limit);
   try {
-    const res = await fetch(jsonPath, { cache: "no-store" });
+    const res = await fetch(jsonPath);
     if (!res.ok) throw new Error(`Failed to load ${jsonPath}: ${res.status}`);
     const items = await res.json();
     const latest = items.slice(0, limit);
     container.innerHTML = latest
-      .map((item, i) => sidebarItemHtml(item, basePath, i === latest.length - 1))
+      .map((item, i) => sidebarItemHtml(item, basePath, i === latest.length - 1, i))
       .join("\n");
+    injectFadeInStyles();
   } catch (err) {
     console.error("renderNewProductsSidebar error:", err);
     container.innerHTML = `<p class="text-sm text-gray-400">Couldn't load new products.</p>`;
@@ -341,6 +404,7 @@ async function renderRelatedProducts({
     console.error(`renderRelatedProducts: no element with id "${containerId}" found`);
     return;
   }
+  container.innerHTML = skeletonGridHtml(limit);
 
   const resolvedId =
     currentId || document.querySelector(".productCode")?.textContent?.trim();
@@ -351,7 +415,7 @@ async function renderRelatedProducts({
   }
 
   try {
-    const res = await fetch(jsonPath, { cache: "no-store" });
+    const res = await fetch(jsonPath);
     if (!res.ok) throw new Error(`Failed to load ${jsonPath}: ${res.status}`);
     const items = await res.json();
 
@@ -362,8 +426,9 @@ async function renderRelatedProducts({
       // Current product isn't in the catalog yet — just show a random sample.
       container.innerHTML = shuffle(others)
         .slice(0, limit)
-        .map((item) => cardHtml(item, basePath))
+        .map((item, i) => cardHtml(item, basePath, i))
         .join("\n");
+      injectFadeInStyles();
       registerCartProducts(container);
       return;
     }
@@ -374,7 +439,8 @@ async function renderRelatedProducts({
       .slice(0, limit)
       .map((r) => r.item);
 
-    container.innerHTML = ranked.map((item) => cardHtml(item, basePath)).join("\n");
+    container.innerHTML = ranked.map((item, i) => cardHtml(item, basePath, i)).join("\n");
+    injectFadeInStyles();
     registerCartProducts(container);
   } catch (err) {
     console.error("renderRelatedProducts error:", err);

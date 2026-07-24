@@ -145,6 +145,7 @@
     <link href="asset/css/product.css" rel="stylesheet">
     <link href="asset/css/cart.css" rel="stylesheet">
     <link href="asset/css/index.css" rel="stylesheet">
+    <link rel="preload" href="items.json" as="fetch" crossorigin="anonymous">
 </head>
 <body class="bg-gray-50 text-gray-900 overflow-x-hidden scroll-smooth">
 
@@ -1549,7 +1550,7 @@
 <script src="asset/js/tailwind.config.js"></script>
 <script src="asset/js/product.js"></script>
 <script src="asset/js/cart.js"></script>
-<script src="render-products.js"></script>
+<script src="render-products.js?v=3"></script>
 
 
 <script>
@@ -1582,12 +1583,10 @@
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-  // New Arrivals — render from items.json (newest item first in the file)
-  document.addEventListener('DOMContentLoaded', () => {
-    if (typeof renderProducts === 'function') {
-      renderProducts({ containerId: 'new-arrivals-grid', jsonPath: 'items.json', limit: 10 });
-    }
-  });
+  // New Arrivals — render from items.json (newest item first in the file).
+  // Called directly (no DOMContentLoaded wait) since the grid container
+  // above already exists in the DOM by the time this script runs.
+  renderProducts({ containerId: 'new-arrivals-grid', jsonPath: 'items.json', limit: 10 });
 </script>
 
 
