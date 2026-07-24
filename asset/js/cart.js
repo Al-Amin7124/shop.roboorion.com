@@ -611,7 +611,15 @@
             products.push(product);
             saved[product.id] = product;
             const addBtn = card.querySelector('.add-to-cart');
-            if (addBtn) addBtn.addEventListener('click', (e) => { e.preventDefault(); ROCart.addItem(product.id, 1); });
+            // Shared marker with render-products.js — whichever script binds
+            // first sets this, and the other skips re-binding. Without this,
+            // a card rendered dynamically (e.g. New Arrivals) that finishes
+            // loading before this scan runs would get bound TWICE: once here,
+            // once by render-products.js — doubling the quantity per click.
+            if (addBtn && addBtn.dataset.cartBound !== 'true') {
+                addBtn.dataset.cartBound = 'true';
+                addBtn.addEventListener('click', (e) => { e.preventDefault(); ROCart.addItem(product.id, 1); });
+            }
         });
         localStorage.setItem(PROD_KEY, JSON.stringify(saved));
         Object.values(saved).forEach(p => { if (!products.find(x => x.id === p.id)) products.push(p); });
