@@ -13,28 +13,13 @@
     const PROD_KEY     = 'robo_orion_products';
     const COUPON_KEY   = 'robo_orion_coupon';
     const CUSTOMER_KEY = 'robo_orion_customer';
+    const DELIVERY_KEY = 'robo_orion_delivery';
     const STORE_NAME   = 'Robo Orion';
     const PICKUP_LOCATION = 'Middle Badda, Dhaka';
 
-    /**
-     * Coupon definitions.
-     *
-     * Two kinds of coupons are supported:
-     *
-     * 1) STORE-WIDE  — applies to the whole cart subtotal.
-     *    Leave `productCode` as null.
-     *
-     * 2) PRODUCT-SPECIFIC — applies ONLY to the line total of the
-     *    matching product (by product code). All other items in the
-     *    cart are completely unaffected by this coupon.
-     *    Set `productCode` to the exact product code (e.g. 'ARD-001').
-     *
-     * `minOrder` for a product-specific coupon is checked against that
-     * product's own line subtotal (price × qty in cart), not the whole cart.
-     */
     const COUPONS = {
         // Store-wide example:
-         'ROBOORION': { discount: 2, type: 'percent', expiry: '2026-12-31', label: '2% off your order', minOrder: 0, productCode: null },
+        // 'ROBOORION10': { discount: 10, type: 'percent', expiry: '2026-12-31', label: '10% off your order', minOrder: 0, productCode: null },
 
         // Product-specific example (only discounts the item with code 'ARD-001'):
         // 'ARDUINO50':   { discount: 50, type: 'flat', expiry: '2026-12-31', label: 'BDT 50 off Arduino Uno', minOrder: 0, productCode: 'ARD-001' },
@@ -75,8 +60,6 @@
         return parseFloat((n || 0).toFixed(2));
     }
 
-    /** Escapes text before it is inserted via innerHTML, so product names/codes
-     *  coming from the page (or localStorage) can never break markup or attributes. */
     function escapeHtml(str) {
         if (str === undefined || str === null) return '';
         return String(str)
@@ -99,11 +82,8 @@
         const saved = JSON.parse(localStorage.getItem(PROD_KEY) || '{}');
         const inMemory = PRODUCTS.find(p => p.id === id);
 
-        // If localStorage has a product-page price, it is always authoritative —
-        // use it even if the in-memory cache (from the shop listing) has a different value.
         if (saved[id] && saved[id].priceSource === 'product-page') {
             const product = { ...saved[id], img: fixImagePath(saved[id].img) };
-            // Keep in-memory cache in sync with the authoritative price
             const idx = PRODUCTS.findIndex(p => p.id === id);
             if (idx !== -1) PRODUCTS[idx] = product; else PRODUCTS.push(product);
             return product;
@@ -119,7 +99,6 @@
         return null;
     }
 
-    /** Subtotal (price × qty) for a single product code currently in the cart. */
     function productLineTotal(cart, code) {
         const item = cart.find(i => i.id === code);
         if (!item) return 0;
@@ -127,7 +106,6 @@
         return p ? fmt(p.price * item.qty) : 0;
     }
 
-    /** Subtotal for the entire cart. */
     function cartTotal(cart) {
         return fmt(cart.reduce((s, i) => {
             const p = findProduct(i.id);
@@ -153,9 +131,6 @@
         return (outside && outside.checked) ? 'Outside Dhaka' : 'Inside Dhaka';
     }
 
-    /** Toggles the visual "active" state on whichever delivery option is
-     *  selected, and adapts the address field when Self Pickup is chosen
-     *  (no delivery address is needed for a pickup order). */
     function syncDeliveryUI() {
         [
             ['delivery-inside', 'delivery-inside-label'],
@@ -177,6 +152,27 @@
         if (noteEl) noteEl.style.display = pickup ? 'block' : 'none';
     }
 
+    function saveDeliveryPreference() {
+        let method = 'outside';
+        if (isSelfPickup()) method = 'pickup';
+        else {
+            const inside = getEl('delivery-inside');
+            if (inside && inside.checked) method = 'inside';
+        }
+        try { localStorage.setItem(DELIVERY_KEY, method); }
+        catch (e) { console.error('ROCart: failed to save delivery preference', e); }
+    }
+
+    function loadDeliveryPreference() {
+        let saved;
+        try { saved = localStorage.getItem(DELIVERY_KEY); } catch (e) { return; }
+        if (!saved) return;
+
+        const radioIdByMethod = { inside: 'delivery-inside', outside: 'delivery-outside', pickup: 'delivery-pickup' };
+        const radio = getEl(radioIdByMethod[saved]);
+        if (radio) radio.checked = true;
+    }
+
     /* ── CUSTOMER INFO ──────────────────────────────────── */
 
     function getCustomerInfo() {
@@ -192,13 +188,11 @@
         catch (e) { console.error('ROCart: failed to save customer info', e); }
     }
 
-    /** Restores a returning customer's name/phone/address, and keeps them
-     *  saved as the person types so they don't need to re-enter them later. */
     function loadCustomerInfo() {
         const nameEl = getEl('cust-name');
         const phoneEl = getEl('cust-phone');
         const locEl = getEl('cust-location');
-        if (!nameEl && !phoneEl && !locEl) return; // contact form not present on this page
+        if (!nameEl && !phoneEl && !locEl) return;
 
         try {
             const saved = JSON.parse(localStorage.getItem(CUSTOMER_KEY) || '{}');
@@ -210,12 +204,9 @@
         [nameEl, phoneEl, locEl].forEach(el => { if (el) el.addEventListener('input', saveCustomerInfo); });
     }
 
-    /** Validates name/phone (always required) and address (required unless
-     *  Self Pickup is selected) before an order can be sent. Shows an inline
-     *  error and focuses the offending field instead of silently failing. */
     function validateCustomerInfo() {
         const nameEl = getEl('cust-name');
-        if (!nameEl) return true; // contact form isn't present on this page — nothing to validate
+        if (!nameEl) return true;
 
         const msgEl = getEl('contact-msg');
         const info = getCustomerInfo();
@@ -237,15 +228,6 @@
 
     /* ── COUPON LOGIC ───────────────────────────────────── */
 
-    /**
-     * Computes the currently applicable discount for a given cart.
-     * Returns: { amount, targetId, inactive }
-     *   - amount:   BDT amount to subtract from the order.
-     *   - targetId: product code the discount applies to (product-specific
-     *               coupons only), or null for store-wide coupons.
-     *   - inactive: true if a coupon is applied but not currently earning a
-     *               discount (e.g. its target product isn't in the cart).
-     */
     function calcDiscount(cart) {
         if (!APPLIED_COUPON) return { amount: 0, targetId: null, inactive: false };
         if (isCouponExpired(APPLIED_COUPON.expiry)) { removeCoupon(); return { amount: 0, targetId: null, inactive: false }; }
@@ -300,7 +282,6 @@
             return;
         }
 
-        // ── Product-specific coupon ──
         if (coupon.productCode) {
             const targetProduct = findProduct(coupon.productCode);
             const lineTotal = productLineTotal(cart, coupon.productCode);
@@ -332,7 +313,6 @@
             return;
         }
 
-        // ── Store-wide coupon ──
         const total = cartTotal(cart);
         if (coupon.minOrder && total < coupon.minOrder) {
             removeCoupon();
@@ -431,23 +411,14 @@
         if (cart.length === 0) {
             itemsEl.innerHTML = `<div class="ro-empty"><p>Your cart is empty</p></div>`;
             if (footerEl) footerEl.style.display = 'none';
-            const dRow = document.getElementById('ro-discount-row');
-            if (dRow) dRow.remove();
             return;
         }
         if (footerEl) footerEl.style.display = 'block';
-
-        const discountInfo = calcDiscount(cart);
 
         itemsEl.innerHTML = cart.map(item => {
             const p = findProduct(item.id);
             if (!p) return '';
             const lineTotal = fmt(p.price * item.qty);
-            const isDiscounted = discountInfo.targetId === p.id && discountInfo.amount > 0;
-            const discountedLine = isDiscounted ? fmt(lineTotal - discountInfo.amount) : lineTotal;
-            const subtotalHtml = isDiscounted
-                ? `<span class="ro-item-strike">BDT ${lineTotal}</span> BDT ${discountedLine}`
-                : `BDT ${lineTotal}`;
             return `<div class="ro-cart-item">
                 <img class="ro-item-img" src="${escapeHtml(p.img)}" alt="${escapeHtml(p.name)}">
                 <div class="ro-item-info">
@@ -461,27 +432,13 @@
                         <span class="ro-qty-num">${item.qty}</span>
                         <button class="ro-qty-btn" data-action="inc" data-id="${escapeHtml(p.id)}">+</button>
                     </div>
-                    <div class="ro-item-subtotal">${subtotalHtml}</div>
+                    <div class="ro-item-subtotal">BDT ${lineTotal}</div>
                     <button class="ro-remove-btn" data-action="remove" data-id="${escapeHtml(p.id)}">✕ remove</button>
                 </div></div>`;
         }).join('');
 
         const totalEl = getEl('total-price');
-        if (totalEl) totalEl.textContent = `BDT ${fmt(total - discountInfo.amount)}`;
-
-        let dRow = document.getElementById('ro-discount-row');
-        if (discountInfo.amount > 0) {
-            if (!dRow) {
-                dRow = document.createElement('div');
-                dRow.id = 'ro-discount-row';
-                dRow.className = 'ro-coupon-discount-row';
-                const couponMsgEl = document.getElementById('ro-coupon-msg');
-                if (couponMsgEl) couponMsgEl.insertAdjacentElement('afterend', dRow);
-            }
-            const targetProduct = discountInfo.targetId ? findProduct(discountInfo.targetId) : null;
-            const label = targetProduct ? `Discount (${APPLIED_COUPON.code}) — ${targetProduct.name}` : `Discount (${APPLIED_COUPON.code})`;
-            dRow.innerHTML = `<span>${escapeHtml(label)}</span><span>- BDT ${discountInfo.amount}</span>`;
-        } else if (dRow) dRow.remove();
+        if (totalEl) totalEl.textContent = `BDT ${total}`;
     }
 
     function renderCheckoutUI(cart, total, totalQty) {
@@ -550,11 +507,9 @@
     /* ── PRODUCT SCRAPING & SETUP ──────────────────────────────── */
 
     function setupIndividualPage() {
-        // This handles the individual product detail page logic
         const mainBtn = document.getElementById('main-add-to-cart');
         if (!mainBtn) return;
 
-        // 1. Scrape the main product data from the page
         const nameEl = document.querySelector('.productName');
         const codeEl = document.querySelector('.productCode');
         const priceEl = document.querySelector('.productPrice .offer-price');
@@ -571,19 +526,20 @@
             priceSource: 'product-page',
         };
 
-        // Register the product so findProduct() works
         PRODUCTS.push(product);
         const saved = JSON.parse(localStorage.getItem(PROD_KEY) || '{}');
         saved[product.id] = product;
         localStorage.setItem(PROD_KEY, JSON.stringify(saved));
 
-        // 2. Handle the click event
-        mainBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const qtyInput = document.getElementById('main-product-qty');
-            const qty = qtyInput ? parseInt(qtyInput.value) || 1 : 1;
-            ROCart.addItem(product.id, qty);
-        });
+        if (mainBtn.dataset.cartBound !== 'true') {
+            mainBtn.dataset.cartBound = 'true';
+            mainBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const qtyInput = document.getElementById('main-product-qty');
+                const qty = qtyInput ? parseInt(qtyInput.value) || 1 : 1;
+                ROCart.addItem(product.id, qty);
+            });
+        }
     }
 
     function scrapeShopProducts() {
@@ -597,7 +553,6 @@
             if (!nameEl) return;
             const productId = codeEl ? codeEl.textContent.trim() : `p-${idx}`;
             const shopPrice = parseFloat(priceEl?.textContent.replace(/[^0-9.]/g, '') || '0');
-            // If this product was already saved from its own product page, keep that price as authoritative
             const existingEntry = saved[productId];
             const finalPrice = (existingEntry && existingEntry.priceSource === 'product-page') ? existingEntry.price : shopPrice;
             const product = {
@@ -658,7 +613,6 @@
         const deliveryLabel = getDeliveryLabel();
         const pickup = isSelfPickup();
 
-        // Only build a customer-details block if the contact form exists on this page
         let customerBlock = '';
         if (getEl('cust-name')) {
             customerBlock = `👤 *Customer Details*\n`
@@ -720,11 +674,6 @@
         });
     }
 
-    /** Injects a tiny stylesheet only for the couple of things cart.css doesn't
-     *  already cover: the strike-through "was" price on a discounted line item,
-     *  and the inline "Remove" link inside the coupon success message.
-     *  Everything else (item code, coupon box, discount row) uses the real
-     *  classes defined in cart.css. Safe to call once. */
     function injectDynamicStyles() {
         if (document.getElementById('ro-cart-dynamic-style')) return;
         const style = document.createElement('style');
@@ -753,10 +702,7 @@
         document.head.appendChild(style);
     }
 
-    /* ── EVENT DELEGATION ──────────────────────────────────
-       Cart item controls use data-action/data-id attributes instead of
-       inline onclick handlers with interpolated IDs, so product codes
-       containing quotes or special characters can never break markup. */
+    /* ── EVENT DELEGATION ──────────────────────────────────── */
     function bindDelegatedEvents() {
         document.addEventListener('click', (e) => {
             const btn = e.target.closest('[data-action]');
@@ -799,14 +745,6 @@
                     </div>
                     <div class="ro-cart-items" id="ro-cart-items"></div>
                     <div class="ro-cart-footer" id="ro-cart-footer" style="display:none">
-                        <div class="ro-coupon-section">
-                            <div class="ro-delivery-label">🎟 Coupon Code</div>
-                            <div class="ro-coupon-row">
-                                <input type="text" id="ro-coupon-input" placeholder="Enter coupon code" class="ro-coupon-input">
-                                <button class="ro-coupon-btn" onclick="ROCart.applyCoupon()">Apply</button>
-                            </div>
-                            <div id="ro-coupon-msg" class="ro-coupon-msg"></div>
-                        </div>
                         <div class="ro-summary-row">
                             <span id="ro-item-count-label"></span>
                             <span>Subtotal</span>
@@ -823,12 +761,8 @@
             `);
         }
 
-        // HANDLE BOTH Shop Page and Individual Page
         PRODUCTS = scrapeShopProducts();
 
-        // Immediately override any shop-scraped prices with the authoritative
-        // product-page prices stored in localStorage, so the cart drawer always
-        // shows the correct price from the very first render.
         const _saved = JSON.parse(localStorage.getItem(PROD_KEY) || '{}');
         PRODUCTS = PRODUCTS.map(p => {
             const ls = _saved[p.id];
@@ -837,6 +771,7 @@
 
         setupIndividualPage();
         loadCustomerInfo();
+        loadDeliveryPreference();
 
         updateUI();
 
@@ -844,9 +779,9 @@
         const outside = getEl('delivery-outside');
         const pickup = getEl('delivery-pickup');
         [inside, outside, pickup].forEach(el => {
-            if (el) el.addEventListener('change', () => { syncDeliveryUI(); updateUI(); });
+            if (el) el.addEventListener('change', () => { saveDeliveryPreference(); syncDeliveryUI(); updateUI(); });
         });
-        syncDeliveryUI(); // set correct initial active/disabled state
+        syncDeliveryUI();
 
         window.addEventListener('storage', (e) => {
             if (e.key === CART_KEY || e.key === COUPON_KEY) updateUI();
@@ -859,13 +794,11 @@
         init();
     }
 
-    // EXPOSE PUBLIC API
     window.ROCart = {
         addItem, changeQty, removeItem, clearCart, openDrawer, closeDrawer,
         orderWhatsApp, applyCoupon, removeCoupon
     };
 
-    // BRIDGE: Supports old function names in HTML
     window.coApplyCoupon = function() { ROCart.applyCoupon(); };
     window.coOrderWhatsApp = function() { ROCart.orderWhatsApp(); };
     window.changeQty = function(id, delta) { ROCart.changeQty(id, delta); };
