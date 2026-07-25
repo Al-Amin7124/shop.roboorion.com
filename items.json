@@ -1096,13 +1096,15 @@
     "categories": [
       "dc-motors",
       "converter-modules",
-      "diy-kits"
+      "diy-kits",
+      "bldc-motors",
+      "motor-drivers"
     ],
-    "discount": "Save BDT 35",
+    "discount": "Save BDT 40",
     "rating": 5,
     "reviews": 12,
     "brand": "Generic",
-    "price": "BDT 155",
+    "price": "BDT 150",
     "original_price": "BDT 190",
     "in_stock": true
   },
@@ -1227,7 +1229,7 @@
     "alt": "BLDC Brushless Fan Motor 12V Fan Core 3 Blades High Air Flow 6 inch",
     "categories": [
       "dc-motors",
-      "diy-kits"
+      "bldc-motors"
     ],
     "discount": "Save BDT 50",
     "rating": 5,
@@ -1430,7 +1432,8 @@
     "alt": "Kangming 6131 Portable Table Fan with 1800mAh Battery and 9W BLDC Motor",
     "categories": [
       "dc-motors",
-      "lithium-batteries"
+      "lithium-batteries",
+      "bldc-motors"
     ],
     "discount": "Save BDT 640",
     "rating": 5,
@@ -3579,6 +3582,959 @@
     "brand": "Generic",
     "price": "BDT 30",
     "original_price": "BDT 60",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1145",
+    "title": "4 Piece 8x20mm Coreless Motor with 55mm Propellers - High Speed Micro Drone Motors",
+    "url": "products/1145-4-piece-8x20mm-coreless-motor-with-55mm-propellers-robo-orion-bangladesh.html",
+    "image": "img/product/1145-4-piece-8x20mm-coreless-motor-with-55mm-propellers-robo-orion-bangladesh.jpg",
+    "alt": "4 Piece 8x20mm Coreless Motor with 55mm Propellers - High Speed Micro Drone Motors",
+    "categories": [
+      "motors",
+      "dc-motors",
+      "drone-accessories"
+    ],
+    "discount": null,
+    "rating": 5,
+    "reviews": 17,
+    "brand": "Robo Orion",
+    "price": "BDT 300",
+    "original_price": "BDT 520",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1146",
+    "title": "103 Multilayer Ceramic Capacitor (0.01uF) - High Stability MLCC",
+    "url": "products/1146-103-multilayer-ceramic-capacitor-robo-orion-bangladesh.html",
+    "image": "img/product/1146-103-multilayer-ceramic-capacitor-robo-orion-bangladesh.jpg",
+    "alt": "103 Multilayer Ceramic Capacitor (0.01uF) - MLCC",
+    "categories": [
+      "capacitors",
+      "electronics"
+    ],
+    "discount": null,
+    "rating": 5,
+    "reviews": 14,
+    "brand": "Robo Orion",
+    "price": "BDT 1.5",
+    "original_price": "BDT 8",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1147",
+    "title": "103 Ceramic Capacitor (10nF) - Disc Capacitor",
+    "url": "products/1147-103-ceramic-capacitor-robo-orion-bangladesh.html",
+    "image": "img/product/1147-103-ceramic-capacitor-robo-orion-bangladesh.jpg",
+    "alt": "103 Ceramic Capacitor 10nF - Disc Capacitor",
+    "categories": [
+      "capacitors"
+    ],
+    "discount": null,
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Undefined",
+    "price": "BDT 1.2",
+    "original_price": "BDT 3",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1148",
+    "title": "104 Ceramic Capacitor (0.1uF) - High Stability Disc Capacitor",
+    "url": "products/1148-104-ceramic-capacitor-robo-orion-bangladesh.html",
+    "image": "img/product/1148-104-ceramic-capacitor-robo-orion-bangladesh.jpg",
+    "alt": "104 Ceramic Capacitor (0.1uF) - High Stability Disc Capacitor",
+    "categories": [
+      "capacitors"
+    ],
+    "discount": null,
+    "rating": 5,
+    "reviews": 14,
+    "brand": "Undefined",
+    "price": "BDT 1.2",
+    "original_price": "BDT 3",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1149",
+    "title": "BD140 PNP Power Transistor - High Reliability BJT",
+    "url": "products/1149-bd140-pnp-power-transistor-robo-orion-bangladesh.html",
+    "image": "img/product/1149-bd140-pnp-power-transistor-robo-orion-bangladesh.jpg",
+    "alt": "BD140 PNP Power Transistor - High Reliability BJT",
+    "categories": [
+      "transistors"
+    ],
+    "discount": null,
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Undefined",
+    "price": "BDT 8",
+    "original_price": "BDT 15",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1150",
+    "title": "LM358 Dual Operational Amplifiers Op-Amp DIP8",
+    "url": "products/1150-lm358-dual-operational-amplifiers-op-amp-dip8-robo-orion-bangladesh.html",
+    "image": "img/product/1150-lm358-dual-operational-amplifiers-op-amp-dip8-robo-orion-bangladesh.jpg",
+    "alt": "LM358 Dual Operational Amplifiers Op-Amp DIP8 - High Gain IC",
+    "categories": [
+      "ic-chips"
+    ],
+    "discount": null,
+    "rating": 5,
+    "reviews": 14,
+    "brand": "Undefined",
+    "price": "BDT 15",
+    "original_price": "BDT 30",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1151",
+    "title": "5V 5A SMPS DC Power Supply High Quality",
+    "url": "products/1151-5v-5a-smps-dc-power-supply-high-quality-robo-orion-bangladesh.html",
+    "image": "img/product/1151-5v-5a-smps-dc-power-supply-high-quality-robo-orion-bangladesh.jpg",
+    "alt": "5V 5A SMPS DC Power Supply High Quality - Switching Mode Power Supply",
+    "categories": [
+      "power-supply"
+    ],
+    "discount": null,
+    "rating": 5,
+    "reviews": 22,
+    "brand": "Robo Orion",
+    "price": "BDT 560",
+    "original_price": "BDT 750",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1152",
+    "title": "12V 5A DC SMPS Power Supply",
+    "url": "products/1152-12v-5a-dc-smps-power-supply-robo-orion-bangladesh.html",
+    "image": "img/product/1152-12v-5a-dc-smps-power-supply-robo-orion-bangladesh.jpg",
+    "alt": "12V 5A DC SMPS Power Supply - High Efficiency Switching Mode",
+    "categories": [
+      "power-supply"
+    ],
+    "discount": null,
+    "rating": 5,
+    "reviews": 17,
+    "brand": "Robo Orion",
+    "price": "BDT 450",
+    "original_price": "BDT 680",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1153",
+    "title": "2 Pin PCB Terminal Block Connector - 5.08mm Pitch",
+    "url": "products/1153-2-pin-terminal-block-connector-robo-orion-bangladesh.html",
+    "image": "img/product/1153-2-pin-terminal-block-connector-robo-orion-bangladesh.jpg",
+    "alt": "2 Pin PCB Terminal Block Connector 5.08mm Pitch - Robo Orion Bangladesh",
+    "categories": [
+      "terminal-blocks",
+      "pcb-boards",
+      "diy-kits"
+    ],
+    "discount": null,
+    "rating": 5,
+    "reviews": 16,
+    "brand": "Chinese",
+    "price": "BDT 8",
+    "original_price": "BDT 15",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1154",
+    "title": "10k Ohm Single-Turn Trimmer Potentiometer (103)",
+    "url": "products/1154-potentiometer-10k-single-turn-trimmer-robo-orion-bangladesh.html",
+    "image": "img/product/1154-potentiometer-10k-single-turn-trimmer-robo-orion-bangladesh.jpg",
+    "alt": "10k Ohm Single-Turn Trimmer Potentiometer 103 - Robo Orion Bangladesh",
+    "categories": [
+      "resistors",
+      "diy-kits",
+      "development-boards"
+    ],
+    "discount": null,
+    "rating": 5,
+    "reviews": 14,
+    "brand": "Chinese",
+    "price": "BDT 8",
+    "original_price": "BDT 15",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1155",
+    "title": "NE-555 Timer IC - Good Quality",
+    "url": "products/1155-ne555-timer-good-quality-robo-orion-bangladesh.html",
+    "image": "img/product/1155-ne555-timer-good-quality-robo-orion-bangladesh.jpg",
+    "alt": "NE-555 Timer IC Good Quality - Precision Timing Integrated Circuit",
+    "categories": [
+      "ic-chips",
+      "development-boards",
+      "diy-kits"
+    ],
+    "discount": null,
+    "rating": 5,
+    "reviews": 17,
+    "brand": "Generic",
+    "price": "BDT 12",
+    "original_price": "BDT 18",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1156",
+    "title": "White ON OFF DC Mini Push Button Switch - Latching",
+    "url": "products/1156-white-on-off-dc-mini-push-button-switch-robo-orion-bangladesh.html",
+    "image": "img/product/1156-white-on-off-dc-mini-push-button-switch-robo-orion-bangladesh.jpg",
+    "alt": "White ON OFF DC Mini Push Button Switch - Latching Type",
+    "categories": [
+      "switches",
+      "diy-kits"
+    ],
+    "discount": null,
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Chinese",
+    "price": "BDT 5",
+    "original_price": "BDT 8",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1157",
+    "title": "18650 Battery Holder 3 Cell with Wire - 3S",
+    "url": "products/1157-3s-battery-holder-robo-orion-bangladesh.html",
+    "image": "img/product/1157-3s-battery-holder-robo-orion-bangladesh.jpg",
+    "alt": "18650 Battery Holder 3 Cell with Wire - 3S Series Connection",
+    "categories": [
+      "battery-packs",
+      "lithium-batteries",
+      "diy-kits"
+    ],
+    "discount": null,
+    "rating": 5,
+    "reviews": 7,
+    "brand": "Chinese",
+    "price": "BDT 60",
+    "original_price": "BDT 80",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1158",
+    "title": "18650 Battery Holder 2 Cell with Wire",
+    "url": "products/1158-18650-battery-holder-2-cell-with-wire-robo-orion-bangladesh.html",
+    "image": "img/product/1158-18650-battery-holder-2-cell-with-wire-robo-orion-bangladesh.jpg",
+    "alt": "18650 Battery Holder 2 Cell with Wire - Double Cell Li-Ion Holder",
+    "categories": [
+      "battery-packs",
+      "lithium-batteries",
+      "diy-kits"
+    ],
+    "discount": null,
+    "rating": 5,
+    "reviews": 8,
+    "brand": "Chinese",
+    "price": "BDT 45",
+    "original_price": "BDT 60",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1159",
+    "title": "18650 Battery Holder 1 Cell with Wire - 1S",
+    "url": "products/1159-18650-battery-holder-1s-with-wire-robo-orion-bangladesh.html",
+    "image": "img/product/1159-18650-battery-holder-1s-with-wire-robo-orion-bangladesh.jpg",
+    "alt": "18650 Battery Holder 1 Cell with Wire",
+    "categories": [
+      "18650-batteries",
+      "lithium-batteries",
+      "battery-packs",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 20",
+    "rating": 5,
+    "reviews": 15,
+    "brand": "Chinese",
+    "price": "BDT 25",
+    "original_price": "BDT 45",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1160",
+    "title": "12V 3 Inch Cooling Fan 80x80x25mm - ADDA Brushless DC Fan",
+    "url": "products/1160-12v-3-inch-cooling-fan-robo-orion-bangladesh.html",
+    "image": "img/product/1160-12v-3-inch-cooling-fan-robo-orion-bangladesh.jpg",
+    "alt": "12V 3 Inch Cooling Fan 80x80x25mm - ADDA Brushless DC Fan",
+    "categories": [
+      "dc-motors",
+      "diy-kits"
+    ],
+    "discount": null,
+    "rating": 5,
+    "reviews": 16,
+    "brand": "ADDA",
+    "price": "BDT 85",
+    "original_price": "BDT 150",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1161",
+    "title": "IRFZ3205 Original N-Channel Power MOSFET - High Current Switching",
+    "url": "products/1161-irfz3205-original-mosfet-robo-orion-bangladesh.html",
+    "image": "img/product/1161-irfz3205-original-mosfet-robo-orion-bangladesh.jpg",
+    "alt": "IRFZ3205 Original N-Channel Power MOSFET - High Current Switching",
+    "categories": [
+      "transistors"
+    ],
+    "discount": "Save BDT 85",
+    "rating": 5,
+    "reviews": 18,
+    "brand": "Original",
+    "price": "BDT 95",
+    "original_price": "BDT 180",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1162",
+    "title": "DC Jack Connector Male 5.5x2.1mm Barrel Plug (DC-005)",
+    "url": "products/1162-dc-jack-connector-male-5-5x2-1mm-barrel-plug-dc-005-robo-orion-bangladesh.html",
+    "image": "img/product/1162-dc-jack-connector-male-5-5x2-1mm-barrel-plug-dc-005-robo-orion-bangladesh.jpg",
+    "alt": "DC Jack Connector Male 5.5x2.1mm Barrel Plug DC-005",
+    "categories": [
+      "dc-connectors",
+      "wire-cables"
+    ],
+    "discount": null,
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 10",
+    "original_price": "BDT 15",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1163",
+    "title": "DC PCB Mount Female Plug Socket 5.5x2.1mm (DC-005)",
+    "url": "products/1163-dc-pcb-mount-female-plug-socket-5-5x2-1mm-dc-005-robo-orion-bangladesh.html",
+    "image": "img/product/1163-dc-pcb-mount-female-plug-socket-5-5x2-1mm-dc-005-robo-orion-bangladesh.jpg",
+    "alt": "DC PCB Mount Female Plug Socket 5.5x2.1mm (DC-005)",
+    "categories": [
+      "dc-connectors",
+      "pcb-boards",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 4",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 8",
+    "original_price": "BDT 12",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1164",
+    "title": "DC Power Socket Female Panel Mount 5.5x2.1mm",
+    "url": "products/1164-dc-power-socket-female-panel-mount-5-5x2-1mm-robo-orion-bangladesh.html",
+    "image": "img/product/1164-dc-power-socket-female-panel-mount-5-5x2-1mm-robo-orion-bangladesh.jpg",
+    "alt": "DC Power Socket Female Panel Mount 5.5x2.1mm",
+    "categories": [
+      "dc-connectors",
+      "wire-cables"
+    ],
+    "discount": "Save BDT 4",
+    "rating": 5,
+    "reviews": 13,
+    "brand": "Generic",
+    "price": "BDT 8",
+    "original_price": "BDT 12",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1165",
+    "title": "Loson Liquid Soldering Flux Paste for Electronics & Battery",
+    "url": "products/1165-loson-liquid-soldering-flux-paste-battery-electronics-robo-orion-bangladesh.html",
+    "image": "img/product/1165-loson-liquid-soldering-flux-paste-battery-electronics-robo-orion-bangladesh.jpg",
+    "alt": "Loson Liquid Soldering Flux Paste for Electronics & Battery",
+    "categories": [
+      "soldering-tools",
+      "repair-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 15",
+    "rating": 5,
+    "reviews": 14,
+    "brand": "Loson",
+    "price": "BDT 20",
+    "original_price": "BDT 35",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1166",
+    "title": "JST XH Shrouded Male Connector 2-Pin, 2.54mm Pitch",
+    "url": "products/1166-jst-xh-shrouded-male-connector-2-pin-2.54mm-pitch-robo-orion-bangladesh.html",
+    "image": "img/product/1166-jst-xh-shrouded-male-connector-2-pin-2.54mm-pitch-robo-orion-bangladesh.jpg",
+    "alt": "JST XH Shrouded Male Connector 2-Pin, 2.54mm Pitch",
+    "categories": [
+      "pin-headers",
+      "wire-cables"
+    ],
+    "discount": "Save BDT 3",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 5",
+    "original_price": "BDT 8",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1167",
+    "title": "Precision Hobby Knife Cutter with 6 Blades - Aluminum Handle",
+    "url": "products/1167-precision-hobby-knife-cutter-with-6-blades-aluminum-handle-robo-orion-bangladesh.html",
+    "image": "img/product/1167-precision-hobby-knife-cutter-with-6-blades-aluminum-handle-robo-orion-bangladesh.jpg",
+    "alt": "Precision Hobby Knife Cutter with 6 Blades - Aluminum Handle",
+    "categories": [
+      "repair-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 70",
+    "rating": 5,
+    "reviews": 17,
+    "brand": "Generic",
+    "price": "BDT 110",
+    "original_price": "BDT 180",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1168",
+    "title": "40-Pin Male Header Connector Single Row 2.54mm Pitch",
+    "url": "products/1168-40-pin-male-header-connector-single-row-2.54mm-pitch-robo-orion-bangladesh.html",
+    "image": "img/product/1168-40-pin-male-header-connector-single-row-2.54mm-pitch-robo-orion-bangladesh.jpg",
+    "alt": "40-Pin Male Header Connector Single Row 2.54mm Pitch",
+    "categories": [
+      "pin-headers",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 6",
+    "rating": 5,
+    "reviews": 18,
+    "brand": "Generic",
+    "price": "BDT 12",
+    "original_price": "BDT 18",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1169",
+    "title": "40-Pin Female Header Connector Single Row 2.54mm Pitch",
+    "url": "products/1169-40-pin-female-header-connector-single-row-2.54mm-pitch-robo-orion-bangladesh.html",
+    "image": "img/product/1169-40-pin-female-header-connector-single-row-2.54mm-pitch-robo-orion-bangladesh.jpg",
+    "alt": "40-Pin Female Header Connector Single Row 2.54mm Pitch",
+    "categories": [
+      "pin-headers",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 9",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 16",
+    "original_price": "BDT 25",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1170",
+    "title": "Dendrite Adhesive Glue Tube 20ml - Electronics & DIY Repair",
+    "url": "products/1170-dendrite-adhesive-glue-tube-20ml-robo-orion-bangladesh.html",
+    "image": "img/product/1170-dendrite-adhesive-glue-tube-20ml-robo-orion-bangladesh.jpg",
+    "alt": "Dendrite Adhesive Glue Tube 20ml - Electronics & DIY Repair",
+    "categories": [
+      "repair-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 25",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Dendrite",
+    "price": "BDT 55",
+    "original_price": "BDT 80",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1171",
+    "title": "908 60W Adjustable Temperature Soldering Iron",
+    "url": "products/1171-908-60w-adjustable-temperature-soldering-iron-robo-orion-bangladesh.html",
+    "image": "img/product/1171-908-60w-adjustable-temperature-soldering-iron-robo-orion-bangladesh.jpg",
+    "alt": "908 60W Adjustable Temperature Soldering Iron",
+    "categories": [
+      "soldering-tools",
+      "repair-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 300",
+    "rating": 5,
+    "reviews": 16,
+    "brand": "Generic",
+    "price": "BDT 270",
+    "original_price": "BDT 570",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1172",
+    "title": "60W Ceramic Core Heating Element Coil for 907/908 Soldering Iron",
+    "url": "products/1172-60w-ceramic-heating-element-coil-for-907-908-soldering-iron-robo-orion-bangladesh.html",
+    "image": "img/product/1172-60w-ceramic-heating-element-coil-for-907-908-soldering-iron-robo-orion-bangladesh.jpg",
+    "alt": "60W Ceramic Core Heating Element Coil for 907/908 Soldering Iron",
+    "categories": [
+      "soldering-tools",
+      "repair-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 45",
+    "rating": 4,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 45",
+    "original_price": "BDT 90",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1173",
+    "title": "BLX-A PCB Mount Fuse Holder for 5x20mm Fuses",
+    "url": "products/1173-blx-a-pcb-mount-fuse-holder-for-5x20mm-fuse-robo-orion-bangladesh.html",
+    "image": "img/product/1173-blx-a-pcb-mount-fuse-holder-for-5x20mm-fuse-robo-orion-bangladesh.jpg",
+    "alt": "BLX-A PCB Mount Fuse Holder for 5x20mm Fuses",
+    "categories": [
+      "fuses",
+      "pcb-boards",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 15",
+    "rating": 5,
+    "reviews": 13,
+    "brand": "Generic",
+    "price": "BDT 10",
+    "original_price": "BDT 25",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1174",
+    "title": "High Quality Wire Cutter Pliers YTS TU-A305 135mm Diagonal Side Cutting Nippers",
+    "url": "products/1174-high-quality-wire-cutter-pliers-yts-tu-a305-135mm-diagonal-side-cutting-nippers-robo-orion-bangladesh.html",
+    "image": "img/product/1174-high-quality-wire-cutter-pliers-yts-tu-a305-135mm-diagonal-side-cutting-nippers-robo-orion-bangladesh.jpg",
+    "alt": "High Quality Wire Cutter Pliers YTS TU-A305 135mm Diagonal Side Cutting Nippers",
+    "categories": [
+      "repair-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 135",
+    "rating": 5,
+    "reviews": 16,
+    "brand": "YTS",
+    "price": "BDT 245",
+    "original_price": "BDT 380",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1175",
+    "title": "D25XB80 25A 800V Single Phase Bridge Rectifier Diode",
+    "url": "products/1175-d25xb80-25a-800v-bridge-rectifier-diode-robo-orion-bangladesh.html",
+    "image": "img/product/1175-d25xb80-25a-800v-bridge-rectifier-robo-orion-bangladesh.jpg",
+    "alt": "D25XB80 25A 800V Single Phase Bridge Rectifier Diode",
+    "categories": [
+      "power-supply",
+      "ic-chips"
+    ],
+    "discount": "Save BDT 20",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Shindengen",
+    "price": "BDT 25",
+    "original_price": "BDT 45",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1176",
+    "title": "2W10 2A 1000V Single Phase Bridge Rectifier Diode",
+    "url": "products/1176-2w10-2a-1000v-bridge-rectifier-diode-robo-orion-bangladesh.html",
+    "image": "img/product/1176-2w10-2a-1000v-bridge-rectifier-diode-robo-orion-bangladesh.jpg",
+    "alt": "2W10 2A 1000V Single Phase Bridge Rectifier Diode",
+    "categories": [
+      "ic-chips",
+      "power-supply"
+    ],
+    "discount": "Save BDT 10",
+    "rating": 5,
+    "reviews": 14,
+    "brand": "Generic",
+    "price": "BDT 15",
+    "original_price": "BDT 25",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1177",
+    "title": "Third Hand Soldering Iron Stand Workstation and PCB holder",
+    "url": "products/1177-third-hand-soldering-iron-stand-workstation-and-pcb-holder-robo-orion-bangladesh.html",
+    "image": "img/product/1177-third-hand-soldering-iron-stand-workstation-and-pcb-holder-robo-orion-bangladesh.jpg",
+    "alt": "Third Hand Soldering Iron Stand Workstation and PCB holder",
+    "categories": [
+      "repair-tools",
+      "soldering-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 420",
+    "rating": 5,
+    "reviews": 7,
+    "brand": "Generic",
+    "price": "BDT 1030",
+    "original_price": "BDT 1450",
+    "in_stock": true
+  },
+  {
+    "id": "1178",
+    "title": "DC 0-100V 10A Digital Voltmeter Ammeter Dual LED Display",
+    "url": "products/1178-dc-0-100v-10a-digital-voltmeter-ammeter-dual-led-display-robo-orion-bangladesh.html",
+    "image": "img/product/1178-dc-0-100v-10a-digital-voltmeter-ammeter-dual-led-display-robo-orion-bangladesh.jpg",
+    "alt": "DC 0-100V 10A Digital Voltmeter Ammeter Dual LED Display",
+    "categories": [
+      "multimeters",
+      "modules"
+    ],
+    "discount": "Save BDT 110",
+    "rating": 5,
+    "reviews": 18,
+    "brand": "Generic",
+    "price": "BDT 110",
+    "original_price": "BDT 220",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1179",
+    "title": "3 Pin 5.08mm Pitch Straight Pin Screw PCB Terminal Block Connector",
+    "url": "products/1179-3-pin-5.08mm-pitch-pcb-terminal-block-connector-robo-orion-bangladesh.html",
+    "image": "img/product/1179-3-pin-5.08mm-pitch-pcb-terminal-block-connector-robo-orion-bangladesh.jpg",
+    "alt": "3 Pin 5.08mm Pitch Straight Pin Screw PCB Terminal Block Connector",
+    "categories": [
+      "terminal-blocks",
+      "pcb-boards",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 5",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 15",
+    "original_price": "BDT 20",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1180",
+    "title": "JD-4007S5L2 5V 1.5 Inch Brushless DC Cooling Fan (40x40x7mm)",
+    "url": "products/1180-jd-4007s5l2-5v-1.5-inch-cooling-fan-robo-orion-bangladesh.html",
+    "image": "img/product/1180-jd-4007s5l2-5v-1.5-inch-cooling-fan-robo-orion-bangladesh.jpg",
+    "alt": "JD-4007S5L2 5V 1.5 Inch Brushless DC Cooling Fan (40x40x7mm)",
+    "categories": [
+      "dc-motors",
+      "raspberry-pi",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 30",
+    "rating": 5,
+    "reviews": 17,
+    "brand": "Generic",
+    "price": "BDT 55",
+    "original_price": "BDT 85",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1211",
+    "title": "BC547 NPN Transistor - General Purpose (TO-92)",
+    "url": "products/1211-bc547-npn-transistor-robo-orion-bangladesh.html",
+    "image": "img/product/1211-bc547-npn-transistor-robo-orion-bangladesh.jpg",
+    "alt": "BC547 NPN Transistor (TO-92)",
+    "categories": [
+      "transistors"
+    ],
+    "discount": "Save BDT 1",
+    "rating": 5,
+    "reviews": 14,
+    "brand": "Generic",
+    "price": "BDT 4",
+    "original_price": "BDT 5",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1212",
+    "title": "BC557 PNP Transistor - General Purpose (TO-92)",
+    "url": "products/1212-bc557-pnp-transistor-robo-orion-bangladesh.html",
+    "image": "img/product/1212-bc557-pnp-transistor-robo-orion-bangladesh.jpg",
+    "alt": "BC557 PNP Transistor (TO-92)",
+    "categories": [
+      "transistors"
+    ],
+    "discount": "Save BDT 2",
+    "rating": 5,
+    "reviews": 13,
+    "brand": "Generic",
+    "price": "BDT 3",
+    "original_price": "BDT 5",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1213",
+    "title": "5mm Red LED (Transparent Lens) - Super Bright",
+    "url": "products/1213-5mm-red-led-transparent-lens-robo-orion-bangladesh.html",
+    "image": "img/product/1213-5mm-red-led-transparent-lens-robo-orion-bangladesh.jpg",
+    "alt": "5mm Red LED (Transparent Lens)",
+    "categories": [
+      "leds",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 0.5",
+    "rating": 5,
+    "reviews": 16,
+    "brand": "Generic",
+    "price": "BDT 1.5",
+    "original_price": "BDT 2",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1214",
+    "title": "5mm Green LED (Transparent Lens) - Super Bright",
+    "url": "products/1214-5mm-green-led-transparent-lens-robo-orion-bangladesh.html",
+    "image": "img/product/1214-5mm-green-led-transparent-lens-robo-orion-bangladesh.jpg",
+    "alt": "5mm Green LED (Transparent Lens)",
+    "categories": [
+      "leds",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 0.5",
+    "rating": 5,
+    "reviews": 15,
+    "brand": "Generic",
+    "price": "BDT 1.5",
+    "original_price": "BDT 2",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1215",
+    "title": "8.2V 1/4W Zener Diode (DO-35 Package)",
+    "url": "products/1215-8-2v-1-4w-zener-diode-robo-orion-bangladesh.html",
+    "image": "img/product/1215-8-2v-1-4w-zener-diode-robo-orion-bangladesh.jpg",
+    "alt": "8.2V 1/4W Zener Diode (DO-35 Package)",
+    "categories": [
+      "transistors"
+    ],
+    "discount": "Save BDT 3",
+    "rating": 5,
+    "reviews": 8,
+    "brand": "Generic",
+    "price": "BDT 3",
+    "original_price": "BDT 6",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1217",
+    "title": "1N4148 1/4 Watt Zener Diode (Switching Diode)",
+    "url": "products/1217-1n4148-1-4-watt-zener-diode-robo-orion-bangladesh.html",
+    "image": "img/product/1217-1n4148-1-4-watt-zener-diode-robo-orion-bangladesh.jpg",
+    "alt": "1N4148 1/4 Watt Zener Diode (Switching Diode)",
+    "categories": [
+      "transistors"
+    ],
+    "discount": "Save BDT 3",
+    "rating": 5,
+    "reviews": 16,
+    "brand": "Generic",
+    "price": "BDT 3",
+    "original_price": "BDT 6",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1218",
+    "title": "IRLZ44N Logic Level N-Channel Power MOSFET (55V, 47A)",
+    "url": "products/1218-irlz44n-logic-level-mosfet-robo-orion-bangladesh.html",
+    "image": "img/product/1218-irlz44n-logic-level-mosfet-robo-orion-bangladesh.jpg",
+    "alt": "IRLZ44N Logic Level N-Channel Power MOSFET (55V, 47A)",
+    "categories": [
+      "transistors"
+    ],
+    "discount": "Save BDT 20",
+    "rating": 5,
+    "reviews": 11,
+    "brand": "Generic",
+    "price": "BDT 45",
+    "original_price": "BDT 65",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1219",
+    "title": "L7812 12V Positive Voltage Regulator IC (TO-220)",
+    "url": "products/1219-l7812-12v-positive-voltage-regulator-ic-robo-orion-bangladesh.html",
+    "image": "img/product/1219-l7812-12v-positive-voltage-regulator-ic-robo-orion-bangladesh.jpg",
+    "alt": "L7812 12V Positive Voltage Regulator IC (TO-220)",
+    "categories": [
+      "ic-chips",
+      "power-supply"
+    ],
+    "discount": "Save BDT 9",
+    "rating": 5,
+    "reviews": 18,
+    "brand": "Generic",
+    "price": "BDT 16",
+    "original_price": "BDT 25",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1220",
+    "title": "1N4007 Diode (1A 1000V General Purpose Rectifier)",
+    "url": "products/1220-1n4007-diode-1a-1000v-rectifier-robo-orion-bangladesh.html",
+    "image": "img/product/1220-1n4007-diode-1a-1000v-rectifier-robo-orion-bangladesh.jpg",
+    "alt": "1N4007 Diode (1A 1000V General Purpose Rectifier)",
+    "categories": [
+      "transistors"
+    ],
+    "discount": "Save BDT 2",
+    "rating": 5,
+    "reviews": 8,
+    "brand": "Generic",
+    "price": "BDT 2",
+    "original_price": "BDT 4",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1221",
+    "title": "L7805 5V Positive Voltage Regulator IC (TO-220)",
+    "url": "products/1221-l7805-5v-positive-voltage-regulator-ic-robo-orion-bangladesh.html",
+    "image": "img/product/1221-l7805-5v-positive-voltage-regulator-ic-robo-orion-bangladesh.jpg",
+    "alt": "L7805 5V Positive Voltage Regulator IC (TO-220)",
+    "categories": [
+      "ic-chips",
+      "power-supply"
+    ],
+    "discount": "Save BDT 5",
+    "rating": 5,
+    "reviews": 16,
+    "brand": "Generic",
+    "price": "BDT 15",
+    "original_price": "BDT 20",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1222",
+    "title": "Black Latching Push Button Switch (Flat Pin On/Off)",
+    "url": "products/1222-black-latching-push-button-switch-flat-pin-on-off-robo-orion-bangladesh.html",
+    "image": "img/product/1222-black-latching-push-button-switch-flat-pin-on-off-robo-orion-bangladesh.jpg",
+    "alt": "Black Latching Push Button Switch (Flat Pin On/Off)",
+    "categories": [
+      "switches",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 5",
+    "rating": 5,
+    "reviews": 8,
+    "brand": "Generic",
+    "price": "BDT 10",
+    "original_price": "BDT 15",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1223",
+    "title": "IRFZ44N N-Channel Power MOSFET (55V, 49A)",
+    "url": "products/1223-irfz44n-mosfet-robo-orion-bangladesh.html",
+    "image": "img/product/1223-irfz44n-mosfet-robo-orion-bangladesh.jpg",
+    "alt": "IRFZ44N N-Channel Power MOSFET (55V, 49A)",
+    "categories": [
+      "transistors"
+    ],
+    "discount": "Save BDT 10",
+    "rating": 5,
+    "reviews": 14,
+    "brand": "Generic",
+    "price": "BDT 45",
+    "original_price": "BDT 55",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1224",
+    "title": "IRF3205 N-Channel Power MOSFET (55V, 110A)",
+    "url": "products/1224-irf3205-mosfet-robo-orion-bangladesh.html",
+    "image": "img/product/1224-irf3205-mosfet-robo-orion-bangladesh.jpg",
+    "alt": "IRF3205 N-Channel Power MOSFET (55V, 110A)",
+    "categories": [
+      "transistors"
+    ],
+    "discount": "Save BDT 10",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 55",
+    "original_price": "BDT 65",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1227",
+    "title": "100uF 25V Aluminum Electrolytic Capacitor (Radial)",
+    "url": "products/1227-100uf-25v-electrolytic-capacitor-robo-orion-bangladesh.html",
+    "image": "img/product/1227-100uf-25v-electrolytic-capacitor-robo-orion-bangladesh.jpg",
+    "alt": "100uF 25V Aluminum Electrolytic Capacitor (Radial)",
+    "categories": [
+      "capacitors"
+    ],
+    "discount": "Save BDT 3",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 5",
+    "original_price": "BDT 8",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1228",
+    "title": "1k Ohm 1/4 Watt Carbon Film Resistor (Pack of 10)",
+    "url": "products/1228-1k-ohm-1-4-watt-resistor-pack-of-10-robo-orion-bangladesh.html",
+    "image": "img/product/1228-1k-ohm-1-4-watt-resistor-pack-of-10-robo-orion-bangladesh.jpg",
+    "alt": "1k Ohm 1/4 Watt Carbon Film Resistor (Pack of 10)",
+    "categories": [
+      "resistors",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 5",
+    "rating": 5,
+    "reviews": 15,
+    "brand": "Generic",
+    "price": "BDT 5",
+    "original_price": "BDT 10",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1230",
+    "title": "10k Ohm 1/4 Watt Carbon Film Resistor (Pack of 10)",
+    "url": "products/1230-10k-ohm-1-4-watt-resistor-pack-of-10-robo-orion-bangladesh.html",
+    "image": "img/product/1230-10k-ohm-1-4-watt-resistor-pack-of-10-robo-orion-bangladesh.jpg",
+    "alt": "10k Ohm 1/4 Watt Carbon Film Resistor (Pack of 10)",
+    "categories": [
+      "resistors",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 5",
+    "rating": 5,
+    "reviews": 14,
+    "brand": "Generic",
+    "price": "BDT 5",
+    "original_price": "BDT 10",
+    "in_stock": true
+  },
+  {
+    "id": "RBO-1231",
+    "title": "22uF 50V Aluminum Electrolytic Capacitor (Radial)",
+    "url": "products/1231-22uf-50v-electrolytic-capacitor-robo-orion-bangladesh.html",
+    "image": "img/product/1231-22uf-50v-electrolytic-capacitor-robo-orion-bangladesh.jpg",
+    "alt": "22uF 50V Aluminum Electrolytic Capacitor (Radial)",
+    "categories": [
+      "capacitors"
+    ],
+    "discount": "Save BDT 2",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 4",
+    "original_price": "BDT 6",
     "in_stock": true
   }
 ]

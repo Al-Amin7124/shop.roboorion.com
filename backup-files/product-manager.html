@@ -405,8 +405,7 @@
       <div class="file-controls">
         <span class="status-pill" id="statusPill"><span class="status-dot"></span><span id="statusText">idle</span></span>
         <label class="switch-label"><span class="switch" id="autosaveSwitch"></span>Autosave</label>
-        <button class="btn" id="openBtn">Choose product folder</button>
-        <button class="btn ghost small" id="changeFolderBtn" style="display:none">Change folder</button>
+        <button class="btn" id="openBtn">Open items.json</button>
         <button class="btn primary" id="saveBtn" disabled>Save now</button>
         <button class="btn ghost" id="downloadBtn">Download JSON</button>
       </div>
@@ -518,50 +517,7 @@
     pendingCats: []
   };
   var saveTimer = null;
-  var fsApiSupported = !!window.showOpenFilePicker && !!window.showDirectoryPicker;
-
-  /* ---------------- IndexedDB handle persistence ---------------- */
-  var DB_NAME = "catalog-manager-db";
-  var STORE_NAME = "handles";
-  function idbOpen(){
-    return new Promise(function(resolve, reject){
-      var req = indexedDB.open(DB_NAME, 1);
-      req.onupgradeneeded = function(){ req.result.createObjectStore(STORE_NAME); };
-      req.onsuccess = function(){ resolve(req.result); };
-      req.onerror = function(){ reject(req.error); };
-    });
-  }
-  function idbSet(key, value){
-    return idbOpen().then(function(db){
-      return new Promise(function(resolve, reject){
-        var tx = db.transaction(STORE_NAME, "readwrite");
-        tx.objectStore(STORE_NAME).put(value, key);
-        tx.oncomplete = function(){ resolve(); };
-        tx.onerror = function(){ reject(tx.error); };
-      });
-    });
-  }
-  function idbGet(key){
-    return idbOpen().then(function(db){
-      return new Promise(function(resolve, reject){
-        var tx = db.transaction(STORE_NAME, "readonly");
-        var req = tx.objectStore(STORE_NAME).get(key);
-        req.onsuccess = function(){ resolve(req.result); };
-        req.onerror = function(){ reject(req.error); };
-      });
-    });
-  }
-
-  /* Resolve a file inside the working directory by relative path, e.g. "products/foo.html" */
-  function getFileHandleByPath(dirHandle, relPath){
-    var parts = relPath.split("/").filter(Boolean);
-    var fileName = parts.pop();
-    var p = Promise.resolve(dirHandle);
-    parts.forEach(function(seg){
-      p = p.then(function(h){ return h.getDirectoryHandle(seg); });
-    });
-    return p.then(function(h){ return h.getFileHandle(fileName); });
-  }
+  var fsApiSupported = !!window.showOpenFilePicker;
 
   /* ---------------- Helpers ---------------- */
   function $(sel){ return document.querySelector(sel); }
@@ -627,77 +583,36 @@
     }
   }
 
-  function setFolderLabel(name){
-    $("#fileLabel").textContent = name ? ("folder: " + name) : "no folder open";
-  }
-
-  function findAndLoadItemsJson(dirHandle){
-    state.dirHandle = dirHandle;
-    setFolderLabel(dirHandle.name);
-    return dirHandle.getFileHandle("items.json").then(function(fh){
-      state.fileHandle = fh;
-      return fh.getFile();
-    }).then(function(file){
-      return file.text().then(function(text){ loadItemsFromText(text, file.name); });
-    }).catch(function(){
-      toast("No items.json found directly in that folder — pick the file manually");
-      return window.showOpenFilePicker({
-        startIn: dirHandle,
-        types:[{ description:"JSON", accept:{"application/json":[".json"]} }]
+  function openFile(){
+    if(fsApiSupported){
+      window.showOpenFilePicker({
+        types:[{ description:"JSON", accept:{"application/json":[".json"]} }],
+        excludeAcceptAllOption:false,
+        multiple:false
       }).then(function(handles){
-        state.fileHandle = handles[0];
-        return handles[0].getFile();
+        var handle = handles[0];
+        state.fileHandle = handle;
+        return handle.requestPermission({ mode:"readwrite" }).then(function(perm){
+          return handle.getFile();
+        });
       }).then(function(file){
         return file.text().then(function(text){ loadItemsFromText(text, file.name); });
+      }).catch(function(err){
+        if(err && err.name === "AbortError") return;
+        toast("Open failed: " + (err && err.message ? err.message : err));
       });
-    });
-  }
-
-  function chooseFolder(){
-    window.showDirectoryPicker({ mode:"readwrite" }).then(function(handle){
-      idbSet("dirHandle", handle);
-      $("#changeFolderBtn").style.display = "inline-flex";
-      $("#openBtn").textContent = "Reconnect: " + handle.name;
-      return findAndLoadItemsJson(handle);
-    }).catch(function(err){
-      if(err && err.name === "AbortError") return;
-      toast("Folder selection failed: " + (err && err.message ? err.message : err));
-    });
-  }
-
-  function reconnectFolder(){
-    idbGet("dirHandle").then(function(handle){
-      if(!handle){ chooseFolder(); return; }
-      return handle.queryPermission({ mode:"readwrite" }).then(function(perm){
-        if(perm === "granted") return handle;
-        return handle.requestPermission({ mode:"readwrite" }).then(function(p2){
-          if(p2 !== "granted") throw new Error("Permission was not granted");
-          return handle;
-        });
-      }).then(function(h){ return findAndLoadItemsJson(h); });
-    }).catch(function(err){
-      toast("Couldn't reconnect (folder moved or permission denied) — choose it again");
-      chooseFolder();
-    });
-  }
-
-  function legacyOpenFile(){
-    var input = document.createElement("input");
-    input.type = "file";
-    input.accept = ".json,application/json";
-    input.addEventListener("change", function(){
-      var file = input.files[0];
-      if(!file) return;
-      state.fileHandle = null;
-      state.dirHandle = null;
-      file.text().then(function(text){ loadItemsFromText(text, file.name + " (read-only — use Download to save)"); });
-    });
-    input.click();
-  }
-
-  function openFile(){
-    if(!fsApiSupported){ legacyOpenFile(); return; }
-    chooseFolder();
+    }else{
+      var input = document.createElement("input");
+      input.type = "file";
+      input.accept = ".json,application/json";
+      input.addEventListener("change", function(){
+        var file = input.files[0];
+        if(!file) return;
+        state.fileHandle = null;
+        file.text().then(function(text){ loadItemsFromText(text, file.name + " (read-only — use Download to save)"); });
+      });
+      input.click();
+    }
   }
 
   function saveNow(){
@@ -1137,24 +1052,9 @@
   function init(){
     if(!fsApiSupported) $("#compatBanner").classList.add("show");
 
-    $("#openBtn").addEventListener("click", function(){
-      if(!fsApiSupported){ legacyOpenFile(); return; }
-      idbGet("dirHandle").then(function(handle){
-        if(handle) reconnectFolder(); else chooseFolder();
-      }).catch(function(){ chooseFolder(); });
-    });
-    $("#changeFolderBtn").addEventListener("click", chooseFolder);
+    $("#openBtn").addEventListener("click", openFile);
     $("#saveBtn").addEventListener("click", saveNow);
     $("#downloadBtn").addEventListener("click", downloadJson);
-
-    if(fsApiSupported){
-      idbGet("dirHandle").then(function(handle){
-        if(handle){
-          $("#openBtn").textContent = "Reconnect: " + handle.name;
-          $("#changeFolderBtn").style.display = "inline-flex";
-        }
-      }).catch(function(){});
-    }
 
     var autoSwitch = $("#autosaveSwitch");
     autoSwitch.classList.toggle("on", state.autosave);
