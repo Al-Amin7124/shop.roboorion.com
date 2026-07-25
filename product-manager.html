@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robo Orion — Catalog Manager</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');
+
+  :root{
+    --bg: #10130f;
+    --bg-alt: #151a14;
+    --panel: #1a2018;
+    --panel-2: #1f261d;
+    --line: #2b3427;
+    --line-soft: #232a20;
+    --text: #e8ecdf;
+    --text-dim: #9aa694;
+    --text-faint: #667061;
+    --copper: #d98a3d;
+    --copper-bright: #f0a856;
+    --led-green: #6fcf7a;
+    --led-red: #e05b5b;
+    --led-amber: #e0b03d;
+    --trace: #3a4636;
+    --radius: 8px;
+    --mono: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
+    --sans: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    background:
+      radial-gradient(circle at 1px 1px, var(--line-soft) 1px, transparent 1px) 0 0/22px 22px,
+      var(--bg);
+    color:var(--text);
+    font-family:var(--sans);
+    font-size:14px;
+    line-height:1.45;
+    min-height:100vh;
+    padding-bottom:60px;
+  }
+
+  a{ color:inherit; }
+
+  ::selection{ background:var(--copper); color:#191a12; }
+
+  /* scrollbar */
+  ::-webkit-scrollbar{ width:10px; height:10px; }
+  ::-webkit-scrollbar-track{ background:var(--bg-alt); }
+  ::-webkit-scrollbar-thumb{ background:var(--trace); border-radius:5px; }
+  ::-webkit-scrollbar-thumb:hover{ background:var(--copper); }
+
+  button{ font-family:var(--sans); cursor:pointer; }
+  input, select, button{ color:var(--text); }
+
+  .visually-hidden{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
+
+  /* ---------- Top bar ---------- */
+  header.topbar{
+    position:sticky; top:0; z-index:40;
+    background:linear-gradient(180deg, #12160f 0%, #12160fcc 100%);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .topbar-inner{
+    max-width:1440px; margin:0 auto; padding:14px 22px 12px;
+  }
+  .brand-row{
+    display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+  }
+  .brand{
+    display:flex; align-items:center; gap:10px;
+    margin-right:auto;
+  }
+  .brand svg{ flex:none; }
+  .brand-text h1{
+    font-family:var(--mono); font-size:15px; letter-spacing:.03em; margin:0;
+    font-weight:600; color:var(--text);
+  }
+  .brand-text .tag{
+    font-size:11px; color:var(--text-faint); letter-spacing:.08em; text-transform:uppercase;
+  }
+
+  .file-controls{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+
+  .btn{
+    display:inline-flex; align-items:center; gap:6px;
+    background:var(--panel-2); border:1px solid var(--line);
+    color:var(--text); padding:8px 13px; border-radius:6px;
+    font-size:12.5px; font-weight:600; letter-spacing:.01em;
+    transition:border-color .15s, background .15s, transform .05s;
+    white-space:nowrap;
+  }
+  .btn:hover{ border-color:var(--copper); background:#212a1f; }
+  .btn:active{ transform:translateY(1px); }
+  .btn:disabled{ opacity:.4; cursor:not-allowed; }
+  .btn.primary{ background:var(--copper); border-color:var(--copper); color:#1c1400; }
+  .btn.primary:hover{ background:var(--copper-bright); }
+  .btn.ghost{ background:transparent; }
+  .btn.small{ padding:5px 9px; font-size:11.5px; }
+
+  .status-pill{
+    font-family:var(--mono); font-size:11.5px; padding:6px 10px; border-radius:5px;
+    border:1px solid var(--line); background:var(--bg-alt); color:var(--text-dim);
+    display:flex; align-items:center; gap:6px;
+  }
+  .status-dot{ width:7px; height:7px; border-radius:50%; background:var(--text-faint); flex:none; }
+  .status-pill.ok .status-dot{ background:var(--led-green); box-shadow:0 0 6px var(--led-green); }
+  .status-pill.warn .status-dot{ background:var(--led-amber); box-shadow:0 0 6px var(--led-amber); }
+  .status-pill.bad .status-dot{ background:var(--led-red); box-shadow:0 0 6px var(--led-red); }
+  .status-pill.busy .status-dot{ background:var(--copper); animation:pulse 1s infinite; }
+  @keyframes pulse{ 0%,100%{opacity:1;} 50%{opacity:.25;} }
+
+  .switch-label{ display:flex; align-items:center; gap:6px; font-size:11.5px; color:var(--text-dim); }
+  .switch{
+    position:relative; width:30px; height:17px; border-radius:9px; background:var(--line);
+    border:1px solid var(--line); flex:none; transition:background .15s;
+  }
+  .switch::after{
+    content:''; position:absolute; top:1px; left:1px; width:13px; height:13px; border-radius:50%;
+    background:var(--text-faint); transition:transform .15s, background .15s;
+  }
+  .switch.on{ background:#2c3a24; border-color:var(--led-green); }
+  .switch.on::after{ background:var(--led-green); transform:translateX(13px); }
+
+  .banner{
+    max-width:1440px; margin:10px auto 0; padding:9px 14px;
+    background:#241d10; border:1px solid #4a3a17; color:#e0c078;
+    border-radius:6px; font-size:12px; display:none;
+  }
+  .banner.show{ display:block; }
+
+  /* ---------- Toolbar (filters) ---------- */
+  .toolbar{
+    max-width:1440px; margin:12px auto 0; padding:0 22px;
+    display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+  }
+  .search-wrap{ position:relative; flex:1 1 260px; min-width:220px; }
+  .search-wrap input{
+    width:100%; background:var(--panel); border:1px solid var(--line); border-radius:6px;
+    padding:9px 12px 9px 32px; font-size:13px; outline:none;
+  }
+  .search-wrap input:focus{ border-color:var(--copper); }
+  .search-wrap svg{ position:absolute; left:10px; top:50%; transform:translateY(-50%); opacity:.5; }
+
+  select.filter, .toolbar select{
+    background:var(--panel); border:1px solid var(--line); border-radius:6px;
+    padding:8px 10px; font-size:12.5px; outline:none;
+  }
+  select.filter:focus{ border-color:var(--copper); }
+
+  .chip-toggle{
+    display:inline-flex; align-items:center; gap:6px; padding:7px 11px; border-radius:20px;
+    border:1px solid var(--line); background:var(--panel); font-size:12px; color:var(--text-dim);
+    user-select:none;
+  }
+  .chip-toggle.active{ border-color:var(--led-amber); color:var(--led-amber); background:#241f10; }
+  .chip-toggle input{ display:none; }
+
+  /* ---------- Stats ---------- */
+  .stats{
+    max-width:1440px; margin:12px auto 0; padding:0 22px;
+    display:grid; grid-template-columns:repeat(auto-fit, minmax(150px,1fr)); gap:10px;
+  }
+  .stat-card{
+    background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:10px 13px;
+    display:flex; flex-direction:column; gap:2px; position:relative; overflow:hidden;
+  }
+  .stat-card::before{
+    content:''; position:absolute; top:0; left:0; width:3px; height:100%; background:var(--trace);
+  }
+  .stat-card.warn::before{ background:var(--led-amber); }
+  .stat-card .num{ font-family:var(--mono); font-size:20px; font-weight:700; }
+  .stat-card .label{ font-size:11px; color:var(--text-faint); text-transform:uppercase; letter-spacing:.05em; }
+  .stat-card.clickable{ cursor:pointer; }
+  .stat-card.clickable:hover{ border-color:var(--copper); }
+
+  /* ---------- Grid ---------- */
+  main{ max-width:1440px; margin:16px auto 0; padding:0 22px; }
+  .grid{
+    display:grid; grid-template-columns:repeat(auto-fill, minmax(272px,1fr)); gap:14px;
+  }
+
+  .card{
+    background:var(--panel); border:1px solid var(--line); border-radius:10px;
+    display:flex; flex-direction:column; position:relative; overflow:hidden;
+    transition:border-color .15s;
+  }
+  .card:hover{ border-color:var(--trace); }
+  .card.missing-cat{ border-color:#4a3320; }
+
+  .card-warn{
+    position:absolute; top:8px; right:8px; z-index:2;
+    display:flex; align-items:center; gap:4px;
+    background:#2c1a12; border:1px solid var(--led-red); color:#ff8f7a;
+    font-size:10px; font-weight:600; padding:3px 7px; border-radius:20px;
+    letter-spacing:.02em;
+  }
+
+  .card-media{
+    position:relative; background:#0d100c; aspect-ratio:4/3;
+    display:flex; align-items:center; justify-content:center; overflow:hidden;
+    border-bottom:1px solid var(--line);
+  }
+  .card-media img{ width:100%; height:100%; object-fit:contain; }
+  .card-media.img-missing img{ display:none; }
+  .card-media .fallback{ display:none; color:var(--text-faint); font-size:11px; font-family:var(--mono); text-align:center; padding:10px; }
+  .card-media.img-missing .fallback{ display:block; }
+  .stock-flag{
+    position:absolute; bottom:6px; left:6px; font-size:10px; font-family:var(--mono);
+    padding:2px 7px; border-radius:4px; letter-spacing:.03em; font-weight:600;
+    background:#0d1a0d; border:1px solid var(--led-green); color:var(--led-green);
+  }
+  .stock-flag.out{ background:#1a0d0d; border-color:var(--led-red); color:#ff8f7a; }
+
+  .card-body{ padding:12px 13px 13px; display:flex; flex-direction:column; gap:9px; flex:1; }
+
+  .id-row{ display:flex; align-items:center; justify-content:space-between; gap:8px; }
+  .sku{
+    font-family:var(--mono); font-size:11px; color:var(--copper);
+    background:#241a0d; border:1px solid #4a3417; padding:2px 7px; border-radius:4px;
+    letter-spacing:.02em;
+  }
+  .stars{ font-size:11px; color:var(--led-amber); font-family:var(--mono); }
+
+  .field-title{
+    width:100%; background:transparent; border:none; border-bottom:1px solid transparent;
+    font-size:13.5px; font-weight:600; color:var(--text); padding:2px 0; outline:none;
+    font-family:var(--sans); resize:none; line-height:1.35;
+  }
+  .field-title:hover{ border-bottom-color:var(--line); }
+  .field-title:focus{ border-bottom-color:var(--copper); background:#151b12; }
+
+  .field-brand{
+    width:100%; background:transparent; border:none; border-bottom:1px solid transparent;
+    font-size:11.5px; color:var(--text-dim); padding:1px 0; outline:none; font-family:var(--sans);
+  }
+  .field-brand:hover{ border-bottom-color:var(--line); }
+  .field-brand:focus{ border-bottom-color:var(--copper); color:var(--text); }
+
+  .price-row{ display:flex; align-items:baseline; gap:8px; flex-wrap:wrap; }
+  .price-field{ display:flex; align-items:baseline; gap:3px; }
+  .price-field .prefix{ font-family:var(--mono); font-size:11px; color:var(--text-faint); }
+  .price-field input{
+    background:transparent; border:none; border-bottom:1px dashed var(--line);
+    font-family:var(--mono); font-size:15px; font-weight:700; color:var(--copper-bright);
+    width:72px; padding:1px 0; outline:none;
+  }
+  .price-field input:focus{ border-bottom-color:var(--copper); background:#151b12; }
+  .price-field.orig input{ font-size:12px; font-weight:500; color:var(--text-faint); text-decoration:line-through; width:60px; }
+  .price-field.orig input:focus{ text-decoration:none; color:var(--text-dim); }
+  .discount-tag{ font-size:10.5px; color:var(--led-green); font-family:var(--mono); margin-left:auto; }
+
+  .meta-row{ display:flex; align-items:center; gap:14px; font-size:11.5px; color:var(--text-dim); }
+  .meta-field{ display:flex; align-items:center; gap:5px; }
+  .meta-field label{ color:var(--text-faint); font-size:10.5px; text-transform:uppercase; letter-spacing:.04em; }
+  .meta-field input[type=number]{
+    width:44px; background:var(--bg-alt); border:1px solid var(--line); border-radius:4px;
+    font-family:var(--mono); font-size:11.5px; padding:3px 5px; outline:none; color:var(--text);
+  }
+  .meta-field input[type=number]:focus{ border-color:var(--copper); }
+  .meta-field select{
+    background:var(--bg-alt); border:1px solid var(--line); border-radius:4px;
+    font-family:var(--mono); font-size:11.5px; padding:3px 4px; outline:none;
+  }
+
+  .img-field{ display:flex; align-items:center; gap:5px; font-size:10.5px; color:var(--text-faint); }
+  .img-field .dir{ font-family:var(--mono); white-space:nowrap; }
+  .img-field input{
+    flex:1; min-width:0; background:var(--bg-alt); border:1px solid var(--line); border-radius:4px;
+    font-family:var(--mono); font-size:10.5px; padding:3px 5px; outline:none; color:var(--text-dim);
+  }
+  .img-field input:focus{ border-color:var(--copper); color:var(--text); }
+
+  .cat-row{ display:flex; flex-wrap:wrap; gap:5px; align-items:center; margin-top:auto; }
+  .cat-chip{
+    font-size:10px; font-family:var(--mono); padding:2px 7px; border-radius:20px;
+    background:#1c2418; border:1px solid var(--trace); color:var(--text-dim);
+  }
+  .cat-chip.primary{ border-color:var(--copper); color:var(--copper-bright); background:#241a0d; }
+  .cat-chip.more{ color:var(--text-faint); }
+  .cat-edit-btn{
+    font-size:10.5px; font-family:var(--mono); color:var(--text-faint); background:transparent;
+    border:1px dashed var(--line); border-radius:20px; padding:2px 8px;
+  }
+  .cat-edit-btn:hover{ border-color:var(--copper); color:var(--copper); }
+  .cat-empty-btn{
+    font-size:10.5px; font-family:var(--mono); color:#ff8f7a; background:#1a0d0d;
+    border:1px solid var(--led-red); border-radius:20px; padding:2px 9px;
+  }
+
+  .path-line{
+    font-family:var(--mono); font-size:9.5px; color:var(--text-faint); word-break:break-all;
+    padding-top:6px; border-top:1px dashed var(--line-soft); display:flex; gap:5px; align-items:flex-start;
+  }
+  .path-line .copy-btn{ flex:none; background:transparent; border:none; color:var(--text-faint); padding:0; }
+  .path-line .copy-btn:hover{ color:var(--copper); }
+
+  /* ---------- Empty state ---------- */
+  .empty-state{
+    text-align:center; padding:70px 20px; color:var(--text-faint);
+  }
+  .empty-state h2{ font-family:var(--mono); color:var(--text-dim); font-size:16px; margin-bottom:6px; }
+  .empty-state p{ font-size:12.5px; max-width:420px; margin:0 auto; }
+
+  /* ---------- Pagination ---------- */
+  .pagination{
+    max-width:1440px; margin:20px auto 0; padding:0 22px;
+    display:flex; align-items:center; justify-content:center; gap:8px; flex-wrap:wrap;
+  }
+  .page-btn{
+    font-family:var(--mono); font-size:12px; background:var(--panel); border:1px solid var(--line);
+    color:var(--text-dim); padding:6px 11px; border-radius:5px;
+  }
+  .page-btn:hover:not(:disabled){ border-color:var(--copper); color:var(--text); }
+  .page-btn.current{ background:var(--copper); color:#1c1400; border-color:var(--copper); font-weight:700; }
+  .page-btn:disabled{ opacity:.35; }
+  .page-size{ margin-left:12px; }
+
+  /* ---------- Category picker overlay ---------- */
+  .overlay{
+    position:fixed; inset:0; background:rgba(6,8,5,.72); backdrop-filter:blur(2px);
+    display:none; align-items:center; justify-content:center; z-index:100; padding:20px;
+  }
+  .overlay.show{ display:flex; }
+  .picker{
+    background:var(--panel); border:1px solid var(--line); border-radius:12px;
+    width:100%; max-width:640px; max-height:82vh; display:flex; flex-direction:column;
+    box-shadow:0 20px 60px rgba(0,0,0,.5);
+  }
+  .picker-head{
+    padding:14px 18px; border-bottom:1px solid var(--line);
+    display:flex; align-items:center; justify-content:space-between; gap:10px;
+  }
+  .picker-head h3{ margin:0; font-size:13.5px; font-family:var(--mono); }
+  .picker-head .sku{ margin-left:8px; }
+  .picker-count{ font-family:var(--mono); font-size:11.5px; color:var(--text-dim); }
+  .picker-count.full{ color:var(--led-amber); }
+  .picker-search{ padding:10px 18px; border-bottom:1px solid var(--line-soft); }
+  .picker-search input{
+    width:100%; background:var(--bg-alt); border:1px solid var(--line); border-radius:6px;
+    padding:7px 10px; font-size:12.5px; outline:none;
+  }
+  .picker-body{ overflow-y:auto; padding:8px 10px; flex:1; }
+  .cat-group{ margin-bottom:4px; }
+  .cat-group-title{
+    font-size:10px; text-transform:uppercase; letter-spacing:.07em; color:var(--text-faint);
+    padding:8px 8px 4px;
+  }
+  .cat-options{ display:flex; flex-wrap:wrap; gap:6px; padding:0 8px 6px; }
+  .cat-opt{
+    display:inline-flex; align-items:center; gap:5px; font-size:11.5px; font-family:var(--mono);
+    padding:4px 9px; border-radius:20px; border:1px solid var(--line); background:var(--bg-alt);
+    color:var(--text-dim);
+  }
+  .cat-opt input{ display:none; }
+  .cat-opt.checked{ border-color:var(--copper); color:var(--copper-bright); background:#241a0d; }
+  .cat-opt.checked .order{ background:var(--copper); color:#1c1400; border-radius:50%; width:14px; height:14px; display:inline-flex; align-items:center; justify-content:center; font-size:9px; font-weight:700; }
+  .cat-opt.disabled{ opacity:.35; }
+  .cat-opt:not(.disabled):hover{ border-color:var(--copper); }
+  .picker-foot{
+    padding:12px 18px; border-top:1px solid var(--line); display:flex; justify-content:space-between; align-items:center; gap:10px;
+  }
+  .picker-foot .hint{ font-size:11px; color:var(--text-faint); }
+
+  /* ---------- Toast ---------- */
+  #toast{
+    position:fixed; bottom:16px; left:50%; transform:translateX(-50%) translateY(20px);
+    background:#1a2018; border:1px solid var(--copper); color:var(--text); padding:9px 16px;
+    border-radius:7px; font-size:12.5px; font-family:var(--mono); opacity:0; pointer-events:none;
+    transition:opacity .2s, transform .2s; z-index:200;
+  }
+  #toast.show{ opacity:1; transform:translateX(-50%) translateY(0); }
+
+  @media (max-width:640px){
+    .grid{ grid-template-columns:1fr 1fr; }
+    .toolbar{ flex-direction:column; align-items:stretch; }
+  }
+  @media (max-width:420px){
+    .grid{ grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand-row">
+      <div class="brand">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+          <rect x="1" y="1" width="24" height="24" rx="4" stroke="#d98a3d" stroke-width="1.4"/>
+          <circle cx="8" cy="8" r="1.6" fill="#d98a3d"/>
+          <circle cx="18" cy="8" r="1.6" fill="#6fcf7a"/>
+          <circle cx="8" cy="18" r="1.6" fill="#6fcf7a"/>
+          <circle cx="18" cy="18" r="1.6" fill="#d98a3d"/>
+          <path d="M8 8H18M8 8V18M18 8V18M8 18H18" stroke="#3a4636" stroke-width="1"/>
+        </svg>
+        <div class="brand-text">
+          <h1>ROBO ORION · CATALOG MANAGER</h1>
+          <span class="tag" id="fileLabel">no file open</span>
+        </div>
+      </div>
+      <div class="file-controls">
+        <span class="status-pill" id="statusPill"><span class="status-dot"></span><span id="statusText">idle</span></span>
+        <label class="switch-label"><span class="switch" id="autosaveSwitch"></span>Autosave</label>
+        <button class="btn" id="openBtn">Open items.json</button>
+        <button class="btn primary" id="saveBtn" disabled>Save now</button>
+        <button class="btn ghost" id="downloadBtn">Download JSON</button>
+      </div>
+    </div>
+    <div class="banner" id="compatBanner">Live-save to disk needs Chrome or Edge on Windows. Your browser doesn't support it — use <strong>Download JSON</strong> after editing and replace the file manually.</div>
+  </div>
+</header>
+
+<div class="toolbar">
+  <div class="search-wrap">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#9aa694" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="#9aa694" stroke-width="2" stroke-linecap="round"/></svg>
+    <input type="text" id="searchInput" placeholder="Search by product code or title…" autocomplete="off">
+  </div>
+  <select class="filter" id="categoryFilter"><option value="all">All categories</option></select>
+  <select class="filter" id="stockFilter">
+    <option value="all">All stock states</option>
+    <option value="in">In stock</option>
+    <option value="out">Out of stock</option>
+  </select>
+  <select class="filter" id="sortSelect">
+    <option value="default">Sort: default order</option>
+    <option value="price-asc">Price: low to high</option>
+    <option value="price-desc">Price: high to low</option>
+    <option value="reviews-desc">Reviews: most first</option>
+    <option value="title-asc">Title: A–Z</option>
+  </select>
+  <label class="chip-toggle" id="missingToggle">
+    <input type="checkbox" id="missingCheckbox">
+    ⚠ Missing category only
+  </label>
+</div>
+
+<div class="stats" id="statsRow"></div>
+
+<main>
+  <div class="grid" id="grid"></div>
+  <div class="empty-state" id="emptyState" style="display:none">
+    <h2>No products match</h2>
+    <p>Try clearing the search box or filters, or open your items.json file using the button above.</p>
+  </div>
+</main>
+
+<div class="pagination" id="pagination"></div>
+
+<!-- Category picker -->
+<div class="overlay" id="catOverlay">
+  <div class="picker">
+    <div class="picker-head">
+      <div><h3 id="pickerTitle" style="display:inline">Assign categories</h3><span class="sku" id="pickerSku"></span></div>
+      <span class="picker-count" id="pickerCount">0 / 5</span>
+    </div>
+    <div class="picker-search"><input type="text" id="pickerSearch" placeholder="Filter category list…"></div>
+    <div class="picker-body" id="pickerBody"></div>
+    <div class="picker-foot">
+      <span class="hint">First one picked = primary category. Max 5. Order shown by numbered badge.</span>
+      <button class="btn primary small" id="pickerDone">Done</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------------- Category taxonomy ---------------- */
+  var CATEGORY_GROUPS = [
+    { label:"Root", slugs:["all"] },
+    { label:"Audio", slugs:["bluetooth-speakers","subwoofers","amplifiers","audio-modules","audio-accessories"] },
+    { label:"Batteries & Power", slugs:["lithium-batteries","li-po-batteries","18650-batteries","battery-packs","chargers","power-supply","charge-controllers","bms-protection"] },
+    { label:"Components", slugs:["resistors","capacitors","transistors","ic-chips","sensors","converter-modules","inductors","leds","fuses","relays","switches"] },
+    { label:"Boards & Kits", slugs:["arduino","raspberry-pi","development-boards","breadboards","jumper-wires","diy-kits"] },
+    { label:"Tools", slugs:["soldering-tools","multimeters","power-supply","wire-strippers","repair-tools"] },
+    { label:"Displays", slugs:["oled-displays","lcd-displays","tft-displays","e-ink-displays","7-segment","led-matrix","touchscreens"] },
+    { label:"Connectors & Cables", slugs:["usb-connectors","dc-connectors","xt-connectors","pin-headers","terminal-blocks","flat-cables","wire-cables"] },
+    { label:"Motors & Drives", slugs:["dc-motors","servo-motors","stepper-motors","bldc-motors","linear-actuators","motor-drivers","esc"] },
+    { label:"Chassis & Frames", slugs:["2wd-chassis","4wd-chassis","mecanum-chassis","robot-arms","drone-frames","aluminium-profiles"] },
+    { label:"Wheels & Mechanical", slugs:["rubber-wheels","mecanum-wheels","tank-tracks","gears-pulleys","couplings-shafts"] },
+    { label:"RC", slugs:["rc-transmitters","rc-receivers","rc-controllers"] },
+    { label:"Microcontrollers", slugs:["esp32","esp8266","stm32","attiny","pico"] },
+    { label:"Wireless Modules", slugs:["wifi-modules","bluetooth-modules","nrf24","lora-modules","gsm-modules","rf-modules","zigbee-modules"] },
+    { label:"Sensors (specific)", slugs:["temperature-humidity","motion-sensors","gas-sensors","ultrasonic-sensors","light-sensors","pressure-sensors","imu-sensors","gps-modules"] },
+    { label:"Communication Interfaces", slugs:["uart-modules","i2c-modules","spi-modules","can-bus","rs485-rs232"] },
+    { label:"Drone Parts", slugs:["drone-motors","drone-esc","flight-controllers","propellers","fpv-cameras","vtx","drone-batteries","drone-accessories"] },
+    { label:"3D Printing", slugs:["pla-filament","abs-filament","tpu-filament","printer-parts","hotend-nozzle","print-beds"] },
+    { label:"LEDs & Lighting", slugs:["led-strips","addressable-leds","led-drivers","rgb-leds","ir-leds","laser-modules"] },
+    { label:"PCB & Fabrication", slugs:["pcb-boards","perfboards","smd-components","solder-paste","pcb-standoffs","heat-shrink"] },
+    { label:"Solar & Energy", slugs:["solar-panels","solar-charge-controllers","solar-inverters","wind-turbines","energy-monitors"] }
+  ];
+  var ALL_SLUGS = [];
+  CATEGORY_GROUPS.forEach(function(g){ g.slugs.forEach(function(s){ if(ALL_SLUGS.indexOf(s)===-1) ALL_SLUGS.push(s); }); });
+
+  /* ---------------- State ---------------- */
+  var state = {
+    items: [],
+    fileHandle: null,
+    dirty: false,
+    autosave: true,
+    saving: false,
+    search: "",
+    category: "all",
+    stock: "all",
+    sort: "default",
+    missingOnly: false,
+    page: 1,
+    pageSize: 24,
+    editingCatId: null,
+    pendingCats: []
+  };
+  var saveTimer = null;
+  var fsApiSupported = !!window.showOpenFilePicker;
+
+  /* ---------------- Helpers ---------------- */
+  function $(sel){ return document.querySelector(sel); }
+  function $all(sel, root){ return Array.prototype.slice.call((root||document).querySelectorAll(sel)); }
+  function esc(str){
+    return String(str==null? "":str).replace(/[&<>"']/g, function(c){
+      return ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[c];
+    });
+  }
+  function toast(msg){
+    var t = $("#toast");
+    t.textContent = msg;
+    t.classList.add("show");
+    clearTimeout(t._timer);
+    t._timer = setTimeout(function(){ t.classList.remove("show"); }, 2200);
+  }
+  function parsePriceStr(str){
+    if(!str) return { prefix:"BDT ", value:0 };
+    var m = String(str).match(/^([^\d]*)([\d,.]+)/);
+    if(!m) return { prefix:"BDT ", value:0 };
+    return { prefix:m[1], value: parseFloat(m[2].replace(/,/g,"")) || 0 };
+  }
+  function formatPriceStr(prefix, value){
+    var n = Math.round(Number(value) * 100) / 100;
+    return (prefix || "BDT ") + n;
+  }
+  function splitImagePath(path){
+    path = path || "";
+    var idx = path.lastIndexOf("/");
+    if(idx === -1) return { dir:"", file:path };
+    return { dir: path.slice(0, idx+1), file: path.slice(idx+1) };
+  }
+  function findItem(id){
+    for(var i=0;i<state.items.length;i++){ if(String(state.items[i].id)===String(id)) return state.items[i]; }
+    return null;
+  }
+
+  /* ---------------- Loading a file ---------------- */
+  function setFileLabel(name){
+    $("#fileLabel").textContent = name || "no file open";
+  }
+  function setStatus(kind, text){
+    var pill = $("#statusPill");
+    pill.className = "status-pill" + (kind ? " " + kind : "");
+    $("#statusText").textContent = text;
+  }
+
+  function loadItemsFromText(text, name){
+    try{
+      var data = JSON.parse(text);
+      if(!Array.isArray(data)) throw new Error("Root JSON must be an array of products");
+      state.items = data;
+      state.page = 1;
+      state.dirty = false;
+      setFileLabel(name);
+      setStatus("ok", "loaded");
+      populateCategoryFilter();
+      render();
+      toast("Loaded " + data.length + " products");
+    }catch(err){
+      toast("Could not parse JSON: " + err.message);
+      setStatus("bad", "parse error");
+    }
+  }
+
+  function openFile(){
+    if(fsApiSupported){
+      window.showOpenFilePicker({
+        types:[{ description:"JSON", accept:{"application/json":[".json"]} }],
+        excludeAcceptAllOption:false,
+        multiple:false
+      }).then(function(handles){
+        var handle = handles[0];
+        state.fileHandle = handle;
+        return handle.requestPermission({ mode:"readwrite" }).then(function(perm){
+          return handle.getFile();
+        });
+      }).then(function(file){
+        return file.text().then(function(text){ loadItemsFromText(text, file.name); });
+      }).catch(function(err){
+        if(err && err.name === "AbortError") return;
+        toast("Open failed: " + (err && err.message ? err.message : err));
+      });
+    }else{
+      var input = document.createElement("input");
+      input.type = "file";
+      input.accept = ".json,application/json";
+      input.addEventListener("change", function(){
+        var file = input.files[0];
+        if(!file) return;
+        state.fileHandle = null;
+        file.text().then(function(text){ loadItemsFromText(text, file.name + " (read-only — use Download to save)"); });
+      });
+      input.click();
+    }
+  }
+
+  function saveNow(){
+    if(!state.items.length){ return; }
+    var json = JSON.stringify(state.items, null, 2);
+    if(state.fileHandle){
+      state.saving = true;
+      setStatus("busy", "saving…");
+      state.fileHandle.createWritable().then(function(writable){
+        return writable.write(json).then(function(){ return writable.close(); });
+      }).then(function(){
+        state.saving = false;
+        state.dirty = false;
+        var now = new Date();
+        setStatus("ok", "saved " + now.toLocaleTimeString());
+        updateSaveBtn();
+      }).catch(function(err){
+        state.saving = false;
+        setStatus("bad", "save failed");
+        toast("Could not save to disk: " + (err && err.message ? err.message : err));
+      });
+    }else{
+      toast("No writable file handle — use Download JSON instead");
+    }
+  }
+
+  function downloadJson(){
+    if(!state.items.length){ toast("Nothing loaded yet"); return; }
+    var json = JSON.stringify(state.items, null, 2);
+    var blob = new Blob([json], { type:"application/json" });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = "items.json";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
+    toast("Downloaded items.json");
+  }
+
+  function markDirty(){
+    state.dirty = true;
+    updateSaveBtn();
+    if(state.autosave && state.fileHandle){
+      clearTimeout(saveTimer);
+      setStatus("warn", "unsaved…");
+      saveTimer = setTimeout(saveNow, 700);
+    }else if(!state.fileHandle){
+      setStatus("warn", "unsaved (no file open)");
+    }else{
+      setStatus("warn", "unsaved");
+    }
+  }
+  function updateSaveBtn(){
+    $("#saveBtn").disabled = !state.items.length || !state.fileHandle;
+  }
+
+  /* ---------------- Filtering / sorting ---------------- */
+  function getFiltered(){
+    var q = state.search.trim().toLowerCase();
+    var list = state.items.filter(function(it){
+      if(q){
+        var idm = String(it.id||"").toLowerCase().indexOf(q) !== -1;
+        var tim = String(it.title||"").toLowerCase().indexOf(q) !== -1;
+        if(!idm && !tim) return false;
+      }
+      if(state.category !== "all"){
+        if(!Array.isArray(it.categories) || it.categories.indexOf(state.category) === -1) return false;
+      }
+      if(state.stock === "in" && !it.in_stock) return false;
+      if(state.stock === "out" && it.in_stock) return false;
+      if(state.missingOnly && Array.isArray(it.categories) && it.categories.length > 0) return false;
+      return true;
+    });
+    var sort = state.sort;
+    if(sort !== "default"){
+      list = list.slice().sort(function(a,b){
+        if(sort === "price-asc") return parsePriceStr(a.price).value - parsePriceStr(b.price).value;
+        if(sort === "price-desc") return parsePriceStr(b.price).value - parsePriceStr(a.price).value;
+        if(sort === "reviews-desc") return (b.reviews||0) - (a.reviews||0);
+        if(sort === "title-asc") return String(a.title||"").localeCompare(String(b.title||""));
+        return 0;
+      });
+    }
+    return list;
+  }
+
+  function populateCategoryFilter(){
+    var sel = $("#categoryFilter");
+    var current = sel.value || "all";
+    var html = '<option value="all">All categories</option>';
+    CATEGORY_GROUPS.forEach(function(g){
+      html += '<optgroup label="'+esc(g.label)+'">';
+      g.slugs.forEach(function(s){
+        html += '<option value="'+esc(s)+'">'+esc(s)+'</option>';
+      });
+      html += '</optgroup>';
+    });
+    sel.innerHTML = html;
+    sel.value = current;
+  }
+
+  /* ---------------- Rendering ---------------- */
+  function renderStats(){
+    var total = state.items.length;
+    var missing = state.items.filter(function(it){ return !Array.isArray(it.categories) || it.categories.length===0; }).length;
+    var out = state.items.filter(function(it){ return !it.in_stock; }).length;
+    var filtered = getFiltered().length;
+    $("#statsRow").innerHTML =
+      '<div class="stat-card"><div class="num">'+total+'</div><div class="label">Total products</div></div>' +
+      '<div class="stat-card"><div class="num">'+filtered+'</div><div class="label">Matching filters</div></div>' +
+      '<div class="stat-card clickable warn" id="missingStatCard"><div class="num">'+missing+'</div><div class="label">⚠ Missing category</div></div>' +
+      '<div class="stat-card"><div class="num">'+out+'</div><div class="label">Out of stock</div></div>';
+    var msc = $("#missingStatCard");
+    if(msc) msc.addEventListener("click", function(){
+      state.missingOnly = true;
+      $("#missingCheckbox").checked = true;
+      $("#missingToggle").classList.add("active");
+      state.page = 1;
+      render();
+    });
+  }
+
+  function categoryChipsHtml(cats){
+    if(!Array.isArray(cats) || cats.length===0){
+      return '<button class="cat-empty-btn" data-action="edit-cats">⚠ No category — assign</button>';
+    }
+    var shown = cats.slice(0,3);
+    var html = shown.map(function(c,i){
+      return '<span class="cat-chip'+(i===0?' primary':'')+'">'+esc(c)+'</span>';
+    }).join("");
+    if(cats.length>3) html += '<span class="cat-chip more">+'+(cats.length-3)+'</span>';
+    html += '<button class="cat-edit-btn" data-action="edit-cats">edit</button>';
+    return html;
+  }
+
+  function cardHtml(it){
+    var img = splitImagePath(it.image);
+    var priceP = parsePriceStr(it.price);
+    var origP = parsePriceStr(it.original_price);
+    var missing = !Array.isArray(it.categories) || it.categories.length===0;
+    var stars = "★".repeat(Math.round(it.rating||0)) + "☆".repeat(Math.max(0,5-Math.round(it.rating||0)));
+    return (
+    '<div class="card'+(missing?' missing-cat':'')+'" data-id="'+esc(it.id)+'">' +
+      (missing ? '<span class="card-warn">⚠ NO CATEGORY</span>' : '') +
+      '<div class="card-media" data-imgwrap>' +
+        '<img src="'+esc(it.image||"")+'" alt="'+esc(it.alt||it.title||"")+'" loading="lazy" data-action="img-check">' +
+        '<div class="fallback">image not found<br>'+esc(it.image||"—")+'</div>' +
+        '<span class="stock-flag'+(it.in_stock?"":" out")+'">'+(it.in_stock?"IN STOCK":"OUT OF STOCK")+'</span>' +
+      '</div>' +
+      '<div class="card-body">' +
+        '<div class="id-row"><span class="sku">'+esc(it.id)+'</span><span class="stars" title="rating">'+stars+'</span></div>' +
+        '<textarea class="field-title" rows="2" data-field="title" spellcheck="false">'+esc(it.title)+'</textarea>' +
+        '<input class="field-brand" data-field="brand" value="'+esc(it.brand||"")+'" placeholder="Brand" spellcheck="false">' +
+        '<div class="price-row">' +
+          '<div class="price-field"><span class="prefix">'+esc(priceP.prefix)+'</span><input type="number" step="1" data-field="price" value="'+priceP.value+'"></div>' +
+          '<div class="price-field orig"><span class="prefix">'+esc(origP.prefix)+'</span><input type="number" step="1" data-field="original_price" value="'+origP.value+'"></div>' +
+          (it.discount ? '<span class="discount-tag">'+esc(it.discount)+'</span>' : '') +
+        '</div>' +
+        '<div class="meta-row">' +
+          '<div class="meta-field"><label>Rating</label><select data-field="rating">'+[0,1,2,3,4,5].map(function(v){return '<option value="'+v+'"'+(Number(it.rating)===v?' selected':'')+'>'+v+'</option>';}).join("")+'</select></div>' +
+          '<div class="meta-field"><label>Reviews</label><input type="number" min="0" step="1" data-field="reviews" value="'+(it.reviews||0)+'"></div>' +
+          '<div class="meta-field"><label>Stock</label><span class="switch'+(it.in_stock?" on":"")+'" data-action="toggle-stock"></span></div>' +
+        '</div>' +
+        '<div class="img-field"><span class="dir">'+esc(img.dir)+'</span><input type="text" data-field="image-file" value="'+esc(img.file)+'" spellcheck="false"></div>' +
+        '<div class="cat-row">'+categoryChipsHtml(it.categories)+'</div>' +
+        '<div class="path-line"><span>'+esc(it.url||"")+'</span><button class="copy-btn" data-action="copy-path" title="Copy file path">⧉</button></div>' +
+      '</div>' +
+    '</div>'
+    );
+  }
+
+  function render(){
+    renderStats();
+    var list = getFiltered();
+    var totalPages = Math.max(1, Math.ceil(list.length / state.pageSize));
+    if(state.page > totalPages) state.page = totalPages;
+    var start = (state.page-1) * state.pageSize;
+    var pageItems = list.slice(start, start + state.pageSize);
+
+    var grid = $("#grid");
+    var empty = $("#emptyState");
+    if(!state.items.length){
+      grid.innerHTML = "";
+      empty.style.display = "block";
+      empty.querySelector("h2").textContent = "No file loaded";
+      empty.querySelector("p").textContent = "Click \"Open items.json\" above and select the file from your product folder.";
+    }else if(!pageItems.length){
+      grid.innerHTML = "";
+      empty.style.display = "block";
+      empty.querySelector("h2").textContent = "No products match";
+      empty.querySelector("p").textContent = "Try clearing the search box or filters.";
+    }else{
+      empty.style.display = "none";
+      grid.innerHTML = pageItems.map(cardHtml).join("");
+    }
+    renderPagination(totalPages, list.length);
+  }
+
+  function renderPagination(totalPages, totalCount){
+    var el = $("#pagination");
+    if(!state.items.length || totalPages<=1){
+      if(state.items.length && totalCount){
+        el.innerHTML = '<span class="page-btn" style="opacity:.6;cursor:default">'+totalCount+' item'+(totalCount===1?"":"s")+'</span>';
+      } else {
+        el.innerHTML = "";
+      }
+      return;
+    }
+    var html = "";
+    html += '<button class="page-btn" data-page="prev" '+(state.page<=1?"disabled":"")+'>‹ Prev</button>';
+    var maxButtons = 7;
+    var startP = Math.max(1, state.page - 3);
+    var endP = Math.min(totalPages, startP + maxButtons - 1);
+    startP = Math.max(1, endP - maxButtons + 1);
+    for(var p=startP; p<=endP; p++){
+      html += '<button class="page-btn'+(p===state.page?" current":"")+'" data-page="'+p+'">'+p+'</button>';
+    }
+    html += '<button class="page-btn" data-page="next" '+(state.page>=totalPages?"disabled":"")+'>Next ›</button>';
+    html += '<select class="filter page-size" id="pageSizeSelect">' +
+      [12,24,48,96].map(function(n){ return '<option value="'+n+'"'+(state.pageSize===n?" selected":"")+'>'+n+' / page</option>'; }).join("") +
+      '</select>';
+    html += '<span class="page-btn" style="opacity:.6;cursor:default;border:none;background:none">'+totalCount+' results</span>';
+    el.innerHTML = html;
+
+    $all("[data-page]", el).forEach(function(btn){
+      btn.addEventListener("click", function(){
+        var v = btn.getAttribute("data-page");
+        if(v==="prev") state.page = Math.max(1, state.page-1);
+        else if(v==="next") state.page = Math.min(totalPages, state.page+1);
+        else state.page = parseInt(v,10);
+        render();
+        window.scrollTo({ top: $("main").offsetTop - 80, behavior:"smooth" });
+      });
+    });
+    var pss = $("#pageSizeSelect");
+    if(pss) pss.addEventListener("change", function(){
+      state.pageSize = parseInt(pss.value,10);
+      state.page = 1;
+      render();
+    });
+  }
+
+  /* ---------------- Field commits ---------------- */
+  function commitField(id, field, rawValue, target){
+    var it = findItem(id);
+    if(!it) return;
+    var changed = false;
+
+    if(field === "title"){
+      var v = String(rawValue).trim();
+      if(v && v !== it.title){ it.title = v; changed = true; }
+      else target.value = it.title;
+    }
+    else if(field === "brand"){
+      var vb = String(rawValue).trim();
+      if(vb !== (it.brand||"")){ it.brand = vb; changed = true; }
+    }
+    else if(field === "price" || field === "original_price"){
+      var parsed = parsePriceStr(it[field]);
+      var num = parseFloat(rawValue);
+      if(isNaN(num) || num < 0) num = parsed.value;
+      var newStr = formatPriceStr(parsed.prefix, num);
+      if(newStr !== it[field]){
+        it[field] = newStr;
+        changed = true;
+        // keep discount in sync automatically
+        var priceVal = parsePriceStr(it.price).value;
+        var origVal = parsePriceStr(it.original_price).value;
+        var diff = Math.round((origVal - priceVal) * 100) / 100;
+        it.discount = diff > 0 ? ("Save BDT " + diff) : null;
+      }
+    }
+    else if(field === "reviews"){
+      var nr = parseInt(rawValue,10);
+      if(isNaN(nr) || nr < 0) nr = it.reviews || 0;
+      if(nr !== it.reviews){ it.reviews = nr; changed = true; }
+    }
+    else if(field === "rating"){
+      var nrt = parseInt(rawValue,10);
+      if(isNaN(nrt)) nrt = it.rating || 0;
+      if(nrt !== it.rating){ it.rating = nrt; changed = true; }
+    }
+    else if(field === "image-file"){
+      var img = splitImagePath(it.image);
+      var newFile = String(rawValue).trim();
+      if(newFile && newFile !== img.file){
+        it.image = img.dir + newFile;
+        changed = true;
+      }else{
+        target.value = img.file;
+      }
+    }
+
+    if(changed) markDirty();
+    return changed;
+  }
+
+  /* ---------------- Category picker ---------------- */
+  function openCatPicker(id){
+    var it = findItem(id);
+    if(!it) return;
+    state.editingCatId = id;
+    state.pendingCats = Array.isArray(it.categories) ? it.categories.slice() : [];
+    $("#pickerSku").textContent = it.id;
+    $("#pickerSearch").value = "";
+    renderPickerBody("");
+    updatePickerCount();
+    $("#catOverlay").classList.add("show");
+  }
+  function closeCatPicker(applyChanges){
+    var el = $("#catOverlay");
+    el.classList.remove("show");
+    if(applyChanges && state.editingCatId){
+      var it = findItem(state.editingCatId);
+      if(it){
+        var before = JSON.stringify(it.categories||[]);
+        var after = JSON.stringify(state.pendingCats);
+        if(before !== after){
+          it.categories = state.pendingCats.slice();
+          markDirty();
+        }
+      }
+    }
+    state.editingCatId = null;
+    render();
+  }
+  function updatePickerCount(){
+    var n = state.pendingCats.length;
+    var el = $("#pickerCount");
+    el.textContent = n + " / 5";
+    el.className = "picker-count" + (n>=5 ? " full" : "");
+  }
+  function renderPickerBody(filterText){
+    var q = (filterText||"").trim().toLowerCase();
+    var body = $("#pickerBody");
+    var html = "";
+    CATEGORY_GROUPS.forEach(function(g){
+      var slugs = g.slugs.filter(function(s){ return !q || s.indexOf(q) !== -1; });
+      if(!slugs.length) return;
+      html += '<div class="cat-group"><div class="cat-group-title">'+esc(g.label)+'</div><div class="cat-options">';
+      slugs.forEach(function(s){
+        var idx = state.pendingCats.indexOf(s);
+        var checked = idx !== -1;
+        var disabled = !checked && state.pendingCats.length >= 5;
+        html += '<label class="cat-opt'+(checked?' checked':'')+(disabled?' disabled':'')+'" data-slug="'+esc(s)+'">' +
+          (checked ? '<span class="order">'+(idx+1)+'</span>' : '') +
+          '<input type="checkbox" '+(checked?'checked':'')+(disabled?' disabled':'')+'>' +
+          esc(s) +
+        '</label>';
+      });
+      html += '</div></div>';
+    });
+    body.innerHTML = html || '<p style="color:var(--text-faint);font-size:12px;padding:10px;">No matching categories.</p>';
+
+    $all(".cat-opt", body).forEach(function(lbl){
+      lbl.addEventListener("click", function(e){
+        e.preventDefault();
+        var slug = lbl.getAttribute("data-slug");
+        var idx = state.pendingCats.indexOf(slug);
+        if(idx !== -1){
+          state.pendingCats.splice(idx,1);
+        }else{
+          if(state.pendingCats.length >= 5) return;
+          state.pendingCats.push(slug);
+        }
+        updatePickerCount();
+        renderPickerBody($("#pickerSearch").value);
+      });
+    });
+  }
+
+  /* ---------------- Event delegation ---------------- */
+  function initGridEvents(){
+    var grid = $("#grid");
+
+    grid.addEventListener("change", function(e){
+      var t = e.target;
+      var card = t.closest("[data-id]");
+      if(!card) return;
+      var id = card.getAttribute("data-id");
+      var field = t.getAttribute("data-field");
+      if(field) commitField(id, field, t.value, t);
+    });
+
+    grid.addEventListener("blur", function(e){
+      var t = e.target;
+      if(t.tagName !== "INPUT" && t.tagName !== "TEXTAREA") return;
+      var card = t.closest("[data-id]");
+      if(!card) return;
+      var id = card.getAttribute("data-id");
+      var field = t.getAttribute("data-field");
+      if(field === "title" || field === "brand" || field === "image-file"){
+        commitField(id, field, t.value, t);
+      }
+    }, true);
+
+    grid.addEventListener("keydown", function(e){
+      if(e.key === "Enter" && (e.target.tagName === "INPUT" || e.target.tagName==="TEXTAREA")){
+        e.preventDefault();
+        e.target.blur();
+      }
+    });
+
+    grid.addEventListener("click", function(e){
+      var actionEl = e.target.closest("[data-action]");
+      if(!actionEl) return;
+      var card = actionEl.closest("[data-id]");
+      if(!card) return;
+      var id = card.getAttribute("data-id");
+      var action = actionEl.getAttribute("data-action");
+
+      if(action === "edit-cats"){
+        openCatPicker(id);
+      }else if(action === "toggle-stock"){
+        var it = findItem(id);
+        it.in_stock = !it.in_stock;
+        markDirty();
+        render();
+      }else if(action === "copy-path"){
+        var it2 = findItem(id);
+        if(navigator.clipboard && it2){
+          navigator.clipboard.writeText(it2.url||"").then(function(){ toast("Path copied"); });
+        }
+      }
+    });
+
+    grid.addEventListener("error", function(e){
+      if(e.target.tagName === "IMG"){
+        var wrap = e.target.closest("[data-imgwrap]");
+        if(wrap) wrap.classList.add("img-missing");
+      }
+    }, true);
+  }
+
+  function init(){
+    if(!fsApiSupported) $("#compatBanner").classList.add("show");
+
+    $("#openBtn").addEventListener("click", openFile);
+    $("#saveBtn").addEventListener("click", saveNow);
+    $("#downloadBtn").addEventListener("click", downloadJson);
+
+    var autoSwitch = $("#autosaveSwitch");
+    autoSwitch.classList.toggle("on", state.autosave);
+    autoSwitch.addEventListener("click", function(){
+      state.autosave = !state.autosave;
+      autoSwitch.classList.toggle("on", state.autosave);
+      toast("Autosave " + (state.autosave ? "on" : "off"));
+    });
+
+    var searchTimer;
+    $("#searchInput").addEventListener("input", function(e){
+      clearTimeout(searchTimer);
+      var v = e.target.value;
+      searchTimer = setTimeout(function(){
+        state.search = v;
+        state.page = 1;
+        render();
+      }, 180);
+    });
+
+    $("#categoryFilter").addEventListener("change", function(e){
+      state.category = e.target.value;
+      state.page = 1;
+      render();
+    });
+    $("#stockFilter").addEventListener("change", function(e){
+      state.stock = e.target.value;
+      state.page = 1;
+      render();
+    });
+    $("#sortSelect").addEventListener("change", function(e){
+      state.sort = e.target.value;
+      state.page = 1;
+      render();
+    });
+    $("#missingToggle").addEventListener("click", function(){
+      state.missingOnly = !state.missingOnly;
+      $("#missingCheckbox").checked = state.missingOnly;
+      $("#missingToggle").classList.toggle("active", state.missingOnly);
+      state.page = 1;
+      render();
+    });
+
+    // Category picker overlay events
+    $("#catOverlay").addEventListener("click", function(e){
+      if(e.target.id === "catOverlay") closeCatPicker(true);
+    });
+    $("#pickerDone").addEventListener("click", function(){ closeCatPicker(true); });
+    $("#pickerSearch").addEventListener("input", function(e){ renderPickerBody(e.target.value); });
+    document.addEventListener("keydown", function(e){
+      if(e.key === "Escape" && $("#catOverlay").classList.contains("show")) closeCatPicker(true);
+    });
+
+    initGridEvents();
+    populateCategoryFilter();
+    render();
+
+    window.addEventListener("beforeunload", function(e){
+      if(state.dirty){ e.preventDefault(); e.returnValue = ""; }
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", init);
+})();
+</script>
+</body>
+</html>
