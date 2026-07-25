@@ -447,3 +447,141 @@ async function renderRelatedProducts({
     container.innerHTML = `<p class="text-sm text-gray-400 col-span-full text-center">Couldn't load related products.</p>`;
   }
 }
+
+/**
+ * ═══════════════════════════════════════════════════════════════
+ * POPULAR PRODUCTS — ranked by real Google Analytics page-view counts
+ * ═══════════════════════════════════════════════════════════════
+ *
+ * Reads two files together:
+ *   - items.json    — your product catalog (title, price, image, etc.)
+ *   - popular.json  — { "views": { "RBO-1234": 512, ... } }, generated
+ *                      automatically by a scheduled GitHub Action that
+ *                      pulls real view counts from the GA4 Data API.
+ *                      See fetch_popular.py / update-popular.yml.
+ *
+ * popular.json is intentionally tiny (just id -> view count) so it stays
+ * fast to fetch; all the actual product details still come from items.json,
+ * same as every other section.
+ *
+ * USAGE:
+ *   <div id="popular-grid" class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-4"></div>
+ *   <script src="render-products.js"></script>
+ *   <script>
+ *     renderPopularProducts({
+ *       containerId: "popular-grid",
+ *       itemsPath: "items.json",
+ *       popularPath: "popular.json",
+ *       limit: 10
+ *     });
+ *   </script>
+ *
+ * On a product page (inside /products/), pass basePath: "../" and adjust
+ * itemsPath/popularPath to "../items.json" / "../popular.json", same as
+ * the other render functions.
+ */
+async function renderPopularProducts({
+  containerId,
+  itemsPath = "items.json",
+  popularPath = "popular.json",
+  basePath = "",
+  limit = 10,
+}) {
+  const container = document.getElementById(containerId);
+  if (!container) {
+    console.error(`renderPopularProducts: no element with id "${containerId}" found`);
+    return;
+  }
+  container.innerHTML = skeletonGridHtml(limit);
+
+  try {
+    const [itemsRes, popularRes] = await Promise.all([fetch(itemsPath), fetch(popularPath)]);
+    if (!itemsRes.ok) throw new Error(`Failed to load ${itemsPath}: ${itemsRes.status}`);
+
+    const items = await itemsRes.json();
+
+    // popular.json might not exist yet (e.g. before the first scheduled
+    // run) — fall back gracefully to newest-first instead of erroring out.
+    let views = {};
+    if (popularRes.ok) {
+      const popularData = await popularRes.json();
+      views = popularData.views || {};
+    } else {
+      console.warn(`renderPopularProducts: ${popularPath} not found yet — showing newest items instead`);
+    }
+
+    const ranked = items
+      .slice()
+      .sort((a, b) => (views[b.id] || 0) - (views[a.id] || 0))
+      .slice(0, limit);
+
+    container.innerHTML = ranked.map((item, i) => cardHtml(item, basePath, i)).join("\n");
+    injectFadeInStyles();
+    registerCartProducts(container);
+  } catch (err) {
+    console.error("renderPopularProducts error:", err);
+    container.innerHTML = `<p class="text-sm text-gray-400 col-span-full text-center">Couldn't load popular products.</p>`;
+  }
+}
+
+/**
+ * ═══════════════════════════════════════════════════════════════
+ * FULL CATALOG — for the main product listing page (product.html)
+ * ═══════════════════════════════════════════════════════════════
+ *
+ * Renders EVERY item in items.json as a card, matching the exact same
+ * markup/classes as every other section (.product-card, data-category,
+ * .productName, .productPrice .offer-price, etc.) — this is intentional:
+ * product.js's existing pagination (initPagination/renderPage), category
+ * filters (applyFilters), and search all work by scanning for these
+ * classes on whatever's in the DOM. This function doesn't reimplement
+ * any of that — it just supplies the cards, then re-triggers pagination
+ * so it picks up what was just rendered.
+ *
+ * "Pagination" here still means: all cards exist in the DOM, but only
+ * the current page's worth are visible (display:none on the rest) —
+ * same behavior as before. The actual speed win is that the raw HTML
+ * file no longer ships ~185 hardcoded card blocks on every load; it's
+ * one small items.json fetch instead, and hidden cards' lazy images
+ * are never requested until their page becomes visible.
+ *
+ * USAGE (on product.html):
+ *   <div id="product-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4"></div>
+ *   <script src="render-products.js"></script>
+ *   <script>
+ *     renderCatalog({ containerId: "product-grid", jsonPath: "items.json" });
+ *   </script>
+ */
+async function renderCatalog({ containerId, jsonPath = "items.json", basePath = "" }) {
+  const container = document.getElementById(containerId);
+  if (!container) {
+    console.error(`renderCatalog: no element with id "${containerId}" found`);
+    return;
+  }
+  // A lighter skeleton count here — showing all ~185 skeleton cards at
+  // once would itself be wasteful; a couple rows is enough to signal
+  // "loading" without doing pointless extra DOM work.
+  container.innerHTML = skeletonGridHtml(8);
+
+  try {
+    const res = await fetch(jsonPath);
+    if (!res.ok) throw new Error(`Failed to load ${jsonPath}: ${res.status}`);
+    const items = await res.json();
+
+    container.innerHTML = items.map((item, i) => cardHtml(item, basePath, i)).join("\n");
+    injectFadeInStyles();
+    registerCartProducts(container);
+
+    // Hand back off to product.js's existing pagination system now that
+    // real cards exist — it was likely initialized on an empty grid
+    // before this fetch resolved, so it needs to run again.
+    if (typeof window.initPagination === "function") {
+      window.initPagination();
+    } else {
+      console.warn("renderCatalog: initPagination() not found — pagination controls may not work until product.js defines it");
+    }
+  } catch (err) {
+    console.error("renderCatalog error:", err);
+    container.innerHTML = `<p class="text-sm text-gray-400 col-span-full text-center">Couldn't load products.</p>`;
+  }
+}
