@@ -1,225 +1,231 @@
 [
   {
-  "id": "RBO-1340",
-  "title": "3inch Round 4-Ohm 30W Full-Range Mid-Bass Speaker 81mm High-Definition Soundbar Bluetooth Speaker",
-  "url": "products/1340-3inch-round-4-ohm-30w-full-range-mid-bass-speaker-robo-orion-bangladesh.html",
-  "image": "img/product/1340-3inch-round-4-ohm-30w-full-range-mid-bass-speaker-robo-orion-bangladesh.jpg",
-  "alt": "3inch Round 4-Ohm 30W Full-Range Mid-Bass Speaker 81mm",
-  "categories": [
-    "bluetooth-speakers",
-    "subwoofers",
-    "amplifiers",
-    "audio-modules",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 500",
-  "rating": 5,
-  "reviews": 3,
-  "brand": "HB",
-  "price": "BDT 1750",
-  "original_price": "BDT 2250",
-  "in_stock": true
-},
+    "id": "RBO-1340",
+    "title": "3inch Round 4-Ohm 30W Full-Range Mid-Bass Speaker 81mm High-Definition Soundbar Bluetooth Speaker",
+    "url": "products/1340-3inch-round-4-ohm-30w-full-range-mid-bass-speaker-robo-orion-bangladesh.html",
+    "image": "img/product/1340-3inch-round-4-ohm-30w-full-range-mid-bass-speaker-robo-orion-bangladesh.jpg",
+    "alt": "3inch Round 4-Ohm 30W Full-Range Mid-Bass Speaker 81mm",
+    "categories": [
+      "bluetooth-speakers",
+      "subwoofers",
+      "amplifiers",
+      "audio-modules",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 500",
+    "rating": 5,
+    "reviews": 3,
+    "brand": "HB",
+    "price": "BDT 1750",
+    "original_price": "BDT 2250",
+    "in_stock": true
+  },
   {
-  "id": "RBO-1339",
-  "title": "LiFePO4 Battery Charger Module - Type-C | 1S 3.2V 3.6V 2.4A",
-  "url": "products/1339-1s-lifepo4-battery-charger-module-type-c-3.2v-2.4a-robo-orion-bangladesh.html",
-  "image": "img/product/1339-1s-lifepo4-battery-charger-module-type-c-3.2v-2.4a-robo-orion-bangladesh.jpg",
-  "alt": "LiFePO4 Battery Charger Module Type-C 1S 3.2V 2.4A",
-  "categories": [
-    "chargers",
-    "converter-modules",
-    "bms-protection",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 80",
-  "rating": 5,
-  "reviews": 26,
-  "brand": "Generic",
-  "price": "BDT 100",
-  "original_price": "BDT 180",
-  "in_stock": true
-},
+    "id": "RBO-1339",
+    "title": "LiFePO4 Battery Charger Module - Type-C | 1S 3.2V 3.6V 2.4A",
+    "url": "products/1339-1s-lifepo4-battery-charger-module-type-c-3.2v-2.4a-robo-orion-bangladesh.html",
+    "image": "img/product/1339-1s-lifepo4-battery-charger-module-type-c-3.2v-2.4a-robo-orion-bangladesh.jpg",
+    "alt": "LiFePO4 Battery Charger Module Type-C 1S 3.2V 2.4A",
+    "categories": [
+      "chargers",
+      "converter-modules",
+      "bms-protection",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 80",
+    "rating": 5,
+    "reviews": 26,
+    "brand": "Generic",
+    "price": "BDT 100",
+    "original_price": "BDT 180",
+    "in_stock": true
+  },
   {
-  "id": "RBO-1338",
-  "title": "Mini DC-DC Adjustable Buck-Boost Converter (2V-15V to 12V 3A)",
-  "url": "products/1338-mini-dc-dc-buck-boost-converter-2v-15v-to-12v-3a-robo-orion-bangladesh.html",
-  "image": "img/product/1338-mini-dc-dc-buck-boost-converter-2v-15v-to-12v-3a-robo-orion-bangladesh.jpg",
-  "alt": "Mini DC-DC Adjustable Buck-Boost Converter 2V-15V to 12V 3A",
-  "categories": [
-    "converter-modules",
-    "power-supply",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 35",
-  "rating": 5,
-  "reviews": 23,
-  "brand": "Generic",
-  "price": "BDT 85",
-  "original_price": "BDT 120",
-  "in_stock": true
-},
+    "id": "RBO-1338",
+    "title": "Mini DC-DC Adjustable Buck-Boost Converter (2V-15V to 12V 3A)",
+    "url": "products/1338-mini-dc-dc-buck-boost-converter-2v-15v-to-12v-3a-robo-orion-bangladesh.html",
+    "image": "img/product/1338-mini-dc-dc-buck-boost-converter-2v-15v-to-12v-3a-robo-orion-bangladesh.jpg",
+    "alt": "Mini DC-DC Adjustable Buck-Boost Converter 2V-15V to 12V 3A",
+    "categories": [
+      "converter-modules",
+      "power-supply",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 35",
+    "rating": 5,
+    "reviews": 23,
+    "brand": "Generic",
+    "price": "BDT 85",
+    "original_price": "BDT 120",
+    "in_stock": true
+  },
   {
-  "id": "RBO-1337",
-  "title": "Mini DC-DC Adjustable Buck-Boost Converter (2V-15V to 9V 3A)",
-  "url": "products/1337-mini-dc-dc-buck-boost-converter-2v-15v-to-9v-3a-robo-orion-bangladesh.html",
-  "image": "img/product/1337-mini-dc-dc-buck-boost-converter-2v-15v-to-9v-3a-robo-orion-bangladesh.jpg",
-  "alt": "Mini DC-DC Adjustable Buck-Boost Converter 2V-15V to 9V 3A",
-  "categories": [
-    "converter-modules",
-    "power-supply",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 35",
-  "rating": 5,
-  "reviews": 15,
-  "brand": "Generic",
-  "price": "BDT 85",
-  "original_price": "BDT 120",
-  "in_stock": true
-},
+    "id": "RBO-1337",
+    "title": "Mini DC-DC Adjustable Buck-Boost Converter (2V-15V to 9V 3A)",
+    "url": "products/1337-mini-dc-dc-buck-boost-converter-2v-15v-to-9v-3a-robo-orion-bangladesh.html",
+    "image": "img/product/1337-mini-dc-dc-buck-boost-converter-2v-15v-to-9v-3a-robo-orion-bangladesh.jpg",
+    "alt": "Mini DC-DC Adjustable Buck-Boost Converter 2V-15V to 9V 3A",
+    "categories": [
+      "converter-modules",
+      "power-supply",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 35",
+    "rating": 5,
+    "reviews": 15,
+    "brand": "Generic",
+    "price": "BDT 85",
+    "original_price": "BDT 120",
+    "in_stock": true
+  },
   {
-  "id": "RBO-1336",
-  "title": "Mini DC-DC Adjustable Buck-Boost Converter (2V-15V to 5V 3A)",
-  "url": "products/1336-mini-dc-dc-buck-boost-converter-2v-15v-to-5v-3a-robo-orion-bangladesh.html",
-  "image": "img/product/1336-mini-dc-dc-buck-boost-converter-2v-15v-to-5v-3a-robo-orion-bangladesh.jpg",
-  "alt": "Mini DC-DC Adjustable Buck-Boost Converter 2V-15V to 5V 3A",
-  "categories": [
-    "converter-modules",
-    "power-supply",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 35",
-  "rating": 5,
-  "reviews": 12,
-  "brand": "Generic",
-  "price": "BDT 85",
-  "original_price": "BDT 120",
-  "in_stock": true
-},
+    "id": "RBO-1336",
+    "title": "Mini DC-DC Adjustable Buck-Boost Converter (2V-15V to 5V 3A)",
+    "url": "products/1336-mini-dc-dc-buck-boost-converter-2v-15v-to-5v-3a-robo-orion-bangladesh.html",
+    "image": "img/product/1336-mini-dc-dc-buck-boost-converter-2v-15v-to-5v-3a-robo-orion-bangladesh.jpg",
+    "alt": "Mini DC-DC Adjustable Buck-Boost Converter 2V-15V to 5V 3A",
+    "categories": [
+      "converter-modules",
+      "power-supply",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 35",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 85",
+    "original_price": "BDT 120",
+    "in_stock": true
+  },
   {
-  "id": "RBO-1335",
-  "title": "Mini DC-DC Adjustable Buck-Boost Converter (2V-15V to 4.2V 3A)",
-  "url": "products/1335-mini-dc-dc-buck-boost-converter-2v-15v-to-4.2v-3a-robo-orion-bangladesh.html",
-  "image": "img/product/1335-mini-dc-dc-buck-boost-converter-2v-15v-to-4.2v-3a-robo-orion-bangladesh.jpg",
-  "alt": "Mini DC-DC Adjustable Buck-Boost Converter 2V-15V to 4.2V 3A",
-  "categories": [
-    "converter-modules",
-    "power-supply",
-    "chargers",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 35",
-  "rating": 5,
-  "reviews": 8,
-  "brand": "Generic",
-  "price": "BDT 85",
-  "original_price": "BDT 120",
-  "in_stock": true
-},
+    "id": "RBO-1335",
+    "title": "Mini DC-DC Adjustable Buck-Boost Converter (2V-15V to 4.2V 3A)",
+    "url": "products/1335-mini-dc-dc-buck-boost-converter-2v-15v-to-4.2v-3a-robo-orion-bangladesh.html",
+    "image": "img/product/1335-mini-dc-dc-buck-boost-converter-2v-15v-to-4.2v-3a-robo-orion-bangladesh.jpg",
+    "alt": "Mini DC-DC Adjustable Buck-Boost Converter 2V-15V to 4.2V 3A",
+    "categories": [
+      "converter-modules",
+      "power-supply",
+      "chargers",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 35",
+    "rating": 5,
+    "reviews": 8,
+    "brand": "Generic",
+    "price": "BDT 85",
+    "original_price": "BDT 120",
+    "in_stock": true
+  },
   {
-  "id": "RBO-1334",
-  "title": "LiitoKala Lii-500 Smart Battery Charger Capacity Tester (STANDARD PACK)",
-  "url": "products/1334-liitokala-lii-500-smart-battery-charger-robo-orion-bangladesh.html",
-  "image": "img/product/1334-liitokala-lii-500-smart-battery-charger-robo-orion-bangladesh.jpg",
-  "alt": "LiitoKala Lii-500 Smart Battery Charger Capacity Tester",
-  "categories": [
-    "chargers",
-    "18650-batteries",
-    "repair-tools",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 500",
-  "rating": 5,
-  "reviews": 7,
-  "brand": "LiitoKala",
-  "price": "BDT 2250",
-  "original_price": "BDT 2750",
-  "in_stock": true
-},
+    "id": "RBO-1334",
+    "title": "LiitoKala Lii-500 Smart Battery Charger Capacity Tester (STANDARD PACK)",
+    "url": "products/1334-liitokala-lii-500-smart-battery-charger-robo-orion-bangladesh.html",
+    "image": "img/product/1334-liitokala-lii-500-smart-battery-charger-robo-orion-bangladesh.jpg",
+    "alt": "LiitoKala Lii-500 Smart Battery Charger Capacity Tester",
+    "categories": [
+      "chargers",
+      "18650-batteries",
+      "repair-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 500",
+    "rating": 5,
+    "reviews": 7,
+    "brand": "LiitoKala",
+    "price": "BDT 2250",
+    "original_price": "BDT 2750",
+    "in_stock": true
+  },
   {
-  "id": "RBO-1233",
-  "title": "4WD Smart Robot Car Chassis Kit",
-  "url": "products/1233-4wd-smart-robot-car-chassis-robo-orion-bangladesh.html",
-  "image": "img/product/1233-4wd-smart-robot-car-chassis-robo-orion-bangladesh.jpg",
-  "alt": "4WD Smart Robot Car Chassis Kit with 4 Motors",
-  "categories": [
-    "4wd-chassis",
-    "diy-kits",
-    "arduino"
-  ],
-  "discount": "Save BDT 265",
-  "rating": 5,
-  "reviews": 6,
-  "brand": "Generic",
-  "price": "BDT 885",
-  "original_price": "BDT 1150",
-  "in_stock": true
-},
+    "id": "RBO-1233",
+    "title": "4WD Smart Robot Car Chassis Kit",
+    "url": "products/1233-4wd-smart-robot-car-chassis-robo-orion-bangladesh.html",
+    "image": "img/product/1233-4wd-smart-robot-car-chassis-robo-orion-bangladesh.jpg",
+    "alt": "4WD Smart Robot Car Chassis Kit with 4 Motors",
+    "categories": [
+      "4wd-chassis",
+      "diy-kits",
+      "arduino"
+    ],
+    "discount": "Save BDT 265",
+    "rating": 5,
+    "reviews": 6,
+    "brand": "Generic",
+    "price": "BDT 885",
+    "original_price": "BDT 1150",
+    "in_stock": true
+  },
   {
-  "id": "RBO-1332",
-  "title": "Reflective Optical Sensor TCRT5000",
-  "url": "products/1332-tcrt5000-reflective-optical-sensor-robo-orion-bangladesh.html",
-  "image": "img/product/1332-tcrt5000-reflective-optical-sensor-robo-orion-bangladesh.jpg",
-  "alt": "Reflective Optical Sensor TCRT5000",
-  "categories": [
-    "sensors",
-    "ir-leds",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 10",
-  "rating": 5,
-  "reviews": 12,
-  "brand": "Generic",
-  "price": "BDT 15",
-  "original_price": "BDT 25",
-  "in_stock": true
-},
+    "id": "RBO-1332",
+    "title": "Reflective Optical Sensor TCRT5000",
+    "url": "products/1332-tcrt5000-reflective-optical-sensor-robo-orion-bangladesh.html",
+    "image": "img/product/1332-tcrt5000-reflective-optical-sensor-robo-orion-bangladesh.jpg",
+    "alt": "Reflective Optical Sensor TCRT5000",
+    "categories": [
+      "sensors",
+      "ir-leds",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 10",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 15",
+    "original_price": "BDT 25",
+    "in_stock": true
+  },
   {
-  "id": "RBO-1331",
-  "title": "2WD Wheel Drive Mobile Robot Platform Chassis Kit",
-  "url": "products/1331-2wd-smart-robot-car-chassis-kit-robo-orion-bangladesh.html",
-  "image": "img/product/1331-2wd-smart-robot-car-chassis-kit-robo-orion-bangladesh.jpg",
-  "alt": "2WD Smart Robot Car Chassis Kit with BO Motors",
-  "categories": [
-    "2wd-chassis",
-    "diy-kits",
-    "arduino"
-  ],
-  "discount": "Save BDT 260",
-  "rating": 5,
-  "reviews": 8,
-  "brand": "Generic",
-  "price": "BDT 520",
-  "original_price": "BDT 780",
-  "in_stock": true
-},
+    "id": "RBO-1331",
+    "title": "2WD Wheel Drive Mobile Robot Platform Chassis Kit",
+    "url": "products/1331-2wd-smart-robot-car-chassis-kit-robo-orion-bangladesh.html",
+    "image": "img/product/1331-2wd-smart-robot-car-chassis-kit-robo-orion-bangladesh.jpg",
+    "alt": "2WD Smart Robot Car Chassis Kit with BO Motors",
+    "categories": [
+      "2wd-chassis",
+      "diy-kits",
+      "arduino"
+    ],
+    "discount": "Save BDT 260",
+    "rating": 5,
+    "reviews": 8,
+    "brand": "Generic",
+    "price": "BDT 520",
+    "original_price": "BDT 780",
+    "in_stock": true
+  },
   {
-  "id": "RBO-1330",
-  "title": "Arduino Nano V3.0 ATmega328P CH340G Microcontroller Board",
-  "url": "products/1330-arduino-nano-v3-atmega328p-ch340g-robo-orion-bangladesh.html",
-  "image": "img/product/1330-arduino-nano-v3-atmega328p-ch340g-robo-orion-bangladesh.jpg",
-  "alt": "Arduino Nano V3.0 ATmega328P CH340G Microcontroller Board",
-  "categories": [
-    "arduino",
-    "development-boards",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 80",
-  "rating": 5,
-  "reviews": 24,
-  "brand": "Generic",
-  "price": "BDT 370",
-  "original_price": "BDT 450",
-  "in_stock": true
-},
+    "id": "RBO-1330",
+    "title": "Arduino Nano V3.0 ATmega328P CH340G Microcontroller Board",
+    "url": "products/1330-arduino-nano-v3-atmega328p-ch340g-robo-orion-bangladesh.html",
+    "image": "img/product/1330-arduino-nano-v3-atmega328p-ch340g-robo-orion-bangladesh.jpg",
+    "alt": "Arduino Nano V3.0 ATmega328P CH340G Microcontroller Board",
+    "categories": [
+      "arduino",
+      "development-boards",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 80",
+    "rating": 5,
+    "reviews": 24,
+    "brand": "Generic",
+    "price": "BDT 370",
+    "original_price": "BDT 450",
+    "in_stock": true
+  },
   {
     "id": "RBO-1329",
     "title": "GY-521 MPU-6050 6DOF Accelerometer & Gyroscope Sensor Module",
     "url": "products/1329-6dof-accelerometer-gyroscope-gy-521-mpu-6050-robo-orion-bangladesh.html",
     "image": "img/product/1329-6dof-accelerometer-gyroscope-gy-521-mpu-6050-robo-orion-bangladesh.jpg",
     "alt": "6DOF Accelerometer Gyroscope GY-521 MPU-6050",
-    "categories": ["imu-sensors", "sensors", "i2c-modules", "arduino", "diy-kits"],
+    "categories": [
+      "imu-sensors",
+      "sensors",
+      "i2c-modules",
+      "arduino",
+      "diy-kits"
+    ],
     "discount": "Save BDT 125",
     "rating": 5,
     "reviews": 17,
@@ -234,7 +240,12 @@
     "url": "products/1328-hc-sr04-ultrasonic-sonar-sensor-module-robo-orion-bangladesh.html",
     "image": "img/product/1328-hc-sr04-ultrasonic-sonar-sensor-module-robo-orion-bangladesh.jpg",
     "alt": "HC-SR04 Ultrasonic Sonar Sensor Module",
-    "categories": ["ultrasonic-sensors", "sensors", "arduino", "diy-kits"],
+    "categories": [
+      "ultrasonic-sensors",
+      "sensors",
+      "arduino",
+      "diy-kits"
+    ],
     "discount": "Save BDT 35",
     "rating": 5,
     "reviews": 14,
@@ -249,7 +260,13 @@
     "url": "products/1327-sg90-servo-motors-robo-orion-bangladesh.html",
     "image": "img/product/1327-sg90-servo-motors-robo-orion-bangladesh.jpg",
     "alt": "SG90 Servo Motors 9g Micro",
-    "categories": ["servo-motors", "dc-motors", "motor-drivers", "arduino", "diy-kits"],
+    "categories": [
+      "servo-motors",
+      "dc-motors",
+      "motor-drivers",
+      "arduino",
+      "diy-kits"
+    ],
     "discount": "Save BDT 55",
     "rating": 5,
     "reviews": 9,
@@ -264,7 +281,13 @@
     "url": "products/1326-pca9685-16-channel-12-bit-pwm-servo-driver-robo-orion-bangladesh.html",
     "image": "img/product/1326-pca9685-16-channel-12-bit-pwm-servo-driver-robo-orion-bangladesh.jpg",
     "alt": "PCA9685 16-Channel 12-bit PWM Servo Driver",
-    "categories": ["motor-drivers", "i2c-modules", "arduino", "development-boards", "diy-kits"],
+    "categories": [
+      "motor-drivers",
+      "i2c-modules",
+      "arduino",
+      "development-boards",
+      "diy-kits"
+    ],
     "discount": "Save BDT 100",
     "rating": 5,
     "reviews": 6,
@@ -279,7 +302,13 @@
     "url": "products/1325-esp32-type-c-wifi-bluetooth-dev-board-cp2102-robo-orion-bangladesh.html",
     "image": "img/product/1325-esp32-type-c-wifi-bluetooth-dev-board-cp2102-robo-orion-bangladesh.jpg",
     "alt": "ESP32 Type-C WiFi Bluetooth Dev Board CP2102",
-    "categories": ["esp32", "development-boards", "arduino", "wifi-modules", "bluetooth-modules"],
+    "categories": [
+      "esp32",
+      "development-boards",
+      "arduino",
+      "wifi-modules",
+      "bluetooth-modules"
+    ],
     "discount": "Save BDT 130",
     "rating": 5,
     "reviews": 12,
@@ -289,30 +318,34 @@
     "in_stock": true
   },
   {
-  "id": "RBO-1282",
-  "title": "1000uF 35V Electrolytic Capacitor (Original High Quality)",
-  "url": "products/1282-1000uf-35v-electrolytic-capacitor-robo-orion-bangladesh.html",
-  "image": "img/product/1282-1000uf-35v-electrolytic-capacitor-robo-orion-bangladesh.jpg",
-  "alt": "1000uF 35V Electrolytic Capacitor Original High Quality",
-  "categories": [
-    "capacitors",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 15",
-  "rating": 5,
-  "reviews": 7,
-  "brand": "Generic",
-  "price": "BDT 10",
-  "original_price": "BDT 25",
-  "in_stock": true
-},
+    "id": "RBO-1282",
+    "title": "1000uF 35V Electrolytic Capacitor (Original High Quality)",
+    "url": "products/1282-1000uf-35v-electrolytic-capacitor-robo-orion-bangladesh.html",
+    "image": "img/product/1282-1000uf-35v-electrolytic-capacitor-robo-orion-bangladesh.jpg",
+    "alt": "1000uF 35V Electrolytic Capacitor Original High Quality",
+    "categories": [
+      "capacitors",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 15",
+    "rating": 5,
+    "reviews": 7,
+    "brand": "Generic",
+    "price": "BDT 10",
+    "original_price": "BDT 25",
+    "in_stock": true
+  },
   {
     "id": "RBO-1324",
     "title": "Arduino Uno R3 ATmega328P DIP Development Board",
     "url": "products/1324-arduino-uno-r3-robo-orion-bangladesh.html",
     "image": "img/product/1324-arduino-uno-r3-robo-orion-bangladesh.jpg",
     "alt": "Arduino Uno R3 Development Board",
-    "categories": ["arduino", "development-boards", "diy-kits"],
+    "categories": [
+      "arduino",
+      "development-boards",
+      "diy-kits"
+    ],
     "discount": "Save BDT 410",
     "rating": 5,
     "reviews": 15,
@@ -327,7 +360,13 @@
     "url": "products/1323-esp32-dev-board-ch340-usb-c-robo-orion-bangladesh.html",
     "image": "img/product/1323-esp32-dev-board-ch340-usb-c-robo-orion-bangladesh.jpg",
     "alt": "ESP32 Dev Board CH340 USB-C",
-    "categories": ["esp32", "development-boards", "arduino", "wifi-modules", "bluetooth-modules"],
+    "categories": [
+      "esp32",
+      "development-boards",
+      "arduino",
+      "wifi-modules",
+      "bluetooth-modules"
+    ],
     "discount": "Save BDT 110",
     "rating": 5,
     "reviews": 22,
@@ -342,7 +381,12 @@
     "url": "products/1322-custom-li-ion-lifepo4-battery-pack-robo-orion-bangladesh.html",
     "image": "img/product/1322-custom-li-ion-lifepo4-battery-pack-robo-orion-bangladesh.jpg",
     "alt": "Custom Li-Ion & LiFePO4 Battery Pack Building Service",
-    "categories": ["lithium-batteries", "battery-packs", "diy-kits", "li-po-batteries"],
+    "categories": [
+      "lithium-batteries",
+      "battery-packs",
+      "diy-kits",
+      "li-po-batteries"
+    ],
     "discount": "Custom Built",
     "rating": 5,
     "reviews": 23,
@@ -352,30 +396,34 @@
     "in_stock": true
   },
   {
-  "id": "RBO-1283",
-  "title": "2200uF 25V Electrolytic Capacitor (Original High Quality)",
-  "url": "products/1283-2200uf-25v-electrolytic-capacitor-robo-orion-bangladesh.html",
-  "image": "img/product/1283-2200uf-25v-electrolytic-capacitor-robo-orion-bangladesh.jpg",
-  "alt": "2200uF 25V Electrolytic Capacitor Original High Quality",
-  "categories": [
-    "capacitors",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 10",
-  "rating": 5,
-  "reviews": 5,
-  "brand": "Generic",
-  "price": "BDT 20",
-  "original_price": "BDT 30",
-  "in_stock": true
-},
+    "id": "RBO-1283",
+    "title": "2200uF 25V Electrolytic Capacitor (Original High Quality)",
+    "url": "products/1283-2200uf-25v-electrolytic-capacitor-robo-orion-bangladesh.html",
+    "image": "img/product/1283-2200uf-25v-electrolytic-capacitor-robo-orion-bangladesh.jpg",
+    "alt": "2200uF 25V Electrolytic Capacitor Original High Quality",
+    "categories": [
+      "capacitors",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 10",
+    "rating": 5,
+    "reviews": 5,
+    "brand": "Generic",
+    "price": "BDT 20",
+    "original_price": "BDT 30",
+    "in_stock": true
+  },
   {
     "id": "RBO-1321",
     "title": "12V 3S 2.5A (7500mAh) Lithium Battery Pack with 10A BMS & JST Cable",
     "url": "products/1321-12v-3s-2.5a-7500mah-lithium-battery-pack-robo-orion-bangladesh.html",
     "image": "img/product/1321-12v-3s-2.5a-7500mah-lithium-battery-pack-robo-orion-bangladesh.jpg",
     "alt": "12V 3S 2.5A (7500mAh) Lithium Battery Pack with 10A BMS & JST Cable",
-    "categories": ["lithium-batteries", "battery-packs", "18650-batteries"],
+    "categories": [
+      "lithium-batteries",
+      "battery-packs",
+      "18650-batteries"
+    ],
     "discount": "Save BDT 180",
     "rating": 5,
     "reviews": 12,
@@ -390,7 +438,10 @@
     "url": "products/1320-kcd1-101-2-pin-on-off-rocker-switch-10a-250v-5-piece-robo-orion-bangladesh.html",
     "image": "img/product/1320-kcd1-101-2-pin-on-off-rocker-switch-10a-250v-5-piece-robo-orion-bangladesh.jpg",
     "alt": "KCD1-101 2-Pin ON/OFF Mini Rocker Switch (10A 250V) - Red (Pack of 5)",
-    "categories": ["switches", "diy-kits"],
+    "categories": [
+      "switches",
+      "diy-kits"
+    ],
     "discount": "Save BDT 15",
     "rating": 5,
     "reviews": 13,
@@ -405,7 +456,11 @@
     "url": "products/1319-2500mah-3-7v-18650-a-grade-battery-robo-orion-bangladesh.html",
     "image": "img/product/1319-2500mah-3-7v-18650-a-grade-battery-robo-orion-bangladesh.jpg",
     "alt": "3.7V 2500mAh 18650 Lithium-Ion Battery A-Grade Original Capacity",
-    "categories": ["lithium-batteries", "18650-batteries", "diy-kits"],
+    "categories": [
+      "lithium-batteries",
+      "18650-batteries",
+      "diy-kits"
+    ],
     "discount": "Save BDT 60",
     "rating": 5,
     "reviews": 16,
@@ -420,7 +475,11 @@
     "url": "products/1318-12v-3s-2.6a-7800mah-router-ups-battery-pack-robo-orion-bangladesh.html",
     "image": "img/product/1318-12v-3s-2.6a-7800mah-router-ups-battery-pack-robo-orion-bangladesh.jpg",
     "alt": "12V 3S 2.6A (7800mAh) Lithium Battery Pack with 10A BMS & JST Cable for Router UPS",
-    "categories": ["lithium-batteries", "battery-packs", "18650-batteries"],
+    "categories": [
+      "lithium-batteries",
+      "battery-packs",
+      "18650-batteries"
+    ],
     "discount": "Save BDT 160",
     "rating": 5,
     "reviews": 12,
@@ -435,7 +494,10 @@
     "url": "products/1317-8s-1.2a-lithium-battery-inductive-active-equalizer-balancer-module-robo-orion-bangladesh.html",
     "image": "img/product/1317-8s-1.2a-lithium-battery-inductive-active-equalizer-balancer-module-robo-orion-bangladesh.jpg",
     "alt": "8S 1.2A Lithium Battery inductive Active Equalizer / balancer Module",
-    "categories": ["bms-protection", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "diy-kits"
+    ],
     "discount": "Save BDT 200",
     "rating": 5,
     "reviews": 9,
@@ -450,7 +512,10 @@
     "url": "products/1316-4s-1.2a-lithium-battery-inductive-active-equalizer-balancer-module-robo-orion-bangladesh.html",
     "image": "img/product/1316-4s-1.2a-lithium-battery-inductive-active-equalizer-balancer-module-robo-orion-bangladesh.jpg",
     "alt": "4S 1.2A Lithium Battery inductive Active Equalizer / balancer Module",
-    "categories": ["bms-protection", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "diy-kits"
+    ],
     "discount": "Save BDT 100",
     "rating": 5,
     "reviews": 17,
@@ -465,7 +530,12 @@
     "url": "products/1315-3s-1.2a-lithium-battery-inductive-active-equalizer-balancer-module-robo-orion-bangladesh.html",
     "image": "img/product/1315-3s-1.2a-lithium-battery-inductive-active-equalizer-balancer-module-robo-orion-bangladesh.jpg",
     "alt": "3S 1.2A Lithium Battery Inductive Active Equalizer Balancer Module",
-    "categories": ["bms-protection", "lithium-batteries", "battery-packs", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "lithium-batteries",
+      "battery-packs",
+      "diy-kits"
+    ],
     "discount": "Save BDT 125",
     "rating": 5,
     "reviews": 15,
@@ -480,7 +550,12 @@
     "url": "products/1314-2s-1.2a-lithium-battery-inductive-active-equalizer-balancer-module-robo-orion-bangladesh.html",
     "image": "img/product/1314-2s-1.2a-lithium-battery-inductive-active-equalizer-balancer-module-robo-orion-bangladesh.jpg",
     "alt": "2S 1.2A Lithium Battery Inductive Active Equalizer Balancer Module",
-    "categories": ["bms-protection", "lithium-batteries", "battery-packs", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "lithium-batteries",
+      "battery-packs",
+      "diy-kits"
+    ],
     "discount": "Save BDT 110",
     "rating": 5,
     "reviews": 18,
@@ -495,7 +570,11 @@
     "url": "products/1313-14.6v-6a-lifepo4-battery-charger-rc-product-70w-high-speed-fast-charger-built-in-cooling-fan-robo-orion-bangladesh.html",
     "image": "img/product/1313-14.6v-6a-lifepo4-battery-charger-rc-product-70w-high-speed-fast-charger-built-in-cooling-fan-robo-orion-bangladesh.jpg",
     "alt": "14.6V 6A LiFePO4 Battery Charger RC Product | 70W High-Speed Fast Charger",
-    "categories": ["chargers", "power-supply", "diy-kits"],
+    "categories": [
+      "chargers",
+      "power-supply",
+      "diy-kits"
+    ],
     "discount": "Save BDT 80",
     "rating": 5,
     "reviews": 16,
@@ -510,7 +589,10 @@
     "url": "products/1312-1s-2600mah-rechargeable-3.7v-battery-pack-with-bms-jst-cable-robo-orion-bangladesh.html",
     "image": "img/product/1312-1s-2600mah-rechargeable-3.7v-battery-pack-with-bms-jst-cable-robo-orion-bangladesh.jpg",
     "alt": "1S 3.7V 2600mAh Battery Pack JST with BMS",
-    "categories": ["battery-packs", "lithium-batteries"],
+    "categories": [
+      "battery-packs",
+      "lithium-batteries"
+    ],
     "discount": "Save BDT 80",
     "rating": 5,
     "reviews": 17,
@@ -525,7 +607,10 @@
     "url": "products/1311-1s-2000mah-rechargeable-3.7v-battery-pack-with-bms-jst-cable-robo-orion-bangladesh.html",
     "image": "img/product/1311-1s-2000mah-rechargeable-3.7v-battery-pack-with-bms-jst-cable-robo-orion-bangladesh.jpg",
     "alt": "1S 3.7V 2000mAh Battery Pack JST with BMS",
-    "categories": ["battery-packs", "lithium-batteries"],
+    "categories": [
+      "battery-packs",
+      "lithium-batteries"
+    ],
     "discount": "Save BDT 70",
     "rating": 5,
     "reviews": 17,
@@ -540,7 +625,11 @@
     "url": "products/1310-5mw-adjustable-laser-dot-diode-module-robo-orion-bangladesh.html",
     "image": "img/product/1310-5mw-adjustable-laser-dot-diode-module-robo-orion-bangladesh.jpg",
     "alt": "5mW Adjustable Laser light led Dot Diode Module",
-    "categories": ["laser-modules", "leds", "diy-kits"],
+    "categories": [
+      "laser-modules",
+      "leds",
+      "diy-kits"
+    ],
     "discount": "Save BDT 15",
     "rating": 5,
     "reviews": 8,
@@ -555,7 +644,11 @@
     "url": "products/1309-battery-level-indicator-12v-84v-lithium-lead-acid-battery-capacity-meter-display-voltmeter-robo-orion-bangladesh.html",
     "image": "img/product/1309-battery-level-indicator-12v-84v-lithium-lead-acid-battery-capacity-meter-display-voltmeter-robo-orion-bangladesh.jpg",
     "alt": "Battery Level Indicator 12V-84V Lithium/Lead Acid Battery Capacity Meter Display Voltmeter",
-    "categories": ["multimeters", "sensors", "diy-kits"],
+    "categories": [
+      "multimeters",
+      "sensors",
+      "diy-kits"
+    ],
     "discount": "Save BDT 60",
     "rating": 5,
     "reviews": 17,
@@ -570,7 +663,13 @@
     "url": "products/1308-dual-usb-5v-2.4a-power-bank-circuit-module-with-display-robo-orion-bangladesh.html",
     "image": "img/product/1308-dual-usb-5v-2.4a-power-bank-circuit-module-with-display-robo-orion-bangladesh.jpg",
     "alt": "Dual USB 5V 2.4A Power Bank Circuit Module with Display",
-    "categories": ["converter-modules", "chargers", "power-supply", "battery-packs", "diy-kits"],
+    "categories": [
+      "converter-modules",
+      "chargers",
+      "power-supply",
+      "battery-packs",
+      "diy-kits"
+    ],
     "discount": "Save BDT 95",
     "rating": 5,
     "reviews": 6,
@@ -585,7 +684,10 @@
     "url": "products/1307-3v-lemon-yellow-light-38mm-ceramic-hard-led-filament-robo-orion-bangladesh.html",
     "image": "img/product/1307-3v-lemon-yellow-light-38mm-ceramic-hard-led-filament-robo-orion-bangladesh.jpg",
     "alt": "3V Lemon Yellow LED Filament 38mm Ceramic Hard",
-    "categories": ["leds", "diy-kits"],
+    "categories": [
+      "leds",
+      "diy-kits"
+    ],
     "discount": "Save BDT 15",
     "rating": 5,
     "reviews": 12,
@@ -600,7 +702,10 @@
     "url": "products/1306-3v-orange-light-38mm-ceramic-hard-led-filament-robo-orion-bangladesh.html",
     "image": "img/product/1306-3v-orange-light-38mm-ceramic-hard-led-filament-robo-orion-bangladesh.jpg",
     "alt": "3V Orange LED Filament 38mm Ceramic Hard",
-    "categories": ["leds", "diy-kits"],
+    "categories": [
+      "leds",
+      "diy-kits"
+    ],
     "discount": "Save BDT 15",
     "rating": 5,
     "reviews": 11,
@@ -615,7 +720,10 @@
     "url": "products/1305-3v-purple-light-38mm-ceramic-hard-led-filament-robo-orion-bangladesh.html",
     "image": "img/product/1305-3v-purple-light-38mm-ceramic-hard-led-filament-robo-orion-bangladesh.jpg",
     "alt": "3V Purple LED Filament 38mm Ceramic Hard",
-    "categories": ["leds", "diy-kits"],
+    "categories": [
+      "leds",
+      "diy-kits"
+    ],
     "discount": "Save BDT 15",
     "rating": 5,
     "reviews": 13,
@@ -630,7 +738,10 @@
     "url": "products/1304-3500mah-li-ion-original-capacity-battery-21700-robo-orion-bangladesh.html",
     "image": "img/product/1304-3500mah-li-ion-original-capacity-battery-21700-robo-orion-bangladesh.jpg",
     "alt": "3.7V 21700 3500mAh Lithium Ion Battery Original",
-    "categories": ["lithium-batteries", "battery-packs"],
+    "categories": [
+      "lithium-batteries",
+      "battery-packs"
+    ],
     "discount": "Save BDT 100",
     "rating": 5,
     "reviews": 16,
@@ -645,7 +756,11 @@
     "url": "products/1303-2600mah-original-capacity-3.7v-18650-lithium-ion-battery-robo-orion-bangladesh.html",
     "image": "img/product/1303-2600mah-original-capacity-3.7v-18650-lithium-ion-battery-robo-orion-bangladesh.jpg",
     "alt": "3.7V 18650 2600mAh Lithium Ion Battery Original - 5C Rated",
-    "categories": ["18650-batteries", "lithium-batteries", "diy-kits"],
+    "categories": [
+      "18650-batteries",
+      "lithium-batteries",
+      "diy-kits"
+    ],
     "discount": "Save BDT 60",
     "rating": 5,
     "reviews": 16,
@@ -660,7 +775,10 @@
     "url": "products/1302-3v-blue-light-38mm-ceramic-hard-led-filament-robo-orion-bangladesh.html",
     "image": "img/product/1302-3v-blue-light-38mm-ceramic-hard-led-filament-robo-orion-bangladesh.jpg",
     "alt": "3V Blue LED Filament 38mm Ceramic Hard",
-    "categories": ["leds", "diy-kits"],
+    "categories": [
+      "leds",
+      "diy-kits"
+    ],
     "discount": "Save BDT 15",
     "rating": 5,
     "reviews": 13,
@@ -675,7 +793,10 @@
     "url": "products/1301-3v-green-light-38mm-ceramic-hard-led-filament-robo-orion-bangladesh.html",
     "image": "img/product/1301-3v-green-light-38mm-ceramic-hard-led-filament-robo-orion-bangladesh.jpg",
     "alt": "3V Green LED Filament 38mm Ceramic Hard",
-    "categories": ["leds", "diy-kits"],
+    "categories": [
+      "leds",
+      "diy-kits"
+    ],
     "discount": "Save BDT 15",
     "rating": 5,
     "reviews": 10,
@@ -690,7 +811,10 @@
     "url": "products/1300-3v-red-light-38mm-ceramic-hard-led-filament-robo-orion-bangladesh.html",
     "image": "img/product/1300-3v-red-light-38mm-ceramic-hard-led-filament-robo-orion-bangladesh.jpg",
     "alt": "3V Red LED Filament 38mm Ceramic Hard",
-    "categories": ["leds", "diy-kits"],
+    "categories": [
+      "leds",
+      "diy-kits"
+    ],
     "discount": "Save BDT 15",
     "rating": 5,
     "reviews": 11,
@@ -705,7 +829,10 @@
     "url": "products/1299-xt-30-original-connector-robo-orion-bangladesh.html",
     "image": "img/product/1299-xt-30-original-connector-robo-orion-bangladesh.jpg",
     "alt": "Amass XT30 Original Connector Male Female Pair",
-    "categories": ["xt-connectors", "diy-kits"],
+    "categories": [
+      "xt-connectors",
+      "diy-kits"
+    ],
     "discount": "Save BDT 10",
     "rating": 5,
     "reviews": 16,
@@ -720,7 +847,10 @@
     "url": "products/1298-xt-90-original-connector-robo-orion-bangladesh.html",
     "image": "img/product/1298-xt-90-original-connector-robo-orion-bangladesh.jpg",
     "alt": "Amass XT90 Original Connector Male Female Pair",
-    "categories": ["xt-connectors", "diy-kits"],
+    "categories": [
+      "xt-connectors",
+      "diy-kits"
+    ],
     "discount": "Save BDT 70",
     "rating": 5,
     "reviews": 11,
@@ -735,7 +865,10 @@
     "url": "products/1297-12v-lead-acid-battery-auto-cut-charge-controller-circuit-v2-robo-orion-bangladesh.html",
     "image": "img/product/1297-12v-lead-acid-battery-auto-cut-charge-controller-circuit-v2-robo-orion-bangladesh.jpg",
     "alt": "12V Battery Auto Cut Charge Controller Circuit V2 with Double Relay",
-    "categories": ["bms-protection", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "diy-kits"
+    ],
     "discount": "Save BDT 60",
     "rating": 5,
     "reviews": 12,
@@ -750,7 +883,11 @@
     "url": "products/1296-visero-original-12v-5a-smart-fast-lead-acid-battery-charger-1205-robo-orion-bangladesh.html",
     "image": "img/product/1296-visero-original-12v-5a-smart-fast-lead-acid-battery-charger-1205-robo-orion-bangladesh.jpg",
     "alt": "VISERO Original 12V 5A Smart Fast Lead Acid Battery Charger (1205)",
-    "categories": ["chargers", "power-supply", "diy-kits"],
+    "categories": [
+      "chargers",
+      "power-supply",
+      "diy-kits"
+    ],
     "discount": "Save BDT 130",
     "rating": 5,
     "reviews": 8,
@@ -765,7 +902,11 @@
     "url": "products/1295-3v-6500k-white-light-38mm-ceramic-hard-filament-robo-orion-bangladesh.html",
     "image": "img/product/1295-3v-6500k-white-light-38mm-ceramic-hard-filament-robo-orion-bangladesh.jpg",
     "alt": "3V 6500K Cool White Light 38mm Ceramic Hard LED Filament",
-    "categories": ["leds", "rgb-leds", "diy-kits"],
+    "categories": [
+      "leds",
+      "rgb-leds",
+      "diy-kits"
+    ],
     "discount": "Save BDT 15",
     "rating": 5,
     "reviews": 16,
@@ -780,7 +921,11 @@
     "url": "products/1294-3v-2200k-yellow-light-38mm-ceramic-hard-filament-robo-orion-bangladesh.html",
     "image": "img/product/1294-3v-2200k-yellow-light-38mm-ceramic-hard-filament-robo-orion-bangladesh.jpg",
     "alt": "3V 2200K Yellow Light 38mm Ceramic Hard LED Filament",
-    "categories": ["leds", "rgb-leds", "diy-kits"],
+    "categories": [
+      "leds",
+      "rgb-leds",
+      "diy-kits"
+    ],
     "discount": "Save BDT 15",
     "rating": 5,
     "reviews": 12,
@@ -795,7 +940,12 @@
     "url": "products/1293-9v-battery-connector-snap-clip-with-wire-robo-orion-bangladesh.html",
     "image": "img/product/1293-9v-battery-connector-snap-clip-with-wire-robo-orion-bangladesh.jpg",
     "alt": "9V Battery Connector Snap with Wire Leads",
-    "categories": ["dc-connectors", "battery-packs", "wire-cables", "diy-kits"],
+    "categories": [
+      "dc-connectors",
+      "battery-packs",
+      "wire-cables",
+      "diy-kits"
+    ],
     "discount": "Save BDT 5",
     "rating": 5,
     "reviews": 2,
@@ -810,7 +960,10 @@
     "url": "products/1292-general-purpose-6f22-9v-non-rechargeable-battery-cell-robo-orion-bangladesh.html",
     "image": "img/product/1292-general-purpose-6f22-9v-non-rechargeable-battery-cell-robo-orion-bangladesh.jpg",
     "alt": "General Purpose 6F22 9V Non-Rechargeable Battery Cell",
-    "categories": ["battery-packs", "diy-kits"],
+    "categories": [
+      "battery-packs",
+      "diy-kits"
+    ],
     "discount": "Save BDT 25",
     "rating": 5,
     "reviews": 6,
@@ -825,7 +978,11 @@
     "url": "products/1291-mt3608-2a-max-dc-dc-step-up-booster-power-module-robo-orion-bangladesh.html",
     "image": "img/product/1291-mt3608-2a-max-dc-dc-step-up-booster-power-module-robo-orion-bangladesh.jpg",
     "alt": "MT3608 2A Max DC-DC Step Up Booster Power Module",
-    "categories": ["converter-modules", "power-supply", "diy-kits"],
+    "categories": [
+      "converter-modules",
+      "power-supply",
+      "diy-kits"
+    ],
     "discount": "Save BDT 25",
     "rating": 5,
     "reviews": 16,
@@ -840,7 +997,10 @@
     "url": "products/1290-12v-1.5-inch-high-speed-mini-cooling-fan-robo-orion-bangladesh.html",
     "image": "img/product/1290-12v-1.5-inch-high-speed-mini-cooling-fan-robo-orion-bangladesh.jpg",
     "alt": "12v 1.5 inch high speed mini cooling fan 4010 size",
-    "categories": ["dc-motors", "diy-kits"],
+    "categories": [
+      "dc-motors",
+      "diy-kits"
+    ],
     "discount": "Save BDT 25",
     "rating": 5,
     "reviews": 9,
@@ -855,7 +1015,11 @@
     "url": "products/1289-xl4016-300w-dc-dc-buck-converter-module-robo-orion-bangladesh.html",
     "image": "img/product/1289-xl4016-300w-dc-dc-buck-converter-module-robo-orion-bangladesh.jpg",
     "alt": "XL4016 300W DC DC Buck Converter Module",
-    "categories": ["converter-modules", "power-supply", "diy-kits"],
+    "categories": [
+      "converter-modules",
+      "power-supply",
+      "diy-kits"
+    ],
     "discount": "Save BDT 100",
     "rating": 5,
     "reviews": 8,
@@ -870,7 +1034,12 @@
     "url": "products/1288-type-c-usb-pd-qc-afc-fast-charge-decoy-trigger-5v-to-20v-robo-orion-bangladesh.html",
     "image": "img/product/1288-type-c-usb-pd-qc-afc-fast-charge-decoy-trigger-5v-to-20v-robo-orion-bangladesh.jpg",
     "alt": "Type-C USB PD/QC/AFC Fast Charge Decoy Trigger",
-    "categories": ["converter-modules", "chargers", "power-supply", "diy-kits"],
+    "categories": [
+      "converter-modules",
+      "chargers",
+      "power-supply",
+      "diy-kits"
+    ],
     "discount": "Save BDT 100",
     "rating": 5,
     "reviews": 17,
@@ -885,7 +1054,12 @@
     "url": "products/1287-5v-2.4a-type-c-usb-lithium-battery-charging-with-protection-power-bank-circuit-board-ip-5306-robo-orion-bangladesh.html",
     "image": "img/product/1287-5v-2.4a-type-c-usb-lithium-battery-charging-with-protection-power-bank-circuit-board-ip-5306-robo-orion-bangladesh.jpg",
     "alt": "5V 2.4A Type-C USB Lithium Battery Charging with Protection Power Bank Circuit Board ip-5306",
-    "categories": ["chargers", "converter-modules", "battery-packs", "diy-kits"],
+    "categories": [
+      "chargers",
+      "converter-modules",
+      "battery-packs",
+      "diy-kits"
+    ],
     "discount": "Save BDT 55",
     "rating": 5,
     "reviews": 12,
@@ -900,7 +1074,11 @@
     "url": "products/1286-adda-4-inch-12v-cooling-fan-92x92x25mm-robo-orion-bangladesh.html",
     "image": "img/product/1286-adda-4-inch-12v-cooling-fan-92x92x25mm-robo-orion-bangladesh.jpg",
     "alt": "ADDA 4 Inch 12V DC Cooling Fan 92x92x25mm",
-    "categories": ["dc-motors", "diy-kits", "hardware"],
+    "categories": [
+      "dc-motors",
+      "diy-kits",
+      "hardware"
+    ],
     "discount": "Save BDT 40",
     "rating": 5,
     "reviews": 8,
@@ -915,7 +1093,11 @@
     "url": "products/1285-type-c-bldc-fan-driver-circuit-board-3.7v-to-12v-boost-robo-orion-bangladesh.html",
     "image": "img/product/1285-type-c-bldc-fan-driver-circuit-board-3.7v-to-12v-boost-robo-orion-bangladesh.jpg",
     "alt": "Type-C BLDC Fan Driver Circuit Board with 4-Speed & Stepless Speed Control",
-    "categories": ["dc-motors", "converter-modules", "diy-kits"],
+    "categories": [
+      "dc-motors",
+      "converter-modules",
+      "diy-kits"
+    ],
     "discount": "Save BDT 35",
     "rating": 5,
     "reviews": 12,
@@ -930,7 +1112,11 @@
     "url": "products/1284-usb-qc3.0-qc2.0-dc-dc-buck-converter-charging-module-6-32v-9v-12v-24v-robo-orion-bangladesh.html",
     "image": "img/product/1284-usb-qc3.0-qc2.0-dc-dc-buck-converter-charging-module-6-32v-9v-12v-24v-robo-orion-bangladesh.jpg",
     "alt": "USB QC3.0 QC2.0 DC-DC Buck Converter Charging Module 6-32V 9V 12V 24V",
-    "categories": ["converter-modules", "chargers", "power-supply"],
+    "categories": [
+      "converter-modules",
+      "chargers",
+      "power-supply"
+    ],
     "discount": "Save BDT 40",
     "rating": 5,
     "reviews": 12,
@@ -945,7 +1131,11 @@
     "url": "products/1281-x05-handheld-high-speed-transparent-air-conditioner-cooling-fan-3000mah-black-robo-orion-bangladesh.html",
     "image": "img/product/1281-x05-handheld-high-speed-transparent-air-conditioner-cooling-fan-3000mah-black-robo-orion-bangladesh.jpg",
     "alt": "X05 Handheld High-Speed Transparent Air Conditioner Cooling Fan 3000mAh - Black",
-    "categories": ["dc-motors", "battery-packs", "diy-kits"],
+    "categories": [
+      "dc-motors",
+      "battery-packs",
+      "diy-kits"
+    ],
     "discount": "Save BDT 410",
     "rating": 5,
     "reviews": 7,
@@ -960,7 +1150,11 @@
     "url": "products/1280-xinyi-sini-audio-xy-p15w-bluetooth-15w-amplifier-board-robo-orion-bangladesh.html",
     "image": "img/product/1280-xinyi-sini-audio-xy-p15w-bluetooth-15w-amplifier-board-robo-orion-bangladesh.jpg",
     "alt": "Xinyi Sini Audio XY-P15W Bluetooth 5.0 Stereo 15W+15W Amplifier Board",
-    "categories": ["amplifiers", "audio-modules", "diy-kits"],
+    "categories": [
+      "amplifiers",
+      "audio-modules",
+      "diy-kits"
+    ],
     "discount": "Save BDT 60",
     "rating": 5,
     "reviews": 14,
@@ -975,7 +1169,11 @@
     "url": "products/1279-3.2v-15ah-lifepo4-cylindrical-battery-cell-robo-orion-bangladesh.html",
     "image": "img/product/1279-3.2v-15ah-lifepo4-cylindrical-battery-cell-robo-orion-bangladesh.jpg",
     "alt": "3.2V 15Ah LiFePO4 Cylindrical Battery Cell Grade A 33140/32140",
-    "categories": ["lithium-batteries", "battery-packs", "diy-kits"],
+    "categories": [
+      "lithium-batteries",
+      "battery-packs",
+      "diy-kits"
+    ],
     "discount": "Save BDT 90",
     "rating": 5,
     "reviews": 16,
@@ -990,7 +1188,10 @@
     "url": "products/1278-32700-6000mah-3-2v-lifepo4-battery-robo-orion-bangladesh.html",
     "image": "img/product/1278-32700-6000mah-3-2v-lifepo4-battery-robo-orion-bangladesh.jpg",
     "alt": "32700 6000mAh 3.2V LiFePO4 Rechargeable Battery Cell",
-    "categories": ["lithium-batteries", "diy-kits"],
+    "categories": [
+      "lithium-batteries",
+      "diy-kits"
+    ],
     "discount": "Save BDT 60",
     "rating": 5,
     "reviews": 17,
@@ -1005,7 +1206,11 @@
     "url": "products/1277-mini-360-dc-dc-buck-converter-step-down-module-robo-orion-bangladesh.html",
     "image": "img/product/1277-mini-360-dc-dc-buck-converter-step-down-module-robo-orion-bangladesh.jpg",
     "alt": "Mini-360 DC-DC Buck Converter Step-Down Power Module 3A Adjustable Output",
-    "categories": ["converter-modules", "power-supply", "diy-kits"],
+    "categories": [
+      "converter-modules",
+      "power-supply",
+      "diy-kits"
+    ],
     "discount": "Save BDT 15",
     "rating": 5,
     "reviews": 12,
@@ -1020,7 +1225,10 @@
     "url": "products/1276-bldc-brushless-fan-motor-12v-6-inch-robo-orion-bangladesh.html",
     "image": "img/product/1276-bldc-brushless-fan-motor-12v-6-inch-robo-orion-bangladesh.jpg",
     "alt": "BLDC Brushless Fan Motor 12V Fan Core 3 Blades High Air Flow 6 inch",
-    "categories": ["dc-motors", "diy-kits"],
+    "categories": [
+      "dc-motors",
+      "diy-kits"
+    ],
     "discount": "Save BDT 50",
     "rating": 5,
     "reviews": 12,
@@ -1035,7 +1243,10 @@
     "url": "products/1275-6v-1.2w-mini-solar-panel-99x69mm-robo-orion-bangladesh.html",
     "image": "img/product/1275-6v-1.2w-mini-solar-panel-99x69mm-robo-orion-bangladesh.jpg",
     "alt": "6V 1.2W Mini Solar Panel 99x69mm for DIY Projects",
-    "categories": ["solar-panels", "diy-kits"],
+    "categories": [
+      "solar-panels",
+      "diy-kits"
+    ],
     "discount": "Save BDT 70",
     "rating": 5,
     "reviews": 7,
@@ -1050,7 +1261,11 @@
     "url": "products/1274-pzem-015-50a-lcd-battery-tester-robo-orion-bangladesh.html",
     "image": "img/product/1274-pzem-015-50a-lcd-battery-tester-robo-orion-bangladesh.jpg",
     "alt": "Peacefair PZEM-015 LCD Battery Tester with 50A Shunt 0-200V",
-    "categories": ["multimeters", "repair-tools", "diy-kits"],
+    "categories": [
+      "multimeters",
+      "repair-tools",
+      "diy-kits"
+    ],
     "discount": "Save BDT 400",
     "rating": 5,
     "reviews": 12,
@@ -1065,7 +1280,10 @@
     "url": "products/1273-4s-12.8v-30a-lifepo4-bms-balance-protection-board-robo-orion-bangladesh.html",
     "image": "img/product/1273-4s-12.8v-30a-lifepo4-bms-balance-protection-board-robo-orion-bangladesh.jpg",
     "alt": "BMS 4S 12.8V 30A LiFePO4 Battery Charge Protection Board With Balance",
-    "categories": ["bms-protection", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "diy-kits"
+    ],
     "discount": "Save BDT 70",
     "rating": 5,
     "reviews": 12,
@@ -1080,7 +1298,11 @@
     "url": "products/1272-lithium-battery-level-indicator-module-mh-dl18s-1s-to-8s-robo-orion-bangladesh.html",
     "image": "img/product/1272-lithium-battery-level-indicator-module-mh-dl18s-1s-to-8s-robo-orion-bangladesh.jpg",
     "alt": "Lithium Battery Level Indicator Module MH-DL18S 1S to 8S",
-    "categories": ["multimeters", "diy-kits", "repair-tools"],
+    "categories": [
+      "multimeters",
+      "diy-kits",
+      "repair-tools"
+    ],
     "discount": "Save BDT 50",
     "rating": 5,
     "reviews": 8,
@@ -1095,7 +1317,10 @@
     "url": "products/1271-8s-24v-25a-lifepo4-bms-with-heatsink-jh-998839-8-robo-orion-bangladesh.html",
     "image": "img/product/1271-8s-24v-25a-lifepo4-bms-with-heatsink-jh-998839-8-robo-orion-bangladesh.jpg",
     "alt": "8S 24V 25A LiFePO4 BMS Protection Board JH-998839-8 with Cable and Heatsink",
-    "categories": ["bms-protection", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "diy-kits"
+    ],
     "discount": "Save BDT 200",
     "rating": 5,
     "reviews": 6,
@@ -1110,7 +1335,11 @@
     "url": "products/1270-jst-2-pin-connector-male-female-pair-robo-orion-bangladesh.html",
     "image": "img/product/1270-jst-2-pin-connector-male-female-pair-robo-orion-bangladesh.jpg",
     "alt": "JST Plug-In Cable 2P Connection Cable Male and Female Plugs 10cm",
-    "categories": ["wire-cables", "dc-connectors", "diy-kits"],
+    "categories": [
+      "wire-cables",
+      "dc-connectors",
+      "diy-kits"
+    ],
     "discount": "Save BDT 15",
     "rating": 5,
     "reviews": 12,
@@ -1125,7 +1354,11 @@
     "url": "products/1269-3s-12v-10a-bms-18650-lithium-battery-protection-board-robo-orion-bangladesh.html",
     "image": "img/product/1269-3s-12v-10a-bms-18650-lithium-battery-protection-board-robo-orion-bangladesh.jpg",
     "alt": "3S 12V 10A BMS 18650 Lithium Battery Protection Board (12.6V)",
-    "categories": ["bms-protection", "charge-controllers", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "charge-controllers",
+      "diy-kits"
+    ],
     "discount": "Save BDT 50",
     "rating": 5,
     "reviews": 17,
@@ -1140,7 +1373,10 @@
     "url": "products/1268-2s-10a-6v-lifepo4-balance-bms-protection-board-robo-orion-bangladesh.html",
     "image": "img/product/1268-2s-10a-6v-lifepo4-balance-bms-protection-board-robo-orion-bangladesh.jpg",
     "alt": "2S 10A 6V LiFePO4 Balance BMS Protection Board for Lithium Iron Phosphate Battery Pack",
-    "categories": ["bms-protection", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "diy-kits"
+    ],
     "discount": "Save BDT 60",
     "rating": 5,
     "reviews": 16,
@@ -1155,7 +1391,11 @@
     "url": "products/1267-j5019-3.7v-to-5v-9v-12v-booster-module-type-c-router-ups-robo-orion-bangladesh.html",
     "image": "img/product/1267-j5019-3.7v-to-5v-9v-12v-booster-module-type-c-router-ups-robo-orion-bangladesh.jpg",
     "alt": "J5019 3.7V to 5V 9V 12V Booster Module Type-C Router UPS Module",
-    "categories": ["converter-modules", "power-supply", "diy-kits"],
+    "categories": [
+      "converter-modules",
+      "power-supply",
+      "diy-kits"
+    ],
     "discount": "Save BDT 25",
     "rating": 5,
     "reviews": 19,
@@ -1170,7 +1410,10 @@
     "url": "products/1266-strong-glass-fiber-tape-transparent-stripe-grid-25mm-50m-robo-orion-bangladesh.html",
     "image": "img/product/1266-strong-glass-fiber-tape-transparent-stripe-grid-25mm-50m-robo-orion-bangladesh.jpg",
     "alt": "Strong Glass Fiber Tape Transparent Stripe Grid Ultra-High Viscosity 25mm x 50m",
-    "categories": ["repair-tools", "diy-kits"],
+    "categories": [
+      "repair-tools",
+      "diy-kits"
+    ],
     "discount": "Save BDT 150",
     "rating": 5,
     "reviews": 17,
@@ -1185,7 +1428,10 @@
     "url": "products/1265-kangming-6131-portable-table-fan-1800mah-bldc-motor-robo-orion-bangladesh.html",
     "image": "img/product/1265-kangming-6131-portable-table-fan-1800mah-bldc-motor-robo-orion-bangladesh.jpg",
     "alt": "Kangming 6131 Portable Table Fan with 1800mAh Battery and 9W BLDC Motor",
-    "categories": ["dc-motors", "lithium-batteries"],
+    "categories": [
+      "dc-motors",
+      "lithium-batteries"
+    ],
     "discount": "Save BDT 640",
     "rating": 5,
     "reviews": 6,
@@ -1200,7 +1446,10 @@
     "url": "products/1264-professional-two-gear-temperature-adjustment-2000w-hot-air-gun-robo-orion-bangladesh.html",
     "image": "img/product/1264-professional-two-gear-temperature-adjustment-2000w-hot-air-gun-robo-orion-bangladesh.jpg",
     "alt": "Professional Two-Gear Temperature Adjustment 2000W Hot Air Gun",
-    "categories": ["repair-tools", "diy-kits"],
+    "categories": [
+      "repair-tools",
+      "diy-kits"
+    ],
     "discount": "Save BDT 1000",
     "rating": 5,
     "reviews": 3,
@@ -1215,7 +1464,11 @@
     "url": "products/1263-k7-3-farad-capacitor-double-pulse-spot-welder-diy-kit-robo-orion-bangladesh.html",
     "image": "img/product/1263-k7-3-farad-capacitor-double-pulse-spot-welder-diy-kit-robo-orion-bangladesh.jpg",
     "alt": "K7-3 Farad Capacitor Double Pulse Spot Welder DIY Kit for 18650 Battery",
-    "categories": ["repair-tools", "soldering-tools", "diy-kits"],
+    "categories": [
+      "repair-tools",
+      "soldering-tools",
+      "diy-kits"
+    ],
     "discount": "Save BDT 6100",
     "rating": 5,
     "reviews": 3,
@@ -1230,7 +1483,11 @@
     "url": "products/1262-peacefair-pzem-051-100a-dc-digital-voltmeter-ammeter-power-meter-robo-orion-bangladesh.html",
     "image": "img/product/1262-peacefair-pzem-051-100a-dc-digital-voltmeter-ammeter-power-meter-robo-orion-bangladesh.jpg",
     "alt": "Peacefair PZEM-051 DC Digital Voltmeter Ammeter Power Meter 100A with Shunt",
-    "categories": ["multimeters", "repair-tools", "diy-kits"],
+    "categories": [
+      "multimeters",
+      "repair-tools",
+      "diy-kits"
+    ],
     "discount": "Save BDT 1450",
     "rating": 4,
     "reviews": 4,
@@ -1245,7 +1502,11 @@
     "url": "products/1261-fx35-5a-35w-battery-capacity-tester-robo-orion-bangladesh.html",
     "image": "img/product/1261-fx35-5a-35w-battery-capacity-tester-robo-orion-bangladesh.jpg",
     "alt": "FX35 5A 35W USB Electronic Load & Battery Capacity Tester",
-    "categories": ["multimeters", "repair-tools", "diy-kits"],
+    "categories": [
+      "multimeters",
+      "repair-tools",
+      "diy-kits"
+    ],
     "discount": "Save BDT 400",
     "rating": 5,
     "reviews": 6,
@@ -1260,7 +1521,11 @@
     "url": "products/1260-xh-m604-hw-633-6v-60v-battery-charging-control-module-robo-orion-bangladesh.html",
     "image": "img/product/1260-xh-m604-hw-633-6v-60v-battery-charging-control-module-robo-orion-bangladesh.jpg",
     "alt": "XH-M604 / HW-633 6V-60V Battery Charging Control Module with Digital Display",
-    "categories": ["bms-protection", "charge-controllers", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "charge-controllers",
+      "diy-kits"
+    ],
     "discount": "Save BDT 200",
     "rating": 5,
     "reviews": 12,
@@ -1275,7 +1540,11 @@
     "url": "products/1259-high-quality-14.6v-2a-lifepo4-battery-charger-robo-orion-bangladesh.html",
     "image": "img/product/1259-high-quality-14.6v-2a-lifepo4-battery-charger-robo-orion-bangladesh.jpg",
     "alt": "High Quality 14.6V 2A LiFePO4 Battery Charger - Power Supply Adapter for 4S Packs",
-    "categories": ["chargers", "power-supply", "lithium-batteries"],
+    "categories": [
+      "chargers",
+      "power-supply",
+      "lithium-batteries"
+    ],
     "discount": "Save BDT 70",
     "rating": 5,
     "reviews": 12,
@@ -1290,7 +1559,11 @@
     "url": "products/1258-high-quality-12.6v-3a-li-ion-battery-charger-robo-orion-bangladesh.html",
     "image": "img/product/1258-high-quality-12.6v-3a-li-ion-battery-charger-robo-orion-bangladesh.jpg",
     "alt": "High Quality 12.6V 3A Li-ion Battery Charger - Power Supply Adapter for 3S Packs",
-    "categories": ["chargers", "power-supply", "lithium-batteries"],
+    "categories": [
+      "chargers",
+      "power-supply",
+      "lithium-batteries"
+    ],
     "discount": "Save BDT 80",
     "rating": 5,
     "reviews": 7,
@@ -1305,7 +1578,10 @@
     "url": "products/1257-12.6v-2a-li-ion-battery-charger-high-quality-robo-orion-bangladesh.html",
     "image": "img/product/1257-12.6v-2a-li-ion-battery-charger-high-quality-robo-orion-bangladesh.jpg",
     "alt": "High Quality 12.6V 2A Li-ion Battery Charger - 3S Power Adapter",
-    "categories": ["chargers", "power-supply"],
+    "categories": [
+      "chargers",
+      "power-supply"
+    ],
     "discount": "Save BDT 70",
     "rating": 5,
     "reviews": 8,
@@ -1320,7 +1596,11 @@
     "url": "products/1256-6-90v-15a-dc-motor-speed-controller-pulse-width-pwm-speed-regulator-switch-robo-orion-bangladesh.html",
     "image": "img/product/1256-6-90v-15a-dc-motor-speed-controller-pulse-width-pwm-speed-regulator-switch-robo-orion-bangladesh.jpg",
     "alt": "6-90V 15A DC Motor Speed Controller Pulse Width PWM Speed Regulator Switch",
-    "categories": ["motor-drivers", "converter-modules", "diy-kits"],
+    "categories": [
+      "motor-drivers",
+      "converter-modules",
+      "diy-kits"
+    ],
     "discount": "Save BDT 140",
     "rating": 5,
     "reviews": 12,
@@ -1335,7 +1615,10 @@
     "url": "products/1255-3s-4s-lithium-battery-capacitive-active-equalizer-balancer-plate-1-2a-s0334-robo-orion-bangladesh.html",
     "image": "img/product/1255-3s-4s-lithium-battery-capacitive-active-equalizer-balancer-plate-1-2a-s0334-robo-orion-bangladesh.jpg",
     "alt": "3S 4S Lithium Battery Capacitive Active Equalizer Balancer Plate 1.2A Energy Transfer Type S0334",
-    "categories": ["bms-protection", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "diy-kits"
+    ],
     "discount": "Save BDT 180",
     "rating": 5,
     "reviews": 15,
@@ -1350,7 +1633,11 @@
     "url": "products/1254-4s-6a-active-balancer-lifepo4-lithium-ion-super-capacitor-robo-orion-bangladesh.html",
     "image": "img/product/1254-4s-6a-active-balancer-lifepo4-lithium-ion-super-capacitor-robo-orion-bangladesh.jpg",
     "alt": "4S 6A Active Balancer For LiFePO4 And Lithium-Ion Battery Packs",
-    "categories": ["bms-protection", "charge-controllers", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "charge-controllers",
+      "diy-kits"
+    ],
     "discount": "Save BDT 250",
     "rating": 5,
     "reviews": 17,
@@ -1365,7 +1652,11 @@
     "url": "products/1253-14.6v-3a-lifepo4-battery-charger-v2-power-supply-adapter-robo-orion-bangladesh.html",
     "image": "img/product/1253-14.6v-3a-lifepo4-battery-charger-v2-power-supply-adapter-robo-orion-bangladesh.jpg",
     "alt": "14.6V 2.5A LiFePO4 Battery Charger V2 - Power Supply Adapter for 4-Cell Packs",
-    "categories": ["chargers", "power-supply", "lithium-batteries"],
+    "categories": [
+      "chargers",
+      "power-supply",
+      "lithium-batteries"
+    ],
     "discount": "Save BDT 60",
     "rating": 5,
     "reviews": 14,
@@ -1380,7 +1671,11 @@
     "url": "products/1252-12.6v-3a-dc-li-ion-battery-charger-v2-power-supply-adapter-robo-orion-bangladesh.html",
     "image": "img/product/1252-12.6v-3a-dc-li-ion-battery-charger-v2-power-supply-adapter-robo-orion-bangladesh.jpg",
     "alt": "12.6V 3A DC Li-ion Battery Charger V2 - Power Supply Adapter for 3-Cell Packs",
-    "categories": ["chargers", "power-supply", "lithium-batteries"],
+    "categories": [
+      "chargers",
+      "power-supply",
+      "lithium-batteries"
+    ],
     "discount": "Save BDT 60",
     "rating": 5,
     "reviews": 22,
@@ -1395,7 +1690,11 @@
     "url": "products/1251-high-quality-electrolytic-solder-wire-100g-63-37-robo-orion-bangladesh.html",
     "image": "img/product/1251-high-quality-electrolytic-solder-wire-100g-63-37-robo-orion-bangladesh.jpg",
     "alt": "High Quality Electrolytic Solder Wire 100g 63/37",
-    "categories": ["soldering-tools", "repair-tools", "diy-kits"],
+    "categories": [
+      "soldering-tools",
+      "repair-tools",
+      "diy-kits"
+    ],
     "discount": "Save BDT 160",
     "rating": 5,
     "reviews": 19,
@@ -1410,7 +1709,12 @@
     "url": "products/1250-pure-nickel-strip-10m-0-1x6mm-robo-orion-bangladesh.html",
     "image": "img/product/1250-pure-nickel-strip-10m-0-1x6mm-robo-orion-bangladesh.jpg",
     "alt": "Pure Nickel Strip 10M 0.1x6mm 99.7% Nickel 1 Roll",
-    "categories": ["18650-batteries", "battery-packs", "soldering-tools", "diy-kits"],
+    "categories": [
+      "18650-batteries",
+      "battery-packs",
+      "soldering-tools",
+      "diy-kits"
+    ],
     "discount": "Save BDT 130",
     "rating": 5,
     "reviews": 14,
@@ -1425,7 +1729,12 @@
     "url": "products/1249-j5019-hw-357-tp4056-lithium-battery-charger-boost-module-robo-orion-bangladesh.html",
     "image": "img/product/1249-j5019-hw-357-tp4056-lithium-battery-charger-boost-module-robo-orion-bangladesh.jpg",
     "alt": "J5019 HW-357 TP4056 Lithium Battery Charger & Boost Module",
-    "categories": ["chargers", "converter-modules", "power-supply", "diy-kits"],
+    "categories": [
+      "chargers",
+      "converter-modules",
+      "power-supply",
+      "diy-kits"
+    ],
     "discount": "Save BDT 25",
     "rating": 5,
     "reviews": 13,
@@ -1440,7 +1749,10 @@
     "url": "products/1248-mini-spdt-on-off-on-rocker-switch-black-3-pin-robo-orion-bangladesh.html",
     "image": "img/product/1248-mini-spdt-on-off-on-rocker-switch-black-3-pin-robo-orion-bangladesh.jpg",
     "alt": "Mini SPDT ON-OFF-ON Rocker Switch (Black, 3-Pin)",
-    "categories": ["switches", "diy-kits"],
+    "categories": [
+      "switches",
+      "diy-kits"
+    ],
     "discount": "Save BDT 10",
     "rating": 5,
     "reviews": 14,
@@ -1455,7 +1767,12 @@
     "url": "products/1247-4s-12a-14.8v-lifepo4-battery-bms-hw-846-robo-orion-bangladesh.html",
     "image": "img/product/1247-4s-12a-14.8v-lifepo4-battery-bms-hw-846-robo-orion-bangladesh.jpg",
     "alt": "4S 12A 14.8V LiFePO4 Battery BMS Protection Board (HW-846)",
-    "categories": ["bms-protection", "charge-controllers", "lithium-batteries", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "charge-controllers",
+      "lithium-batteries",
+      "diy-kits"
+    ],
     "discount": "Save BDT 90",
     "rating": 5,
     "reviews": 15,
@@ -1470,7 +1787,10 @@
     "url": "products/1246-double-sided-10-slot-mini-electronics-component-box-robo-orion-bangladesh.html",
     "image": "img/product/1246-double-sided-10-slot-mini-electronics-component-box-robo-orion-bangladesh.jpg",
     "alt": "Double Sided 10 Slot Mini Electronics Component Box",
-    "categories": ["repair-tools", "diy-kits"],
+    "categories": [
+      "repair-tools",
+      "diy-kits"
+    ],
     "discount": "Save BDT 80",
     "rating": 5,
     "reviews": 17,
@@ -1485,7 +1805,11 @@
     "url": "products/1245-4s-100a-lifepo4-bms-with-balanced-protection-board-robo-orion-bangladesh.html",
     "image": "img/product/1245-4s-100a-lifepo4-bms-with-balanced-protection-board-robo-orion-bangladesh.jpg",
     "alt": "4S 100A 3.2V LiFePO4 BMS With Balanced Protection Board",
-    "categories": ["bms-protection", "charge-controllers", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "charge-controllers",
+      "diy-kits"
+    ],
     "discount": "Save BDT 160",
     "rating": 5,
     "reviews": 15,
@@ -1500,7 +1824,11 @@
     "url": "products/1244-2s-10a-lifepo4-lithium-iron-phosphate-battery-bms-6.4v-robo-orion-bangladesh.html",
     "image": "img/product/1244-2s-10a-lifepo4-lithium-iron-phosphate-battery-bms-6.4v-robo-orion-bangladesh.jpg",
     "alt": "2S 10A LiFePO4 (Lithium Iron Phosphate) Battery Management System (BMS) 6.4V",
-    "categories": ["bms-protection", "lithium-batteries", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "lithium-batteries",
+      "diy-kits"
+    ],
     "discount": "Save BDT 100",
     "rating": 5,
     "reviews": 16,
@@ -1515,7 +1843,12 @@
     "url": "products/1243-0.28-inch-mini-digital-led-voltmeter-dc-3.5v-30v-robo-orion-bangladesh.html",
     "image": "img/product/1243-0.28-inch-mini-digital-led-voltmeter-dc-3.5v-30v-robo-orion-bangladesh.jpg",
     "alt": "0.28 Inch Mini Digital LED Voltmeter DC 3.5V-30V (3-Wire)",
-    "categories": ["7-segment", "leds", "modules", "diy-kits"],
+    "categories": [
+      "7-segment",
+      "leds",
+      "modules",
+      "diy-kits"
+    ],
     "discount": "Save BDT 60",
     "rating": 5,
     "reviews": 17,
@@ -1530,7 +1863,11 @@
     "url": "products/1242-dc-0-100v-voltmeter-led-display-panel-3-wire-robo-orion-bangladesh.html",
     "image": "img/product/1242-dc-0-100v-voltmeter-led-display-panel-3-wire-robo-orion-bangladesh.jpg",
     "alt": "DC 0-100V Voltmeter LED Display Panel (3-Wire, Red)",
-    "categories": ["7-segment", "leds", "diy-kits"],
+    "categories": [
+      "7-segment",
+      "leds",
+      "diy-kits"
+    ],
     "discount": "Save BDT 100",
     "rating": 5,
     "reviews": 18,
@@ -1545,7 +1882,11 @@
     "url": "products/1241-soldering-bit-cleaner-sponge-56x56mm-yellow-robo-orion-bangladesh.html",
     "image": "img/product/1241-soldering-bit-cleaner-sponge-56x56mm-yellow-robo-orion-bangladesh.jpg",
     "alt": "Soldering Bit Cleaner Sponge 56x56x1.5mm Yellow",
-    "categories": ["soldering-tools", "repair-tools", "diy-kits"],
+    "categories": [
+      "soldering-tools",
+      "repair-tools",
+      "diy-kits"
+    ],
     "discount": "Save BDT 10",
     "rating": 5,
     "reviews": 12,
@@ -1560,7 +1901,12 @@
     "url": "products/1240-ip2326-type-c-2s-3s-fast-charging-module-robo-orion-bangladesh.html",
     "image": "img/product/1240-ip2326-type-c-2s-3s-fast-charging-module-robo-orion-bangladesh.jpg",
     "alt": "IP2326 Type-C 2S/3S Lithium Battery Fast Charging Boost Module",
-    "categories": ["chargers", "converter-modules", "bms-protection", "diy-kits"],
+    "categories": [
+      "chargers",
+      "converter-modules",
+      "bms-protection",
+      "diy-kits"
+    ],
     "discount": "Save BDT 85",
     "rating": 5,
     "reviews": 18,
@@ -1575,7 +1921,12 @@
     "url": "products/1239-ip2312-3a-type-c-fast-charging-board-robo-orion-bangladesh.html",
     "image": "img/product/1239-ip2312-3a-type-c-fast-charging-board-robo-orion-bangladesh.jpg",
     "alt": "Battery Charging Board IP2312 Type C Input 5V to 4.2V 3A Fast Charging Module",
-    "categories": ["chargers", "converter-modules", "lithium-batteries", "diy-kits"],
+    "categories": [
+      "chargers",
+      "converter-modules",
+      "lithium-batteries",
+      "diy-kits"
+    ],
     "discount": "Save BDT 45",
     "rating": 5,
     "reviews": 14,
@@ -1590,7 +1941,11 @@
     "url": "products/1238-inr18650-2600mah-3.7v-rechargeable-li-ion-battery-robo-orion-bangladesh.html",
     "image": "img/product/1238-inr18650-2600mah-3.7v-rechargeable-li-ion-battery-robo-orion-bangladesh.jpg",
     "alt": "INR18650 2600mAh 3.7V Rechargeable Li-ion Battery - Real Capacity",
-    "categories": ["18650-batteries", "lithium-batteries", "diy-kits"],
+    "categories": [
+      "18650-batteries",
+      "lithium-batteries",
+      "diy-kits"
+    ],
     "discount": "Save BDT 90",
     "rating": 5,
     "reviews": 17,
@@ -1605,7 +1960,10 @@
     "url": "products/1237-xl4015-dc-dc-step-down-adjustable-power-supply-module-5a-max-robo-orion-bangladesh.html",
     "image": "img/product/1237-xl4015-dc-dc-step-down-adjustable-power-supply-module-5a-max-robo-orion-bangladesh.jpg",
     "alt": "XL4015 DC-DC Step Down Adjustable Power Supply Module 5A Max",
-    "categories": ["converter-modules", "power-supply"],
+    "categories": [
+      "converter-modules",
+      "power-supply"
+    ],
     "discount": "Save BDT 110",
     "rating": 5,
     "reviews": 16,
@@ -1620,7 +1978,11 @@
     "url": "products/1236-dc-motor-speed-controller-pwm-1203b-robo-orion-bangladesh.html",
     "image": "img/product/1236-dc-motor-speed-controller-pwm-1203b-robo-orion-bangladesh.jpg",
     "alt": "DC Motor Speed Controller PWM 1203B",
-    "categories": ["motor-drivers", "converter-modules", "diy-kits"],
+    "categories": [
+      "motor-drivers",
+      "converter-modules",
+      "diy-kits"
+    ],
     "discount": "Save BDT 75",
     "rating": 5,
     "reviews": 16,
@@ -1635,7 +1997,11 @@
     "url": "products/1235-dc-5v-35v-5a-pwm-motor-speed-controller-robo-orion-bangladesh.html",
     "image": "img/product/1235-dc-5v-35v-5a-pwm-motor-speed-controller-robo-orion-bangladesh.jpg",
     "alt": "DC-5V-35V 5A PWM Motor Speed Controller - 90W Mini Regulator",
-    "categories": ["motor-drivers", "converter-modules", "diy-kits"],
+    "categories": [
+      "motor-drivers",
+      "converter-modules",
+      "diy-kits"
+    ],
     "discount": "Save BDT 50",
     "rating": 5,
     "reviews": 17,
@@ -1650,7 +2016,11 @@
     "url": "products/1234-400-point-half-size-breadboard-robo-orion-bangladesh.html",
     "image": "img/product/1234-400-point-half-size-breadboard-robo-orion-bangladesh.jpg",
     "alt": "400 Point Half Size Solderless Breadboard",
-    "categories": ["breadboards", "development-boards", "diy-kits"],
+    "categories": [
+      "breadboards",
+      "development-boards",
+      "diy-kits"
+    ],
     "discount": "Save BDT 40",
     "rating": 5,
     "reviews": 11,
@@ -1665,7 +2035,11 @@
     "url": "products/1233-830-point-full-size-breadboard-robo-orion-bangladesh.html",
     "image": "img/product/1233-830-point-full-size-breadboard-robo-orion-bangladesh.jpg",
     "alt": "830 Point Full Size Solderless Breadboard (MB102)",
-    "categories": ["breadboards", "development-boards", "diy-kits"],
+    "categories": [
+      "breadboards",
+      "development-boards",
+      "diy-kits"
+    ],
     "discount": "Save BDT 55",
     "rating": 5,
     "reviews": 12,
@@ -1680,7 +2054,9 @@
     "url": "products/1232-double-sided-foam-tape-22mm-2mm-robo-orion-bangladesh.html",
     "image": "img/product/1232-double-sided-foam-tape-22mm-2mm-robo-orion-bangladesh.jpg",
     "alt": "Double Sided Foam Mounting Tape (Width 22mm, Thickness 2mm)",
-    "categories": ["diy-kits"],
+    "categories": [
+      "diy-kits"
+    ],
     "discount": "Save BDT 20",
     "rating": 5,
     "reviews": 16,
@@ -1695,7 +2071,10 @@
     "url": "products/1229-1-ohm-2-watt-ceramic-resistor-robo-orion-bangladesh.html",
     "image": "img/product/1229-1-ohm-2-watt-ceramic-resistor-robo-orion-bangladesh.jpg",
     "alt": "1 Ohm 2 Watt Ceramic Power Resistor",
-    "categories": ["resistors", "diy-kits"],
+    "categories": [
+      "resistors",
+      "diy-kits"
+    ],
     "discount": "Save BDT 3",
     "rating": 5,
     "reviews": 12,
@@ -1710,7 +2089,9 @@
     "url": "products/1226-12v-10a-smps-power-supply-robo-orion-bangladesh.html",
     "image": "img/product/1226-12v-10a-smps-power-supply-robo-orion-bangladesh.jpg",
     "alt": "12V 10A SMPS DC Power Supply (120W)",
-    "categories": ["power-supply"],
+    "categories": [
+      "power-supply"
+    ],
     "discount": "Save BDT 160",
     "rating": 5,
     "reviews": 7,
@@ -1725,7 +2106,11 @@
     "url": "products/1225-zb2l3-18650-li-ion-battery-capacity-tester-robo-orion-bangladesh.html",
     "image": "img/product/1225-zb2l3-18650-li-ion-battery-capacity-tester-robo-orion-bangladesh.jpg",
     "alt": "ZB2L3 18650 Li-ion Lithium Battery Capacity Tester",
-    "categories": ["18650-batteries", "repair-tools", "diy-kits"],
+    "categories": [
+      "18650-batteries",
+      "repair-tools",
+      "diy-kits"
+    ],
     "discount": "Save BDT 180",
     "rating": 5,
     "reviews": 16,
@@ -1740,7 +2125,11 @@
     "url": "products/1216-high-quality-soldering-resin-tip-cleaner-paste-100g-robo-orion-bangladesh.html",
     "image": "img/product/1216-high-quality-soldering-resin-tip-cleaner-paste-100g-robo-orion-bangladesh.jpg",
     "alt": "High Quality Soldering Resin and Tip Cleaner Paste 100g",
-    "categories": ["soldering-tools", "repair-tools", "diy-kits"],
+    "categories": [
+      "soldering-tools",
+      "repair-tools",
+      "diy-kits"
+    ],
     "discount": "Save BDT 120",
     "rating": 5,
     "reviews": 19,
@@ -1755,7 +2144,10 @@
     "url": "products/1210-35w-4v-cob-led-panel-85x56-5mm-robo-orion-bangladesh.html",
     "image": "img/product/1210-35w-4v-cob-led-panel-85x56-5mm-robo-orion-bangladesh.jpg",
     "alt": "35W 4V-9V COB LED Panel 85x56.5mm (108 LEDs) KS8556-108-9",
-    "categories": ["leds", "diy-kits"],
+    "categories": [
+      "leds",
+      "diy-kits"
+    ],
     "discount": "Save BDT 25",
     "rating": 5,
     "reviews": 12,
@@ -1770,7 +2162,10 @@
     "url": "products/1209-5w-4v-cob-led-strip-56x12mm-16-leds-robo-orion-bangladesh.html",
     "image": "img/product/1209-5w-4v-cob-led-strip-56x12mm-16-leds-robo-orion-bangladesh.jpg",
     "alt": "5W 4V COB LED Strip 56x12mm (16 LEDs)",
-    "categories": ["leds", "diy-kits"],
+    "categories": [
+      "leds",
+      "diy-kits"
+    ],
     "discount": "Save BDT 15",
     "rating": 5,
     "reviews": 11,
@@ -1785,7 +2180,11 @@
     "url": "products/1208-panel-mount-fuse-holder-10a-6-3x32mm-robo-orion-bangladesh.html",
     "image": "img/product/1208-panel-mount-fuse-holder-10a-6-3x32mm-robo-orion-bangladesh.jpg",
     "alt": "10A Panel Mount Fuse Holder for 6.3x32mm Fuses",
-    "categories": ["fuses", "power-supply", "diy-kits"],
+    "categories": [
+      "fuses",
+      "power-supply",
+      "diy-kits"
+    ],
     "discount": "Save BDT 20",
     "rating": 5,
     "reviews": 12,
@@ -1800,7 +2199,9 @@
     "url": "products/1207-cob-led-ring-60mm-round-5w-4v-white-robo-orion-bangladesh.html",
     "image": "img/product/1207-cob-led-ring-60mm-round-5w-4v-white-robo-orion-bangladesh.jpg",
     "alt": "5W 4V Ring COB LED 60mm Round - High Brightness White Color",
-    "categories": ["leds"],
+    "categories": [
+      "leds"
+    ],
     "discount": "Save BDT 20",
     "rating": 5,
     "reviews": 16,
@@ -1815,7 +2216,11 @@
     "url": "products/1206-wifi-ups-cable-for-router-and-onu-robo-orion-bangladesh.html",
     "image": "img/product/1206-wifi-ups-cable-for-router-and-onu-robo-orion-bangladesh.jpg",
     "alt": "WiFi UPS Cable for Router and ONU - Dual Jack Power Connector",
-    "categories": ["dc-connectors", "wire-cables", "diy-kits"],
+    "categories": [
+      "dc-connectors",
+      "wire-cables",
+      "diy-kits"
+    ],
     "discount": "Save BDT 20",
     "rating": 5,
     "reviews": 12,
@@ -1830,7 +2235,10 @@
     "url": "products/1205-uni-t-ut33b-multimeter-robo-orion-bangladesh.html",
     "image": "img/product/1205-uni-t-ut33b-multimeter-robo-orion-bangladesh.jpg",
     "alt": "Uni-T UT33B+ Digital Multimeter",
-    "categories": ["multimeters", "repair-tools"],
+    "categories": [
+      "multimeters",
+      "repair-tools"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 14,
@@ -1845,7 +2253,9 @@
     "url": "products/1204-mini-hw-085-dc-dc-step-up-boost-converter-module-robo-orion-bangladesh.html",
     "image": "img/product/1204-mini-hw-085-dc-dc-step-up-boost-converter-module-robo-orion-bangladesh.jpg",
     "alt": "Mini HW-085 / BS01 DC-DC Step Up Boost Converter Module (3.7V/5V to 5V/8V/9V/12V)",
-    "categories": ["converter-modules"],
+    "categories": [
+      "converter-modules"
+    ],
     "discount": "Save BDT 30",
     "rating": 5,
     "reviews": 22,
@@ -1860,7 +2270,10 @@
     "url": "products/1203-12.6v-6a-70w-li-ion-battery-charger-robo-orion-bangladesh.html",
     "image": "img/product/1203-12.6v-6a-70w-li-ion-battery-charger-robo-orion-bangladesh.jpg",
     "alt": "12.6V 6A 70W Li-Ion Battery Fast Charger (3S)",
-    "categories": ["chargers", "power-supply"],
+    "categories": [
+      "chargers",
+      "power-supply"
+    ],
     "discount": "Save BDT 140",
     "rating": 5,
     "reviews": 16,
@@ -1875,7 +2288,11 @@
     "url": "products/1202-3s-40a-12-6v-bms-balance-protection-board-robo-orion-bangladesh.html",
     "image": "img/product/1202-3s-40a-12-6v-bms-balance-protection-board-robo-orion-bangladesh.jpg",
     "alt": "3S 40A 12.6V 18650 Lithium Battery Balance BMS Protection Board",
-    "categories": ["bms-protection", "lithium-batteries", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "lithium-batteries",
+      "diy-kits"
+    ],
     "discount": "Save BDT 230",
     "rating": 5,
     "reviews": 14,
@@ -1890,7 +2307,11 @@
     "url": "products/1201-3s-10a-12-6v-lithium-battery-bms-protection-board-robo-orion-bangladesh.html",
     "image": "img/product/1201-3s-10a-12-6v-lithium-battery-bms-protection-board-robo-orion-bangladesh.jpg",
     "alt": "3S 10A 12.6V 18650 Lithium Battery Balance BMS Protection Board",
-    "categories": ["bms-protection", "lithium-batteries", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "lithium-batteries",
+      "diy-kits"
+    ],
     "discount": "Save BDT 20",
     "rating": 5,
     "reviews": 16,
@@ -1905,7 +2326,10 @@
     "url": "products/1200-5v-dc-180-motor-high-speed-robo-orion-bangladesh.html",
     "image": "img/product/1200-5v-dc-180-motor-high-speed-robo-orion-bangladesh.jpg",
     "alt": "5V DC 180 Motor Standard Small & High Speed",
-    "categories": ["dc-motors", "diy-kits"],
+    "categories": [
+      "dc-motors",
+      "diy-kits"
+    ],
     "discount": "Save BDT 50",
     "rating": 5,
     "reviews": 14,
@@ -1920,7 +2344,10 @@
     "url": "products/1199-uni-t-ut33a-plus-digital-multimeter-robo-orion-bangladesh.html",
     "image": "img/product/1199-uni-t-ut33a-plus-digital-multimeter-robo-orion-bangladesh.jpg",
     "alt": "Uni-T UT33A+ Auto Range Digital Multimeter",
-    "categories": ["multimeters", "repair-tools"],
+    "categories": [
+      "multimeters",
+      "repair-tools"
+    ],
     "discount": "Save BDT 480",
     "rating": 5,
     "reviews": 7,
@@ -1935,7 +2362,11 @@
     "url": "products/1198-3s-30a-bms-with-temperature-sensor-robo-orion-bangladesh.html",
     "image": "img/product/1198-3s-30a-bms-with-temperature-sensor-robo-orion-bangladesh.jpg",
     "alt": "3S 30A Lithium Battery Balance BMS V1 With Temperature Sensor",
-    "categories": ["bms-protection", "lithium-batteries", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "lithium-batteries",
+      "diy-kits"
+    ],
     "discount": "Save BDT 110",
     "rating": 5,
     "reviews": 22,
@@ -1950,7 +2381,10 @@
     "url": "products/1197-kcd1-101-2-pin-on-off-rocker-switch-robo-orion-bangladesh.html",
     "image": "img/product/1197-kcd1-101-2-pin-on-off-rocker-switch-robo-orion-bangladesh.jpg",
     "alt": "KCD1-101 2-Pin ON/OFF Rocker Switch",
-    "categories": ["switches", "diy-kits"],
+    "categories": [
+      "switches",
+      "diy-kits"
+    ],
     "discount": "Save BDT 10",
     "rating": 5,
     "reviews": 12,
@@ -1965,7 +2399,10 @@
     "url": "products/1196-220v-ac-cooling-fan-120mm-5-inch-aluminium-body-robo-orion-bangladesh.html",
     "image": "img/product/1196-220v-ac-cooling-fan-120mm-5-inch-aluminium-body-robo-orion-bangladesh.jpg",
     "alt": "220V AC Cooling Fan 120mm (5 Inch) Aluminium Body",
-    "categories": ["diy-kits", "hardware"],
+    "categories": [
+      "diy-kits",
+      "hardware"
+    ],
     "discount": "Save BDT 180",
     "rating": 5,
     "reviews": 15,
@@ -1980,7 +2417,9 @@
     "url": "products/1195-mini-router-ups-box-v2-6-circuit-robo-orion-bangladesh.html",
     "image": "img/product/1195-mini-router-ups-box-v2-6-circuit-robo-orion-bangladesh.jpg",
     "alt": "Mini Router UPS Box for 40W V2.6 Circuit (MDF Wood)",
-    "categories": ["diy-kits"],
+    "categories": [
+      "diy-kits"
+    ],
     "discount": "Save BDT 30",
     "rating": 5,
     "reviews": 12,
@@ -1995,7 +2434,11 @@
     "url": "products/1194-3-7v-2000mah-original-capacity-battery-18650-li-ion-robo-orion-bangladesh.html",
     "image": "img/product/1194-3-7v-2000mah-original-capacity-battery-18650-li-ion-robo-orion-bangladesh.jpg",
     "alt": "3.7V 2000mAh Original Capacity 18650 Li-Ion Battery",
-    "categories": ["18650-batteries", "lithium-batteries", "diy-kits"],
+    "categories": [
+      "18650-batteries",
+      "lithium-batteries",
+      "diy-kits"
+    ],
     "discount": "Save BDT 50",
     "rating": 5,
     "reviews": 16,
@@ -2010,7 +2453,11 @@
     "url": "products/1193-sanford-18650-battery-3-7v-original-robo-orion-bangladesh.html",
     "image": "img/product/1193-sanford-18650-battery-3-7v-original-robo-orion-bangladesh.jpg",
     "alt": "Original Sanford 18650 Battery 3.7V (Tested 2000mAh)",
-    "categories": ["18650-batteries", "lithium-batteries", "diy-kits"],
+    "categories": [
+      "18650-batteries",
+      "lithium-batteries",
+      "diy-kits"
+    ],
     "discount": "Save BDT 110",
     "rating": 5,
     "reviews": 7,
@@ -2025,7 +2472,10 @@
     "url": "products/1192-12v-4-inch-cooling-fan-92x92x25mm-robo-orion-bangladesh.html",
     "image": "img/product/1192-12v-4-inch-cooling-fan-92x92x25mm-robo-orion-bangladesh.jpg",
     "alt": "12V 4 Inch Brushless DC Cooling Fan (92x92x25mm)",
-    "categories": ["dc-motors", "diy-kits"],
+    "categories": [
+      "dc-motors",
+      "diy-kits"
+    ],
     "discount": "Save BDT 85",
     "rating": 5,
     "reviews": 12,
@@ -2040,7 +2490,11 @@
     "url": "products/1191-dt-830d-digital-multimeter-robo-orion-bangladesh.html",
     "image": "img/product/1191-dt-830d-digital-multimeter-robo-orion-bangladesh.jpg",
     "alt": "DT-830D Digital Multimeter with Continuity Buzzer",
-    "categories": ["multimeters", "repair-tools", "diy-kits"],
+    "categories": [
+      "multimeters",
+      "repair-tools",
+      "diy-kits"
+    ],
     "discount": "Save BDT 95",
     "rating": 5,
     "reviews": 14,
@@ -2055,7 +2509,11 @@
     "url": "products/1190-100pcs-heat-shrink-tube-pack-1mm-to-10mm-robo-orion-bangladesh.html",
     "image": "img/product/1190-100pcs-heat-shrink-tube-pack-1mm-to-10mm-robo-orion-bangladesh.jpg",
     "alt": "100pcs Heat Shrink Tube Assortment Pack (1mm to 10mm)",
-    "categories": ["heat-shrink", "wire-cables", "diy-kits"],
+    "categories": [
+      "heat-shrink",
+      "wire-cables",
+      "diy-kits"
+    ],
     "discount": "Save BDT 100",
     "rating": 5,
     "reviews": 18,
@@ -2070,7 +2528,11 @@
     "url": "products/1189-22.5w-fast-charging-power-bank-circuit-sw6206-robo-orion-bangladesh.html",
     "image": "img/product/1189-22.5w-fast-charging-power-bank-circuit-sw6206-robo-orion-bangladesh.jpg",
     "alt": "22.5W Fast Charging Power Bank Circuit SW6206",
-    "categories": ["power-supply", "diy-kits", "converter-modules"],
+    "categories": [
+      "power-supply",
+      "diy-kits",
+      "converter-modules"
+    ],
     "discount": "Save BDT 120",
     "rating": 5,
     "reviews": 18,
@@ -2085,7 +2547,10 @@
     "url": "products/1188-xh-m602-v1874-battery-charge-control-module-robo-orion-bangladesh.html",
     "image": "img/product/1188-xh-m602-v1874-battery-charge-control-module-robo-orion-bangladesh.jpg",
     "alt": "XH-M602 V1874 Digital Battery Charge Control Module",
-    "categories": ["charge-controllers", "bms-protection"],
+    "categories": [
+      "charge-controllers",
+      "bms-protection"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 16,
@@ -2100,7 +2565,10 @@
     "url": "products/1187-12v-2a-lg-power-adapter-original-robo-orion-bangladesh.html",
     "image": "img/product/1187-12v-2a-lg-power-adapter-original-robo-orion-bangladesh.jpg",
     "alt": "Original LG 12V 2A Power Adapter (24W) - 3 Meter Cable",
-    "categories": ["power-supply", "chargers"],
+    "categories": [
+      "power-supply",
+      "chargers"
+    ],
     "discount": "Save BDT 100",
     "rating": 5,
     "reviews": 14,
@@ -2115,7 +2583,11 @@
     "url": "products/1186-dc-power-jack-male-female-screw-terminal-pair-2-1x5-5mm-robo-orion-bangladesh.html",
     "image": "img/product/1186-dc-power-jack-male-female-screw-terminal-pair-2-1x5-5mm-robo-orion-bangladesh.jpg",
     "alt": "DC Power Jack Male-Female Connector Pair with 2-Pin Screw Terminal",
-    "categories": ["dc-connectors", "wire-cables", "diy-kits"],
+    "categories": [
+      "dc-connectors",
+      "wire-cables",
+      "diy-kits"
+    ],
     "discount": "Save BDT 55",
     "rating": 5,
     "reviews": 12,
@@ -2130,7 +2602,11 @@
     "url": "products/1185-1s-15a-bms-3.7v-lithium-battery-protection-board-robo-orion-bangladesh.html",
     "image": "img/product/1185-1s-15a-bms-3.7v-lithium-battery-protection-board-robo-orion-bangladesh.jpg",
     "alt": "1S 15A BMS 3.7V Lithium Battery Protection Board (6MOS)",
-    "categories": ["bms-protection", "lithium-batteries", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "lithium-batteries",
+      "diy-kits"
+    ],
     "discount": "Save BDT 30",
     "rating": 5,
     "reviews": 14,
@@ -2145,7 +2621,11 @@
     "url": "products/1184-original-mini-router-ups-board-40w-v2-6-robo-orion-bangladesh.html",
     "image": "img/product/1184-original-mini-router-ups-board-40w-v2-6-robo-orion-bangladesh.jpg",
     "alt": "Original Mini Router UPS Board 40W V2.6",
-    "categories": ["power-supply", "bms-protection", "diy-kits"],
+    "categories": [
+      "power-supply",
+      "bms-protection",
+      "diy-kits"
+    ],
     "discount": "Save BDT 80",
     "rating": 5,
     "reviews": 22,
@@ -2160,7 +2640,9 @@
     "url": "products/1183-12v-3-inch-cooling-fan-80x80x25mm-robo-orion-bangladesh.html",
     "image": "img/product/1183-12v-3-inch-cooling-fan-80x80x25mm-robo-orion-bangladesh.jpg",
     "alt": "12V 3 Inch Brushless DC Cooling Fan (80x80x25mm)",
-    "categories": ["diy-kits"],
+    "categories": [
+      "diy-kits"
+    ],
     "discount": "Save BDT 80",
     "rating": 5,
     "reviews": 16,
@@ -2175,7 +2657,11 @@
     "url": "products/1182-4s-16.8v-4a-type-c-lithium-battery-charging-board-robo-orion-bangladesh.html",
     "image": "img/product/1182-4s-16.8v-4a-type-c-lithium-battery-charging-board-robo-orion-bangladesh.jpg",
     "alt": "4S 16.8V 4A Type-C Lithium Battery Charging Board",
-    "categories": ["bms-protection", "chargers", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "chargers",
+      "diy-kits"
+    ],
     "discount": "Save BDT 110",
     "rating": 5,
     "reviews": 15,
@@ -2190,7 +2676,11 @@
     "url": "products/1181-2s-8.4v-4a-type-c-lithium-battery-charging-board-robo-orion-bangladesh.html",
     "image": "img/product/1181-2s-8.4v-4a-type-c-lithium-battery-charging-board-robo-orion-bangladesh.jpg",
     "alt": "2S 8.4V 4A Type-C Lithium Battery Charging Board",
-    "categories": ["bms-protection", "converter-modules", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "converter-modules",
+      "diy-kits"
+    ],
     "discount": "Save BDT 110",
     "rating": 5,
     "reviews": 14,
@@ -2205,7 +2695,10 @@
     "url": "products/12v-charge-controller-circuit-v1-rbo-12vccv1125.html",
     "image": "img/product/12v-charge-controller-circuit-v1-rbo-12vccv1125.png",
     "alt": "12V Charge Controller Circuit V1",
-    "categories": ["electronics", "charge-controllers"],
+    "categories": [
+      "electronics",
+      "charge-controllers"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 24,
@@ -2220,7 +2713,9 @@
     "url": "products/1953-12V-24V-to-5v-3a-super-mini-super-size-dc-step-down-buck-converter-module-robo-orion-bangladesh.html",
     "image": "img/product/1953-12V-24V-to-5v-3a-super-mini-super-size-dc-step-down-buck-converter-module-robo-orion-bangladesh.jpg",
     "alt": "12V-24V to 5V 3A Super Mini DC Step-Down Buck Converter Module",
-    "categories": ["converter-modules"],
+    "categories": [
+      "converter-modules"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 18,
@@ -2235,7 +2730,10 @@
     "url": "products/2767-150w-dc-dc-boost-converter-10-32v-to-12-35v-6a-step-up-adjustable-power-supply-robo-orion-bangladesh.html",
     "image": "img/product/2767-150w-dc-dc-boost-converter-10-32v-to-12-35v-6a-step-up-adjustable-power-supply-robo-orion-bangladesh.jpg",
     "alt": "150W DC-DC Boost Converter 10-32V to 12-35V 6A Step-Up Adjustable Power Supply",
-    "categories": ["converter-modules", "power-supply"],
+    "categories": [
+      "converter-modules",
+      "power-supply"
+    ],
     "discount": "Save BDT 65",
     "rating": 5,
     "reviews": 12,
@@ -2250,7 +2748,11 @@
     "url": "products/1433-tda2030a-18w-original-hi-fi-class-ab-audio-amplifier-ic-robo-orion-bangladesh.html",
     "image": "img/product/1433-tda2030a-18w-original-hi-fi-class-ab-audio-amplifier-ic-robo-orion-bangladesh.jpg",
     "alt": "TDA2030A 18W Original Hi-Fi Class AB Audio Amplifier IC",
-    "categories": ["amplifiers", "audio-modules", "audio-accessories"],
+    "categories": [
+      "amplifiers",
+      "audio-modules",
+      "audio-accessories"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 17,
@@ -2265,7 +2767,9 @@
     "url": "products/1434-tda2030a-18w-original-hi-fi-class-ab-audio-amplifier-ic-pack-of-4-robo-orion-bangladesh.html",
     "image": "img/product/1434-tda2030a-18w-original-hi-fi-class-ab-audio-amplifier-ic-pack-of-4-robo-orion-bangladesh.jpg",
     "alt": "TDA2030A 18W Original Hi-Fi Class AB Audio Amplifier IC Pack of 4",
-    "categories": ["ics"],
+    "categories": [
+      "ics"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 11,
@@ -2280,7 +2784,10 @@
     "url": "products/1822-tp4056-1a-li-ion-lithium-battery-charging-module-with-current-protection-type-c-robo-orion-bangladesh.html",
     "image": "img/product/1822-tp4056-1a-li-ion-lithium-battery-charging-module-with-current-protection-type-c-robo-orion-bangladesh.jpg",
     "alt": "TP4056 1A Li-ion Battery Charging Module with Type-C input and over-current protection",
-    "categories": ["bms-protection", "converter-modules"],
+    "categories": [
+      "bms-protection",
+      "converter-modules"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 24,
@@ -2295,7 +2802,9 @@
     "url": "products/900m-t-k-series-soldering-iron-tips-professional-conical-lead-free-black-soldering-bit.html",
     "image": "img/product/900m-t-k-series-soldering-iron-tips-professional-conical-lead-free-black-soldering-bit.jpg",
     "alt": "900M-T-K Series Soldering Iron Tips - Professional Conical Lead-Free Black Soldering Bit 60w",
-    "categories": ["soldering-tools"],
+    "categories": [
+      "soldering-tools"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 11,
@@ -2310,7 +2819,10 @@
     "url": "products/12603-12.6v-3a-dc-charger-power-supply-adapter-for-3-cell-lithium-ion-battery-packs-robo-orion-bangladesh.html",
     "image": "img/product/12603-12.6v-3a-dc-charger-power-supply-adapter-for-3-cell-lithium-ion-battery-packs-robo-orion-bangladesh.jpg",
     "alt": "12.6V 3A DC Charger - Power Supply Adapter for 3-Cell Lithium-Ion Battery Packs",
-    "categories": ["chargers", "power-supply"],
+    "categories": [
+      "chargers",
+      "power-supply"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 17,
@@ -2325,14 +2837,17 @@
     "url": "products/3200mah-original-panasonic-ncr18650bd-18650-lithium-ion-battery-10a-high-drain-made-in-japan-robo-orion-bangladesh.html",
     "image": "img/product/3200mah-original-panasonic-ncr18650bd-18650-lithium-ion-battery-10a-high-drain-made-in-japan-robo-orion-bangladesh.jpg",
     "alt": "3000mAh Original Panasonic NCR18650BD 18650 Lithium-Ion Battery - 10A High-Drain (Made in Japan)",
-    "categories": ["lithium-batteries", "18650-batteries"],
+    "categories": [
+      "lithium-batteries",
+      "18650-batteries"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 16,
     "brand": "Panasonic",
     "price": "BDT 340",
     "original_price": "BDT 480",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "id": "RBO-1687",
@@ -2340,14 +2855,16 @@
     "url": "products/1687-3.7v-18650-rechargeable-lithium-ion-battery-good-quality-robo-orion-bangladesh.html",
     "image": "img/product/1687-3.7v-18650-rechargeable-lithium-ion-battery-good-quality-robo-orion-bangladesh.jpg",
     "alt": "3.7V 18650 Rechargeable Lithium-Ion Battery - Good Quality",
-    "categories": ["batteries"],
+    "categories": [
+      "batteries"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 21,
     "brand": "Robo Orion",
     "price": "BDT 70",
     "original_price": "BDT 120",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "id": "RBO-2677",
@@ -2355,14 +2872,17 @@
     "url": "products/2677-2600mah-swy18650-rechargeable-li-ion-battery-original-high-power-cell-robo-orion-bangladesh.html",
     "image": "img/product/2677-2600mah-swy18650-rechargeable-li-ion-battery-original-high-power-cell-robo-orion-bangladesh.jpg",
     "alt": "2600mAh 3.7V SWY18650 Rechargeable Li-ion Battery - Original High-Power Cell",
-    "categories": ["lithium-batteries", "18650-batteries"],
+    "categories": [
+      "lithium-batteries",
+      "18650-batteries"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 25,
     "brand": "Undefined",
     "price": "BDT 270",
     "original_price": "BDT 380",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "id": "RBO-3953",
@@ -2370,7 +2890,9 @@
     "url": "products/3953-mini-mp1584en-dc-dc-buck-adjustable-step-down-module-robo-orion-bangladesh.html",
     "image": "img/product/3953-mini-mp1584en-dc-dc-buck-adjustable-step-down-module-robo-orion-bangladesh.webp",
     "alt": "Mini MP1584EN DC-DC BUCK Adjustable Step Down Module",
-    "categories": ["converter-modules"],
+    "categories": [
+      "converter-modules"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 12,
@@ -2385,7 +2907,9 @@
     "url": "products/1855-hw-411a-lm2596-dc-to-dc-buck-converter-step-down-module-power-supply-robo-orion-bangladesh.html",
     "image": "img/product/1855-hw-411a-lm2596-dc-to-dc-buck-converter-step-down-module-power-supply-robo-orion-bangladesh.webp",
     "alt": "HW-411A LM2596 DC-DC Buck Converter Step Down Module",
-    "categories": ["converter-modules"],
+    "categories": [
+      "converter-modules"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 14,
@@ -2400,7 +2924,9 @@
     "url": "products/12v-5a-liteon-power-supply-adapter.html",
     "image": "img/product/12v-5a-liteon-power-supply-adapter.jpg",
     "alt": "12V 5A Liteon Power Supply Adapter",
-    "categories": ["power-supply"],
+    "categories": [
+      "power-supply"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 14,
@@ -2415,7 +2941,9 @@
     "url": "products/730-dc-dc-boost-module-xl6009-robo-orion-bangladesh.html",
     "image": "img/product/730-dc-dc-boost-module-xl6009-robo-orion-bangladesh.webp",
     "alt": "DC-DC Boost Module XL6009",
-    "categories": ["converter-modules"],
+    "categories": [
+      "converter-modules"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 17,
@@ -2430,13 +2958,17 @@
     "url": "products/bigmax-3.7v-10000mah-li-po-rechargeable-battery-high-capacity-lithium-polymer-battery-pack-robo-orion-bangladesh.html",
     "image": "img/product/BigMax-3.7V-10000mAh-Li-Po-Rechargeable-Battery-High-Capacity-Lithium-Polymer-Battery-Pack.jpg",
     "alt": "BigMax 3.7V 10000mAh Li-Po Rechargeable Battery – High Capacity Lithium Polymer Battery Pack",
-    "categories": ["lithium-batteries", "li-po-batteries", "battery-packs"],
-    "discount": "Save BDT 90",
+    "categories": [
+      "lithium-batteries",
+      "li-po-batteries",
+      "battery-packs"
+    ],
+    "discount": "Save BDT 120",
     "rating": 5,
     "reviews": 21,
     "brand": "BigMax",
     "price": "BDT 430",
-    "original_price": "BDT 520",
+    "original_price": "BDT 550",
     "in_stock": true
   },
   {
@@ -2445,7 +2977,9 @@
     "url": "products/1111-ferrite-core-inductor-6a-70uh-robo-orion-bangladesh.html",
     "image": "img/product/1111-ferrite-core-inductor-6a-70uh-robo-orion-bangladesh.jpg",
     "alt": "Ferit Core Inductor 6A 70uH - High Current Power Inductor | Robo Orion BD",
-    "categories": ["inductors"],
+    "categories": [
+      "inductors"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 12,
@@ -2460,7 +2994,9 @@
     "url": "products/1112-4v-10w-ultra-bright-white-cob-smd-light-chip-30-leds-robo-orion-bangladesh.html",
     "image": "img/product/1112-4v-10w-ultra-bright-white-cob-smd-light-chip-30-leds-robo-orion-bangladesh.jpg",
     "alt": "4V 10W Ultra Bright White COB SMD Light Chip 30 LEDs",
-    "categories": ["leds"],
+    "categories": [
+      "leds"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 16,
@@ -2475,7 +3011,9 @@
     "url": "products/1113-ln6510-white-color-3w-mini-cob-led-dc-3v-3-7v-white-smd-strip-cob-bead-chip-robo-orion-bangladesh.html",
     "image": "img/product/1113-ln6510-white-color-3w-mini-cob-led-dc-3v-3-7v-white-smd-strip-cob-bead-chip-robo-orion-bangladesh.jpg",
     "alt": "LN6510 WHITE Color 3W Mini COB LED DC 3V 3.7V White SMD Strip",
-    "categories": ["leds"],
+    "categories": [
+      "leds"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 13,
@@ -2490,7 +3028,9 @@
     "url": "products/1114-100uh-shielded-radial-lead-inductor-6x8mm-robo-orion-bangladesh.html",
     "image": "img/product/1114-100uh-shielded-radial-lead-inductor-6x8mm-robo-orion-bangladesh.jpg",
     "alt": "100uH Shielded Radial Lead Inductor 6x8mm  | Robo Orion BD",
-    "categories": ["inductors"],
+    "categories": [
+      "inductors"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 12,
@@ -2505,7 +3045,9 @@
     "url": "products/1115-7x7mm-latching-push-telephone-switch-mini-dpdt-push-switch-robo-orion-bangladesh.html",
     "image": "img/product/1115-7x7mm-latching-push-telephone-switch-mini-dpdt-push-switch-robo-orion-bangladesh.jpg",
     "alt": "7x7mm Latching Push Telephone Switch Mini DPDT  | Robo Orion BD",
-    "categories": ["switches"],
+    "categories": [
+      "switches"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 13,
@@ -2520,7 +3062,9 @@
     "url": "products/1116-10a-glass-fuse-5x20mm-replacement-robo-orion-bangladesh.html",
     "image": "img/product/1116-10a-glass-fuse-5x20mm-replacement-robo-orion-bangladesh.jpg",
     "alt": "10A Glass Fuse 5x20mm Replacement | Robo Orion BD",
-    "categories": ["fuses"],
+    "categories": [
+      "fuses"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 10,
@@ -2535,7 +3079,9 @@
     "url": "products/1117-ntc-thermistor-10k-2mm-epoxy-precision-sensor-robo-orion-bangladesh.html",
     "image": "img/product/1117-ntc-thermistor-10k-2mm-epoxy-precision-sensor-robo-orion-bangladesh.jpg",
     "alt": "NTC Thermistor 10K 2mm Epoxy Precision Sensor | Robo Orion BD",
-    "categories": ["sensors"],
+    "categories": [
+      "sensors"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 15,
@@ -2550,7 +3096,9 @@
     "url": "products/1118-mf52b-epoxy-resin-enamelled-wire-ntc-thermistor-10k-robo-orion-bangladesh.html",
     "image": "img/product/1118-mf52b-epoxy-resin-enamelled-wire-ntc-thermistor-10k-robo-orion-bangladesh.jpg",
     "alt": "NMF52B Epoxy Resin Enamelled Wire NTC Thermistor 10kΩ | Robo Orion BD",
-    "categories": ["sensors"],
+    "categories": [
+      "sensors"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 17,
@@ -2565,7 +3113,9 @@
     "url": "products/1119-relay-songle-5-pin-12v-10a-spdt-power-relay-robo-orion-bangladesh.html",
     "image": "img/product/1119-relay-songle-5-pin-12v-10a-spdt-power-relay-robo-orion-bangladesh.jpg",
     "alt": "Relay SONGLE 5 Pin 12V 10A SPDT Power Relay | Robo Orion BD",
-    "categories": ["relays"],
+    "categories": [
+      "relays"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 22,
@@ -2580,7 +3130,9 @@
     "url": "products/1120-mp1584-5v-fixed-output-3a-dc-step-down-buck-converter-module-robo-orion-bangladesh.html",
     "image": "img/product/1120-mp1584-5v-fixed-output-3a-dc-step-down-buck-converter-module-robo-orion-bangladesh.jpg",
     "alt": "MP1584 5V Fixed Output 3A DC Step Down Buck Converter Module",
-    "categories": ["converter-modules"],
+    "categories": [
+      "converter-modules"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 16,
@@ -2595,7 +3147,12 @@
     "url": "products/1121-l298n-h-bridge-dual-motor-driver-stepper-motor-controller-robo-orion-bangladesh.html",
     "image": "img/product/1121-l298n-h-bridge-dual-motor-driver-stepper-motor-controller-robo-orion-bangladesh.jpg",
     "alt": "L298N H-Bridge Dual Motor Driver Module",
-    "categories": ["motor-drivers", "arduino", "development-boards", "diy-kits"],
+    "categories": [
+      "motor-drivers",
+      "arduino",
+      "development-boards",
+      "diy-kits"
+    ],
     "discount": "Save BDT 95",
     "rating": 5,
     "reviews": 16,
@@ -2610,7 +3167,10 @@
     "url": "products/1122-104-multilayer-ceramic-capacitor-robo-orion-bangladesh.html",
     "image": "img/product/1122-104-multilayer-ceramic-capacitor-robo-orion-bangladesh.jpg",
     "alt": "104 Multilayer Ceramic Capacitor 0.1uF 100nF 50V MLCC",
-    "categories": ["capacitors", "electronics"],
+    "categories": [
+      "capacitors",
+      "electronics"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 26,
@@ -2625,7 +3185,11 @@
     "url": "products/1123-1s-3-7v-3a-bms-li-ion-18650-battery-protection-board-robo-orion-bangladesh.html",
     "image": "img/product/1123-1s-3-7v-3a-bms-li-ion-18650-battery-protection-board-robo-orion-bangladesh.jpg",
     "alt": "1S 3.7V 3A BMS Li-ion 18650 Battery Protection Board",
-    "categories": ["bms-protection", "18650-batteries", "modules"],
+    "categories": [
+      "bms-protection",
+      "18650-batteries",
+      "modules"
+    ],
     "discount": "Save BDT 20",
     "rating": 5,
     "reviews": 12,
@@ -2640,7 +3204,10 @@
     "url": "products/1124-adjustable-3-24v-5a-dc-power-supply-adapter-with-display-robo-orion-bangladesh.html",
     "image": "img/product/1124-adjustable-3-24v-5a-dc-power-supply-adapter-with-display-robo-orion-bangladesh.jpg",
     "alt": "Adjustable 3-24V 5A DC Power Supply Adapter with Display | Robo Orion BD",
-    "categories": ["power-supply", "chargers"],
+    "categories": [
+      "power-supply",
+      "chargers"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 17,
@@ -2655,7 +3222,11 @@
     "url": "products/1125-3s-20a-li-ion-lipo-battery-bms-protection-board-robo-orion-bangladesh.html",
     "image": "img/product/1125-3s-20a-li-ion-lipo-battery-bms-protection-board-robo-orion-bangladesh.jpg",
     "alt": "3S 20A 12.6V Lithium-Ion Battery BMS Protection Board",
-    "categories": ["bms-protection", "18650-batteries", "modules"],
+    "categories": [
+      "bms-protection",
+      "18650-batteries",
+      "modules"
+    ],
     "discount": "Save BDT 65",
     "rating": 5,
     "reviews": 17,
@@ -2670,7 +3241,11 @@
     "url": "products/1126-3s-12.6v-type-c-lithium-battery-charging-board-4a-robo-orion-bangladesh.html",
     "image": "img/product/1126-3s-12.6v-type-c-lithium-battery-charging-board-4a-robo-orion-bangladesh.jpg",
     "alt": "3S 12.6V Type-C Lithium Battery Charging Board 4A",
-    "categories": ["chargers", "modules", "diy-kits"],
+    "categories": [
+      "chargers",
+      "modules",
+      "diy-kits"
+    ],
     "discount": "Save BDT 110",
     "rating": 5,
     "reviews": 15,
@@ -2685,7 +3260,10 @@
     "url": "products/1127-xt60-connector-male-female-pair-robo-orion-bangladesh.html",
     "image": "img/product/1127-xt60-connector-male-female-pair-robo-orion-bangladesh.jpg",
     "alt": "XT60 Connector Male & Female Pair",
-    "categories": ["connectors", "rc-accessories"],
+    "categories": [
+      "connectors",
+      "rc-accessories"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 11,
@@ -2700,7 +3278,10 @@
     "url": "products/1128-ttp223-touch-sensor-module-for-arduino-robo-orion-bangladesh.html",
     "image": "img/product/1128-ttp223-touch-sensor-module-for-arduino-robo-orion-bangladesh.jpg",
     "alt": "TTP223 Capacitive Touch Sensor Module for Arduino",
-    "categories": ["sensors", "modules"],
+    "categories": [
+      "sensors",
+      "modules"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 12,
@@ -2715,7 +3296,10 @@
     "url": "products/1129-mini-router-ups-board-40w-v2-6-robo-orion-bangladesh.html",
     "image": "img/product/1129-mini-router-ups-board-40w-v2-6-robo-orion-bangladesh.jpg",
     "alt": "Mini Router UPS Board 40W V2.6",
-    "categories": ["power-supply", "bms-protection"],
+    "categories": [
+      "power-supply",
+      "bms-protection"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 22,
@@ -2730,7 +3314,10 @@
     "url": "products/1130-mini-router-ups-board-42w-v4-robo-orion-bangladesh.html",
     "image": "img/product/1130-mini-router-ups-board-42w-v4-robo-orion-bangladesh.jpg",
     "alt": "Mini Router UPS Board 42W V4",
-    "categories": ["power-supply", "bms-protection"],
+    "categories": [
+      "power-supply",
+      "bms-protection"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 7,
@@ -2745,7 +3332,10 @@
     "url": "products/1131-4v-10w-ultra-bright-white-cob-smd-light-chip-30-leds-high-quality-robo-orion-bangladesh.html",
     "image": "img/product/1131-4v-10w-ultra-bright-white-cob-smd-light-chip-30-leds-high-quality-robo-orion-bangladesh.jpg",
     "alt": "4V 10W Ultra Bright White COB SMD Light Chip 30 LEDs High Quality",
-    "categories": ["leds", "diy-kits"],
+    "categories": [
+      "leds",
+      "diy-kits"
+    ],
     "discount": "Save BDT 40",
     "rating": 5,
     "reviews": 26,
@@ -2760,7 +3350,11 @@
     "url": "products/1132-xy-wrbt-bluetooth-5-0-audio-receiver-decoder-board-robo-orion-bangladesh.html",
     "image": "img/product/1132-xy-wrbt-bluetooth-5-0-audio-receiver-decoder-board-robo-orion-bangladesh.jpg",
     "alt": "XY-WRBT Bluetooth 5.0 Audio Receiver Decoder Board",
-    "categories": ["audio-modules", "bluetooth-modules", "diy-kits"],
+    "categories": [
+      "audio-modules",
+      "bluetooth-modules",
+      "diy-kits"
+    ],
     "discount": "Save BDT 160",
     "rating": 5,
     "reviews": 14,
@@ -2775,7 +3369,10 @@
     "url": "products/1133-1200mah-3.7v-lipo-drone-battery-robo-orion-bangladesh.html",
     "image": "img/product/1133-1200mah-3.7v-lipo-drone-battery-robo-orion-bangladesh.jpg",
     "alt": "1200mAh 3.7V LiPo Drone Battery | Robo Orion BD",
-    "categories": ["li-po-batteries", "battery-packs"],
+    "categories": [
+      "li-po-batteries",
+      "battery-packs"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 26,
@@ -2790,7 +3387,10 @@
     "url": "products/1134-2000mah-3-7v-lipo-drone-battery-robo-orion-bangladesh.html",
     "image": "img/product/1134-2000mah-3-7v-lipo-drone-battery-robo-orion-bangladesh.jpg",
     "alt": "2000mAh 3.7V LiPo Drone Battery | Robo Orion BD",
-    "categories": ["li-po-batteries", "battery-packs"],
+    "categories": [
+      "li-po-batteries",
+      "battery-packs"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 19,
@@ -2805,7 +3405,11 @@
     "url": "products/1135-6-5mm-b10-hand-drill-chuck-for-775-motor-robo-orion-bangladesh.html",
     "image": "img/product/1135-6-5mm-b10-hand-drill-chuck-for-775-motor-robo-orion-bangladesh.jpg",
     "alt": "6.5mm B10 Hand Drill Chuck for DC 12V 775 Motor | Robo Orion BD",
-    "categories": ["couplings-shafts", "dc-motors", "diy-kits"],
+    "categories": [
+      "couplings-shafts",
+      "dc-motors",
+      "diy-kits"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 16,
@@ -2820,7 +3424,11 @@
     "url": "products/1136-jst-xh-2-54mm-2-pin-female-connector-30cm-wire-robo-orion-bangladesh.html",
     "image": "img/product/1136-jst-xh-2-54mm-2-pin-female-connector-30cm-wire-robo-orion-bangladesh.jpg",
     "alt": "JST XH 2.54mm 2-Pin Female Connector 30cm | Robo Orion BD",
-    "categories": ["wire-cables", "pin-headers", "diy-kits"],
+    "categories": [
+      "wire-cables",
+      "pin-headers",
+      "diy-kits"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 17,
@@ -2835,7 +3443,9 @@
     "url": "products/1137-50w-ac-220v-cob-led-light-white-robo-orion-bangladesh.html",
     "image": "img/product/1137-50w-ac-220v-cob-led-light-white-robo-orion-bangladesh.jpg",
     "alt": "50W AC 220V COB LED Light (White) | Robo Orion BD",
-    "categories": ["leds"],
+    "categories": [
+      "leds"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 22,
@@ -2850,7 +3460,10 @@
     "url": "products/1138-4s-30a-bms-protection-board-robo-orion-bangladesh.html",
     "image": "img/product/1138-4s-30a-bms-protection-board-robo-orion-bangladesh.jpg",
     "alt": "4S 30A 14.8V Lithium Battery BMS PCB Protection Board",
-    "categories": ["bms-protection", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "diy-kits"
+    ],
     "discount": "Save BDT 160",
     "rating": 5,
     "reviews": 14,
@@ -2865,7 +3478,10 @@
     "url": "products/1139-2s-20a-bms-li-ion-battery-protection-board-robo-orion-bangladesh.html",
     "image": "img/product/1139-2s-20a-bms-li-ion-battery-protection-board-robo-orion-bangladesh.jpg",
     "alt": "2S 20A BMS for Li-ion Battery Protection Board",
-    "categories": ["bms-protection", "diy-kits"],
+    "categories": [
+      "bms-protection",
+      "diy-kits"
+    ],
     "discount": "Save BDT 95",
     "rating": 5,
     "reviews": 22,
@@ -2880,7 +3496,10 @@
     "url": "products/1140-12v-775-motor-robo-orion-bangladesh.html",
     "image": "img/product/1140-12v-775-motor-robo-orion-bangladesh.jpg",
     "alt": "12V 775 Motor High Speed High Torque | Robo Orion BD",
-    "categories": ["dc-motors", "diy-kits"],
+    "categories": [
+      "dc-motors",
+      "diy-kits"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 17,
@@ -2895,7 +3514,10 @@
     "url": "products/1141-ac-dc-5v-700ma-3-5w-precision-buck-converter-robo-orion-bangladesh.html",
     "image": "img/product/1141-ac-dc-5v-700ma-3-5w-precision-buck-converter-robo-orion-bangladesh.jpg",
     "alt": "AC-DC 5V 700mA 3.5W Precision Buck Converter AC 220V to 5V DC Power Supply Module",
-    "categories": ["power-supply", "converter-modules"],
+    "categories": [
+      "power-supply",
+      "converter-modules"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 12,
@@ -2910,7 +3532,9 @@
     "url": "products/1142-tb6612-dual-motor-driver-robo-orion-bangladesh.html",
     "image": "img/product/1142-tb6612-dual-motor-driver-robo-orion-bangladesh.jpg",
     "alt": "TB6612 Dual Motor Driver - 1.2A Continuous, 3.2A Peak",
-    "categories": ["motor-drivers"],
+    "categories": [
+      "motor-drivers"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 15,
@@ -2925,7 +3549,11 @@
     "url": "products/1143-tda2050-high-quality-audio-amplifier-ic-robo-orion-bangladesh.html",
     "image": "img/product/1143-tda2050-high-quality-audio-amplifier-ic-robo-orion-bangladesh.jpg",
     "alt": "TDA2050 High Quality Audio Amplifier IC",
-    "categories": ["amplifiers", "audio-modules", "ic-chips"],
+    "categories": [
+      "amplifiers",
+      "audio-modules",
+      "ic-chips"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 14,
@@ -2940,7 +3568,11 @@
     "url": "products/1144-tda2030-audio-amplifier-ic-robo-orion-bangladesh.html",
     "image": "img/product/1144-tda2030-audio-amplifier-ic-robo-orion-bangladesh.jpg",
     "alt": "TDA2030 Audio Amplifier IC",
-    "categories": ["amplifiers", "audio-modules", "ic-chips"],
+    "categories": [
+      "amplifiers",
+      "audio-modules",
+      "ic-chips"
+    ],
     "discount": null,
     "rating": 5,
     "reviews": 14,
