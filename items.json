@@ -289,6 +289,24 @@
     "in_stock": true
   },
   {
+  "id": "RBO-1282",
+  "title": "1000uF 35V Electrolytic Capacitor (Original High Quality)",
+  "url": "products/1282-1000uf-35v-electrolytic-capacitor-robo-orion-bangladesh.html",
+  "image": "img/product/1282-1000uf-35v-electrolytic-capacitor-robo-orion-bangladesh.jpg",
+  "alt": "1000uF 35V Electrolytic Capacitor Original High Quality",
+  "categories": [
+    "capacitors",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 15",
+  "rating": 5,
+  "reviews": 7,
+  "brand": "Generic",
+  "price": "BDT 10",
+  "original_price": "BDT 25",
+  "in_stock": true
+},
+  {
     "id": "RBO-1324",
     "title": "Arduino Uno R3 ATmega328P DIP Development Board",
     "url": "products/1324-arduino-uno-r3-robo-orion-bangladesh.html",
@@ -333,6 +351,24 @@
     "original_price": null,
     "in_stock": true
   },
+  {
+  "id": "RBO-1283",
+  "title": "2200uF 25V Electrolytic Capacitor (Original High Quality)",
+  "url": "products/1283-2200uf-25v-electrolytic-capacitor-robo-orion-bangladesh.html",
+  "image": "img/product/1283-2200uf-25v-electrolytic-capacitor-robo-orion-bangladesh.jpg",
+  "alt": "2200uF 25V Electrolytic Capacitor Original High Quality",
+  "categories": [
+    "capacitors",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 10",
+  "rating": 5,
+  "reviews": 5,
+  "brand": "Generic",
+  "price": "BDT 20",
+  "original_price": "BDT 30",
+  "in_stock": true
+},
   {
     "id": "RBO-1321",
     "title": "12V 3S 2.5A (7500mAh) Lithium Battery Pack with 10A BMS & JST Cable",
