@@ -30,11 +30,11 @@
       "chargers",
       "diy-kits"
     ],
-    "discount": "Save BDT 90",
+    "discount": "Save BDT 100",
     "rating": 5,
     "reviews": 7,
     "brand": "Generic",
-    "price": "BDT 460",
+    "price": "BDT 450",
     "original_price": "BDT 550",
     "in_stock": true
   },
@@ -1643,11 +1643,11 @@
       "charge-controllers",
       "diy-kits"
     ],
-    "discount": "Save BDT 200",
+    "discount": "Save BDT 190",
     "rating": 5,
     "reviews": 12,
     "brand": "Generic",
-    "price": "BDT 480",
+    "price": "BDT 490",
     "original_price": "BDT 680",
     "in_stock": true
   },
@@ -2593,11 +2593,11 @@
       "dc-motors",
       "diy-kits"
     ],
-    "discount": "Save BDT 85",
+    "discount": "Save BDT 100",
     "rating": 5,
     "reviews": 12,
     "brand": "Generic",
-    "price": "BDT 95",
+    "price": "BDT 80",
     "original_price": "BDT 180",
     "in_stock": true
   },
@@ -3980,11 +3980,11 @@
       "dc-motors",
       "diy-kits"
     ],
-    "discount": null,
+    "discount": "Save BDT 80",
     "rating": 5,
     "reviews": 16,
     "brand": "ADDA",
-    "price": "BDT 85",
+    "price": "BDT 70",
     "original_price": "BDT 150",
     "in_stock": true
   },
