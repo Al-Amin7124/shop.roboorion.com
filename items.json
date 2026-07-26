@@ -2143,7 +2143,7 @@
   },
   {
     "id": "RBO-1210",
-    "title": "35W 4V-9V COB LED Panel 85x56.5mm (108 LEDs) - KS8556-108-9",
+    "title": "35W 4V COB LED Panel 85x56.5mm (108 LEDs) - KS8556-108-9",
     "url": "products/1210-35w-4v-cob-led-panel-85x56-5mm-robo-orion-bangladesh.html",
     "image": "img/product/1210-35w-4v-cob-led-panel-85x56-5mm-robo-orion-bangladesh.jpg",
     "alt": "35W 4V-9V COB LED Panel 85x56.5mm (108 LEDs) KS8556-108-9",
@@ -2224,11 +2224,11 @@
       "wire-cables",
       "diy-kits"
     ],
-    "discount": "Save BDT 20",
+    "discount": "Save BDT 25",
     "rating": 5,
     "reviews": 12,
     "brand": "Robo Orion",
-    "price": "BDT 35",
+    "price": "BDT 30",
     "original_price": "BDT 55",
     "in_stock": true
   },
@@ -3303,11 +3303,11 @@
       "power-supply",
       "bms-protection"
     ],
-    "discount": null,
+    "discount": "Save BDT 120",
     "rating": 5,
-    "reviews": 22,
+    "reviews": 17,
     "brand": "Chinese",
-    "price": "BDT 290",
+    "price": "BDT 280",
     "original_price": "BDT 400",
     "in_stock": false
   },

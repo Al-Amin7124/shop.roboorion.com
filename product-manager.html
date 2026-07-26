@@ -811,6 +811,47 @@
       $all(".product-thumbnail img", doc).forEach(function(img){ img.setAttribute("src", imgSrc); img.setAttribute("alt", altText); });
     }
 
+    // Add to Cart button + quantity input: disable when out of stock, show a notice
+    var addBtn = doc.querySelector("#main-add-to-cart");
+    var qtyInput = doc.querySelector("#main-product-qty");
+    if(addBtn){
+      var labelNode = null;
+      Array.prototype.forEach.call(addBtn.childNodes, function(n){
+        if(n.nodeType === 3 && n.textContent.trim()) labelNode = n;
+      });
+      if(!addBtn.hasAttribute("data-instock-label")){
+        addBtn.setAttribute("data-instock-label", labelNode ? labelNode.textContent.trim() : "Add to Cart");
+      }
+      var actionsRow = addBtn.closest(".flex.items-center.gap-3") || addBtn.parentElement;
+      var notice = doc.querySelector(".stock-out-notice");
+      if(!notice){
+        notice = doc.createElement("p");
+        notice.className = "stock-out-notice text-red-600 text-sm font-semibold mt-2";
+        actionsRow.insertAdjacentElement("afterend", notice);
+      }
+      if(item.in_stock){
+        addBtn.removeAttribute("disabled");
+        addBtn.removeAttribute("aria-disabled");
+        addBtn.style.opacity = "";
+        addBtn.style.cursor = "";
+        addBtn.style.pointerEvents = "";
+        if(labelNode) labelNode.textContent = " " + addBtn.getAttribute("data-instock-label");
+        if(qtyInput) qtyInput.removeAttribute("disabled");
+        notice.style.display = "none";
+        notice.textContent = "";
+      }else{
+        addBtn.setAttribute("disabled", "disabled");
+        addBtn.setAttribute("aria-disabled", "true");
+        addBtn.style.opacity = "0.5";
+        addBtn.style.cursor = "not-allowed";
+        addBtn.style.pointerEvents = "none";
+        if(labelNode) labelNode.textContent = " Out of Stock";
+        if(qtyInput) qtyInput.setAttribute("disabled", "disabled");
+        notice.style.display = "";
+        notice.textContent = "This product is currently out of stock.";
+      }
+    }
+
     var metaMap = [
       ["meta[property='product:price:amount']", "content", String(priceInfo.value)],
       ["meta[property='product:availability']", "content", availText],

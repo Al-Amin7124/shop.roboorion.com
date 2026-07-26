@@ -46,7 +46,15 @@ function isContactOnly(item) {
   return parsePriceNumber(item.price) === null;
 }
 
+function isOutOfStock(item) {
+  return item.in_stock === false;
+}
+
 function badgeHtml(item) {
+  // Out-of-stock takes visual priority over any discount badge.
+  if (isOutOfStock(item)) {
+    return `<span class="stockBadge absolute top-3 left-3 bg-gray-700 text-white text-[9px] font-bold tracking-[1.5px] uppercase px-2.5 py-1 rounded">Out of Stock</span>`;
+  }
   // "discount" is the field actually used in items.json, e.g.
   // "Save BDT 500" or "Custom Built". Blue for "Custom Built", red otherwise.
   if (item.discount) {
@@ -86,12 +94,20 @@ function priceBlockHtml(item) {
       <div class="productPrice flex justify-center items-center gap-2 mb-2" itemscope itemtype="https://schema.org/Offer">
         <span class="offer-price text-red-500 font-bold text-lg" itemprop="price" content="${price}">BDT ${price}</span>
         <meta itemprop="priceCurrency" content="BDT">
-        <meta itemprop="availability" content="https://schema.org/${item.in_stock === false ? "OutOfStock" : "InStock"}">
+        <meta itemprop="availability" content="https://schema.org/${isOutOfStock(item) ? "OutOfStock" : "InStock"}">
         ${originalHtml}
       </div>`;
 }
 
 function buttonHtml(item) {
+  // Out-of-stock takes priority over every other button variant (including
+  // "Contact for Price") — nothing should be orderable while unavailable.
+  if (isOutOfStock(item)) {
+    return `
+      <div class="flex justify-center items-center gap-3">
+        <button class="add-to-cart bg-gray-200 text-gray-500 px-4 sm:px-8 py-2 rounded-lg font-medium border border-gray-300 cursor-not-allowed" aria-label="${item.title} is out of stock" disabled aria-disabled="true" style="pointer-events:none;"><i class="fa-solid fa-cart-shopping mr-2" aria-hidden="true"></i>Out of Stock</button>
+      </div>`;
+  }
   if (isContactOnly(item)) {
     return `
       <div class="flex justify-center items-center gap-3">
@@ -132,8 +148,9 @@ function cardHtml(item, basePath = "", index = 0) {
   // First couple of cards load eagerly at high priority so the very first
   // image visibly appears before the rest; everything after stays lazy.
   const loadingAttr = index < 2 ? `loading="eager" fetchpriority="high"` : `loading="lazy"`;
+  const outOfStockClass = isOutOfStock(item) ? " product-card--out-of-stock" : "";
   return `
-    <article class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition ro-fade-in" style="animation-delay:${delay}ms" data-category="${categories}">
+    <article class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition ro-fade-in${outOfStockClass}" style="animation-delay:${delay}ms" data-category="${categories}">
       <a href="${url}" target="_blank">
         <div class="w-full aspect-[4/3] relative">
           <img src="${image}" ${loadingAttr} alt="${item.alt || item.title}" class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110" width="400" height="300">
@@ -179,6 +196,11 @@ function registerCartProducts(container) {
     const imgEl = card.querySelector("img");
     const addBtn = card.querySelector(".add-to-cart");
     if (!nameEl || !codeEl || !addBtn) return;
+
+    // Out-of-stock buttons are already natively disabled (a disabled
+    // <button> never fires "click" at all) — skip registering/binding
+    // them entirely so there's nothing to add to the cart in the first place.
+    if (addBtn.hasAttribute("disabled")) return;
 
     const id = codeEl.textContent.trim();
     const priceDigits = priceEl ? priceEl.textContent.replace(/[^0-9.]/g, "") : "";
@@ -592,6 +614,76 @@ async function renderCatalog({ containerId, jsonPath = "items.json", basePath = 
     }
   } catch (err) {
     console.error("renderCatalog error:", err);
+    container.innerHTML = `<p class="text-sm text-gray-400 col-span-full text-center">Couldn't load products.</p>`;
+  }
+}
+
+/**
+ * ═══════════════════════════════════════════════════════════════
+ * MANUALLY-CURATED LIST — e.g. Featured Products, LED Items
+ * ═══════════════════════════════════════════════════════════════
+ *
+ * For sections where YOU pick the exact products (not "newest",
+ * not "most viewed", not "related to X" — just a hand-picked list).
+ * List the product codes; everything else (title, price, image,
+ * rating...) is pulled from items.json automatically, same as
+ * every other section.
+ *
+ * Cards render in the SAME ORDER you list the ids, not sorted.
+ *
+ * USAGE:
+ *   <div id="featured-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 md:gap-4"></div>
+ *   <script src="render-products.js?v=3"></script>
+ *   <script>
+ *     renderProductList({
+ *       containerId: "featured-grid",
+ *       jsonPath: "items.json",
+ *       ids: ["RBO-1787", "RBO-1288", "RBO-1268"]   // <- just the codes
+ *     });
+ *   </script>
+ *
+ * On a product page (inside /products/), add basePath: "../" and point
+ * jsonPath at "../items.json", same as the other render functions.
+ */
+async function renderProductList({ containerId, jsonPath = "items.json", ids = [], basePath = "" }) {
+  const container = document.getElementById(containerId);
+  if (!container) {
+    console.error(`renderProductList: no element with id "${containerId}" found`);
+    return;
+  }
+  if (ids.length === 0) {
+    console.warn(`renderProductList: no ids given for "${containerId}" — nothing to render`);
+    container.innerHTML = "";
+    return;
+  }
+  container.innerHTML = skeletonGridHtml(ids.length);
+
+  try {
+    const res = await fetch(jsonPath);
+    if (!res.ok) throw new Error(`Failed to load ${jsonPath}: ${res.status}`);
+    const items = await res.json();
+    const byId = new Map(items.map((item) => [item.id, item]));
+
+    const missing = [];
+    const found = [];
+    ids.forEach((id) => {
+      const item = byId.get(id);
+      if (item) found.push(item);
+      else missing.push(id);
+    });
+
+    if (missing.length > 0) {
+      console.warn(
+        `renderProductList ("${containerId}"): ${missing.length} product code(s) not found in ${jsonPath} — ` +
+          `check for typos: ${missing.join(", ")}`
+      );
+    }
+
+    container.innerHTML = found.map((item, i) => cardHtml(item, basePath, i)).join("\n");
+    injectFadeInStyles();
+    registerCartProducts(container);
+  } catch (err) {
+    console.error("renderProductList error:", err);
     container.innerHTML = `<p class="text-sm text-gray-400 col-span-full text-center">Couldn't load products.</p>`;
   }
 }
