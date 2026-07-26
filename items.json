@@ -32,11 +32,11 @@
       "bms-protection",
       "diy-kits"
     ],
-    "discount": "Save BDT 80",
+    "discount": "Save BDT 85",
     "rating": 5,
     "reviews": 26,
     "brand": "Generic",
-    "price": "BDT 100",
+    "price": "BDT 95",
     "original_price": "BDT 180",
     "in_stock": true
   },
@@ -424,11 +424,11 @@
       "battery-packs",
       "18650-batteries"
     ],
-    "discount": "Save BDT 180",
+    "discount": "Save BDT 145",
     "rating": 5,
     "reviews": 12,
     "brand": "Robo Orion",
-    "price": "BDT 600",
+    "price": "BDT 635",
     "original_price": "BDT 780",
     "in_stock": true
   },
@@ -480,11 +480,11 @@
       "battery-packs",
       "18650-batteries"
     ],
-    "discount": "Save BDT 160",
+    "discount": "Save BDT 130",
     "rating": 5,
     "reviews": 12,
     "brand": "Robo Orion",
-    "price": "BDT 620",
+    "price": "BDT 650",
     "original_price": "BDT 780",
     "in_stock": true
   },
@@ -1176,11 +1176,11 @@
       "battery-packs",
       "diy-kits"
     ],
-    "discount": "Save BDT 90",
+    "discount": "Save BDT 100",
     "rating": 5,
     "reviews": 16,
     "brand": "Generic",
-    "price": "BDT 690",
+    "price": "BDT 680",
     "original_price": "BDT 780",
     "in_stock": true
   },
@@ -1813,11 +1813,11 @@
       "charge-controllers",
       "diy-kits"
     ],
-    "discount": "Save BDT 160",
+    "discount": "Save BDT 165",
     "rating": 5,
     "reviews": 15,
     "brand": "Generic",
-    "price": "BDT 290",
+    "price": "BDT 285",
     "original_price": "BDT 450",
     "in_stock": true
   },
@@ -1832,11 +1832,11 @@
       "lithium-batteries",
       "diy-kits"
     ],
-    "discount": "Save BDT 100",
+    "discount": "Save BDT 95",
     "rating": 5,
     "reviews": 16,
     "brand": "Generic",
-    "price": "BDT 60",
+    "price": "BDT 65",
     "original_price": "BDT 160",
     "in_stock": true
   },
@@ -2259,11 +2259,11 @@
     "categories": [
       "converter-modules"
     ],
-    "discount": "Save BDT 30",
+    "discount": "Save BDT 35",
     "rating": 5,
     "reviews": 22,
     "brand": "Chinese",
-    "price": "BDT 35",
+    "price": "BDT 30",
     "original_price": "BDT 65",
     "in_stock": true
   },
@@ -2791,11 +2791,11 @@
       "bms-protection",
       "converter-modules"
     ],
-    "discount": null,
+    "discount": "Save BDT 22",
     "rating": 5,
     "reviews": 24,
     "brand": "Robo Orion",
-    "price": "BDT 20",
+    "price": "BDT 18",
     "original_price": "BDT 40",
     "in_stock": true
   },
@@ -3477,7 +3477,7 @@
   },
   {
     "id": "RBO-1139",
-    "title": "2S 20A BMS for Li-ion Battery Protection Board",
+    "title": "2S 20A 8.4v Balanced BMS for Li-ion Battery Protection Board",
     "url": "products/1139-2s-20a-bms-li-ion-battery-protection-board-robo-orion-bangladesh.html",
     "image": "img/product/1139-2s-20a-bms-li-ion-battery-protection-board-robo-orion-bangladesh.jpg",
     "alt": "2S 20A BMS for Li-ion Battery Protection Board",
@@ -3485,11 +3485,11 @@
       "bms-protection",
       "diy-kits"
     ],
-    "discount": "Save BDT 95",
+    "discount": "Save BDT 85",
     "rating": 5,
     "reviews": 22,
     "brand": "Chinese",
-    "price": "BDT 55",
+    "price": "BDT 65",
     "original_price": "BDT 150",
     "in_stock": true
   },
