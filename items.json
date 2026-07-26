@@ -1,5 +1,42 @@
 [
   {
+  "id": "RBO-1342",
+  "title": "22 AWG Highly Flexible Silicone Wire - Red (1 Feet)",
+  "url": "products/1342-22-awg-silicone-wire-red-1-feet-robo-orion-bangladesh.html",
+  "image": "img/product/1342-22-awg-silicone-wire-red-1-feet-robo-orion-bangladesh.jpg",
+  "alt": "22 AWG Highly Flexible Silicone Wire Red 1 Feet",
+  "categories": [
+    "wire-cables",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 25",
+  "rating": 5,
+  "reviews": 11,
+  "brand": "Generic",
+  "price": "BDT 35",
+  "original_price": "BDT 60",
+  "in_stock": true
+},
+  {
+    "id": "RBO-1341",
+    "title": "WLXY DIY001 Mini PCB Drill Chuck Set (0.5mm - 3.0mm)",
+    "url": "products/1341-mini-drill-chuck-wlxy-diy001-robo-orion-bangladesh.html",
+    "image": "img/product/1341-mini-drill-chuck-wlxy-diy001-robo-orion-bangladesh.jpg",
+    "alt": "WLXY DIY001 Mini PCB Drill Chuck Set",
+    "categories": [
+      "repair-tools",
+      "dc-motors",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 80",
+    "rating": 5,
+    "reviews": 7,
+    "brand": "WLXY",
+    "price": "BDT 140",
+    "original_price": "BDT 220",
+    "in_stock": true
+  },
+  {
     "id": "RBO-1340",
     "title": "3inch Round 4-Ohm 30W Full-Range Mid-Bass Speaker 81mm High-Definition Soundbar Bluetooth Speaker",
     "url": "products/1340-3inch-round-4-ohm-30w-full-range-mid-bass-speaker-robo-orion-bangladesh.html",
@@ -1100,11 +1137,11 @@
       "bldc-motors",
       "motor-drivers"
     ],
-    "discount": "Save BDT 40",
+    "discount": "Save BDT 45",
     "rating": 5,
     "reviews": 12,
     "brand": "Generic",
-    "price": "BDT 150",
+    "price": "BDT 145",
     "original_price": "BDT 190",
     "in_stock": true
   },
@@ -1342,11 +1379,11 @@
       "dc-connectors",
       "diy-kits"
     ],
-    "discount": "Save BDT 15",
+    "discount": null,
     "rating": 5,
     "reviews": 12,
     "brand": "Generic",
-    "price": "BDT 20",
+    "price": "BDT 35",
     "original_price": "BDT 35",
     "in_stock": true
   },
@@ -4086,7 +4123,7 @@
       "diy-kits"
     ],
     "discount": "Save BDT 45",
-    "rating": 4,
+    "rating": 5,
     "reviews": 12,
     "brand": "Generic",
     "price": "BDT 45",

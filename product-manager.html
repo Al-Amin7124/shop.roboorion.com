@@ -410,6 +410,7 @@
         <button class="btn ghost small" id="changeFolderBtn" style="display:none">Change folder</button>
         <button class="btn primary" id="saveBtn" disabled>Save now</button>
         <button class="btn ghost" id="downloadBtn">Download JSON</button>
+        <button class="btn ghost" id="editPathBtn">Edit file path…</button>
       </div>
     </div>
     <div class="banner" id="compatBanner">Live-save to disk needs Chrome or Edge on Windows. Your browser doesn't support it — use <strong>Download JSON</strong> after editing and replace the file manually.</div>
@@ -469,6 +470,31 @@
 </div>
 
 <div id="toast"></div>
+
+<!-- File path editor -->
+<div class="overlay" id="pathOverlay">
+  <div class="picker" style="max-width:560px;">
+    <div class="picker-head">
+      <h3>Edit file path</h3>
+      <button class="btn ghost small" id="pathCloseBtn">Close</button>
+    </div>
+    <div class="picker-search"><input type="text" id="pathSearchInput" placeholder="Search by product code or title…"></div>
+    <div class="picker-body" id="pathListBody" style="max-height:280px;"></div>
+    <div id="pathEditSection" style="display:none; padding:14px 18px; border-top:1px solid var(--line);">
+      <div style="margin-bottom:8px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+        <span class="sku" id="pathEditSku"></span>
+        <span style="color:var(--text-dim); font-size:12.5px;" id="pathEditTitle"></span>
+      </div>
+      <label style="font-size:11px; color:var(--text-faint); text-transform:uppercase; letter-spacing:.05em;">File path (relative to the product folder, e.g. products/xxx.html)</label>
+      <input type="text" id="pathEditInput" spellcheck="false" style="width:100%; margin-top:6px; background:var(--bg-alt); border:1px solid var(--line); border-radius:6px; padding:8px 10px; font-family:var(--mono); font-size:12.5px; color:var(--text); outline:none;">
+      <div style="display:flex; gap:8px; margin-top:12px; justify-content:flex-end;">
+        <button class="btn ghost small" id="pathCancelBtn">Cancel</button>
+        <button class="btn primary small" id="pathSaveBtn">Save path</button>
+      </div>
+      <p style="font-size:11px; color:var(--text-faint); margin-top:10px;">This only updates the reference stored in items.json — it does not rename or move the actual HTML file on disk. Make sure a file already exists at the new path before saving.</p>
+    </div>
+  </div>
+</div>
 
 <script>
 (function(){
@@ -1174,6 +1200,71 @@
     return changed;
   }
 
+  /* ---------------- File path editor (separate from cards, deliberate action) ---------------- */
+  var pathEditorState = { selectedId: null };
+
+  function openPathEditor(){
+    pathEditorState.selectedId = null;
+    $("#pathSearchInput").value = "";
+    $("#pathEditSection").style.display = "none";
+    renderPathList("");
+    $("#pathOverlay").classList.add("show");
+  }
+  function closePathEditor(){
+    $("#pathOverlay").classList.remove("show");
+  }
+  function renderPathList(q){
+    q = (q||"").trim().toLowerCase();
+    var body = $("#pathListBody");
+    if(!state.items.length){
+      body.innerHTML = '<p style="padding:12px 16px; color:var(--text-faint); font-size:12px;">Open a product folder first.</p>';
+      return;
+    }
+    var list = state.items.filter(function(it){
+      if(!q) return true;
+      return String(it.id).toLowerCase().indexOf(q) !== -1 || String(it.title||"").toLowerCase().indexOf(q) !== -1;
+    }).slice(0, 40);
+    if(!list.length){
+      body.innerHTML = '<p style="padding:12px 16px; color:var(--text-faint); font-size:12px;">No matches.</p>';
+      return;
+    }
+    body.innerHTML = list.map(function(it){
+      return '<div class="path-row" data-id="'+esc(it.id)+'" style="display:flex; flex-direction:column; gap:2px; padding:8px 10px; border-radius:6px; cursor:pointer;">' +
+        '<div style="display:flex; gap:8px; align-items:center;"><span class="sku">'+esc(it.id)+'</span><span style="font-size:12.5px; color:var(--text);">'+esc(it.title)+'</span></div>' +
+        '<div style="font-family:var(--mono); font-size:10.5px; color:var(--text-faint);">'+esc(it.url||"— no path set —")+'</div>' +
+      '</div>';
+    }).join("");
+    $all(".path-row", body).forEach(function(row){
+      row.addEventListener("mouseenter", function(){ row.style.background = "var(--bg-alt)"; });
+      row.addEventListener("mouseleave", function(){ row.style.background = ""; });
+      row.addEventListener("click", function(){ selectItemForPathEdit(row.getAttribute("data-id")); });
+    });
+  }
+  function selectItemForPathEdit(id){
+    var it = findItem(id);
+    if(!it) return;
+    pathEditorState.selectedId = id;
+    $("#pathEditSku").textContent = it.id;
+    $("#pathEditTitle").textContent = it.title;
+    $("#pathEditInput").value = it.url || "";
+    $("#pathEditSection").style.display = "block";
+  }
+  function savePathEdit(){
+    var id = pathEditorState.selectedId;
+    if(!id) return;
+    var it = findItem(id);
+    if(!it) return;
+    var newUrl = $("#pathEditInput").value.trim();
+    if(!newUrl){ toast("Path can't be empty"); return; }
+    if(newUrl !== it.url){
+      it.url = newUrl;
+      markDirty();
+      toast("Updated file path for " + id);
+    }
+    closePathEditor();
+    render();
+  }
+
   /* ---------------- Category picker ---------------- */
   function openCatPicker(id){
     var it = findItem(id);
@@ -1390,8 +1481,27 @@
     });
     $("#pickerDone").addEventListener("click", function(){ closeCatPicker(true); });
     $("#pickerSearch").addEventListener("input", function(e){ renderPickerBody(e.target.value); });
+
+    // File path editor events
+    $("#editPathBtn").addEventListener("click", openPathEditor);
+    $("#pathCloseBtn").addEventListener("click", closePathEditor);
+    $("#pathCancelBtn").addEventListener("click", closePathEditor);
+    $("#pathSaveBtn").addEventListener("click", savePathEdit);
+    $("#pathOverlay").addEventListener("click", function(e){
+      if(e.target.id === "pathOverlay") closePathEditor();
+    });
+    var pathSearchTimer;
+    $("#pathSearchInput").addEventListener("input", function(e){
+      clearTimeout(pathSearchTimer);
+      var v = e.target.value;
+      pathSearchTimer = setTimeout(function(){ renderPathList(v); }, 150);
+    });
+
     document.addEventListener("keydown", function(e){
-      if(e.key === "Escape" && $("#catOverlay").classList.contains("show")) closeCatPicker(true);
+      if(e.key === "Escape"){
+        if($("#catOverlay").classList.contains("show")) closeCatPicker(true);
+        if($("#pathOverlay").classList.contains("show")) closePathEditor();
+      }
     });
 
     initGridEvents();
