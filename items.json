@@ -1,5 +1,24 @@
 [
   {
+  "id": "RBO-1346",
+  "title": "DC12V-40V 10A PWM Adjustable DC Motor Speed Controller Regulator",
+  "url": "products/1346-dc12v-40v-10a-pwm-dc-motor-speed-controller-robo-orion-bangladesh.html",
+  "image": "img/product/1346-dc12v-40v-10a-pwm-dc-motor-speed-controller-robo-orion-bangladesh.jpg",
+  "alt": "DC12V-40V 10A PWM Adjustable DC Motor Speed Controller Regulator",
+  "categories": [
+    "motor-drivers",
+    "converter-modules",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 100",
+  "rating": 5,
+  "reviews": 22,
+  "brand": "Generic",
+  "price": "BDT 280",
+  "original_price": "BDT 380",
+  "in_stock": true
+},
+  {
   "id": "RBO-1345",
   "title": "300W XL4016 MAX 20A DC-DC Step Down Buck Converter 5-40V to 1.2-35V Adjustable Power Supply Module",
   "url": "products/1345-300w-xl4016-max-20a-dc-dc-step-down-buck-converter-robo-orion-bangladesh.html",
