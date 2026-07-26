@@ -482,6 +482,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     window.clearSearch = function () {
+        clearTimeout(searchDebounceTimer);
         searchInput.value = '';
         clearBtn?.classList.add('hidden');
 
@@ -502,14 +503,21 @@ document.addEventListener('DOMContentLoaded', function () {
         searchInput.focus();
     };
 
+    let searchDebounceTimer = null;
     searchInput.addEventListener('input', function() {
         clearBtn?.classList.toggle('hidden', searchInput.value === '');
-        if (hasGrid) performSearch();
+        if (!hasGrid) return;
+        // Debounced — scoring + reordering ~185 cards on every single
+        // keystroke is expensive; waiting briefly for typing to pause
+        // keeps the input itself feeling instant regardless.
+        clearTimeout(searchDebounceTimer);
+        searchDebounceTimer = setTimeout(performSearch, 150);
     });
 
     searchInput.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') window.clearSearch();
         if (e.key === 'Enter') {
+            clearTimeout(searchDebounceTimer);
             if (hasGrid) performSearch();
             else redirectToSearch();
         }

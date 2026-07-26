@@ -580,6 +580,16 @@ async function renderCatalog({ containerId, jsonPath = "items.json", basePath = 
     } else {
       console.warn("renderCatalog: initPagination() not found — pagination controls may not work until product.js defines it");
     }
+
+    // If the page was opened with ?search=... (a deep link from another
+    // page), product.js's own search already tried to run this at load
+    // time against an empty grid. Re-trigger it now via its own "input"
+    // listener (performSearch itself isn't exposed globally, so we
+    // dispatch the same event it's already listening for).
+    const searchInput = document.getElementById("searchInput");
+    if (searchInput && searchInput.value) {
+      searchInput.dispatchEvent(new Event("input", { bubbles: true }));
+    }
   } catch (err) {
     console.error("renderCatalog error:", err);
     container.innerHTML = `<p class="text-sm text-gray-400 col-span-full text-center">Couldn't load products.</p>`;

@@ -405,6 +405,7 @@
       <div class="file-controls">
         <span class="status-pill" id="statusPill"><span class="status-dot"></span><span id="statusText">idle</span></span>
         <label class="switch-label"><span class="switch" id="autosaveSwitch"></span>Autosave</label>
+        <label class="switch-label"><span class="switch" id="htmlSyncSwitch"></span>Sync product pages</label>
         <button class="btn" id="openBtn">Choose product folder</button>
         <button class="btn ghost small" id="changeFolderBtn" style="display:none">Change folder</button>
         <button class="btn primary" id="saveBtn" disabled>Save now</button>
@@ -506,6 +507,7 @@
     fileHandle: null,
     dirty: false,
     autosave: true,
+    htmlSync: true,
     saving: false,
     search: "",
     category: "all",
@@ -737,6 +739,137 @@
     document.body.removeChild(a);
     setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
     toast("Downloaded items.json");
+  }
+
+  /* ---------------- Individual product page sync ---------------- */
+  var htmlSyncTimers = {};
+
+  function scheduleHtmlSync(item){
+    if(!state.htmlSync || !state.dirHandle || !item || !item.url) return;
+    clearTimeout(htmlSyncTimers[item.id]);
+    htmlSyncTimers[item.id] = setTimeout(function(){ syncProductHtml(item); }, 900);
+  }
+
+  function applyItemToProductHtml(htmlText, item){
+    var doc = new DOMParser().parseFromString(htmlText, "text/html");
+
+    // Safety check: never write into the wrong product's page.
+    var codeEl = doc.querySelector(".productCode");
+    if(codeEl && codeEl.textContent.trim() !== String(item.id)){
+      return { ok:false, reason:"Product code on page (" + codeEl.textContent.trim() + ") doesn't match " + item.id };
+    }
+
+    var priceInfo = parsePriceStr(item.price);
+    var origInfo = parsePriceStr(item.original_price);
+    var ratingVal = Math.max(0, Math.min(5, Math.round(Number(item.rating) || 0)));
+    var reviewsVal = Math.max(0, parseInt(item.reviews, 10) || 0);
+    var availSchema = item.in_stock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock";
+    var availText = item.in_stock ? "in stock" : "out of stock";
+    var imgSrc = item.image ? ("../" + item.image) : null;
+    var altText = item.alt || item.title || "";
+
+    if(codeEl) codeEl.textContent = String(item.id); // untouched, kept for clarity
+
+    var nameEl = doc.querySelector(".productName");
+    if(nameEl) nameEl.textContent = item.title || nameEl.textContent;
+
+    // Brand: label span followed by a plain text node with the brand value
+    $all("p", doc).forEach(function(p){
+      var labelSpan = p.querySelector("span");
+      if(labelSpan && labelSpan.textContent.trim() === "Brand"){
+        var node = labelSpan.nextSibling;
+        if(node && node.nodeType === 3){ node.textContent = " " + (item.brand || ""); }
+        else { p.appendChild(doc.createTextNode(" " + (item.brand || ""))); }
+      }
+    });
+
+    var priceEl = doc.querySelector(".offer-price");
+    if(priceEl){
+      priceEl.textContent = formatPriceStr(priceInfo.prefix, priceInfo.value);
+      priceEl.setAttribute("content", String(priceInfo.value));
+    }
+    var origEl = doc.querySelector(".originalPrice");
+    if(origEl) origEl.textContent = formatPriceStr(origInfo.prefix, origInfo.value);
+
+    var ratingBox = doc.querySelector('[aria-label^="Rating:"]');
+    if(ratingBox){
+      ratingBox.setAttribute("aria-label", "Rating: " + ratingVal + " out of 5, " + reviewsVal + " reviews");
+      $all("i", ratingBox).forEach(function(i){ i.remove(); });
+      var countSpan = ratingBox.querySelector("span");
+      for(var s=0; s<5; s++){
+        var icon = doc.createElement("i");
+        icon.className = (s < ratingVal ? "fa-solid fa-star" : "fa-regular fa-star") + " text-sm";
+        icon.setAttribute("aria-hidden", "true");
+        if(countSpan) ratingBox.insertBefore(icon, countSpan); else ratingBox.appendChild(icon);
+      }
+      if(countSpan) countSpan.textContent = "(" + reviewsVal + ")";
+    }
+
+    if(imgSrc){
+      var mainImg = doc.querySelector("#mainImage");
+      if(mainImg){ mainImg.setAttribute("src", imgSrc); mainImg.setAttribute("alt", altText); }
+      $all(".product-thumbnail img", doc).forEach(function(img){ img.setAttribute("src", imgSrc); img.setAttribute("alt", altText); });
+    }
+
+    var metaMap = [
+      ["meta[property='product:price:amount']", "content", String(priceInfo.value)],
+      ["meta[property='product:availability']", "content", availText],
+      ["meta[property='product:brand']", "content", item.brand || ""],
+      ["meta[itemprop='availability']", "content", availSchema]
+    ];
+    metaMap.forEach(function(row){
+      var el = doc.querySelector(row[0]);
+      if(el) el.setAttribute(row[1], row[2]);
+    });
+    if(imgSrc){
+      var absImg = "https://roboorion.com/" + item.image;
+      var ogImg = doc.querySelector('meta[property="og:image"]'); if(ogImg) ogImg.setAttribute("content", absImg);
+      var ogImgAlt = doc.querySelector('meta[property="og:image:alt"]'); if(ogImgAlt) ogImgAlt.setAttribute("content", altText);
+      var twImg = doc.querySelector('meta[name="twitter:image"]'); if(twImg) twImg.setAttribute("content", absImg);
+      var twImgAlt = doc.querySelector('meta[name="twitter:image:alt"]'); if(twImgAlt) twImgAlt.setAttribute("content", altText);
+    }
+
+    $all('script[type="application/ld+json"]', doc).forEach(function(scriptEl){
+      var obj;
+      try{ obj = JSON.parse(scriptEl.textContent); }catch(e){ return; }
+      if(!obj || obj["@type"] !== "Product") return;
+      if(obj.brand && typeof obj.brand === "object") obj.brand.name = item.brand || obj.brand.name;
+      if(obj.offers){
+        obj.offers.price = String(priceInfo.value);
+        obj.offers.availability = availSchema;
+      }
+      if(obj.aggregateRating){
+        obj.aggregateRating.ratingValue = String(ratingVal);
+        obj.aggregateRating.reviewCount = reviewsVal;
+      }
+      if(imgSrc && Array.isArray(obj.image)) obj.image = ["https://roboorion.com/" + item.image];
+      scriptEl.textContent = JSON.stringify(obj);
+    });
+
+    var newHtml = "<!DOCTYPE html>\n" + doc.documentElement.outerHTML;
+    return { ok:true, html:newHtml };
+  }
+
+  function syncProductHtml(item){
+    if(!state.dirHandle || !item.url) return;
+    getFileHandleByPath(state.dirHandle, item.url).then(function(fh){
+      return fh.getFile().then(function(file){
+        return file.text().then(function(text){
+          var result = applyItemToProductHtml(text, item);
+          if(!result.ok){
+            toast("Skipped page sync for " + item.id + ": " + result.reason);
+            return;
+          }
+          return fh.createWritable().then(function(w){
+            return w.write(result.html).then(function(){ return w.close(); });
+          }).then(function(){
+            toast("Synced product page: " + item.id);
+          });
+        });
+      });
+    }).catch(function(err){
+      toast("Couldn't sync page for " + item.id + " (" + item.url + "): " + (err && err.message ? err.message : err));
+    });
   }
 
   function markDirty(){
@@ -993,7 +1126,10 @@
       }
     }
 
-    if(changed) markDirty();
+    if(changed){
+      markDirty();
+      scheduleHtmlSync(it);
+    }
     return changed;
   }
 
@@ -1117,6 +1253,7 @@
         var it = findItem(id);
         it.in_stock = !it.in_stock;
         markDirty();
+        scheduleHtmlSync(it);
         render();
       }else if(action === "copy-path"){
         var it2 = findItem(id);
@@ -1162,6 +1299,14 @@
       state.autosave = !state.autosave;
       autoSwitch.classList.toggle("on", state.autosave);
       toast("Autosave " + (state.autosave ? "on" : "off"));
+    });
+
+    var htmlSwitch = $("#htmlSyncSwitch");
+    htmlSwitch.classList.toggle("on", state.htmlSync);
+    htmlSwitch.addEventListener("click", function(){
+      state.htmlSync = !state.htmlSync;
+      htmlSwitch.classList.toggle("on", state.htmlSync);
+      toast("Product page sync " + (state.htmlSync ? "on" : "off"));
     });
 
     var searchTimer;
