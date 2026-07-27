@@ -1,5 +1,25 @@
 [
   {
+  "id": "RBO-1350",
+  "title": "JST XH 2.54mm 3-Pin Female Plug Connector",
+  "url": "products/1350-jst-xh-2-54-3-pin-female-connector-robo-orion-bangladesh.html",
+  "image": "img/product/1350-jst-xh-2-54-3-pin-female-connector-robo-orion-bangladesh.jpg",
+  "alt": "JST XH 2.54mm 3-Pin Female Plug Connector",
+  "categories": [
+    "wire-cables",
+    "dc-connectors",
+    "diy-kits",
+    "pin-headers"
+  ],
+  "discount": "Save BDT 12",
+  "rating": 5,
+  "reviews": 7,
+  "brand": "Generic",
+  "price": "BDT 18",
+  "original_price": "BDT 30",
+  "in_stock": true
+},
+  {
   "id": "RBO-1349",
   "title": "6 Pin JST XH Cable Connector Female to Open - 2.54mm Pitch 20cm",
   "url": "products/1349-6-pin-jst-xh-cable-connector-female-to-open-robo-orion-bangladesh.html",
