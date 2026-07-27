@@ -1,5 +1,24 @@
 [
   {
+  "id": "RBO-1347",
+  "title": "Original Mass Power 5V 2A High-Quality DC Charger Adapter",
+  "url": "products/1347-5v-2a-original-high-quality-charger-adapter-mass-power-robo-orion-bangladesh.html",
+  "image": "img/product/1347-5v-2a-original-high-quality-charger-adapter-mass-power-robo-orion-bangladesh.jpg",
+  "alt": "Original Mass Power 5V 2A High-Quality DC Charger Adapter",
+  "categories": [
+    "power-supply",
+    "chargers",
+    "arduino"
+  ],
+  "discount": "Save BDT 80",
+  "rating": 5,
+  "reviews": 12,
+  "brand": "Mass Power",
+  "price": "BDT 190",
+  "original_price": "BDT 270",
+  "in_stock": true
+},
+  {
     "id": "RBO-1346",
     "title": "DC12V-40V 10A PWM Adjustable DC Motor Speed Controller Regulator",
     "url": "products/1346-dc12v-40v-10a-pwm-dc-motor-speed-controller-robo-orion-bangladesh.html",
