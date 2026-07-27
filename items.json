@@ -1,5 +1,25 @@
 [
   {
+  "id": "RBO-1354",
+  "title": "T Connectors Male and Female (Pair)",
+  "url": "products/1354-t-connectors-male-and-female-pair-robo-orion-bangladesh.html",
+  "image": "img/product/1354-t-connectors-male-and-female-pair-robo-orion-bangladesh.jpg",
+  "alt": "Deans Style T Connectors Male and Female Pair",
+  "categories": [
+    "xt-connectors",
+    "dc-connectors",
+    "drone-accessories",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 20",
+  "rating": 5,
+  "reviews": 7,
+  "brand": "Generic",
+  "price": "BDT 35",
+  "original_price": "BDT 55",
+  "in_stock": true
+},
+  {
   "id": "RBO-1353",
   "title": "LDR 10mm Light Dependent Resistor (10.6mm OD Photoresistor)",
   "url": "products/1353-ldr-10mm-light-dependent-resistor-robo-orion-bangladesh.html",
