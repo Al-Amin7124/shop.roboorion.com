@@ -1,5 +1,25 @@
 [
   {
+  "id": "RBO-1348",
+  "title": "JST XH 2.54mm 4-Pin Male & Female Plug Connector Set",
+  "url": "products/1348-jst-xh-2-54-4-pin-male-female-plug-connector-robo-orion-bangladesh.html",
+  "image": "img/product/1348-jst-xh-2-54-4-pin-male-female-plug-connector-robo-orion-bangladesh.jpg",
+  "alt": "JST XH 2.54 4 Pin Male Female Plug Connector",
+  "categories": [
+    "wire-cables",
+    "pin-headers",
+    "dc-connectors",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 10",
+  "rating": 5,
+  "reviews": 7,
+  "brand": "Generic",
+  "price": "BDT 25",
+  "original_price": "BDT 35",
+  "in_stock": true
+},
+  {
   "id": "RBO-1347",
   "title": "Original Mass Power 5V 2A High-Quality DC Charger Adapter",
   "url": "products/1347-5v-2a-original-high-quality-charger-adapter-mass-power-robo-orion-bangladesh.html",
