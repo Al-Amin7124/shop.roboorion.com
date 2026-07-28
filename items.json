@@ -375,7 +375,9 @@
     "brand": "Generic",
     "price": "BDT 85",
     "original_price": "BDT 120",
-    "in_stock": true
+    "in_stock": true,
+    "weight": 2,
+    "stock": 8
   },
   {
     "id": "RBO-1337",
@@ -394,7 +396,8 @@
     "brand": "Generic",
     "price": "BDT 85",
     "original_price": "BDT 120",
-    "in_stock": true
+    "in_stock": true,
+    "weight": 2
   },
   {
     "id": "RBO-1336",
@@ -1794,7 +1797,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 8,
-    "stock": 3
+    "stock": 1
   },
   {
     "id": "RBO-1268",
@@ -2453,7 +2456,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 10,
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "RBO-1236",
@@ -2770,7 +2773,7 @@
     "in_stock": true,
     "sales_count": 2,
     "weight": 5,
-    "stock": 19
+    "stock": 17
   },
   {
     "id": "RBO-1203",
