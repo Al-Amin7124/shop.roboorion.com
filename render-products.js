@@ -351,6 +351,48 @@ async function renderNewProductsSidebar({ containerId, jsonPath = "items.json", 
 }
 
 /**
+ * Compact "Popular Items" sidebar list — same visual design as the New
+ * Products sidebar (thumbnail + title only), just ranked by the "sold"
+ * field in items.json instead of newest-first.
+ *
+ * USAGE (on a page inside /products/):
+ *   <div id="popular-sidebar"></div>
+ *   <script src="../render-products.js"></script>
+ *   <script>
+ *     renderPopularProductsSidebar({
+ *       containerId: "popular-sidebar",
+ *       jsonPath: "../items.json",
+ *       basePath: "../",
+ *       limit: 8
+ *     });
+ *   </script>
+ */
+async function renderPopularProductsSidebar({ containerId, jsonPath = "items.json", limit = 8, basePath = "" }) {
+  const container = document.getElementById(containerId);
+  if (!container) {
+    console.error(`renderPopularProductsSidebar: no element with id "${containerId}" found`);
+    return;
+  }
+  container.innerHTML = skeletonSidebarHtml(limit);
+  try {
+    const res = await fetch(jsonPath);
+    if (!res.ok) throw new Error(`Failed to load ${jsonPath}: ${res.status}`);
+    const items = await res.json();
+    const ranked = items
+      .slice()
+      .sort((a, b) => (b.sold || 0) - (a.sold || 0))
+      .slice(0, limit);
+    container.innerHTML = ranked
+      .map((item, i) => sidebarItemHtml(item, basePath, i === ranked.length - 1, i))
+      .join("\n");
+    injectFadeInStyles();
+  } catch (err) {
+    console.error("renderPopularProductsSidebar error:", err);
+    container.innerHTML = `<p class="text-sm text-gray-400">Couldn't load popular products.</p>`;
+  }
+}
+
+/**
  * ═══════════════════════════════════════════════════════════════
  * RELATED PRODUCTS — ranked by: title match > category match > random
  * ═══════════════════════════════════════════════════════════════

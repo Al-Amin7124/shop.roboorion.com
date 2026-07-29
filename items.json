@@ -17,7 +17,9 @@
     "price": "BDT 20",
     "original_price": "BDT 45",
     "in_stock": true,
-    "stock": 2
+    "weight": 1,
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1360",
@@ -36,7 +38,10 @@
     "brand": "Generic",
     "price": "BDT 20",
     "original_price": "BDT 45",
-    "in_stock": true
+    "in_stock": true,
+    "weight": 1,
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1359",
@@ -58,7 +63,8 @@
     "original_price": "BDT 75",
     "in_stock": true,
     "weight": 2,
-    "stock": 10
+    "stock": 10,
+    "sold": 0
   },
   {
     "id": "RBO-1358",
@@ -78,7 +84,8 @@
     "price": "BDT 420",
     "original_price": "BDT 550",
     "in_stock": true,
-    "stock": 7
+    "stock": 7,
+    "sold": 0
   },
   {
     "id": "RBO-1357",
@@ -97,7 +104,8 @@
     "price": "BDT 6",
     "original_price": "BDT 12",
     "in_stock": true,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1356",
@@ -117,7 +125,8 @@
     "brand": "Generic (OEM Imported)",
     "price": "BDT 780",
     "original_price": "BDT 1080",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1355",
@@ -137,7 +146,8 @@
     "brand": "Generic (OEM Imported)",
     "price": "BDT 570",
     "original_price": "BDT 680",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1354",
@@ -157,7 +167,8 @@
     "brand": "Generic",
     "price": "BDT 35",
     "original_price": "BDT 55",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1353",
@@ -177,7 +188,8 @@
     "price": "BDT 25",
     "original_price": "BDT 45",
     "in_stock": true,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1352",
@@ -196,7 +208,8 @@
     "brand": "Generic",
     "price": "BDT 15",
     "original_price": "BDT 25",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1351",
@@ -215,7 +228,8 @@
     "brand": "Generic",
     "price": "BDT 5",
     "original_price": "BDT 10",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1350",
@@ -237,7 +251,8 @@
     "original_price": "BDT 30",
     "in_stock": true,
     "weight": 2,
-    "stock": 4
+    "stock": 4,
+    "sold": 0
   },
   {
     "id": "RBO-1349",
@@ -258,7 +273,8 @@
     "original_price": "BDT 65",
     "in_stock": true,
     "weight": 6,
-    "stock": 4
+    "stock": 4,
+    "sold": 0
   },
   {
     "id": "RBO-1348",
@@ -280,7 +296,8 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 4,
-    "stock": 10
+    "stock": 10,
+    "sold": 0
   },
   {
     "id": "RBO-1347",
@@ -299,7 +316,8 @@
     "brand": "Mass Power",
     "price": "BDT 190",
     "original_price": "BDT 270",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1346",
@@ -318,7 +336,8 @@
     "brand": "Generic",
     "price": "BDT 280",
     "original_price": "BDT 380",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1345",
@@ -338,7 +357,8 @@
     "brand": "Generic",
     "price": "BDT 450",
     "original_price": "BDT 550",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1344",
@@ -356,7 +376,8 @@
     "brand": "Generic",
     "price": "BDT 20",
     "original_price": "BDT 35",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1343",
@@ -376,7 +397,8 @@
     "brand": "Generic",
     "price": "BDT 30",
     "original_price": "BDT 65",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1342",
@@ -394,11 +416,12 @@
     "brand": "Generic",
     "price": "BDT 35",
     "original_price": "BDT 60",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1341",
-    "title": "DIY001 Mini PCB Drill Chuck Set (0.5mm - 3.0mm)",
+    "title": "WLXY DIY001 Mini PCB Drill Chuck Set (0.5mm - 3.0mm)",
     "url": "products/1341-mini-drill-chuck-wlxy-diy001-robo-orion-bangladesh.html",
     "image": "img/product/1341-mini-drill-chuck-wlxy-diy001-robo-orion-bangladesh.jpg",
     "alt": "WLXY DIY001 Mini PCB Drill Chuck Set",
@@ -410,12 +433,13 @@
     "discount": "Save BDT 80",
     "rating": 5,
     "reviews": 7,
-    "brand": "Generic",
+    "brand": "WLXY",
     "price": "BDT 140",
     "original_price": "BDT 220",
     "in_stock": true,
-    "stock": 1,
-    "weight": 25
+    "sold": 0,
+    "weight": 25,
+    "stock": 1
   },
   {
     "id": "RBO-1340",
@@ -436,7 +460,8 @@
     "brand": "HB",
     "price": "BDT 1750",
     "original_price": "BDT 2250",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1339",
@@ -458,7 +483,8 @@
     "original_price": "BDT 180",
     "in_stock": true,
     "weight": 2,
-    "stock": 10
+    "stock": 10,
+    "sold": 0
   },
   {
     "id": "RBO-1338",
@@ -479,7 +505,8 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "weight": 2,
-    "stock": 8
+    "stock": 8,
+    "sold": 0
   },
   {
     "id": "RBO-1337",
@@ -499,7 +526,8 @@
     "price": "BDT 85",
     "original_price": "BDT 120",
     "in_stock": true,
-    "weight": 2
+    "weight": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1336",
@@ -518,7 +546,8 @@
     "brand": "Generic",
     "price": "BDT 85",
     "original_price": "BDT 120",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1335",
@@ -538,7 +567,8 @@
     "brand": "Generic",
     "price": "BDT 85",
     "original_price": "BDT 120",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1334",
@@ -558,7 +588,8 @@
     "brand": "LiitoKala",
     "price": "BDT 2250",
     "original_price": "BDT 2750",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1333",
@@ -577,7 +608,8 @@
     "brand": "Generic",
     "price": "BDT 885",
     "original_price": "BDT 1150",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1332",
@@ -596,7 +628,8 @@
     "brand": "Generic",
     "price": "BDT 15",
     "original_price": "BDT 25",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1331",
@@ -615,7 +648,8 @@
     "brand": "Generic",
     "price": "BDT 520",
     "original_price": "BDT 780",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1330",
@@ -634,7 +668,8 @@
     "brand": "Generic",
     "price": "BDT 370",
     "original_price": "BDT 450",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1329",
@@ -655,7 +690,8 @@
     "brand": "Generic",
     "price": "BDT 195",
     "original_price": "BDT 320",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1328",
@@ -675,7 +711,8 @@
     "brand": "Generic",
     "price": "BDT 85",
     "original_price": "BDT 120",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1327",
@@ -696,7 +733,8 @@
     "brand": "Generic",
     "price": "BDT 125",
     "original_price": "BDT 180",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1326",
@@ -717,7 +755,8 @@
     "brand": "Generic",
     "price": "BDT 390",
     "original_price": "BDT 490",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1325",
@@ -738,7 +777,8 @@
     "brand": "Generic",
     "price": "BDT 520",
     "original_price": "BDT 650",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1282",
@@ -759,7 +799,8 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 5,
-    "stock": 9
+    "stock": 9,
+    "sold": 0
   },
   {
     "id": "RBO-1324",
@@ -778,7 +819,8 @@
     "brand": "Generic",
     "price": "BDT 580",
     "original_price": "BDT 990",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1323",
@@ -799,7 +841,8 @@
     "brand": "Generic",
     "price": "BDT 510",
     "original_price": "BDT 620",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1322",
@@ -819,7 +862,8 @@
     "brand": "Robo Orion",
     "price": "Contact for Price",
     "original_price": null,
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1283",
@@ -840,7 +884,8 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 7,
-    "stock": 4
+    "stock": 4,
+    "sold": 0
   },
   {
     "id": "RBO-1321",
@@ -859,7 +904,8 @@
     "brand": "Robo Orion",
     "price": "BDT 635",
     "original_price": "BDT 780",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1320",
@@ -878,7 +924,8 @@
     "price": "BDT 35",
     "original_price": "BDT 50",
     "in_stock": true,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1319",
@@ -898,7 +945,8 @@
     "price": "BDT 150",
     "original_price": "BDT 220",
     "in_stock": true,
-    "weight": 45
+    "weight": 45,
+    "sold": 0
   },
   {
     "id": "RBO-1318",
@@ -920,7 +968,8 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 135,
-    "stock": 4
+    "stock": 4,
+    "sold": 0
   },
   {
     "id": "RBO-1317",
@@ -940,7 +989,8 @@
     "original_price": "BDT 1020",
     "in_stock": true,
     "weight": 30,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1316",
@@ -960,7 +1010,8 @@
     "original_price": "BDT 520",
     "in_stock": true,
     "weight": 15,
-    "stock": 4
+    "stock": 4,
+    "sold": 0
   },
   {
     "id": "RBO-1315",
@@ -982,7 +1033,8 @@
     "original_price": "BDT 385",
     "in_stock": true,
     "weight": 12,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1314",
@@ -1004,7 +1056,8 @@
     "original_price": "BDT 320",
     "in_stock": true,
     "weight": 8,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1313",
@@ -1026,7 +1079,8 @@
     "in_stock": true,
     "weight": 180,
     "stock": 9,
-    "sales_count": 1
+    "sales_count": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1312",
@@ -1046,7 +1100,8 @@
     "original_price": "BDT 320",
     "in_stock": true,
     "weight": 47,
-    "stock": 20
+    "stock": 20,
+    "sold": 0
   },
   {
     "id": "RBO-1311",
@@ -1066,7 +1121,8 @@
     "original_price": "BDT 290",
     "in_stock": true,
     "weight": 45,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1310",
@@ -1087,7 +1143,8 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 2,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1309",
@@ -1108,7 +1165,8 @@
     "original_price": "BDT 180",
     "in_stock": true,
     "weight": 20,
-    "stock": 3
+    "stock": 3,
+    "sold": 0
   },
   {
     "id": "RBO-1308",
@@ -1131,7 +1189,8 @@
     "original_price": "BDT 250",
     "in_stock": true,
     "weight": 12,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1307",
@@ -1152,7 +1211,8 @@
     "in_stock": true,
     "sales_count": 7,
     "weight": 1,
-    "stock": 10
+    "stock": 10,
+    "sold": 0
   },
   {
     "id": "RBO-1306",
@@ -1173,7 +1233,8 @@
     "in_stock": true,
     "sales_count": 3,
     "weight": 2,
-    "stock": 14
+    "stock": 14,
+    "sold": 0
   },
   {
     "id": "RBO-1305",
@@ -1194,7 +1255,8 @@
     "in_stock": true,
     "sales_count": 3,
     "weight": 2,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1304",
@@ -1212,7 +1274,8 @@
     "brand": "Generic",
     "price": "BDT 280",
     "original_price": "BDT 380",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1303",
@@ -1233,7 +1296,8 @@
     "original_price": "BDT 250",
     "in_stock": true,
     "weight": 45,
-    "stock": 17
+    "stock": 17,
+    "sold": 0
   },
   {
     "id": "RBO-1302",
@@ -1254,6 +1318,7 @@
     "in_stock": true,
     "weight": 1,
     "stock": 13,
+    "sold": 0,
     "sales_count": 1
   },
   {
@@ -1275,7 +1340,8 @@
     "in_stock": true,
     "sales_count": 2,
     "weight": 2,
-    "stock": 15
+    "stock": 15,
+    "sold": 0
   },
   {
     "id": "RBO-1300",
@@ -1296,7 +1362,8 @@
     "in_stock": true,
     "sales_count": 2,
     "weight": 2,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1299",
@@ -1316,7 +1383,8 @@
     "original_price": "BDT 40",
     "in_stock": true,
     "weight": 2,
-    "stock": 8
+    "stock": 8,
+    "sold": 0
   },
   {
     "id": "RBO-1298",
@@ -1336,7 +1404,8 @@
     "original_price": "BDT 180",
     "in_stock": true,
     "weight": 13,
-    "stock": 10
+    "stock": 10,
+    "sold": 0
   },
   {
     "id": "RBO-1297",
@@ -1354,7 +1423,8 @@
     "brand": "Robo Orion",
     "price": "BDT 320",
     "original_price": "BDT 380",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1296",
@@ -1375,7 +1445,8 @@
     "original_price": "BDT 580",
     "in_stock": true,
     "weight": 300,
-    "stock": 1
+    "stock": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1295",
@@ -1397,7 +1468,8 @@
     "in_stock": true,
     "sales_count": 2,
     "weight": 2,
-    "stock": 23
+    "stock": 23,
+    "sold": 0
   },
   {
     "id": "RBO-1294",
@@ -1419,6 +1491,7 @@
     "in_stock": true,
     "weight": 2,
     "stock": 16,
+    "sold": 0,
     "sales_count": 1
   },
   {
@@ -1441,7 +1514,8 @@
     "original_price": "BDT 15",
     "in_stock": true,
     "weight": 5,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1292",
@@ -1461,7 +1535,8 @@
     "original_price": "BDT 85",
     "in_stock": true,
     "weight": 35,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1291",
@@ -1482,7 +1557,8 @@
     "original_price": "BDT 85",
     "in_stock": true,
     "weight": 5,
-    "stock": 40
+    "stock": 40,
+    "sold": 0
   },
   {
     "id": "RBO-1290",
@@ -1502,7 +1578,8 @@
     "original_price": "BDT 85",
     "in_stock": true,
     "weight": 15,
-    "stock": 3
+    "stock": 3,
+    "sold": 0
   },
   {
     "id": "RBO-1289",
@@ -1523,7 +1600,8 @@
     "original_price": "BDT 420",
     "in_stock": true,
     "weight": 65,
-    "sales_count": 1
+    "sales_count": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1288",
@@ -1545,7 +1623,8 @@
     "original_price": "BDT 220",
     "in_stock": true,
     "weight": 5,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1287",
@@ -1568,7 +1647,8 @@
     "in_stock": true,
     "weight": 5,
     "stock": 9,
-    "sales_count": 1
+    "sales_count": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1286",
@@ -1589,7 +1669,8 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "weight": 85,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1285",
@@ -1612,7 +1693,8 @@
     "original_price": "BDT 190",
     "in_stock": true,
     "weight": 5,
-    "stock": 10
+    "stock": 10,
+    "sold": 0
   },
   {
     "id": "RBO-1284",
@@ -1634,7 +1716,8 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 7,
-    "stock": 9
+    "stock": 9,
+    "sold": 0
   },
   {
     "id": "RBO-1281",
@@ -1655,7 +1738,8 @@
     "original_price": "BDT 1490",
     "in_stock": true,
     "weight": 245,
-    "stock": 1
+    "stock": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1280",
@@ -1676,7 +1760,8 @@
     "original_price": "BDT 380",
     "in_stock": true,
     "weight": 25,
-    "stock": 3
+    "stock": 3,
+    "sold": 0
   },
   {
     "id": "RBO-1279",
@@ -1697,7 +1782,8 @@
     "original_price": "BDT 780",
     "in_stock": true,
     "weight": 200,
-    "stock": 4
+    "stock": 4,
+    "sold": 0
   },
   {
     "id": "RBO-1278",
@@ -1716,7 +1802,8 @@
     "price": "BDT 320",
     "original_price": "BDT 380",
     "in_stock": true,
-    "weight": 100
+    "weight": 100,
+    "sold": 0
   },
   {
     "id": "RBO-1277",
@@ -1736,7 +1823,8 @@
     "price": "BDT 55",
     "original_price": "BDT 70",
     "in_stock": true,
-    "sales_count": 2
+    "sales_count": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1276",
@@ -1756,7 +1844,8 @@
     "original_price": "BDT 480",
     "in_stock": true,
     "sales_count": 4,
-    "stock": 1
+    "stock": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1275",
@@ -1776,7 +1865,8 @@
     "original_price": "BDT 280",
     "in_stock": true,
     "weight": 20,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1274",
@@ -1797,7 +1887,8 @@
     "original_price": "BDT 2200",
     "in_stock": true,
     "sales_count": 1,
-    "weight": 100
+    "weight": 100,
+    "sold": 0
   },
   {
     "id": "RBO-1273",
@@ -1818,7 +1909,8 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 20,
-    "stock": 3
+    "stock": 3,
+    "sold": 0
   },
   {
     "id": "RBO-1272",
@@ -1839,7 +1931,8 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "weight": 8,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1271",
@@ -1858,7 +1951,8 @@
     "price": "BDT 690",
     "original_price": "BDT 890",
     "in_stock": true,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1270",
@@ -1879,7 +1973,8 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 2,
-    "stock": 50
+    "stock": 50,
+    "sold": 0
   },
   {
     "id": "RBO-1269",
@@ -1901,7 +1996,8 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 8,
-    "stock": 1
+    "stock": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1268",
@@ -1922,7 +2018,8 @@
     "in_stock": true,
     "sales_count": 5,
     "weight": 5,
-    "stock": 11
+    "stock": 11,
+    "sold": 0
   },
   {
     "id": "RBO-1267",
@@ -1943,7 +2040,8 @@
     "original_price": "BDT 85",
     "in_stock": true,
     "weight": 4,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1266",
@@ -1961,7 +2059,8 @@
     "brand": "Chinese",
     "price": "BDT 300",
     "original_price": "BDT 450",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1265",
@@ -1980,7 +2079,8 @@
     "brand": "Kangming",
     "price": "BDT 1650",
     "original_price": "BDT 2290",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1264",
@@ -1998,7 +2098,8 @@
     "brand": "Chinese",
     "price": "BDT 2250",
     "original_price": "BDT 3250",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1263",
@@ -2017,7 +2118,8 @@
     "brand": "Generic",
     "price": "BDT 10800",
     "original_price": "BDT 16900",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1262",
@@ -2036,7 +2138,8 @@
     "brand": "Peacefair",
     "price": "BDT 2200",
     "original_price": "BDT 3650",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1261",
@@ -2057,7 +2160,8 @@
     "original_price": "BDT 1850",
     "in_stock": true,
     "weight": 100,
-    "stock": 1
+    "stock": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1260",
@@ -2078,7 +2182,8 @@
     "original_price": "BDT 680",
     "in_stock": true,
     "weight": 50,
-    "stock": 1
+    "stock": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1259",
@@ -2099,7 +2204,8 @@
     "original_price": "BDT 430",
     "in_stock": true,
     "weight": 95,
-    "stock": 3
+    "stock": 3,
+    "sold": 0
   },
   {
     "id": "RBO-1258",
@@ -2120,7 +2226,8 @@
     "original_price": "BDT 480",
     "in_stock": true,
     "weight": 108,
-    "stock": 4
+    "stock": 4,
+    "sold": 0
   },
   {
     "id": "RBO-1257",
@@ -2138,7 +2245,8 @@
     "brand": "Chinese",
     "price": "BDT 350",
     "original_price": "BDT 420",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1256",
@@ -2157,7 +2265,8 @@
     "brand": "Generic",
     "price": "BDT 380",
     "original_price": "BDT 520",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1255",
@@ -2177,7 +2286,8 @@
     "original_price": "BDT 480",
     "in_stock": true,
     "sales_count": 4,
-    "stock": 3
+    "stock": 3,
+    "sold": 0
   },
   {
     "id": "RBO-1254",
@@ -2198,7 +2308,8 @@
     "original_price": "BDT 680",
     "in_stock": true,
     "sales_count": 3,
-    "stock": 4
+    "stock": 4,
+    "sold": 0
   },
   {
     "id": "RBO-1253",
@@ -2220,7 +2331,8 @@
     "in_stock": true,
     "sales_count": 3,
     "weight": 50,
-    "stock": 7
+    "stock": 7,
+    "sold": 0
   },
   {
     "id": "RBO-1252",
@@ -2242,7 +2354,8 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 123,
-    "stock": 10
+    "stock": 10,
+    "sold": 0
   },
   {
     "id": "RBO-1251",
@@ -2264,7 +2377,8 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 100,
-    "stock": 4
+    "stock": 4,
+    "sold": 0
   },
   {
     "id": "RBO-1250",
@@ -2284,7 +2398,8 @@
     "brand": "Generic",
     "price": "BDT 350",
     "original_price": "BDT 480",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1249",
@@ -2305,7 +2420,8 @@
     "price": "BDT 55",
     "original_price": "BDT 80",
     "in_stock": true,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1248",
@@ -2325,7 +2441,8 @@
     "original_price": "BDT 25",
     "in_stock": true,
     "sales_count": 1,
-    "stock": 4
+    "stock": 4,
+    "sold": 0
   },
   {
     "id": "RBO-1247",
@@ -2347,7 +2464,8 @@
     "original_price": "BDT 220",
     "in_stock": true,
     "weight": 5,
-    "stock": 3
+    "stock": 3,
+    "sold": 0
   },
   {
     "id": "RBO-1246",
@@ -2365,7 +2483,8 @@
     "brand": "Generic",
     "price": "BDT 120",
     "original_price": "BDT 200",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1245",
@@ -2387,7 +2506,8 @@
     "in_stock": true,
     "sales_count": 3,
     "weight": 15,
-    "stock": 9
+    "stock": 9,
+    "sold": 0
   },
   {
     "id": "RBO-1244",
@@ -2408,7 +2528,8 @@
     "original_price": "BDT 160",
     "in_stock": true,
     "weight": 5,
-    "stock": 4
+    "stock": 4,
+    "sold": 0
   },
   {
     "id": "RBO-1243",
@@ -2431,7 +2552,8 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 6,
-    "stock": 3
+    "stock": 3,
+    "sold": 0
   },
   {
     "id": "RBO-1242",
@@ -2453,7 +2575,8 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 18,
-    "stock": 6
+    "stock": 6,
+    "sold": 0
   },
   {
     "id": "RBO-1241",
@@ -2475,7 +2598,8 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 2,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1240",
@@ -2498,7 +2622,8 @@
     "in_stock": true,
     "sales_count": 2,
     "weight": 5,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1239",
@@ -2520,7 +2645,8 @@
     "original_price": "BDT 110",
     "in_stock": true,
     "weight": 5,
-    "stock": 7
+    "stock": 7,
+    "sold": 0
   },
   {
     "id": "RBO-1238",
@@ -2539,7 +2665,8 @@
     "brand": "Generic",
     "price": "BDT 190",
     "original_price": "BDT 280",
-    "in_stock": false
+    "in_stock": false,
+    "sold": 0
   },
   {
     "id": "RBO-1237",
@@ -2560,7 +2687,8 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 10,
-    "stock": 15
+    "stock": 15,
+    "sold": 0
   },
   {
     "id": "RBO-1236",
@@ -2582,7 +2710,8 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 20,
-    "stock": 1
+    "stock": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1235",
@@ -2604,7 +2733,8 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 15,
-    "stock": 4
+    "stock": 4,
+    "sold": 0
   },
   {
     "id": "RBO-1234",
@@ -2623,7 +2753,8 @@
     "brand": "Generic",
     "price": "BDT 70",
     "original_price": "BDT 110",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1233",
@@ -2643,7 +2774,8 @@
     "price": "BDT 105",
     "original_price": "BDT 160",
     "in_stock": true,
-    "weight": 20
+    "weight": 20,
+    "sold": 0
   },
   {
     "id": "RBO-1232",
@@ -2662,7 +2794,8 @@
     "original_price": "BDT 70",
     "in_stock": true,
     "sales_count": 1,
-    "stock": 1
+    "stock": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1229",
@@ -2680,7 +2813,8 @@
     "brand": "Generic",
     "price": "BDT 5",
     "original_price": "BDT 8",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1226",
@@ -2697,7 +2831,8 @@
     "brand": "Generic",
     "price": "BDT 690",
     "original_price": "BDT 850",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1225",
@@ -2719,7 +2854,8 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 50,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1216",
@@ -2741,7 +2877,8 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 100,
-    "stock": 1
+    "stock": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1210",
@@ -2760,7 +2897,8 @@
     "price": "BDT 85",
     "original_price": "BDT 110",
     "in_stock": true,
-    "sales_count": 4
+    "sales_count": 4,
+    "sold": 0
   },
   {
     "id": "RBO-1209",
@@ -2780,7 +2918,8 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "sales_count": 10,
-    "stock": 10
+    "stock": 10,
+    "sold": 0
   },
   {
     "id": "RBO-1208",
@@ -2800,7 +2939,8 @@
     "price": "BDT 25",
     "original_price": "BDT 45",
     "in_stock": true,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1207",
@@ -2819,7 +2959,8 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 5,
-    "stock": 4
+    "stock": 4,
+    "sold": 0
   },
   {
     "id": "RBO-1206",
@@ -2839,7 +2980,8 @@
     "price": "BDT 30",
     "original_price": "BDT 55",
     "in_stock": true,
-    "sales_count": 3
+    "sales_count": 3,
+    "sold": 0
   },
   {
     "id": "RBO-1205",
@@ -2857,7 +2999,8 @@
     "brand": "Uni-T",
     "price": "BDT 995",
     "original_price": "BDT 1450",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1204",
@@ -2877,7 +3020,8 @@
     "in_stock": true,
     "sales_count": 2,
     "weight": 5,
-    "stock": 17
+    "stock": 17,
+    "sold": 0
   },
   {
     "id": "RBO-1203",
@@ -2896,7 +3040,8 @@
     "price": "BDT 640",
     "original_price": "BDT 780",
     "in_stock": true,
-    "sales_count": 1
+    "sales_count": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1202",
@@ -2917,7 +3062,8 @@
     "original_price": "BDT 350",
     "in_stock": true,
     "weight": 12,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1201",
@@ -2938,7 +3084,8 @@
     "original_price": "BDT 90",
     "in_stock": true,
     "weight": 5,
-    "stock": 12
+    "stock": 12,
+    "sold": 0
   },
   {
     "id": "RBO-1200",
@@ -2957,7 +3104,8 @@
     "price": "BDT 170",
     "original_price": "BDT 220",
     "in_stock": true,
-    "stock": 1
+    "stock": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1199",
@@ -2977,7 +3125,8 @@
     "original_price": "BDT 2200",
     "in_stock": true,
     "sales_count": 1,
-    "weight": 318
+    "weight": 318,
+    "sold": 0
   },
   {
     "id": "RBO-1198",
@@ -2999,7 +3148,8 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 15,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1197",
@@ -3020,7 +3170,8 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 1.5,
-    "stock": 20
+    "stock": 20,
+    "sold": 0
   },
   {
     "id": "RBO-1196",
@@ -3039,7 +3190,8 @@
     "price": "BDT 300",
     "original_price": "BDT 480",
     "in_stock": true,
-    "stock": 1
+    "stock": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1195",
@@ -3058,7 +3210,8 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "sales_count": 2,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1194",
@@ -3078,7 +3231,8 @@
     "price": "BDT 170",
     "original_price": "BDT 220",
     "in_stock": true,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1193",
@@ -3100,7 +3254,8 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 45,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1192",
@@ -3118,7 +3273,8 @@
     "brand": "Generic",
     "price": "BDT 80",
     "original_price": "BDT 180",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1191",
@@ -3139,7 +3295,8 @@
     "original_price": "BDT 320",
     "in_stock": true,
     "sales_count": 1,
-    "stock": 1
+    "stock": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1190",
@@ -3161,7 +3318,8 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 50,
-    "stock": 6
+    "stock": 6,
+    "sold": 0
   },
   {
     "id": "RBO-1189",
@@ -3183,7 +3341,8 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 12,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1188",
@@ -3203,6 +3362,7 @@
     "original_price": "BDT 620",
     "in_stock": true,
     "sales_count": 6,
+    "sold": 0,
     "stock": 5
   },
   {
@@ -3224,7 +3384,8 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 126,
-    "stock": 3
+    "stock": 3,
+    "sold": 0
   },
   {
     "id": "RBO-1186",
@@ -3246,7 +3407,8 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 12,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1185",
@@ -3267,7 +3429,8 @@
     "original_price": "BDT 85",
     "in_stock": true,
     "weight": 2,
-    "stock": 8
+    "stock": 8,
+    "sold": 0
   },
   {
     "id": "RBO-1184",
@@ -3289,7 +3452,8 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 37,
-    "stock": 4
+    "stock": 4,
+    "sold": 0
   },
   {
     "id": "RBO-1183",
@@ -3306,7 +3470,8 @@
     "brand": "Chinese",
     "price": "BDT 70",
     "original_price": "BDT 150",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1182",
@@ -3327,7 +3492,8 @@
     "original_price": "BDT 180",
     "in_stock": true,
     "weight": 5,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1181",
@@ -3348,7 +3514,8 @@
     "original_price": "BDT 180",
     "in_stock": true,
     "weight": 5,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-12VCCV1.1.25",
@@ -3368,7 +3535,8 @@
     "original_price": "BDT 320",
     "in_stock": true,
     "sales_count": 1,
-    "stock": 50
+    "stock": 50,
+    "sold": 0
   },
   {
     "id": "RBO-1953",
@@ -3386,7 +3554,8 @@
     "price": "BDT 55",
     "original_price": "BDT 120",
     "in_stock": true,
-    "stock": 20
+    "stock": 20,
+    "sold": 0
   },
   {
     "id": "RBO-2767",
@@ -3405,7 +3574,8 @@
     "price": "BDT 255",
     "original_price": "BDT 320",
     "in_stock": true,
-    "stock": 1
+    "stock": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1433",
@@ -3425,7 +3595,8 @@
     "price": "BDT 90",
     "original_price": "BDT 150",
     "in_stock": true,
-    "stock": 10
+    "stock": 10,
+    "sold": 0
   },
   {
     "id": "RBO-1434",
@@ -3443,7 +3614,8 @@
     "price": "BDT 350",
     "original_price": "BDT 600",
     "in_stock": true,
-    "stock": 10
+    "stock": 10,
+    "sold": 0
   },
   {
     "id": "RBO-1822",
@@ -3464,7 +3636,8 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 2,
-    "stock": 6
+    "stock": 6,
+    "sold": 0
   },
   {
     "id": "RBO-3633",
@@ -3484,7 +3657,8 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 10,
-    "stock": 1
+    "stock": 1,
+    "sold": 0
   },
   {
     "id": "RBO-12603",
@@ -3502,7 +3676,8 @@
     "brand": "RC Product BD",
     "price": "BDT 290",
     "original_price": "BDT 350",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1832",
@@ -3520,7 +3695,8 @@
     "brand": "Panasonic",
     "price": "BDT 340",
     "original_price": "BDT 480",
-    "in_stock": false
+    "in_stock": false,
+    "sold": 0
   },
   {
     "id": "RBO-1687",
@@ -3538,7 +3714,8 @@
     "price": "BDT 70",
     "original_price": "BDT 120",
     "in_stock": false,
-    "sales_count": 6
+    "sales_count": 6,
+    "sold": 0
   },
   {
     "id": "RBO-2677",
@@ -3556,7 +3733,8 @@
     "brand": "Undefined",
     "price": "BDT 270",
     "original_price": "BDT 380",
-    "in_stock": false
+    "in_stock": false,
+    "sold": 0
   },
   {
     "id": "RBO-3953",
@@ -3573,7 +3751,8 @@
     "brand": "Chinese",
     "price": "BDT 70",
     "original_price": "BDT 120",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1855",
@@ -3590,7 +3769,8 @@
     "brand": "Chinese",
     "price": "BDT 70",
     "original_price": "BDT 100",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-3020",
@@ -3608,7 +3788,8 @@
     "price": "BDT 300",
     "original_price": "BDT 450",
     "in_stock": true,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-0730",
@@ -3627,7 +3808,8 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "sales_count": 1,
-    "stock": 3
+    "stock": 3,
+    "sold": 0
   },
   {
     "id": "RBO-1787",
@@ -3649,7 +3831,8 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 160,
-    "stock": 9
+    "stock": 9,
+    "sold": 0
   },
   {
     "id": "RBO-1111",
@@ -3666,7 +3849,8 @@
     "brand": "Robo Orion",
     "price": "BDT 65",
     "original_price": "BDT 120",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1112",
@@ -3686,7 +3870,8 @@
     "in_stock": true,
     "sales_count": 21,
     "weight": 2,
-    "stock": 29
+    "stock": 29,
+    "sold": 0
   },
   {
     "id": "RBO-1113",
@@ -3704,7 +3889,8 @@
     "price": "BDT 30",
     "original_price": "BDT 45",
     "in_stock": true,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1114",
@@ -3722,7 +3908,8 @@
     "price": "BDT 10",
     "original_price": "BDT 15",
     "in_stock": true,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1115",
@@ -3740,7 +3927,8 @@
     "price": "BDT 10",
     "original_price": "BDT 15",
     "in_stock": true,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1116",
@@ -3758,7 +3946,8 @@
     "price": "BDT 3",
     "original_price": "BDT 5",
     "in_stock": true,
-    "stock": 95
+    "stock": 95,
+    "sold": 0
   },
   {
     "id": "RBO-1117",
@@ -3776,7 +3965,8 @@
     "price": "BDT 10",
     "original_price": "BDT 15",
     "in_stock": true,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1118",
@@ -3794,7 +3984,8 @@
     "price": "BDT 25",
     "original_price": "BDT 45",
     "in_stock": true,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1119",
@@ -3812,7 +4003,8 @@
     "price": "BDT 40",
     "original_price": "BDT 65",
     "in_stock": true,
-    "stock": 10
+    "stock": 10,
+    "sold": 0
   },
   {
     "id": "RBO-1120",
@@ -3830,7 +4022,8 @@
     "price": "BDT 70",
     "original_price": "BDT 120",
     "in_stock": true,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1121",
@@ -3850,7 +4043,8 @@
     "brand": "SONGLE",
     "price": "BDT 150",
     "original_price": "BDT 245",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1122",
@@ -3869,7 +4063,8 @@
     "price": "BDT 1.5",
     "original_price": "BDT 8",
     "in_stock": true,
-    "stock": 990
+    "stock": 990,
+    "sold": 0
   },
   {
     "id": "RBO-1123",
@@ -3890,7 +4085,8 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 1,
-    "stock": 10
+    "stock": 10,
+    "sold": 0
   },
   {
     "id": "RBO-1124",
@@ -3909,7 +4105,8 @@
     "price": "BDT 520",
     "original_price": "BDT 920",
     "in_stock": true,
-    "stock": 1
+    "stock": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1125",
@@ -3931,7 +4128,8 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 5,
-    "stock": 6
+    "stock": 6,
+    "sold": 0
   },
   {
     "id": "RBO-1126",
@@ -3953,7 +4151,8 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 5,
-    "stock": 3
+    "stock": 3,
+    "sold": 0
   },
   {
     "id": "RBO-1127",
@@ -3974,7 +4173,8 @@
     "in_stock": true,
     "sales_count": 7,
     "weight": 5,
-    "stock": 18
+    "stock": 18,
+    "sold": 0
   },
   {
     "id": "RBO-1128",
@@ -3993,7 +4193,8 @@
     "price": "BDT 20",
     "original_price": "BDT 45",
     "in_stock": true,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1129",
@@ -4013,7 +4214,8 @@
     "original_price": "BDT 400",
     "in_stock": false,
     "sales_count": 1,
-    "weight": 30
+    "weight": 30,
+    "sold": 0
   },
   {
     "id": "RBO-1130",
@@ -4032,7 +4234,8 @@
     "price": "BDT 620",
     "original_price": "BDT 700",
     "in_stock": true,
-    "sales_count": 2
+    "sales_count": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1131",
@@ -4052,7 +4255,8 @@
     "original_price": "BDT 75",
     "in_stock": true,
     "weight": 4,
-    "stock": 48
+    "stock": 48,
+    "sold": 0
   },
   {
     "id": "RBO-1132",
@@ -4073,7 +4277,8 @@
     "original_price": "BDT 350",
     "in_stock": true,
     "weight": 7,
-    "stock": 1
+    "stock": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1133",
@@ -4092,7 +4297,8 @@
     "price": "BDT 295",
     "original_price": "BDT 450",
     "in_stock": true,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1134",
@@ -4111,7 +4317,8 @@
     "price": "BDT 370",
     "original_price": "BDT 600",
     "in_stock": true,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1135",
@@ -4127,11 +4334,12 @@
     "discount": null,
     "rating": 5,
     "reviews": 16,
-    "brand": "Generic",
+    "brand": "Chinese",
     "price": "BDT 380",
     "original_price": "BDT 600",
     "in_stock": true,
-    "stock": 1
+    "stock": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1136",
@@ -4152,7 +4360,8 @@
     "original_price": "BDT 20",
     "in_stock": true,
     "weight": 3,
-    "stock": 10
+    "stock": 10,
+    "sold": 0
   },
   {
     "id": "RBO-1137",
@@ -4170,7 +4379,8 @@
     "price": "BDT 95",
     "original_price": "BDT 180",
     "in_stock": true,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1138",
@@ -4190,7 +4400,8 @@
     "original_price": "BDT 400",
     "in_stock": true,
     "weight": 16,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1139",
@@ -4210,7 +4421,8 @@
     "original_price": "BDT 150",
     "in_stock": true,
     "weight": 5,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1140",
@@ -4230,7 +4442,8 @@
     "original_price": "BDT 1200",
     "in_stock": true,
     "weight": 345,
-    "stock": 1
+    "stock": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1141",
@@ -4249,7 +4462,8 @@
     "price": "BDT 120",
     "original_price": "BDT 150",
     "in_stock": true,
-    "stock": 4
+    "stock": 4,
+    "sold": 0
   },
   {
     "id": "RBO-1142",
@@ -4267,7 +4481,8 @@
     "price": "BDT 190",
     "original_price": "BDT 230",
     "in_stock": true,
-    "stock": 1
+    "stock": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1143",
@@ -4287,7 +4502,8 @@
     "price": "BDT 45",
     "original_price": "BDT 80",
     "in_stock": true,
-    "stock": 10
+    "stock": 10,
+    "sold": 0
   },
   {
     "id": "RBO-1144",
@@ -4307,7 +4523,8 @@
     "price": "BDT 30",
     "original_price": "BDT 60",
     "in_stock": true,
-    "stock": 10
+    "stock": 10,
+    "sold": 0
   },
   {
     "id": "RBO-1145",
@@ -4326,7 +4543,8 @@
     "brand": "Robo Orion",
     "price": "BDT 300",
     "original_price": "BDT 520",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1146",
@@ -4345,7 +4563,8 @@
     "price": "BDT 1.5",
     "original_price": "BDT 8",
     "in_stock": true,
-    "stock": 990
+    "stock": 990,
+    "sold": 0
   },
   {
     "id": "RBO-1147",
@@ -4363,7 +4582,8 @@
     "price": "BDT 1.2",
     "original_price": "BDT 3",
     "in_stock": true,
-    "stock": 10
+    "stock": 10,
+    "sold": 0
   },
   {
     "id": "RBO-1148",
@@ -4381,7 +4601,8 @@
     "price": "BDT 1.2",
     "original_price": "BDT 3",
     "in_stock": true,
-    "stock": 10
+    "stock": 10,
+    "sold": 0
   },
   {
     "id": "RBO-1149",
@@ -4399,7 +4620,8 @@
     "price": "BDT 8",
     "original_price": "BDT 15",
     "in_stock": true,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1150",
@@ -4417,7 +4639,8 @@
     "price": "BDT 15",
     "original_price": "BDT 30",
     "in_stock": true,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1151",
@@ -4434,7 +4657,8 @@
     "brand": "Robo Orion",
     "price": "BDT 560",
     "original_price": "BDT 750",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1152",
@@ -4451,7 +4675,8 @@
     "brand": "Robo Orion",
     "price": "BDT 450",
     "original_price": "BDT 680",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1153",
@@ -4471,7 +4696,8 @@
     "price": "BDT 8",
     "original_price": "BDT 15",
     "in_stock": true,
-    "stock": 10
+    "stock": 10,
+    "sold": 0
   },
   {
     "id": "RBO-1154",
@@ -4491,7 +4717,8 @@
     "price": "BDT 8",
     "original_price": "BDT 15",
     "in_stock": true,
-    "stock": 10
+    "stock": 10,
+    "sold": 0
   },
   {
     "id": "RBO-1155",
@@ -4511,7 +4738,8 @@
     "price": "BDT 12",
     "original_price": "BDT 18",
     "in_stock": true,
-    "stock": 10
+    "stock": 10,
+    "sold": 0
   },
   {
     "id": "RBO-1156",
@@ -4530,7 +4758,8 @@
     "price": "BDT 5",
     "original_price": "BDT 8",
     "in_stock": true,
-    "stock": 20
+    "stock": 20,
+    "sold": 0
   },
   {
     "id": "RBO-1157",
@@ -4552,7 +4781,8 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 20,
-    "stock": 4
+    "stock": 4,
+    "sold": 0
   },
   {
     "id": "RBO-1158",
@@ -4573,7 +4803,8 @@
     "original_price": "BDT 60",
     "in_stock": true,
     "weight": 16,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1159",
@@ -4595,7 +4826,8 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 10,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1160",
@@ -4616,7 +4848,8 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 65,
-    "stock": 2
+    "stock": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1161",
@@ -4634,7 +4867,8 @@
     "price": "BDT 95",
     "original_price": "BDT 180",
     "in_stock": true,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1162",
@@ -4655,7 +4889,8 @@
     "in_stock": true,
     "sales_count": 18,
     "weight": 2,
-    "stock": 30
+    "stock": 30,
+    "sold": 0
   },
   {
     "id": "RBO-1163",
@@ -4676,7 +4911,8 @@
     "original_price": "BDT 12",
     "in_stock": true,
     "sales_count": 10,
-    "stock": 24
+    "stock": 24,
+    "sold": 0
   },
   {
     "id": "RBO-1164",
@@ -4697,7 +4933,8 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 3,
-    "stock": 14
+    "stock": 14,
+    "sold": 0
   },
   {
     "id": "RBO-1165",
@@ -4718,7 +4955,8 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 15,
-    "stock": 11
+    "stock": 11,
+    "sold": 0
   },
   {
     "id": "RBO-1166",
@@ -4737,7 +4975,8 @@
     "price": "BDT 5",
     "original_price": "BDT 8",
     "in_stock": true,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1167",
@@ -4758,7 +4997,8 @@
     "in_stock": true,
     "sales_count": 2,
     "weight": 30,
-    "stock": 1
+    "stock": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1168",
@@ -4777,7 +5017,8 @@
     "price": "BDT 12",
     "original_price": "BDT 18",
     "in_stock": true,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1169",
@@ -4796,7 +5037,8 @@
     "price": "BDT 16",
     "original_price": "BDT 25",
     "in_stock": true,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1170",
@@ -4814,7 +5056,8 @@
     "brand": "Dendrite",
     "price": "BDT 55",
     "original_price": "BDT 80",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1171",
@@ -4833,7 +5076,8 @@
     "brand": "Generic",
     "price": "BDT 260",
     "original_price": "BDT 570",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1172",
@@ -4854,7 +5098,8 @@
     "original_price": "BDT 90",
     "in_stock": true,
     "sales_count": 1,
-    "weight": 2
+    "weight": 2,
+    "sold": 0
   },
   {
     "id": "RBO-1173",
@@ -4874,7 +5119,8 @@
     "price": "BDT 10",
     "original_price": "BDT 25",
     "in_stock": true,
-    "stock": 10
+    "stock": 10,
+    "sold": 0
   },
   {
     "id": "RBO-1174",
@@ -4894,7 +5140,8 @@
     "original_price": "BDT 380",
     "in_stock": true,
     "weight": 80,
-    "stock": 1
+    "stock": 1,
+    "sold": 0
   },
   {
     "id": "RBO-1175",
@@ -4915,7 +5162,8 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 6,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1176",
@@ -4934,7 +5182,8 @@
     "price": "BDT 15",
     "original_price": "BDT 25",
     "in_stock": true,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1177",
@@ -4953,7 +5202,8 @@
     "brand": "Generic",
     "price": "BDT 1030",
     "original_price": "BDT 1450",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1178",
@@ -4973,7 +5223,8 @@
     "original_price": "BDT 220",
     "in_stock": true,
     "sales_count": 5,
-    "stock": 15
+    "stock": 15,
+    "sold": 0
   },
   {
     "id": "RBO-1179",
@@ -4993,7 +5244,8 @@
     "price": "BDT 15",
     "original_price": "BDT 20",
     "in_stock": true,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1180",
@@ -5014,7 +5266,8 @@
     "original_price": "BDT 85",
     "in_stock": true,
     "sales_count": 1,
-    "stock": 3
+    "stock": 3,
+    "sold": 0
   },
   {
     "id": "RBO-1211",
@@ -5031,7 +5284,8 @@
     "brand": "Generic",
     "price": "BDT 4",
     "original_price": "BDT 5",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1212",
@@ -5048,7 +5302,8 @@
     "brand": "Generic",
     "price": "BDT 3",
     "original_price": "BDT 5",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1213",
@@ -5066,7 +5321,8 @@
     "brand": "Generic",
     "price": "BDT 1.5",
     "original_price": "BDT 2",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1214",
@@ -5084,7 +5340,8 @@
     "brand": "Generic",
     "price": "BDT 1.5",
     "original_price": "BDT 2",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1215",
@@ -5101,7 +5358,8 @@
     "brand": "Generic",
     "price": "BDT 3",
     "original_price": "BDT 6",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1217",
@@ -5118,7 +5376,8 @@
     "brand": "Generic",
     "price": "BDT 3",
     "original_price": "BDT 6",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1218",
@@ -5135,7 +5394,8 @@
     "brand": "Generic",
     "price": "BDT 45",
     "original_price": "BDT 65",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1219",
@@ -5153,7 +5413,8 @@
     "brand": "Generic",
     "price": "BDT 16",
     "original_price": "BDT 25",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1220",
@@ -5170,7 +5431,8 @@
     "brand": "Generic",
     "price": "BDT 2",
     "original_price": "BDT 4",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1221",
@@ -5188,7 +5450,8 @@
     "brand": "Generic",
     "price": "BDT 15",
     "original_price": "BDT 20",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1222",
@@ -5207,7 +5470,8 @@
     "price": "BDT 10",
     "original_price": "BDT 15",
     "in_stock": true,
-    "stock": 5
+    "stock": 5,
+    "sold": 0
   },
   {
     "id": "RBO-1223",
@@ -5224,7 +5488,8 @@
     "brand": "Generic",
     "price": "BDT 45",
     "original_price": "BDT 55",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1224",
@@ -5241,7 +5506,8 @@
     "brand": "Generic",
     "price": "BDT 55",
     "original_price": "BDT 65",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1227",
@@ -5258,7 +5524,8 @@
     "brand": "Generic",
     "price": "BDT 5",
     "original_price": "BDT 8",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1228",
@@ -5276,7 +5543,8 @@
     "brand": "Generic",
     "price": "BDT 5",
     "original_price": "BDT 10",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1230",
@@ -5294,7 +5562,8 @@
     "brand": "Generic",
     "price": "BDT 5",
     "original_price": "BDT 10",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   },
   {
     "id": "RBO-1231",
@@ -5311,6 +5580,7 @@
     "brand": "Generic",
     "price": "BDT 4",
     "original_price": "BDT 6",
-    "in_stock": true
+    "in_stock": true,
+    "sold": 0
   }
 ]

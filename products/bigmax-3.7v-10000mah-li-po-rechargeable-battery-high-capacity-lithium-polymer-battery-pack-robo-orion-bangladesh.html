@@ -388,14 +388,6 @@
                             </div>
                             <div id="related-products-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"></div>
                         </div>
-
-                        <!-- Popular Items -->
-                        <div class="px-5 mb-5">
-                            <div class="border-b py-4 mb-4 border-gray-400">
-                                <h2 class="font-semibold text-2xl text-gray-600">Popular Items</h2>
-                            </div>
-                            <div id="popular-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"></div>
-                        </div>
                     </div>
 
                     <!-- Right Section -->
@@ -405,6 +397,14 @@
                                 <h2 class="mb-10 text-pink-700 font-medium font-ubuntu text-2xl underline decoration-2 decoration-blue-500 underline-offset-8">New Products</h2>
                                 <!-- New Products Section — rendered from ../items.json -->
                                 <div id="new-products-sidebar"></div>
+                            </div>
+                        </div>
+
+                        <div class="border border-gray-200/45 rounded-xl shadow-md mb-10">
+                            <div class="px-5 py-5">
+                                <h2 class="mb-10 text-pink-700 font-medium font-ubuntu text-2xl underline decoration-2 decoration-blue-500 underline-offset-8">Popular Items</h2>
+                                <!-- Popular Items Section — rendered from ../items.json, ranked by "sold" -->
+                                <div id="popular-sidebar"></div>
                             </div>
                         </div>
                     </div>
@@ -504,11 +504,11 @@
     limit: 10
     // currentId auto-detected from the page's own .productCode element
   });
-  renderPopularProducts({
-    containerId: 'popular-grid',
+  renderPopularProductsSidebar({
+    containerId: 'popular-sidebar',
     jsonPath: '../items.json',
     basePath: '../',
-    limit: 10
+    limit: 8
   });
 </script>
 </body>
