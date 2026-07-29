@@ -17,7 +17,9 @@
     "brand": "Generic",
     "price": "BDT 45",
     "original_price": "BDT 75",
-    "in_stock": true
+    "in_stock": true,
+    "weight": 2,
+    "stock": 10
   },
   {
     "id": "RBO-1358",
