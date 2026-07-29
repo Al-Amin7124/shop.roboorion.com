@@ -1,5 +1,25 @@
 [
   {
+  "id": "RBO-1359",
+  "title": "1S BMS 10A 3.7V Li-ion Battery Protection Board (4MOS)",
+  "url": "products/1359-1s-bms-10a-3.7v-li-ion-battery-protection-board-robo-orion-bangladesh.html",
+  "image": "img/product/1359-1s-bms-10a-3.7v-li-ion-battery-protection-board-robo-orion-bangladesh.jpg",
+  "alt": "1S BMS 10A 3.7V Li-ion Battery Protection Board",
+  "categories": [
+    "bms-protection",
+    "18650-batteries",
+    "lithium-batteries",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 30",
+  "rating": 5,
+  "reviews": 16,
+  "brand": "Generic",
+  "price": "BDT 45",
+  "original_price": "BDT 75",
+  "in_stock": true
+},
+  {
     "id": "RBO-1358",
     "title": "Original 12V 2A Lead Acid Battery Pulse Repair Charger (Car/Motorcycle)",
     "url": "products/1358-12v-2a-original-lead-acid-battery-pulse-repair-charger-robo-orion-bangladesh.html",
