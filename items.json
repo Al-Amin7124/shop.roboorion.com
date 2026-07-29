@@ -1,22 +1,42 @@
 [
   {
-  "id": "RBO-1357",
-  "title": "Schottky Diode SR560 Rectifier Diode 5A 60V DO-201AD SR-560 Schottky Barrier",
-  "url": "products/1357-schottky-diode-sr560-5a-60v-robo-orion-bangladesh.html",
-  "image": "img/product/1357-schottky-diode-sr560-5a-60v-robo-orion-bangladesh.jpg",
-  "alt": "SR560 Schottky Barrier Rectifier Diode 5A 60V",
+  "id": "RBO-1358",
+  "title": "Original 12V 2A Lead Acid Battery Pulse Repair Charger (Car/Motorcycle)",
+  "url": "products/1358-12v-2a-original-lead-acid-battery-pulse-repair-charger-robo-orion-bangladesh.html",
+  "image": "img/product/1358-12v-2a-original-lead-acid-battery-pulse-repair-charger-robo-orion-bangladesh.jpg",
+  "alt": "Original 12V 2A Lead Acid Battery Pulse Repair Charger",
   "categories": [
+    "chargers",
     "power-supply",
     "diy-kits"
   ],
-  "discount": "Save BDT 6",
+  "discount": "Save BDT 130",
   "rating": 5,
-  "reviews": 14,
+  "reviews": 12,
   "brand": "Generic",
-  "price": "BDT 6",
-  "original_price": "BDT 12",
+  "price": "BDT 420",
+  "original_price": "BDT 550",
   "in_stock": true
 },
+  {
+    "id": "RBO-1357",
+    "title": "Schottky Diode SR560 Rectifier Diode 5A 60V DO-201AD SR-560 Schottky Barrier",
+    "url": "products/1357-schottky-diode-sr560-5a-60v-robo-orion-bangladesh.html",
+    "image": "img/product/1357-schottky-diode-sr560-5a-60v-robo-orion-bangladesh.jpg",
+    "alt": "SR560 Schottky Barrier Rectifier Diode 5A 60V",
+    "categories": [
+      "power-supply",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 6",
+    "rating": 5,
+    "reviews": 14,
+    "brand": "Generic",
+    "price": "BDT 6",
+    "original_price": "BDT 12",
+    "in_stock": true,
+    "stock": 5
+  },
   {
     "id": "RBO-1356",
     "title": "Original 24V 5A Power Supply Adapter Circuit Board (120W)",
@@ -807,11 +827,11 @@
       "18650-batteries",
       "diy-kits"
     ],
-    "discount": "Save BDT 60",
+    "discount": "Save BDT 70",
     "rating": 5,
     "reviews": 16,
     "brand": "Generic",
-    "price": "BDT 160",
+    "price": "BDT 150",
     "original_price": "BDT 220",
     "in_stock": true,
     "weight": 45
@@ -1068,7 +1088,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 1,
-    "stock": 12
+    "stock": 11
   },
   {
     "id": "RBO-1306",
@@ -1089,7 +1109,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 2,
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "RBO-1305",
@@ -1110,7 +1130,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 2,
-    "stock": 7
+    "stock": 5
   },
   {
     "id": "RBO-1304",
@@ -1169,7 +1189,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 1,
-    "stock": 15
+    "stock": 14
   },
   {
     "id": "RBO-1301",
@@ -1190,7 +1210,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 2,
-    "stock": 17
+    "stock": 16
   },
   {
     "id": "RBO-1300",
@@ -1211,7 +1231,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 2,
-    "stock": 7
+    "stock": 6
   },
   {
     "id": "RBO-1299",
@@ -1312,7 +1332,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 2,
-    "stock": 25
+    "stock": 24
   },
   {
     "id": "RBO-1294",
@@ -1333,7 +1353,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 2,
-    "stock": 18
+    "stock": 17
   },
   {
     "id": "RBO-1293",
@@ -3137,7 +3157,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 126,
-    "stock": -2
+    "stock": 3
   },
   {
     "id": "RBO-1186",

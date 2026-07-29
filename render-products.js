@@ -472,43 +472,29 @@ async function renderRelatedProducts({
 
 /**
  * ═══════════════════════════════════════════════════════════════
- * POPULAR PRODUCTS — ranked by real Google Analytics page-view counts
+ * POPULAR PRODUCTS — ranked by total units sold
  * ═══════════════════════════════════════════════════════════════
  *
- * Reads two files together:
- *   - items.json    — your product catalog (title, price, image, etc.)
- *   - popular.json  — { "views": { "RBO-1234": 512, ... } }, generated
- *                      automatically by a scheduled GitHub Action that
- *                      pulls real view counts from the GA4 Data API.
- *                      See fetch_popular.py / update-popular.yml.
+ * Reads the "sold" field directly from items.json — no separate file,
+ * no external pipeline. Just add/update a number per product as you
+ * go, same workflow as price or rating:
  *
- * popular.json is intentionally tiny (just id -> view count) so it stays
- * fast to fetch; all the actual product details still come from items.json,
- * same as every other section.
+ *   { "id": "RBO-1354", ..., "sold": 42 }
+ *
+ * Products missing a "sold" field are treated as 0 (shown last, not
+ * an error) so you can add this field to products gradually.
  *
  * USAGE:
  *   <div id="popular-grid" class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-4"></div>
- *   <script src="render-products.js"></script>
+ *   <script src="render-products.js?v=4"></script>
  *   <script>
- *     renderPopularProducts({
- *       containerId: "popular-grid",
- *       itemsPath: "items.json",
- *       popularPath: "popular.json",
- *       limit: 10
- *     });
+ *     renderPopularProducts({ containerId: "popular-grid", jsonPath: "items.json", limit: 10 });
  *   </script>
  *
- * On a product page (inside /products/), pass basePath: "../" and adjust
- * itemsPath/popularPath to "../items.json" / "../popular.json", same as
- * the other render functions.
+ * On a product page (inside /products/), add basePath: "../" and point
+ * jsonPath at "../items.json", same as every other render function.
  */
-async function renderPopularProducts({
-  containerId,
-  itemsPath = "items.json",
-  popularPath = "popular.json",
-  basePath = "",
-  limit = 10,
-}) {
+async function renderPopularProducts({ containerId, jsonPath = "items.json", basePath = "", limit = 10 }) {
   const container = document.getElementById(containerId);
   if (!container) {
     console.error(`renderPopularProducts: no element with id "${containerId}" found`);
@@ -517,24 +503,13 @@ async function renderPopularProducts({
   container.innerHTML = skeletonGridHtml(limit);
 
   try {
-    const [itemsRes, popularRes] = await Promise.all([fetch(itemsPath), fetch(popularPath)]);
-    if (!itemsRes.ok) throw new Error(`Failed to load ${itemsPath}: ${itemsRes.status}`);
-
-    const items = await itemsRes.json();
-
-    // popular.json might not exist yet (e.g. before the first scheduled
-    // run) — fall back gracefully to newest-first instead of erroring out.
-    let views = {};
-    if (popularRes.ok) {
-      const popularData = await popularRes.json();
-      views = popularData.views || {};
-    } else {
-      console.warn(`renderPopularProducts: ${popularPath} not found yet — showing newest items instead`);
-    }
+    const res = await fetch(jsonPath);
+    if (!res.ok) throw new Error(`Failed to load ${jsonPath}: ${res.status}`);
+    const items = await res.json();
 
     const ranked = items
       .slice()
-      .sort((a, b) => (views[b.id] || 0) - (views[a.id] || 0))
+      .sort((a, b) => (b.sold || 0) - (a.sold || 0))
       .slice(0, limit);
 
     container.innerHTML = ranked.map((item, i) => cardHtml(item, basePath, i)).join("\n");
