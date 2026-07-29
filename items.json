@@ -1,5 +1,23 @@
 [
   {
+  "id": "RBO-1357",
+  "title": "Schottky Diode SR560 Rectifier Diode 5A 60V DO-201AD SR-560 Schottky Barrier",
+  "url": "products/1357-schottky-diode-sr560-5a-60v-robo-orion-bangladesh.html",
+  "image": "img/product/1357-schottky-diode-sr560-5a-60v-robo-orion-bangladesh.jpg",
+  "alt": "SR560 Schottky Barrier Rectifier Diode 5A 60V",
+  "categories": [
+    "power-supply",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 6",
+  "rating": 5,
+  "reviews": 14,
+  "brand": "Generic",
+  "price": "BDT 6",
+  "original_price": "BDT 12",
+  "in_stock": true
+},
+  {
     "id": "RBO-1356",
     "title": "Original 24V 5A Power Supply Adapter Circuit Board (120W)",
     "url": "products/1356-24v-5a-power-supply-circuit-board-robo-orion-bangladesh.html",
@@ -4605,11 +4623,11 @@
       "repair-tools",
       "diy-kits"
     ],
-    "discount": "Save BDT 15",
+    "discount": "Save BDT 20",
     "rating": 5,
     "reviews": 14,
     "brand": "Loson",
-    "price": "BDT 20",
+    "price": "BDT 15",
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 15,
@@ -4722,11 +4740,11 @@
       "repair-tools",
       "diy-kits"
     ],
-    "discount": "Save BDT 300",
+    "discount": "Save BDT 310",
     "rating": 5,
     "reviews": 16,
     "brand": "Generic",
-    "price": "BDT 270",
+    "price": "BDT 260",
     "original_price": "BDT 570",
     "in_stock": true
   },
