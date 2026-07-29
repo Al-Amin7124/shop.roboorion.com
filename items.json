@@ -1,5 +1,49 @@
 [
   {
+  "id": "RBO-1363",
+  "title": "N607 Handheld Portable Turbo Fan (3600mAh, White)",
+  "url": "products/1363-n607-handheld-portable-turbo-fan-white-robo-orion-bangladesh.html",
+  "image": "img/product/1363-n607-handheld-portable-turbo-fan-white-robo-orion-bangladesh.jpg",
+  "alt": "N607 Handheld Portable Turbo Fan 3600mAh White",
+  "categories": [
+    "dc-motors",
+    "lithium-batteries",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 200",
+  "rating": 5,
+  "reviews": 15,
+  "brand": "Generic",
+  "price": "BDT 750",
+  "original_price": "BDT 950",
+  "in_stock": true,
+  "weight": 0,
+  "stock": 0,
+  "sold": 0
+},
+  {
+  "id": "RBO-1362",
+  "title": "N607 Handheld Portable Turbo Fan (3600mAh, Black)",
+  "url": "products/1362-n607-handheld-portable-turbo-fan-3600mah-black-robo-orion-bangladesh.html",
+  "image": "img/product/1362-n607-handheld-portable-turbo-fan-3600mah-black-robo-orion-bangladesh.jpg",
+  "alt": "N607 Handheld Portable Turbo Fan 3600mAh Black",
+  "categories": [
+    "dc-motors",
+    "lithium-batteries",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 200",
+  "rating": 5,
+  "reviews": 12,
+  "brand": "Generic",
+  "price": "BDT 750",
+  "original_price": "BDT 950",
+  "in_stock": true,
+  "weight": 0,
+  "stock": 0,
+  "sold": 0
+},
+  {
     "id": "RBO-1361",
     "title": "AMS1117-5.0V SMD Voltage Regulator IC Chip",
     "url": "products/1361-ams1117-smd-voltage-regulator-5v-ic-chip-robo-orion-bangladesh.html",
