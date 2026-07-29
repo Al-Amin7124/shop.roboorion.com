@@ -1,24 +1,24 @@
 [
   {
-  "id": "RBO-1359",
-  "title": "1S BMS 10A 3.7V Li-ion Battery Protection Board (4MOS)",
-  "url": "products/1359-1s-bms-10a-3.7v-li-ion-battery-protection-board-robo-orion-bangladesh.html",
-  "image": "img/product/1359-1s-bms-10a-3.7v-li-ion-battery-protection-board-robo-orion-bangladesh.jpg",
-  "alt": "1S BMS 10A 3.7V Li-ion Battery Protection Board",
-  "categories": [
-    "bms-protection",
-    "18650-batteries",
-    "lithium-batteries",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 30",
-  "rating": 5,
-  "reviews": 16,
-  "brand": "Generic",
-  "price": "BDT 45",
-  "original_price": "BDT 75",
-  "in_stock": true
-},
+    "id": "RBO-1359",
+    "title": "1S BMS 10A 3.7V Li-ion Battery Protection Board (4MOS)",
+    "url": "products/1359-1s-bms-10a-3.7v-li-ion-battery-protection-board-robo-orion-bangladesh.html",
+    "image": "img/product/1359-1s-bms-10a-3.7v-li-ion-battery-protection-board-robo-orion-bangladesh.jpg",
+    "alt": "1S BMS 10A 3.7V Li-ion Battery Protection Board",
+    "categories": [
+      "bms-protection",
+      "18650-batteries",
+      "lithium-batteries",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 30",
+    "rating": 5,
+    "reviews": 16,
+    "brand": "Generic",
+    "price": "BDT 45",
+    "original_price": "BDT 75",
+    "in_stock": true
+  },
   {
     "id": "RBO-1358",
     "title": "Original 12V 2A Lead Acid Battery Pulse Repair Charger (Car/Motorcycle)",
@@ -36,7 +36,8 @@
     "brand": "Generic",
     "price": "BDT 420",
     "original_price": "BDT 550",
-    "in_stock": true
+    "in_stock": true,
+    "stock": 7
   },
   {
     "id": "RBO-1357",
@@ -1108,7 +1109,7 @@
     "price": "BDT 20",
     "original_price": "BDT 35",
     "in_stock": true,
-    "sales_count": 6,
+    "sales_count": 7,
     "weight": 1,
     "stock": 10
   },
@@ -1129,7 +1130,7 @@
     "price": "BDT 20",
     "original_price": "BDT 35",
     "in_stock": true,
-    "sales_count": 1,
+    "sales_count": 3,
     "weight": 2,
     "stock": 14
   },
@@ -1150,7 +1151,7 @@
     "price": "BDT 20",
     "original_price": "BDT 35",
     "in_stock": true,
-    "sales_count": 1,
+    "sales_count": 3,
     "weight": 2,
     "stock": 5
   },
@@ -1211,7 +1212,8 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 1,
-    "stock": 13
+    "stock": 13,
+    "sales_count": 1
   },
   {
     "id": "RBO-1301",
@@ -1230,7 +1232,7 @@
     "price": "BDT 20",
     "original_price": "BDT 35",
     "in_stock": true,
-    "sales_count": 1,
+    "sales_count": 2,
     "weight": 2,
     "stock": 15
   },
@@ -1251,7 +1253,7 @@
     "price": "BDT 20",
     "original_price": "BDT 35",
     "in_stock": true,
-    "sales_count": 1,
+    "sales_count": 2,
     "weight": 2,
     "stock": 5
   },
@@ -1352,7 +1354,7 @@
     "price": "BDT 20",
     "original_price": "BDT 35",
     "in_stock": true,
-    "sales_count": 1,
+    "sales_count": 2,
     "weight": 2,
     "stock": 23
   },
@@ -1375,7 +1377,8 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 2,
-    "stock": 16
+    "stock": 16,
+    "sales_count": 1
   },
   {
     "id": "RBO-1293",
@@ -2974,7 +2977,7 @@
     "price": "BDT 8",
     "original_price": "BDT 18",
     "in_stock": true,
-    "sales_count": 5,
+    "sales_count": 6,
     "weight": 1.5,
     "stock": 20
   },
@@ -3013,7 +3016,7 @@
     "price": "BDT 90",
     "original_price": "BDT 120",
     "in_stock": true,
-    "sales_count": 1,
+    "sales_count": 2,
     "stock": 2
   },
   {
@@ -3158,7 +3161,8 @@
     "price": "BDT 350",
     "original_price": "BDT 620",
     "in_stock": true,
-    "sales_count": 6
+    "sales_count": 6,
+    "stock": 5
   },
   {
     "id": "RBO-1187",
@@ -3242,7 +3246,7 @@
     "price": "BDT 380",
     "original_price": "BDT 460",
     "in_stock": true,
-    "sales_count": 5,
+    "sales_count": 6,
     "weight": 37,
     "stock": 4
   },
@@ -3845,7 +3849,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 1,
-    "stock": 3
+    "stock": 10
   },
   {
     "id": "RBO-1124",
