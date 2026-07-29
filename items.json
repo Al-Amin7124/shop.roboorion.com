@@ -1,42 +1,43 @@
 [
   {
-  "id": "RBO-1361",
-  "title": "AMS1117-5.0V SMD Voltage Regulator IC Chip",
-  "url": "products/1361-ams1117-smd-voltage-regulator-5v-ic-chip-robo-orion-bangladesh.html",
-  "image": "img/product/1361-ams1117-smd-voltage-regulator-5v-ic-chip-robo-orion-bangladesh.jpg",
-  "alt": "AMS1117-5.0V SMD Voltage Regulator IC Chip",
-  "categories": [
-    "ic-chips",
-    "power-supply",
-    "smd-components"
-  ],
-  "discount": "Save BDT 25",
-  "rating": 5,
-  "reviews": 16,
-  "brand": "Generic",
-  "price": "BDT 20",
-  "original_price": "BDT 45",
-  "in_stock": true
-},
+    "id": "RBO-1361",
+    "title": "AMS1117-5.0V SMD Voltage Regulator IC Chip",
+    "url": "products/1361-ams1117-smd-voltage-regulator-5v-ic-chip-robo-orion-bangladesh.html",
+    "image": "img/product/1361-ams1117-smd-voltage-regulator-5v-ic-chip-robo-orion-bangladesh.jpg",
+    "alt": "AMS1117-5.0V SMD Voltage Regulator IC Chip",
+    "categories": [
+      "ic-chips",
+      "power-supply",
+      "smd-components"
+    ],
+    "discount": "Save BDT 25",
+    "rating": 5,
+    "reviews": 16,
+    "brand": "Generic",
+    "price": "BDT 20",
+    "original_price": "BDT 45",
+    "in_stock": true,
+    "stock": 2
+  },
   {
-  "id": "RBO-1360",
-  "title": "AMS1117 5V to 3.3V Step-Down Regulator IC Chip",
-  "url": "products/1360-ams1117-5v-to-3.3v-step-down-regulator-ic-chip-robo-orion-bangladesh.html",
-  "image": "img/product/1360-ams1117-5v-to-3.3v-step-down-regulator-ic-chip-robo-orion-bangladesh.jpg",
-  "alt": "AMS1117 5V to 3.3V Step-Down Regulator IC Chip",
-  "categories": [
-    "ic-chips",
-    "power-supply",
-    "smd-components"
-  ],
-  "discount": "Save BDT 25",
-  "rating": 5,
-  "reviews": 12,
-  "brand": "Generic",
-  "price": "BDT 20",
-  "original_price": "BDT 45",
-  "in_stock": true
-},
+    "id": "RBO-1360",
+    "title": "AMS1117 5V to 3.3V Step-Down Regulator IC Chip",
+    "url": "products/1360-ams1117-5v-to-3.3v-step-down-regulator-ic-chip-robo-orion-bangladesh.html",
+    "image": "img/product/1360-ams1117-5v-to-3.3v-step-down-regulator-ic-chip-robo-orion-bangladesh.jpg",
+    "alt": "AMS1117 5V to 3.3V Step-Down Regulator IC Chip",
+    "categories": [
+      "ic-chips",
+      "power-supply",
+      "smd-components"
+    ],
+    "discount": "Save BDT 25",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 20",
+    "original_price": "BDT 45",
+    "in_stock": true
+  },
   {
     "id": "RBO-1359",
     "title": "1S BMS 10A 3.7V Li-ion Battery Protection Board (4MOS)",
