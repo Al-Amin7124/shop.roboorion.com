@@ -1,23 +1,23 @@
 [
   {
-  "id": "RBO-1358",
-  "title": "Original 12V 2A Lead Acid Battery Pulse Repair Charger (Car/Motorcycle)",
-  "url": "products/1358-12v-2a-original-lead-acid-battery-pulse-repair-charger-robo-orion-bangladesh.html",
-  "image": "img/product/1358-12v-2a-original-lead-acid-battery-pulse-repair-charger-robo-orion-bangladesh.jpg",
-  "alt": "Original 12V 2A Lead Acid Battery Pulse Repair Charger",
-  "categories": [
-    "chargers",
-    "power-supply",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 130",
-  "rating": 5,
-  "reviews": 12,
-  "brand": "Generic",
-  "price": "BDT 420",
-  "original_price": "BDT 550",
-  "in_stock": true
-},
+    "id": "RBO-1358",
+    "title": "Original 12V 2A Lead Acid Battery Pulse Repair Charger (Car/Motorcycle)",
+    "url": "products/1358-12v-2a-original-lead-acid-battery-pulse-repair-charger-robo-orion-bangladesh.html",
+    "image": "img/product/1358-12v-2a-original-lead-acid-battery-pulse-repair-charger-robo-orion-bangladesh.jpg",
+    "alt": "Original 12V 2A Lead Acid Battery Pulse Repair Charger",
+    "categories": [
+      "chargers",
+      "power-supply",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 130",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 420",
+    "original_price": "BDT 550",
+    "in_stock": true
+  },
   {
     "id": "RBO-1357",
     "title": "Schottky Diode SR560 Rectifier Diode 5A 60V DO-201AD SR-560 Schottky Barrier",
@@ -336,7 +336,7 @@
   },
   {
     "id": "RBO-1341",
-    "title": "WLXY DIY001 Mini PCB Drill Chuck Set (0.5mm - 3.0mm)",
+    "title": "DIY001 Mini PCB Drill Chuck Set (0.5mm - 3.0mm)",
     "url": "products/1341-mini-drill-chuck-wlxy-diy001-robo-orion-bangladesh.html",
     "image": "img/product/1341-mini-drill-chuck-wlxy-diy001-robo-orion-bangladesh.jpg",
     "alt": "WLXY DIY001 Mini PCB Drill Chuck Set",
@@ -348,10 +348,12 @@
     "discount": "Save BDT 80",
     "rating": 5,
     "reviews": 7,
-    "brand": "WLXY",
+    "brand": "Generic",
     "price": "BDT 140",
     "original_price": "BDT 220",
-    "in_stock": true
+    "in_stock": true,
+    "stock": 1,
+    "weight": 25
   },
   {
     "id": "RBO-1340",
@@ -1088,7 +1090,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 1,
-    "stock": 11
+    "stock": 10
   },
   {
     "id": "RBO-1306",
@@ -1109,7 +1111,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 2,
-    "stock": 15
+    "stock": 14
   },
   {
     "id": "RBO-1305",
@@ -1189,7 +1191,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 1,
-    "stock": 14
+    "stock": 13
   },
   {
     "id": "RBO-1301",
@@ -1210,7 +1212,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 2,
-    "stock": 16
+    "stock": 15
   },
   {
     "id": "RBO-1300",
@@ -1231,7 +1233,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 2,
-    "stock": 6
+    "stock": 5
   },
   {
     "id": "RBO-1299",
@@ -1332,7 +1334,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 2,
-    "stock": 24
+    "stock": 23
   },
   {
     "id": "RBO-1294",
@@ -1353,7 +1355,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 2,
-    "stock": 17
+    "stock": 16
   },
   {
     "id": "RBO-1293",
@@ -2409,7 +2411,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 2,
-    "stock": 3
+    "stock": 2
   },
   {
     "id": "RBO-1240",
@@ -2891,7 +2893,7 @@
     "price": "BDT 170",
     "original_price": "BDT 220",
     "in_stock": true,
-    "stock": 2
+    "stock": 1
   },
   {
     "id": "RBO-1199",
@@ -4060,7 +4062,7 @@
     "discount": null,
     "rating": 5,
     "reviews": 16,
-    "brand": "Chinese",
+    "brand": "Generic",
     "price": "BDT 380",
     "original_price": "BDT 600",
     "in_stock": true,
