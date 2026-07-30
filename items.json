@@ -1975,13 +1975,13 @@
       "lithium-batteries",
       "diy-kits"
     ],
-    "discount": "Save BDT 60",
+    "discount": "Save BDT 80",
     "rating": 5,
     "reviews": 17,
     "brand": "Generic",
-    "price": "BDT 320",
+    "price": "BDT 300",
     "original_price": "BDT 380",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 100,
     "sold": 0,
     "stock": 0
