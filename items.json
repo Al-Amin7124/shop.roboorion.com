@@ -1223,11 +1223,11 @@
       "battery-packs",
       "diy-kits"
     ],
-    "discount": "Save BDT 110",
+    "discount": "Save BDT 120",
     "rating": 5,
     "reviews": 18,
     "brand": "Generic",
-    "price": "BDT 210",
+    "price": "BDT 200",
     "original_price": "BDT 320",
     "in_stock": true,
     "weight": 8,
@@ -3205,7 +3205,7 @@
     "sales_count": 3,
     "sold": 3,
     "weight": 0,
-    "stock": 0
+    "stock": 10
   },
   {
     "id": "RBO-1205",
