@@ -1,48 +1,48 @@
 [
   {
-  "id": "RBO-1363",
-  "title": "N607 Handheld Portable Turbo Fan (3600mAh, White)",
-  "url": "products/1363-n607-handheld-portable-turbo-fan-white-robo-orion-bangladesh.html",
-  "image": "img/product/1363-n607-handheld-portable-turbo-fan-white-robo-orion-bangladesh.jpg",
-  "alt": "N607 Handheld Portable Turbo Fan 3600mAh White",
-  "categories": [
-    "dc-motors",
-    "lithium-batteries",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 200",
-  "rating": 5,
-  "reviews": 15,
-  "brand": "Generic",
-  "price": "BDT 750",
-  "original_price": "BDT 950",
-  "in_stock": true,
-  "weight": 0,
-  "stock": 0,
-  "sold": 0
-},
+    "id": "RBO-1363",
+    "title": "N607 Handheld Portable Turbo Fan (3600mAh, White)",
+    "url": "products/1363-n607-handheld-portable-turbo-fan-white-robo-orion-bangladesh.html",
+    "image": "img/product/1363-n607-handheld-portable-turbo-fan-white-robo-orion-bangladesh.jpg",
+    "alt": "N607 Handheld Portable Turbo Fan 3600mAh White",
+    "categories": [
+      "dc-motors",
+      "lithium-batteries",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 200",
+    "rating": 5,
+    "reviews": 15,
+    "brand": "Generic",
+    "price": "BDT 750",
+    "original_price": "BDT 950",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0
+  },
   {
-  "id": "RBO-1362",
-  "title": "N607 Handheld Portable Turbo Fan (3600mAh, Black)",
-  "url": "products/1362-n607-handheld-portable-turbo-fan-3600mah-black-robo-orion-bangladesh.html",
-  "image": "img/product/1362-n607-handheld-portable-turbo-fan-3600mah-black-robo-orion-bangladesh.jpg",
-  "alt": "N607 Handheld Portable Turbo Fan 3600mAh Black",
-  "categories": [
-    "dc-motors",
-    "lithium-batteries",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 200",
-  "rating": 5,
-  "reviews": 12,
-  "brand": "Generic",
-  "price": "BDT 750",
-  "original_price": "BDT 950",
-  "in_stock": true,
-  "weight": 0,
-  "stock": 0,
-  "sold": 0
-},
+    "id": "RBO-1362",
+    "title": "N607 Handheld Portable Turbo Fan (3600mAh, Black)",
+    "url": "products/1362-n607-handheld-portable-turbo-fan-3600mah-black-robo-orion-bangladesh.html",
+    "image": "img/product/1362-n607-handheld-portable-turbo-fan-3600mah-black-robo-orion-bangladesh.jpg",
+    "alt": "N607 Handheld Portable Turbo Fan 3600mAh Black",
+    "categories": [
+      "dc-motors",
+      "lithium-batteries",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 200",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 750",
+    "original_price": "BDT 950",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0
+  },
   {
     "id": "RBO-1361",
     "title": "AMS1117-5.0V SMD Voltage Regulator IC Chip",
@@ -532,7 +532,7 @@
   },
   {
     "id": "RBO-1338",
-    "title": "Mini DC-DC Adjustable Buck-Boost Converter (2V-15V to 12V 3A)",
+    "title": "Mini DC-DC Adjustable Buck-Boost Converter (2V-15V to 12V 1A)",
     "url": "products/1338-mini-dc-dc-buck-boost-converter-2v-15v-to-12v-3a-robo-orion-bangladesh.html",
     "image": "img/product/1338-mini-dc-dc-buck-boost-converter-2v-15v-to-12v-3a-robo-orion-bangladesh.jpg",
     "alt": "Mini DC-DC Adjustable Buck-Boost Converter 2V-15V to 12V 3A",
@@ -554,7 +554,7 @@
   },
   {
     "id": "RBO-1337",
-    "title": "Mini DC-DC Adjustable Buck-Boost Converter (2V-15V to 9V 3A)",
+    "title": "Mini DC-DC Adjustable Buck-Boost Converter (2V-15V to 9V 1A)",
     "url": "products/1337-mini-dc-dc-buck-boost-converter-2v-15v-to-9v-3a-robo-orion-bangladesh.html",
     "image": "img/product/1337-mini-dc-dc-buck-boost-converter-2v-15v-to-9v-3a-robo-orion-bangladesh.jpg",
     "alt": "Mini DC-DC Adjustable Buck-Boost Converter 2V-15V to 9V 3A",
@@ -575,7 +575,7 @@
   },
   {
     "id": "RBO-1336",
-    "title": "Mini DC-DC Adjustable Buck-Boost Converter (2V-15V to 5V 3A)",
+    "title": "Mini DC-DC Adjustable Buck-Boost Converter (2V-15V to 5V 1A)",
     "url": "products/1336-mini-dc-dc-buck-boost-converter-2v-15v-to-5v-3a-robo-orion-bangladesh.html",
     "image": "img/product/1336-mini-dc-dc-buck-boost-converter-2v-15v-to-5v-3a-robo-orion-bangladesh.jpg",
     "alt": "Mini DC-DC Adjustable Buck-Boost Converter 2V-15V to 5V 3A",
@@ -595,7 +595,7 @@
   },
   {
     "id": "RBO-1335",
-    "title": "Mini DC-DC Adjustable Buck-Boost Converter (2V-15V to 4.2V 3A)",
+    "title": "Mini DC-DC Adjustable Buck-Boost Converter (2V-15V to 4.2V 1A)",
     "url": "products/1335-mini-dc-dc-buck-boost-converter-2v-15v-to-4.2v-3a-robo-orion-bangladesh.html",
     "image": "img/product/1335-mini-dc-dc-buck-boost-converter-2v-15v-to-4.2v-3a-robo-orion-bangladesh.jpg",
     "alt": "Mini DC-DC Adjustable Buck-Boost Converter 2V-15V to 4.2V 3A",
