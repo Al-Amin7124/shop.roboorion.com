@@ -1,5 +1,24 @@
 [
   {
+  "id": "RBO-1364",
+  "title": "N607 Handheld Portable Turbo Fan (1800mAh, Green)",
+  "url": "products/1364-n607-handheld-portable-turbo-fan-1800mah-green-robo-orion-bangladesh.html",
+  "image": "img/product/1364-n607-handheld-portable-turbo-fan-1800mah-green-robo-orion-bangladesh.jpg",
+  "alt": "N607 Handheld Portable Turbo Fan 1800mAh Green",
+  "categories": [
+    "dc-motors",
+    "lithium-batteries",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 180",
+  "rating": 5,
+  "reviews": 7,
+  "brand": "Generic",
+  "price": "BDT 720",
+  "original_price": "BDT 900",
+  "in_stock": true
+},
+  {
     "id": "RBO-1363",
     "title": "N607 Handheld Portable Turbo Fan (3600mAh, White)",
     "url": "products/1363-n607-handheld-portable-turbo-fan-white-robo-orion-bangladesh.html",
@@ -18,7 +37,7 @@
     "original_price": "BDT 950",
     "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": 1,
     "sold": 0
   },
   {
@@ -40,7 +59,7 @@
     "original_price": "BDT 950",
     "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": 1,
     "sold": 0
   },
   {
@@ -3398,11 +3417,11 @@
       "charge-controllers",
       "bms-protection"
     ],
-    "discount": null,
+    "discount": "Save BDT 300",
     "rating": 5,
     "reviews": 16,
     "brand": "Generic",
-    "price": "BDT 350",
+    "price": "BDT 320",
     "original_price": "BDT 620",
     "in_stock": true,
     "sales_count": 6,
