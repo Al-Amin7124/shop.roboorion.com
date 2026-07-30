@@ -1,42 +1,42 @@
 [
   {
-  "id": "RBO-1366",
-  "title": "X05 Handheld High-Speed Transparent Air Conditioner Cooling Fan 3000mAh original - Purple",
-  "url": "products/1366-x05-handheld-high-speed-transparent-air-conditioner-cooling-fan-3000mah-purple-robo-orion-bangladesh.html",
-  "image": "img/product/1366-x05-handheld-high-speed-transparent-air-conditioner-cooling-fan-3000mah-purple-robo-orion-bangladesh.jpg",
-  "alt": "X05 Handheld High-Speed Transparent Air Conditioner Cooling Fan Purple",
-  "categories": [
-    "dc-motors",
-    "battery-packs",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 410",
-  "rating": 5,
-  "reviews": 5,
-  "brand": "MECH FANS",
-  "price": "BDT 1080",
-  "original_price": "BDT 1490",
-  "in_stock": true
-},
+    "id": "RBO-1366",
+    "title": "X05 Handheld High-Speed Transparent Air Conditioner Cooling Fan 3000mAh original - Purple",
+    "url": "products/1366-x05-handheld-high-speed-transparent-air-conditioner-cooling-fan-3000mah-purple-robo-orion-bangladesh.html",
+    "image": "img/product/1366-x05-handheld-high-speed-transparent-air-conditioner-cooling-fan-3000mah-purple-robo-orion-bangladesh.jpg",
+    "alt": "X05 Handheld High-Speed Transparent Air Conditioner Cooling Fan Purple",
+    "categories": [
+      "dc-motors",
+      "battery-packs",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 410",
+    "rating": 5,
+    "reviews": 5,
+    "brand": "MECH FANS",
+    "price": "BDT 1080",
+    "original_price": "BDT 1490",
+    "in_stock": true
+  },
   {
-  "id": "RBO-1365",
-  "title": "X05 Handheld High-Speed Transparent Air Conditioner Cooling Fan 3000mAh original - White",
-  "url": "products/1365-x05-handheld-high-speed-transparent-air-conditioner-cooling-fan-3000mah-white-robo-orion-bangladesh.html",
-  "image": "img/product/1365-x05-handheld-high-speed-transparent-air-conditioner-cooling-fan-3000mah-white-robo-orion-bangladesh.jpg",
-  "alt": "X05 Handheld High-Speed Transparent Air Conditioner Cooling Fan White",
-  "categories": [
-    "dc-motors",
-    "battery-packs",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 410",
-  "rating": 5,
-  "reviews": 6,
-  "brand": "MECH FANS",
-  "price": "BDT 1080",
-  "original_price": "BDT 1490",
-  "in_stock": true
-},
+    "id": "RBO-1365",
+    "title": "X05 Handheld High-Speed Transparent Air Conditioner Cooling Fan 3000mAh original - White",
+    "url": "products/1365-x05-handheld-high-speed-transparent-air-conditioner-cooling-fan-3000mah-white-robo-orion-bangladesh.html",
+    "image": "img/product/1365-x05-handheld-high-speed-transparent-air-conditioner-cooling-fan-3000mah-white-robo-orion-bangladesh.jpg",
+    "alt": "X05 Handheld High-Speed Transparent Air Conditioner Cooling Fan White",
+    "categories": [
+      "dc-motors",
+      "battery-packs",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 410",
+    "rating": 5,
+    "reviews": 6,
+    "brand": "MECH FANS",
+    "price": "BDT 1080",
+    "original_price": "BDT 1490",
+    "in_stock": true
+  },
   {
     "id": "RBO-1364",
     "title": "N607 Handheld Portable Turbo Fan (1800mAh, Green)",
@@ -206,7 +206,8 @@
     "original_price": "BDT 12",
     "in_stock": true,
     "stock": 5,
-    "sold": 0
+    "sold": 0,
+    "sales_count": 15
   },
   {
     "id": "RBO-1356",
@@ -555,11 +556,11 @@
       "audio-modules",
       "diy-kits"
     ],
-    "discount": "Save BDT 500",
+    "discount": "Save BDT 600",
     "rating": 5,
     "reviews": 3,
     "brand": "HB",
-    "price": "BDT 1750",
+    "price": "BDT 1650",
     "original_price": "BDT 2250",
     "in_stock": true,
     "sold": 0
@@ -607,7 +608,8 @@
     "in_stock": true,
     "weight": 2,
     "stock": 8,
-    "sold": 0
+    "sold": 0,
+    "sales_count": 2
   },
   {
     "id": "RBO-1337",
@@ -628,7 +630,8 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "weight": 2,
-    "sold": 0
+    "sold": 0,
+    "sales_count": 2
   },
   {
     "id": "RBO-1336",
@@ -1310,7 +1313,7 @@
     "price": "BDT 20",
     "original_price": "BDT 35",
     "in_stock": true,
-    "sales_count": 7,
+    "sales_count": 9,
     "weight": 1,
     "stock": 10,
     "sold": 0
@@ -1332,7 +1335,7 @@
     "price": "BDT 20",
     "original_price": "BDT 35",
     "in_stock": true,
-    "sales_count": 3,
+    "sales_count": 5,
     "weight": 2,
     "stock": 14,
     "sold": 0
@@ -1354,7 +1357,7 @@
     "price": "BDT 20",
     "original_price": "BDT 35",
     "in_stock": true,
-    "sales_count": 3,
+    "sales_count": 5,
     "weight": 2,
     "stock": 5,
     "sold": 0
@@ -1420,7 +1423,7 @@
     "weight": 1,
     "stock": 13,
     "sold": 0,
-    "sales_count": 1
+    "sales_count": 5
   },
   {
     "id": "RBO-1301",
@@ -1439,7 +1442,7 @@
     "price": "BDT 20",
     "original_price": "BDT 35",
     "in_stock": true,
-    "sales_count": 2,
+    "sales_count": 4,
     "weight": 2,
     "stock": 15,
     "sold": 0
@@ -1461,9 +1464,9 @@
     "price": "BDT 20",
     "original_price": "BDT 35",
     "in_stock": true,
-    "sales_count": 2,
+    "sales_count": 4,
     "weight": 2,
-    "stock": 5,
+    "stock": 1,
     "sold": 0
   },
   {
@@ -1567,9 +1570,9 @@
     "price": "BDT 20",
     "original_price": "BDT 35",
     "in_stock": true,
-    "sales_count": 2,
+    "sales_count": 6,
     "weight": 2,
-    "stock": 23,
+    "stock": 19,
     "sold": 0
   },
   {
@@ -1591,9 +1594,9 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 2,
-    "stock": 16,
+    "stock": 12,
     "sold": 0,
-    "sales_count": 1
+    "sales_count": 3
   },
   {
     "id": "RBO-1293",
@@ -2095,7 +2098,7 @@
     "price": "BDT 70",
     "original_price": "BDT 120",
     "in_stock": true,
-    "sales_count": 1,
+    "sales_count": 3,
     "weight": 8,
     "stock": 1,
     "sold": 0
@@ -2786,7 +2789,7 @@
     "price": "BDT 140",
     "original_price": "BDT 250",
     "in_stock": true,
-    "sales_count": 6,
+    "sales_count": 8,
     "weight": 10,
     "stock": 15,
     "sold": 0
@@ -3119,7 +3122,7 @@
     "price": "BDT 30",
     "original_price": "BDT 65",
     "in_stock": true,
-    "sales_count": 2,
+    "sales_count": 4,
     "weight": 5,
     "stock": 17,
     "sold": 0
