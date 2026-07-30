@@ -23,6 +23,8 @@ function openTab(evt, tabId) {
 // ── Image Gallery (only runs on product detail pages) ─────
 (function () {
     const mainImage      = document.getElementById('mainImage');
+    const mainVideoWrapper = document.getElementById('mainVideoWrapper');
+    const mainVideoFrame   = document.getElementById('mainVideoFrame');
     const thumbnailTrack = document.getElementById('thumbnailTrack');
     const prevBtn        = document.getElementById('prevBtn');
     const nextBtn        = document.getElementById('nextBtn');
@@ -45,18 +47,55 @@ function openTab(evt, tabId) {
         updateNavigationButtons();
     }
 
+    function showVideo(thumb) {
+        const videoId = thumb.dataset.youtubeId;
+        const autoplay = thumb.dataset.autoplay === 'true';
+        if (!videoId || !mainVideoWrapper || !mainVideoFrame) return;
+
+        // mute=1 is required alongside autoplay=1 — browsers block unmuted
+        // autoplay, and a silently-stalled video looks broken rather than
+        // "not autoplaying". The viewer can unmute with the player's own controls.
+        const params = new URLSearchParams({
+            rel: '0',
+            autoplay: autoplay ? '1' : '0',
+            mute: autoplay ? '1' : '0',
+        });
+        mainVideoFrame.src = `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
+
+        mainImage.classList.add('hidden');
+        mainVideoWrapper.classList.remove('hidden');
+    }
+
+    function hideVideo() {
+        if (!mainVideoWrapper || !mainVideoFrame) return;
+        // "about:blank" is what actually stops playback (and any audio)
+        // cleanly. An empty string resolves to the current page's own URL
+        // per spec, which would try to load your own site inside the frame.
+        mainVideoFrame.src = 'about:blank';
+        mainVideoWrapper.classList.add('hidden');
+        mainImage.classList.remove('hidden');
+    }
+
     function updateMainImage(index) {
         currentIndex = index;
-        const img = thumbnails[index].querySelector('img');
-        mainImage.src = img.src;
-        mainImage.alt = img.alt;
-        thumbnails.forEach((thumb, i) => {
+        const thumb = thumbnails[index];
+
+        if (thumb.dataset.type === 'video') {
+            showVideo(thumb);
+        } else {
+            hideVideo();
+            const img = thumb.querySelector('img');
+            mainImage.src = img.src;
+            mainImage.alt = img.alt;
+        }
+
+        thumbnails.forEach((t, i) => {
             if (i === index) {
-                thumb.classList.remove('border-gray-200', 'hover:border-gray-400');
-                thumb.classList.add('border-blue-500', 'ring-2', 'ring-blue-200');
+                t.classList.remove('border-gray-200', 'hover:border-gray-400');
+                t.classList.add('border-blue-500', 'ring-2', 'ring-blue-200');
             } else {
-                thumb.classList.remove('border-blue-500', 'ring-2', 'ring-blue-200');
-                thumb.classList.add('border-gray-200', 'hover:border-gray-400');
+                t.classList.remove('border-blue-500', 'ring-2', 'ring-blue-200');
+                t.classList.add('border-gray-200', 'hover:border-gray-400');
             }
         });
     }

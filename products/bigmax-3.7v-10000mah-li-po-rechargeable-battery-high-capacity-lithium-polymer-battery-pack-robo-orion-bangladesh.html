@@ -187,12 +187,16 @@
                             <div class="grid grid-cols-1 lg:grid-cols-9 gap-2 md:gap-6">
                                 <!-- Product Image -->
                                 <div class="lg:col-span-5 mx-auto w-full">
-                                    <div class="m-4 mt-0 overflow-hidden rounded-lg bg-white w-full aspect-[4/3]">
+                                    <div class="m-4 mt-0 overflow-hidden rounded-lg bg-black w-full aspect-[4/3] relative">
                                         <img id="mainImage"
                                             src="../img/product/BigMax-3.7V-10000mAh-Li-Po-Rechargeable-Battery-High-Capacity-Lithium-Polymer-Battery-Pack.jpg"
                                             alt="BigMax 3.7V 10000mAh Li-Po Rechargeable Battery - High Capacity Lithium Polymer Battery Pack"
-                                            class="w-full aspect-[4/3] object-cover object-center transform transition-transform duration-500 ease-in-out hover:scale-110"
+                                            class="w-full h-full aspect-[4/3] object-cover object-center transform transition-transform duration-500 ease-in-out hover:scale-110"
                                             width="800" height="600">
+                                        <div id="mainVideoWrapper" class="hidden absolute inset-0 w-full h-full bg-black">
+                                            <iframe id="mainVideoFrame" class="w-full h-full" src="" title="Product video" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
                                     </div>
                                     <div class="relative">
                                         <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 z-10 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition-all" aria-label="Previous images" style="display: none;">
@@ -202,6 +206,21 @@
                                             <div id="thumbnailTrack" class="flex gap-4 px-6 transition-transform duration-300 ease-in-out">
                                                 <div class="product-thumbnail flex-shrink-0 cursor-pointer rounded-lg overflow-hidden border-2 border-blue-500 ring-2 ring-blue-200 w-full  transition-all duration-200">
                                                     <img src="../img/product/BigMax-3.7V-10000mAh-Li-Po-Rechargeable-Battery-High-Capacity-Lithium-Polymer-Battery-Pack.jpg" alt="BigMax 3.7V 10000mAh Li-Po Battery - thumbnail" class="w-full aspect-[4/3] object-cover object-center object-cover" width="400" height="300">
+                                                </div>
+                                                <!--
+                                                  Video thumbnail — edit these two values per product:
+                                                    data-youtube-id : the YouTube video ID (the part after "v=" in the URL)
+                                                    data-autoplay   : "true" to auto-play as soon as it's selected, "false" to require pressing play
+                                                  Delete this whole thumbnail block if a product has no video.
+                                                -->
+                                                <div class="product-thumbnail flex-shrink-0 cursor-pointer rounded-lg overflow-hidden border-2 border-gray-200 hover:border-gray-400 w-full transition-all duration-200 relative"
+                                                     data-type="video" data-youtube-id="dQw4w9WgXcQ" data-autoplay="false">
+                                                    <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Product video thumbnail" class="w-full aspect-[4/3] object-cover object-center" width="400" height="300" loading="lazy">
+                                                    <span class="absolute inset-0 flex items-center justify-center bg-black/25">
+                                                        <span class="w-9 h-9 rounded-full bg-white/90 flex items-center justify-center shadow-md">
+                                                            <i class="fa-solid fa-play text-blue-600 text-sm ml-0.5" aria-hidden="true"></i>
+                                                        </span>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </div>
