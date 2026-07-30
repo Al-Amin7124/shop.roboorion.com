@@ -1,23 +1,23 @@
 [
   {
-  "id": "RBO-1364",
-  "title": "N607 Handheld Portable Turbo Fan (1800mAh, Green)",
-  "url": "products/1364-n607-handheld-portable-turbo-fan-1800mah-green-robo-orion-bangladesh.html",
-  "image": "img/product/1364-n607-handheld-portable-turbo-fan-1800mah-green-robo-orion-bangladesh.jpg",
-  "alt": "N607 Handheld Portable Turbo Fan 1800mAh Green",
-  "categories": [
-    "dc-motors",
-    "lithium-batteries",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 180",
-  "rating": 5,
-  "reviews": 7,
-  "brand": "Generic",
-  "price": "BDT 720",
-  "original_price": "BDT 900",
-  "in_stock": true
-},
+    "id": "RBO-1364",
+    "title": "N607 Handheld Portable Turbo Fan (1800mAh, Green)",
+    "url": "products/1364-n607-handheld-portable-turbo-fan-1800mah-green-robo-orion-bangladesh.html",
+    "image": "img/product/1364-n607-handheld-portable-turbo-fan-1800mah-green-robo-orion-bangladesh.jpg",
+    "alt": "N607 Handheld Portable Turbo Fan 1800mAh Green",
+    "categories": [
+      "dc-motors",
+      "lithium-batteries",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 180",
+    "rating": 5,
+    "reviews": 7,
+    "brand": "Generic",
+    "price": "BDT 720",
+    "original_price": "BDT 900",
+    "in_stock": true
+  },
   {
     "id": "RBO-1363",
     "title": "N607 Handheld Portable Turbo Fan (3600mAh, White)",
@@ -2385,11 +2385,11 @@
       "power-supply",
       "lithium-batteries"
     ],
-    "discount": "Save BDT 60",
+    "discount": "Save BDT 70",
     "rating": 5,
     "reviews": 14,
     "brand": "RC Product BD",
-    "price": "BDT 390",
+    "price": "BDT 380",
     "original_price": "BDT 450",
     "in_stock": true,
     "sales_count": 3,
@@ -2408,11 +2408,11 @@
       "power-supply",
       "lithium-batteries"
     ],
-    "discount": "Save BDT 60",
+    "discount": "Save BDT 70",
     "rating": 5,
     "reviews": 22,
     "brand": "RC Product BD",
-    "price": "BDT 390",
+    "price": "BDT 380",
     "original_price": "BDT 450",
     "in_stock": true,
     "sales_count": 1,
