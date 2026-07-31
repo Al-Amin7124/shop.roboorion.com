@@ -31,6 +31,13 @@
     let toastTmr = null;
     const isCheckoutPage = window.location.pathname.includes('checkout.html');
 
+    // The live catalog, fetched fresh from items.json on every page load
+    // (including checkout) — this is the authoritative source for price.
+    // Never persisted to localStorage on purpose: a fresh fetch every page
+    // load is exactly what guarantees the price shown is never stale.
+    let CATALOG_BY_ID = new Map();
+    let catalogLoadFailed = false;
+
     /* ── HELPERS ─────────────────────────────────────────── */
 
     function getEl(id) {
@@ -78,7 +85,70 @@
         return img;
     }
 
+    /** items.json stores price as "BDT 2250" (or "Contact for Price" for
+     *  build-to-order items) rather than a plain number. */
+    function parseCatalogPrice(price) {
+        if (typeof price === 'number') return Number.isNaN(price) ? null : price;
+        if (typeof price !== 'string') return null;
+        const digits = price.replace(/[^0-9.]/g, '');
+        if (!digits) return null;
+        const n = parseFloat(digits);
+        return Number.isNaN(n) ? null : n;
+    }
+
+    /**
+     * Fetches items.json fresh — no localStorage involved — and builds an
+     * id -> product lookup. This is the ONLY thing findProduct() trusts for
+     * price; it's re-run on every single page load (home, product pages,
+     * and checkout), so a price you change in items.json today is what a
+     * customer's cart AND their checkout total will show today, even if
+     * they added that item to their cart last week.
+     */
+    async function loadCatalog() {
+        const isProdPage = window.location.pathname.includes('/products/');
+        const jsonPath = isProdPage ? '../items.json' : 'items.json';
+        try {
+            const res = await fetch(jsonPath, { cache: 'no-store' });
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            const items = await res.json();
+            CATALOG_BY_ID = new Map(items.map(item => [item.id, item]));
+        } catch (err) {
+            catalogLoadFailed = true;
+            console.error(
+                'ROCart: failed to load items.json — falling back to any cached ' +
+                'price data for this session. Prices may not reflect the latest ' +
+                'items.json until this succeeds.',
+                err
+            );
+        }
+    }
+
     function findProduct(id) {
+        // Live catalog first — always the current price, regardless of
+        // anything cached from a previous visit.
+        const catalogItem = CATALOG_BY_ID.get(id);
+        if (catalogItem) {
+            const price = parseCatalogPrice(catalogItem.price);
+            // "Contact for Price" items have no real numeric price — they
+            // aren't meant to be added to a cart in the first place, so
+            // fall through to the legacy path rather than returning a
+            // product with a broken price.
+            if (price !== null) {
+                return {
+                    id: catalogItem.id,
+                    name: catalogItem.title,
+                    code: catalogItem.id,
+                    price,
+                    img: fixImagePath(catalogItem.image),
+                    inStock: catalogItem.in_stock !== false,
+                    priceSource: 'items-json',
+                };
+            }
+        }
+
+        // Fallback path — only reached if items.json failed to load, or
+        // this particular id isn't in it (e.g. a very old cart, or a
+        // product that's since been removed from the catalog).
         const saved = JSON.parse(localStorage.getItem(PROD_KEY) || '{}');
         const inMemory = PRODUCTS.find(p => p.id === id);
 
@@ -419,12 +489,16 @@
             const p = findProduct(item.id);
             if (!p) return '';
             const lineTotal = fmt(p.price * item.qty);
+            const stockBadge = p.inStock === false
+                ? `<span class="ro-oos-badge" style="color:#dc2626;font-size:.72rem;font-weight:600;">Out of Stock</span>`
+                : '';
             return `<div class="ro-cart-item">
                 <img class="ro-item-img" src="${escapeHtml(p.img)}" alt="${escapeHtml(p.name)}">
                 <div class="ro-item-info">
                     <div class="ro-item-name">${escapeHtml(p.name)}</div>
                     <div class="ro-item-code">Code: ${escapeHtml(p.code || p.id)}</div>
                     <div class="ro-item-price">BDT ${p.price}</div>
+                    ${stockBadge}
                 </div>
                 <div class="ro-qty-wrap">
                     <div class="ro-qty-controls">
@@ -447,9 +521,9 @@
         const waBtn = getEl('wa-btn');
         if (!itemsEl) return;
         if (badge) badge.textContent = `${totalQty} item${totalQty !== 1 ? 's' : ''}`;
-        if (waBtn) waBtn.disabled = cart.length === 0;
 
         const discountInfo = calcDiscount(cart);
+        let hasOutOfStockItem = false;
 
         if (cart.length === 0) {
             itemsEl.innerHTML = `<div class="co-empty"><p>Your cart is empty</p></div>`;
@@ -457,18 +531,23 @@
             itemsEl.innerHTML = cart.map(item => {
                 const p = findProduct(item.id);
                 if (!p) return '';
+                if (p.inStock === false) hasOutOfStockItem = true;
                 const lineTotal = fmt(p.price * item.qty);
                 const isDiscounted = discountInfo.targetId === p.id && discountInfo.amount > 0;
                 const discountedLine = isDiscounted ? fmt(lineTotal - discountInfo.amount) : lineTotal;
                 const subtotalHtml = isDiscounted
                     ? `<span class="co-item-strike">BDT ${lineTotal}</span> BDT ${discountedLine}`
                     : `BDT ${lineTotal}`;
+                const stockBadge = p.inStock === false
+                    ? `<div style="color:#dc2626;font-size:.75rem;font-weight:600;margin-top:2px;">Out of Stock — please remove to continue</div>`
+                    : '';
                 return `<div class="co-item">
                     <img class="co-item-img" src="${escapeHtml(p.img)}" alt="${escapeHtml(p.name)}">
                     <div class="co-item-info">
                         <div class="co-item-name">${escapeHtml(p.name)}</div>
                         <div class="co-item-code">Code: ${escapeHtml(p.code || p.id)}</div>
                         <div class="co-item-price">BDT ${p.price} each</div>
+                        ${stockBadge}
                     </div>
                     <div class="co-qty-wrap">
                         <div class="co-qty-controls">
@@ -489,6 +568,8 @@
         if (subtotalEl) subtotalEl.textContent = `BDT ${total}`;
         if (deliveryEl) deliveryEl.textContent = delivery === 0 ? 'Free' : `BDT ${delivery}`;
         if (totalEl) totalEl.textContent = `BDT ${fmt(total - discountInfo.amount + delivery)}`;
+
+        if (waBtn) waBtn.disabled = cart.length === 0 || hasOutOfStockItem;
 
         const dRow = getEl('discount-row');
         if (dRow) {
@@ -586,6 +667,20 @@
     function orderWhatsApp() {
         const cart = getCart();
         if (cart.length === 0) return;
+
+        const outOfStock = cart
+            .map(item => findProduct(item.id))
+            .filter(p => p && p.inStock === false);
+        if (outOfStock.length > 0) {
+            const msgEl = getEl('contact-msg');
+            const names = outOfStock.map(p => p.name).join(', ');
+            if (msgEl) {
+                msgEl.className = 'co-coupon-msg error';
+                msgEl.textContent = `✕ Please remove out-of-stock item(s) before ordering: ${names}`;
+            }
+            return;
+        }
+
         if (!validateCustomerInfo()) return;
 
         const info = getCustomerInfo();
@@ -719,7 +814,7 @@
 
     /* ── INIT ────────────────────────────────────────────── */
 
-    function init() {
+    async function init() {
         injectDynamicStyles();
         bindDelegatedEvents();
 
@@ -773,6 +868,10 @@
         loadCustomerInfo();
         loadDeliveryPreference();
 
+        // Fresh pricing data before the very first render — this is what
+        // guarantees the cart drawer AND checkout always show today's
+        // items.json price, not whatever was cached from a previous visit.
+        await loadCatalog();
         updateUI();
 
         const inside = getEl('delivery-inside');
