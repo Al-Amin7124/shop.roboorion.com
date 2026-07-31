@@ -479,16 +479,16 @@
       "chargers",
       "diy-kits"
     ],
-    "discount": "Save BDT 100",
+    "discount": "Save BDT 130",
     "rating": 5,
     "reviews": 7,
     "brand": "Generic",
-    "price": "BDT 450",
+    "price": "BDT 420",
     "original_price": "BDT 550",
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": 0
+    "stock": 1
   },
   {
     "id": "RBO-1344",
@@ -509,7 +509,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": 0
+    "stock": 3
   },
   {
     "id": "RBO-1343",
@@ -1208,7 +1208,7 @@
     "original_price": "BDT 385",
     "in_stock": true,
     "weight": 12,
-    "stock": 2,
+    "stock": 1,
     "sold": 0
   },
   {
@@ -2348,15 +2348,15 @@
       "repair-tools",
       "diy-kits"
     ],
-    "discount": "Save BDT 450",
+    "discount": "Save BDT 550",
     "rating": 5,
     "reviews": 6,
     "brand": "Generic",
-    "price": "BDT 1400",
+    "price": "BDT 1300",
     "original_price": "BDT 1850",
     "in_stock": true,
     "weight": 100,
-    "stock": 1,
+    "stock": 2,
     "sold": 0
   },
   {
@@ -2556,7 +2556,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 123,
-    "stock": 10,
+    "stock": 9,
     "sold": 1
   },
   {
@@ -5644,7 +5644,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": 0
+    "stock": -6
   },
   {
     "id": "RBO-1214",
@@ -5665,7 +5665,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": 0
+    "stock": -6
   },
   {
     "id": "RBO-1215",
