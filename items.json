@@ -1,5 +1,41 @@
 [
   {
+  "id": "RBO-1369",
+  "title": "1.5mm HSS Micro Twist Drill Bit (High Quality)",
+  "url": "products/1369-1.5mm-hss-micro-drill-bit-robo-orion-bangladesh.html",
+  "image": "img/product/1369-1.5mm-hss-micro-drill-bit-robo-orion-bangladesh.jpg",
+  "alt": "1.5mm HSS Micro Twist Drill Bit High Quality",
+  "categories": [
+    "repair-tools",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 15",
+  "rating": 5,
+  "reviews": 16,
+  "brand": "Generic",
+  "price": "BDT 30",
+  "original_price": "BDT 45",
+  "in_stock": true
+},
+  {
+  "id": "RBO-1368",
+  "title": "1.2mm HSS Micro Twist Drill Bit (High Quality)",
+  "url": "products/1368-1.2mm-hss-micro-drill-bit-robo-orion-bangladesh.html",
+  "image": "img/product/1368-1.2mm-hss-micro-drill-bit-robo-orion-bangladesh.jpg",
+  "alt": "1.2mm HSS Micro Twist Drill Bit High Quality",
+  "categories": [
+    "repair-tools",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 15",
+  "rating": 5,
+  "reviews": 15,
+  "brand": "Generic",
+  "price": "BDT 30",
+  "original_price": "BDT 45",
+  "in_stock": true
+},
+  {
     "id": "RBO-1367",
     "title": "4.7 Ohm 1/4 Watt Carbon Film Resistor (Pack of 10)",
     "url": "products/1367-4.7-ohm-1-4-watt-resistor-pack-of-10-robo-orion-bangladesh.html",
@@ -16,9 +52,9 @@
     "price": "BDT 5",
     "original_price": "BDT 10",
     "in_stock": true,
-    "weight": 0,
-    "stock": 0,
-    "sold": 0
+    "weight": 1.5,
+    "stock": 90,
+    "sold": 10
   },
   {
     "id": "RBO-1366",
@@ -507,9 +543,9 @@
     "price": "BDT 420",
     "original_price": "BDT 550",
     "in_stock": true,
-    "sold": 0,
-    "weight": 0,
-    "stock": 1
+    "sold": 1,
+    "weight": 70,
+    "stock": 0
   },
   {
     "id": "RBO-1344",
@@ -1602,7 +1638,7 @@
     "original_price": "BDT 180",
     "in_stock": true,
     "weight": 13,
-    "stock": 10,
+    "stock": 9,
     "sold": 0
   },
   {
@@ -1690,8 +1726,8 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 2,
-    "stock": 12,
-    "sold": 3,
+    "stock": 6,
+    "sold": 9,
     "sales_count": 3
   },
   {
@@ -1894,7 +1930,7 @@
     "original_price": "BDT 190",
     "in_stock": true,
     "weight": 5,
-    "stock": 10,
+    "stock": 9,
     "sold": 0
   },
   {
@@ -2874,7 +2910,7 @@
     "original_price": "BDT 110",
     "in_stock": true,
     "weight": 5,
-    "stock": 7,
+    "stock": 6,
     "sold": 0
   },
   {
@@ -2941,7 +2977,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 20,
-    "stock": 1,
+    "stock": 0,
     "sold": 1
   },
   {
@@ -4086,7 +4122,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "sales_count": 1,
-    "stock": 3,
+    "stock": 2,
     "sold": 1,
     "weight": 0
   },
@@ -4552,7 +4588,7 @@
     "original_price": "BDT 75",
     "in_stock": true,
     "weight": 4,
-    "stock": 48,
+    "stock": 45,
     "sold": 0
   },
   {
@@ -5277,7 +5313,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 15,
-    "stock": 11,
+    "stock": 10,
     "sold": 0
   },
   {
