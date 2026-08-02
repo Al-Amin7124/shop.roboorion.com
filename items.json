@@ -4007,7 +4007,7 @@
     "brand": "RC Product BD",
     "price": "BDT 290",
     "original_price": "BDT 350",
-    "in_stock": true,
+    "in_stock": false,
     "sold": 0,
     "weight": 0,
     "stock": 0
@@ -5730,8 +5730,8 @@
     "original_price": "BDT 2",
     "in_stock": true,
     "sold": 0,
-    "weight": 0,
-    "stock": -6
+    "weight": 1,
+    "stock": 10
   },
   {
     "id": "RBO-1214",
@@ -5751,8 +5751,8 @@
     "original_price": "BDT 2",
     "in_stock": true,
     "sold": 0,
-    "weight": 0,
-    "stock": -6
+    "weight": 1,
+    "stock": 10
   },
   {
     "id": "RBO-1215",
