@@ -3403,26 +3403,26 @@
     "sold": 0
   },
   {
-    "id": "RBO-1200",
-    "title": "5V DC 180 Original High Quality Motor Standard Small & High Speed",
-    "url": "products/1200-5v-dc-180-motor-high-speed-robo-orion-bangladesh.html",
-    "image": "img/product/1200-5v-dc-180-motor-high-speed-robo-orion-bangladesh.jpg",
-    "alt": "5V DC 180 Motor Standard Small & High Speed",
-    "categories": [
-      "dc-motors",
-      "diy-kits"
-    ],
-    "discount": "Save BDT 50",
-    "rating": 5,
-    "reviews": 14,
-    "brand": "Generic",
-    "price": "BDT 170",
-    "original_price": "BDT 220",
-    "in_stock": true,
-    "stock": 1,
-    "sold": 0,
-    "weight": 0
-  },
+  "id": "RBO-1200",
+  "title": "5V DC 180 Original High Quality Motor Standard Small & High Speed",
+  "url": "products/1200-5v-dc-180-motor-high-speed-robo-orion-bangladesh.html",
+  "image": "img/product/1200-5v-dc-180-motor-high-speed-robo-orion-bangladesh.jpg",
+  "alt": "5V DC 180 Motor Standard Small & High Speed",
+  "categories": [
+    "dc-motors",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 50",
+  "rating": 5,
+  "reviews": 14,
+  "brand": "Generic",
+  "price": "BDT 170",
+  "original_price": "BDT 220",
+  "in_stock": true,
+  "weight": 32,
+  "stock": 0,
+  "sold": 0
+},
   {
     "id": "RBO-1199",
     "title": "Uni-T UT33A+ Auto Range Digital Multimeter",
