@@ -16,8 +16,8 @@
     "price": "BDT 30",
     "original_price": "BDT 45",
     "in_stock": true,
-    "weight": 0,
-    "stock": 0,
+    "weight": 1,
+    "stock": 1,
     "sold": 0
   },
   {
@@ -37,8 +37,8 @@
     "price": "BDT 30",
     "original_price": "BDT 45",
     "in_stock": true,
-    "weight": 0,
-    "stock": 0,
+    "weight": 1,
+    "stock": 1,
     "sold": 0
   },
   {
@@ -2017,11 +2017,11 @@
       "battery-packs",
       "diy-kits"
     ],
-    "discount": "Save BDT 100",
+    "discount": "Save BDT 110",
     "rating": 5,
     "reviews": 16,
     "brand": "Generic",
-    "price": "BDT 680",
+    "price": "BDT 670",
     "original_price": "BDT 780",
     "in_stock": true,
     "weight": 200,
