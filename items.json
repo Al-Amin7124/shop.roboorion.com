@@ -103,7 +103,7 @@
     "brand": "MECH FANS",
     "price": "BDT 1080",
     "original_price": "BDT 1490",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 245,
     "stock": 0,
     "sold": 0
