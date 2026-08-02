@@ -1,5 +1,29 @@
 [
   {
+    "id": "RBO-1370",
+    "title": "10m Nickel Strip Roll Holder Box (3D Printed, Gray)",
+    "url": "products/1370-10m-nickel-strip-roll-holder-3d-printed-robo-orion-bangladesh.html",
+    "image": "img/product/1370-10m-nickel-strip-roll-holder-3d-printed-robo-orion-bangladesh.jpg",
+    "alt": "10m Nickel Strip Roll Holder Box 3D Printed Gray",
+    "categories": [
+      "18650-batteries",
+      "battery-packs",
+      "soldering-tools",
+      "repair-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 60",
+    "rating": 5,
+    "reviews": 8,
+    "brand": "Generic",
+    "price": "BDT 160",
+    "original_price": "BDT 220",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0
+  },
+  {
     "id": "RBO-1369",
     "title": "1.5mm HSS Micro Twist Drill Bit (High Quality)",
     "url": "products/1369-1.5mm-hss-micro-drill-bit-robo-orion-bangladesh.html",
@@ -394,7 +418,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": 0
+    "stock": 5
   },
   {
     "id": "RBO-1351",
@@ -416,7 +440,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": 0
+    "stock": 20
   },
   {
     "id": "RBO-1350",
@@ -2960,7 +2984,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 10,
-    "stock": 15,
+    "stock": 14,
     "sold": 8
   },
   {
@@ -5215,7 +5239,7 @@
   },
   {
     "id": "RBO-1161",
-    "title": "IRFZ3205 Original N-Channel Power MOSFET - High Current Switching",
+    "title": "IRF3205 Original N-Channel Power MOSFET - High Current Switching",
     "url": "products/1161-irfz3205-original-mosfet-robo-orion-bangladesh.html",
     "image": "img/product/1161-irfz3205-original-mosfet-robo-orion-bangladesh.jpg",
     "alt": "IRFZ3205 Original N-Channel Power MOSFET - High Current Switching",
