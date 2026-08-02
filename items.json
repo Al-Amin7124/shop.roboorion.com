@@ -1,40 +1,46 @@
 [
   {
-  "id": "RBO-1369",
-  "title": "1.5mm HSS Micro Twist Drill Bit (High Quality)",
-  "url": "products/1369-1.5mm-hss-micro-drill-bit-robo-orion-bangladesh.html",
-  "image": "img/product/1369-1.5mm-hss-micro-drill-bit-robo-orion-bangladesh.jpg",
-  "alt": "1.5mm HSS Micro Twist Drill Bit High Quality",
-  "categories": [
-    "repair-tools",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 15",
-  "rating": 5,
-  "reviews": 16,
-  "brand": "Generic",
-  "price": "BDT 30",
-  "original_price": "BDT 45",
-  "in_stock": true
-},
+    "id": "RBO-1369",
+    "title": "1.5mm HSS Micro Twist Drill Bit (High Quality)",
+    "url": "products/1369-1.5mm-hss-micro-drill-bit-robo-orion-bangladesh.html",
+    "image": "img/product/1369-1.5mm-hss-micro-drill-bit-robo-orion-bangladesh.jpg",
+    "alt": "1.5mm HSS Micro Twist Drill Bit High Quality",
+    "categories": [
+      "repair-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 15",
+    "rating": 5,
+    "reviews": 16,
+    "brand": "Generic",
+    "price": "BDT 30",
+    "original_price": "BDT 45",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0
+  },
   {
-  "id": "RBO-1368",
-  "title": "1.2mm HSS Micro Twist Drill Bit (High Quality)",
-  "url": "products/1368-1.2mm-hss-micro-drill-bit-robo-orion-bangladesh.html",
-  "image": "img/product/1368-1.2mm-hss-micro-drill-bit-robo-orion-bangladesh.jpg",
-  "alt": "1.2mm HSS Micro Twist Drill Bit High Quality",
-  "categories": [
-    "repair-tools",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 15",
-  "rating": 5,
-  "reviews": 15,
-  "brand": "Generic",
-  "price": "BDT 30",
-  "original_price": "BDT 45",
-  "in_stock": true
-},
+    "id": "RBO-1368",
+    "title": "1.2mm HSS Micro Twist Drill Bit (High Quality)",
+    "url": "products/1368-1.2mm-hss-micro-drill-bit-robo-orion-bangladesh.html",
+    "image": "img/product/1368-1.2mm-hss-micro-drill-bit-robo-orion-bangladesh.jpg",
+    "alt": "1.2mm HSS Micro Twist Drill Bit High Quality",
+    "categories": [
+      "repair-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 15",
+    "rating": 5,
+    "reviews": 15,
+    "brand": "Generic",
+    "price": "BDT 30",
+    "original_price": "BDT 45",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0
+  },
   {
     "id": "RBO-1367",
     "title": "4.7 Ohm 1/4 Watt Carbon Film Resistor (Pack of 10)",
@@ -632,7 +638,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 25,
-    "stock": 1
+    "stock": 0
   },
   {
     "id": "RBO-1340",
@@ -2817,7 +2823,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 6,
-    "stock": 3,
+    "stock": 2,
     "sold": 6
   },
   {
