@@ -42,7 +42,7 @@
     "in_stock": true,
     "weight": 1,
     "stock": 1,
-    "sold": 0
+    "sold": 1
   },
   {
     "id": "RBO-1368",
@@ -63,7 +63,7 @@
     "in_stock": true,
     "weight": 1,
     "stock": 1,
-    "sold": 0
+    "sold": 1
   },
   {
     "id": "RBO-1367",
@@ -374,7 +374,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": 0
+    "stock": -2
   },
   {
     "id": "RBO-1353",
@@ -660,7 +660,7 @@
     "price": "BDT 140",
     "original_price": "BDT 220",
     "in_stock": true,
-    "sold": 0,
+    "sold": 1,
     "weight": 25,
     "stock": 0
   },
@@ -1961,7 +1961,7 @@
     "in_stock": true,
     "weight": 5,
     "stock": 9,
-    "sold": 0
+    "sold": 1
   },
   {
     "id": "RBO-1284",
@@ -2848,7 +2848,7 @@
     "sales_count": 6,
     "weight": 6,
     "stock": 2,
-    "sold": 6
+    "sold": 7
   },
   {
     "id": "RBO-1242",
@@ -2941,7 +2941,7 @@
     "in_stock": true,
     "weight": 5,
     "stock": 6,
-    "sold": 0
+    "sold": 1
   },
   {
     "id": "RBO-1238",
@@ -3008,7 +3008,7 @@
     "sales_count": 1,
     "weight": 20,
     "stock": 0,
-    "sold": 1
+    "sold": 2
   },
   {
     "id": "RBO-1235",
@@ -3777,7 +3777,7 @@
     "sales_count": 6,
     "weight": 37,
     "stock": 3,
-    "sold": 6
+    "sold": 7
   },
   {
     "id": "RBO-1183",
@@ -4153,7 +4153,7 @@
     "in_stock": true,
     "sales_count": 1,
     "stock": 2,
-    "sold": 1,
+    "sold": 2,
     "weight": 0
   },
   {
@@ -4619,7 +4619,7 @@
     "in_stock": true,
     "weight": 4,
     "stock": 45,
-    "sold": 0
+    "sold": 3
   },
   {
     "id": "RBO-1132",
@@ -5906,11 +5906,11 @@
     "categories": [
       "transistors"
     ],
-    "discount": "Save BDT 10",
+    "discount": "Save BDT 23",
     "rating": 5,
     "reviews": 14,
     "brand": "Generic",
-    "price": "BDT 45",
+    "price": "BDT 32",
     "original_price": "BDT 55",
     "in_stock": true,
     "sold": 0,
@@ -5926,11 +5926,11 @@
     "categories": [
       "transistors"
     ],
-    "discount": "Save BDT 10",
+    "discount": "Save BDT 20",
     "rating": 5,
     "reviews": 12,
     "brand": "Generic",
-    "price": "BDT 55",
+    "price": "BDT 45",
     "original_price": "BDT 65",
     "in_stock": true,
     "sold": 0,
