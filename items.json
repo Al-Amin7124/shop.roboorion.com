@@ -1669,7 +1669,7 @@
     "in_stock": true,
     "weight": 13,
     "stock": 9,
-    "sold": 0
+    "sold": 1
   },
   {
     "id": "RBO-1297",
@@ -2479,11 +2479,11 @@
       "power-supply",
       "lithium-batteries"
     ],
-    "discount": "Save BDT 70",
+    "discount": "Save BDT 110",
     "rating": 5,
     "reviews": 12,
     "brand": "Chinese",
-    "price": "BDT 360",
+    "price": "BDT 320",
     "original_price": "BDT 430",
     "in_stock": true,
     "weight": 95,
@@ -2501,11 +2501,11 @@
       "power-supply",
       "lithium-batteries"
     ],
-    "discount": "Save BDT 80",
+    "discount": "Save BDT 130",
     "rating": 5,
     "reviews": 7,
     "brand": "Chinese",
-    "price": "BDT 400",
+    "price": "BDT 350",
     "original_price": "BDT 480",
     "in_stock": true,
     "weight": 108,
@@ -2522,11 +2522,11 @@
       "chargers",
       "power-supply"
     ],
-    "discount": "Save BDT 70",
+    "discount": "Save BDT 120",
     "rating": 5,
     "reviews": 8,
     "brand": "Chinese",
-    "price": "BDT 350",
+    "price": "BDT 300",
     "original_price": "BDT 420",
     "in_stock": true,
     "sold": 0,
@@ -5344,7 +5344,7 @@
     "in_stock": true,
     "weight": 15,
     "stock": 10,
-    "sold": 0
+    "sold": 1
   },
   {
     "id": "RBO-1166",
