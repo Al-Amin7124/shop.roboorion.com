@@ -1,23 +1,26 @@
 [
   {
-  "id": "RBO-1375",
-  "title": "Type C USB 3.1 3A Fast Charging Male & Female Connector Pair",
-  "url": "products/1375-type-c-connector-male-female-pair-robo-orion-bangladesh.html",
-  "image": "img/product/1375-type-c-connector-male-female-pair-robo-orion-bangladesh.jpg",
-  "alt": "Type C USB 3.1 Fast Charging Male Female Pair",
-  "categories": [
-    "usb-connectors",
-    "wire-cables",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 20",
-  "rating": 5,
-  "reviews": 14,
-  "brand": "Generic",
-  "price": "BDT 65",
-  "original_price": "BDT 85",
-  "in_stock": true
-},
+    "id": "RBO-1375",
+    "title": "Type C USB 3.1 3A Fast Charging Male & Female Connector Pair",
+    "url": "products/1375-type-c-connector-male-female-pair-robo-orion-bangladesh.html",
+    "image": "img/product/1375-type-c-connector-male-female-pair-robo-orion-bangladesh.jpg",
+    "alt": "Type C USB 3.1 Fast Charging Male Female Pair",
+    "categories": [
+      "usb-connectors",
+      "wire-cables",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 20",
+    "rating": 5,
+    "reviews": 14,
+    "brand": "Generic",
+    "price": "BDT 65",
+    "original_price": "BDT 85",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0
+  },
   {
     "id": "RBO-1374",
     "title": "8 inch BLDC Brushless Fan Motor 9V/12V 5 Blades High Air Volume",
@@ -59,7 +62,7 @@
     "original_price": "BDT 25",
     "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": 3,
     "sold": 0
   },
   {
