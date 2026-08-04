@@ -149,8 +149,11 @@ function cardHtml(item, basePath = "", index = 0) {
   // image visibly appears before the rest; everything after stays lazy.
   const loadingAttr = index < 2 ? `loading="eager" fetchpriority="high"` : `loading="lazy"`;
   const outOfStockClass = isOutOfStock(item) ? " product-card--out-of-stock" : "";
+  // data-order-index / data-sold: used by product.html's sort dropdown
+  // (Newest / Best Selling) so sorting works purely from the DOM without
+  // needing to re-fetch items.json. Harmless no-op on every other page.
   return `
-    <article class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition ro-fade-in${outOfStockClass}" style="animation-delay:${delay}ms" data-category="${categories}">
+    <article class="product-card bg-white rounded-xl shadow-md overflow-hidden mb-2 hover:shadow-lg transition ro-fade-in${outOfStockClass}" style="animation-delay:${delay}ms" data-category="${categories}" data-order-index="${index}" data-sold="${item.sold || 0}">
       <a href="${url}" target="_blank">
         <div class="w-full aspect-[4/3] relative">
           <img src="${image}" ${loadingAttr} alt="${item.alt || item.title}" class="w-full h-full object-cover rounded-t-xl transform transition-transform duration-500 ease-in-out hover:scale-110" width="400" height="300">

@@ -187,9 +187,102 @@ var activeCategory = 'all';
 var activePriceMin = 0;
 var activePriceMax = 999999;
 
+// ── Sort State ────────────────────────────────────────────
+// 'default' = whatever order the cards are already in (catalog order,
+// or relevance order if a search is active). Any other value re-orders
+// the full card set (visible AND hidden) so it stays correct no matter
+// what search/filter narrows the visible set down to afterward.
+var activeSortKey = 'default';
+
 // ── Pagination State (declared before applyFilters) ───────
 var currentPage  = 1;
 var itemsPerPage = 20;
+
+// ── Sort ────────────────────────────────────────────────────
+function getSortValue(card, key) {
+    switch (key) {
+        case 'price-asc':
+        case 'price-desc': {
+            var priceEl = card.querySelector('.productPrice .offer-price');
+            var price = priceEl ? parseFloat((priceEl.textContent || '').replace(/[^0-9.]/g, '')) : NaN;
+            if (isNaN(price)) return key === 'price-asc' ? Infinity : -Infinity; // unpriced items always sort last
+            return price;
+        }
+        case 'name-asc':
+        case 'name-desc': {
+            var nameEl = card.querySelector('.productName');
+            return nameEl ? nameEl.textContent.trim().toLowerCase() : '';
+        }
+        case 'newest':
+            return parseInt(card.getAttribute('data-order-index') || '0', 10);
+        case 'bestselling':
+            return parseInt(card.getAttribute('data-sold') || '0', 10);
+        default:
+            return 0;
+    }
+}
+
+/** Re-orders EVERY card (visible and currently hidden by search/filter) —
+ *  not just the visible ones — so the order stays correct no matter what
+ *  gets shown or hidden afterward by a subsequent search or filter change. */
+function sortCardsInPlace() {
+    if (activeSortKey === 'default') return;
+    var grid = document.getElementById('product-grid');
+    if (!grid) return;
+    var cards = Array.from(document.querySelectorAll('#product-grid .product-card'));
+
+    var comparator;
+    switch (activeSortKey) {
+        case 'price-asc':
+            comparator = function(a, b) { return getSortValue(a, 'price-asc') - getSortValue(b, 'price-asc'); };
+            break;
+        case 'price-desc':
+            comparator = function(a, b) { return getSortValue(b, 'price-desc') - getSortValue(a, 'price-desc'); };
+            break;
+        case 'name-asc':
+            comparator = function(a, b) { return getSortValue(a, 'name-asc').localeCompare(getSortValue(b, 'name-asc')); };
+            break;
+        case 'name-desc':
+            comparator = function(a, b) { return getSortValue(b, 'name-desc').localeCompare(getSortValue(a, 'name-desc')); };
+            break;
+        case 'newest':
+            comparator = function(a, b) { return getSortValue(a, 'newest') - getSortValue(b, 'newest'); };
+            break;
+        case 'bestselling':
+            comparator = function(a, b) { return getSortValue(b, 'bestselling') - getSortValue(a, 'bestselling'); };
+            break;
+        default:
+            return;
+    }
+
+    cards.sort(comparator);
+    cards.forEach(function(card) { grid.appendChild(card); });
+}
+
+/** Visually marks the sort control as "active" whenever a non-default
+ *  sort is chosen, so it's obvious to the user a sort is applied. */
+function updateSortUI() {
+    var select = document.getElementById('sortSelect');
+    if (!select) return;
+    select.value = activeSortKey;
+    var isActive = activeSortKey !== 'default';
+    select.classList.toggle('border-blue-500', isActive);
+    select.classList.toggle('text-blue-600', isActive);
+    select.classList.toggle('font-semibold', isActive);
+    select.classList.toggle('bg-blue-50', isActive);
+}
+
+/** Called from the sort dropdown's onchange. Re-sorts the FULL card set,
+ *  then re-paginates — this never touches which cards are hidden by an
+ *  active search/category/price filter, so sorting composes with all of
+ *  them instead of resetting anything. */
+function applySort(key) {
+    activeSortKey = key;
+    sortCardsInPlace();
+    currentPage = 1;
+    renderPage(1);
+    updateSortUI();
+}
 
 // ── Category Filter ───────────────────────────────────────
 function filterCategory(cat) {
@@ -266,6 +359,7 @@ function applyFilters() {
         }
     });
 
+    sortCardsInPlace(); // keep the chosen sort order even after filtering
     currentPage = 1;
     renderPage(1);
 }
@@ -361,6 +455,7 @@ function initPagination() {
     document.querySelectorAll('#product-grid .product-card').forEach(function(card) {
         delete card.dataset.pgHidden;
     });
+    sortCardsInPlace();
     renderPage(1);
 }
 
@@ -461,6 +556,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!searchTerm) {
             // Clear search — reset pgHidden and re-paginate
             cards.forEach(function(card) { delete card.dataset.pgHidden; });
+            sortCardsInPlace(); // keep the chosen sort order once the search term is gone
             currentPage = 1;
             renderPage(1);
             const label = document.getElementById('search-label');
@@ -489,7 +585,10 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        // Reset to page 1 and paginate
+        // Reset to page 1 and paginate. If a manual sort is active, it takes
+        // over from here — the relevance-based order above is only the
+        // default when no sort has been explicitly chosen.
+        sortCardsInPlace();
         currentPage = 1;
         renderPage(1);
 
@@ -529,6 +628,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelectorAll('#product-grid .product-card').forEach(function(card) {
                 delete card.dataset.pgHidden;
             });
+            sortCardsInPlace();
             currentPage = 1;
             renderPage(1);
             const label = document.getElementById('search-label');

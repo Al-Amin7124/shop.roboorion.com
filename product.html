@@ -249,11 +249,14 @@
 
         <!-- Product Section -->
         <div class="mx-auto max-w-8xl py-8 bg-[#F5F7FF] -mt-20">
+             <!-- Nav End 
             <div class="text-center mb-8 mt-20">
                 <h1 class="text-4xl font-ubuntu font-bold text-gray-800 text-shadow">
                     Our Products
                 </h1>
-            </div>
+            </div> -->
+
+            <div class="mb-14"></div>
 
             <div class="flex gap-4 px-2 md:px-4 max-w-8xl mx-auto">
 
@@ -914,6 +917,21 @@
                         </div>
                     </div>
 
+                    <!-- Sort control -->
+                    <div class="flex justify-end items-center gap-2 mb-4">
+                        <label for="sortSelect" class="text-sm text-gray-600 font-medium">Sort by:</label>
+                        <select id="sortSelect" onchange="applySort(this.value)"
+                            class="text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-400 transition-colors">
+                            <option value="default">Featured</option>
+                            <option value="newest">Newest Arrivals</option>
+                            <option value="bestselling">Best Selling</option>
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="price-desc">Price: High to Low</option>
+                            <option value="name-asc">Name: A to Z</option>
+                            <option value="name-desc">Name: Z to A</option>
+                        </select>
+                    </div>
+
                     <!-- 1. Results label -->
                     <p id="search-label" class="hidden text-blue-600 font-semibold text-base mb-4"></p>
 
@@ -1116,8 +1134,8 @@
 <script src="asset/js/newsletter.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script src="asset/js/tailwind.config.js"></script>
-<script src="asset/js/product.js?v=2"></script>
-<script src="asset/js/cart.js?v=2"></script>
+<script src="asset/js/product.js"></script>
+<script src="asset/js/cart.js"></script>
 <script src="render-products.js?v=3"></script>
 <script>
   renderCatalog({ containerId: 'product-grid', jsonPath: 'items.json' });
