@@ -1,5 +1,23 @@
 [
   {
+  "id": "RBO-1374",
+  "title": "8 inch BLDC Brushless Fan Motor 9V/12V 5 Blades High Air Volume",
+  "url": "products/1374-8-inch-bldc-brushless-fan-motor-robo-orion-bangladesh.html",
+  "image": "img/product/1374-8-inch-bldc-brushless-fan-motor-robo-orion-bangladesh.jpg",
+  "alt": "8 inch BLDC Brushless Fan Motor 9V/12V 5 Blades High Air Volume",
+  "categories": [
+    "dc-motors",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 100",
+  "rating": 5,
+  "reviews": 17,
+  "brand": "Generic",
+  "price": "BDT 380",
+  "original_price": "BDT 480",
+  "in_stock": true
+},
+  {
   "id": "RBO-1373",
   "title": "35mm Crocodile Clip (Pair)",
   "url": "products/1373-35mm-crocodile-clip-pair-robo-orion-bangladesh.html",
