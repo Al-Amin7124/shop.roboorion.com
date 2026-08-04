@@ -1,5 +1,26 @@
 [
   {
+    "id": "RBO-1371",
+    "title": "22 Ohm 1/4 Watt Carbon Film Resistor (Pack of 10)",
+    "url": "products/1371-22-ohm-1-4-watt-resistor-pack-of-10-robo-orion-bangladesh.html",
+    "image": "img/product/1371-22-ohm-1-4-watt-resistor-pack-of-10-robo-orion-bangladesh.jpg",
+    "alt": "22 Ohm 1/4 Watt Carbon Film Resistor Pack of 10",
+    "categories": [
+      "resistors",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 5",
+    "rating": 5,
+    "reviews": 4,
+    "brand": "Generic",
+    "price": "BDT 5",
+    "original_price": "BDT 10",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0
+  },
+  {
     "id": "RBO-1370",
     "title": "10m Nickel Strip Roll Holder Box (3D Printed, Gray)",
     "url": "products/1370-10m-nickel-strip-roll-holder-3d-printed-robo-orion-bangladesh.html",
@@ -83,7 +104,7 @@
     "original_price": "BDT 10",
     "in_stock": true,
     "weight": 1.5,
-    "stock": 90,
+    "stock": 89,
     "sold": 10
   },
   {
@@ -2041,11 +2062,11 @@
       "battery-packs",
       "diy-kits"
     ],
-    "discount": "Save BDT 110",
+    "discount": "Save BDT 130",
     "rating": 5,
     "reviews": 16,
     "brand": "Generic",
-    "price": "BDT 670",
+    "price": "BDT 650",
     "original_price": "BDT 780",
     "in_stock": true,
     "weight": 200,
@@ -3094,7 +3115,7 @@
     "original_price": "BDT 70",
     "in_stock": true,
     "sales_count": 1,
-    "stock": 1,
+    "stock": 0,
     "sold": 1,
     "weight": 0
   },
@@ -5143,7 +5164,7 @@
     "price": "BDT 5",
     "original_price": "BDT 8",
     "in_stock": true,
-    "stock": 20,
+    "stock": 15,
     "sold": 0,
     "weight": 0
   },
