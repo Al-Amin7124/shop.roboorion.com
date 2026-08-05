@@ -1,6 +1,27 @@
 [
   {
     "id": "RBO-1376",
+    "title": "N20 12V 400 RPM Micro Metal DC Gear Motor",
+    "url": "products/1376-n20-12v-400-rpm-micro-metal-dc-gear-motor-robo-orion-bangladesh.html",
+    "image": "img/product/1376-n20-12v-400-rpm-micro-metal-dc-gear-motor-robo-orion-bangladesh.jpg",
+    "alt": "N20 12V 400 RPM Micro Metal DC Gear Motor",
+    "categories": [
+      "dc-motors",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 50",
+    "rating": 5,
+    "reviews": 8,
+    "brand": "Generic",
+    "price": "BDT 300",
+    "original_price": "BDT 350",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0
+  },
+  {
+    "id": "RBO-1376",
     "title": "Original High Quality IRFZ44N N-Channel Power MOSFET",
     "url": "products/1376-irfz44n-mosfet-original-high-quality-robo-orion-bangladesh.html",
     "image": "img/product/1376-irfz44n-mosfet-original-high-quality-robo-orion-bangladesh.jpg",
