@@ -1,5 +1,25 @@
 [
   {
+  "id": "RBO-1378",
+  "title": "Infrared Motion PIR Sensor Automatic LED Light Lamp Holder Switch",
+  "url": "products/1378-infrared-motion-pir-sensor-lamp-holder-robo-orion-bangladesh.html",
+  "image": "img/product/1378-infrared-motion-pir-sensor-lamp-holder-robo-orion-bangladesh.jpg",
+  "alt": "Infrared Motion PIR Sensor Automatic LED Lamp Holder Switch",
+  "categories": [
+    "sensors",
+    "motion-sensors",
+    "diy-kits",
+    "relays"
+  ],
+  "discount": "Save BDT 200",
+  "rating": 5,
+  "reviews": 9,
+  "brand": "Generic",
+  "price": "BDT 250",
+  "original_price": "BDT 450",
+  "in_stock": true
+},
+  {
     "id": "RBO-1377",
     "title": "IC 7411 Triple 3-Input AND Gate",
     "url": "products/1377-ic-7411-3-input-and-gate-robo-orion-bangladesh.html",
@@ -1725,11 +1745,11 @@
       "lithium-batteries",
       "diy-kits"
     ],
-    "discount": "Save BDT 60",
+    "discount": "Save BDT 80",
     "rating": 5,
     "reviews": 16,
     "brand": "Generic",
-    "price": "BDT 190",
+    "price": "BDT 170",
     "original_price": "BDT 250",
     "in_stock": true,
     "weight": 45,
