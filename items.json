@@ -1,5 +1,26 @@
 [
   {
+    "id": "RBO-1377",
+    "title": "IC 7411 Triple 3-Input AND Gate",
+    "url": "products/1377-ic-7411-3-input-and-gate-robo-orion-bangladesh.html",
+    "image": "img/product/1377-ic-7411-3-input-and-gate-robo-orion-bangladesh.jpg",
+    "alt": "IC 7411 Triple 3-Input AND Gate",
+    "categories": [
+      "ic-chips",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 20",
+    "rating": 5,
+    "reviews": 6,
+    "brand": "Generic",
+    "price": "BDT 25",
+    "original_price": "BDT 45",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0
+  },
+  {
     "id": "RBO-1376",
     "title": "N20 12V 400 RPM Micro Metal DC Gear Motor",
     "url": "products/1376-n20-12v-400-rpm-micro-metal-dc-gear-motor-robo-orion-bangladesh.html",
