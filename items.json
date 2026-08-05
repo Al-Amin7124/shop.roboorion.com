@@ -1,5 +1,26 @@
 [
   {
+    "id": "RBO-1376",
+    "title": "Original High Quality IRFZ44N N-Channel Power MOSFET",
+    "url": "products/1376-irfz44n-mosfet-original-high-quality-robo-orion-bangladesh.html",
+    "image": "img/product/1376-irfz44n-mosfet-original-high-quality-robo-orion-bangladesh.jpg",
+    "alt": "Original High Quality IRFZ44N MOSFET",
+    "categories": [
+      "transistors",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 30",
+    "rating": 5,
+    "reviews": 11,
+    "brand": "Generic",
+    "price": "BDT 65",
+    "original_price": "BDT 95",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0
+  },
+  {
     "id": "RBO-1375",
     "title": "Type C USB 3.1 3A Fast Charging Male & Female Connector Pair",
     "url": "products/1375-type-c-connector-male-female-pair-robo-orion-bangladesh.html",
@@ -18,7 +39,7 @@
     "original_price": "BDT 85",
     "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": 2,
     "sold": 0
   },
   {
@@ -39,7 +60,7 @@
     "original_price": "BDT 480",
     "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": 2,
     "sold": 0
   },
   {
@@ -63,7 +84,7 @@
     "in_stock": true,
     "weight": 0,
     "stock": 3,
-    "sold": 0
+    "sold": 2
   },
   {
     "id": "RBO-1372",
@@ -194,7 +215,7 @@
     "in_stock": true,
     "weight": 1.5,
     "stock": 89,
-    "sold": 10
+    "sold": 11
   },
   {
     "id": "RBO-1366",
@@ -216,7 +237,7 @@
     "in_stock": false,
     "weight": 245,
     "stock": 0,
-    "sold": 0
+    "sold": 1
   },
   {
     "id": "RBO-1365",
@@ -412,7 +433,7 @@
     "price": "BDT 6",
     "original_price": "BDT 12",
     "in_stock": true,
-    "stock": 5,
+    "stock": 25,
     "sold": 15,
     "sales_count": 15,
     "weight": 0
@@ -704,7 +725,7 @@
     "price": "BDT 20",
     "original_price": "BDT 35",
     "in_stock": true,
-    "sold": 0,
+    "sold": 2,
     "weight": 0,
     "stock": 3
   },
@@ -819,7 +840,7 @@
     "in_stock": true,
     "weight": 2,
     "stock": 9,
-    "sold": 0
+    "sold": 1
   },
   {
     "id": "RBO-1338",
@@ -1406,7 +1427,7 @@
     "in_stock": true,
     "weight": 12,
     "stock": 1,
-    "sold": 0
+    "sold": 1
   },
   {
     "id": "RBO-1314",
@@ -1737,7 +1758,7 @@
     "sales_count": 4,
     "weight": 2,
     "stock": 1,
-    "sold": 4
+    "sold": 8
   },
   {
     "id": "RBO-1299",
@@ -1778,8 +1799,8 @@
     "original_price": "BDT 180",
     "in_stock": true,
     "weight": 13,
-    "stock": 9,
-    "sold": 1
+    "stock": 8,
+    "sold": 2
   },
   {
     "id": "RBO-1297",
@@ -1845,7 +1866,7 @@
     "sales_count": 6,
     "weight": 2,
     "stock": 19,
-    "sold": 6
+    "sold": 10
   },
   {
     "id": "RBO-1294",
@@ -1867,7 +1888,7 @@
     "in_stock": true,
     "weight": 2,
     "stock": 6,
-    "sold": 9,
+    "sold": 13,
     "sales_count": 3
   },
   {
@@ -2754,7 +2775,7 @@
     "sales_count": 1,
     "weight": 123,
     "stock": 9,
-    "sold": 1
+    "sold": 2
   },
   {
     "id": "RBO-1251",
@@ -3095,7 +3116,7 @@
     "sales_count": 8,
     "weight": 10,
     "stock": 14,
-    "sold": 8
+    "sold": 9
   },
   {
     "id": "RBO-1236",
@@ -3117,7 +3138,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 20,
-    "stock": 0,
+    "stock": 2,
     "sold": 2
   },
   {
@@ -3204,8 +3225,8 @@
     "original_price": "BDT 70",
     "in_stock": true,
     "sales_count": 1,
-    "stock": 0,
-    "sold": 1,
+    "stock": 2,
+    "sold": 2,
     "weight": 0
   },
   {
@@ -3270,7 +3291,7 @@
     "sales_count": 1,
     "weight": 50,
     "stock": 1,
-    "sold": 1
+    "sold": 2
   },
   {
     "id": "RBO-1216",
@@ -5254,7 +5275,7 @@
     "original_price": "BDT 8",
     "in_stock": true,
     "stock": 15,
-    "sold": 0,
+    "sold": 5,
     "weight": 0
   },
   {
@@ -5453,8 +5474,8 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 15,
-    "stock": 10,
-    "sold": 1
+    "stock": 9,
+    "sold": 2
   },
   {
     "id": "RBO-1166",
@@ -5839,7 +5860,7 @@
     "price": "BDT 1.5",
     "original_price": "BDT 2",
     "in_stock": true,
-    "sold": 0,
+    "sold": 6,
     "weight": 1,
     "stock": 10
   },
@@ -5860,7 +5881,7 @@
     "price": "BDT 1.5",
     "original_price": "BDT 2",
     "in_stock": true,
-    "sold": 0,
+    "sold": 6,
     "weight": 1,
     "stock": 10
   },
