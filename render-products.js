@@ -16,6 +16,24 @@
  * This script just takes the first N items — no sorting/dates needed.
  */
 
+/**
+ * Registers sw.js (see that file for what it actually does — in short:
+ * caches product images persistently on the visitor's device so repeat
+ * page loads are fast, while items.json always stays live/uncached).
+ * Registered here rather than added to every individual HTML page, since
+ * this file is already loaded everywhere.
+ */
+(function registerServiceWorker() {
+  if (!("serviceWorker" in navigator)) return;
+  const isProdPage = window.location.pathname.includes("/products/");
+  const swPath = isProdPage ? "../sw.js" : "sw.js";
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register(swPath).catch((err) => {
+      console.warn("Service worker registration failed:", err);
+    });
+  });
+})();
+
 function starsHtml(rating) {
   const filled = Math.round(rating || 0);
   let html = "";
