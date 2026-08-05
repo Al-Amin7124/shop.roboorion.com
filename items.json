@@ -415,7 +415,7 @@
     "original_price": "BDT 10",
     "in_stock": true,
     "weight": 1.5,
-    "stock": 89,
+    "stock": 56,
     "sold": 11
   },
   {
@@ -750,7 +750,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": 5
+    "stock": 0
   },
   {
     "id": "RBO-1351",
