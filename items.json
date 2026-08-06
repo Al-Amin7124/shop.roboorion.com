@@ -1,5 +1,24 @@
 [
   {
+  "id": "RBO-1390",
+  "title": "Thermoelectric Cooler Peltier Module TEC1-12706",
+  "url": "products/1390-thermoelectric-cooler-peltier-module-tec1-12706-robo-orion-bangladesh.html",
+  "image": "img/product/1390-thermoelectric-cooler-peltier-module-tec1-12706-robo-orion-bangladesh.jpg",
+  "alt": "Thermoelectric Cooler Peltier Module TEC1-12706",
+  "categories": [
+    "components",
+    "modules",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 130",
+  "rating": 5,
+  "reviews": 14,
+  "brand": "Generic",
+  "price": "BDT 220",
+  "original_price": "BDT 350",
+  "in_stock": true
+},
+  {
     "id": "RBO-1389",
     "title": "DIP Switch - 8 Position",
     "url": "products/1389-dip-switch-8-position-robo-orion-bangladesh.html",
