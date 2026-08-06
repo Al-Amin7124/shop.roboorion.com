@@ -1,5 +1,115 @@
 [
   {
+    "id": "RBO-1389",
+    "title": "DIP Switch - 8 Position",
+    "url": "products/1389-dip-switch-8-position-robo-orion-bangladesh.html",
+    "image": "img/product/1389-dip-switch-8-position-robo-orion-bangladesh.jpg",
+    "alt": "8 Position DIP Switch (Slide Type)",
+    "categories": [
+      "switches",
+      "components",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 10",
+    "rating": 5,
+    "reviews": 6,
+    "brand": "Generic",
+    "price": "BDT 35",
+    "original_price": "BDT 45",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0
+  },
+  {
+    "id": "RBO-1388",
+    "title": "74HC4067 16-Ch Analog / Digital Mux Module",
+    "url": "products/1388-74hc4067-16-ch-analog-digital-mux-module-robo-orion-bangladesh.html",
+    "image": "img/product/1388-74hc4067-16-ch-analog-digital-mux-module-robo-orion-bangladesh.jpg",
+    "alt": "74HC4067 16-Channel Analog/Digital Multiplexer Module",
+    "categories": [
+      "modules",
+      "integrated-circuits",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 120",
+    "rating": 5,
+    "reviews": 9,
+    "brand": "Generic",
+    "price": "BDT 130",
+    "original_price": "BDT 250",
+    "in_stock": true,
+    "weight": 5,
+    "stock": 2,
+    "sold": 0
+  },
+  {
+    "id": "RBO-1387",
+    "title": "74266 ic",
+    "url": "products/1387-74266-ic-robo-orion-bangladesh.html",
+    "image": "img/product/1387-74266-ic-robo-orion-bangladesh.jpg",
+    "alt": "74266 Quad 2-Input XNOR Gate IC (Open-Collector)",
+    "categories": [
+      "integrated-circuits",
+      "logic-gates",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 10",
+    "rating": 5,
+    "reviews": 8,
+    "brand": "Generic",
+    "price": "BDT 55",
+    "original_price": "BDT 65",
+    "in_stock": true,
+    "weight": 2,
+    "stock": 5,
+    "sold": 0
+  },
+  {
+    "id": "RBO-1386",
+    "title": "7404 NOT Gate DIP 14",
+    "url": "products/1386-7404-not-gate-dip-14-robo-orion-bangladesh.html",
+    "image": "img/product/1386-7404-not-gate-dip-14-robo-orion-bangladesh.jpg",
+    "alt": "7404 Hex Inverter NOT Gate IC (DIP-14)",
+    "categories": [
+      "integrated-circuits",
+      "logic-gates",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 7",
+    "rating": 5,
+    "reviews": 9,
+    "brand": "Generic",
+    "price": "BDT 18",
+    "original_price": "BDT 25",
+    "in_stock": true,
+    "weight": 2,
+    "stock": 5,
+    "sold": 0
+  },
+  {
+    "id": "RBO-1385",
+    "title": "7408 AND Gate ic",
+    "url": "products/1385-7408-and-gate-ic-robo-orion-bangladesh.html",
+    "image": "img/product/1385-7408-and-gate-ic-robo-orion-bangladesh.jpg",
+    "alt": "7408 Quad 2-Input AND Gate IC",
+    "categories": [
+      "integrated-circuits",
+      "logic-gates",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 7",
+    "rating": 5,
+    "reviews": 8,
+    "brand": "Generic",
+    "price": "BDT 18",
+    "original_price": "BDT 25",
+    "in_stock": true,
+    "weight": 2,
+    "stock": 5,
+    "sold": 0
+  },
+  {
     "id": "RBO-1384",
     "title": "IC 7421 4 Input AND Gate",
     "url": "products/1384-ic-7421-4-input-and-gate-robo-orion-bangladesh.html",
@@ -17,8 +127,8 @@
     "price": "BDT 35",
     "original_price": "BDT 45",
     "in_stock": true,
-    "weight": 0,
-    "stock": 0,
+    "weight": 2,
+    "stock": 5,
     "sold": 0
   },
   {
@@ -39,8 +149,8 @@
     "price": "BDT 35",
     "original_price": "BDT 45",
     "in_stock": true,
-    "weight": 0,
-    "stock": 0,
+    "weight": 2,
+    "stock": 5,
     "sold": 0
   },
   {
@@ -175,8 +285,8 @@
     "price": "BDT 25",
     "original_price": "BDT 45",
     "in_stock": true,
-    "weight": 0,
-    "stock": 0,
+    "weight": 2,
+    "stock": 5,
     "sold": 0
   },
   {
@@ -394,7 +504,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 1,
-    "stock": 1,
+    "stock": 0,
     "sold": 1
   },
   {
@@ -1040,7 +1150,7 @@
     "original_price": "BDT 180",
     "in_stock": true,
     "weight": 2,
-    "stock": 9,
+    "stock": 8,
     "sold": 1
   },
   {
@@ -1805,8 +1915,8 @@
     "in_stock": true,
     "sales_count": 9,
     "weight": 1,
-    "stock": 10,
-    "sold": 9
+    "stock": 7,
+    "sold": 12
   },
   {
     "id": "RBO-1306",
@@ -1827,8 +1937,8 @@
     "in_stock": true,
     "sales_count": 5,
     "weight": 2,
-    "stock": 14,
-    "sold": 5
+    "stock": 12,
+    "sold": 7
   },
   {
     "id": "RBO-1305",
@@ -1849,8 +1959,8 @@
     "in_stock": true,
     "sales_count": 5,
     "weight": 2,
-    "stock": 5,
-    "sold": 5
+    "stock": 2,
+    "sold": 8
   },
   {
     "id": "RBO-1304",
@@ -1936,8 +2046,8 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 2,
-    "stock": 15,
-    "sold": 4
+    "stock": 13,
+    "sold": 6
   },
   {
     "id": "RBO-1300",
@@ -2088,8 +2198,8 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 2,
-    "stock": 6,
-    "sold": 13,
+    "stock": 4,
+    "sold": 15,
     "sales_count": 3
   },
   {
@@ -3133,7 +3243,7 @@
     "in_stock": true,
     "sales_count": 3,
     "weight": 15,
-    "stock": 9,
+    "stock": 8,
     "sold": 3
   },
   {
@@ -3272,7 +3382,7 @@
     "original_price": "BDT 110",
     "in_stock": true,
     "weight": 5,
-    "stock": 6,
+    "stock": 5,
     "sold": 1
   },
   {
@@ -4508,7 +4618,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 160,
-    "stock": 9,
+    "stock": 8,
     "sold": 4
   },
   {
@@ -4549,7 +4659,7 @@
     "in_stock": true,
     "sales_count": 21,
     "weight": 2,
-    "stock": 29,
+    "stock": 26,
     "sold": 21
   },
   {
@@ -5475,8 +5585,8 @@
     "price": "BDT 5",
     "original_price": "BDT 8",
     "in_stock": true,
-    "stock": 15,
-    "sold": 5,
+    "stock": 11,
+    "sold": 9,
     "weight": 0
   },
   {
@@ -6000,7 +6110,7 @@
     "original_price": "BDT 85",
     "in_stock": true,
     "sales_count": 1,
-    "stock": 3,
+    "stock": 2,
     "sold": 1,
     "weight": 0
   },
