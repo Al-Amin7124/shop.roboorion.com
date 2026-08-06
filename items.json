@@ -1,23 +1,26 @@
 [
   {
-  "id": "RBO-1390",
-  "title": "Thermoelectric Cooler Peltier Module TEC1-12706",
-  "url": "products/1390-thermoelectric-cooler-peltier-module-tec1-12706-robo-orion-bangladesh.html",
-  "image": "img/product/1390-thermoelectric-cooler-peltier-module-tec1-12706-robo-orion-bangladesh.jpg",
-  "alt": "Thermoelectric Cooler Peltier Module TEC1-12706",
-  "categories": [
-    "components",
-    "modules",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 130",
-  "rating": 5,
-  "reviews": 14,
-  "brand": "Generic",
-  "price": "BDT 220",
-  "original_price": "BDT 350",
-  "in_stock": true
-},
+    "id": "RBO-1390",
+    "title": "Thermoelectric Cooler Peltier Module TEC1-12706",
+    "url": "products/1390-thermoelectric-cooler-peltier-module-tec1-12706-robo-orion-bangladesh.html",
+    "image": "img/product/1390-thermoelectric-cooler-peltier-module-tec1-12706-robo-orion-bangladesh.jpg",
+    "alt": "Thermoelectric Cooler Peltier Module TEC1-12706",
+    "categories": [
+      "components",
+      "modules",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 130",
+    "rating": 5,
+    "reviews": 14,
+    "brand": "Generic",
+    "price": "BDT 220",
+    "original_price": "BDT 350",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 1,
+    "sold": 0
+  },
   {
     "id": "RBO-1389",
     "title": "DIP Switch - 8 Position",
@@ -36,8 +39,8 @@
     "price": "BDT 35",
     "original_price": "BDT 45",
     "in_stock": true,
-    "weight": 0,
-    "stock": 0,
+    "weight": 3,
+    "stock": 2,
     "sold": 0
   },
   {
@@ -59,7 +62,7 @@
     "original_price": "BDT 250",
     "in_stock": true,
     "weight": 5,
-    "stock": 2,
+    "stock": 1,
     "sold": 0
   },
   {
@@ -81,7 +84,7 @@
     "original_price": "BDT 65",
     "in_stock": true,
     "weight": 2,
-    "stock": 5,
+    "stock": 4,
     "sold": 0
   },
   {
@@ -103,7 +106,7 @@
     "original_price": "BDT 25",
     "in_stock": true,
     "weight": 2,
-    "stock": 5,
+    "stock": 3,
     "sold": 0
   },
   {
@@ -125,7 +128,7 @@
     "original_price": "BDT 25",
     "in_stock": true,
     "weight": 2,
-    "stock": 5,
+    "stock": 2,
     "sold": 0
   },
   {
@@ -147,7 +150,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 2,
-    "stock": 5,
+    "stock": 3,
     "sold": 0
   },
   {
@@ -169,7 +172,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 2,
-    "stock": 5,
+    "stock": 4,
     "sold": 0
   },
   {
@@ -305,7 +308,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 2,
-    "stock": 5,
+    "stock": 4,
     "sold": 0
   },
   {
@@ -544,7 +547,7 @@
     "original_price": "BDT 10",
     "in_stock": true,
     "weight": 1.5,
-    "stock": 56,
+    "stock": 62,
     "sold": 11
   },
   {
@@ -835,7 +838,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": -2
+    "stock": 0
   },
   {
     "id": "RBO-1353",
@@ -3445,7 +3448,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 10,
-    "stock": 14,
+    "stock": 12,
     "sold": 9
   },
   {
@@ -3794,7 +3797,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 5,
-    "stock": 17,
+    "stock": 15,
     "sold": 4
   },
   {
@@ -5249,7 +5252,7 @@
     "original_price": "BDT 150",
     "in_stock": true,
     "weight": 5,
-    "stock": 2,
+    "stock": 0,
     "sold": 0
   },
   {
@@ -5539,7 +5542,7 @@
     "price": "BDT 8",
     "original_price": "BDT 15",
     "in_stock": true,
-    "stock": 10,
+    "stock": 5,
     "sold": 0,
     "weight": 0
   },
@@ -6084,7 +6087,7 @@
     "original_price": "BDT 220",
     "in_stock": true,
     "sales_count": 5,
-    "stock": 15,
+    "stock": 14,
     "sold": 5,
     "weight": 0
   },
@@ -6192,7 +6195,7 @@
     "in_stock": true,
     "sold": 6,
     "weight": 1,
-    "stock": 10
+    "stock": 7
   },
   {
     "id": "RBO-1214",
