@@ -1,23 +1,26 @@
 [
   {
-  "id": "RBO-1395",
-  "title": "Soldering Iron Bit Set 5 Pcs for 908 Model Regular Quality",
-  "url": "products/1395-soldering-iron-bit-set-5-pcs-for-908-model-regular-quality-robo-orion-bangladesh.html",
-  "image": "img/product/1395-soldering-iron-bit-set-5-pcs-for-908-model-regular-quality-robo-orion-bangladesh.jpg",
-  "alt": "Soldering Iron Bit Set 5 Pcs for 908 Model Regular Quality",
-  "categories": [
-    "tools",
-    "soldering",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 40",
-  "rating": 5,
-  "reviews": 14,
-  "brand": "Generic",
-  "price": "BDT 80",
-  "original_price": "BDT 120",
-  "in_stock": true
-},
+    "id": "RBO-1395",
+    "title": "Soldering Iron Bit Set 5 Pcs for 908 Model Regular Quality",
+    "url": "products/1395-soldering-iron-bit-set-5-pcs-for-908-model-regular-quality-robo-orion-bangladesh.html",
+    "image": "img/product/1395-soldering-iron-bit-set-5-pcs-for-908-model-regular-quality-robo-orion-bangladesh.jpg",
+    "alt": "Soldering Iron Bit Set 5 Pcs for 908 Model Regular Quality",
+    "categories": [
+      "tools",
+      "soldering",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 40",
+    "rating": 5,
+    "reviews": 14,
+    "brand": "Generic",
+    "price": "BDT 80",
+    "original_price": "BDT 120",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0
+  },
   {
     "id": "RBO-1394",
     "title": "AA Size Battery Holder 2S",
@@ -499,8 +502,8 @@
     "price": "BDT 380",
     "original_price": "BDT 480",
     "in_stock": true,
-    "weight": 0,
-    "stock": 2,
+    "weight": 75,
+    "stock": 1,
     "sold": 0
   },
   {
