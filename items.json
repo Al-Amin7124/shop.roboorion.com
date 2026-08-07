@@ -1,5 +1,24 @@
 [
   {
+  "id": "RBO-1391",
+  "title": "Cooling Fan with Heatsink for Peltier Module",
+  "url": "products/1391-cooling-fan-with-heat-sink-suitable-for-peltier-module-robo-orion-bangladesh.html",
+  "image": "img/product/1391-cooling-fan-with-heat-sink-suitable-for-peltier-module-robo-orion-bangladesh.jpg",
+  "alt": "Cooling Fan with Heatsink for Peltier Module (12V)",
+  "categories": [
+    "components",
+    "modules",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 40",
+  "rating": 5,
+  "reviews": 7,
+  "brand": "Generic",
+  "price": "BDT 110",
+  "original_price": "BDT 150",
+  "in_stock": true
+},
+  {
     "id": "RBO-1390",
     "title": "Thermoelectric Cooler Peltier Module TEC1-12706",
     "url": "products/1390-thermoelectric-cooler-peltier-module-tec1-12706-robo-orion-bangladesh.html",
