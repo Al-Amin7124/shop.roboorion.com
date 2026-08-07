@@ -1,80 +1,111 @@
 [
   {
-  "id": "RBO-1394",
-  "title": "AA Size Battery Holder 2S",
-  "url": "products/1394-aa-size-battery-holder-2s-robo-orion-bangladesh.html",
-  "image": "img/product/1394-aa-size-battery-holder-2s-robo-orion-bangladesh.jpg",
-  "alt": "AA Size Battery Holder 2S (Dual Cell, 3V)",
+  "id": "RBO-1395",
+  "title": "Soldering Iron Bit Set 5 Pcs for 908 Model Regular Quality",
+  "url": "products/1395-soldering-iron-bit-set-5-pcs-for-908-model-regular-quality-robo-orion-bangladesh.html",
+  "image": "img/product/1395-soldering-iron-bit-set-5-pcs-for-908-model-regular-quality-robo-orion-bangladesh.jpg",
+  "alt": "Soldering Iron Bit Set 5 Pcs for 908 Model Regular Quality",
   "categories": [
-    "battery-holders",
-    "power",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 10",
-  "rating": 5,
-  "reviews": 12,
-  "brand": "Generic",
-  "price": "BDT 20",
-  "original_price": "BDT 30",
-  "in_stock": true
-},
-  {
-  "id": "RBO-1393",
-  "title": "AA Size Battery Holder 1S",
-  "url": "products/1393-aa-size-battery-holder-1s-robo-orion-bangladesh.html",
-  "image": "img/product/1393-aa-size-battery-holder-1s-robo-orion-bangladesh.jpg",
-  "alt": "AA Size Battery Holder 1S (Single Cell, 1.5V)",
-  "categories": [
-    "battery-holders",
-    "power",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 7",
-  "rating": 5,
-  "reviews": 8,
-  "brand": "Generic",
-  "price": "BDT 18",
-  "original_price": "BDT 25",
-  "in_stock": true
-},
-  {
-  "id": "RBO-1392",
-  "title": "Thermal Paste HF-190 Thermal Grease",
-  "url": "products/1392-thermal-paste-hf-190-thermal-grease-robo-orion-bangladesh.html",
-  "image": "img/product/1392-thermal-paste-hf-190-thermal-grease-robo-orion-bangladesh.jpg",
-  "alt": "HF-190 Thermal Paste / Grease (High Performance Syringe)",
-  "categories": [
-    "thermal-management",
     "tools",
-    "components"
-  ],
-  "discount": "Save BDT 35",
-  "rating": 5,
-  "reviews": 7,
-  "brand": "Generic",
-  "price": "BDT 85",
-  "original_price": "BDT 120",
-  "in_stock": true
-},
-  {
-  "id": "RBO-1391",
-  "title": "Cooling Fan with Heatsink for Peltier Module",
-  "url": "products/1391-cooling-fan-with-heat-sink-suitable-for-peltier-module-robo-orion-bangladesh.html",
-  "image": "img/product/1391-cooling-fan-with-heat-sink-suitable-for-peltier-module-robo-orion-bangladesh.jpg",
-  "alt": "Cooling Fan with Heatsink for Peltier Module (12V)",
-  "categories": [
-    "components",
-    "modules",
+    "soldering",
     "diy-kits"
   ],
   "discount": "Save BDT 40",
   "rating": 5,
-  "reviews": 7,
+  "reviews": 14,
   "brand": "Generic",
-  "price": "BDT 110",
-  "original_price": "BDT 150",
+  "price": "BDT 80",
+  "original_price": "BDT 120",
   "in_stock": true
 },
+  {
+    "id": "RBO-1394",
+    "title": "AA Size Battery Holder 2S",
+    "url": "products/1394-aa-size-battery-holder-2s-robo-orion-bangladesh.html",
+    "image": "img/product/1394-aa-size-battery-holder-2s-robo-orion-bangladesh.jpg",
+    "alt": "AA Size Battery Holder 2S (Dual Cell, 3V)",
+    "categories": [
+      "battery-holders",
+      "power",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 10",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 20",
+    "original_price": "BDT 30",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0
+  },
+  {
+    "id": "RBO-1393",
+    "title": "AA Size Battery Holder 1S",
+    "url": "products/1393-aa-size-battery-holder-1s-robo-orion-bangladesh.html",
+    "image": "img/product/1393-aa-size-battery-holder-1s-robo-orion-bangladesh.jpg",
+    "alt": "AA Size Battery Holder 1S (Single Cell, 1.5V)",
+    "categories": [
+      "battery-holders",
+      "power",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 7",
+    "rating": 5,
+    "reviews": 8,
+    "brand": "Generic",
+    "price": "BDT 18",
+    "original_price": "BDT 25",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0
+  },
+  {
+    "id": "RBO-1392",
+    "title": "Thermal Paste HF-190 Thermal Grease",
+    "url": "products/1392-thermal-paste-hf-190-thermal-grease-robo-orion-bangladesh.html",
+    "image": "img/product/1392-thermal-paste-hf-190-thermal-grease-robo-orion-bangladesh.jpg",
+    "alt": "HF-190 Thermal Paste / Grease (High Performance Syringe)",
+    "categories": [
+      "thermal-management",
+      "tools",
+      "components"
+    ],
+    "discount": "Save BDT 35",
+    "rating": 5,
+    "reviews": 7,
+    "brand": "Generic",
+    "price": "BDT 85",
+    "original_price": "BDT 120",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0
+  },
+  {
+    "id": "RBO-1391",
+    "title": "Cooling Fan with Heatsink for Peltier Module",
+    "url": "products/1391-cooling-fan-with-heat-sink-suitable-for-peltier-module-robo-orion-bangladesh.html",
+    "image": "img/product/1391-cooling-fan-with-heat-sink-suitable-for-peltier-module-robo-orion-bangladesh.jpg",
+    "alt": "Cooling Fan with Heatsink for Peltier Module (12V)",
+    "categories": [
+      "components",
+      "modules",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 40",
+    "rating": 5,
+    "reviews": 7,
+    "brand": "Generic",
+    "price": "BDT 110",
+    "original_price": "BDT 150",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0
+  },
   {
     "id": "RBO-1390",
     "title": "Thermoelectric Cooler Peltier Module TEC1-12706",
@@ -845,7 +876,7 @@
     "stock": 25,
     "sold": 15,
     "sales_count": 15,
-    "weight": 0
+    "weight": 1
   },
   {
     "id": "RBO-1356",
