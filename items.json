@@ -1,5 +1,43 @@
 [
   {
+  "id": "RBO-1394",
+  "title": "AA Size Battery Holder 2S",
+  "url": "products/1394-aa-size-battery-holder-2s-robo-orion-bangladesh.html",
+  "image": "img/product/1394-aa-size-battery-holder-2s-robo-orion-bangladesh.jpg",
+  "alt": "AA Size Battery Holder 2S (Dual Cell, 3V)",
+  "categories": [
+    "battery-holders",
+    "power",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 10",
+  "rating": 5,
+  "reviews": 12,
+  "brand": "Generic",
+  "price": "BDT 20",
+  "original_price": "BDT 30",
+  "in_stock": true
+},
+  {
+  "id": "RBO-1393",
+  "title": "AA Size Battery Holder 1S",
+  "url": "products/1393-aa-size-battery-holder-1s-robo-orion-bangladesh.html",
+  "image": "img/product/1393-aa-size-battery-holder-1s-robo-orion-bangladesh.jpg",
+  "alt": "AA Size Battery Holder 1S (Single Cell, 1.5V)",
+  "categories": [
+    "battery-holders",
+    "power",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 7",
+  "rating": 5,
+  "reviews": 8,
+  "brand": "Generic",
+  "price": "BDT 18",
+  "original_price": "BDT 25",
+  "in_stock": true
+},
+  {
   "id": "RBO-1392",
   "title": "Thermal Paste HF-190 Thermal Grease",
   "url": "products/1392-thermal-paste-hf-190-thermal-grease-robo-orion-bangladesh.html",
