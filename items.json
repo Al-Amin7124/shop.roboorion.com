@@ -1,5 +1,24 @@
 [
   {
+  "id": "RBO-1392",
+  "title": "Thermal Paste HF-190 Thermal Grease",
+  "url": "products/1392-thermal-paste-hf-190-thermal-grease-robo-orion-bangladesh.html",
+  "image": "img/product/1392-thermal-paste-hf-190-thermal-grease-robo-orion-bangladesh.jpg",
+  "alt": "HF-190 Thermal Paste / Grease (High Performance Syringe)",
+  "categories": [
+    "thermal-management",
+    "tools",
+    "components"
+  ],
+  "discount": "Save BDT 35",
+  "rating": 5,
+  "reviews": 7,
+  "brand": "Generic",
+  "price": "BDT 85",
+  "original_price": "BDT 120",
+  "in_stock": true
+},
+  {
   "id": "RBO-1391",
   "title": "Cooling Fan with Heatsink for Peltier Module",
   "url": "products/1391-cooling-fan-with-heat-sink-suitable-for-peltier-module-robo-orion-bangladesh.html",
