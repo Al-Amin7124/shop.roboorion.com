@@ -1,23 +1,47 @@
 [
   {
-  "id": "RBO-1396",
-  "title": "1 Pair (2 Pcs) 3x50mm Spot Welding Needles for Lithium Battery",
-  "url": "products/1396-1-pair-spot-welding-needle-3x50mm-copper-robo-orion-bangladesh.html",
-  "image": "img/product/1396-1-pair-spot-welding-needle-3x50mm-copper-robo-orion-bangladesh.jpg",
-  "alt": "1 Pair (2 Pcs) 3x50mm Spot Welding Needles for Lithium Battery",
-  "categories": [
-    "tools",
-    "soldering",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 130",
-  "rating": 5,
-  "reviews": 6,
-  "brand": "Generic",
-  "price": "BDT 250",
-  "original_price": "BDT 380",
-  "in_stock": true
-},
+    "id": "RBO-1397",
+    "title": "portable rechargable minihand drill machine",
+    "url": "products/1397-portable-rechargeable-mini-hand-drill-machine-robo-orion-bangladesh.html",
+    "image": "img/product/1397-portable-rechargeable-mini-hand-drill-machine-robo-orion-bangladesh.jpg",
+    "alt": "Portable Rechargeable Mini Hand Drill Machine (With Drill Set)",
+    "categories": [
+      "tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 260",
+    "rating": 5,
+    "reviews": 4,
+    "brand": "Robo Orion",
+    "price": "BDT 720",
+    "original_price": "BDT 980",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0
+  },
+  {
+    "id": "RBO-1396",
+    "title": "1 Pair (2 Pcs) 3x50mm Spot Welding Needles for Lithium Battery",
+    "url": "products/1396-1-pair-spot-welding-needle-3x50mm-copper-robo-orion-bangladesh.html",
+    "image": "img/product/1396-1-pair-spot-welding-needle-3x50mm-copper-robo-orion-bangladesh.jpg",
+    "alt": "1 Pair (2 Pcs) 3x50mm Spot Welding Needles for Lithium Battery",
+    "categories": [
+      "tools",
+      "soldering",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 130",
+    "rating": 5,
+    "reviews": 6,
+    "brand": "Generic",
+    "price": "BDT 250",
+    "original_price": "BDT 380",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0
+  },
   {
     "id": "RBO-1395",
     "title": "Soldering Iron Bit Set 5 Pcs for 908 Model Regular Quality",
@@ -588,7 +612,7 @@
     "price": "BDT 5",
     "original_price": "BDT 10",
     "in_stock": true,
-    "weight": 1,
+    "weight": 0,
     "stock": 0,
     "sold": 0
   },
@@ -741,7 +765,7 @@
     "price": "BDT 720",
     "original_price": "BDT 900",
     "in_stock": true,
-    "weight": 180,
+    "weight": 0,
     "stock": 0,
     "sold": 0
   },
@@ -763,7 +787,7 @@
     "price": "BDT 750",
     "original_price": "BDT 950",
     "in_stock": true,
-    "weight": 200,
+    "weight": 0,
     "stock": 1,
     "sold": 0
   },
@@ -785,7 +809,7 @@
     "price": "BDT 750",
     "original_price": "BDT 950",
     "in_stock": true,
-    "weight": 200,
+    "weight": 0,
     "stock": 1,
     "sold": 0
   },
@@ -853,8 +877,8 @@
     "original_price": "BDT 75",
     "in_stock": true,
     "weight": 2,
-    "stock": 10,
-    "sold": 0
+    "stock": 9,
+    "sold": 1
   },
   {
     "id": "RBO-1358",
@@ -2130,9 +2154,9 @@
     "price": "BDT 280",
     "original_price": "BDT 380",
     "in_stock": true,
-    "sold": 0,
+    "sold": 1,
     "weight": 0,
-    "stock": 0
+    "stock": -1
   },
   {
     "id": "RBO-1303",
@@ -6568,7 +6592,7 @@
     "original_price": "BDT 10",
     "in_stock": true,
     "sold": 0,
-    "weight": 1,
+    "weight": 0,
     "stock": 0
   },
   {
@@ -6589,7 +6613,7 @@
     "original_price": "BDT 10",
     "in_stock": true,
     "sold": 0,
-    "weight": 1.5,
+    "weight": 0,
     "stock": 0
   },
   {
