@@ -1,5 +1,27 @@
 [
   {
+    "id": "RBO-1399",
+    "title": "STANDARD EPOXY ADHESIVE GLUE - 13g",
+    "url": "products/1399-standard-epoxy-adhesive-glue-robo-orion-bangladesh.html",
+    "image": "img/product/1399-standard-epoxy-adhesive-glue-robo-orion-bangladesh.jpg",
+    "alt": "Standard Epoxy Adhesive Glue (2-Part Resin & Hardener)",
+    "categories": [
+      "tools",
+      "repair-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 25",
+    "rating": 5,
+    "reviews": 9,
+    "brand": "Generic",
+    "price": "BDT 60",
+    "original_price": "BDT 85",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0
+  },
+  {
     "id": "RBO-1398",
     "title": "Type C Mini Portable Router UPS 3500mAh",
     "url": "products/1398-type-c-mini-portable-router-ups-3500-mah-battery-1-to-4-hour-backup-time-for-router-and-onu-robo-orion-bangladesh.html",
@@ -3606,7 +3628,7 @@
   },
   {
     "id": "RBO-1237",
-    "title": "XL4015 DC-DC Step Down Adjustable Power Supply Module 5A Max",
+    "title": "XL4015 DC-DC Step Down Adjustable Power Supply Buck Converter Module 5A Max",
     "url": "products/1237-xl4015-dc-dc-step-down-adjustable-power-supply-module-5a-max-robo-orion-bangladesh.html",
     "image": "img/product/1237-xl4015-dc-dc-step-down-adjustable-power-supply-module-5a-max-robo-orion-bangladesh.jpg",
     "alt": "XL4015 DC-DC Step Down Adjustable Power Supply Module 5A Max",
