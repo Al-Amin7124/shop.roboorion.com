@@ -186,6 +186,8 @@
     function getDeliveryCharge() {
         const pickup = getEl('delivery-pickup');
         if (pickup && pickup.checked) return 0;
+        const suburbs = getEl('delivery-suburbs');
+        if (suburbs && suburbs.checked) return 110;
         const outside = getEl('delivery-outside');
         return outside && outside.checked ? 120 : 70;
     }
@@ -197,6 +199,8 @@
 
     function getDeliveryLabel() {
         if (isSelfPickup()) return `Self Pickup — ${PICKUP_LOCATION}`;
+        const suburbs = getEl('delivery-suburbs');
+        if (suburbs && suburbs.checked) return 'Sub-urbs of Dhaka';
         const outside = getEl('delivery-outside');
         return (outside && outside.checked) ? 'Outside Dhaka' : 'Inside Dhaka';
     }
@@ -204,6 +208,7 @@
     function syncDeliveryUI() {
         [
             ['delivery-inside', 'delivery-inside-label'],
+            ['delivery-suburbs', 'delivery-suburbs-label'],
             ['delivery-outside', 'delivery-outside-label'],
             ['delivery-pickup', 'delivery-pickup-label'],
         ].forEach(([radioId, labelId]) => {
@@ -227,7 +232,9 @@
         if (isSelfPickup()) method = 'pickup';
         else {
             const inside = getEl('delivery-inside');
+            const suburbs = getEl('delivery-suburbs');
             if (inside && inside.checked) method = 'inside';
+            else if (suburbs && suburbs.checked) method = 'suburbs';
         }
         try { localStorage.setItem(DELIVERY_KEY, method); }
         catch (e) { console.error('ROCart: failed to save delivery preference', e); }
@@ -238,7 +245,7 @@
         try { saved = localStorage.getItem(DELIVERY_KEY); } catch (e) { return; }
         if (!saved) return;
 
-        const radioIdByMethod = { inside: 'delivery-inside', outside: 'delivery-outside', pickup: 'delivery-pickup' };
+        const radioIdByMethod = { inside: 'delivery-inside', suburbs: 'delivery-suburbs', outside: 'delivery-outside', pickup: 'delivery-pickup' };
         const radio = getEl(radioIdByMethod[saved]);
         if (radio) radio.checked = true;
     }
@@ -875,9 +882,10 @@
         updateUI();
 
         const inside = getEl('delivery-inside');
+        const suburbs = getEl('delivery-suburbs');
         const outside = getEl('delivery-outside');
         const pickup = getEl('delivery-pickup');
-        [inside, outside, pickup].forEach(el => {
+        [inside, suburbs, outside, pickup].forEach(el => {
             if (el) el.addEventListener('change', () => { saveDeliveryPreference(); syncDeliveryUI(); updateUI(); });
         });
         syncDeliveryUI();
