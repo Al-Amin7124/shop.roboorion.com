@@ -1,41 +1,5 @@
 [
   {
-  "id": "RBO-1407",
-  "title": "19/12mm Amplifier Volume Control Metal Connector Knob yellow color",
-  "url": "products/1407-19-12mm-amplifier-volume-control-metal-connector-knob-yellow-color-robo-orion-bangladesh.html",
-  "image": "img/product/1407-19-12mm-amplifier-volume-control-metal-connector-knob-yellow-color-robo-orion-bangladesh.jpg",
-  "alt": "19/12mm Yellow Amplifier Volume Control Metal Connector Knob",
-  "categories": [
-    "components",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 5",
-  "rating": 5,
-  "reviews": 7,
-  "brand": "Generic",
-  "price": "BDT 5",
-  "original_price": "BDT 10",
-  "in_stock": true
-},
-  {
-  "id": "RBO-1406",
-  "title": "19/12mm Amplifier Volume Control Metal Connector Knob orange color",
-  "url": "products/1406-19-12mm-amplifier-volume-control-metal-connector-knob-orange-color-robo-orion-bangladesh.html",
-  "image": "img/product/1406-19-12mm-amplifier-volume-control-metal-connector-knob-orange-color-robo-orion-bangladesh.jpg",
-  "alt": "19/12mm Orange Amplifier Volume Control Metal Connector Knob",
-  "categories": [
-    "components",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 5",
-  "rating": 5,
-  "reviews": 9,
-  "brand": "Generic",
-  "price": "BDT 5",
-  "original_price": "BDT 10",
-  "in_stock": true
-},
-  {
     "id": "RBO-1405",
     "title": "19/12mm Amplifier Volume Control Metal Connector Knob blue color",
     "url": "products/1405-19-12mm-amplifier-volume-control-metal-connector-knob-blue-color-robo-orion-bangladesh.html",
@@ -52,8 +16,8 @@
     "price": "BDT 5",
     "original_price": "BDT 10",
     "in_stock": true,
-    "weight": 0,
-    "stock": 0,
+    "weight": 2,
+    "stock": 3,
     "sold": 0,
     "limitedStock": false
   },
@@ -74,8 +38,8 @@
     "price": "BDT 5",
     "original_price": "BDT 10",
     "in_stock": true,
-    "weight": 0,
-    "stock": 0,
+    "weight": 2,
+    "stock": 3,
     "sold": 0,
     "limitedStock": false
   },
@@ -98,7 +62,7 @@
     "original_price": "BDT 115",
     "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": 3,
     "sold": 0,
     "limitedStock": false
   },
@@ -144,7 +108,7 @@
     "original_price": "BDT 55",
     "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": 4,
     "sold": 0,
     "limitedStock": false
   },
@@ -1231,7 +1195,7 @@
     "in_stock": true,
     "sold": 2,
     "weight": 0,
-    "stock": 0,
+    "stock": 5,
     "limitedStock": false
   },
   {
@@ -2470,7 +2434,7 @@
     "original_price": "BDT 250",
     "in_stock": true,
     "weight": 45,
-    "stock": 17,
+    "stock": 15,
     "sold": 0,
     "limitedStock": false
   },
@@ -3602,7 +3566,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 123,
-    "stock": 8,
+    "stock": 7,
     "sold": 2,
     "limitedStock": false
   },
@@ -3815,7 +3779,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 6,
-    "stock": 2,
+    "stock": 7,
     "sold": 7,
     "limitedStock": false
   },
@@ -4073,7 +4037,7 @@
     "original_price": "BDT 70",
     "in_stock": true,
     "sales_count": 1,
-    "stock": 2,
+    "stock": 5,
     "sold": 2,
     "weight": 0,
     "limitedStock": false
@@ -4096,8 +4060,8 @@
     "original_price": "BDT 8",
     "in_stock": true,
     "sold": 0,
-    "weight": 0,
-    "stock": 0,
+    "weight": 1,
+    "stock": 10,
     "limitedStock": false
   },
   {
@@ -4210,7 +4174,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "sales_count": 10,
-    "stock": 11,
+    "stock": 9,
     "sold": 10,
     "weight": 0,
     "limitedStock": false
@@ -4247,15 +4211,15 @@
     "categories": [
       "leds"
     ],
-    "discount": "Save BDT 20",
+    "discount": "Save BDT 15",
     "rating": 5,
     "reviews": 16,
     "brand": "Robo Orion",
-    "price": "BDT 25",
+    "price": "BDT 30",
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 5,
-    "stock": 4,
+    "stock": 0,
     "sold": 0,
     "limitedStock": false
   },
@@ -4986,7 +4950,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 2,
-    "stock": -2,
+    "stock": -3,
     "sold": 4,
     "limitedStock": false
   },
@@ -5118,7 +5082,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": 0,
+    "stock": 5,
     "limitedStock": false
   },
   {
@@ -5668,7 +5632,7 @@
     "original_price": "BDT 75",
     "in_stock": true,
     "weight": 4,
-    "stock": 45,
+    "stock": 43,
     "sold": 3,
     "limitedStock": false
   },
