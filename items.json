@@ -1,61 +1,73 @@
 [
   {
-  "id": "RBO-1403",
-  "title": "18650 Battery Case Holder Bracket Storage Holder 3X Slot For 3 Cell",
-  "url": "products/1403-18650-battery-case-holder-bracket-storage-holder-3x-slot-for-3-cell-robo-orion-bangladesh.html",
-  "image": "img/product/1403-18650-battery-case-holder-bracket-storage-holder-3x-slot-for-3-cell-robo-orion-bangladesh.jpg",
-  "alt": "18650 Battery Case Holder Bracket Storage Holder 3X Slot For 3 Cell",
-  "categories": [
-    "battery-holders",
-    "power",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 40",
-  "rating": 5,
-  "reviews": 9,
-  "brand": "Generic",
-  "price": "BDT 75",
-  "original_price": "BDT 115",
-  "in_stock": true
-},
+    "id": "RBO-1403",
+    "title": "18650 Battery Case Holder Bracket Storage Holder 3X Slot For 3 Cell",
+    "url": "products/1403-18650-battery-case-holder-bracket-storage-holder-3x-slot-for-3-cell-robo-orion-bangladesh.html",
+    "image": "img/product/1403-18650-battery-case-holder-bracket-storage-holder-3x-slot-for-3-cell-robo-orion-bangladesh.jpg",
+    "alt": "18650 Battery Case Holder Bracket Storage Holder 3X Slot For 3 Cell",
+    "categories": [
+      "battery-holders",
+      "power",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 40",
+    "rating": 5,
+    "reviews": 9,
+    "brand": "Generic",
+    "price": "BDT 75",
+    "original_price": "BDT 115",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
   {
-  "id": "RBO-1402",
-  "title": "18650 Battery Case Holder Bracket Storage Holder 2X Slot For 2 Cell",
-  "url": "products/1402-18650-battery-case-holder-bracket-storage-holder-2x-slot-for-2-cell-robo-orion-bangladesh.html",
-  "image": "img/product/1402-18650-battery-case-holder-bracket-storage-holder-2x-slot-for-2-cell-robo-orion-bangladesh.jpg",
-  "alt": "18650 Battery Case Holder Bracket Storage Holder 2X Slot For 2 Cell",
-  "categories": [
-    "battery-holders",
-    "power",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 40",
-  "rating": 5,
-  "reviews": 13,
-  "brand": "Generic",
-  "price": "BDT 55",
-  "original_price": "BDT 95",
-  "in_stock": true
-},
+    "id": "RBO-1402",
+    "title": "18650 Battery Case Holder Bracket Storage Holder 2X Slot For 2 Cell",
+    "url": "products/1402-18650-battery-case-holder-bracket-storage-holder-2x-slot-for-2-cell-robo-orion-bangladesh.html",
+    "image": "img/product/1402-18650-battery-case-holder-bracket-storage-holder-2x-slot-for-2-cell-robo-orion-bangladesh.jpg",
+    "alt": "18650 Battery Case Holder Bracket Storage Holder 2X Slot For 2 Cell",
+    "categories": [
+      "battery-holders",
+      "power",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 40",
+    "rating": 5,
+    "reviews": 13,
+    "brand": "Generic",
+    "price": "BDT 55",
+    "original_price": "BDT 95",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
   {
-  "id": "RBO-1401",
-  "title": "1X 18650 Battery Case Holder Bracket Storage Holder 1 Cell",
-  "url": "products/1401-1x-18650-battery-case-holder-bracket-storage-holder-1-cell-robo-orion-bangladesh.html",
-  "image": "img/product/1401-1x-18650-battery-case-holder-bracket-storage-holder-1-cell-robo-orion-bangladesh.jpg",
-  "alt": "1X 18650 Battery Case Holder Bracket Storage Holder 1 Cell",
-  "categories": [
-    "battery-holders",
-    "power",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 20",
-  "rating": 5,
-  "reviews": 12,
-  "brand": "Generic",
-  "price": "BDT 35",
-  "original_price": "BDT 55",
-  "in_stock": true
-},
+    "id": "RBO-1401",
+    "title": "1X 18650 Battery Case Holder Bracket Storage Holder 1 Cell",
+    "url": "products/1401-1x-18650-battery-case-holder-bracket-storage-holder-1-cell-robo-orion-bangladesh.html",
+    "image": "img/product/1401-1x-18650-battery-case-holder-bracket-storage-holder-1-cell-robo-orion-bangladesh.jpg",
+    "alt": "1X 18650 Battery Case Holder Bracket Storage Holder 1 Cell",
+    "categories": [
+      "battery-holders",
+      "power",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 20",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 35",
+    "original_price": "BDT 55",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
   {
     "id": "RBO-1400",
     "title": "N20 12V 400 RPM Micro Metal DC Gear Motor",
@@ -75,7 +87,7 @@
     "original_price": "BDT 450",
     "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": 1,
     "sold": 0,
     "limitedStock": false
   },
@@ -2289,7 +2301,7 @@
     "weight": 1,
     "stock": 7,
     "sold": 13,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1306",
@@ -2312,7 +2324,7 @@
     "weight": 2,
     "stock": 12,
     "sold": 8,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1305",
@@ -2335,7 +2347,7 @@
     "weight": 2,
     "stock": 2,
     "sold": 8,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1304",
@@ -2400,10 +2412,10 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 1,
-    "stock": 13,
+    "stock": 3,
     "sold": 6,
     "sales_count": 5,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1301",
@@ -2426,7 +2438,7 @@
     "weight": 2,
     "stock": 13,
     "sold": 7,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1300",
@@ -2444,12 +2456,12 @@
     "brand": "Generic",
     "price": "BDT 20",
     "original_price": "BDT 35",
-    "in_stock": true,
+    "in_stock": false,
     "sales_count": 4,
     "weight": 2,
-    "stock": 1,
+    "stock": 0,
     "sold": 9,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1299",
@@ -2562,7 +2574,7 @@
     "weight": 2,
     "stock": 19,
     "sold": 11,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1294",
@@ -2581,12 +2593,12 @@
     "brand": "Generic",
     "price": "BDT 20",
     "original_price": "BDT 35",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 2,
-    "stock": 4,
+    "stock": 0,
     "sold": 16,
     "sales_count": 3,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1293",
@@ -3347,7 +3359,7 @@
     "original_price": "BDT 430",
     "in_stock": true,
     "weight": 95,
-    "stock": 3,
+    "stock": 2,
     "sold": 0,
     "limitedStock": false
   },
@@ -6469,7 +6481,7 @@
     "original_price": "BDT 570",
     "in_stock": true,
     "sold": 0,
-    "weight": 0,
+    "weight": 100,
     "stock": 0,
     "limitedStock": false
   },
