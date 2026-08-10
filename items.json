@@ -1,5 +1,62 @@
 [
   {
+  "id": "RBO-1403",
+  "title": "18650 Battery Case Holder Bracket Storage Holder 3X Slot For 3 Cell",
+  "url": "products/1403-18650-battery-case-holder-bracket-storage-holder-3x-slot-for-3-cell-robo-orion-bangladesh.html",
+  "image": "img/product/1403-18650-battery-case-holder-bracket-storage-holder-3x-slot-for-3-cell-robo-orion-bangladesh.jpg",
+  "alt": "18650 Battery Case Holder Bracket Storage Holder 3X Slot For 3 Cell",
+  "categories": [
+    "battery-holders",
+    "power",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 40",
+  "rating": 5,
+  "reviews": 9,
+  "brand": "Generic",
+  "price": "BDT 75",
+  "original_price": "BDT 115",
+  "in_stock": true
+},
+  {
+  "id": "RBO-1402",
+  "title": "18650 Battery Case Holder Bracket Storage Holder 2X Slot For 2 Cell",
+  "url": "products/1402-18650-battery-case-holder-bracket-storage-holder-2x-slot-for-2-cell-robo-orion-bangladesh.html",
+  "image": "img/product/1402-18650-battery-case-holder-bracket-storage-holder-2x-slot-for-2-cell-robo-orion-bangladesh.jpg",
+  "alt": "18650 Battery Case Holder Bracket Storage Holder 2X Slot For 2 Cell",
+  "categories": [
+    "battery-holders",
+    "power",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 40",
+  "rating": 5,
+  "reviews": 13,
+  "brand": "Generic",
+  "price": "BDT 55",
+  "original_price": "BDT 95",
+  "in_stock": true
+},
+  {
+  "id": "RBO-1401",
+  "title": "1X 18650 Battery Case Holder Bracket Storage Holder 1 Cell",
+  "url": "products/1401-1x-18650-battery-case-holder-bracket-storage-holder-1-cell-robo-orion-bangladesh.html",
+  "image": "img/product/1401-1x-18650-battery-case-holder-bracket-storage-holder-1-cell-robo-orion-bangladesh.jpg",
+  "alt": "1X 18650 Battery Case Holder Bracket Storage Holder 1 Cell",
+  "categories": [
+    "battery-holders",
+    "power",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 20",
+  "rating": 5,
+  "reviews": 12,
+  "brand": "Generic",
+  "price": "BDT 35",
+  "original_price": "BDT 55",
+  "in_stock": true
+},
+  {
     "id": "RBO-1400",
     "title": "N20 12V 400 RPM Micro Metal DC Gear Motor",
     "url": "products/1400-n20-12v-400-rpm-micro-metal-dc-gear-motor-robo-orion-bangladesh.html",
