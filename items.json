@@ -1,22 +1,66 @@
 [
   {
-  "id": "RBO-1404",
-  "title": "19/12mm Amplifier Volume Control Metal Connector Knob red color",
-  "url": "products/1404-19-12mm-amplifier-volume-control-metal-connector-knob-red-color-robo-orion-bangladesh.html",
-  "image": "img/product/1404-19-12mm-amplifier-volume-control-metal-connector-knob-red-color-robo-orion-bangladesh.jpg",
-  "alt": "19/12mm Red Amplifier Volume Control Metal Connector Knob",
+  "id": "RBO-1406",
+  "title": "19/12mm Amplifier Volume Control Metal Connector Knob orange color",
+  "url": "products/1406-19-12mm-amplifier-volume-control-metal-connector-knob-orange-color-robo-orion-bangladesh.html",
+  "image": "img/product/1406-19-12mm-amplifier-volume-control-metal-connector-knob-orange-color-robo-orion-bangladesh.jpg",
+  "alt": "19/12mm Orange Amplifier Volume Control Metal Connector Knob",
   "categories": [
     "components",
     "diy-kits"
   ],
   "discount": "Save BDT 5",
   "rating": 5,
-  "reviews": 11,
+  "reviews": 9,
   "brand": "Generic",
   "price": "BDT 5",
   "original_price": "BDT 10",
   "in_stock": true
 },
+  {
+    "id": "RBO-1405",
+    "title": "19/12mm Amplifier Volume Control Metal Connector Knob blue color",
+    "url": "products/1405-19-12mm-amplifier-volume-control-metal-connector-knob-blue-color-robo-orion-bangladesh.html",
+    "image": "img/product/1405-19-12mm-amplifier-volume-control-metal-connector-knob-blue-color-robo-orion-bangladesh.jpg",
+    "alt": "19/12mm Blue Amplifier Volume Control Metal Connector Knob",
+    "categories": [
+      "components",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 5",
+    "rating": 5,
+    "reviews": 10,
+    "brand": "Generic",
+    "price": "BDT 5",
+    "original_price": "BDT 10",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
+    "id": "RBO-1404",
+    "title": "19/12mm Amplifier Volume Control Metal Connector Knob red color",
+    "url": "products/1404-19-12mm-amplifier-volume-control-metal-connector-knob-red-color-robo-orion-bangladesh.html",
+    "image": "img/product/1404-19-12mm-amplifier-volume-control-metal-connector-knob-red-color-robo-orion-bangladesh.jpg",
+    "alt": "19/12mm Red Amplifier Volume Control Metal Connector Knob",
+    "categories": [
+      "components",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 5",
+    "rating": 5,
+    "reviews": 11,
+    "brand": "Generic",
+    "price": "BDT 5",
+    "original_price": "BDT 10",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
   {
     "id": "RBO-1403",
     "title": "18650 Battery Case Holder Bracket Storage Holder 3X Slot For 3 Cell",
