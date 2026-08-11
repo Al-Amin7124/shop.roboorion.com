@@ -1,5 +1,24 @@
 [
   {
+  "id": "RBO-1417",
+  "title": "high quality 0.8mm soldering wire (90g)",
+  "url": "products/1417-high-quality-0.8mm-soldering-wire-90g-robo-orion-bangladesh.html",
+  "image": "img/product/1417-high-quality-0.8mm-soldering-wire-90g-robo-orion-bangladesh.jpg",
+  "alt": "High Quality 0.8mm Soldering Wire (90g)",
+  "categories": [
+    "tools",
+    "soldering",
+    "components"
+  ],
+  "discount": "Save BDT 110",
+  "rating": 5,
+  "reviews": 23,
+  "brand": "Generic",
+  "price": "BDT 240",
+  "original_price": "BDT 350",
+  "in_stock": true
+},
+  {
     "id": "RBO-1416",
     "title": "1 ohm 5 watt ceramic resistor",
     "url": "products/1416-1-ohm-5-watt-ceramic-resistor-robo-orion-bangladesh.html",
