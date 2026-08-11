@@ -1,6 +1,28 @@
 [
   {
     "id": "RBO-1416",
+    "title": "1 ohm 5 watt ceramic resistor",
+    "url": "products/1416-1-ohm-5-watt-ceramic-resistor-robo-orion-bangladesh.html",
+    "image": "img/product/1416-1-ohm-5-watt-ceramic-resistor-robo-orion-bangladesh.jpg",
+    "alt": "1 Ohm 5 Watt Ceramic Resistor (Wirewound Cement Resistor)",
+    "categories": [
+      "components",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 5",
+    "rating": 5,
+    "reviews": 7,
+    "brand": "Generic",
+    "price": "BDT 10",
+    "original_price": "BDT 15",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
+    "id": "RBO-1416",
     "title": "high quality 4v high speed motor",
     "url": "products/1416-high-quality-4v-high-speed-motor-robo-orion-bangladesh.html",
     "image": "img/product/1416-high-quality-4v-high-speed-motor-robo-orion-bangladesh.jpg",
