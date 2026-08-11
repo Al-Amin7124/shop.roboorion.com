@@ -1,42 +1,94 @@
 [
   {
-  "id": "RBO-1413",
-  "title": "Transparent DC 5V 60x60x12mm Mini Cooling Fan",
-  "url": "products/1413-transparent-dc-5v-60x60x12mm-mini-cooling-fan-robo-orion-bangladesh.html",
-  "image": "img/product/1413-transparent-dc-5v-60x60x12mm-mini-cooling-fan-robo-orion-bangladesh.jpg",
-  "alt": "Transparent DC 5V 60x60x12mm Mini Cooling Fan (Silent Cooler)",
-  "categories": [
-    "components",
-    "cooling",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 90",
-  "rating": 5,
-  "reviews": 6,
-  "brand": "Generic",
-  "price": "BDT 190",
-  "original_price": "BDT 280",
-  "in_stock": true
-},
+    "id": "RBO-1415",
+    "title": "OSS TEAM W01 V2.0 Inductance Tester",
+    "url": "products/1415-oss-team-w01-v2.0-inductance-tester-robo-orion-bangladesh.html",
+    "image": "img/product/1415-oss-team-w01-v2.0-inductance-tester-robo-orion-bangladesh.jpg",
+    "alt": "OSS TEAM W01 V2.0 Inductance Tester (Type-C Diagnostic Probe)",
+    "categories": [
+      "tools",
+      "repair-tools"
+    ],
+    "discount": "Save BDT 230",
+    "rating": 5,
+    "reviews": 3,
+    "brand": "OSS TEAM",
+    "price": "BDT 350",
+    "original_price": "BDT 580",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
   {
-  "id": "RBO-1412",
-  "title": "BLDC Brushless Fan Motor 9-12V Fan Core 5 Blades High Air Flow 6 Inch",
-  "url": "products/1412-bldc-brushless-fan-motor-9-12v-fan-core-5-blades-high-air-flow-6-inch-robo-orion-bangladesh.html",
-  "image": "img/product/1412-bldc-brushless-fan-motor-9-12v-fan-core-5-blades-high-air-flow-6-inch-robo-orion-bangladesh.jpg",
-  "alt": "6-Inch BLDC Brushless Fan Motor Core (9V-12V, 5 Blades)",
-  "categories": [
-    "motors",
-    "components",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 100",
-  "rating": 5,
-  "reviews": 14,
-  "brand": "Generic",
-  "price": "BDT 280",
-  "original_price": "BDT 380",
-  "in_stock": true
-},
+    "id": "RBO-1414",
+    "title": "original 5000mAh Lithium Polymer (Li-Po) Rechargeable Battery (3.7V)",
+    "url": "products/1414-original-5000mah-lithium-polymer-lipo-rechargeable-battery-3.7v-robo-orion-bangladesh.html",
+    "image": "img/product/1414-original-5000mah-lithium-polymer-lipo-rechargeable-battery-3.7v-robo-orion-bangladesh.jpg",
+    "alt": "Original 5000mAh Lithium Polymer (Li-Po) Rechargeable Battery (3.7V)",
+    "categories": [
+      "power",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 70",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 350",
+    "original_price": "BDT 420",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
+    "id": "RBO-1413",
+    "title": "Transparent DC 5V 60x60x12mm Mini Cooling Fan",
+    "url": "products/1413-transparent-dc-5v-60x60x12mm-mini-cooling-fan-robo-orion-bangladesh.html",
+    "image": "img/product/1413-transparent-dc-5v-60x60x12mm-mini-cooling-fan-robo-orion-bangladesh.jpg",
+    "alt": "Transparent DC 5V 60x60x12mm Mini Cooling Fan (Silent Cooler)",
+    "categories": [
+      "components",
+      "cooling",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 90",
+    "rating": 5,
+    "reviews": 6,
+    "brand": "Generic",
+    "price": "BDT 190",
+    "original_price": "BDT 280",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
+    "id": "RBO-1412",
+    "title": "BLDC Brushless Fan Motor 9-12V Fan Core 5 Blades High Air Flow 6 Inch",
+    "url": "products/1412-bldc-brushless-fan-motor-9-12v-fan-core-5-blades-high-air-flow-6-inch-robo-orion-bangladesh.html",
+    "image": "img/product/1412-bldc-brushless-fan-motor-9-12v-fan-core-5-blades-high-air-flow-6-inch-robo-orion-bangladesh.jpg",
+    "alt": "6-Inch BLDC Brushless Fan Motor Core (9V-12V, 5 Blades)",
+    "categories": [
+      "motors",
+      "components",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 100",
+    "rating": 5,
+    "reviews": 14,
+    "brand": "Generic",
+    "price": "BDT 280",
+    "original_price": "BDT 380",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
   {
     "id": "RBO-1411",
     "title": "Amplifier Volume Control Metal Connector Knob big size gray-white",
@@ -55,7 +107,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 0,
-    "stock": 1,
+    "stock": 0,
     "sold": 0,
     "limitedStock": false
   },
@@ -900,7 +952,7 @@
     "original_price": "BDT 480",
     "in_stock": true,
     "weight": 75,
-    "stock": 1,
+    "stock": -1,
     "sold": 1,
     "limitedStock": false
   },
@@ -1246,7 +1298,7 @@
     "original_price": "BDT 75",
     "in_stock": true,
     "weight": 2,
-    "stock": 9,
+    "stock": 8,
     "sold": 1,
     "limitedStock": false
   },
@@ -1551,7 +1603,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": 0,
+    "stock": -1,
     "limitedStock": false
   },
   {
@@ -2604,7 +2656,7 @@
     "original_price": "BDT 250",
     "in_stock": true,
     "weight": 45,
-    "stock": 14,
+    "stock": 13,
     "sold": 0,
     "limitedStock": false
   },
@@ -2786,7 +2838,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 2,
-    "stock": 19,
+    "stock": 13,
     "sold": 11,
     "limitedStock": true
   },
@@ -3022,7 +3074,7 @@
     "original_price": "BDT 190",
     "in_stock": true,
     "weight": 5,
-    "stock": 9,
+    "stock": 8,
     "sold": 1,
     "limitedStock": false
   },
@@ -3830,7 +3882,7 @@
     "original_price": "BDT 25",
     "in_stock": true,
     "sales_count": 1,
-    "stock": 4,
+    "stock": 2,
     "sold": 1,
     "weight": 0,
     "limitedStock": false
@@ -3949,7 +4001,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 6,
-    "stock": 7,
+    "stock": 6,
     "sold": 7,
     "limitedStock": false
   },
@@ -4046,7 +4098,7 @@
     "original_price": "BDT 110",
     "in_stock": true,
     "weight": 5,
-    "stock": 5,
+    "stock": 3,
     "sold": 2,
     "limitedStock": false
   },
@@ -4093,7 +4145,7 @@
     "sales_count": 8,
     "weight": 10,
     "stock": 10,
-    "sold": 9,
+    "sold": 11,
     "limitedStock": false
   },
   {
@@ -4116,7 +4168,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 20,
-    "stock": 2,
+    "stock": 0,
     "sold": 2,
     "limitedStock": false
   },
@@ -4457,8 +4509,8 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 5,
-    "stock": 10,
-    "sold": 4,
+    "stock": 8,
+    "sold": 6,
     "limitedStock": false
   },
   {
@@ -4826,7 +4878,7 @@
     "in_stock": true,
     "sales_count": 6,
     "sold": 6,
-    "stock": 5,
+    "stock": 4,
     "weight": 0,
     "limitedStock": false
   },
@@ -5339,7 +5391,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 160,
-    "stock": 8,
+    "stock": 7,
     "sold": 5,
     "limitedStock": false
   },
@@ -5802,7 +5854,7 @@
     "original_price": "BDT 75",
     "in_stock": true,
     "weight": 4,
-    "stock": 43,
+    "stock": 41,
     "sold": 3,
     "limitedStock": false
   },
@@ -6424,7 +6476,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 10,
-    "stock": 5,
+    "stock": 4,
     "sold": 0,
     "limitedStock": false
   },
@@ -6854,7 +6906,7 @@
     "original_price": "BDT 220",
     "in_stock": true,
     "sales_count": 5,
-    "stock": 14,
+    "stock": 13,
     "sold": 6,
     "weight": 0,
     "limitedStock": false
@@ -6924,7 +6976,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": 0,
+    "stock": -3,
     "limitedStock": false
   },
   {
@@ -7202,7 +7254,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": 0,
+    "stock": -2,
     "limitedStock": false
   },
   {
