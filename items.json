@@ -1,5 +1,28 @@
 [
   {
+    "id": "RBO-1416",
+    "title": "high quality 4v high speed motor",
+    "url": "products/1416-high-quality-4v-high-speed-motor-robo-orion-bangladesh.html",
+    "image": "img/product/1416-high-quality-4v-high-speed-motor-robo-orion-bangladesh.jpg",
+    "alt": "High Quality 4V High Speed DC Motor",
+    "categories": [
+      "motors",
+      "diy-kits",
+      "components"
+    ],
+    "discount": "Save BDT 80",
+    "rating": 5,
+    "reviews": 17,
+    "brand": "Generic",
+    "price": "BDT 70",
+    "original_price": "BDT 150",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1415",
     "title": "OSS TEAM W01 V2.0 Inductance Tester",
     "url": "products/1415-oss-team-w01-v2.0-inductance-tester-robo-orion-bangladesh.html",
