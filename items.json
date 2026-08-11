@@ -1,26 +1,30 @@
 [
   {
-  "id": "RBO-1417",
-  "title": "high quality 0.8mm soldering wire (90g)",
-  "url": "products/1417-high-quality-0.8mm-soldering-wire-90g-robo-orion-bangladesh.html",
-  "image": "img/product/1417-high-quality-0.8mm-soldering-wire-90g-robo-orion-bangladesh.jpg",
-  "alt": "High Quality 0.8mm Soldering Wire (90g)",
-  "categories": [
-    "tools",
-    "soldering",
-    "components"
-  ],
-  "discount": "Save BDT 110",
-  "rating": 5,
-  "reviews": 23,
-  "brand": "Generic",
-  "price": "BDT 240",
-  "original_price": "BDT 350",
-  "in_stock": true
-},
+    "id": "RBO-1417",
+    "title": "High quality 0.8mm soldering wire (90g)",
+    "url": "products/1417-high-quality-0.8mm-soldering-wire-90g-robo-orion-bangladesh.html",
+    "image": "img/product/1417-high-quality-0.8mm-soldering-wire-90g-robo-orion-bangladesh.jpg",
+    "alt": "High Quality 0.8mm Soldering Wire (90g)",
+    "categories": [
+      "tools",
+      "soldering",
+      "components"
+    ],
+    "discount": "Save BDT 110",
+    "rating": 5,
+    "reviews": 23,
+    "brand": "Generic",
+    "price": "BDT 240",
+    "original_price": "BDT 350",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
   {
     "id": "RBO-1416",
-    "title": "1 ohm 5 watt ceramic resistor",
+    "title": "High quality 4v high speed motor",
     "url": "products/1416-1-ohm-5-watt-ceramic-resistor-robo-orion-bangladesh.html",
     "image": "img/product/1416-1-ohm-5-watt-ceramic-resistor-robo-orion-bangladesh.jpg",
     "alt": "1 Ohm 5 Watt Ceramic Resistor (Wirewound Cement Resistor)",
@@ -87,7 +91,7 @@
   },
   {
     "id": "RBO-1414",
-    "title": "original 5000mAh Lithium Polymer (Li-Po) Rechargeable Battery (3.7V)",
+    "title": "Original 5000mAh Lithium Polymer (Li-Po) Rechargeable Battery (3.7V)",
     "url": "products/1414-original-5000mah-lithium-polymer-lipo-rechargeable-battery-3.7v-robo-orion-bangladesh.html",
     "image": "img/product/1414-original-5000mah-lithium-polymer-lipo-rechargeable-battery-3.7v-robo-orion-bangladesh.jpg",
     "alt": "Original 5000mAh Lithium Polymer (Li-Po) Rechargeable Battery (3.7V)",
