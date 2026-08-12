@@ -1,26 +1,48 @@
 [
   {
-  "id": "RBO-1422",
-  "title": "Black Metal Volume Control Knob 20x17mm – Amplifier Tuning Knob",
-  "url": "products/1422-black-metal-volume-control-knob-20x17mm-amplifier-tuning-knob-robo-orion-bangladesh.html",
-  "image": "img/product/1422-black-metal-volume-control-knob-20x17mm-amplifier-tuning-knob-robo-orion-bangladesh.jpg",
-  "alt": "Black Metal Volume Control Knob 20x17mm – Amplifier Tuning Knob",
-  "categories": [
-    "audio-accessories",
-    "amplifiers"
-  ],
-  "discount": "Save BDT 30",
-  "rating": 5,
-  "reviews": 19,
-  "brand": "Generic",
-  "price": "BDT 35",
-  "original_price": "BDT 65",
-  "in_stock": true,
-  "weight": 0,
-  "stock": 0,
-  "sold": 0,
-  "limitedStock": false
-},
+    "id": "RBO-1423",
+    "title": "Waterproof USB-C 2-Pin Female Charging Socket with Wire",
+    "url": "products/1423-waterproof-usb-c-2-pin-female-charging-socket-with-wire-robo-orion-bangladesh.html",
+    "image": "img/product/1423-waterproof-usb-c-2-pin-female-charging-socket-with-wire-robo-orion-bangladesh.jpg",
+    "alt": "Waterproof USB-C 2-Pin Female Charging Socket with Wire",
+    "categories": [
+      "usb-connectors",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 40",
+    "rating": 5,
+    "reviews": 16,
+    "brand": "Generic",
+    "price": "BDT 45",
+    "original_price": "BDT 85",
+    "in_stock": false,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
+    "id": "RBO-1422",
+    "title": "Black Metal Volume Control Knob 20x17mm – Amplifier Tuning Knob",
+    "url": "products/1422-black-metal-volume-control-knob-20x17mm-amplifier-tuning-knob-robo-orion-bangladesh.html",
+    "image": "img/product/1422-black-metal-volume-control-knob-20x17mm-amplifier-tuning-knob-robo-orion-bangladesh.jpg",
+    "alt": "Black Metal Volume Control Knob 20x17mm – Amplifier Tuning Knob",
+    "categories": [
+      "audio-accessories",
+      "amplifiers"
+    ],
+    "discount": "Save BDT 30",
+    "rating": 5,
+    "reviews": 19,
+    "brand": "Generic",
+    "price": "BDT 35",
+    "original_price": "BDT 65",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
   {
     "id": "RBO-1421",
     "title": "USB Type-C Female Socket Connector with Wire",
@@ -2721,7 +2743,7 @@
     "in_stock": true,
     "sales_count": 9,
     "weight": 1,
-    "stock": 7,
+    "stock": 6,
     "sold": 13,
     "limitedStock": true
   },
@@ -2744,7 +2766,7 @@
     "in_stock": true,
     "sales_count": 5,
     "weight": 2,
-    "stock": 12,
+    "stock": 11,
     "sold": 8,
     "limitedStock": true
   },
@@ -2767,7 +2789,7 @@
     "in_stock": true,
     "sales_count": 5,
     "weight": 2,
-    "stock": 2,
+    "stock": 1,
     "sold": 8,
     "limitedStock": true
   },
@@ -2858,7 +2880,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 2,
-    "stock": 13,
+    "stock": 12,
     "sold": 7,
     "limitedStock": true
   },
