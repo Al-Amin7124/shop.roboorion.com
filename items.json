@@ -1,5 +1,29 @@
 [
   {
+    "id": "RBO-1424",
+    "title": "7.3V 2A LiFePO4 Smart Battery Charger for 2S Packs",
+    "url": "products/1424-7.3v-2a-lifepo4-smart-battery-charger-for-2s-packs-robo-orion-bangladesh.html",
+    "image": "img/product/1424-7.3v-2a-lifepo4-smart-battery-charger-for-2s-packs-robo-orion-bangladesh.jpg",
+    "alt": "7.3V 2A LiFePO4 Smart Battery Charger for 2S Packs",
+    "categories": [
+      "chargers",
+      "lithium-batteries",
+      "battery-packs",
+      "power-supply"
+    ],
+    "discount": "Save BDT 110",
+    "rating": 5,
+    "reviews": 17,
+    "brand": "Generic",
+    "price": "BDT 380",
+    "original_price": "BDT 490",
+    "in_stock": false,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1423",
     "title": "Waterproof USB-C 2-Pin Female Charging Socket with Wire",
     "url": "products/1423-waterproof-usb-c-2-pin-female-charging-socket-with-wire-robo-orion-bangladesh.html",
@@ -4322,7 +4346,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 10,
-    "stock": 10,
+    "stock": 9,
     "sold": 11,
     "limitedStock": false
   },
