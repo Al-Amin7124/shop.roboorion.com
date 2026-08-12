@@ -158,6 +158,27 @@ function injectFadeInStyles() {
   document.head.appendChild(style);
 }
 
+/**
+ * The staggered fade-in is only meant to play ONCE, on the initial render.
+ * If a card keeps the .ro-fade-in class (and its animation-delay) after
+ * that, some browsers can replay the animation when the card is later
+ * moved in the DOM — which happens constantly on the catalog page from
+ * search re-scoring, sorting, and pagination. That replay looks exactly
+ * like "the results loaded twice". Stripping the class once the longest
+ * possible animation has finished makes that structurally impossible,
+ * regardless of how many times cards get reordered afterward.
+ */
+function clearFadeInAfterSettle(container) {
+  const MAX_DELAY_MS = 12 * 70; // matches the index cap in cardHtml/sidebarItemHtml
+  const ANIMATION_DURATION_MS = 450;
+  setTimeout(() => {
+    container.querySelectorAll(".ro-fade-in").forEach((el) => {
+      el.classList.remove("ro-fade-in");
+      el.style.animationDelay = "";
+    });
+  }, MAX_DELAY_MS + ANIMATION_DURATION_MS + 100); // +100ms safety margin
+}
+
 function cardHtml(item, basePath = "", index = 0) {
   const categories = (item.categories || []).join(" ");
   const url = basePath + item.url;
@@ -310,6 +331,7 @@ async function renderProducts({ containerId, jsonPath = "items.json", limit = 10
     const latest = items.slice(0, limit);
     container.innerHTML = latest.map((item, i) => cardHtml(item, "", i)).join("\n");
     injectFadeInStyles();
+    clearFadeInAfterSettle(container);
     registerCartProducts(container);
   } catch (err) {
     console.error("renderProducts error:", err);
@@ -365,6 +387,7 @@ async function renderNewProductsSidebar({ containerId, jsonPath = "items.json", 
       .map((item, i) => sidebarItemHtml(item, basePath, i === latest.length - 1, i))
       .join("\n");
     injectFadeInStyles();
+    clearFadeInAfterSettle(container);
   } catch (err) {
     console.error("renderNewProductsSidebar error:", err);
     container.innerHTML = `<p class="text-sm text-gray-400">Couldn't load new products.</p>`;
@@ -407,6 +430,7 @@ async function renderPopularProductsSidebar({ containerId, jsonPath = "items.jso
       .map((item, i) => sidebarItemHtml(item, basePath, i === ranked.length - 1, i))
       .join("\n");
     injectFadeInStyles();
+    clearFadeInAfterSettle(container);
   } catch (err) {
     console.error("renderPopularProductsSidebar error:", err);
     container.innerHTML = `<p class="text-sm text-gray-400">Couldn't load popular products.</p>`;
@@ -514,6 +538,7 @@ async function renderRelatedProducts({
         .map((item, i) => cardHtml(item, basePath, i))
         .join("\n");
       injectFadeInStyles();
+    clearFadeInAfterSettle(container);
       registerCartProducts(container);
       return;
     }
@@ -526,6 +551,7 @@ async function renderRelatedProducts({
 
     container.innerHTML = ranked.map((item, i) => cardHtml(item, basePath, i)).join("\n");
     injectFadeInStyles();
+    clearFadeInAfterSettle(container);
     registerCartProducts(container);
   } catch (err) {
     console.error("renderRelatedProducts error:", err);
@@ -577,6 +603,7 @@ async function renderPopularProducts({ containerId, jsonPath = "items.json", bas
 
     container.innerHTML = ranked.map((item, i) => cardHtml(item, basePath, i)).join("\n");
     injectFadeInStyles();
+    clearFadeInAfterSettle(container);
     registerCartProducts(container);
   } catch (err) {
     console.error("renderPopularProducts error:", err);
@@ -630,6 +657,7 @@ async function renderCatalog({ containerId, jsonPath = "items.json", basePath = 
 
     container.innerHTML = items.map((item, i) => cardHtml(item, basePath, i)).join("\n");
     injectFadeInStyles();
+    clearFadeInAfterSettle(container);
     registerCartProducts(container);
 
     // Hand back off to product.js's existing pagination system now that
@@ -719,6 +747,7 @@ async function renderProductList({ containerId, jsonPath = "items.json", ids = [
 
     container.innerHTML = found.map((item, i) => cardHtml(item, basePath, i)).join("\n");
     injectFadeInStyles();
+    clearFadeInAfterSettle(container);
     registerCartProducts(container);
   } catch (err) {
     console.error("renderProductList error:", err);
