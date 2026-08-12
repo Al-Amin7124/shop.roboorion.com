@@ -62,32 +62,11 @@ Write a high-converting, professional product description matching the Reference
 - Maintain brand consistency and remove any competitor "spam" text if provided in the source info.
 
 **9. `items.json` Entry (Replaces the Old Standalone Card):**
-Output the JSON object to add/update in `items.json` for this product — this is what powers the auto-rendered Related/New/Popular sections everywhere on the site, so it must be accurate and complete. Suggested fields (align field names to the site's actual `items.json` schema if you have a sample entry to match against — flag any field you're inferring with `[verify]`):
+Output the JSON object to add/update in `items.json` for this product — this is what powers the auto-rendered Related/New/Popular sections everywhere on the site, so it must be accurate and complete **and structurally identical to the Reference JSON Entry provided by the user.**
 
-```json
-{
-  "id": "1787",
-  "sku": "RBO-1787",
-  "name": "<Locked Final Title from 3g>",
-  "url": "products/[code]-[seo-title-slug]-robo-orion-bangladesh.html",
-  "image": "img/product/[Seo-Title-Slug].jpg",
-  "brand": "<brand>",
-  "category": "<primary slug from card-categories.md>",
-  "categories": ["<up to 5 slugs from card-categories.md, most technical first>"],
-  "price": 430,
-  "originalPrice": 520,
-  "currency": "BDT",
-  "availability": "in stock",
-  "rating": 5,
-  "reviewCount": 21,
-  "sold": 0,
-  "dateAdded": "2026-08-12",
-  "shortDescription": "<1 sentence, for card display>"
-}
-```
-
-- **Category selection** follows `card-categories.md`: pick the most specific/technical matching slug as `category`, then up to 4 related slugs in `categories` (max 5 total), using **only** slugs from that list. If nothing fits, use `"all"`.
-- `sold` and `dateAdded` drive the Popular/New sidebars — set `sold: 0` for a brand-new listing unless the user gives a real figure, and `dateAdded` to today's date unless told otherwise.
+- **Structure lock:** A Reference JSON Entry (one real product object from the live `items.json`) will be supplied alongside the Reference HTML at the start of each session. Treat it as the strict schema: **same field names, same field order, same nesting/data types, same value conventions** (e.g. how price, boolean, array, or date fields are formatted) as that reference. Do not add fields that aren't in the reference, don't drop fields that are in it, and don't rename or restructure anything.
+- **Field mapping:** Populate each field in the reference structure using this product's data — `name` = Locked Final Title from 3g, category fields = slug(s) from `card-categories.md` (most specific/technical first, max 5, `"all"` if nothing fits), and every other field mapped from the New Product Details / SEO Analysis. Where the reference has a field this product has no real value for (e.g. `sold` for a brand-new listing), use the same placeholder/default convention the reference itself demonstrates (e.g. `0`) rather than inventing a new convention.
+- **If no Reference JSON Entry has been supplied yet:** stop before writing Block A and ask the user for one rather than guessing a schema.
 - This JSON entry is the new "source of truth" for the product going forward: if this product is referenced again later in the session, reuse this exact entry (don't regenerate conflicting data).
 
 **10. Output Structure:**
@@ -99,7 +78,7 @@ Deliver the final result strictly in three parts, in this order, with no intro o
 ---
 
 ## Input Prompt Template
-*(Wait for the user to provide the Reference HTML and the specific New Product Details before generating the output. A sample `items.json` entry, if available, helps align field names in Block A.)*
+*(Wait for the user to provide the Reference HTML, a Reference JSON Entry from `items.json`, and the specific New Product Details before generating the output. The Reference JSON Entry is required — Block A must mirror its exact structure.)*
 
 **New Product Details to Process:**
 *   **Product Name (raw reference info — not final copy):** [Insert Name]
