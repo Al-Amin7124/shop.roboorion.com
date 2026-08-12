@@ -1,26 +1,48 @@
 [
   {
-  "id": "RBO-1419",
-  "title": "1 Ohm 5 Watt Ceramic Resistor – Wirewound Power Resistor",
-  "url": "products/1419-1-ohm-5-watt-ceramic-resistor-wirewound-power-resistor-robo-orion-bangladesh.html",
-  "image": "img/product/1419-1-ohm-5-watt-ceramic-resistor-wirewound-power-resistor-robo-orion-bangladesh.jpg",
-  "alt": "1 Ohm 5 Watt Ceramic Resistor – Wirewound Power Resistor",
-  "categories": [
-    "resistors",
-    "power-supply"
-  ],
-  "discount": "Save BDT 5",
-  "rating": 5,
-  "reviews": 9,
-  "brand": "Generic",
-  "price": "BDT 10",
-  "original_price": "BDT 15",
-  "in_stock": true,
-  "weight": 0,
-  "stock": 0,
-  "sold": 0,
-  "limitedStock": false
-},
+    "id": "RBO-1420",
+    "title": "3V 38mm Ceramic Hard LED Filament – 2700K Warm White",
+    "url": "products/1420-3v-38mm-ceramic-hard-led-filament-2700k-warm-white-robo-orion-bangladesh.html",
+    "image": "img/product/1420-3v-38mm-ceramic-hard-led-filament-2700k-warm-white-robo-orion-bangladesh.jpg",
+    "alt": "3V 38mm Ceramic Hard LED Filament – 2700K Warm White",
+    "categories": [
+      "leds",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 15",
+    "rating": 5,
+    "reviews": 17,
+    "brand": "Generic",
+    "price": "BDT 20",
+    "original_price": "BDT 35",
+    "in_stock": false,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
+    "id": "RBO-1419",
+    "title": "1 Ohm 5 Watt Ceramic Resistor – Wirewound Power Resistor",
+    "url": "products/1419-1-ohm-5-watt-ceramic-resistor-wirewound-power-resistor-robo-orion-bangladesh.html",
+    "image": "img/product/1419-1-ohm-5-watt-ceramic-resistor-wirewound-power-resistor-robo-orion-bangladesh.jpg",
+    "alt": "1 Ohm 5 Watt Ceramic Resistor – Wirewound Power Resistor",
+    "categories": [
+      "resistors",
+      "power-supply"
+    ],
+    "discount": "Save BDT 5",
+    "rating": 5,
+    "reviews": 9,
+    "brand": "Generic",
+    "price": "BDT 10",
+    "original_price": "BDT 15",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
   {
     "id": "RBO-1418",
     "title": "1.5 Ohm 2 Watt Ceramic Resistor – Flameproof Power Resistor",
@@ -1026,7 +1048,7 @@
   },
   {
     "id": "RBO-1374",
-    "title": "8 inch BLDC Brushless Fan Motor 9V/12V 5 Blades High Air Volume",
+    "title": "8 inch Original BLDC Brushless Fan Motor 9V/12V 5 Blades High Air Volume",
     "url": "products/1374-8-inch-bldc-brushless-fan-motor-robo-orion-bangladesh.html",
     "image": "img/product/1374-8-inch-bldc-brushless-fan-motor-robo-orion-bangladesh.jpg",
     "alt": "8 inch BLDC Brushless Fan Motor 9V/12V 5 Blades High Air Volume",
@@ -4164,7 +4186,7 @@
     "in_stock": true,
     "sales_count": 2,
     "weight": 5,
-    "stock": 3,
+    "stock": 2,
     "sold": 2,
     "limitedStock": false
   },
