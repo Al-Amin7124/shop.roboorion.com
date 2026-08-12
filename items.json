@@ -21,7 +21,7 @@
     "weight": 0,
     "stock": 0,
     "sold": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1423",
@@ -43,7 +43,7 @@
     "weight": 0,
     "stock": 0,
     "sold": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1422",
