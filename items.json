@@ -1,5 +1,27 @@
 [
   {
+    "id": "RBO-1421",
+    "title": "USB Type-C Female Socket Connector with Wire",
+    "url": "products/1421-usb-type-c-female-socket-connector-with-wire-robo-orion-bangladesh.html",
+    "image": "img/product/1421-usb-type-c-female-socket-connector-with-wire-robo-orion-bangladesh.jpg",
+    "alt": "USB Type-C Female Socket Connector with Wire",
+    "categories": [
+      "usb-connectors",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 10",
+    "rating": 5,
+    "reviews": 8,
+    "brand": "Generic",
+    "price": "BDT 10",
+    "original_price": "BDT 20",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1420",
     "title": "3V 38mm Ceramic Hard LED Filament – 2700K Warm White",
     "url": "products/1420-3v-38mm-ceramic-hard-led-filament-2700k-warm-white-robo-orion-bangladesh.html",
@@ -7079,11 +7101,11 @@
     "categories": [
       "transistors"
     ],
-    "discount": "Save BDT 3",
+    "discount": "Save BDT 2",
     "rating": 5,
     "reviews": 14,
     "brand": "Generic",
-    "price": "BDT 2",
+    "price": "BDT 3",
     "original_price": "BDT 5",
     "in_stock": true,
     "sold": 0,
@@ -7100,11 +7122,11 @@
     "categories": [
       "transistors"
     ],
-    "discount": "Save BDT 3",
+    "discount": "Save BDT 2",
     "rating": 5,
     "reviews": 13,
     "brand": "Generic",
-    "price": "BDT 2",
+    "price": "BDT 3",
     "original_price": "BDT 5",
     "in_stock": true,
     "sold": 0,
