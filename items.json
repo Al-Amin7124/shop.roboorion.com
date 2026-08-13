@@ -1,5 +1,27 @@
 [
   {
+    "id": "RBO-1425",
+    "title": "3V 38mm Ceramic Hard LED Filament – Pink",
+    "url": "products/1425-3v-38mm-ceramic-hard-led-filament-pink-robo-orion-bangladesh.html",
+    "image": "img/product/1425-3v-38mm-ceramic-hard-led-filament-pink-robo-orion-bangladesh.jpg",
+    "alt": "3V 38mm Ceramic Hard LED Filament – Pink",
+    "categories": [
+      "leds",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 15",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 20",
+    "original_price": "BDT 35",
+    "in_stock": true,
+    "weight": 1,
+    "stock": 30,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1424",
     "title": "7.3V 2A LiFePO4 Smart Battery Charger for 2S Packs",
     "url": "products/1424-7.3v-2a-lifepo4-smart-battery-charger-for-2s-packs-robo-orion-bangladesh.html",
@@ -105,9 +127,9 @@
     "brand": "Generic",
     "price": "BDT 20",
     "original_price": "BDT 35",
-    "in_stock": false,
-    "weight": 0,
-    "stock": 0,
+    "in_stock": true,
+    "weight": 1,
+    "stock": 30,
     "sold": 0,
     "limitedStock": true
   },
@@ -1178,7 +1200,7 @@
     "original_price": "BDT 25",
     "in_stock": true,
     "weight": 0,
-    "stock": 3,
+    "stock": 2,
     "sold": 2,
     "limitedStock": false
   },
@@ -1476,7 +1498,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 1,
-    "stock": 5,
+    "stock": 4,
     "sold": 0,
     "limitedStock": false
   },
@@ -2767,7 +2789,7 @@
     "in_stock": true,
     "sales_count": 9,
     "weight": 1,
-    "stock": 6,
+    "stock": 5,
     "sold": 13,
     "limitedStock": true
   },
@@ -2790,7 +2812,7 @@
     "in_stock": true,
     "sales_count": 5,
     "weight": 2,
-    "stock": 11,
+    "stock": 10,
     "sold": 8,
     "limitedStock": true
   },
@@ -2810,10 +2832,10 @@
     "brand": "Generic",
     "price": "BDT 20",
     "original_price": "BDT 35",
-    "in_stock": true,
+    "in_stock": false,
     "sales_count": 5,
     "weight": 2,
-    "stock": 1,
+    "stock": 0,
     "sold": 8,
     "limitedStock": true
   },
@@ -2904,7 +2926,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 2,
-    "stock": 12,
+    "stock": 11,
     "sold": 7,
     "limitedStock": true
   },
@@ -3040,7 +3062,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 2,
-    "stock": 13,
+    "stock": 12,
     "sold": 11,
     "limitedStock": true
   },
@@ -4394,7 +4416,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 15,
-    "stock": 2,
+    "stock": 1,
     "sold": 4,
     "limitedStock": false
   },
@@ -4553,7 +4575,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 100,
-    "stock": 1,
+    "stock": 0,
     "sold": 1,
     "limitedStock": false
   },
@@ -5374,7 +5396,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 2,
-    "stock": -3,
+    "stock": -5,
     "sold": 4,
     "limitedStock": false
   },
@@ -5719,7 +5741,7 @@
     "price": "BDT 3",
     "original_price": "BDT 5",
     "in_stock": true,
-    "stock": 95,
+    "stock": 92,
     "sold": 0,
     "weight": 0,
     "limitedStock": false
@@ -6584,7 +6606,7 @@
     "price": "BDT 8",
     "original_price": "BDT 18",
     "in_stock": true,
-    "stock": 10,
+    "stock": 9,
     "sold": 0,
     "weight": 0,
     "limitedStock": false
