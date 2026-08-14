@@ -529,7 +529,9 @@ async function renderRelatedProducts({
     const items = await res.json();
 
     const current = items.find((i) => i.id === resolvedId);
-    const others = items.filter((i) => i.id !== resolvedId);
+    // Out-of-stock products are excluded entirely — not shown with a
+    // disabled button like elsewhere, just left out of the list.
+    const others = items.filter((i) => i.id !== resolvedId && !isOutOfStock(i));
 
     if (!current) {
       // Current product isn't in the catalog yet — just show a random sample.

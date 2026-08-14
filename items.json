@@ -1731,7 +1731,7 @@
     "price": "BDT 25",
     "original_price": "BDT 45",
     "in_stock": true,
-    "stock": 5,
+    "stock": 10,
     "sold": 0,
     "weight": 0,
     "limitedStock": false
@@ -2858,7 +2858,7 @@
     "in_stock": true,
     "sales_count": 9,
     "weight": 1,
-    "stock": 0,
+    "stock": 30,
     "sold": 13,
     "limitedStock": true
   },
@@ -2881,7 +2881,7 @@
     "in_stock": true,
     "sales_count": 5,
     "weight": 2,
-    "stock": 5,
+    "stock": 35,
     "sold": 8,
     "limitedStock": true
   },
@@ -2971,7 +2971,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 1,
-    "stock": -2,
+    "stock": 18,
     "sold": 16,
     "sales_count": 5,
     "limitedStock": true
@@ -2995,7 +2995,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 1,
-    "stock": 6,
+    "stock": 36,
     "sold": 7,
     "limitedStock": true
   },
@@ -3131,7 +3131,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 1,
-    "stock": 7,
+    "stock": 27,
     "sold": 17,
     "limitedStock": true
   },
@@ -3690,7 +3690,7 @@
     "in_stock": true,
     "sales_count": 3,
     "weight": 8,
-    "stock": 1,
+    "stock": 6,
     "sold": 3,
     "limitedStock": false
   },
@@ -4367,7 +4367,7 @@
     "in_stock": true,
     "sales_count": 2,
     "weight": 5,
-    "stock": 1,
+    "stock": 6,
     "sold": 2,
     "limitedStock": false
   },
@@ -4485,7 +4485,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 15,
-    "stock": 1,
+    "stock": 6,
     "sold": 4,
     "limitedStock": false
   },
@@ -4893,7 +4893,7 @@
     "original_price": "BDT 220",
     "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": 4,
     "sold": 1,
     "limitedStock": false
   },
@@ -5006,7 +5006,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "sales_count": 2,
-    "stock": 1,
+    "stock": 3,
     "sold": 2,
     "weight": 0,
     "limitedStock": false
@@ -5218,7 +5218,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 12,
-    "stock": 2,
+    "stock": 7,
     "sold": 8,
     "limitedStock": false
   },
@@ -5465,7 +5465,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 2,
-    "stock": -7,
+    "stock": 13,
     "sold": 4,
     "limitedStock": false
   },
