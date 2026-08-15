@@ -317,7 +317,7 @@
   },
   {
     "id": "RBO-1416",
-    "title": "High Quality 4v High Speed Motor",
+    "title": "4v Motor (Normal Quality)",
     "url": "products/1416-high-quality-4v-high-speed-motor-robo-orion-bangladesh.html",
     "image": "img/product/1416-high-quality-4v-high-speed-motor-robo-orion-bangladesh.jpg",
     "alt": "High Quality 4V High Speed DC Motor",
@@ -327,14 +327,14 @@
       "components"
     ],
     "discount": "Save BDT 80",
-    "rating": 5,
-    "reviews": 17,
+    "rating": 4,
+    "reviews": 7,
     "brand": "Generic",
     "price": "BDT 70",
     "original_price": "BDT 150",
-    "in_stock": true,
-    "weight": 0,
-    "stock": 0,
+    "in_stock": false,
+    "weight": 30,
+    "stock": 1,
     "sold": 0,
     "limitedStock": false
   },
