@@ -1,5 +1,71 @@
 [
   {
+  "id": "RBO-1431",
+  "title": "3V 54mm Ceramic Hard LED Filament – 2700K Warm White",
+  "url": "products/1431-3v-54mm-ceramic-hard-led-filament-2700k-warm-white-robo-orion-bangladesh.html",
+  "image": "img/product/1431-3v-54mm-ceramic-hard-led-filament-2700k-warm-white-robo-orion-bangladesh.jpg",
+  "alt": "3V 54mm Ceramic Hard LED Filament – 2700K Warm White",
+  "categories": [
+    "leds",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 45",
+  "rating": 5,
+  "reviews": 14,
+  "brand": "Generic",
+  "price": "BDT 40",
+  "original_price": "BDT 85",
+  "in_stock": true,
+  "weight": 0,
+  "stock": 0,
+  "sold": 0,
+  "limitedStock": false
+},
+  {
+  "id": "RBO-1430",
+  "title": "3V 38mm Ceramic Hard LED Filament – 2700K Warm White",
+  "url": "products/1430-3v-38mm-ceramic-hard-led-filament-2700k-warm-white-robo-orion-bangladesh.html",
+  "image": "img/product/1430-3v-38mm-ceramic-hard-led-filament-2700k-warm-white-robo-orion-bangladesh.jpg",
+  "alt": "3V 38mm Ceramic Hard LED Filament – 2700K Warm White",
+  "categories": [
+    "leds",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 30",
+  "rating": 5,
+  "reviews": 15,
+  "brand": "Generic",
+  "price": "BDT 35",
+  "original_price": "BDT 65",
+  "in_stock": true,
+  "weight": 0,
+  "stock": 0,
+  "sold": 0,
+  "limitedStock": false
+},
+  {
+  "id": "RBO-1429",
+  "title": "3V 38mm Ceramic Hard LED Filament – 2200K Vintage Warm White",
+  "url": "products/1429-3v-38mm-ceramic-hard-led-filament-2200k-vintage-warm-white-robo-orion-bangladesh.html",
+  "image": "img/product/1429-3v-38mm-ceramic-hard-led-filament-2200k-vintage-warm-white-robo-orion-bangladesh.jpg",
+  "alt": "3V 38mm Ceramic Hard LED Filament – 2200K Vintage Warm White",
+  "categories": [
+    "leds",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 35",
+  "rating": 5,
+  "reviews": 16,
+  "brand": "Generic",
+  "price": "BDT 30",
+  "original_price": "BDT 65",
+  "in_stock": true,
+  "weight": 0,
+  "stock": 0,
+  "sold": 0,
+  "limitedStock": false
+},
+  {
     "id": "RBO-1428",
     "title": "Female to Female Jumper Wire 20cm – 40 Pcs Set",
     "url": "products/1428-female-to-female-jumper-wire-20cm-40-pcs-set-robo-orion-bangladesh.html",
@@ -1245,7 +1311,7 @@
     "original_price": "BDT 480",
     "in_stock": true,
     "weight": 75,
-    "stock": -1,
+    "stock": 3,
     "sold": 1,
     "limitedStock": false
   },
@@ -1613,7 +1679,7 @@
     "price": "BDT 350",
     "original_price": "BDT 550",
     "in_stock": true,
-    "stock": 7,
+    "stock": 6,
     "sold": 0,
     "weight": 0,
     "limitedStock": false
@@ -1896,7 +1962,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": -1,
+    "stock": 0,
     "limitedStock": false
   },
   {
@@ -2810,7 +2876,7 @@
     "original_price": "BDT 180",
     "in_stock": true,
     "weight": 20,
-    "stock": 3,
+    "stock": 2,
     "sold": 0,
     "limitedStock": false
   },
@@ -2926,8 +2992,8 @@
     "original_price": "BDT 380",
     "in_stock": true,
     "sold": 1,
-    "weight": 0,
-    "stock": -1,
+    "weight": 70,
+    "stock": 9,
     "limitedStock": false
   },
   {
@@ -2944,7 +3010,7 @@
     "discount": "Save BDT 80",
     "rating": 5,
     "reviews": 16,
-    "brand": "Generic",
+    "brand": "DTL Dongteng",
     "price": "BDT 170",
     "original_price": "BDT 250",
     "in_stock": true,
@@ -3598,7 +3664,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 20,
-    "stock": 2,
+    "stock": 3,
     "sold": 6,
     "limitedStock": false
   },
@@ -4368,7 +4434,7 @@
     "sales_count": 2,
     "weight": 5,
     "stock": 6,
-    "sold": 2,
+    "sold": 3,
     "limitedStock": false
   },
   {
@@ -4437,7 +4503,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 10,
-    "stock": 9,
+    "stock": 6,
     "sold": 11,
     "limitedStock": false
   },
@@ -5006,7 +5072,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "sales_count": 2,
-    "stock": 3,
+    "stock": 4,
     "sold": 2,
     "weight": 0,
     "limitedStock": false
@@ -7268,8 +7334,8 @@
     "original_price": "BDT 5",
     "in_stock": true,
     "sold": 0,
-    "weight": 0,
-    "stock": -3,
+    "weight": 1,
+    "stock": 20,
     "limitedStock": false
   },
   {
