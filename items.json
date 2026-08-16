@@ -1,6 +1,28 @@
 [
   {
     "id": "RBO-1435",
+    "title": "3V 130mm Flexible LED Filament – Green Ambiance Light",
+    "url": "products/1435-3v-130mm-flexible-led-filament-green-ambiance-light-robo-orion-bangladesh.html",
+    "image": "img/product/1435-3v-130mm-flexible-led-filament-green-ambiance-light-robo-orion-bangladesh.jpg",
+    "alt": "3V 130mm Flexible LED Filament – Green Ambiance Light",
+    "categories": [
+      "leds",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 60",
+    "rating": 5,
+    "reviews": 9,
+    "brand": "Generic",
+    "price": "BDT 90",
+    "original_price": "BDT 150",
+    "in_stock": false,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
+    "id": "RBO-1435",
     "title": "3V 130mm Flexible LED Filament – Blue Ambiance Light",
     "url": "products/1435-3v-130mm-flexible-led-filament-blue-ambiance-light-robo-orion-bangladesh.html",
     "image": "img/product/1435-3v-130mm-flexible-led-filament-blue-ambiance-light-robo-orion-bangladesh.jpg",
