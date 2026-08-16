@@ -22,6 +22,30 @@
     "limitedStock": true
   },
   {
+    "id": "RBO-1430",
+    "title": "14.6V 8A LiFePO4 Smart Battery Charger for 4S 12.8V Packs",
+    "url": "products/1430-14-6v-8a-lifepo4-smart-battery-charger-for-4s-12-8v-packs-robo-orion-bangladesh.html",
+    "image": "img/product/1430-14-6v-8a-lifepo4-smart-battery-charger-for-4s-12-8v-packs-robo-orion-bangladesh.jpg",
+    "alt": "14.6V 8A LiFePO4 Smart Battery Charger for 4S 12.8V Packs",
+    "categories": [
+      "chargers",
+      "lithium-batteries",
+      "battery-packs",
+      "power-supply"
+    ],
+    "discount": "Save BDT 360",
+    "rating": 5,
+    "reviews": 6,
+    "brand": "Generic",
+    "price": "BDT 890",
+    "original_price": "BDT 1250",
+    "in_stock": false,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1429",
     "title": "6V 100 RPM DC Gear BO Motor – TT Dual Shaft (Yellow)",
     "url": "products/1429-6v-100-rpm-dc-gear-bo-motor-tt-dual-shaft-yellow-robo-orion-bangladesh.html",
@@ -2602,7 +2626,7 @@
     "price": "BDT 35",
     "original_price": "BDT 50",
     "in_stock": true,
-    "stock": 2,
+    "stock": 1,
     "sold": 0,
     "weight": 0,
     "limitedStock": false
@@ -4127,7 +4151,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 123,
-    "stock": 7,
+    "stock": 6,
     "sold": 4,
     "limitedStock": false
   },
@@ -4151,7 +4175,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 100,
-    "stock": 3,
+    "stock": 2,
     "sold": 2,
     "limitedStock": false
   },
@@ -4437,7 +4461,7 @@
     "original_price": "BDT 110",
     "in_stock": true,
     "weight": 5,
-    "stock": 4,
+    "stock": 2,
     "sold": 3,
     "limitedStock": false
   },
@@ -4805,7 +4829,7 @@
     "sales_count": 3,
     "sold": 5,
     "weight": 0,
-    "stock": 8,
+    "stock": 5,
     "limitedStock": false
   },
   {
@@ -5082,7 +5106,7 @@
   },
   {
     "id": "RBO-1193",
-    "title": "Original Sanford 18650 Battery 3.7V (Tested 2000mAh)",
+    "title": "Original Sanford 18650 Battery 3.7V (Tested 1600 mAh)",
     "url": "products/1193-sanford-18650-battery-3-7v-original-robo-orion-bangladesh.html",
     "image": "img/product/1193-sanford-18650-battery-3-7v-original-robo-orion-bangladesh.jpg",
     "alt": "Original Sanford 18650 Battery 3.7V (Tested 2000mAh)",
@@ -5091,11 +5115,11 @@
       "lithium-batteries",
       "diy-kits"
     ],
-    "discount": "Save BDT 125",
+    "discount": "Save BDT 130",
     "rating": 5,
     "reviews": 7,
     "brand": "Sanford",
-    "price": "BDT 115",
+    "price": "BDT 110",
     "original_price": "BDT 240",
     "in_stock": true,
     "sales_count": 1,
@@ -5311,7 +5335,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 37,
-    "stock": 0,
+    "stock": -1,
     "sold": 10,
     "limitedStock": false
   },
@@ -5443,7 +5467,7 @@
     "price": "BDT 255",
     "original_price": "BDT 320",
     "in_stock": true,
-    "stock": 1,
+    "stock": 0,
     "sold": 0,
     "weight": 0,
     "limitedStock": false
@@ -5511,7 +5535,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 2,
-    "stock": 13,
+    "stock": 11,
     "sold": 14,
     "limitedStock": false
   },
@@ -5730,7 +5754,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 160,
-    "stock": 7,
+    "stock": 5,
     "sold": 6,
     "limitedStock": false
   },
@@ -5773,7 +5797,7 @@
     "in_stock": true,
     "sales_count": 21,
     "weight": 2,
-    "stock": 22,
+    "stock": 20,
     "sold": 28,
     "limitedStock": false
   },
@@ -6103,7 +6127,7 @@
     "in_stock": true,
     "sales_count": 7,
     "weight": 5,
-    "stock": 18,
+    "stock": 13,
     "sold": 7,
     "limitedStock": false
   },
@@ -6952,7 +6976,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 15,
-    "stock": 9,
+    "stock": 8,
     "sold": 2,
     "limitedStock": false
   },
