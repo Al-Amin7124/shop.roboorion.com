@@ -15,9 +15,9 @@
     "brand": "Generic",
     "price": "BDT 55",
     "original_price": "BDT 85",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 0,
-    "stock": 10,
+    "stock": 0,
     "sold": 0,
     "limitedStock": true
   },
@@ -37,9 +37,9 @@
     "brand": "Generic",
     "price": "BDT 35",
     "original_price": "BDT 55",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 0,
-    "stock": 10,
+    "stock": 0,
     "sold": 0,
     "limitedStock": true
   },
