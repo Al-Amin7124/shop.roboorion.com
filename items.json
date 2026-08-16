@@ -1,5 +1,71 @@
 [
   {
+    "id": "RBO-1434",
+    "title": "10W COB LED Flip-Chip 4000K Natural White – 2011 Plum Board",
+    "url": "products/1434-10w-cob-led-flip-chip-4000k-natural-white-2011-plum-board-robo-orion-bangladesh.html",
+    "image": "img/product/1434-10w-cob-led-flip-chip-4000k-natural-white-2011-plum-board-robo-orion-bangladesh.jpg",
+    "alt": "10W COB LED Flip-Chip 4000K Natural White – 2011 Plum Board",
+    "categories": [
+      "leds",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 30",
+    "rating": 5,
+    "reviews": 18,
+    "brand": "Generic",
+    "price": "BDT 55",
+    "original_price": "BDT 85",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 10,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
+    "id": "RBO-1433",
+    "title": "5W COB LED Flip-Chip 4000K Natural White – 2011 Plum Board",
+    "url": "products/1433-5w-cob-led-flip-chip-4000k-natural-white-2011-plum-board-robo-orion-bangladesh.html",
+    "image": "img/product/1433-5w-cob-led-flip-chip-4000k-natural-white-2011-plum-board-robo-orion-bangladesh.jpg",
+    "alt": "5W COB LED Flip-Chip 4000K Natural White – 2011 Plum Board",
+    "categories": [
+      "leds",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 20",
+    "rating": 5,
+    "reviews": 16,
+    "brand": "Generic",
+    "price": "BDT 35",
+    "original_price": "BDT 55",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 10,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
+    "id": "RBO-1432",
+    "title": "3W COB LED Flip-Chip 4000K Natural White – 2011 Plum Board",
+    "url": "products/1432-3w-cob-led-flip-chip-4000k-natural-white-2011-plum-board-robo-orion-bangladesh.html",
+    "image": "img/product/1432-3w-cob-led-flip-chip-4000k-natural-white-2011-plum-board-robo-orion-bangladesh.jpg",
+    "alt": "3W COB LED Flip-Chip 4000K Natural White – 2011 Plum Board",
+    "categories": [
+      "leds",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 10",
+    "rating": 5,
+    "reviews": 13,
+    "brand": "Generic",
+    "price": "BDT 25",
+    "original_price": "BDT 35",
+    "in_stock": false,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1431",
     "title": "3V 54mm Ceramic Hard LED Filament – 2700K Warm White",
     "url": "products/1431-3v-54mm-ceramic-hard-led-filament-2700k-warm-white-robo-orion-bangladesh.html",
