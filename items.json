@@ -1,5 +1,28 @@
 [
   {
+    "id": "RBO-1438",
+    "title": "NCR 18650 Li-ion Battery 3.7V 2200mAh – Original Capacity",
+    "url": "products/1438-ncr-18650-li-ion-battery-3-7v-2200mah-original-capacity-robo-orion-bangladesh.html",
+    "image": "img/product/1438-ncr-18650-li-ion-battery-3-7v-2200mah-original-capacity-robo-orion-bangladesh.jpg",
+    "alt": "NCR 18650 Li-ion Battery 3.7V 2200mAh – Original Capacity",
+    "categories": [
+      "18650-batteries",
+      "lithium-batteries",
+      "battery-packs"
+    ],
+    "discount": "Save BDT 140",
+    "rating": 5,
+    "reviews": 14,
+    "brand": "Generic",
+    "price": "BDT 150",
+    "original_price": "BDT 290",
+    "in_stock": true,
+    "weight": 47,
+    "stock": 4,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1437",
     "title": "6 Inch 12V BLDC Fan Motor – 5 Transparent White Blades",
     "url": "products/1437-6-inch-12v-bldc-fan-motor-5-transparent-white-blades-robo-orion-bangladesh.html",
