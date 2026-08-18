@@ -1,5 +1,50 @@
 [
   {
+    "id": "RBO-1440",
+    "title": "5W Rechargeable LED Light 5000mAh – 4H Backup (Gray)",
+    "url": "products/1440-5w-rechargeable-led-light-5000mah-4h-backup-gray-robo-orion-bangladesh.html",
+    "image": "img/product/1440-5w-rechargeable-led-light-5000mah-4h-backup-gray-robo-orion-bangladesh.jpg",
+    "alt": "5W Rechargeable LED Light 5000mAh – 4H Backup (Gray)",
+    "categories": [
+      "diy-kits",
+      "leds",
+      "battery-packs"
+    ],
+    "discount": "Save BDT 200",
+    "rating": 4,
+    "reviews": 4,
+    "brand": "Robo Orion",
+    "price": "BDT 550",
+    "original_price": "BDT 750",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
+    "id": "RBO-1439",
+    "title": "3V 130mm Flexible LED Filament – Green Ambiance Light",
+    "url": "products/1439-3v-130mm-flexible-led-filament-green-ambiance-light-robo-orion-bangladesh.html",
+    "image": "img/product/1439-3v-130mm-flexible-led-filament-green-ambiance-light-robo-orion-bangladesh.jpg",
+    "alt": "3V 130mm Flexible LED Filament – Green Ambiance Light",
+    "categories": [
+      "leds",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 60",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 90",
+    "original_price": "BDT 150",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1438",
     "title": "NCR 18650 Li-ion Battery 3.7V 2200mAh – Original Capacity",
     "url": "products/1438-ncr-18650-li-ion-battery-3-7v-2200mah-original-capacity-robo-orion-bangladesh.html",
