@@ -1,27 +1,49 @@
 [
   {
-  "id": "RBO-1436",
-  "title": "9V 2A High Quality DC Power Adapter – Air Doop",
-  "url": "products/1436-9v-2a-high-quality-dc-power-adapter-air-doop-robo-orion-bangladesh.html",
-  "image": "img/product/1436-9v-2a-high-quality-dc-power-adapter-air-doop-robo-orion-bangladesh.jpg",
-  "alt": "9V 2A High Quality DC Power Adapter – Air Doop",
-  "categories": [
-    "power-supply",
-    "chargers",
-    "arduino"
-  ],
-  "discount": "Save BDT 110",
-  "rating": 5,
-  "reviews": 19,
-  "brand": "Air Doop",
-  "price": "BDT 180",
-  "original_price": "BDT 290",
-  "in_stock": true,
-  "weight": 0,
-  "stock": 0,
-  "sold": 0,
-  "limitedStock": false
-},
+    "id": "RBO-1437",
+    "title": "6 Inch 12V BLDC Fan Motor – 5 Transparent White Blades",
+    "url": "products/1437-6-inch-12v-bldc-fan-motor-5-transparent-white-blades-robo-orion-bangladesh.html",
+    "image": "img/product/1437-6-inch-12v-bldc-fan-motor-5-transparent-white-blades-robo-orion-bangladesh.jpg",
+    "alt": "6 Inch 12V BLDC Fan Motor – 5 Transparent White Blades",
+    "categories": [
+      "bldc-motors",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 130",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 250",
+    "original_price": "BDT 380",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 2,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
+    "id": "RBO-1436",
+    "title": "9V 2A High Quality DC Power Adapter – Air Doop",
+    "url": "products/1436-9v-2a-high-quality-dc-power-adapter-air-doop-robo-orion-bangladesh.html",
+    "image": "img/product/1436-9v-2a-high-quality-dc-power-adapter-air-doop-robo-orion-bangladesh.jpg",
+    "alt": "9V 2A High Quality DC Power Adapter – Air Doop",
+    "categories": [
+      "power-supply",
+      "chargers",
+      "arduino"
+    ],
+    "discount": "Save BDT 110",
+    "rating": 5,
+    "reviews": 19,
+    "brand": "Air Doop",
+    "price": "BDT 180",
+    "original_price": "BDT 290",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 5,
+    "sold": 0,
+    "limitedStock": false
+  },
   {
     "id": "RBO-1435",
     "title": "3V 130mm Flexible LED Filament – Blue Ambiance Light",
@@ -245,7 +267,7 @@
     "original_price": "BDT 150",
     "in_stock": false,
     "weight": 0,
-    "stock": 0,
+    "stock": 3,
     "sold": 2,
     "limitedStock": false
   },
@@ -379,7 +401,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 1,
-    "stock": 16,
+    "stock": 12,
     "sold": 6,
     "limitedStock": true
   },
@@ -803,8 +825,8 @@
     "price": "BDT 35",
     "original_price": "BDT 55",
     "in_stock": true,
-    "weight": 0,
-    "stock": 1,
+    "weight": 8,
+    "stock": 0,
     "sold": 1,
     "limitedStock": false
   },
@@ -1543,7 +1565,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 1,
-    "stock": 1,
+    "stock": 0,
     "sold": 1,
     "limitedStock": false
   },
@@ -3130,7 +3152,7 @@
     "original_price": "BDT 250",
     "in_stock": true,
     "weight": 45,
-    "stock": 10,
+    "stock": 7,
     "sold": 4,
     "limitedStock": false
   },
@@ -3312,7 +3334,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 1,
-    "stock": 23,
+    "stock": 19,
     "sold": 22,
     "limitedStock": true
   },
@@ -3633,11 +3655,11 @@
       "battery-packs",
       "diy-kits"
     ],
-    "discount": "Save BDT 130",
+    "discount": "Save BDT 150",
     "rating": 5,
     "reviews": 16,
     "brand": "Generic",
-    "price": "BDT 650",
+    "price": "BDT 630",
     "original_price": "BDT 780",
     "in_stock": true,
     "weight": 200,
@@ -4189,7 +4211,7 @@
     "original_price": "BDT 480",
     "in_stock": true,
     "sales_count": 4,
-    "stock": 3,
+    "stock": 2,
     "sold": 4,
     "weight": 0,
     "limitedStock": false
@@ -4213,7 +4235,7 @@
     "original_price": "BDT 680",
     "in_stock": true,
     "sales_count": 3,
-    "stock": 4,
+    "stock": 3,
     "sold": 3,
     "weight": 0,
     "limitedStock": false
@@ -4801,7 +4823,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 50,
-    "stock": 1,
+    "stock": 0,
     "sold": 2,
     "limitedStock": false
   },
@@ -5329,7 +5351,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 12,
-    "stock": 0,
+    "stock": 1,
     "sold": 2,
     "limitedStock": false
   },
@@ -5908,7 +5930,7 @@
     "in_stock": true,
     "sales_count": 21,
     "weight": 2,
-    "stock": 20,
+    "stock": 19,
     "sold": 28,
     "limitedStock": false
   },
@@ -5991,7 +6013,7 @@
     "price": "BDT 3",
     "original_price": "BDT 5",
     "in_stock": true,
-    "stock": 87,
+    "stock": 85,
     "sold": 0,
     "weight": 0,
     "limitedStock": false
@@ -6145,7 +6167,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 1,
-    "stock": 5,
+    "stock": 2,
     "sold": 5,
     "limitedStock": false
   },
@@ -6238,7 +6260,7 @@
     "in_stock": true,
     "sales_count": 7,
     "weight": 5,
-    "stock": 13,
+    "stock": 11,
     "sold": 7,
     "limitedStock": false
   },
@@ -7380,7 +7402,7 @@
     "original_price": "BDT 220",
     "in_stock": true,
     "sales_count": 5,
-    "stock": 12,
+    "stock": 10,
     "sold": 8,
     "weight": 0,
     "limitedStock": false
@@ -7621,7 +7643,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": 94,
+    "stock": 86,
     "limitedStock": false
   },
   {
