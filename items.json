@@ -1,26 +1,27 @@
 [
   {
-    "id": "RBO-1435",
-    "title": "3V 130mm Flexible LED Filament – Green Ambiance Light",
-    "url": "products/1435-3v-130mm-flexible-led-filament-green-ambiance-light-robo-orion-bangladesh.html",
-    "image": "img/product/1435-3v-130mm-flexible-led-filament-green-ambiance-light-robo-orion-bangladesh.jpg",
-    "alt": "3V 130mm Flexible LED Filament – Green Ambiance Light",
-    "categories": [
-      "leds",
-      "diy-kits"
-    ],
-    "discount": "Save BDT 60",
-    "rating": 5,
-    "reviews": 9,
-    "brand": "Generic",
-    "price": "BDT 90",
-    "original_price": "BDT 150",
-    "in_stock": false,
-    "weight": 0,
-    "stock": 0,
-    "sold": 0,
-    "limitedStock": true
-  },
+  "id": "RBO-1436",
+  "title": "9V 2A High Quality DC Power Adapter – Air Doop",
+  "url": "products/1436-9v-2a-high-quality-dc-power-adapter-air-doop-robo-orion-bangladesh.html",
+  "image": "img/product/1436-9v-2a-high-quality-dc-power-adapter-air-doop-robo-orion-bangladesh.jpg",
+  "alt": "9V 2A High Quality DC Power Adapter – Air Doop",
+  "categories": [
+    "power-supply",
+    "chargers",
+    "arduino"
+  ],
+  "discount": "Save BDT 110",
+  "rating": 5,
+  "reviews": 19,
+  "brand": "Air Doop",
+  "price": "BDT 180",
+  "original_price": "BDT 290",
+  "in_stock": true,
+  "weight": 0,
+  "stock": 0,
+  "sold": 0,
+  "limitedStock": false
+},
   {
     "id": "RBO-1435",
     "title": "3V 130mm Flexible LED Filament – Blue Ambiance Light",
@@ -378,7 +379,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 1,
-    "stock": 22,
+    "stock": 16,
     "sold": 6,
     "limitedStock": true
   },
@@ -400,7 +401,7 @@
     "original_price": "BDT 15",
     "in_stock": true,
     "weight": 0,
-    "stock": 8,
+    "stock": 6,
     "sold": 0,
     "limitedStock": false
   },
@@ -803,7 +804,7 @@
     "original_price": "BDT 55",
     "in_stock": true,
     "weight": 0,
-    "stock": 4,
+    "stock": 1,
     "sold": 1,
     "limitedStock": false
   },
@@ -1562,11 +1563,11 @@
     "brand": "Generic",
     "price": "BDT 30",
     "original_price": "BDT 45",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 1,
     "stock": 0,
     "sold": 2,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1367",
@@ -2761,7 +2762,7 @@
     "in_stock": true,
     "weight": 45,
     "sold": 0,
-    "stock": -4,
+    "stock": 0,
     "limitedStock": false
   },
   {
@@ -3547,7 +3548,7 @@
     "original_price": "BDT 190",
     "in_stock": true,
     "weight": 5,
-    "stock": 8,
+    "stock": 7,
     "sold": 2,
     "limitedStock": false
   },
@@ -4262,7 +4263,7 @@
     "sales_count": 1,
     "weight": 123,
     "stock": 6,
-    "sold": 4,
+    "sold": 5,
     "limitedStock": false
   },
   {
@@ -4665,7 +4666,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 15,
-    "stock": 6,
+    "stock": 5,
     "sold": 6,
     "limitedStock": false
   },
@@ -6279,7 +6280,7 @@
     "brand": "Chinese",
     "price": "BDT 280",
     "original_price": "BDT 400",
-    "in_stock": false,
+    "in_stock": true,
     "sales_count": 1,
     "weight": 30,
     "sold": 1,
@@ -6302,12 +6303,12 @@
     "brand": "RC Product BD",
     "price": "BDT 620",
     "original_price": "BDT 700",
-    "in_stock": true,
+    "in_stock": false,
     "sales_count": 2,
     "sold": 2,
     "weight": 0,
     "stock": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1131",
@@ -7063,7 +7064,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 3,
-    "stock": 14,
+    "stock": 10,
     "sold": 8,
     "limitedStock": false
   },
@@ -7620,7 +7621,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": 0,
+    "stock": 94,
     "limitedStock": false
   },
   {
