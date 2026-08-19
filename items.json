@@ -1,5 +1,28 @@
 [
   {
+  "id": "RBO-1441",
+  "title": "200W 12V DC to 220V AC Power Inverter – Dual USB & Type-C (V1)",
+  "url": "products/1441-200w-12v-dc-to-220v-ac-power-inverter-dual-usb-type-c-v1-robo-orion-bangladesh.html",
+  "image": "img/product/1441-200w-12v-dc-to-220v-ac-power-inverter-dual-usb-type-c-v1-robo-orion-bangladesh.jpg",
+  "alt": "200W 12V DC to 220V AC Power Inverter – Dual USB & Type-C (V1)",
+  "categories": [
+    "solar-inverters",
+    "power-supply",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 450",
+  "rating": 5,
+  "reviews": 16,
+  "brand": "RC Product BD",
+  "price": "BDT 1500",
+  "original_price": "BDT 1950",
+  "in_stock": true,
+  "weight": 0,
+  "stock": 0,
+  "sold": 0,
+  "limitedStock": false
+},
+  {
     "id": "RBO-1440",
     "title": "5W Rechargeable LED Light 5000mAh – 4H Backup (Gray)",
     "url": "products/1440-5w-rechargeable-led-light-5000mah-4h-backup-gray-robo-orion-bangladesh.html",
@@ -55,11 +78,11 @@
       "lithium-batteries",
       "battery-packs"
     ],
-    "discount": "Save BDT 140",
+    "discount": "Save BDT 145",
     "rating": 5,
     "reviews": 14,
     "brand": "Generic",
-    "price": "BDT 150",
+    "price": "BDT 145",
     "original_price": "BDT 290",
     "in_stock": true,
     "weight": 47,
@@ -1564,7 +1587,7 @@
     "original_price": "BDT 15",
     "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": -1,
     "sold": 0,
     "limitedStock": false
   },
@@ -3152,7 +3175,7 @@
     "in_stock": true,
     "sales_count": 5,
     "weight": 2,
-    "stock": 35,
+    "stock": 34,
     "sold": 14,
     "limitedStock": true
   },
@@ -3175,7 +3198,7 @@
     "in_stock": true,
     "sales_count": 5,
     "weight": 1,
-    "stock": 24,
+    "stock": 23,
     "sold": 15,
     "limitedStock": true
   },
@@ -3220,9 +3243,9 @@
     "original_price": "BDT 250",
     "in_stock": true,
     "weight": 45,
-    "stock": 7,
+    "stock": 5,
     "sold": 4,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1302",
@@ -3242,7 +3265,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 1,
-    "stock": 20,
+    "stock": 19,
     "sold": 21,
     "sales_count": 5,
     "limitedStock": true
@@ -3266,7 +3289,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 1,
-    "stock": 36,
+    "stock": 35,
     "sold": 13,
     "limitedStock": true
   },
@@ -3289,7 +3312,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 1,
-    "stock": 25,
+    "stock": 24,
     "sold": 15,
     "limitedStock": true
   },
@@ -3425,7 +3448,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 1,
-    "stock": 10,
+    "stock": 9,
     "sold": 25,
     "sales_count": 3,
     "limitedStock": true
@@ -5030,7 +5053,7 @@
     "sales_count": 3,
     "sold": 5,
     "weight": 0,
-    "stock": 5,
+    "stock": 3,
     "limitedStock": false
   },
   {
@@ -5277,7 +5300,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "sales_count": 2,
-    "stock": 3,
+    "stock": 2,
     "sold": 2,
     "weight": 0,
     "limitedStock": false
@@ -5536,7 +5559,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 37,
-    "stock": -1,
+    "stock": -2,
     "sold": 10,
     "limitedStock": false
   },
@@ -7040,7 +7063,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 10,
-    "stock": 4,
+    "stock": 1,
     "sold": 1,
     "limitedStock": false
   },
@@ -7177,7 +7200,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 15,
-    "stock": 8,
+    "stock": 6,
     "sold": 2,
     "limitedStock": false
   },
