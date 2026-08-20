@@ -1,5 +1,29 @@
 [
   {
+  "id": "RBO-1446",
+  "title": "5000mAh 3.7V Lithium Polymer (Li-Po) Rechargeable Battery",
+  "url": "products/1446-5000mah-3-7v-lithium-polymer-li-po-rechargeable-battery-robo-orion-bangladesh.html",
+  "image": "img/product/1446-5000mah-3-7v-lithium-polymer-li-po-rechargeable-battery-robo-orion-bangladesh.jpg",
+  "alt": "5000mAh 3.7V Lithium Polymer (Li-Po) Rechargeable Battery",
+  "categories": [
+    "li-po-batteries",
+    "lithium-batteries",
+    "battery-packs",
+    "power-supply"
+  ],
+  "discount": "Save BDT 100",
+  "rating": 5,
+  "reviews": 17,
+  "brand": "Generic",
+  "price": "BDT 350",
+  "original_price": "BDT 450",
+  "in_stock": true,
+  "weight": 0,
+  "stock": 0,
+  "sold": 0,
+  "limitedStock": false
+},
+  {
   "id": "RBO-1445",
   "title": "10000mAh 3.7V Lithium Polymer (Li-Po) Rechargeable Battery",
   "url": "products/1445-10000mah-3-7v-lithium-polymer-li-po-rechargeable-battery-robo-orion-bangladesh.html",
