@@ -1,5 +1,28 @@
 [
   {
+  "id": "RBO-1449",
+  "title": "50mAh 3.7V Li-Po Battery for Bluetooth Headsets – Mini Cell",
+  "url": "products/1449-50mah-3-7v-li-po-battery-for-bluetooth-headsets-mini-cell-robo-orion-bangladesh.html",
+  "image": "img/product/1449-50mah-3-7v-li-po-battery-for-bluetooth-headsets-mini-cell-robo-orion-bangladesh.jpg",
+  "alt": "50mAh 3.7V Li-Po Battery for Bluetooth Headsets – Mini Cell",
+  "categories": [
+    "li-po-batteries",
+    "audio-accessories",
+    "lithium-batteries"
+  ],
+  "discount": "Save BDT 45",
+  "rating": 5,
+  "reviews": 14,
+  "brand": "Generic",
+  "price": "BDT 30",
+  "original_price": "BDT 75",
+  "in_stock": true,
+  "weight": 0,
+  "stock": 0,
+  "sold": 0,
+  "limitedStock": false
+},
+  {
   "id": "RBO-1448",
   "title": "450mAh 3.7V Lithium Polymer (Li-Po) Battery with BMS",
   "url": "products/1448-450mah-3-7v-lithium-polymer-li-po-battery-with-bms-robo-orion-bangladesh.html",
