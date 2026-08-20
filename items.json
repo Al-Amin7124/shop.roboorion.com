@@ -1,28 +1,28 @@
 [
   {
-  "id": "RBO-1275",
-  "title": "Peacefair PZEM-015 LCD Battery Tester with 100A Shunt (0-200V)",
-  "url": "products/1275-peacefair-pzem-015-lcd-battery-tester-with-100a-shunt-0-200v-robo-orion-bangladesh.html",
-  "image": "img/product/1275-peacefair-pzem-015-lcd-battery-tester-with-100a-shunt-0-200v-robo-orion-bangladesh.jpg",
-  "alt": "Peacefair PZEM-015 LCD Battery Tester with 100A Shunt (0-200V)",
-  "categories": [
-    "energy-monitors",
-    "multimeters",
-    "battery-packs",
-    "solar-panels"
-  ],
-  "discount": "Save BDT 640",
-  "rating": 5,
-  "reviews": 6,
-  "brand": "Peacefair",
-  "price": "BDT 1850",
-  "original_price": "BDT 2490",
-  "in_stock": true,
-  "weight": 0,
-  "stock": 0,
-  "sold": 0,
-  "limitedStock": false
-},
+    "id": "RBO-1275",
+    "title": "Peacefair PZEM-015 LCD Battery Tester with 100A Shunt (0-200V)",
+    "url": "products/1275-peacefair-pzem-015-lcd-battery-tester-with-100a-shunt-0-200v-robo-orion-bangladesh.html",
+    "image": "img/product/1275-peacefair-pzem-015-lcd-battery-tester-with-100a-shunt-0-200v-robo-orion-bangladesh.jpg",
+    "alt": "Peacefair PZEM-015 LCD Battery Tester with 100A Shunt (0-200V)",
+    "categories": [
+      "energy-monitors",
+      "multimeters",
+      "battery-packs",
+      "solar-panels"
+    ],
+    "discount": "Save BDT 640",
+    "rating": 5,
+    "reviews": 6,
+    "brand": "Peacefair",
+    "price": "BDT 1850",
+    "original_price": "BDT 2490",
+    "in_stock": true,
+    "weight": 20,
+    "stock": 2,
+    "sold": 0,
+    "limitedStock": false
+  },
   {
     "id": "RBO-1441",
     "title": "200W 12V DC to 220V AC Power Inverter – Dual USB & Type-C (V1)",
