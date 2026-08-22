@@ -4579,7 +4579,7 @@
     "brand": "RC Product BD",
     "price": "BDT 380",
     "original_price": "BDT 450",
-    "in_stock": true,
+    "in_stock": false,
     "sales_count": 3,
     "weight": 50,
     "stock": 7,
