@@ -518,11 +518,11 @@
     "brand": "Generic",
     "price": "BDT 90",
     "original_price": "BDT 150",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 0,
     "stock": 0,
     "sold": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1438",
@@ -793,7 +793,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 1,
-    "stock": 22,
+    "stock": 21,
     "sold": 8,
     "limitedStock": true
   },
@@ -883,7 +883,7 @@
     "original_price": "BDT 20",
     "in_stock": true,
     "weight": 0,
-    "stock": 4,
+    "stock": 0,
     "sold": 1,
     "limitedStock": false
   },
@@ -905,7 +905,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 1,
-    "stock": 12,
+    "stock": 9,
     "sold": 18,
     "limitedStock": true
   },
@@ -927,7 +927,7 @@
     "original_price": "BDT 15",
     "in_stock": true,
     "weight": 0,
-    "stock": 6,
+    "stock": 3,
     "sold": 2,
     "limitedStock": false
   },
@@ -949,7 +949,7 @@
     "original_price": "BDT 10",
     "in_stock": true,
     "weight": 0,
-    "stock": 15,
+    "stock": 10,
     "sold": 0,
     "limitedStock": false
   },
@@ -1085,7 +1085,7 @@
     "original_price": "BDT 380",
     "in_stock": true,
     "weight": 50,
-    "stock": 3,
+    "stock": 2,
     "sold": 0,
     "limitedStock": false
   },
@@ -1354,7 +1354,7 @@
     "in_stock": true,
     "weight": 0,
     "stock": 0,
-    "sold": 0,
+    "sold": 1,
     "limitedStock": false
   },
   {
@@ -1468,7 +1468,7 @@
     "in_stock": true,
     "weight": 0,
     "stock": 0,
-    "sold": 0,
+    "sold": 1,
     "limitedStock": false
   },
   {
@@ -2023,7 +2023,7 @@
     "in_stock": true,
     "weight": 0,
     "stock": 6,
-    "sold": 2,
+    "sold": 4,
     "limitedStock": false
   },
   {
@@ -2069,7 +2069,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 1,
-    "stock": 0,
+    "stock": -1,
     "sold": 2,
     "limitedStock": false
   },
@@ -2114,7 +2114,7 @@
     "in_stock": true,
     "weight": 1.5,
     "stock": 56,
-    "sold": 42,
+    "sold": 44,
     "limitedStock": false
   },
   {
@@ -2695,7 +2695,7 @@
     "in_stock": true,
     "sold": 5,
     "weight": 0,
-    "stock": 0,
+    "stock": -2,
     "limitedStock": false
   },
   {
@@ -2766,7 +2766,7 @@
     "original_price": "BDT 180",
     "in_stock": true,
     "weight": 2,
-    "stock": 8,
+    "stock": 7,
     "sold": 2,
     "limitedStock": false
   },
@@ -2789,7 +2789,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "weight": 2,
-    "stock": 8,
+    "stock": 7,
     "sold": 2,
     "sales_count": 2,
     "limitedStock": false
@@ -3403,7 +3403,7 @@
     "original_price": "BDT 320",
     "in_stock": true,
     "weight": 8,
-    "stock": 4,
+    "stock": 3,
     "sold": 1,
     "limitedStock": false
   },
@@ -3494,7 +3494,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 2,
-    "stock": 5,
+    "stock": 4,
     "sold": 0,
     "limitedStock": false
   },
@@ -3565,7 +3565,7 @@
     "in_stock": true,
     "sales_count": 9,
     "weight": 1,
-    "stock": 30,
+    "stock": 29,
     "sold": 20,
     "limitedStock": true
   },
@@ -3588,7 +3588,7 @@
     "in_stock": true,
     "sales_count": 5,
     "weight": 2,
-    "stock": 34,
+    "stock": 32,
     "sold": 16,
     "limitedStock": true
   },
@@ -3611,7 +3611,7 @@
     "in_stock": true,
     "sales_count": 5,
     "weight": 1,
-    "stock": 23,
+    "stock": 22,
     "sold": 17,
     "limitedStock": true
   },
@@ -3656,7 +3656,7 @@
     "original_price": "BDT 250",
     "in_stock": true,
     "weight": 45,
-    "stock": 5,
+    "stock": 1,
     "sold": 12,
     "limitedStock": true
   },
@@ -3862,7 +3862,7 @@
     "in_stock": true,
     "weight": 1,
     "stock": 9,
-    "sold": 26,
+    "sold": 31,
     "sales_count": 3,
     "limitedStock": true
   },
@@ -4074,7 +4074,7 @@
     "original_price": "BDT 190",
     "in_stock": true,
     "weight": 5,
-    "stock": 7,
+    "stock": 6,
     "sold": 3,
     "limitedStock": false
   },
@@ -4167,7 +4167,7 @@
     "original_price": "BDT 780",
     "in_stock": true,
     "weight": 200,
-    "stock": 4,
+    "stock": 2,
     "sold": 0,
     "limitedStock": false
   },
@@ -4397,7 +4397,7 @@
     "in_stock": true,
     "sales_count": 3,
     "weight": 8,
-    "stock": 6,
+    "stock": 5,
     "sold": 3,
     "limitedStock": false
   },
@@ -4788,7 +4788,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 123,
-    "stock": 6,
+    "stock": 4,
     "sold": 5,
     "limitedStock": false
   },
@@ -4882,7 +4882,7 @@
     "original_price": "BDT 25",
     "in_stock": true,
     "sales_count": 1,
-    "stock": 2,
+    "stock": -4,
     "sold": 3,
     "weight": 0,
     "limitedStock": false
@@ -5283,7 +5283,7 @@
     "in_stock": true,
     "sold": 10,
     "weight": 1,
-    "stock": 10,
+    "stock": 5,
     "limitedStock": false
   },
   {
@@ -5464,7 +5464,7 @@
     "original_price": "BDT 55",
     "in_stock": true,
     "sales_count": 3,
-    "sold": 7,
+    "sold": 10,
     "weight": 0,
     "stock": 3,
     "limitedStock": false
@@ -5714,7 +5714,7 @@
     "in_stock": true,
     "sales_count": 2,
     "stock": 2,
-    "sold": 3,
+    "sold": 4,
     "weight": 0,
     "limitedStock": false
   },
@@ -5973,7 +5973,7 @@
     "sales_count": 6,
     "weight": 37,
     "stock": -2,
-    "sold": 11,
+    "sold": 12,
     "limitedStock": false
   },
   {
@@ -6105,7 +6105,7 @@
     "original_price": "BDT 320",
     "in_stock": true,
     "stock": 0,
-    "sold": 0,
+    "sold": 1,
     "weight": 0,
     "limitedStock": false
   },
@@ -6172,7 +6172,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 2,
-    "stock": 9,
+    "stock": 7,
     "sold": 18,
     "limitedStock": false
   },
@@ -6325,7 +6325,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": 0,
+    "stock": -1,
     "limitedStock": false
   },
   {
@@ -6518,7 +6518,7 @@
     "original_price": "BDT 5",
     "in_stock": true,
     "stock": 85,
-    "sold": 5,
+    "sold": 10,
     "weight": 0,
     "limitedStock": false
   },
@@ -6764,7 +6764,7 @@
     "in_stock": true,
     "sales_count": 7,
     "weight": 5,
-    "stock": 11,
+    "stock": 10,
     "sold": 14,
     "limitedStock": false
   },
@@ -6786,7 +6786,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "stock": 4,
-    "sold": 0,
+    "sold": 1,
     "weight": 0,
     "limitedStock": false
   },
@@ -6987,7 +6987,7 @@
     "price": "BDT 95",
     "original_price": "BDT 180",
     "in_stock": true,
-    "stock": 2,
+    "stock": 0,
     "sold": 0,
     "weight": 0,
     "limitedStock": false
@@ -7404,8 +7404,8 @@
     "price": "BDT 5",
     "original_price": "BDT 8",
     "in_stock": true,
-    "stock": 7,
-    "sold": 11,
+    "stock": 1,
+    "sold": 13,
     "weight": 0,
     "limitedStock": false
   },
@@ -7590,7 +7590,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 3,
-    "stock": 7,
+    "stock": 6,
     "sold": 12,
     "limitedStock": false
   },
@@ -8041,7 +8041,7 @@
     "in_stock": true,
     "sold": 6,
     "weight": 1,
-    "stock": 10,
+    "stock": 5,
     "limitedStock": false
   },
   {
@@ -8126,7 +8126,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": 0,
+    "stock": -2,
     "limitedStock": false
   },
   {
@@ -8147,7 +8147,7 @@
     "in_stock": true,
     "sold": 14,
     "weight": 0,
-    "stock": 86,
+    "stock": 76,
     "limitedStock": false
   },
   {
