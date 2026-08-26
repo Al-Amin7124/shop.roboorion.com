@@ -4926,9 +4926,9 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 123,
-    "stock": 2,
+    "stock": 1,
     "sold": 6,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1251",
