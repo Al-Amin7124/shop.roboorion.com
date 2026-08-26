@@ -4526,11 +4526,11 @@
       "charge-controllers",
       "diy-kits"
     ],
-    "discount": "Save BDT 40",
+    "discount": "Save BDT 50",
     "rating": 5,
     "reviews": 17,
     "brand": "Generic",
-    "price": "BDT 80",
+    "price": "BDT 70",
     "original_price": "BDT 120",
     "in_stock": false,
     "sales_count": 3,
@@ -4925,7 +4925,7 @@
     "original_price": "BDT 450",
     "in_stock": true,
     "sales_count": 1,
-    "weight": 125,
+    "weight": 123,
     "stock": 1,
     "sold": 6,
     "limitedStock": true
