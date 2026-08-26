@@ -1,5 +1,74 @@
 [
   {
+    "id": "RBO-1467",
+    "title": "Multi-Color Heat Shrink Tube Assortment – 15 Pcs (14cm)",
+    "url": "products/1467-multi-color-heat-shrink-tube-assortment-15-pcs-14cm-robo-orion-bangladesh.html",
+    "image": "img/product/1467-multi-color-heat-shrink-tube-assortment-15-pcs-14cm-robo-orion-bangladesh.jpg",
+    "alt": "Multi-Color Heat Shrink Tube Assortment – 15 Pcs (14cm)",
+    "categories": [
+      "heat-shrink",
+      "wire-cables",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 30",
+    "rating": 5,
+    "reviews": 17,
+    "brand": "Generic",
+    "price": "BDT 35",
+    "original_price": "BDT 65",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 4,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
+    "id": "RBO-1466",
+    "title": "BAKON 900M-T-3.2D Soldering Iron Tip – 3.2mm Chisel Head",
+    "url": "products/1466-bakon-900m-t-3-2d-soldering-iron-tip-3-2mm-chisel-head-robo-orion-bangladesh.html",
+    "image": "img/product/1466-bakon-900m-t-3-2d-soldering-iron-tip-3-2mm-chisel-head-robo-orion-bangladesh.jpg",
+    "alt": "BAKON 900M-T-3.2D Soldering Iron Tip – 3.2mm Chisel Head",
+    "categories": [
+      "soldering-tools",
+      "repair-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 279",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "BAKON",
+    "price": "BDT 220",
+    "original_price": "BDT 499",
+    "in_stock": false,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
+    "id": "RBO-1465",
+    "title": "BAKON 900M-T-2.4D Soldering Iron Tip – 2.4mm Chisel Head",
+    "url": "products/1465-bakon-900m-t-2-4d-soldering-iron-tip-2-4mm-chisel-head-robo-orion-bangladesh.html",
+    "image": "img/product/1465-bakon-900m-t-2-4d-soldering-iron-tip-2-4mm-chisel-head-robo-orion-bangladesh.jpg",
+    "alt": "BAKON 900M-T-2.4D Soldering Iron Tip – 2.4mm Chisel Head",
+    "categories": [
+      "soldering-tools",
+      "repair-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 279",
+    "rating": 5,
+    "reviews": 10,
+    "brand": "BAKON",
+    "price": "BDT 220",
+    "original_price": "BDT 499",
+    "in_stock": false,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1464",
     "title": "BAKON 900M-T-K Soldering Iron Tip – Knife Cutter Head",
     "url": "products/1464-bakon-900m-t-k-soldering-iron-tip-knife-cutter-head-robo-orion-bangladesh.html",
@@ -612,7 +681,7 @@
     "original_price": "BDT 290",
     "in_stock": true,
     "weight": 47,
-    "stock": 4,
+    "stock": 10,
     "sold": 0,
     "limitedStock": false
   },
@@ -952,7 +1021,7 @@
     "original_price": "BDT 20",
     "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": 15,
     "sold": 5,
     "limitedStock": false
   },
@@ -1041,7 +1110,7 @@
     "original_price": "BDT 350",
     "in_stock": true,
     "weight": 90,
-    "stock": 1,
+    "stock": 2,
     "sold": 0,
     "limitedStock": false
   },
@@ -1422,7 +1491,7 @@
     "original_price": "BDT 450",
     "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": 2,
     "sold": 1,
     "limitedStock": false
   },
@@ -1536,7 +1605,7 @@
     "original_price": "BDT 150",
     "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": 2,
     "sold": 1,
     "limitedStock": false
   },
@@ -2045,7 +2114,7 @@
     "original_price": "BDT 25",
     "in_stock": true,
     "weight": 0,
-    "stock": 2,
+    "stock": 12,
     "sold": 3,
     "limitedStock": false
   },
@@ -2069,7 +2138,7 @@
     "original_price": "BDT 15",
     "in_stock": true,
     "weight": 0,
-    "stock": -3,
+    "stock": 7,
     "sold": 1,
     "limitedStock": false
   },
@@ -2696,7 +2765,7 @@
     "in_stock": true,
     "sold": 1,
     "weight": 70,
-    "stock": 0,
+    "stock": 2,
     "limitedStock": false
   },
   {
@@ -2718,7 +2787,7 @@
     "in_stock": true,
     "sold": 2,
     "weight": 0,
-    "stock": 3,
+    "stock": 15,
     "limitedStock": false
   },
   {
@@ -3495,7 +3564,7 @@
     "original_price": "BDT 750",
     "in_stock": true,
     "weight": 180,
-    "stock": 8,
+    "stock": 7,
     "sales_count": 1,
     "sold": 1,
     "limitedStock": false
@@ -3586,7 +3655,7 @@
     "original_price": "BDT 180",
     "in_stock": true,
     "weight": 20,
-    "stock": 2,
+    "stock": 5,
     "sold": 1,
     "limitedStock": false
   },
@@ -4022,7 +4091,7 @@
     "original_price": "BDT 85",
     "in_stock": true,
     "weight": 15,
-    "stock": 3,
+    "stock": 2,
     "sold": 0,
     "limitedStock": false
   },
@@ -4304,7 +4373,7 @@
     "original_price": "BDT 480",
     "in_stock": true,
     "sales_count": 4,
-    "stock": -2,
+    "stock": 0,
     "sold": 5,
     "weight": 0,
     "limitedStock": false
@@ -4857,7 +4926,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 123,
-    "stock": 3,
+    "stock": 2,
     "sold": 6,
     "limitedStock": false
   },
@@ -4951,7 +5020,7 @@
     "original_price": "BDT 25",
     "in_stock": true,
     "sales_count": 1,
-    "stock": -4,
+    "stock": 1,
     "sold": 3,
     "weight": 0,
     "limitedStock": false
@@ -4999,7 +5068,7 @@
     "in_stock": true,
     "sold": 1,
     "weight": 0,
-    "stock": 0,
+    "stock": 2,
     "limitedStock": false
   },
   {
@@ -5167,7 +5236,7 @@
     "original_price": "BDT 110",
     "in_stock": true,
     "weight": 5,
-    "stock": 2,
+    "stock": 12,
     "sold": 5,
     "limitedStock": false
   },
@@ -5237,7 +5306,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 20,
-    "stock": 0,
+    "stock": 5,
     "sold": 4,
     "limitedStock": false
   },
@@ -5308,7 +5377,7 @@
     "in_stock": true,
     "weight": 20,
     "sold": 3,
-    "stock": 0,
+    "stock": 3,
     "limitedStock": false
   },
   {
@@ -5328,7 +5397,7 @@
     "original_price": "BDT 70",
     "in_stock": true,
     "sales_count": 1,
-    "stock": 4,
+    "stock": 5,
     "sold": 2,
     "weight": 0,
     "limitedStock": false
@@ -5444,7 +5513,7 @@
     "sales_count": 4,
     "sold": 4,
     "weight": 0,
-    "stock": 0,
+    "stock": 6,
     "limitedStock": false
   },
   {
@@ -5510,7 +5579,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 5,
-    "stock": 0,
+    "stock": 12,
     "sold": 4,
     "limitedStock": false
   },
@@ -5739,7 +5808,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 1.5,
-    "stock": 17,
+    "stock": 37,
     "sold": 9,
     "limitedStock": false
   },
@@ -5782,7 +5851,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "sales_count": 2,
-    "stock": 2,
+    "stock": 3,
     "sold": 4,
     "weight": 0,
     "limitedStock": false
@@ -5924,7 +5993,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 12,
-    "stock": 1,
+    "stock": 2,
     "sold": 2,
     "limitedStock": false
   },
@@ -6041,7 +6110,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 37,
-    "stock": -2,
+    "stock": 3,
     "sold": 12,
     "limitedStock": false
   },
@@ -6173,7 +6242,7 @@
     "price": "BDT 255",
     "original_price": "BDT 320",
     "in_stock": true,
-    "stock": 0,
+    "stock": 2,
     "sold": 1,
     "weight": 0,
     "limitedStock": false
@@ -6761,7 +6830,7 @@
     "price": "BDT 520",
     "original_price": "BDT 920",
     "in_stock": true,
-    "stock": 1,
+    "stock": 0,
     "sold": 0,
     "weight": 0,
     "limitedStock": false
@@ -6879,7 +6948,7 @@
     "sales_count": 1,
     "weight": 30,
     "sold": 1,
-    "stock": 0,
+    "stock": 2,
     "limitedStock": false
   },
   {
@@ -8216,7 +8285,7 @@
     "in_stock": true,
     "sold": 14,
     "weight": 0,
-    "stock": 76,
+    "stock": 73,
     "limitedStock": false
   },
   {
@@ -8323,7 +8392,7 @@
     "in_stock": false,
     "sold": 2,
     "weight": 0,
-    "stock": -2,
+    "stock": 50,
     "limitedStock": false
   },
   {
