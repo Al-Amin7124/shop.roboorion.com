@@ -4532,10 +4532,10 @@
     "brand": "Generic",
     "price": "BDT 80",
     "original_price": "BDT 120",
-    "in_stock": true,
+    "in_stock": false,
     "sales_count": 3,
     "weight": 8,
-    "stock": 5,
+    "stock": 0,
     "sold": 3,
     "limitedStock": true
   },
