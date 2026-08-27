@@ -3541,7 +3541,7 @@
     "original_price": "BDT 320",
     "in_stock": true,
     "weight": 8,
-    "stock": 3,
+    "stock": 2,
     "sold": 1,
     "limitedStock": false
   },
@@ -3885,7 +3885,7 @@
     "original_price": "BDT 40",
     "in_stock": true,
     "weight": 2,
-    "stock": 8,
+    "stock": 7,
     "sold": 2,
     "limitedStock": false
   },
@@ -4091,7 +4091,7 @@
     "original_price": "BDT 85",
     "in_stock": true,
     "weight": 15,
-    "stock": 1,
+    "stock": 2,
     "sold": 0,
     "limitedStock": false
   },
@@ -4466,7 +4466,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "weight": 8,
-    "stock": 3,
+    "stock": 2,
     "sold": 2,
     "limitedStock": false
   },
@@ -4601,11 +4601,11 @@
     "brand": "Chinese",
     "price": "BDT 300",
     "original_price": "BDT 450",
-    "in_stock": true,
+    "in_stock": false,
     "sold": 0,
     "weight": 0,
     "stock": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1265",
@@ -4877,7 +4877,7 @@
     "original_price": "BDT 680",
     "in_stock": true,
     "sales_count": 3,
-    "stock": 3,
+    "stock": 2,
     "sold": 4,
     "weight": 0,
     "limitedStock": false
@@ -5306,7 +5306,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 20,
-    "stock": 4,
+    "stock": 3,
     "sold": 4,
     "limitedStock": false
   },
@@ -6463,7 +6463,7 @@
     "in_stock": true,
     "sold": 4,
     "weight": 0,
-    "stock": -5,
+    "stock": 0,
     "limitedStock": false
   },
   {
@@ -6718,7 +6718,7 @@
     "price": "BDT 40",
     "original_price": "BDT 65",
     "in_stock": true,
-    "stock": 10,
+    "stock": 9,
     "sold": 0,
     "weight": 0,
     "limitedStock": false
@@ -7728,7 +7728,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 3,
-    "stock": 4,
+    "stock": 0,
     "sold": 12,
     "limitedStock": false
   },
@@ -8264,7 +8264,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": -2,
+    "stock": 20,
     "limitedStock": false
   },
   {
