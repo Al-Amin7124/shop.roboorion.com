@@ -2436,7 +2436,7 @@
     "original_price": "BDT 75",
     "in_stock": true,
     "weight": 2,
-    "stock": 8,
+    "stock": 6,
     "sold": 2,
     "limitedStock": false
   },
@@ -2461,7 +2461,7 @@
     "stock": 4,
     "sold": 1,
     "weight": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1357",
@@ -2718,7 +2718,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": 0,
+    "stock": 2,
     "limitedStock": false
   },
   {
@@ -5785,7 +5785,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 15,
-    "stock": 1,
+    "stock": -1,
     "sold": 2,
     "limitedStock": false
   },
