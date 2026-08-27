@@ -611,7 +611,7 @@
     "brand": "RC Product BD",
     "price": "BDT 1500",
     "original_price": "BDT 1950",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 0,
     "stock": 0,
     "sold": 0,
@@ -1021,7 +1021,7 @@
     "original_price": "BDT 20",
     "in_stock": true,
     "weight": 0,
-    "stock": 15,
+    "stock": 13,
     "sold": 5,
     "limitedStock": false
   },
@@ -4558,7 +4558,7 @@
     "in_stock": true,
     "sales_count": 5,
     "weight": 5,
-    "stock": 11,
+    "stock": 10,
     "sold": 5,
     "limitedStock": false
   },
@@ -4923,10 +4923,10 @@
     "brand": "RC Product BD",
     "price": "BDT 380",
     "original_price": "BDT 450",
-    "in_stock": true,
+    "in_stock": false,
     "sales_count": 1,
     "weight": 123,
-    "stock": 1,
+    "stock": 0,
     "sold": 6,
     "limitedStock": true
   },
@@ -5236,7 +5236,7 @@
     "original_price": "BDT 110",
     "in_stock": true,
     "weight": 5,
-    "stock": 12,
+    "stock": 11,
     "sold": 5,
     "limitedStock": false
   },
@@ -5306,7 +5306,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 20,
-    "stock": 5,
+    "stock": 4,
     "sold": 4,
     "limitedStock": false
   },
@@ -5604,7 +5604,7 @@
     "sales_count": 3,
     "sold": 10,
     "weight": 0,
-    "stock": 3,
+    "stock": 1,
     "limitedStock": false
   },
   {
@@ -5647,7 +5647,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 5,
-    "stock": 8,
+    "stock": 5,
     "sold": 13,
     "limitedStock": false
   },
@@ -6809,7 +6809,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 1,
-    "stock": 2,
+    "stock": 9,
     "sold": 8,
     "limitedStock": false
   },
@@ -7170,7 +7170,7 @@
     "original_price": "BDT 150",
     "in_stock": true,
     "weight": 5,
-    "stock": 3,
+    "stock": 2,
     "sold": 4,
     "limitedStock": false
   },
@@ -7728,7 +7728,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 3,
-    "stock": 9,
+    "stock": 4,
     "sold": 12,
     "limitedStock": false
   },
