@@ -1,5 +1,28 @@
 [
   {
+  "id": "RBO-1469",
+  "title": "18650 Li-ion Battery 3.7V 2600mAh – Original Capacity",
+  "url": "products/1469-18650-li-ion-battery-3-7v-2600mah-original-capacity-robo-orion-bangladesh.html",
+  "image": "img/product/1469-18650-li-ion-battery-3-7v-2600mah-original-capacity-robo-orion-bangladesh.jpg",
+  "alt": "18650 Li-ion Battery 3.7V 2600mAh – Original Capacity",
+  "categories": [
+    "18650-batteries",
+    "lithium-batteries",
+    "battery-packs"
+  ],
+  "discount": "Save BDT 130",
+  "rating": 5,
+  "reviews": 27,
+  "brand": "Generic",
+  "price": "BDT 150",
+  "original_price": "BDT 280",
+  "in_stock": true,
+  "weight": 0,
+  "stock": 0,
+  "sold": 0,
+  "limitedStock": false
+},
+  {
     "id": "RBO-1468",
     "title": "25mAh 3.7V Li-Po Battery for Bluetooth Headsets – Mini Cell",
     "url": "products/1468-25mah-3-7v-li-po-battery-for-bluetooth-headsets-mini-cell-robo-orion-bangladesh.html",
