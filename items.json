@@ -1,27 +1,27 @@
 [
   {
-  "id": "RBO-1469",
-  "title": "18650 Li-ion Battery 3.7V 2600mAh – Original Capacity",
-  "url": "products/1469-18650-li-ion-battery-3-7v-2600mah-original-capacity-robo-orion-bangladesh.html",
-  "image": "img/product/1469-18650-li-ion-battery-3-7v-2600mah-original-capacity-robo-orion-bangladesh.jpg",
-  "alt": "18650 Li-ion Battery 3.7V 2600mAh – Original Capacity",
-  "categories": [
-    "18650-batteries",
-    "lithium-batteries",
-    "battery-packs"
-  ],
-  "discount": "Save BDT 130",
-  "rating": 5,
-  "reviews": 27,
-  "brand": "Generic",
-  "price": "BDT 150",
-  "original_price": "BDT 280",
-  "in_stock": true,
-  "weight": 0,
-  "stock": 0,
-  "sold": 0,
-  "limitedStock": false
-},
+    "id": "RBO-1469",
+    "title": "18650 Li-ion 3C Battery 3.7V 2600mAh – Original Capacity",
+    "url": "products/1469-18650-li-ion-battery-3-7v-2600mah-original-capacity-robo-orion-bangladesh.html",
+    "image": "img/product/1469-18650-li-ion-battery-3-7v-2600mah-original-capacity-robo-orion-bangladesh.jpg",
+    "alt": "18650 Li-ion Battery 3.7V 2600mAh – Original Capacity",
+    "categories": [
+      "18650-batteries",
+      "lithium-batteries",
+      "battery-packs"
+    ],
+    "discount": "Save BDT 130",
+    "rating": 5,
+    "reviews": 27,
+    "brand": "Generic",
+    "price": "BDT 150",
+    "original_price": "BDT 280",
+    "in_stock": true,
+    "weight": 47,
+    "stock": 41,
+    "sold": 0,
+    "limitedStock": false
+  },
   {
     "id": "RBO-1468",
     "title": "25mAh 3.7V Li-Po Battery for Bluetooth Headsets – Mini Cell",
@@ -41,7 +41,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": 3,
     "sold": 0,
     "limitedStock": false
   },
@@ -4209,7 +4209,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "weight": 5,
-    "stock": 8,
+    "stock": 7,
     "sales_count": 1,
     "sold": 2,
     "limitedStock": false
@@ -5511,7 +5511,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 50,
-    "stock": 0,
+    "stock": 2,
     "sold": 3,
     "limitedStock": false
   },
@@ -6266,7 +6266,7 @@
     "price": "BDT 55",
     "original_price": "BDT 120",
     "in_stock": true,
-    "stock": 20,
+    "stock": 19,
     "sold": 0,
     "weight": 0,
     "limitedStock": false
@@ -6509,7 +6509,7 @@
     "in_stock": true,
     "sold": 4,
     "weight": 0,
-    "stock": 0,
+    "stock": -1,
     "limitedStock": false
   },
   {
@@ -7434,7 +7434,7 @@
     "price": "BDT 7",
     "original_price": "BDT 15",
     "in_stock": true,
-    "stock": 5,
+    "stock": 3,
     "sold": 0,
     "weight": 0,
     "limitedStock": false
@@ -7543,7 +7543,7 @@
     "price": "BDT 5",
     "original_price": "BDT 15",
     "in_stock": true,
-    "stock": 10,
+    "stock": 9,
     "sold": 0,
     "weight": 0,
     "limitedStock": false
@@ -7660,7 +7660,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 10,
-    "stock": 1,
+    "stock": 11,
     "sold": 4,
     "limitedStock": false
   },
@@ -7797,7 +7797,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 15,
-    "stock": 6,
+    "stock": 5,
     "sold": 5,
     "limitedStock": false
   },
