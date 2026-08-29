@@ -1,5 +1,74 @@
 [
   {
+  "id": "RBO-1472",
+  "title": "0.7mm HSS Micro Twist Drill Bit – High Precision",
+  "url": "products/1472-0-7mm-hss-micro-twist-drill-bit-high-precision-robo-orion-bangladesh.html",
+  "image": "img/product/1472-0-7mm-hss-micro-twist-drill-bit-high-precision-robo-orion-bangladesh.jpg",
+  "alt": "0.7mm HSS Micro Twist Drill Bit – High Precision",
+  "categories": [
+    "repair-tools",
+    "pcb-boards",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 15",
+  "rating": 5,
+  "reviews": 5,
+  "brand": "Generic",
+  "price": "BDT 30",
+  "original_price": "BDT 45",
+  "in_stock": true,
+  "weight": 0,
+  "stock": 0,
+  "sold": 0,
+  "limitedStock": false
+},
+  {
+    "id": "RBO-1471",
+    "title": "0.8mm HSS Micro Twist Drill Bit – High Precision",
+    "url": "products/1471-0-8mm-hss-micro-twist-drill-bit-high-precision-robo-orion-bangladesh.html",
+    "image": "img/product/1471-0-8mm-hss-micro-twist-drill-bit-high-precision-robo-orion-bangladesh.jpg",
+    "alt": "0.8mm HSS Micro Twist Drill Bit – High Precision",
+    "categories": [
+      "repair-tools",
+      "pcb-boards",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 15",
+    "rating": 5,
+    "reviews": 9,
+    "brand": "Generic",
+    "price": "BDT 30",
+    "original_price": "BDT 45",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
+    "id": "RBO-1470",
+    "title": "0.2mm HSS Micro Twist Drill Bit – High Precision",
+    "url": "products/1470-0-2mm-hss-micro-twist-drill-bit-high-precision-robo-orion-bangladesh.html",
+    "image": "img/product/1470-0-2mm-hss-micro-twist-drill-bit-high-precision-robo-orion-bangladesh.jpg",
+    "alt": "0.2mm HSS Micro Twist Drill Bit – High Precision",
+    "categories": [
+      "repair-tools",
+      "pcb-boards",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 15",
+    "rating": 5,
+    "reviews": 4,
+    "brand": "Generic",
+    "price": "BDT 30",
+    "original_price": "BDT 45",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1469",
     "title": "18650 Li-ion 3C Battery 3.7V 2600mAh – Original Capacity",
     "url": "products/1469-18650-li-ion-battery-3-7v-2600mah-original-capacity-robo-orion-bangladesh.html",
@@ -18,7 +87,7 @@
     "original_price": "BDT 280",
     "in_stock": true,
     "weight": 47,
-    "stock": 41,
+    "stock": 37,
     "sold": 0,
     "limitedStock": false
   },
@@ -680,11 +749,11 @@
     "brand": "Robo Orion",
     "price": "BDT 550",
     "original_price": "BDT 750",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 0,
     "stock": 0,
     "sold": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1439",
@@ -2505,7 +2574,7 @@
     "original_price": "BDT 550",
     "in_stock": true,
     "stock": 4,
-    "sold": 1,
+    "sold": 2,
     "weight": 0,
     "limitedStock": true
   },
@@ -3701,7 +3770,7 @@
     "original_price": "BDT 180",
     "in_stock": true,
     "weight": 20,
-    "stock": 5,
+    "stock": 4,
     "sold": 1,
     "limitedStock": false
   },
@@ -3749,8 +3818,8 @@
     "in_stock": true,
     "sales_count": 9,
     "weight": 1,
-    "stock": 29,
-    "sold": 21,
+    "stock": 25,
+    "sold": 25,
     "limitedStock": true
   },
   {
@@ -3772,8 +3841,8 @@
     "in_stock": true,
     "sales_count": 5,
     "weight": 2,
-    "stock": 32,
-    "sold": 18,
+    "stock": 30,
+    "sold": 19,
     "limitedStock": true
   },
   {
@@ -3909,7 +3978,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 1,
-    "stock": 24,
+    "stock": 23,
     "sold": 16,
     "limitedStock": true
   },
@@ -3998,7 +4067,7 @@
     "original_price": "BDT 580",
     "in_stock": true,
     "weight": 300,
-    "stock": 1,
+    "stock": -1,
     "sold": 0,
     "limitedStock": false
   },
@@ -4022,7 +4091,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 1,
-    "stock": 20,
+    "stock": 19,
     "sold": 31,
     "limitedStock": true
   },
@@ -5209,7 +5278,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 18,
-    "stock": 4,
+    "stock": 3,
     "sold": 3,
     "limitedStock": false
   },
@@ -5831,7 +5900,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 15,
-    "stock": -1,
+    "stock": 3,
     "sold": 2,
     "limitedStock": false
   },
@@ -6039,7 +6108,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 12,
-    "stock": 2,
+    "stock": 1,
     "sold": 2,
     "limitedStock": false
   },
@@ -6053,11 +6122,11 @@
       "charge-controllers",
       "bms-protection"
     ],
-    "discount": "Save BDT 300",
+    "discount": "Save BDT 270",
     "rating": 5,
     "reviews": 16,
     "brand": "Generic",
-    "price": "BDT 320",
+    "price": "BDT 350",
     "original_price": "BDT 620",
     "in_stock": true,
     "sales_count": 6,
@@ -6132,7 +6201,7 @@
     "original_price": "BDT 85",
     "in_stock": true,
     "weight": 2,
-    "stock": 8,
+    "stock": 7,
     "sold": 0,
     "limitedStock": false
   },
@@ -6550,7 +6619,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "sales_count": 1,
-    "stock": 1,
+    "stock": 0,
     "sold": 2,
     "weight": 0,
     "limitedStock": false
