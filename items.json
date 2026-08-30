@@ -1,5 +1,28 @@
 [
   {
+    "id": "RBO-1474",
+    "title": "1mm HSS Micro Twist Drill Bit – High Precision",
+    "url": "products/1474-1mm-hss-micro-twist-drill-bit-high-precision-robo-orion-bangladesh.html",
+    "image": "img/product/1474-1mm-hss-micro-twist-drill-bit-high-precision-robo-orion-bangladesh.jpg",
+    "alt": "1mm HSS Micro Twist Drill Bit – High Precision",
+    "categories": [
+      "repair-tools",
+      "pcb-boards",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 15",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 30",
+    "original_price": "BDT 45",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1473",
     "title": "0.6mm HSS Micro Twist Drill Bit – High Precision",
     "url": "products/1473-0-6mm-hss-micro-twist-drill-bit-high-precision-robo-orion-bangladesh.html",
@@ -2596,7 +2619,7 @@
     "price": "BDT 380",
     "original_price": "BDT 550",
     "in_stock": true,
-    "stock": 4,
+    "stock": 3,
     "sold": 2,
     "weight": 0,
     "limitedStock": true
@@ -5420,7 +5443,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 10,
-    "stock": 1,
+    "stock": 0,
     "sold": 18,
     "limitedStock": false
   },
