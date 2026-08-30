@@ -17,8 +17,8 @@
     "price": "BDT 30",
     "original_price": "BDT 45",
     "in_stock": true,
-    "weight": 0,
-    "stock": 0,
+    "weight": 1,
+    "stock": 10,
     "sold": 0,
     "limitedStock": false
   },
@@ -2368,7 +2368,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 1,
-    "stock": -1,
+    "stock": 5,
     "sold": 2,
     "limitedStock": false
   },
@@ -2388,9 +2388,9 @@
     "brand": "Generic",
     "price": "BDT 30",
     "original_price": "BDT 45",
-    "in_stock": false,
+    "in_stock": true,
     "weight": 1,
-    "stock": 0,
+    "stock": 5,
     "sold": 2,
     "limitedStock": true
   },
