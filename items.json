@@ -1,5 +1,26 @@
 [
   {
+    "id": "RBO-1482",
+    "title": "Lishen LR1865SK 2600mAh 18650 Battery – Grade A 5C Cell",
+    "url": "products/1482-lishen-lr1865sk-2600mah-18650-battery-grade-a-5c-cell-robo-orion-bangladesh.html",
+    "image": "img/product/1482-lishen-lr1865sk-2600mah-18650-battery-grade-a-5c-cell-robo-orion-bangladesh.jpg",
+    "alt": "Lishen LR1865SK 2600mAh 18650 Battery – Grade A 5C Cell",
+    "categories": [
+      "diy-kits"
+    ],
+    "discount": "Save BDT 160",
+    "rating": 5,
+    "reviews": 22,
+    "brand": "Lishen",
+    "price": "BDT 190",
+    "original_price": "BDT 350",
+    "in_stock": false,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1481",
     "title": "25.2V 1A Charging Circuit Board – AC to DC 6S Li-ion Charger",
     "url": "products/1481-25.2v-1a-charging-circuit-board-ac-to-dc-6s-li-ion-charger-robo-orion-bangladesh.html",
@@ -4623,7 +4644,7 @@
     "original_price": "BDT 780",
     "in_stock": true,
     "weight": 200,
-    "stock": 2,
+    "stock": 0,
     "sold": 0,
     "limitedStock": false
   },
@@ -4790,7 +4811,7 @@
   },
   {
     "id": "RBO-1271",
-    "title": "8S 24V 25A LiFePO4 BMS Protection Board with Heatsink (JH-998839-8)",
+    "title": "8S 24V 25A LiFePO4 Balanced BMS Protection Board with Heatsink (JH-998839-8)",
     "url": "products/1271-8s-24v-25a-lifepo4-bms-with-heatsink-jh-998839-8-robo-orion-bangladesh.html",
     "image": "img/product/1271-8s-24v-25a-lifepo4-bms-with-heatsink-jh-998839-8-robo-orion-bangladesh.jpg",
     "alt": "8S 24V 25A LiFePO4 BMS Protection Board JH-998839-8 with Cable and Heatsink",
@@ -4835,7 +4856,7 @@
   },
   {
     "id": "RBO-1269",
-    "title": "3S 12V 10A BMS 18650 Lithium Battery Protection Board (12.6V)",
+    "title": "3S 12V 10A Balanced BMS 18650 Lithium Battery Protection Board (12.6V)",
     "url": "products/1269-3s-12v-10a-bms-18650-lithium-battery-protection-board-robo-orion-bangladesh.html",
     "image": "img/product/1269-3s-12v-10a-bms-18650-lithium-battery-protection-board-robo-orion-bangladesh.jpg",
     "alt": "3S 12V 10A BMS 18650 Lithium Battery Protection Board (12.6V)",
