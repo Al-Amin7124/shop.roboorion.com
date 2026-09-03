@@ -1,7 +1,76 @@
 [
   {
+    "id": "RBO-1481",
+    "title": "25.2V 1A Charging Circuit Board – AC to DC 6S Li-ion Charger",
+    "url": "products/1481-25.2v-1a-charging-circuit-board-ac-to-dc-6s-li-ion-charger-robo-orion-bangladesh.html",
+    "image": "img/product/1481-25.2v-1a-charging-circuit-board-ac-to-dc-6s-li-ion-charger-robo-orion-bangladesh.jpg",
+    "alt": "25.2V 1A Charging Circuit Board – AC to DC 6S Li-ion Charger",
+    "categories": [
+      "power-supply",
+      "pcb-boards",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 100",
+    "rating": 5,
+    "reviews": 7,
+    "brand": "Generic",
+    "price": "BDT 180",
+    "original_price": "BDT 280",
+    "in_stock": false,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
+    "id": "RBO-1480",
+    "title": "5V 3A Charging Circuit Board – Li-ion Battery Charger",
+    "url": "products/1480-5v-3a-charging-circuit-board-diy-power-bank-module-robo-orion-bangladesh.html",
+    "image": "img/product/1480-5v-3a-charging-circuit-board-diy-power-bank-module-robo-orion-bangladesh.jpg",
+    "alt": "5V 3A Charging Circuit Board – DIY Power Bank Module",
+    "categories": [
+      "power-supply",
+      "pcb-boards",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 100",
+    "rating": 5,
+    "reviews": 18,
+    "brand": "Generic",
+    "price": "BDT 180",
+    "original_price": "BDT 280",
+    "in_stock": false,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
+    "id": "RBO-1479",
+    "title": "3S 12.6V 2A Charging Circuit Board – Li-ion Battery Charger",
+    "url": "products/1479-3s-12.6v-2a-charging-circuit-board-li-ion-battery-bms-robo-orion-bangladesh.html",
+    "image": "img/product/1479-3s-12.6v-2a-charging-circuit-board-li-ion-battery-bms-robo-orion-bangladesh.jpg",
+    "alt": "3S 12.6V 2A Charging Circuit Board – Li-ion Battery BMS",
+    "categories": [
+      "power-supply",
+      "pcb-boards",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 100",
+    "rating": 5,
+    "reviews": 22,
+    "brand": "Generic",
+    "price": "BDT 180",
+    "original_price": "BDT 280",
+    "in_stock": false,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1478",
-    "title": "2S 8.4V 3A Charging Circuit Board – Li-ion Battery BMS",
+    "title": "2S 8.4V 3A Charging Circuit Board – Li-ion Battery Charger",
     "url": "products/1478-2s-8.4v-3a-charging-circuit-board-li-ion-battery-bms-robo-orion-bangladesh.html",
     "image": "img/product/1478-2s-8.4v-3a-charging-circuit-board-li-ion-battery-bms-robo-orion-bangladesh.jpg",
     "alt": "2S 8.4V 3A Charging Circuit Board – Li-ion Battery BMS",
