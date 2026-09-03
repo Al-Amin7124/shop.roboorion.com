@@ -1,10 +1,10 @@
 [
   {
-    "id": "RBO-1175",
-    "title": "1mm Rosin Core Solder Wire 100g – Premium Tin Lead Soldering Wire",
-    "url": "products/1175-1mm-rosin-core-solder-wire-100g-premium-tin-lead-soldering-wire-robo-orion-bangladesh.html",
-    "image": "img/product/1175-1mm-rosin-core-solder-wire-100g-premium-tin-lead-soldering-wire-robo-orion-bangladesh.jpg",
-    "alt": "1mm Rosin Core Solder Wire 100g – Premium Tin Lead Soldering Wire",
+    "id": "RBO-1475",
+    "title": "B-2 Solder Wire 100g (1mm) – Premium Rosin Core Leaded Tin",
+    "url": "products/1475-b-2-solder-wire-100g-1mm-premium-rosin-core-leaded-tin-robo-orion-bangladesh.html",
+    "image": "img/product/1475-b-2-solder-wire-100g-1mm-premium-rosin-core-leaded-tin-robo-orion-bangladesh.jpg",
+    "alt": "B-2 Solder Wire 100g (1mm) – Premium Rosin Core Leaded Tin",
     "categories": [
       "repair-tools",
       "diy-kits"
@@ -18,7 +18,7 @@
     "in_stock": false,
     "weight": 0,
     "stock": 0,
-    "sold": 1,
+    "sold": 0,
     "limitedStock": true
   },
   {
@@ -8159,8 +8159,8 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "sales_count": 1,
-    "weight": 0,
-    "stock": 0,
+    "weight": 6,
+    "stock": 5,
     "sold": 1,
     "limitedStock": false
   },
@@ -8181,7 +8181,7 @@
     "price": "BDT 15",
     "original_price": "BDT 25",
     "in_stock": true,
-    "stock": 5,
+    "stock": 0,
     "sold": 0,
     "weight": 0,
     "limitedStock": false
