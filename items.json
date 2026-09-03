@@ -1,5 +1,28 @@
 [
   {
+    "id": "RBO-1478",
+    "title": "2S 8.4V 3A Charging Circuit Board – Li-ion Battery BMS",
+    "url": "products/1478-2s-8.4v-3a-charging-circuit-board-li-ion-battery-bms-robo-orion-bangladesh.html",
+    "image": "img/product/1478-2s-8.4v-3a-charging-circuit-board-li-ion-battery-bms-robo-orion-bangladesh.jpg",
+    "alt": "2S 8.4V 3A Charging Circuit Board – Li-ion Battery BMS",
+    "categories": [
+      "power-supply",
+      "pcb-boards",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 100",
+    "rating": 5,
+    "reviews": 13,
+    "brand": "Generic",
+    "price": "BDT 180",
+    "original_price": "BDT 280",
+    "in_stock": false,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1477",
     "title": "EVE 50E 21700 Lithium Battery 5000mAh – Grade A Original",
     "url": "products/1477-eve-50e-21700-lithium-battery-5000mah-grade-a-original-robo-orion-bangladesh.html",
@@ -15,7 +38,7 @@
     "price": "BDT 340",
     "original_price": "BDT 590",
     "in_stock": false,
-    "weight": 0.07,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": true
