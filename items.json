@@ -1,5 +1,26 @@
 [
   {
+    "id": "RBO-1477",
+    "title": "EVE 50E 21700 Lithium Battery 5000mAh – Grade A Original",
+    "url": "products/1477-eve-50e-21700-lithium-battery-5000mah-grade-a-original-robo-orion-bangladesh.html",
+    "image": "img/product/1477-eve-50e-21700-lithium-battery-5000mah-grade-a-original-robo-orion-bangladesh.jpg",
+    "alt": "EVE 50E 21700 Lithium Battery 5000mAh – Grade A Original",
+    "categories": [
+      "diy-kits"
+    ],
+    "discount": "Save BDT 250",
+    "rating": 5,
+    "reviews": 26,
+    "brand": "EVE Energy",
+    "price": "BDT 340",
+    "original_price": "BDT 590",
+    "in_stock": false,
+    "weight": 0.07,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1476",
     "title": "0.8mm Sn63/37 Active Solder Wire 100g – High Purity Rosin Core",
     "url": "products/1476-0.8mm-sn63-37-active-solder-wire-high-purity-rosin-core-robo-orion-bangladesh.html",
@@ -34,7 +55,7 @@
     "discount": "Save BDT 355",
     "rating": 5,
     "reviews": 17,
-    "brand": "Generic",
+    "brand": "B-2",
     "price": "BDT 495",
     "original_price": "BDT 850",
     "in_stock": false,
@@ -3722,7 +3743,7 @@
     "original_price": "BDT 385",
     "in_stock": true,
     "weight": 12,
-    "stock": 1,
+    "stock": 0,
     "sold": 1,
     "limitedStock": false
   },
