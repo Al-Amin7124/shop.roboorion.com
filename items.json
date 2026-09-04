@@ -8753,7 +8753,7 @@
     "in_stock": true,
     "sold": 8,
     "weight": 0,
-    "stock": -8,
+    "stock": 100,
     "limitedStock": false
   },
   {
