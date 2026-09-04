@@ -8,16 +8,21 @@
     'use strict';
 
     /* ── CONFIG ──────────────────────────────────────────── */
-    const WA_NUMBER  = '8801999506021';
-    const CART_KEY   = 'robo_orion_cart';
-    const PROD_KEY   = 'robo_orion_products';
-    const COUPON_KEY = 'robo_orion_coupon';
-    const STORE_NAME = 'Robo Orion';
+    const WA_NUMBER    = '8801846253277';
+    const CART_KEY     = 'robo_orion_cart';
+    const PROD_KEY     = 'robo_orion_products';
+    const COUPON_KEY   = 'robo_orion_coupon';
+    const CUSTOMER_KEY = 'robo_orion_customer';
+    const DELIVERY_KEY = 'robo_orion_delivery';
+    const STORE_NAME   = 'Robo Orion';
+    const PICKUP_LOCATION = 'Middle Badda, Dhaka';
 
     const COUPONS = {
-        'ROBOORION10': { discount: 10, type: 'percent', expiry: '2026-03-31', label: '10% off',    minOrder: 0 },
-        'ROBOORION45': { discount: 45, type: 'flat',    expiry: '2026-12-31', label: 'BDT 45 off', minOrder: 500 },
-        'ROBOORION70': { discount: 70, type: 'flat',    expiry: '2026-12-31', label: 'BDT 70 off', minOrder: 0 },
+        // Store-wide example:
+        // 'ROBOORION2': { discount: 2, type: 'percent', expiry: '2026-12-31', label: '2% off your order', minOrder: 0, productCode: null },
+
+        // Product-specific example (only discounts the item with code 'ARD-001'):
+        // 'ARDUINO50':   { discount: 50, type: 'flat', expiry: '2026-12-31', label: 'BDT 50 off Arduino Uno', minOrder: 0, productCode: 'ARD-001' },
     };
 
     /* ── STATE ───────────────────────────────────────────── */
@@ -26,19 +31,27 @@
     let toastTmr = null;
     const isCheckoutPage = window.location.pathname.includes('checkout.html');
 
+    // The live catalog, fetched fresh from items.json on every page load
+    // (including checkout) — this is the authoritative source for price.
+    // Never persisted to localStorage on purpose: a fresh fetch every page
+    // load is exactly what guarantees the price shown is never stale.
+    let CATALOG_BY_ID = new Map();
+    let catalogLoadFailed = false;
+
     /* ── HELPERS ─────────────────────────────────────────── */
-    
+
     function getEl(id) {
         return document.getElementById('co-' + id) || document.getElementById('ro-' + id) || document.getElementById(id);
     }
 
-    function getCart() { 
-        try { return JSON.parse(localStorage.getItem(CART_KEY)) || []; } 
-        catch (e) { return []; } 
+    function getCart() {
+        try { return JSON.parse(localStorage.getItem(CART_KEY)) || []; }
+        catch (e) { return []; }
     }
 
-    function saveCart(cart) { 
-        localStorage.setItem(CART_KEY, JSON.stringify(cart)); 
+    function saveCart(cart) {
+        try { localStorage.setItem(CART_KEY, JSON.stringify(cart)); }
+        catch (e) { console.error('ROCart: failed to save cart', e); }
     }
 
     function isCouponExpired(expiryDateStr) {
@@ -50,6 +63,20 @@
         return today.getTime() > expiryDate.getTime();
     }
 
+    function fmt(n) {
+        return parseFloat((n || 0).toFixed(2));
+    }
+
+    function escapeHtml(str) {
+        if (str === undefined || str === null) return '';
+        return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    }
+
     function fixImagePath(img) {
         if (!img) return '';
         const isProdPage = window.location.pathname.includes('/products/');
@@ -58,11 +85,82 @@
         return img;
     }
 
+    /** items.json stores price as "BDT 2250" (or "Contact for Price" for
+     *  build-to-order items) rather than a plain number. */
+    function parseCatalogPrice(price) {
+        if (typeof price === 'number') return Number.isNaN(price) ? null : price;
+        if (typeof price !== 'string') return null;
+        const digits = price.replace(/[^0-9.]/g, '');
+        if (!digits) return null;
+        const n = parseFloat(digits);
+        return Number.isNaN(n) ? null : n;
+    }
+
+    /**
+     * Fetches items.json fresh — no localStorage involved — and builds an
+     * id -> product lookup. This is the ONLY thing findProduct() trusts for
+     * price; it's re-run on every single page load (home, product pages,
+     * and checkout), so a price you change in items.json today is what a
+     * customer's cart AND their checkout total will show today, even if
+     * they added that item to their cart last week.
+     */
+    async function loadCatalog() {
+        const isProdPage = window.location.pathname.includes('/products/');
+        const jsonPath = isProdPage ? '../items.json' : 'items.json';
+        try {
+            const res = await fetch(jsonPath, { cache: 'no-store' });
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            const items = await res.json();
+            CATALOG_BY_ID = new Map(items.map(item => [item.id, item]));
+        } catch (err) {
+            catalogLoadFailed = true;
+            console.error(
+                'ROCart: failed to load items.json — falling back to any cached ' +
+                'price data for this session. Prices may not reflect the latest ' +
+                'items.json until this succeeds.',
+                err
+            );
+        }
+    }
+
     function findProduct(id) {
-        const inMemory = PRODUCTS.find(p => p.id === id);
-        if (inMemory) return { ...inMemory, img: fixImagePath(inMemory.img) };
-        
+        // Live catalog first — always the current price, regardless of
+        // anything cached from a previous visit.
+        const catalogItem = CATALOG_BY_ID.get(id);
+        if (catalogItem) {
+            const price = parseCatalogPrice(catalogItem.price);
+            // "Contact for Price" items have no real numeric price — they
+            // aren't meant to be added to a cart in the first place, so
+            // fall through to the legacy path rather than returning a
+            // product with a broken price.
+            if (price !== null) {
+                return {
+                    id: catalogItem.id,
+                    name: catalogItem.title,
+                    code: catalogItem.id,
+                    price,
+                    img: fixImagePath(catalogItem.image),
+                    inStock: catalogItem.in_stock !== false,
+                    priceSource: 'items-json',
+                };
+            }
+        }
+
+        // Fallback path — only reached if items.json failed to load, or
+        // this particular id isn't in it (e.g. a very old cart, or a
+        // product that's since been removed from the catalog).
         const saved = JSON.parse(localStorage.getItem(PROD_KEY) || '{}');
+        const inMemory = PRODUCTS.find(p => p.id === id);
+
+        if (saved[id] && saved[id].priceSource === 'product-page') {
+            const product = { ...saved[id], img: fixImagePath(saved[id].img) };
+            const idx = PRODUCTS.findIndex(p => p.id === id);
+            if (idx !== -1) PRODUCTS[idx] = product; else PRODUCTS.push(product);
+            return product;
+        }
+
+        if (inMemory) return { ...inMemory, img: fixImagePath(inMemory.img) };
+
         if (saved[id]) {
             const product = { ...saved[id], img: fixImagePath(saved[id].img) };
             PRODUCTS.push(product);
@@ -71,15 +169,163 @@
         return null;
     }
 
+    function productLineTotal(cart, code) {
+        const item = cart.find(i => i.id === code);
+        if (!item) return 0;
+        const p = findProduct(code);
+        return p ? fmt(p.price * item.qty) : 0;
+    }
+
+    function cartTotal(cart) {
+        return fmt(cart.reduce((s, i) => {
+            const p = findProduct(i.id);
+            return s + (p ? p.price * i.qty : 0);
+        }, 0));
+    }
+
+    function getDeliveryCharge() {
+        const pickup = getEl('delivery-pickup');
+        if (pickup && pickup.checked) return 0;
+        const suburbs = getEl('delivery-suburbs');
+        if (suburbs && suburbs.checked) return 110;
+        const outside = getEl('delivery-outside');
+        return outside && outside.checked ? 120 : 70;
+    }
+
+    function isSelfPickup() {
+        const pickup = getEl('delivery-pickup');
+        return !!(pickup && pickup.checked);
+    }
+
+    function getDeliveryLabel() {
+        if (isSelfPickup()) return `Self Pickup — ${PICKUP_LOCATION}`;
+        const suburbs = getEl('delivery-suburbs');
+        if (suburbs && suburbs.checked) return 'Sub-urbs of Dhaka';
+        const outside = getEl('delivery-outside');
+        return (outside && outside.checked) ? 'Outside Dhaka' : 'Inside Dhaka';
+    }
+
+    function syncDeliveryUI() {
+        [
+            ['delivery-inside', 'delivery-inside-label'],
+            ['delivery-suburbs', 'delivery-suburbs-label'],
+            ['delivery-outside', 'delivery-outside-label'],
+            ['delivery-pickup', 'delivery-pickup-label'],
+        ].forEach(([radioId, labelId]) => {
+            const radio = getEl(radioId);
+            const label = getEl(labelId);
+            if (radio && label) label.classList.toggle('active', radio.checked);
+        });
+
+        const pickup = isSelfPickup();
+        const locEl = getEl('cust-location');
+        const noteEl = getEl('pickup-note');
+        if (locEl) {
+            locEl.disabled = pickup;
+            locEl.placeholder = pickup ? `Not required — pickup at ${PICKUP_LOCATION}` : 'Delivery Address / Location';
+        }
+        if (noteEl) noteEl.style.display = pickup ? 'block' : 'none';
+    }
+
+    function saveDeliveryPreference() {
+        let method = 'outside';
+        if (isSelfPickup()) method = 'pickup';
+        else {
+            const inside = getEl('delivery-inside');
+            const suburbs = getEl('delivery-suburbs');
+            if (inside && inside.checked) method = 'inside';
+            else if (suburbs && suburbs.checked) method = 'suburbs';
+        }
+        try { localStorage.setItem(DELIVERY_KEY, method); }
+        catch (e) { console.error('ROCart: failed to save delivery preference', e); }
+    }
+
+    function loadDeliveryPreference() {
+        let saved;
+        try { saved = localStorage.getItem(DELIVERY_KEY); } catch (e) { return; }
+        if (!saved) return;
+
+        const radioIdByMethod = { inside: 'delivery-inside', suburbs: 'delivery-suburbs', outside: 'delivery-outside', pickup: 'delivery-pickup' };
+        const radio = getEl(radioIdByMethod[saved]);
+        if (radio) radio.checked = true;
+    }
+
+    /* ── CUSTOMER INFO ──────────────────────────────────── */
+
+    function getCustomerInfo() {
+        return {
+            name: (getEl('cust-name') || {}).value?.trim() || '',
+            phone: (getEl('cust-phone') || {}).value?.trim() || '',
+            location: (getEl('cust-location') || {}).value?.trim() || '',
+        };
+    }
+
+    function saveCustomerInfo() {
+        try { localStorage.setItem(CUSTOMER_KEY, JSON.stringify(getCustomerInfo())); }
+        catch (e) { console.error('ROCart: failed to save customer info', e); }
+    }
+
+    function loadCustomerInfo() {
+        const nameEl = getEl('cust-name');
+        const phoneEl = getEl('cust-phone');
+        const locEl = getEl('cust-location');
+        if (!nameEl && !phoneEl && !locEl) return;
+
+        try {
+            const saved = JSON.parse(localStorage.getItem(CUSTOMER_KEY) || '{}');
+            if (nameEl && saved.name) nameEl.value = saved.name;
+            if (phoneEl && saved.phone) phoneEl.value = saved.phone;
+            if (locEl && saved.location) locEl.value = saved.location;
+        } catch (e) { /* ignore malformed storage */ }
+
+        [nameEl, phoneEl, locEl].forEach(el => { if (el) el.addEventListener('input', saveCustomerInfo); });
+    }
+
+    function validateCustomerInfo() {
+        const nameEl = getEl('cust-name');
+        if (!nameEl) return true;
+
+        const msgEl = getEl('contact-msg');
+        const info = getCustomerInfo();
+
+        function fail(text, el) {
+            if (msgEl) { msgEl.className = 'co-coupon-msg error'; msgEl.textContent = '✕ ' + text; }
+            if (el) el.focus();
+            return false;
+        }
+
+        if (!info.name) return fail('Please enter your full name.', nameEl);
+        if (!info.phone) return fail('Please enter your phone number.', getEl('cust-phone'));
+        if (!/^[+0-9\s-]{7,15}$/.test(info.phone)) return fail('Please enter a valid phone number.', getEl('cust-phone'));
+        if (!isSelfPickup() && !info.location) return fail('Please enter your delivery address, or choose Self Pickup.', getEl('cust-location'));
+
+        if (msgEl) { msgEl.className = 'co-coupon-msg'; msgEl.textContent = ''; }
+        return true;
+    }
+
     /* ── COUPON LOGIC ───────────────────────────────────── */
 
-    function calcDiscount(total) {
-        if (!APPLIED_COUPON) return 0;
-        if (isCouponExpired(APPLIED_COUPON.expiry)) { removeCoupon(); return 0; }
-        if (APPLIED_COUPON.minOrder && total < APPLIED_COUPON.minOrder) { removeCoupon(); return 0; }
-        if (APPLIED_COUPON.type === 'percent') return Math.round(total * APPLIED_COUPON.discount / 100);
-        else if (APPLIED_COUPON.type === 'flat') return Math.min(APPLIED_COUPON.discount, total);
-        return 0;
+    function calcDiscount(cart) {
+        if (!APPLIED_COUPON) return { amount: 0, targetId: null, inactive: false };
+        if (isCouponExpired(APPLIED_COUPON.expiry)) { removeCoupon(); return { amount: 0, targetId: null, inactive: false }; }
+
+        if (APPLIED_COUPON.productCode) {
+            const targetId = APPLIED_COUPON.productCode;
+            const lineTotal = productLineTotal(cart, targetId);
+            if (lineTotal <= 0) return { amount: 0, targetId, inactive: true };
+            if (APPLIED_COUPON.minOrder && lineTotal < APPLIED_COUPON.minOrder) return { amount: 0, targetId, inactive: true };
+            const raw = APPLIED_COUPON.type === 'percent'
+                ? lineTotal * APPLIED_COUPON.discount / 100
+                : APPLIED_COUPON.discount;
+            return { amount: fmt(Math.min(raw, lineTotal)), targetId, inactive: false };
+        }
+
+        const total = cartTotal(cart);
+        if (APPLIED_COUPON.minOrder && total < APPLIED_COUPON.minOrder) return { amount: 0, targetId: null, inactive: true };
+        const raw = APPLIED_COUPON.type === 'percent'
+            ? total * APPLIED_COUPON.discount / 100
+            : APPLIED_COUPON.discount;
+        return { amount: fmt(Math.min(raw, total)), targetId: null, inactive: false };
     }
 
     function applyCoupon() {
@@ -87,9 +333,15 @@
         const msgEl = getEl('coupon-msg');
         if (!input) return;
         const code = input.value.trim().toUpperCase();
-        const coupon = COUPONS[code];
-        if (msgEl) msgEl.className = isCheckoutPage ? 'co-coupon-msg' : 'ro-coupon-msg';
+        const msgClass = isCheckoutPage ? 'co-coupon-msg' : 'ro-coupon-msg';
+        if (msgEl) msgEl.className = msgClass;
 
+        if (!code) {
+            if (msgEl) { msgEl.classList.add('error'); msgEl.textContent = 'Please enter a coupon code.'; }
+            return;
+        }
+
+        const coupon = COUPONS[code];
         if (!coupon) {
             removeCoupon();
             if (msgEl) { msgEl.classList.add('error'); msgEl.textContent = '✕ Invalid coupon code.'; }
@@ -100,18 +352,57 @@
             if (msgEl) { msgEl.classList.add('error'); msgEl.textContent = `✕ This coupon expired on ${coupon.expiry}.`; }
             updateUI(); return;
         }
-        const total = getCart().reduce((s, i) => {
-            const p = findProduct(i.id);
-            return s + (p ? p.price * i.qty : 0);
-        }, 0);
+
+        const cart = getCart();
+        if (cart.length === 0) {
+            if (msgEl) { msgEl.classList.add('error'); msgEl.textContent = 'Your cart is empty — add items before applying a coupon.'; }
+            return;
+        }
+
+        if (coupon.productCode) {
+            const targetProduct = findProduct(coupon.productCode);
+            const lineTotal = productLineTotal(cart, coupon.productCode);
+            const targetLabel = targetProduct ? targetProduct.name : coupon.productCode;
+
+            if (lineTotal <= 0) {
+                if (msgEl) {
+                    msgEl.classList.add('error');
+                    msgEl.textContent = `✕ This coupon only applies to "${targetLabel}" (code: ${coupon.productCode}). Add it to your cart to use this code.`;
+                }
+                return;
+            }
+            if (coupon.minOrder && lineTotal < coupon.minOrder) {
+                if (msgEl) {
+                    msgEl.classList.add('error');
+                    msgEl.textContent = `✕ Minimum BDT ${coupon.minOrder} of "${targetLabel}" required for this coupon.`;
+                }
+                return;
+            }
+
+            APPLIED_COUPON = { code, ...coupon };
+            localStorage.setItem(COUPON_KEY, JSON.stringify(APPLIED_COUPON));
+            if (msgEl) {
+                msgEl.classList.add('success');
+                msgEl.innerHTML = `✓ Coupon applied — ${escapeHtml(coupon.label)} on "${escapeHtml(targetLabel)}"! `
+                    + `<button type="button" class="cart-coupon-remove" data-action="remove-coupon">Remove</button>`;
+            }
+            updateUI();
+            return;
+        }
+
+        const total = cartTotal(cart);
         if (coupon.minOrder && total < coupon.minOrder) {
             removeCoupon();
-            if (msgEl) { msgEl.classList.add('error'); msgEl.textContent = `✕ Min order BDT ${coupon.minOrder} required.`; }
+            if (msgEl) { msgEl.classList.add('error'); msgEl.textContent = `✕ Minimum order of BDT ${coupon.minOrder} required.`; }
             updateUI(); return;
         }
         APPLIED_COUPON = { code, ...coupon };
         localStorage.setItem(COUPON_KEY, JSON.stringify(APPLIED_COUPON));
-        if (msgEl) { msgEl.classList.add('success'); msgEl.textContent = `✓ Coupon applied — ${coupon.label}!`; }
+        if (msgEl) {
+            msgEl.classList.add('success');
+            msgEl.innerHTML = `✓ Coupon applied — ${escapeHtml(coupon.label)}! `
+                + `<button type="button" class="cart-coupon-remove" data-action="remove-coupon">Remove</button>`;
+        }
         updateUI();
     }
 
@@ -127,7 +418,6 @@
 
     /* ── CART ACTIONS ────────────────────────────────────── */
 
-    // MODIFIED: Now accepts optional quantity
     function addItem(id, qty = 1) {
         const cart = getCart();
         const existing = cart.find(i => i.id === id);
@@ -172,10 +462,7 @@
     function updateUI() {
         const cart = getCart();
         const totalQty = cart.reduce((s, i) => s + i.qty, 0);
-        const total = cart.reduce((s, i) => {
-            const p = findProduct(i.id);
-            return s + (p ? p.price * i.qty : 0);
-        }, 0);
+        const total = cartTotal(cart);
 
         if (isCheckoutPage) {
             renderCheckoutUI(cart, total, totalQty);
@@ -204,35 +491,35 @@
             return;
         }
         if (footerEl) footerEl.style.display = 'block';
+
         itemsEl.innerHTML = cart.map(item => {
             const p = findProduct(item.id);
             if (!p) return '';
+            const lineTotal = fmt(p.price * item.qty);
+            const stockBadge = p.inStock === false
+                ? `<span class="ro-oos-badge" style="color:#dc2626;font-size:.72rem;font-weight:600;">Out of Stock</span>`
+                : '';
             return `<div class="ro-cart-item">
-                <img class="ro-item-img" src="${p.img}" alt="${p.name}">
-                <div class="ro-item-info"><div class="ro-item-name">${p.name}</div><div class="ro-item-price">BDT ${p.price}</div></div>
+                <img class="ro-item-img" src="${escapeHtml(p.img)}" alt="${escapeHtml(p.name)}">
+                <div class="ro-item-info">
+                    <div class="ro-item-name">${escapeHtml(p.name)}</div>
+                    <div class="ro-item-code">Code: ${escapeHtml(p.code || p.id)}</div>
+                    <div class="ro-item-price">BDT ${p.price}</div>
+                    ${stockBadge}
+                </div>
                 <div class="ro-qty-wrap">
                     <div class="ro-qty-controls">
-                        <button class="ro-qty-btn" onclick="ROCart.changeQty('${p.id}', -1)">−</button>
+                        <button class="ro-qty-btn" data-action="dec" data-id="${escapeHtml(p.id)}">−</button>
                         <span class="ro-qty-num">${item.qty}</span>
-                        <button class="ro-qty-btn" onclick="ROCart.changeQty('${p.id}', 1)">+</button>
+                        <button class="ro-qty-btn" data-action="inc" data-id="${escapeHtml(p.id)}">+</button>
                     </div>
-                    <div class="ro-item-subtotal">BDT ${p.price * item.qty}</div>
-                    <button class="ro-remove-btn" onclick="ROCart.removeItem('${p.id}')">✕ remove</button>
+                    <div class="ro-item-subtotal">BDT ${lineTotal}</div>
+                    <button class="ro-remove-btn" data-action="remove" data-id="${escapeHtml(p.id)}">✕ remove</button>
                 </div></div>`;
         }).join('');
-        const discount = calcDiscount(total);
+
         const totalEl = getEl('total-price');
-        if (totalEl) totalEl.textContent = `BDT ${total - discount}`;
-        let dRow = document.getElementById('ro-discount-row');
-        if (discount > 0) {
-            if (!dRow) {
-                dRow = document.createElement('div'); dRow.id = 'ro-discount-row';
-                dRow.className = 'ro-summary-row'; dRow.style.color = 'red'; dRow.style.fontWeight = '600';
-                const label = getEl('item-count-label');
-                if (label) label.closest('.ro-summary-row').insertAdjacentElement('afterend', dRow);
-            }
-            dRow.innerHTML = `<span>Discount (${APPLIED_COUPON.code})</span><span>- BDT ${discount}</span>`;
-        } else if (dRow) dRow.remove();
+        if (totalEl) totalEl.textContent = `BDT ${total}`;
     }
 
     function renderCheckoutUI(cart, total, totalQty) {
@@ -241,43 +528,66 @@
         const waBtn = getEl('wa-btn');
         if (!itemsEl) return;
         if (badge) badge.textContent = `${totalQty} item${totalQty !== 1 ? 's' : ''}`;
-        if (waBtn) waBtn.disabled = cart.length === 0;
+
+        const discountInfo = calcDiscount(cart);
+        let hasOutOfStockItem = false;
+
         if (cart.length === 0) {
             itemsEl.innerHTML = `<div class="co-empty"><p>Your cart is empty</p></div>`;
         } else {
             itemsEl.innerHTML = cart.map(item => {
                 const p = findProduct(item.id);
                 if (!p) return '';
+                if (p.inStock === false) hasOutOfStockItem = true;
+                const lineTotal = fmt(p.price * item.qty);
+                const isDiscounted = discountInfo.targetId === p.id && discountInfo.amount > 0;
+                const discountedLine = isDiscounted ? fmt(lineTotal - discountInfo.amount) : lineTotal;
+                const subtotalHtml = isDiscounted
+                    ? `<span class="co-item-strike">BDT ${lineTotal}</span> BDT ${discountedLine}`
+                    : `BDT ${lineTotal}`;
+                const stockBadge = p.inStock === false
+                    ? `<div style="color:#dc2626;font-size:.75rem;font-weight:600;margin-top:2px;">Out of Stock — please remove to continue</div>`
+                    : '';
                 return `<div class="co-item">
-                    <img class="co-item-img" src="${p.img}" alt="${p.name}">
-                    <div class="co-item-info"><div class="co-item-name">${p.name}</div><div class="co-item-price">BDT ${p.price} each</div></div>
+                    <img class="co-item-img" src="${escapeHtml(p.img)}" alt="${escapeHtml(p.name)}">
+                    <div class="co-item-info">
+                        <div class="co-item-name">${escapeHtml(p.name)}</div>
+                        <div class="co-item-code">Code: ${escapeHtml(p.code || p.id)}</div>
+                        <div class="co-item-price">BDT ${p.price} each</div>
+                        ${stockBadge}
+                    </div>
                     <div class="co-qty-wrap">
                         <div class="co-qty-controls">
-                            <button class="co-qty-btn" onclick="ROCart.changeQty('${p.id}', -1)">−</button>
+                            <button class="co-qty-btn" data-action="dec" data-id="${escapeHtml(p.id)}">−</button>
                             <span class="co-qty-num">${item.qty}</span>
-                            <button class="co-qty-btn" onclick="ROCart.changeQty('${p.id}', 1)">+</button>
+                            <button class="co-qty-btn" data-action="inc" data-id="${escapeHtml(p.id)}">+</button>
                         </div>
-                        <div class="co-item-subtotal">BDT ${p.price * item.qty}</div>
-                        <button class="co-remove-btn" onclick="ROCart.removeItem('${p.id}')">✕ remove</button>
+                        <div class="co-item-subtotal">${subtotalHtml}</div>
+                        <button class="co-remove-btn" data-action="remove" data-id="${escapeHtml(p.id)}">✕ remove</button>
                     </div></div>`;
             }).join('');
         }
-        const discount = calcDiscount(total);
+
         const delivery = getDeliveryCharge();
         const subtotalEl = getEl('subtotal');
         const deliveryEl = getEl('delivery-val');
         const totalEl = getEl('total');
         if (subtotalEl) subtotalEl.textContent = `BDT ${total}`;
-        if (deliveryEl) deliveryEl.textContent = `BDT ${delivery}`;
-        if (totalEl) totalEl.textContent = `BDT ${total - discount + delivery}`;
+        if (deliveryEl) deliveryEl.textContent = delivery === 0 ? 'Free' : `BDT ${delivery}`;
+        if (totalEl) totalEl.textContent = `BDT ${fmt(total - discountInfo.amount + delivery)}`;
+
+        if (waBtn) waBtn.disabled = cart.length === 0 || hasOutOfStockItem;
+
         const dRow = getEl('discount-row');
         if (dRow) {
-            dRow.style.display = (discount > 0) ? 'flex' : 'none';
-            if (discount > 0) {
+            dRow.style.display = (discountInfo.amount > 0) ? 'flex' : 'none';
+            if (discountInfo.amount > 0) {
                 const lEl = document.getElementById('co-discount-label');
                 const vEl = document.getElementById('co-discount-val');
-                if (lEl) lEl.textContent = `Discount (${APPLIED_COUPON.code})`;
-                if (vEl) vEl.textContent = `- BDT ${discount}`;
+                const targetProduct = discountInfo.targetId ? findProduct(discountInfo.targetId) : null;
+                const label = targetProduct ? `Discount (${APPLIED_COUPON.code}) — ${targetProduct.name}` : `Discount (${APPLIED_COUPON.code})`;
+                if (lEl) lEl.textContent = label;
+                if (vEl) vEl.textContent = `- BDT ${discountInfo.amount}`;
             }
         }
     }
@@ -285,11 +595,9 @@
     /* ── PRODUCT SCRAPING & SETUP ──────────────────────────────── */
 
     function setupIndividualPage() {
-        // This handles the individual product detail page logic
         const mainBtn = document.getElementById('main-add-to-cart');
         if (!mainBtn) return;
 
-        // 1. Scrape the main product data from the page
         const nameEl = document.querySelector('.productName');
         const codeEl = document.querySelector('.productCode');
         const priceEl = document.querySelector('.productPrice .offer-price');
@@ -301,23 +609,25 @@
             id: codeEl.textContent.trim(),
             name: nameEl.textContent.trim(),
             code: codeEl.textContent.trim(),
-            price: parseInt(priceEl?.textContent.replace(/[^0-9]/g, '') || '0', 10),
+            price: parseFloat(priceEl?.textContent.replace(/[^0-9.]/g, '') || '0'),
             img: imgEl ? imgEl.getAttribute('src') : '',
+            priceSource: 'product-page',
         };
 
-        // Register the product so findProduct() works
         PRODUCTS.push(product);
         const saved = JSON.parse(localStorage.getItem(PROD_KEY) || '{}');
         saved[product.id] = product;
         localStorage.setItem(PROD_KEY, JSON.stringify(saved));
 
-        // 2. Handle the click event
-        mainBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const qtyInput = document.getElementById('main-product-qty');
-            const qty = qtyInput ? parseInt(qtyInput.value) || 1 : 1;
-            ROCart.addItem(product.id, qty);
-        });
+        if (mainBtn.dataset.cartBound !== 'true') {
+            mainBtn.dataset.cartBound = 'true';
+            mainBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const qtyInput = document.getElementById('main-product-qty');
+                const qty = qtyInput ? parseInt(qtyInput.value) || 1 : 1;
+                ROCart.addItem(product.id, qty);
+            });
+        }
     }
 
     function scrapeShopProducts() {
@@ -329,17 +639,30 @@
             const codeEl = card.querySelector('.productCode');
             const priceEl = card.querySelector('.productPrice .offer-price');
             if (!nameEl) return;
+            const productId = codeEl ? codeEl.textContent.trim() : `p-${idx}`;
+            const shopPrice = parseFloat(priceEl?.textContent.replace(/[^0-9.]/g, '') || '0');
+            const existingEntry = saved[productId];
+            const finalPrice = (existingEntry && existingEntry.priceSource === 'product-page') ? existingEntry.price : shopPrice;
             const product = {
-                id: codeEl ? codeEl.textContent.trim() : `p-${idx}`,
+                id: productId,
                 name: nameEl.textContent.trim(),
                 code: codeEl ? codeEl.textContent.trim() : '',
-                price: parseInt(priceEl?.textContent.replace(/[^0-9]/g, '') || '0', 10),
+                price: finalPrice,
                 img: card.querySelector('img')?.getAttribute('src') || '',
+                priceSource: (existingEntry && existingEntry.priceSource === 'product-page') ? 'product-page' : 'shop-page',
             };
             products.push(product);
             saved[product.id] = product;
             const addBtn = card.querySelector('.add-to-cart');
-            if (addBtn) addBtn.addEventListener('click', (e) => { e.preventDefault(); ROCart.addItem(product.id, 1); });
+            // Shared marker with render-products.js — whichever script binds
+            // first sets this, and the other skips re-binding. Without this,
+            // a card rendered dynamically (e.g. New Arrivals) that finishes
+            // loading before this scan runs would get bound TWICE: once here,
+            // once by render-products.js — doubling the quantity per click.
+            if (addBtn && addBtn.dataset.cartBound !== 'true') {
+                addBtn.dataset.cartBound = 'true';
+                addBtn.addEventListener('click', (e) => { e.preventDefault(); ROCart.addItem(product.id, 1); });
+            }
         });
         localStorage.setItem(PROD_KEY, JSON.stringify(saved));
         Object.values(saved).forEach(p => { if (!products.find(x => x.id === p.id)) products.push(p); });
@@ -351,24 +674,61 @@
     function orderWhatsApp() {
         const cart = getCart();
         if (cart.length === 0) return;
+
+        const outOfStock = cart
+            .map(item => findProduct(item.id))
+            .filter(p => p && p.inStock === false);
+        if (outOfStock.length > 0) {
+            const msgEl = getEl('contact-msg');
+            const names = outOfStock.map(p => p.name).join(', ');
+            if (msgEl) {
+                msgEl.className = 'co-coupon-msg error';
+                msgEl.textContent = `✕ Please remove out-of-stock item(s) before ordering: ${names}`;
+            }
+            return;
+        }
+
+        if (!validateCustomerInfo()) return;
+
+        const info = getCustomerInfo();
+        saveCustomerInfo();
+
+        const discountInfo = calcDiscount(cart);
         let total = 0;
         let lines = [];
+
         cart.forEach((item, idx) => {
             const p = findProduct(item.id);
             if (!p) return;
-            const sub = p.price * item.qty;
-            total += sub;
-            lines.push(`${idx + 1}. ${p.name}\n   Qty: ${item.qty} × BDT ${p.price} = BDT ${sub}`);
+            const sub = fmt(p.price * item.qty);
+            total = fmt(total + sub);
+            const codeLabel = p.code || p.id;
+            let line = `${idx + 1}. Code: ${codeLabel}\n   Qty: ${item.qty} × BDT ${p.price} = BDT ${sub}`;
+            if (discountInfo.targetId === p.id && discountInfo.amount > 0) {
+                line += `\n   🎟 Coupon ${APPLIED_COUPON.code}: -BDT ${discountInfo.amount}`;
+            }
+            lines.push(line);
         });
-        const discount = calcDiscount(total);
-        const delivery = getDeliveryCharge();
-        const message = `🛒 *Order from ${STORE_NAME}*\n\n${lines.join('\n\n')}\n\n─────────────────\n${APPLIED_COUPON ? `🎟 *Coupon: ${APPLIED_COUPON.code}* - BDT ${discount}\n` : ''}🛵 *Delivery: BDT ${delivery}*\n💰 *Total: BDT ${total - discount + delivery}*\n─────────────────\nPlease confirm! `;
-        window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`, '_blank');
-    }
 
-    function getDeliveryCharge() {
-        const outside = getEl('delivery-outside');
-        return outside && outside.checked ? 120 : 70;
+        const discount = discountInfo.amount;
+        const delivery = getDeliveryCharge();
+        const deliveryLabel = getDeliveryLabel();
+        const pickup = isSelfPickup();
+
+        let customerBlock = '';
+        if (getEl('cust-name')) {
+            customerBlock = `👤 *Customer Details*\n`
+                + `Name: ${info.name || '-'}\n`
+                + `Phone: ${info.phone || '-'}\n`
+                + `Delivery: ${deliveryLabel}\n`
+                + (pickup
+                    ? `Pickup Point: ${PICKUP_LOCATION}\n`
+                    : `Address: ${info.location || '-'}\n`)
+                + `\n`;
+        }
+
+        const message = `🛒 *Order from ${STORE_NAME}*\n\n${customerBlock}📦 *Items*\n${lines.join('\n\n')}\n\n─────────────────\n${(APPLIED_COUPON && discount > 0) ? `🎟 *Coupon: ${APPLIED_COUPON.code}* - BDT ${discount}\n` : ''}🛵 *Delivery: ${delivery === 0 ? 'Free' : `BDT ${delivery}`}*\n💰 *Total: BDT ${fmt(total - discount + delivery)}*\n─────────────────\nPlease confirm! `;
+        window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`, '_blank');
     }
 
     function openDrawer() {
@@ -391,14 +751,14 @@
         const t = document.getElementById('ro-toast');
         if (!t) return;
         t.textContent = msg; t.classList.add('show');
-        clearTimeout(toastTmr); 
+        clearTimeout(toastTmr);
         toastTmr = setTimeout(() => t.classList.remove('show'), 2600);
     }
 
     function bumpBadge() {
         const el = getEl('fab-count');
         if (!el) return;
-        el.classList.add('bump'); 
+        el.classList.add('bump');
         setTimeout(() => el.classList.remove('bump'), 300);
     }
 
@@ -407,18 +767,64 @@
             const codeEl = card.querySelector('.productCode');
             if (codeEl && codeEl.textContent.trim() === id) {
                 const btn = card.querySelector('button');
-                if (btn) { 
-                    btn.classList.add('ro-added'); 
-                    btn.innerHTML = 'Added!'; 
-                    setTimeout(() => { btn.classList.remove('ro-added'); btn.innerHTML = 'Add to Cart'; }, 1800); 
+                if (btn) {
+                    btn.classList.add('ro-added');
+                    btn.innerHTML = 'Added!';
+                    setTimeout(() => { btn.classList.remove('ro-added'); btn.innerHTML = 'Add to Cart'; }, 1800);
                 }
             }
         });
     }
 
+    function injectDynamicStyles() {
+        if (document.getElementById('ro-cart-dynamic-style')) return;
+        const style = document.createElement('style');
+        style.id = 'ro-cart-dynamic-style';
+        style.textContent = `
+            .ro-item-strike, .co-item-strike {
+                text-decoration: line-through;
+                color: #94a3b8;
+                font-weight: 400;
+                margin-right: 6px;
+                font-size: 0.85em;
+            }
+            .cart-coupon-remove {
+                background: none;
+                border: none;
+                color: #dc2626;
+                font-size: 0.72rem;
+                font-weight: 600;
+                text-decoration: underline;
+                cursor: pointer;
+                padding: 0;
+                margin-left: 4px;
+            }
+            .cart-coupon-remove:hover { color: #b91c1c; }
+        `;
+        document.head.appendChild(style);
+    }
+
+    /* ── EVENT DELEGATION ──────────────────────────────────── */
+    function bindDelegatedEvents() {
+        document.addEventListener('click', (e) => {
+            const btn = e.target.closest('[data-action]');
+            if (!btn) return;
+            const action = btn.getAttribute('data-action');
+            const id = btn.getAttribute('data-id');
+
+            if (action === 'inc' && id) ROCart.changeQty(id, 1);
+            else if (action === 'dec' && id) ROCart.changeQty(id, -1);
+            else if (action === 'remove' && id) ROCart.removeItem(id);
+            else if (action === 'remove-coupon') ROCart.removeCoupon();
+        });
+    }
+
     /* ── INIT ────────────────────────────────────────────── */
 
-    function init() {
+    async function init() {
+        injectDynamicStyles();
+        bindDelegatedEvents();
+
         if (!isCheckoutPage) {
             document.body.insertAdjacentHTML('beforeend', `
                 <button id="ro-cart-fab" class="hidden" onclick="ROCart.openDrawer()">
@@ -457,17 +863,32 @@
             `);
         }
 
-        // HANDLE BOTH Shop Page and Individual Page
         PRODUCTS = scrapeShopProducts();
+
+        const _saved = JSON.parse(localStorage.getItem(PROD_KEY) || '{}');
+        PRODUCTS = PRODUCTS.map(p => {
+            const ls = _saved[p.id];
+            return (ls && ls.priceSource === 'product-page') ? { ...p, price: ls.price } : p;
+        });
+
         setupIndividualPage();
-        
+        loadCustomerInfo();
+        loadDeliveryPreference();
+
+        // Fresh pricing data before the very first render — this is what
+        // guarantees the cart drawer AND checkout always show today's
+        // items.json price, not whatever was cached from a previous visit.
+        await loadCatalog();
         updateUI();
-        
+
         const inside = getEl('delivery-inside');
+        const suburbs = getEl('delivery-suburbs');
         const outside = getEl('delivery-outside');
-        if (inside && outside) {
-            [inside, outside].forEach(el => el.addEventListener('change', updateUI));
-        }
+        const pickup = getEl('delivery-pickup');
+        [inside, suburbs, outside, pickup].forEach(el => {
+            if (el) el.addEventListener('change', () => { saveDeliveryPreference(); syncDeliveryUI(); updateUI(); });
+        });
+        syncDeliveryUI();
 
         window.addEventListener('storage', (e) => {
             if (e.key === CART_KEY || e.key === COUPON_KEY) updateUI();
@@ -480,13 +901,11 @@
         init();
     }
 
-    // EXPOSE PUBLIC API
-    window.ROCart = { 
-        addItem, changeQty, removeItem, clearCart, openDrawer, closeDrawer, 
-        orderWhatsApp, applyCoupon, removeCoupon 
+    window.ROCart = {
+        addItem, changeQty, removeItem, clearCart, openDrawer, closeDrawer,
+        orderWhatsApp, applyCoupon, removeCoupon
     };
 
-    // BRIDGE: Supports old function names in HTML
     window.coApplyCoupon = function() { ROCart.applyCoupon(); };
     window.coOrderWhatsApp = function() { ROCart.orderWhatsApp(); };
     window.changeQty = function(id, delta) { ROCart.changeQty(id, delta); };

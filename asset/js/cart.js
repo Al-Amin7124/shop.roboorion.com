@@ -141,6 +141,12 @@
                     price,
                     img: fixImagePath(catalogItem.image),
                     inStock: catalogItem.in_stock !== false,
+                    // Stock-limited items cap how many of THAT item can be in
+                    // the cart at once (see stockRemaining()). Items where
+                    // limitedStock is false/absent are unaffected even if
+                    // their "stock" number happens to be 0.
+                    limitedStock: catalogItem.limitedStock === true,
+                    stock: typeof catalogItem.stock === 'number' ? catalogItem.stock : 0,
                     priceSource: 'items-json',
                 };
             }
@@ -167,6 +173,26 @@
             return product;
         }
         return null;
+    }
+
+    /** How many more of this product can still be added to the cart.
+     *  Only meaningful for limitedStock items — everything else has no cap. */
+    function stockRemaining(p, currentQty) {
+        if (!p || !p.limitedStock) return Infinity;
+        return Math.max(0, (p.stock || 0) - currentQty);
+    }
+
+    /** Surfaces a stock-limit warning in the right place for the current
+     *  page: the checkout page's contact-msg area, or a toast everywhere
+     *  else (cart drawer, shop grid, product detail page). */
+    function notifyStockLimit(msg) {
+        const msgEl = isCheckoutPage ? getEl('contact-msg') : null;
+        if (msgEl) {
+            msgEl.className = 'co-coupon-msg error';
+            msgEl.textContent = '⚠ ' + msg;
+        } else {
+            showToast('⚠ ' + msg);
+        }
     }
 
     function productLineTotal(cart, code) {
@@ -421,6 +447,21 @@
     function addItem(id, qty = 1) {
         const cart = getCart();
         const existing = cart.find(i => i.id === id);
+        const currentQty = existing ? existing.qty : 0;
+
+        const p = findProduct(id);
+        if (p && p.limitedStock) {
+            const remaining = stockRemaining(p, currentQty);
+            if (remaining <= 0) {
+                notifyStockLimit(`Only ${p.stock} in stock for "${p.name}" — you already have the maximum in your cart.`);
+                return;
+            }
+            if (qty > remaining) {
+                notifyStockLimit(`Only ${p.stock} in stock for "${p.name}" — you can add ${remaining} more.`);
+                return;
+            }
+        }
+
         if (existing) {
             existing.qty += qty;
         } else {
@@ -429,7 +470,6 @@
         saveCart(cart);
         updateUI();
         bumpBadge();
-        const p = findProduct(id);
         if (p) showToast(`✅ ${qty}x ${p.name.substring(0, 30)}... added!`);
         highlightBtn(id);
     }
@@ -438,6 +478,15 @@
         const cart = getCart();
         const item = cart.find(i => i.id === id);
         if (!item) return;
+
+        if (delta > 0) {
+            const p = findProduct(id);
+            if (p && p.limitedStock && stockRemaining(p, item.qty) <= 0) {
+                notifyStockLimit(`Only ${p.stock} in stock for "${p.name}" — you've reached the maximum.`);
+                return;
+            }
+        }
+
         item.qty += delta;
         if (item.qty <= 0) cart.splice(cart.indexOf(item), 1);
         saveCart(cart);
@@ -496,9 +545,12 @@
             const p = findProduct(item.id);
             if (!p) return '';
             const lineTotal = fmt(p.price * item.qty);
+            const atStockLimit = p.limitedStock && stockRemaining(p, item.qty) <= 0;
             const stockBadge = p.inStock === false
                 ? `<span class="ro-oos-badge" style="color:#dc2626;font-size:.72rem;font-weight:600;">Out of Stock</span>`
-                : '';
+                : (p.limitedStock
+                    ? `<span class="ro-limited-badge" style="color:${atStockLimit ? '#dc2626' : '#b45309'};font-size:.72rem;font-weight:600;">${atStockLimit ? 'Max stock in cart' : `Only ${p.stock} left in stock`}</span>`
+                    : '');
             return `<div class="ro-cart-item">
                 <img class="ro-item-img" src="${escapeHtml(p.img)}" alt="${escapeHtml(p.name)}">
                 <div class="ro-item-info">
@@ -511,7 +563,7 @@
                     <div class="ro-qty-controls">
                         <button class="ro-qty-btn" data-action="dec" data-id="${escapeHtml(p.id)}">−</button>
                         <span class="ro-qty-num">${item.qty}</span>
-                        <button class="ro-qty-btn" data-action="inc" data-id="${escapeHtml(p.id)}">+</button>
+                        <button class="ro-qty-btn" data-action="inc" data-id="${escapeHtml(p.id)}" ${atStockLimit ? 'disabled title="Maximum stock reached"' : ''}>+</button>
                     </div>
                     <div class="ro-item-subtotal">BDT ${lineTotal}</div>
                     <button class="ro-remove-btn" data-action="remove" data-id="${escapeHtml(p.id)}">✕ remove</button>
@@ -545,9 +597,12 @@
                 const subtotalHtml = isDiscounted
                     ? `<span class="co-item-strike">BDT ${lineTotal}</span> BDT ${discountedLine}`
                     : `BDT ${lineTotal}`;
+                const atStockLimit = p.limitedStock && stockRemaining(p, item.qty) <= 0;
                 const stockBadge = p.inStock === false
                     ? `<div style="color:#dc2626;font-size:.75rem;font-weight:600;margin-top:2px;">Out of Stock — please remove to continue</div>`
-                    : '';
+                    : (p.limitedStock
+                        ? `<div style="color:${atStockLimit ? '#dc2626' : '#b45309'};font-size:.75rem;font-weight:600;margin-top:2px;">${atStockLimit ? 'Max stock in cart' : `Only ${p.stock} left in stock`}</div>`
+                        : '');
                 return `<div class="co-item">
                     <img class="co-item-img" src="${escapeHtml(p.img)}" alt="${escapeHtml(p.name)}">
                     <div class="co-item-info">
@@ -560,7 +615,7 @@
                         <div class="co-qty-controls">
                             <button class="co-qty-btn" data-action="dec" data-id="${escapeHtml(p.id)}">−</button>
                             <span class="co-qty-num">${item.qty}</span>
-                            <button class="co-qty-btn" data-action="inc" data-id="${escapeHtml(p.id)}">+</button>
+                            <button class="co-qty-btn" data-action="inc" data-id="${escapeHtml(p.id)}" ${atStockLimit ? 'disabled title="Maximum stock reached"' : ''}>+</button>
                         </div>
                         <div class="co-item-subtotal">${subtotalHtml}</div>
                         <button class="co-remove-btn" data-action="remove" data-id="${escapeHtml(p.id)}">✕ remove</button>
@@ -800,6 +855,10 @@
                 margin-left: 4px;
             }
             .cart-coupon-remove:hover { color: #b91c1c; }
+            .ro-qty-btn:disabled, .co-qty-btn:disabled {
+                opacity: 0.4;
+                cursor: not-allowed;
+            }
         `;
         document.head.appendChild(style);
     }
