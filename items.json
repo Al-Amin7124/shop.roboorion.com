@@ -219,7 +219,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 1,
-    "stock": 5,
+    "stock": 4,
     "sold": 0,
     "limitedStock": false
   },
@@ -311,7 +311,7 @@
     "original_price": "BDT 280",
     "in_stock": true,
     "weight": 47,
-    "stock": 9,
+    "stock": 7,
     "sold": 17,
     "limitedStock": false
   },
@@ -1042,7 +1042,7 @@
     "original_price": "BDT 380",
     "in_stock": true,
     "weight": 0,
-    "stock": 2,
+    "stock": 1,
     "sold": 0,
     "limitedStock": false
   },
@@ -3812,7 +3812,7 @@
     "weight": 30,
     "stock": 2,
     "sold": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1316",
@@ -3834,7 +3834,7 @@
     "weight": 15,
     "stock": 4,
     "sold": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1315",
@@ -3854,11 +3854,11 @@
     "brand": "Generic",
     "price": "BDT 260",
     "original_price": "BDT 385",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 12,
     "stock": 0,
     "sold": 1,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1314",
@@ -3878,11 +3878,11 @@
     "brand": "Generic",
     "price": "BDT 210",
     "original_price": "BDT 320",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 8,
     "stock": 0,
     "sold": 4,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1313",
@@ -4338,7 +4338,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 1,
-    "stock": 24,
+    "stock": 23,
     "sold": 31,
     "sales_count": 3,
     "limitedStock": true
@@ -5216,7 +5216,7 @@
     "original_price": "BDT 680",
     "in_stock": true,
     "sales_count": 3,
-    "stock": 0,
+    "stock": -1,
     "sold": 5,
     "weight": 0,
     "limitedStock": false
@@ -6911,7 +6911,7 @@
     "in_stock": true,
     "sales_count": 21,
     "weight": 2,
-    "stock": 17,
+    "stock": 16,
     "sold": 31,
     "limitedStock": false
   },
@@ -7464,7 +7464,7 @@
     "price": "BDT 95",
     "original_price": "BDT 180",
     "in_stock": true,
-    "stock": 0,
+    "stock": -1,
     "sold": 0,
     "weight": 0,
     "limitedStock": false
