@@ -1294,7 +1294,7 @@
     "original_price": "BDT 490",
     "in_stock": true,
     "weight": 155,
-    "stock": 5,
+    "stock": 4,
     "sold": 0,
     "limitedStock": true
   },
@@ -4636,11 +4636,11 @@
       "battery-packs",
       "diy-kits"
     ],
-    "discount": "Save BDT 160",
+    "discount": "Save BDT 150",
     "rating": 5,
     "reviews": 16,
     "brand": "Generic",
-    "price": "BDT 620",
+    "price": "BDT 630",
     "original_price": "BDT 780",
     "in_stock": true,
     "weight": 200,
