@@ -16,6 +16,10 @@
     const DELIVERY_KEY = 'robo_orion_delivery';
     const STORE_NAME   = 'Robo Orion';
     const PICKUP_LOCATION = 'Middle Badda, Dhaka';
+    // Below this stock count, limited-stock items start showing a
+    // "Only X left in stock" note. At/above it, nothing is shown — the
+    // count doesn't add useful urgency for plentiful items.
+    const LOW_STOCK_THRESHOLD = 10;
 
     const COUPONS = {
         // Store-wide example:
@@ -30,6 +34,10 @@
     let APPLIED_COUPON = JSON.parse(localStorage.getItem(COUPON_KEY)) || null;
     let toastTmr = null;
     const isCheckoutPage = window.location.pathname.includes('checkout.html');
+    // Set by setupIndividualPage() when the current page is a single
+    // product page. Used to keep the quantity input / stock note there
+    // in sync with the catalog + cart every time updateUI() runs.
+    let mainPageProduct = null;
 
     // The live catalog, fetched fresh from items.json on every page load
     // (including checkout) — this is the authoritative source for price.
@@ -183,16 +191,31 @@
     }
 
     /** Surfaces a stock-limit warning in the right place for the current
-     *  page: the checkout page's contact-msg area, or a toast everywhere
-     *  else (cart drawer, shop grid, product detail page). */
+     *  page: the checkout page's contact-msg area, or a persistent inline
+     *  banner in the cart drawer everywhere else (opens the drawer if it's
+     *  closed, since a toast alone is easy to miss). */
     function notifyStockLimit(msg) {
-        const msgEl = isCheckoutPage ? getEl('contact-msg') : null;
-        if (msgEl) {
-            msgEl.className = 'co-coupon-msg error';
-            msgEl.textContent = '⚠ ' + msg;
+        if (isCheckoutPage) {
+            const msgEl = getEl('contact-msg');
+            if (msgEl) {
+                msgEl.className = 'co-coupon-msg error';
+                msgEl.textContent = '⚠ ' + msg;
+            }
+            return;
+        }
+        const bar = document.getElementById('ro-cart-msg');
+        if (bar) {
+            bar.querySelector('.ro-cart-msg-text').textContent = '⚠ ' + msg;
+            bar.classList.remove('hidden');
+            openDrawer();
         } else {
             showToast('⚠ ' + msg);
         }
+    }
+
+    function hideCartMsg() {
+        const bar = document.getElementById('ro-cart-msg');
+        if (bar) bar.classList.add('hidden');
     }
 
     function productLineTotal(cart, code) {
@@ -470,6 +493,7 @@
         saveCart(cart);
         updateUI();
         bumpBadge();
+        hideCartMsg();
         if (p) showToast(`✅ ${qty}x ${p.name.substring(0, 30)}... added!`);
         highlightBtn(id);
     }
@@ -518,6 +542,7 @@
         } else {
             renderDrawerUI(cart, total, totalQty);
         }
+        applyProductPageStockLimit();
     }
 
     function renderDrawerUI(cart, total, totalQty) {
@@ -546,9 +571,10 @@
             if (!p) return '';
             const lineTotal = fmt(p.price * item.qty);
             const atStockLimit = p.limitedStock && stockRemaining(p, item.qty) <= 0;
+            const showLowStock = p.limitedStock && p.stock < LOW_STOCK_THRESHOLD;
             const stockBadge = p.inStock === false
                 ? `<span class="ro-oos-badge" style="color:#dc2626;font-size:.72rem;font-weight:600;">Out of Stock</span>`
-                : (p.limitedStock
+                : (showLowStock
                     ? `<span class="ro-limited-badge" style="color:${atStockLimit ? '#dc2626' : '#b45309'};font-size:.72rem;font-weight:600;">${atStockLimit ? 'Max stock in cart' : `Only ${p.stock} left in stock`}</span>`
                     : '');
             return `<div class="ro-cart-item">
@@ -598,9 +624,10 @@
                     ? `<span class="co-item-strike">BDT ${lineTotal}</span> BDT ${discountedLine}`
                     : `BDT ${lineTotal}`;
                 const atStockLimit = p.limitedStock && stockRemaining(p, item.qty) <= 0;
+                const showLowStock = p.limitedStock && p.stock < LOW_STOCK_THRESHOLD;
                 const stockBadge = p.inStock === false
                     ? `<div style="color:#dc2626;font-size:.75rem;font-weight:600;margin-top:2px;">Out of Stock — please remove to continue</div>`
-                    : (p.limitedStock
+                    : (showLowStock
                         ? `<div style="color:${atStockLimit ? '#dc2626' : '#b45309'};font-size:.75rem;font-weight:600;margin-top:2px;">${atStockLimit ? 'Max stock in cart' : `Only ${p.stock} left in stock`}</div>`
                         : '');
                 return `<div class="co-item">
@@ -674,14 +701,70 @@
         saved[product.id] = product;
         localStorage.setItem(PROD_KEY, JSON.stringify(saved));
 
+        const qtyInput = document.getElementById('main-product-qty');
+        mainPageProduct = { id: product.id, qtyInput, addBtn: mainBtn };
+
         if (mainBtn.dataset.cartBound !== 'true') {
             mainBtn.dataset.cartBound = 'true';
             mainBtn.addEventListener('click', (e) => {
                 e.preventDefault();
-                const qtyInput = document.getElementById('main-product-qty');
                 const qty = qtyInput ? parseInt(qtyInput.value) || 1 : 1;
                 ROCart.addItem(product.id, qty);
             });
+        }
+    }
+
+    /** Keeps the product-detail page's quantity input and stock note in
+     *  sync with the catalog + current cart contents. Only shows anything
+     *  when the item is limitedStock AND its stock is below
+     *  LOW_STOCK_THRESHOLD — matches the cart/checkout badge rules. */
+    function applyProductPageStockLimit() {
+        if (!mainPageProduct) return;
+        const catalogItem = CATALOG_BY_ID.get(mainPageProduct.id);
+
+        let note = document.getElementById('ro-product-stock-note');
+
+        if (!catalogItem || catalogItem.limitedStock !== true || catalogItem.stock >= LOW_STOCK_THRESHOLD) {
+            // Not a low, limited-stock item — no cap, no note.
+            if (mainPageProduct.qtyInput) mainPageProduct.qtyInput.removeAttribute('max');
+            if (mainPageProduct.addBtn) mainPageProduct.addBtn.disabled = false;
+            if (note) note.remove();
+            return;
+        }
+
+        const stock = typeof catalogItem.stock === 'number' ? catalogItem.stock : 0;
+        const cart = getCart();
+        const existing = cart.find(i => i.id === mainPageProduct.id);
+        const currentQty = existing ? existing.qty : 0;
+        const remaining = Math.max(0, stock - currentQty);
+
+        if (mainPageProduct.qtyInput) {
+            mainPageProduct.qtyInput.max = String(Math.max(remaining, 1));
+            if (parseInt(mainPageProduct.qtyInput.value) > remaining) {
+                mainPageProduct.qtyInput.value = String(Math.max(remaining, 1));
+            }
+        }
+
+        if (!note) {
+            note = document.createElement('p');
+            note.id = 'ro-product-stock-note';
+            note.className = 'ro-product-stock-note';
+            const row = mainPageProduct.addBtn.closest('div') || mainPageProduct.addBtn.parentElement;
+            row.insertAdjacentElement('afterend', note);
+        }
+
+        if (catalogItem.in_stock === false) {
+            note.textContent = 'Out of Stock';
+            note.style.color = '#dc2626';
+            if (mainPageProduct.addBtn) mainPageProduct.addBtn.disabled = true;
+        } else if (remaining <= 0) {
+            note.textContent = 'Max stock reached — already in your cart';
+            note.style.color = '#dc2626';
+            if (mainPageProduct.addBtn) mainPageProduct.addBtn.disabled = true;
+        } else {
+            note.textContent = `Only ${stock} left in stock`;
+            note.style.color = '#b45309';
+            if (mainPageProduct.addBtn) mainPageProduct.addBtn.disabled = false;
         }
     }
 
@@ -800,6 +883,7 @@
         if (drawer) drawer.classList.remove('open');
         if (overlay) overlay.classList.remove('open');
         document.body.style.overflow = '';
+        hideCartMsg();
     }
 
     function showToast(msg) {
@@ -859,6 +943,36 @@
                 opacity: 0.4;
                 cursor: not-allowed;
             }
+            .ro-cart-msg {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                background: #fef2f2;
+                border-left: 3px solid #dc2626;
+                color: #991b1b;
+                font-size: 0.82rem;
+                font-weight: 600;
+                padding: 10px 14px;
+                margin: 0 0 4px 0;
+            }
+            .ro-cart-msg.hidden { display: none; }
+            .ro-cart-msg-text { flex: 1; }
+            .ro-cart-msg button {
+                background: none;
+                border: none;
+                color: #991b1b;
+                font-weight: 700;
+                cursor: pointer;
+                padding: 0 2px;
+                flex-shrink: 0;
+            }
+            .ro-cart-msg button:hover { color: #7f1d1d; }
+            .ro-product-stock-note {
+                font-size: 0.82rem;
+                font-weight: 600;
+                margin-top: 6px;
+            }
         `;
         document.head.appendChild(style);
     }
@@ -875,6 +989,7 @@
             else if (action === 'dec' && id) ROCart.changeQty(id, -1);
             else if (action === 'remove' && id) ROCart.removeItem(id);
             else if (action === 'remove-coupon') ROCart.removeCoupon();
+            else if (action === 'dismiss-cart-msg') hideCartMsg();
         });
     }
 
@@ -903,6 +1018,10 @@
                             <span class="ro-header-badge" id="ro-header-badge">0 items</span>
                         </div>
                         <button class="ro-close-btn" onclick="ROCart.closeDrawer()">✕</button>
+                    </div>
+                    <div id="ro-cart-msg" class="ro-cart-msg hidden">
+                        <span class="ro-cart-msg-text"></span>
+                        <button data-action="dismiss-cart-msg" aria-label="Dismiss">✕</button>
                     </div>
                     <div class="ro-cart-items" id="ro-cart-items"></div>
                     <div class="ro-cart-footer" id="ro-cart-footer" style="display:none">
