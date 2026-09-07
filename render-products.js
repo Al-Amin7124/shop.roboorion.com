@@ -34,6 +34,32 @@
   });
 })();
 
+/**
+ * Every render function below needs items.json, and a single page often
+ * runs several of them at once (e.g. a product page renders New Products +
+ * Popular + Related sidebars, all from the same file; the homepage renders
+ * four separate sections). Without sharing, that's the full catalog
+ * downloaded 3-5 times over for one page view.
+ *
+ * cart.js defines a shared, page-scoped cache (window.getCatalogJSON) and
+ * loads before this file on every page — this just reuses it so every
+ * section here shares ONE network request with each other AND with
+ * cart.js's own price/stock lookup. Falls back to a plain, uncached fetch
+ * on the rare page that doesn't load cart.js, so this never hard-depends
+ * on it.
+ *
+ * Not persisted anywhere beyond the current page view — every fresh page
+ * load fetches for real again, so prices/stock are always current.
+ */
+async function loadCatalogData(jsonPath) {
+    if (typeof window.getCatalogJSON === "function") {
+        return window.getCatalogJSON(jsonPath);
+    }
+    const res = await fetch(jsonPath, { cache: "no-store" });
+    if (!res.ok) throw new Error(`Failed to load ${jsonPath}: ${res.status}`);
+    return res.json();
+}
+
 function starsHtml(rating) {
   const filled = Math.round(rating || 0);
   let html = "";
@@ -325,9 +351,7 @@ async function renderProducts({ containerId, jsonPath = "items.json", limit = 10
   }
   container.innerHTML = skeletonGridHtml(limit);
   try {
-    const res = await fetch(jsonPath);
-    if (!res.ok) throw new Error(`Failed to load ${jsonPath}: ${res.status}`);
-    const items = await res.json();
+    const items = await loadCatalogData(jsonPath);
     const latest = items.slice(0, limit);
     container.innerHTML = latest.map((item, i) => cardHtml(item, "", i)).join("\n");
     injectFadeInStyles();
@@ -379,9 +403,7 @@ async function renderNewProductsSidebar({ containerId, jsonPath = "items.json", 
   }
   container.innerHTML = skeletonSidebarHtml(limit);
   try {
-    const res = await fetch(jsonPath);
-    if (!res.ok) throw new Error(`Failed to load ${jsonPath}: ${res.status}`);
-    const items = await res.json();
+    const items = await loadCatalogData(jsonPath);
     const latest = items.slice(0, limit);
     container.innerHTML = latest
       .map((item, i) => sidebarItemHtml(item, basePath, i === latest.length - 1, i))
@@ -419,9 +441,7 @@ async function renderPopularProductsSidebar({ containerId, jsonPath = "items.jso
   }
   container.innerHTML = skeletonSidebarHtml(limit);
   try {
-    const res = await fetch(jsonPath);
-    if (!res.ok) throw new Error(`Failed to load ${jsonPath}: ${res.status}`);
-    const items = await res.json();
+    const items = await loadCatalogData(jsonPath);
     const ranked = items
       .slice()
       .sort((a, b) => (b.sold || 0) - (a.sold || 0))
@@ -524,9 +544,7 @@ async function renderRelatedProducts({
   }
 
   try {
-    const res = await fetch(jsonPath);
-    if (!res.ok) throw new Error(`Failed to load ${jsonPath}: ${res.status}`);
-    const items = await res.json();
+    const items = await loadCatalogData(jsonPath);
 
     const current = items.find((i) => i.id === resolvedId);
     // Out-of-stock products are excluded entirely — not shown with a
@@ -594,9 +612,7 @@ async function renderPopularProducts({ containerId, jsonPath = "items.json", bas
   container.innerHTML = skeletonGridHtml(limit);
 
   try {
-    const res = await fetch(jsonPath);
-    if (!res.ok) throw new Error(`Failed to load ${jsonPath}: ${res.status}`);
-    const items = await res.json();
+    const items = await loadCatalogData(jsonPath);
 
     const ranked = items
       .slice()
@@ -653,9 +669,7 @@ async function renderCatalog({ containerId, jsonPath = "items.json", basePath = 
   container.innerHTML = skeletonGridHtml(8);
 
   try {
-    const res = await fetch(jsonPath);
-    if (!res.ok) throw new Error(`Failed to load ${jsonPath}: ${res.status}`);
-    const items = await res.json();
+    const items = await loadCatalogData(jsonPath);
 
     container.innerHTML = items.map((item, i) => cardHtml(item, basePath, i)).join("\n");
     injectFadeInStyles();
@@ -727,9 +741,7 @@ async function renderProductList({ containerId, jsonPath = "items.json", ids = [
   container.innerHTML = skeletonGridHtml(ids.length);
 
   try {
-    const res = await fetch(jsonPath);
-    if (!res.ok) throw new Error(`Failed to load ${jsonPath}: ${res.status}`);
-    const items = await res.json();
+    const items = await loadCatalogData(jsonPath);
     const byId = new Map(items.map((item) => [item.id, item]));
 
     const missing = [];

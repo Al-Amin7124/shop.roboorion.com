@@ -46,6 +46,48 @@
     let CATALOG_BY_ID = new Map();
     let catalogLoadFailed = false;
 
+    /**
+     * Shared, page-scoped fetch cache for items.json — used by BOTH this
+     * file and render-products.js (which defines its own tiny fallback if
+     * this script hasn't loaded first, though on every page today cart.js
+     * loads before render-products.js).
+     *
+     * Without this, every section that needs the catalog — the cart price
+     * lookup here, plus New Arrivals / Popular / Related / Featured
+     * sections in render-products.js — was independently calling
+     * fetch('items.json'), meaning a single page view (e.g. a product page
+     * with New Products + Popular + Related sidebars) could download the
+     * full catalog 3-4 times over. This collapses that to exactly ONE
+     * network request per unique path, per page view, no matter how many
+     * sections ask for it.
+     *
+     * Deliberately NOT persisted anywhere (no localStorage/sessionStorage,
+     * no cross-page-load memory) — it's a plain variable that only lives
+     * as long as this page is open. Every fresh page load / navigation
+     * starts with an empty cache and does a real { cache: 'no-store' }
+     * fetch again, which is what keeps price/stock always current even
+     * for items already sitting in someone's cart.
+     */
+    window.__roCatalogCache = window.__roCatalogCache || {};
+    function getCatalogJSON(jsonPath) {
+        if (!window.__roCatalogCache[jsonPath]) {
+            window.__roCatalogCache[jsonPath] = fetch(jsonPath, { cache: 'no-store' })
+                .then(res => {
+                    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                    return res.json();
+                })
+                .catch(err => {
+                    // Don't leave a rejected promise cached — let the next
+                    // caller (or a retry) try the network again instead of
+                    // permanently failing for the rest of the page's life.
+                    delete window.__roCatalogCache[jsonPath];
+                    throw err;
+                });
+        }
+        return window.__roCatalogCache[jsonPath];
+    }
+    window.getCatalogJSON = getCatalogJSON;
+
     /* ── HELPERS ─────────────────────────────────────────── */
 
     function getEl(id) {
@@ -116,9 +158,7 @@
         const isProdPage = window.location.pathname.includes('/products/');
         const jsonPath = isProdPage ? '../items.json' : 'items.json';
         try {
-            const res = await fetch(jsonPath, { cache: 'no-store' });
-            if (!res.ok) throw new Error(`HTTP ${res.status}`);
-            const items = await res.json();
+            const items = await getCatalogJSON(jsonPath);
             CATALOG_BY_ID = new Map(items.map(item => [item.id, item]));
         } catch (err) {
             catalogLoadFailed = true;
@@ -306,6 +346,7 @@
             name: (getEl('cust-name') || {}).value?.trim() || '',
             phone: (getEl('cust-phone') || {}).value?.trim() || '',
             location: (getEl('cust-location') || {}).value?.trim() || '',
+            note: (getEl('cust-note') || {}).value?.trim() || '',
         };
     }
 
@@ -318,16 +359,34 @@
         const nameEl = getEl('cust-name');
         const phoneEl = getEl('cust-phone');
         const locEl = getEl('cust-location');
-        if (!nameEl && !phoneEl && !locEl) return;
+        const noteEl = getEl('cust-note');
+        const noteBtn = getEl('add-note-btn');
+        if (!nameEl && !phoneEl && !locEl && !noteEl) return;
 
         try {
             const saved = JSON.parse(localStorage.getItem(CUSTOMER_KEY) || '{}');
             if (nameEl && saved.name) nameEl.value = saved.name;
             if (phoneEl && saved.phone) phoneEl.value = saved.phone;
             if (locEl && saved.location) locEl.value = saved.location;
+            // If they'd already written a note on a previous visit, reveal
+            // the field straight away instead of hiding their own text
+            // behind the "Add a note" toggle.
+            if (noteEl && saved.note) {
+                noteEl.value = saved.note;
+                noteEl.classList.remove('hidden');
+                if (noteBtn) noteBtn.style.display = 'none';
+            }
         } catch (e) { /* ignore malformed storage */ }
 
-        [nameEl, phoneEl, locEl].forEach(el => { if (el) el.addEventListener('input', saveCustomerInfo); });
+        [nameEl, phoneEl, locEl, noteEl].forEach(el => { if (el) el.addEventListener('input', saveCustomerInfo); });
+
+        if (noteBtn && noteEl) {
+            noteBtn.addEventListener('click', () => {
+                noteEl.classList.remove('hidden');
+                noteBtn.style.display = 'none';
+                noteEl.focus();
+            });
+        }
     }
 
     function validateCustomerInfo() {
@@ -862,6 +921,7 @@
                 + (pickup
                     ? `Pickup Point: ${PICKUP_LOCATION}\n`
                     : `Address: ${info.location || '-'}\n`)
+                + (info.note ? `\n📝 *Note:* ${info.note}\n` : '')
                 + `\n`;
         }
 

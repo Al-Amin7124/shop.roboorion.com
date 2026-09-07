@@ -205,6 +205,21 @@
         .co-text-input:disabled { background: #f1f5f9; color: #94a3b8; cursor: not-allowed; }
         textarea.co-text-input { resize: vertical; min-height: 52px; }
 
+        .co-add-note-btn {
+            align-self: flex-start;
+            background: none;
+            border: none;
+            padding: 0;
+            margin-top: 2px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #2563eb;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        .co-add-note-btn:hover { color: #1d4ed8; text-decoration: underline; }
+        .co-note-field.hidden { display: none; }
+
         .co-pickup-note {
             display: none;
             margin-top: 0.5rem;
@@ -345,6 +360,8 @@
                                 <input type="text" id="co-cust-name" class="co-text-input" placeholder="Full Name" autocomplete="name">
                                 <input type="tel" id="co-cust-phone" class="co-text-input" placeholder="Phone Number (e.g. 01XXXXXXXXX)" autocomplete="tel">
                                 <textarea id="co-cust-location" class="co-text-input" placeholder="Delivery Address / Location" rows="2" autocomplete="street-address"></textarea>
+                                <button type="button" id="co-add-note-btn" class="co-add-note-btn">📝 Add a note (optional)</button>
+                                <textarea id="co-cust-note" class="co-text-input co-note-field hidden" placeholder="Any special instructions for this order? (e.g. gift wrap, preferred delivery time...)" rows="2"></textarea>
                             </div>
                             <div id="co-contact-msg" class="co-coupon-msg"></div>
                         </div>
@@ -377,7 +394,7 @@
                                 </label>
                             </div>
                             <div id="co-pickup-note" class="co-pickup-note">
-                                📍 Pickup Point: <strong>Middle Badda Foot-Over Bridge, Dhaka</strong>. We'll share the exact address and available pickup time after you confirm your order.
+                                📍 Pickup Point: <strong>Chairman Bari Mor, Middle Badda, Dhaka</strong>. We'll share the exact address and available pickup time after you confirm your order.
                             </div>
                         </div>
 
