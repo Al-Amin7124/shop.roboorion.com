@@ -231,6 +231,27 @@
             padding: 0.5rem 0.65rem;
             line-height: 1.4;
         }
+        .co-pickup-map {
+            margin-top: 0.5rem;
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid #bfdbfe;
+        }
+        .co-pickup-map iframe {
+            display: block;
+            width: 100%;
+            height: 150px;
+            border: 0;
+        }
+        .co-pickup-map-link {
+            display: inline-block;
+            margin-top: 0.4rem;
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: #2563eb;
+            text-decoration: none;
+        }
+        .co-pickup-map-link:hover { text-decoration: underline; }
 
         /* ── Coupon ── */
         .co-coupon-row { display: flex; gap: 0.4rem; }
@@ -394,7 +415,11 @@
                                 </label>
                             </div>
                             <div id="co-pickup-note" class="co-pickup-note">
-                                📍 Pickup Point: <strong>Chairman Bari Mor, Middle Badda, Dhaka</strong>. We'll share the exact address and available pickup time after you confirm your order.
+                                📍 Pickup Point: <strong>Middle Badda Foot-Over Bridge, Dhaka</strong>. We'll share the exact address and available pickup time after you confirm your order.
+                                <div class="co-pickup-map">
+                                    <iframe id="co-pickup-map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Pickup point location"></iframe>
+                                </div>
+                                <a href="https://maps.app.goo.gl/U4wn2srzGbHjHmbh9" target="_blank" rel="noopener" class="co-pickup-map-link">Open in Google Maps ↗</a>
                             </div>
                         </div>
 

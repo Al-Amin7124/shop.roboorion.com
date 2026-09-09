@@ -16,6 +16,9 @@
     const DELIVERY_KEY = 'robo_orion_delivery';
     const STORE_NAME   = 'Robo Orion';
     const PICKUP_LOCATION = 'Middle Badda, Dhaka';
+    // Resolved from https://maps.app.goo.gl/U4wn2srzGbHjHmbh9 — used to embed
+    // a small map under the Self Pickup option on checkout.
+    const PICKUP_MAP_EMBED_URL = 'https://www.google.com/maps?q=23.777631,90.424234&output=embed';
     // Below this stock count, limited-stock items start showing a
     // "Only X left in stock" note. At/above it, nothing is shown — the
     // count doesn't add useful urgency for plentiful items.
@@ -314,6 +317,14 @@
             locEl.placeholder = pickup ? `Not required — pickup at ${PICKUP_LOCATION}` : 'Delivery Address / Location';
         }
         if (noteEl) noteEl.style.display = pickup ? 'block' : 'none';
+
+        // Only load the map embed the first time Self Pickup is actually
+        // selected — most customers won't choose it, so there's no reason
+        // to make everyone's checkout page pull in a map iframe by default.
+        if (pickup) {
+            const mapFrame = getEl('pickup-map-frame');
+            if (mapFrame && !mapFrame.src) mapFrame.src = PICKUP_MAP_EMBED_URL;
+        }
     }
 
     function saveDeliveryPreference() {
