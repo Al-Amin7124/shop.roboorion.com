@@ -1405,7 +1405,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 1,
-    "stock": 8,
+    "stock": 6,
     "sold": 21,
     "limitedStock": true
   },
@@ -4828,7 +4828,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "weight": 8,
-    "stock": 11,
+    "stock": 10,
     "sold": 3,
     "limitedStock": false
   },
@@ -4888,16 +4888,16 @@
       "charge-controllers",
       "diy-kits"
     ],
-    "discount": "Save BDT 50",
+    "discount": "",
     "rating": 5,
     "reviews": 17,
     "brand": "Generic",
-    "price": "BDT 70",
+    "price": "BDT 120",
     "original_price": "BDT 120",
-    "in_stock": false,
+    "in_stock": true,
     "sales_count": 3,
     "weight": 8,
-    "stock": 0,
+    "stock": 2,
     "sold": 9,
     "limitedStock": true
   },
@@ -5382,7 +5382,7 @@
     "original_price": "BDT 25",
     "in_stock": true,
     "sales_count": 1,
-    "stock": -1,
+    "stock": -2,
     "sold": 4,
     "weight": 0,
     "limitedStock": false
@@ -5875,7 +5875,7 @@
     "sales_count": 4,
     "sold": 5,
     "weight": 0,
-    "stock": 2,
+    "stock": 1,
     "limitedStock": false
   },
   {
