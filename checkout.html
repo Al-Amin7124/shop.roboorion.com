@@ -252,6 +252,18 @@
             text-decoration: none;
         }
         .co-pickup-map-link:hover { text-decoration: underline; }
+        .co-pickup-min-msg {
+            margin-top: 0.5rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #991b1b;
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-radius: 6px;
+            padding: 0.5rem 0.65rem;
+            line-height: 1.4;
+        }
+        .co-pickup-min-msg.hidden { display: none; }
 
         /* ── Coupon ── */
         .co-coupon-row { display: flex; gap: 0.4rem; }
@@ -420,6 +432,7 @@
                                     <iframe id="co-pickup-map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Pickup point location"></iframe>
                                 </div>
                                 <a href="https://maps.app.goo.gl/U4wn2srzGbHjHmbh9" target="_blank" rel="noopener" class="co-pickup-map-link">Open in Google Maps ↗</a>
+                                <div id="co-pickup-min-msg" class="co-pickup-min-msg hidden"></div>
                             </div>
                         </div>
 

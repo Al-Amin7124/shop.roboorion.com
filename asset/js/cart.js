@@ -16,6 +16,9 @@
     const DELIVERY_KEY = 'robo_orion_delivery';
     const STORE_NAME   = 'Robo Orion';
     const PICKUP_LOCATION = 'Middle Badda, Dhaka';
+    // Self Pickup orders below this amount (after any discount, excluding
+    // delivery since pickup has none) are blocked at checkout.
+    const MIN_PICKUP_ORDER = 500;
     // Resolved from https://maps.app.goo.gl/U4wn2srzGbHjHmbh9 — used to embed
     // a small map under the Self Pickup option on checkout.
     const PICKUP_MAP_EMBED_URL = 'https://www.google.com/maps?q=23.777631,90.424234&output=embed';
@@ -730,6 +733,21 @@
 
         if (waBtn) waBtn.disabled = cart.length === 0 || hasOutOfStockItem;
 
+        // Self Pickup has a minimum order value — checked against the
+        // subtotal after any discount, same amount shown as "Total" minus
+        // delivery (which is always free for pickup anyway).
+        const pickupMinMsg = getEl('pickup-min-msg');
+        const effectiveSubtotal = total - discountInfo.amount;
+        const belowPickupMin = isSelfPickup() && cart.length > 0 && effectiveSubtotal < MIN_PICKUP_ORDER;
+        if (pickupMinMsg) {
+            pickupMinMsg.classList.toggle('hidden', !belowPickupMin);
+            if (belowPickupMin) {
+                const shortfall = fmt(MIN_PICKUP_ORDER - effectiveSubtotal);
+                pickupMinMsg.textContent = `⚠ Self Pickup requires a minimum order of BDT ${MIN_PICKUP_ORDER}. Add BDT ${shortfall} more, or choose a delivery option instead.`;
+            }
+        }
+        if (waBtn && belowPickupMin) waBtn.disabled = true;
+
         const dRow = getEl('discount-row');
         if (dRow) {
             dRow.style.display = (discountInfo.amount > 0) ? 'flex' : 'none';
@@ -894,6 +912,20 @@
                 msgEl.textContent = `✕ Please remove out-of-stock item(s) before ordering: ${names}`;
             }
             return;
+        }
+
+        if (isSelfPickup()) {
+            const discountInfoCheck = calcDiscount(cart);
+            const subtotalCheck = cartTotal(cart);
+            const effectiveSubtotalCheck = subtotalCheck - discountInfoCheck.amount;
+            if (effectiveSubtotalCheck < MIN_PICKUP_ORDER) {
+                const msgEl = getEl('contact-msg');
+                if (msgEl) {
+                    msgEl.className = 'co-coupon-msg error';
+                    msgEl.textContent = `✕ Self Pickup requires a minimum order of BDT ${MIN_PICKUP_ORDER}.`;
+                }
+                return;
+            }
         }
 
         if (!validateCustomerInfo()) return;
