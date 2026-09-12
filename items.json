@@ -1,5 +1,27 @@
 [
   {
+    "id": "RBO-1484",
+    "title": "80W Hot Melt Glue Gun – Heavy Duty Craft & Repair Tool",
+    "url": "products/1484-80w-hot-melt-glue-gun-heavy-duty-craft-and-repair-tool-robo-orion-bangladesh.html",
+    "image": "img/product/1484-80w-hot-melt-glue-gun-heavy-duty-craft-and-repair-tool-robo-orion-bangladesh.jpg",
+    "alt": "80W Hot Melt Glue Gun – Heavy Duty Craft & Repair Tool",
+    "categories": [
+      "repair-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 140",
+    "rating": 5,
+    "reviews": 16,
+    "brand": "Generic",
+    "price": "BDT 250",
+    "original_price": "BDT 390",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1483",
     "title": "60W Soldering Iron (220V) – High Performance Pencil Tip Solder Tool",
     "url": "products/1483-60w-soldering-iron-220v-high-performance-pencil-tip-solder-tool-robo-orion-bangladesh.html",
@@ -34,7 +56,7 @@
     ],
     "discount": "Save BDT 100",
     "rating": 5,
-    "reviews": 19,
+    "reviews": 8,
     "brand": "Robo Orion",
     "price": "BDT 280",
     "original_price": "BDT 380",
@@ -57,7 +79,7 @@
     ],
     "discount": "Save BDT 100",
     "rating": 5,
-    "reviews": 19,
+    "reviews": 24,
     "brand": "Robo Orion",
     "price": "BDT 280",
     "original_price": "BDT 380",
@@ -402,7 +424,7 @@
     "original_price": "BDT 280",
     "in_stock": true,
     "weight": 47,
-    "stock": 16,
+    "stock": 14,
     "sold": 20,
     "limitedStock": false
   },
@@ -1852,7 +1874,7 @@
     "original_price": "BDT 115",
     "in_stock": true,
     "weight": 0,
-    "stock": 2,
+    "stock": 1,
     "sold": 1,
     "limitedStock": false
   },
@@ -2866,7 +2888,7 @@
     "original_price": "BDT 75",
     "in_stock": true,
     "weight": 2,
-    "stock": 3,
+    "stock": 2,
     "sold": 4,
     "limitedStock": false
   },
@@ -3831,7 +3853,7 @@
     "price": "BDT 35",
     "original_price": "BDT 50",
     "in_stock": true,
-    "stock": -4,
+    "stock": -5,
     "sold": 1,
     "weight": 0,
     "limitedStock": false
@@ -5666,7 +5688,7 @@
     "original_price": "BDT 110",
     "in_stock": true,
     "weight": 5,
-    "stock": 8,
+    "stock": 7,
     "sold": 6,
     "limitedStock": false
   },
@@ -5712,7 +5734,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 10,
-    "stock": 9,
+    "stock": 8,
     "sold": 22,
     "limitedStock": false
   },
@@ -5760,7 +5782,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 15,
-    "stock": -10,
+    "stock": -11,
     "sold": 8,
     "limitedStock": false
   },
@@ -7022,7 +7044,7 @@
     "price": "BDT 30",
     "original_price": "BDT 45",
     "in_stock": true,
-    "stock": 11,
+    "stock": 10,
     "sold": 0,
     "weight": 0,
     "limitedStock": false
@@ -8158,7 +8180,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 3,
-    "stock": -8,
+    "stock": -12,
     "sold": 23,
     "limitedStock": false
   },
@@ -8715,7 +8737,7 @@
     "in_stock": true,
     "sold": 22,
     "weight": 0,
-    "stock": 64,
+    "stock": 60,
     "limitedStock": false
   },
   {
