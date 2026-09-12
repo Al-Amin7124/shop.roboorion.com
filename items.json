@@ -1,5 +1,51 @@
 [
   {
+    "id": "RBO-1503",
+    "title": "25.2V 1A Li-ion Battery Charger – 6S Lithium Power Adapter",
+    "url": "products/1503-25.2v-1a-li-ion-battery-charger-6s-lithium-power-adapter-robo-orion-bangladesh.html",
+    "image": "img/product/1503-25.2v-1a-li-ion-battery-charger-6s-lithium-power-adapter-robo-orion-bangladesh.jpg",
+    "alt": "25.2V 1A Li-ion Battery Charger – 6S Lithium Power Adapter",
+    "categories": [
+      "power-supply",
+      "repair-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 100",
+    "rating": 5,
+    "reviews": 19,
+    "brand": "Robo Orion",
+    "price": "BDT 280",
+    "original_price": "BDT 380",
+    "in_stock": true,
+    "weight": 0.15,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
+    "id": "RBO-1502",
+    "title": "12.6V 2A Li-ion Battery Charger – 3S Lithium Power Adapter",
+    "url": "products/1502-12.6v-2a-li-ion-battery-charger-3s-lithium-power-adapter-robo-orion-bangladesh.html",
+    "image": "img/product/1502-12.6v-2a-li-ion-battery-charger-3s-lithium-power-adapter-robo-orion-bangladesh.jpg",
+    "alt": "12.6V 2A Li-ion Battery Charger – 3S Lithium Power Adapter",
+    "categories": [
+      "power-supply",
+      "repair-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 100",
+    "rating": 5,
+    "reviews": 19,
+    "brand": "Robo Orion",
+    "price": "BDT 280",
+    "original_price": "BDT 380",
+    "in_stock": true,
+    "weight": 0.15,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1501",
     "title": "8.4V 3A Li-ion Battery Charger – 2S Lithium Power Adapter",
     "url": "products/1501-8.4v-2a-li-ion-battery-charger-2s-lithium-power-adapter-robo-orion-bangladesh.html",
