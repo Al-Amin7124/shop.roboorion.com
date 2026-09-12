@@ -1,7 +1,7 @@
 [
   {
     "id": "RBO-1501",
-    "title": "8.4V 2A Li-ion Battery Charger – 2S Lithium Power Adapter",
+    "title": "8.4V 3A Li-ion Battery Charger – 2S Lithium Power Adapter",
     "url": "products/1501-8.4v-2a-li-ion-battery-charger-2s-lithium-power-adapter-robo-orion-bangladesh.html",
     "image": "img/product/1501-8.4v-2a-li-ion-battery-charger-2s-lithium-power-adapter-robo-orion-bangladesh.jpg",
     "alt": "8.4V 2A Li-ion Battery Charger – 2S Lithium Power Adapter",
@@ -108,7 +108,7 @@
     "original_price": "BDT 280",
     "in_stock": true,
     "weight": 25,
-    "stock": 4,
+    "stock": 1,
     "sold": 0,
     "limitedStock": true
   },
@@ -334,7 +334,7 @@
     "original_price": "BDT 280",
     "in_stock": true,
     "weight": 47,
-    "stock": 19,
+    "stock": 16,
     "sold": 20,
     "limitedStock": false
   },
@@ -401,9 +401,9 @@
     "brand": "BAKON",
     "price": "BDT 220",
     "original_price": "BDT 499",
-    "in_stock": false,
+    "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": 1,
     "sold": 0,
     "limitedStock": true
   },
@@ -424,9 +424,9 @@
     "brand": "BAKON",
     "price": "BDT 220",
     "original_price": "BDT 499",
-    "in_stock": false,
+    "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": 1,
     "sold": 0,
     "limitedStock": true
   },
@@ -470,9 +470,9 @@
     "brand": "BAKON",
     "price": "BDT 220",
     "original_price": "BDT 499",
-    "in_stock": false,
+    "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": 1,
     "sold": 0,
     "limitedStock": true
   },
@@ -493,11 +493,11 @@
     "brand": "BAKON",
     "price": "BDT 220",
     "original_price": "BDT 499",
-    "in_stock": false,
+    "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": 1,
     "sold": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1461",
@@ -4065,7 +4065,7 @@
     "in_stock": true,
     "sales_count": 9,
     "weight": 1,
-    "stock": 16,
+    "stock": 15,
     "sold": 25,
     "limitedStock": true
   },
@@ -4361,7 +4361,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 1,
-    "stock": 20,
+    "stock": 18,
     "sold": 31,
     "sales_count": 3,
     "limitedStock": true
@@ -5148,7 +5148,7 @@
     "original_price": "BDT 480",
     "in_stock": true,
     "weight": 108,
-    "stock": 1,
+    "stock": 2,
     "sold": 2,
     "limitedStock": false
   },
@@ -5668,7 +5668,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 20,
-    "stock": -9,
+    "stock": -10,
     "sold": 7,
     "limitedStock": false
   },
@@ -5875,7 +5875,7 @@
     "sales_count": 4,
     "sold": 6,
     "weight": 0,
-    "stock": 1,
+    "stock": 0,
     "limitedStock": false
   },
   {
@@ -6009,7 +6009,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 5,
-    "stock": -6,
+    "stock": -10,
     "sold": 16,
     "limitedStock": false
   },
@@ -6170,7 +6170,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 1.5,
-    "stock": 33,
+    "stock": 32,
     "sold": 10,
     "limitedStock": false
   },
@@ -6213,7 +6213,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "sales_count": 2,
-    "stock": 2,
+    "stock": 3,
     "sold": 4,
     "weight": 0,
     "limitedStock": false
@@ -6825,7 +6825,7 @@
     "in_stock": true,
     "sold": 6,
     "weight": 0,
-    "stock": 10,
+    "stock": 6,
     "limitedStock": false
   },
   {
@@ -7217,7 +7217,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 5,
-    "stock": 2,
+    "stock": 3,
     "sold": 1,
     "limitedStock": false
   },
@@ -7310,7 +7310,7 @@
     "sales_count": 1,
     "weight": 30,
     "sold": 1,
-    "stock": 1,
+    "stock": 2,
     "limitedStock": false
   },
   {
@@ -8090,7 +8090,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 3,
-    "stock": 0,
+    "stock": -8,
     "sold": 23,
     "limitedStock": false
   },
@@ -8406,7 +8406,7 @@
     "original_price": "BDT 220",
     "in_stock": true,
     "sales_count": 5,
-    "stock": 0,
+    "stock": -1,
     "sold": 12,
     "weight": 0,
     "limitedStock": false
@@ -8519,7 +8519,7 @@
     "in_stock": true,
     "sold": 19,
     "weight": 1,
-    "stock": 110,
+    "stock": 108,
     "limitedStock": false
   },
   {
@@ -8541,7 +8541,7 @@
     "in_stock": true,
     "sold": 16,
     "weight": 1,
-    "stock": 110,
+    "stock": 108,
     "limitedStock": false
   },
   {
@@ -8647,7 +8647,7 @@
     "in_stock": true,
     "sold": 22,
     "weight": 0,
-    "stock": 68,
+    "stock": 64,
     "limitedStock": false
   },
   {
@@ -8754,7 +8754,7 @@
     "in_stock": false,
     "sold": 2,
     "weight": 0,
-    "stock": 50,
+    "stock": 46,
     "limitedStock": false
   },
   {
@@ -8776,7 +8776,7 @@
     "in_stock": true,
     "sold": 8,
     "weight": 0,
-    "stock": 100,
+    "stock": 98,
     "limitedStock": false
   },
   {
