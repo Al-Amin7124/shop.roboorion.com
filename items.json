@@ -1,5 +1,27 @@
 [
   {
+    "id": "RBO-1483",
+    "title": "60W Soldering Iron (220V) – High Performance Pencil Tip Solder Tool",
+    "url": "products/1483-60w-soldering-iron-220v-high-performance-pencil-tip-solder-tool-robo-orion-bangladesh.html",
+    "image": "img/product/1483-60w-soldering-iron-220v-high-performance-pencil-tip-solder-tool-robo-orion-bangladesh.jpg",
+    "alt": "60W Soldering Iron (220V) – High Performance Pencil Tip Solder Tool",
+    "categories": [
+      "repair-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 130",
+    "rating": 5,
+    "reviews": 17,
+    "brand": "Generic",
+    "price": "BDT 220",
+    "original_price": "BDT 350",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 1,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1503",
     "title": "25.2V 1A Li-ion Battery Charger – 6S Lithium Power Adapter",
     "url": "products/1503-25.2v-1a-li-ion-battery-charger-6s-lithium-power-adapter-robo-orion-bangladesh.html",
@@ -17,7 +39,7 @@
     "price": "BDT 280",
     "original_price": "BDT 380",
     "in_stock": true,
-    "weight": 0.15,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": false
@@ -40,8 +62,8 @@
     "price": "BDT 280",
     "original_price": "BDT 380",
     "in_stock": true,
-    "weight": 0.15,
-    "stock": 0,
+    "weight": 0,
+    "stock": -1,
     "sold": 0,
     "limitedStock": false
   },
@@ -1089,7 +1111,7 @@
     "original_price": "BDT 290",
     "in_stock": true,
     "weight": 47,
-    "stock": 10,
+    "stock": 7,
     "sold": 0,
     "limitedStock": false
   },
@@ -4620,7 +4642,7 @@
     "original_price": "BDT 190",
     "in_stock": true,
     "weight": 5,
-    "stock": 6,
+    "stock": 4,
     "sold": 3,
     "limitedStock": false
   },
@@ -5644,7 +5666,7 @@
     "original_price": "BDT 110",
     "in_stock": true,
     "weight": 5,
-    "stock": 9,
+    "stock": 8,
     "sold": 6,
     "limitedStock": false
   },
@@ -6124,7 +6146,7 @@
     "original_price": "BDT 90",
     "in_stock": true,
     "weight": 5,
-    "stock": 9,
+    "stock": 8,
     "sold": 3,
     "limitedStock": false
   },
@@ -6259,7 +6281,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "sales_count": 2,
-    "stock": 3,
+    "stock": 2,
     "sold": 4,
     "weight": 0,
     "limitedStock": false
@@ -6518,7 +6540,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 37,
-    "stock": 2,
+    "stock": 1,
     "sold": 12,
     "limitedStock": false
   },
