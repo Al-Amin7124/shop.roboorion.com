@@ -455,4 +455,53 @@
                     <a href="https://www.facebook.com/roboorionlab" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-blue-600 transition" aria-label="Follow Robo Orion on Facebook"><i class="fa-brands fa-square-facebook text-2xl" aria-hidden="true"></i></a>
                     <a target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-sky-500 transition" aria-label="Follow Robo Orion on X (Twitter)"><i class="fa-brands fa-x-twitter text-2xl" aria-hidden="true"></i></a>
                     <a target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-blue-700 transition" aria-label="Follow Robo Orion on LinkedIn"><i class="fab fa-linkedin-in text-2xl" aria-hidden="true"></i></a>
-                    <a href="https://www.youtube.com/channel/UC25jK0O9bc_rGTjgvf_9zUg" target="_blank" rel="noopener noreferrer" class="text-
+                    <a href="https://www.youtube.com/channel/UC25jK0O9bc_rGTjgvf_9zUg" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-red-700 transition" aria-label="Subscribe to Robo Orion on YouTube"><i class="fa-brands fa-youtube text-2xl" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-800 text-gray-300 text-xs font-sans">
+            <div class="max-w-7xl mx-auto flex flex-wrap justify-center sm:justify-between items-center px-4 py-3">
+                <div class="flex flex-wrap gap-4">
+                    <a class="hover:text-white transition">Privacy Policy</a>
+                    <span class="text-gray-500" aria-hidden="true">|</span>
+                    <a class="hover:text-white transition">Terms of Use</a>
+                    <span class="text-gray-500" aria-hidden="true">|</span>
+                    <a class="hover:text-white transition">Cookie Preferences</a>
+                </div>
+                <div class="mt-2 sm:mt-0"><p class="text-gray-400">&copy; 2026 Robo Orion. All rights reserved.</p></div>
+            </div>
+        </div>
+    </footer>
+
+
+</div>
+
+<script src="../asset/js/newsletter.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="../asset/js/product.js?v=2"></script>
+<script src="../asset/js/service.js"></script>
+<script src="../asset/js/tailwind.config.js"></script>
+<script src="../asset/js/cart.js?v=2"></script>
+<script src="../render-products.js?v=4"></script>
+<script>
+  renderNewProductsSidebar({
+    containerId: 'new-products-sidebar',
+    jsonPath: '../items.json',
+    basePath: '../',
+    limit: 10
+  });
+  renderRelatedProducts({
+    containerId: 'related-products-grid',
+    jsonPath: '../items.json',
+    basePath: '../',
+    limit: 8
+  });
+  renderPopularProductsSidebar({
+    containerId: 'popular-sidebar',
+    jsonPath: '../items.json',
+    basePath: '../',
+    limit: 10
+  });
+</script>
+</body>
+</html>
