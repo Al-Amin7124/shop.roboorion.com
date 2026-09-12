@@ -5692,7 +5692,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 15,
-    "stock": 10,
+    "stock": -10,
     "sold": 8,
     "limitedStock": false
   },
@@ -6494,7 +6494,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": 0,
+    "stock": -1,
     "limitedStock": false
   },
   {
