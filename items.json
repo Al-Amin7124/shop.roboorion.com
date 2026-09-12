@@ -127,11 +127,11 @@
     "brand": "Lishen",
     "price": "BDT 190",
     "original_price": "BDT 350",
-    "in_stock": false,
+    "in_stock": true,
     "weight": 0,
     "stock": 0,
     "sold": 0,
-    "limitedStock": true
+    "limitedStock": false
   },
   {
     "id": "RBO-1481",
