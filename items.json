@@ -448,7 +448,7 @@
     "weight": 47,
     "stock": 14,
     "sold": 20,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1468",
