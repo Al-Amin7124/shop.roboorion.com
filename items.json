@@ -149,7 +149,7 @@
     "brand": "Lishen",
     "price": "BDT 160",
     "original_price": "BDT 350",
-    "in_stock": false,
+    "in_stock": true,
     "weight": 47,
     "stock": 100,
     "sold": 0,
@@ -243,7 +243,7 @@
     "original_price": "BDT 280",
     "in_stock": true,
     "weight": 25,
-    "stock": 1,
+    "stock": 2,
     "sold": 0,
     "limitedStock": true
   },
@@ -446,7 +446,7 @@
     "original_price": "BDT 280",
     "in_stock": true,
     "weight": 47,
-    "stock": 14,
+    "stock": 20,
     "sold": 20,
     "limitedStock": true
   },
@@ -1200,7 +1200,7 @@
     "original_price": "BDT 290",
     "in_stock": true,
     "weight": 0,
-    "stock": 4,
+    "stock": 5,
     "sold": 0,
     "limitedStock": false
   },
@@ -1873,7 +1873,7 @@
     "original_price": "BDT 10",
     "in_stock": true,
     "weight": 2,
-    "stock": 2,
+    "stock": 3,
     "sold": 2,
     "limitedStock": false
   },
@@ -4013,9 +4013,9 @@
     "brand": "Generic",
     "price": "BDT 210",
     "original_price": "BDT 320",
-    "in_stock": false,
+    "in_stock": true,
     "weight": 8,
-    "stock": 0,
+    "stock": 1,
     "sold": 4,
     "limitedStock": true
   },
@@ -4359,7 +4359,7 @@
     "original_price": "BDT 40",
     "in_stock": true,
     "weight": 2,
-    "stock": 21,
+    "stock": 22,
     "sold": 8,
     "limitedStock": false
   },
@@ -6121,7 +6121,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 5,
-    "stock": 10,
+    "stock": 11,
     "sold": 16,
     "limitedStock": false
   },
@@ -7129,7 +7129,7 @@
     "price": "BDT 3",
     "original_price": "BDT 5",
     "in_stock": true,
-    "stock": 84,
+    "stock": 85,
     "sold": 10,
     "weight": 0,
     "limitedStock": false
@@ -7644,7 +7644,7 @@
     "original_price": "BDT 150",
     "in_stock": true,
     "weight": 5,
-    "stock": 0,
+    "stock": 1,
     "sold": 6,
     "limitedStock": false
   },
