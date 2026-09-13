@@ -143,17 +143,17 @@
     "categories": [
       "diy-kits"
     ],
-    "discount": "Save BDT 160",
+    "discount": "Save BDT 190",
     "rating": 5,
     "reviews": 22,
     "brand": "Lishen",
-    "price": "BDT 190",
+    "price": "BDT 160",
     "original_price": "BDT 350",
     "in_stock": true,
-    "weight": 0,
-    "stock": 0,
+    "weight": 47,
+    "stock": 100,
     "sold": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1481",
@@ -3378,7 +3378,7 @@
     "original_price": "BDT 180",
     "in_stock": true,
     "weight": 2,
-    "stock": 6,
+    "stock": 5,
     "sold": 4,
     "limitedStock": false
   },
@@ -5542,7 +5542,7 @@
     "in_stock": true,
     "sold": 1,
     "weight": 0,
-    "stock": 2,
+    "stock": 0,
     "limitedStock": false
   },
   {
@@ -6443,7 +6443,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 50,
-    "stock": 5,
+    "stock": 4,
     "sold": 7,
     "limitedStock": false
   },
