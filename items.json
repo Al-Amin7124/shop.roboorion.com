@@ -149,11 +149,11 @@
     "brand": "Lishen",
     "price": "BDT 160",
     "original_price": "BDT 350",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 47,
     "stock": 100,
     "sold": 0,
-    "limitedStock": true
+    "limitedStock": false
   },
   {
     "id": "RBO-1481",
@@ -243,7 +243,7 @@
     "original_price": "BDT 280",
     "in_stock": true,
     "weight": 25,
-    "stock": 2,
+    "stock": 1,
     "sold": 0,
     "limitedStock": true
   },
@@ -446,7 +446,7 @@
     "original_price": "BDT 280",
     "in_stock": true,
     "weight": 47,
-    "stock": 20,
+    "stock": 12,
     "sold": 20,
     "limitedStock": true
   },
@@ -1429,7 +1429,7 @@
     "original_price": "BDT 490",
     "in_stock": true,
     "weight": 155,
-    "stock": 3,
+    "stock": 2,
     "sold": 0,
     "limitedStock": true
   },
@@ -4359,7 +4359,7 @@
     "original_price": "BDT 40",
     "in_stock": true,
     "weight": 2,
-    "stock": 22,
+    "stock": 20,
     "sold": 8,
     "limitedStock": false
   },
@@ -6443,7 +6443,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 50,
-    "stock": 4,
+    "stock": 2,
     "sold": 7,
     "limitedStock": false
   },
