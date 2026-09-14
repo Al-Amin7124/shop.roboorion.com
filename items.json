@@ -1,26 +1,26 @@
 [
   {
-  "id": "RBO-1490",
-  "title": "Koocu V504 60W Soldering Iron – High Quality Repair Tool",
-  "url": "products/1490-koocu-v504-60w-soldering-iron-high-quality-repair-tool-robo-orion-bangladesh.html",
-  "image": "img/product/1490-koocu-v504-60w-soldering-iron-high-quality-repair-tool-robo-orion-bangladesh.jpg",
-  "alt": "Koocu V504 60W Soldering Iron – High Quality Repair Tool",
-  "categories": [
-    "repair-tools",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 395",
-  "rating": 5,
-  "reviews": 15,
-  "brand": "Koocu",
-  "price": "BDT 495",
-  "original_price": "BDT 890",
-  "in_stock": true,
-  "weight": 0.15,
-  "stock": 0,
-  "sold": 0,
-  "limitedStock": false
-},
+    "id": "RBO-1490",
+    "title": "Koocu V504 60W Soldering Iron – High Quality Repair Tool",
+    "url": "products/1490-koocu-v504-60w-soldering-iron-high-quality-repair-tool-robo-orion-bangladesh.html",
+    "image": "img/product/1490-koocu-v504-60w-soldering-iron-high-quality-repair-tool-robo-orion-bangladesh.jpg",
+    "alt": "Koocu V504 60W Soldering Iron – High Quality Repair Tool",
+    "categories": [
+      "repair-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 395",
+    "rating": 5,
+    "reviews": 15,
+    "brand": "Koocu",
+    "price": "BDT 495",
+    "original_price": "BDT 890",
+    "in_stock": true,
+    "weight": 0.15,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
   {
     "id": "RBO-1489",
     "title": "12V 10A Mini Relay – 5-Pin SPDT PCB Mount Relay",
@@ -38,7 +38,7 @@
     "price": "BDT 20",
     "original_price": "BDT 35",
     "in_stock": true,
-    "weight": 0.01,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": false
@@ -60,7 +60,7 @@
     "price": "BDT 45",
     "original_price": "BDT 85",
     "in_stock": true,
-    "weight": 0.01,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": false
@@ -82,7 +82,7 @@
     "price": "BDT 60",
     "original_price": "BDT 120",
     "in_stock": true,
-    "weight": 0.03,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": false
@@ -104,7 +104,7 @@
     "price": "BDT 25",
     "original_price": "BDT 40",
     "in_stock": true,
-    "weight": 0.01,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": false
