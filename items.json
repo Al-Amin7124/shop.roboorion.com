@@ -1,5 +1,27 @@
 [
   {
+  "id": "RBO-1489",
+  "title": "12V 10A Mini Relay – 5-Pin SPDT PCB Mount Relay",
+  "url": "products/1489-12v-10a-mini-relay-5-pin-spdt-pcb-mount-relay-robo-orion-bangladesh.html",
+  "image": "img/product/1489-12v-10a-mini-relay-5-pin-spdt-pcb-mount-relay-robo-orion-bangladesh.jpg",
+  "alt": "12V 10A Mini Relay – 5-Pin SPDT PCB Mount Relay",
+  "categories": [
+    "components",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 15",
+  "rating": 5,
+  "reviews": 12,
+  "brand": "Generic",
+  "price": "BDT 20",
+  "original_price": "BDT 35",
+  "in_stock": true,
+  "weight": 0.01,
+  "stock": 0,
+  "sold": 0,
+  "limitedStock": false
+},
+  {
   "id": "RBO-1488",
   "title": "60W Soldering Iron Coil – High Quality Replacement Heating Element",
   "url": "products/1488-60w-soldering-iron-coil-high-quality-replacement-heating-element-robo-orion-bangladesh.html",
