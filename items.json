@@ -1,5 +1,49 @@
 [
   {
+  "id": "RBO-1487",
+  "title": "4-Slot 18650 Battery Holder – PCB Mountable Series/Parallel Case",
+  "url": "products/1487-4-slot-18650-battery-holder-pcb-mountable-series-parallel-case-robo-orion-bangladesh.html",
+  "image": "img/product/1487-4-slot-18650-battery-holder-pcb-mountable-series-parallel-case-robo-orion-bangladesh.jpg",
+  "alt": "4-Slot 18650 Battery Holder – PCB Mountable Series/Parallel Case",
+  "categories": [
+    "components",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 60",
+  "rating": 5,
+  "reviews": 17,
+  "brand": "Generic",
+  "price": "BDT 60",
+  "original_price": "BDT 120",
+  "in_stock": true,
+  "weight": 0.03,
+  "stock": 0,
+  "sold": 0,
+  "limitedStock": false
+},
+  {
+  "id": "RBO-1486",
+  "title": "DC-025M Metal Panel Mount Power Socket – 5.5x2.1mm Female Jack",
+  "url": "products/1486-dc-025m-metal-panel-mount-power-socket-5.5x2.1mm-female-jack-robo-orion-bangladesh.html",
+  "image": "img/product/1486-dc-025m-metal-panel-mount-power-socket-5.5x2.1mm-female-jack-robo-orion-bangladesh.jpg",
+  "alt": "DC-025M Metal Panel Mount Power Socket – 5.5x2.1mm Female Jack",
+  "categories": [
+    "components",
+    "power-supply"
+  ],
+  "discount": "Save BDT 15",
+  "rating": 5,
+  "reviews": 24,
+  "brand": "Generic",
+  "price": "BDT 25",
+  "original_price": "BDT 40",
+  "in_stock": true,
+  "weight": 0.01,
+  "stock": 0,
+  "sold": 0,
+  "limitedStock": false
+},
+  {
     "id": "RBO-1485",
     "title": "60W Soldering Iron Bit – High Quality Replacement Tip",
     "url": "products/1485-60w-soldering-iron-bit-high-quality-replacement-tip-robo-orion-bangladesh.html",
