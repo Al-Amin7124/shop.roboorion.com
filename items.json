@@ -16,7 +16,7 @@
     "price": "BDT 495",
     "original_price": "BDT 890",
     "in_stock": true,
-    "weight": 0.15,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": false
