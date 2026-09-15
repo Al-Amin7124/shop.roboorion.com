@@ -219,7 +219,7 @@
     "weight": 0,
     "stock": 1,
     "sold": 1,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1501",
@@ -1625,11 +1625,11 @@
     "brand": "Generic",
     "price": "BDT 20",
     "original_price": "BDT 35",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 1,
-    "stock": 10,
+    "stock": 0,
     "sold": 34,
-    "limitedStock": true
+    "limitedStock": false
   },
   {
     "id": "RBO-1419",
