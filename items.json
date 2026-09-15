@@ -1627,7 +1627,7 @@
     "original_price": "BDT 35",
     "in_stock": false,
     "weight": 1,
-    "stock": 0,
+    "stock": 4,
     "sold": 34,
     "limitedStock": false
   },
@@ -4287,7 +4287,7 @@
     "in_stock": true,
     "sales_count": 9,
     "weight": 1,
-    "stock": 15,
+    "stock": 11,
     "sold": 32,
     "limitedStock": true
   },
@@ -4347,11 +4347,11 @@
       "lithium-batteries",
       "battery-packs"
     ],
-    "discount": "Save BDT 100",
+    "discount": "Save BDT 130",
     "rating": 5,
     "reviews": 16,
     "brand": "Generic",
-    "price": "BDT 280",
+    "price": "BDT 250",
     "original_price": "BDT 380",
     "in_stock": true,
     "sold": 1,
@@ -5461,7 +5461,7 @@
     "original_price": "BDT 680",
     "in_stock": true,
     "sales_count": 3,
-    "stock": -10,
+    "stock": 0,
     "sold": 5,
     "weight": 0,
     "limitedStock": false
