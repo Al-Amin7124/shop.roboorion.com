@@ -1,5 +1,28 @@
 [
   {
+  "id": "RBO-1491",
+  "title": "Daly 4S 20A LiFePO4 BMS – Original 12V Battery Management System",
+  "url": "products/1491-daly-4s-20a-lifepo4-bms-original-12v-battery-management-system-robo-orion-bangladesh.html",
+  "image": "img/product/1491-daly-4s-20a-lifepo4-bms-original-12v-battery-management-system-robo-orion-bangladesh.jpg",
+  "alt": "Daly 4S 20A LiFePO4 BMS – Original 12V Battery Management System",
+  "categories": [
+    "power-supply",
+    "pcb-boards",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 300",
+  "rating": 5,
+  "reviews": 16,
+  "brand": "Daly",
+  "price": "BDT 950",
+  "original_price": "BDT 1250",
+  "in_stock": true,
+  "weight": 0.08,
+  "stock": 0,
+  "sold": 0,
+  "limitedStock": false
+},
+  {
     "id": "RBO-1490",
     "title": "Koocu V504 60W Soldering Iron – High Quality Repair Tool",
     "url": "products/1490-koocu-v504-60w-soldering-iron-high-quality-repair-tool-robo-orion-bangladesh.html",
