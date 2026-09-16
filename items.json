@@ -1983,7 +1983,7 @@
     "original_price": "BDT 10",
     "in_stock": true,
     "weight": 2,
-    "stock": 4,
+    "stock": 3,
     "sold": 2,
     "limitedStock": false
   },
@@ -4101,7 +4101,7 @@
     "original_price": "BDT 385",
     "in_stock": true,
     "weight": 12,
-    "stock": 4,
+    "stock": 3,
     "sold": 1,
     "limitedStock": true
   },
@@ -4469,7 +4469,7 @@
     "original_price": "BDT 40",
     "in_stock": true,
     "weight": 2,
-    "stock": 23,
+    "stock": 20,
     "sold": 8,
     "limitedStock": false
   },
@@ -5461,7 +5461,7 @@
     "original_price": "BDT 680",
     "in_stock": true,
     "sales_count": 3,
-    "stock": 1,
+    "stock": 0,
     "sold": 5,
     "weight": 0,
     "limitedStock": false
@@ -5550,11 +5550,11 @@
       "soldering-tools",
       "diy-kits"
     ],
-    "discount": "Save BDT 230",
+    "discount": "Save BDT 255",
     "rating": 5,
     "reviews": 14,
     "brand": "Generic",
-    "price": "BDT 250",
+    "price": "BDT 225",
     "original_price": "BDT 480",
     "in_stock": true,
     "sold": 0,
@@ -5723,7 +5723,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 6,
-    "stock": 11,
+    "stock": 10,
     "sold": 14,
     "limitedStock": false
   },
@@ -5747,7 +5747,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 18,
-    "stock": 1,
+    "stock": 0,
     "sold": 7,
     "limitedStock": false
   },
@@ -5914,7 +5914,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 15,
-    "stock": 10,
+    "stock": 9,
     "sold": 33,
     "limitedStock": false
   },
@@ -5981,7 +5981,7 @@
     "original_price": "BDT 70",
     "in_stock": true,
     "sales_count": 1,
-    "stock": 7,
+    "stock": 6,
     "sold": 3,
     "weight": 0,
     "limitedStock": false
@@ -6231,7 +6231,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 5,
-    "stock": 11,
+    "stock": 10,
     "sold": 18,
     "limitedStock": false
   },
@@ -7156,7 +7156,7 @@
     "in_stock": true,
     "sales_count": 21,
     "weight": 2,
-    "stock": 16,
+    "stock": 14,
     "sold": 34,
     "limitedStock": false
   },
@@ -7239,7 +7239,7 @@
     "price": "BDT 3",
     "original_price": "BDT 5",
     "in_stock": true,
-    "stock": 90,
+    "stock": 85,
     "sold": 10,
     "weight": 0,
     "limitedStock": false
