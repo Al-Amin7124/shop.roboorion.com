@@ -16,9 +16,9 @@
     "brand": "Daly",
     "price": "BDT 950",
     "original_price": "BDT 1250",
-    "in_stock": false,
-    "weight": 0.08,
-    "stock": 0,
+    "in_stock": true,
+    "weight": 0,
+    "stock": 2,
     "sold": 0,
     "limitedStock": true
   },
@@ -128,7 +128,7 @@
     "original_price": "BDT 40",
     "in_stock": true,
     "weight": 0,
-    "stock": 20,
+    "stock": 18,
     "sold": 0,
     "limitedStock": false
   },
@@ -1105,7 +1105,7 @@
     "original_price": "BDT 450",
     "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": -2,
     "sold": 0,
     "limitedStock": false
   },
@@ -4171,7 +4171,7 @@
     "original_price": "BDT 750",
     "in_stock": true,
     "weight": 180,
-    "stock": 2,
+    "stock": 1,
     "sales_count": 1,
     "sold": 3,
     "limitedStock": true
@@ -4843,7 +4843,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 7,
-    "stock": 8,
+    "stock": 7,
     "sold": 1,
     "limitedStock": false
   },
@@ -5050,7 +5050,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 20,
-    "stock": 2,
+    "stock": 1,
     "sold": 7,
     "limitedStock": false
   },
@@ -5393,7 +5393,7 @@
     "original_price": "BDT 480",
     "in_stock": true,
     "weight": 108,
-    "stock": 2,
+    "stock": 7,
     "sold": 2,
     "limitedStock": false
   },
@@ -5698,7 +5698,7 @@
     "in_stock": true,
     "sales_count": 3,
     "weight": 15,
-    "stock": 7,
+    "stock": 6,
     "sold": 4,
     "limitedStock": false
   },
