@@ -1,5 +1,51 @@
 [
   {
+    "id": "RBO-1494",
+    "title": "24V 1.5A Power Supply Board – AC to DC Adapter Circuit",
+    "url": "products/1494-24v-1.5a-power-supply-board-ac-to-dc-adapter-circuit-robo-orion-bangladesh.html",
+    "image": "img/product/1494-24v-1.5a-power-supply-board-ac-to-dc-adapter-circuit-robo-orion-bangladesh.jpg",
+    "alt": "24V 1.5A Power Supply Board – AC to DC Adapter Circuit",
+    "categories": [
+      "power-supply",
+      "pcb-boards",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 135",
+    "rating": 5,
+    "reviews": 16,
+    "brand": "Generic",
+    "price": "BDT 285",
+    "original_price": "BDT 420",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 2,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
+    "id": "RBO-1493",
+    "title": "15V 2.5A Power Supply Board – AC to DC Adapter Circuit",
+    "url": "products/1493-15v-2.5a-power-supply-board-ac-to-dc-adapter-circuit-robo-orion-bangladesh.html",
+    "image": "img/product/1493-15v-2.5a-power-supply-board-ac-to-dc-adapter-circuit-robo-orion-bangladesh.jpg",
+    "alt": "15V 2.5A Power Supply Board – AC to DC Adapter Circuit",
+    "categories": [
+      "power-supply",
+      "pcb-boards",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 135",
+    "rating": 5,
+    "reviews": 19,
+    "brand": "Generic",
+    "price": "BDT 285",
+    "original_price": "BDT 420",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 7,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1492",
     "title": "9V 3A Power Supply Board – AC to DC Switching Adapter Module",
     "url": "products/1492-9v-3a-power-supply-board-ac-to-dc-switching-adapter-module-robo-orion-bangladesh.html",
@@ -17,8 +63,8 @@
     "price": "BDT 285",
     "original_price": "BDT 420",
     "in_stock": true,
-    "weight": 0.05,
-    "stock": 0,
+    "weight": 0,
+    "stock": 2,
     "sold": 0,
     "limitedStock": false
   },
