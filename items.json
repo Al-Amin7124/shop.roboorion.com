@@ -1,5 +1,28 @@
 [
   {
+    "id": "RBO-1492",
+    "title": "9V 3A Power Supply Board – AC to DC Switching Adapter Module",
+    "url": "products/1492-9v-3a-power-supply-board-ac-to-dc-switching-adapter-module-robo-orion-bangladesh.html",
+    "image": "img/product/1492-9v-3a-power-supply-board-ac-to-dc-switching-adapter-module-robo-orion-bangladesh.jpg",
+    "alt": "9V 3A Power Supply Board – AC to DC Switching Adapter Module",
+    "categories": [
+      "power-supply",
+      "pcb-boards",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 135",
+    "rating": 5,
+    "reviews": 13,
+    "brand": "Generic",
+    "price": "BDT 285",
+    "original_price": "BDT 420",
+    "in_stock": true,
+    "weight": 0.05,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1491",
     "title": "Daly 4S 20A LiFePO4 BMS – Original 12V Battery Management System",
     "url": "products/1491-daly-4s-20a-lifepo4-bms-original-12v-battery-management-system-robo-orion-bangladesh.html",
