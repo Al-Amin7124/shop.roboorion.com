@@ -1,5 +1,28 @@
 [
   {
+    "id": "RBO-1495",
+    "title": "28 AWG 3 Core Wire (1 Feet) – High Quality Thin Cable",
+    "url": "products/1495-28-awg-3-core-wire-1-feet-high-quality-thin-cable-robo-orion-bangladesh.html",
+    "image": "img/product/1495-28-awg-3-core-wire-1-feet-high-quality-thin-cable-robo-orion-bangladesh.jpg",
+    "alt": "28 AWG 3 Core Wire (1 Feet) – High Quality Thin Cable",
+    "categories": [
+      "components",
+      "cables-wires",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 10",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 25",
+    "original_price": "BDT 35",
+    "in_stock": true,
+    "weight": 10,
+    "stock": 65,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1494",
     "title": "24V 1.5A Power Supply Board – AC to DC Adapter Circuit",
     "url": "products/1494-24v-1.5a-power-supply-board-ac-to-dc-adapter-circuit-robo-orion-bangladesh.html",
@@ -649,7 +672,7 @@
     "in_stock": true,
     "weight": 47,
     "stock": 12,
-    "sold": 53,
+    "sold": 55,
     "limitedStock": true
   },
   {
@@ -1632,7 +1655,7 @@
     "in_stock": true,
     "weight": 155,
     "stock": 2,
-    "sold": 2,
+    "sold": 3,
     "limitedStock": true
   },
   {
@@ -2099,7 +2122,7 @@
     "in_stock": true,
     "weight": 0,
     "stock": 1,
-    "sold": 1,
+    "sold": 2,
     "limitedStock": false
   },
   {
@@ -3113,7 +3136,7 @@
     "in_stock": false,
     "weight": 2,
     "stock": 2,
-    "sold": 7,
+    "sold": 8,
     "limitedStock": false
   },
   {
@@ -3157,7 +3180,7 @@
     "original_price": "BDT 12",
     "in_stock": true,
     "stock": 6,
-    "sold": 20,
+    "sold": 25,
     "sales_count": 15,
     "weight": 1,
     "limitedStock": false
@@ -3507,7 +3530,7 @@
     "price": "BDT 35",
     "original_price": "BDT 60",
     "in_stock": true,
-    "sold": 9,
+    "sold": 10,
     "weight": 0,
     "stock": -5,
     "limitedStock": false
@@ -3581,7 +3604,7 @@
     "in_stock": true,
     "weight": 2,
     "stock": 5,
-    "sold": 4,
+    "sold": 5,
     "limitedStock": false
   },
   {
@@ -4078,7 +4101,7 @@
     "original_price": "BDT 50",
     "in_stock": true,
     "stock": -5,
-    "sold": 6,
+    "sold": 7,
     "weight": 0,
     "limitedStock": false
   },
@@ -4238,9 +4261,9 @@
     "brand": "RC Product BD",
     "price": "BDT 670",
     "original_price": "BDT 750",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 180,
-    "stock": 2,
+    "stock": 0,
     "sales_count": 1,
     "sold": 3,
     "limitedStock": true
@@ -4332,7 +4355,7 @@
     "in_stock": true,
     "weight": 20,
     "stock": 4,
-    "sold": 1,
+    "sold": 2,
     "limitedStock": false
   },
   {
@@ -4628,8 +4651,8 @@
     "original_price": "BDT 580",
     "in_stock": true,
     "weight": 300,
-    "stock": 3,
-    "sold": 1,
+    "stock": 4,
+    "sold": 2,
     "limitedStock": false
   },
   {
@@ -4675,8 +4698,8 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 1,
-    "stock": 8,
-    "sold": 33,
+    "stock": 10,
+    "sold": 43,
     "sales_count": 3,
     "limitedStock": true
   },
@@ -4889,7 +4912,7 @@
     "in_stock": true,
     "weight": 5,
     "stock": 3,
-    "sold": 4,
+    "sold": 7,
     "limitedStock": false
   },
   {
@@ -5742,7 +5765,7 @@
     "price": "BDT 120",
     "original_price": "BDT 200",
     "in_stock": true,
-    "sold": 1,
+    "sold": 3,
     "weight": 0,
     "stock": 0,
     "limitedStock": false
@@ -5767,7 +5790,7 @@
     "in_stock": true,
     "sales_count": 3,
     "weight": 15,
-    "stock": 6,
+    "stock": 7,
     "sold": 4,
     "limitedStock": false
   },
@@ -5913,7 +5936,7 @@
     "in_stock": true,
     "weight": 5,
     "stock": 7,
-    "sold": 8,
+    "sold": 10,
     "limitedStock": false
   },
   {
@@ -5958,8 +5981,8 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 10,
-    "stock": 8,
-    "sold": 22,
+    "stock": 9,
+    "sold": 23,
     "limitedStock": false
   },
   {
@@ -5983,7 +6006,7 @@
     "sales_count": 1,
     "weight": 20,
     "stock": 10,
-    "sold": 7,
+    "sold": 8,
     "limitedStock": false
   },
   {
@@ -6007,7 +6030,7 @@
     "sales_count": 4,
     "weight": 15,
     "stock": 9,
-    "sold": 33,
+    "sold": 34,
     "limitedStock": false
   },
   {
@@ -6278,9 +6301,9 @@
     "original_price": "BDT 55",
     "in_stock": true,
     "sales_count": 3,
-    "sold": 16,
+    "sold": 18,
     "weight": 0,
-    "stock": 15,
+    "stock": 20,
     "limitedStock": false
   },
   {
@@ -6324,7 +6347,7 @@
     "sales_count": 4,
     "weight": 5,
     "stock": 10,
-    "sold": 18,
+    "sold": 22,
     "limitedStock": false
   },
   {
@@ -6485,7 +6508,7 @@
     "sales_count": 6,
     "weight": 1.5,
     "stock": 32,
-    "sold": 12,
+    "sold": 14,
     "limitedStock": false
   },
   {
@@ -6646,7 +6669,7 @@
     "sales_count": 6,
     "weight": 50,
     "stock": 2,
-    "sold": 9,
+    "sold": 10,
     "limitedStock": false
   },
   {
@@ -6987,7 +7010,7 @@
     "sales_count": 4,
     "weight": 2,
     "stock": 120,
-    "sold": 26,
+    "sold": 27,
     "limitedStock": false
   },
   {
@@ -7137,7 +7160,7 @@
     "price": "BDT 70",
     "original_price": "BDT 100",
     "in_stock": true,
-    "sold": 6,
+    "sold": 10,
     "weight": 0,
     "stock": 6,
     "limitedStock": false
@@ -7206,7 +7229,7 @@
     "sales_count": 4,
     "weight": 160,
     "stock": 2,
-    "sold": 9,
+    "sold": 11,
     "limitedStock": false
   },
   {
@@ -7269,7 +7292,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "stock": 10,
-    "sold": 0,
+    "sold": 1,
     "weight": 0,
     "limitedStock": false
   },
@@ -8404,8 +8427,8 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 3,
-    "stock": 38,
-    "sold": 38,
+    "stock": 70,
+    "sold": 50,
     "limitedStock": false
   },
   {
@@ -8721,7 +8744,7 @@
     "in_stock": true,
     "sales_count": 5,
     "stock": 9,
-    "sold": 15,
+    "sold": 16,
     "weight": 0,
     "limitedStock": false
   },
@@ -8831,7 +8854,7 @@
     "price": "BDT 1.5",
     "original_price": "BDT 2",
     "in_stock": true,
-    "sold": 34,
+    "sold": 36,
     "weight": 1,
     "stock": 108,
     "limitedStock": false
@@ -8853,7 +8876,7 @@
     "price": "BDT 1.5",
     "original_price": "BDT 2",
     "in_stock": true,
-    "sold": 36,
+    "sold": 38,
     "weight": 1,
     "stock": 109,
     "limitedStock": false
@@ -8959,7 +8982,7 @@
     "price": "BDT 1.5",
     "original_price": "BDT 4",
     "in_stock": true,
-    "sold": 32,
+    "sold": 40,
     "weight": 0,
     "stock": 60,
     "limitedStock": false
@@ -9066,7 +9089,7 @@
     "price": "BDT 3",
     "original_price": "BDT 8",
     "in_stock": false,
-    "sold": 2,
+    "sold": 6,
     "weight": 0,
     "stock": 46,
     "limitedStock": false
@@ -9088,7 +9111,7 @@
     "price": "BDT 5",
     "original_price": "BDT 10",
     "in_stock": true,
-    "sold": 8,
+    "sold": 10,
     "weight": 0,
     "stock": 98,
     "limitedStock": false
