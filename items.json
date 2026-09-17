@@ -1197,7 +1197,7 @@
     "original_price": "BDT 450",
     "in_stock": true,
     "weight": 0,
-    "stock": -2,
+    "stock": 3,
     "sold": 0,
     "limitedStock": false
   },
