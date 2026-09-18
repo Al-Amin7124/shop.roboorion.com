@@ -671,7 +671,7 @@
     "original_price": "BDT 280",
     "in_stock": true,
     "weight": 47,
-    "stock": 12,
+    "stock": 6,
     "sold": 55,
     "limitedStock": true
   },
@@ -3627,7 +3627,7 @@
     "in_stock": true,
     "weight": 2,
     "stock": 6,
-    "sold": 3,
+    "sold": 4,
     "sales_count": 2,
     "limitedStock": true
   },
@@ -4354,7 +4354,7 @@
     "original_price": "BDT 180",
     "in_stock": true,
     "weight": 20,
-    "stock": 4,
+    "stock": 3,
     "sold": 2,
     "limitedStock": false
   },
@@ -4469,7 +4469,7 @@
     "price": "BDT 250",
     "original_price": "BDT 380",
     "in_stock": true,
-    "sold": 1,
+    "sold": 4,
     "weight": 70,
     "stock": 6,
     "limitedStock": false
@@ -5485,7 +5485,7 @@
     "original_price": "BDT 480",
     "in_stock": true,
     "weight": 108,
-    "stock": 7,
+    "stock": 6,
     "sold": 2,
     "limitedStock": false
   },
@@ -5745,7 +5745,7 @@
     "in_stock": true,
     "weight": 5,
     "stock": 2,
-    "sold": 0,
+    "sold": 1,
     "limitedStock": false
   },
   {
@@ -5790,7 +5790,7 @@
     "in_stock": true,
     "sales_count": 3,
     "weight": 15,
-    "stock": 7,
+    "stock": 6,
     "sold": 5,
     "limitedStock": false
   },
@@ -6303,7 +6303,7 @@
     "sales_count": 3,
     "sold": 18,
     "weight": 0,
-    "stock": 20,
+    "stock": 18,
     "limitedStock": false
   },
   {
@@ -6415,7 +6415,7 @@
     "original_price": "BDT 90",
     "in_stock": true,
     "weight": 5,
-    "stock": 8,
+    "stock": 7,
     "sold": 4,
     "limitedStock": false
   },
@@ -6550,7 +6550,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "sales_count": 2,
-    "stock": 2,
+    "stock": 1,
     "sold": 5,
     "weight": 0,
     "limitedStock": false
@@ -6809,7 +6809,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 37,
-    "stock": 1,
+    "stock": 0,
     "sold": 14,
     "limitedStock": false
   },
@@ -8242,7 +8242,7 @@
     "original_price": "BDT 8",
     "in_stock": true,
     "stock": 19,
-    "sold": 21,
+    "sold": 22,
     "weight": 0,
     "limitedStock": false
   },
