@@ -20,7 +20,7 @@
     "weight": 10,
     "stock": 65,
     "sold": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1494",
@@ -221,7 +221,7 @@
     "in_stock": true,
     "weight": 0,
     "stock": 18,
-    "sold": 0,
+    "sold": 2,
     "limitedStock": false
   },
   {
@@ -1198,7 +1198,7 @@
     "in_stock": true,
     "weight": 0,
     "stock": 3,
-    "sold": 0,
+    "sold": 2,
     "limitedStock": false
   },
   {
@@ -1743,7 +1743,7 @@
     "in_stock": false,
     "weight": 1,
     "stock": 4,
-    "sold": 34,
+    "sold": 40,
     "limitedStock": false
   },
   {
@@ -2099,7 +2099,7 @@
     "in_stock": true,
     "weight": 2,
     "stock": 3,
-    "sold": 2,
+    "sold": 3,
     "limitedStock": false
   },
   {
@@ -4217,7 +4217,7 @@
     "in_stock": true,
     "weight": 12,
     "stock": 3,
-    "sold": 1,
+    "sold": 2,
     "limitedStock": true
   },
   {
@@ -4265,7 +4265,7 @@
     "weight": 180,
     "stock": 0,
     "sales_count": 1,
-    "sold": 3,
+    "sold": 4,
     "limitedStock": true
   },
   {
@@ -4403,7 +4403,7 @@
     "sales_count": 9,
     "weight": 1,
     "stock": 11,
-    "sold": 32,
+    "sold": 36,
     "limitedStock": true
   },
   {
@@ -4585,7 +4585,7 @@
     "in_stock": true,
     "weight": 2,
     "stock": 20,
-    "sold": 8,
+    "sold": 11,
     "limitedStock": false
   },
   {
@@ -4936,7 +4936,7 @@
     "sales_count": 1,
     "weight": 7,
     "stock": 7,
-    "sold": 1,
+    "sold": 2,
     "limitedStock": false
   },
   {
@@ -5143,7 +5143,7 @@
     "sales_count": 6,
     "weight": 20,
     "stock": 1,
-    "sold": 7,
+    "sold": 8,
     "limitedStock": false
   },
   {
@@ -5726,7 +5726,7 @@
   },
   {
     "id": "RBO-1247",
-    "title": "4S 12A 14.8V LiFePO4 Battery BMS Protection Board (HW-846)",
+    "title": "4S 12A 14.8V Li-ion Battery BMS Protection Board (HW-846)",
     "url": "products/1247-4s-12a-14.8v-lifepo4-battery-bms-hw-846-robo-orion-bangladesh.html",
     "image": "img/product/1247-4s-12a-14.8v-lifepo4-battery-bms-hw-846-robo-orion-bangladesh.jpg",
     "alt": "4S 12A 14.8V LiFePO4 Battery BMS Protection Board (HW-846)",
@@ -5791,7 +5791,7 @@
     "sales_count": 3,
     "weight": 15,
     "stock": 7,
-    "sold": 4,
+    "sold": 5,
     "limitedStock": false
   },
   {
@@ -5839,7 +5839,7 @@
     "sales_count": 6,
     "weight": 6,
     "stock": 10,
-    "sold": 14,
+    "sold": 15,
     "limitedStock": false
   },
   {
@@ -5863,7 +5863,7 @@
     "sales_count": 1,
     "weight": 18,
     "stock": 0,
-    "sold": 7,
+    "sold": 8,
     "limitedStock": false
   },
   {
@@ -6029,8 +6029,8 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 15,
-    "stock": 9,
-    "sold": 34,
+    "stock": 30,
+    "sold": 35,
     "limitedStock": false
   },
   {
@@ -6097,7 +6097,7 @@
     "in_stock": true,
     "sales_count": 1,
     "stock": 6,
-    "sold": 3,
+    "sold": 4,
     "weight": 0,
     "limitedStock": false
   },
@@ -6347,7 +6347,7 @@
     "sales_count": 4,
     "weight": 5,
     "stock": 10,
-    "sold": 22,
+    "sold": 23,
     "limitedStock": false
   },
   {
@@ -7272,7 +7272,7 @@
     "sales_count": 21,
     "weight": 2,
     "stock": 14,
-    "sold": 34,
+    "sold": 36,
     "limitedStock": false
   },
   {
@@ -7355,7 +7355,7 @@
     "original_price": "BDT 5",
     "in_stock": true,
     "stock": 85,
-    "sold": 10,
+    "sold": 15,
     "weight": 0,
     "limitedStock": false
   },
