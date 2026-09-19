@@ -190,15 +190,15 @@
       "components",
       "diy-kits"
     ],
-    "discount": "Save BDT 60",
+    "discount": "Save BDT 50",
     "rating": 5,
     "reviews": 17,
     "brand": "Generic",
-    "price": "BDT 60",
+    "price": "BDT 70",
     "original_price": "BDT 120",
     "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": 2,
     "sold": 0,
     "limitedStock": false
   },
@@ -469,7 +469,7 @@
     "in_stock": true,
     "weight": 25,
     "stock": 1,
-    "sold": 0,
+    "sold": 1,
     "limitedStock": true
   },
   {
@@ -672,7 +672,7 @@
     "in_stock": false,
     "weight": 47,
     "stock": 0,
-    "sold": 80,
+    "sold": 88,
     "limitedStock": true
   },
   {
@@ -4148,7 +4148,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 135,
-    "stock": 4,
+    "stock": 3,
     "sold": 1,
     "limitedStock": false
   },
@@ -4585,7 +4585,7 @@
     "in_stock": true,
     "weight": 2,
     "stock": 20,
-    "sold": 11,
+    "sold": 13,
     "limitedStock": false
   },
   {
@@ -4935,7 +4935,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 7,
-    "stock": 7,
+    "stock": 6,
     "sold": 2,
     "limitedStock": false
   },
@@ -5210,7 +5210,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 2,
-    "stock": 50,
+    "stock": 49,
     "sold": 0,
     "limitedStock": false
   },
@@ -5813,7 +5813,7 @@
     "original_price": "BDT 160",
     "in_stock": true,
     "weight": 5,
-    "stock": 3,
+    "stock": 4,
     "sold": 0,
     "limitedStock": false
   },
@@ -5981,7 +5981,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 10,
-    "stock": 9,
+    "stock": 8,
     "sold": 23,
     "limitedStock": false
   },
@@ -6303,7 +6303,7 @@
     "sales_count": 3,
     "sold": 18,
     "weight": 0,
-    "stock": 16,
+    "stock": 14,
     "limitedStock": false
   },
   {
@@ -6415,7 +6415,7 @@
     "original_price": "BDT 90",
     "in_stock": true,
     "weight": 5,
-    "stock": 7,
+    "stock": 6,
     "sold": 4,
     "limitedStock": false
   },
@@ -6550,7 +6550,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "sales_count": 2,
-    "stock": 0,
+    "stock": -1,
     "sold": 5,
     "weight": 0,
     "limitedStock": false
@@ -7203,7 +7203,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "sales_count": 1,
-    "stock": 10,
+    "stock": 9,
     "sold": 5,
     "weight": 0,
     "limitedStock": false
@@ -7647,7 +7647,7 @@
     "sales_count": 1,
     "weight": 30,
     "sold": 1,
-    "stock": 2,
+    "stock": 1,
     "limitedStock": false
   },
   {
@@ -8450,7 +8450,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 15,
-    "stock": 4,
+    "stock": 3,
     "sold": 7,
     "limitedStock": false
   },
@@ -8585,7 +8585,7 @@
     "in_stock": true,
     "sold": 1,
     "weight": 100,
-    "stock": 0,
+    "stock": -1,
     "limitedStock": false
   },
   {
@@ -8609,7 +8609,7 @@
     "sales_count": 1,
     "weight": 2,
     "sold": 1,
-    "stock": 0,
+    "stock": -1,
     "limitedStock": false
   },
   {
@@ -8743,7 +8743,7 @@
     "original_price": "BDT 220",
     "in_stock": true,
     "sales_count": 5,
-    "stock": 9,
+    "stock": 8,
     "sold": 16,
     "weight": 0,
     "limitedStock": false
