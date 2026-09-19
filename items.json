@@ -4911,7 +4911,7 @@
     "original_price": "BDT 190",
     "in_stock": true,
     "weight": 5,
-    "stock": 3,
+    "stock": 2,
     "sold": 7,
     "limitedStock": false
   },
@@ -5772,7 +5772,7 @@
   },
   {
     "id": "RBO-1245",
-    "title": "4S 100A LiFePO4 Battery BMS With Balanced Protection Board",
+    "title": "4S/5S/3S 100A LiFePO4 Battery BMS With Balanced Protection Board",
     "url": "products/1245-4s-100a-lifepo4-bms-with-balanced-protection-board-robo-orion-bangladesh.html",
     "image": "img/product/1245-4s-100a-lifepo4-bms-with-balanced-protection-board-robo-orion-bangladesh.jpg",
     "alt": "4S 100A 3.2V LiFePO4 BMS With Balanced Protection Board",
@@ -6809,7 +6809,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 37,
-    "stock": 0,
+    "stock": -1,
     "sold": 14,
     "limitedStock": false
   },
@@ -7530,7 +7530,7 @@
     "original_price": "BDT 920",
     "in_stock": true,
     "stock": -1,
-    "sold": 1,
+    "sold": 2,
     "weight": 0,
     "limitedStock": false
   },
@@ -7601,7 +7601,7 @@
     "in_stock": true,
     "sales_count": 7,
     "weight": 5,
-    "stock": 25,
+    "stock": 24,
     "sold": 16,
     "limitedStock": false
   },
@@ -8941,7 +8941,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": 0,
+    "stock": -2,
     "limitedStock": false
   },
   {
