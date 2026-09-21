@@ -18,7 +18,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 10,
-    "stock": 65,
+    "stock": 59,
     "sold": 0,
     "limitedStock": true
   },
@@ -64,7 +64,7 @@
     "original_price": "BDT 420",
     "in_stock": true,
     "weight": 0,
-    "stock": 7,
+    "stock": 6,
     "sold": 0,
     "limitedStock": false
   },
@@ -242,8 +242,8 @@
     "original_price": "BDT 180",
     "in_stock": true,
     "weight": 0,
-    "stock": 5,
-    "sold": 0,
+    "stock": 4,
+    "sold": 1,
     "limitedStock": false
   },
   {
@@ -669,9 +669,9 @@
     "brand": "Generic",
     "price": "BDT 155",
     "original_price": "BDT 280",
-    "in_stock": false,
+    "in_stock": true,
     "weight": 47,
-    "stock": 0,
+    "stock": 6,
     "sold": 88,
     "limitedStock": true
   },
@@ -1654,8 +1654,8 @@
     "original_price": "BDT 490",
     "in_stock": true,
     "weight": 155,
-    "stock": 2,
-    "sold": 3,
+    "stock": 1,
+    "sold": 4,
     "limitedStock": true
   },
   {
@@ -3205,7 +3205,7 @@
     "original_price": "BDT 1080",
     "in_stock": true,
     "sold": 0,
-    "weight": 0,
+    "weight": 170,
     "stock": 0,
     "limitedStock": false
   },
@@ -5010,7 +5010,7 @@
   },
   {
     "id": "RBO-1278",
-    "title": "32700 6000mAh 3.2V LiFePO4 Rechargeable Battery Cell",
+    "title": "32700 6000mAh 3.2V LiFePO4 Rechargeable Battery Cell 6A",
     "url": "products/1278-32700-6000mah-3-2v-lifepo4-battery-robo-orion-bangladesh.html",
     "image": "img/product/1278-32700-6000mah-3-2v-lifepo4-battery-robo-orion-bangladesh.jpg",
     "alt": "32700 6000mAh 3.2V LiFePO4 Rechargeable Battery Cell",
@@ -5018,13 +5018,13 @@
       "lithium-batteries",
       "diy-kits"
     ],
-    "discount": "Save BDT 60",
+    "discount": "Save BDT 30",
     "rating": 5,
     "reviews": 17,
     "brand": "Generic",
-    "price": "BDT 320",
+    "price": "BDT 350",
     "original_price": "BDT 380",
-    "in_stock": false,
+    "in_stock": true,
     "weight": 100,
     "sold": 0,
     "stock": 0,
@@ -5485,7 +5485,7 @@
     "original_price": "BDT 480",
     "in_stock": true,
     "weight": 108,
-    "stock": 5,
+    "stock": 6,
     "sold": 2,
     "limitedStock": false
   },
@@ -6096,8 +6096,8 @@
     "original_price": "BDT 70",
     "in_stock": true,
     "sales_count": 1,
-    "stock": 6,
-    "sold": 4,
+    "stock": 5,
+    "sold": 5,
     "weight": 0,
     "limitedStock": false
   },
@@ -6303,7 +6303,7 @@
     "sales_count": 3,
     "sold": 18,
     "weight": 0,
-    "stock": 14,
+    "stock": 16,
     "limitedStock": false
   },
   {
@@ -6415,7 +6415,7 @@
     "original_price": "BDT 90",
     "in_stock": true,
     "weight": 5,
-    "stock": 6,
+    "stock": 7,
     "sold": 4,
     "limitedStock": false
   },
@@ -6550,7 +6550,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "sales_count": 2,
-    "stock": -1,
+    "stock": 0,
     "sold": 5,
     "weight": 0,
     "limitedStock": false
@@ -6809,7 +6809,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 37,
-    "stock": -2,
+    "stock": -1,
     "sold": 14,
     "limitedStock": false
   },
@@ -7691,7 +7691,7 @@
     "original_price": "BDT 75",
     "in_stock": true,
     "weight": 4,
-    "stock": 38,
+    "stock": 32,
     "sold": 10,
     "limitedStock": false
   },
@@ -8442,11 +8442,11 @@
       "repair-tools",
       "diy-kits"
     ],
-    "discount": "Save BDT 23",
+    "discount": "Save BDT 20",
     "rating": 5,
     "reviews": 14,
     "brand": "Loson",
-    "price": "BDT 12",
+    "price": "BDT 15",
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 15,
