@@ -643,6 +643,38 @@
 
 </section>
 
+<!-- ═══════════════════════════
+     Battery Items
+═══════════════════════════ -->
+<section class="max-w-7xl mx-auto px-5 lg:px-12 py-12">
+
+  <!-- Section header -->
+  <div class="flex flex-wrap items-end justify-between gap-5 mb-14 reveal">
+    <div>
+      <h2 class="font-exo font-extrabold text-gray-900 text-4xl lg:text-5xl leading-tight">
+        Battery <span class="text-blue-500">Items</span>
+      </h2>
+    </div>
+    
+    <!-- View All (Desktop & Tablet) -->
+    <div class="hidden md:block">
+      <a href="product.html" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 hover:-translate-y-0.5 text-white px-8 py-3.5 rounded-lg text-sm font-semibold tracking-wide transition-all shadow-[0_0_24px_rgba(59,130,246,.3)]">
+        View All Products <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+  <!-- Product grid -->
+  <div id="battery-items-grid" class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-4"></div>
+
+  <!-- View All (Mobile Only) -->
+  <div class="text-center mt-14 reveal md:hidden">
+    <a href="product.html" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 hover:-translate-y-0.5 text-white px-8 py-3.5 rounded-lg text-sm font-semibold tracking-wide transition-all shadow-[0_0_24px_rgba(59,130,246,.3)]">
+      View All Products <i class="fa-solid fa-arrow-right"></i>
+    </a>
+  </div>
+
+</section>
+
 
 <!-- ═══════════════════════════
      PROMO BANNER
@@ -966,6 +998,13 @@
     containerId: 'led-items-grid',
     jsonPath: 'items.json',
     ids: ['RBO-1307', 'RBO-1301', 'RBO-1295', 'RBO-1294', 'RBO-1112', 'RBO-1137', 'RBO-1113', 'RBO-1207', 'RBO-1209', 'RBO-1210']
+  });
+
+  // Battery Items — same idea, just a different hand-picked list.
+  renderProductList({
+    containerId: 'battery-items-grid',
+    jsonPath: 'items.json',
+    ids: ['RBO-1469','RBO-1279','RBO-1278','RBO-1477','RBO-1414','RBO-1447','RBO-1445','RBO-1787','RBO-1134','RBO-1193']
   });
 </script>
 
