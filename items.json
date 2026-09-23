@@ -1,7 +1,7 @@
 [
   {
     "id": "RBO-1495",
-    "title": "28 AWG 3 Core Wire (1 Feet) – High Quality Thin Cable",
+    "title": "28 AWG 3 Core Wire (1 Feet) – High Quality Thin Cable (1.5 A)",
     "url": "products/1495-28-awg-3-core-wire-1-feet-high-quality-thin-cable-robo-orion-bangladesh.html",
     "image": "img/product/1495-28-awg-3-core-wire-1-feet-high-quality-thin-cable-robo-orion-bangladesh.jpg",
     "alt": "28 AWG 3 Core Wire (1 Feet) – High Quality Thin Cable",
@@ -18,7 +18,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 10,
-    "stock": 59,
+    "stock": 57,
     "sold": 0,
     "limitedStock": true
   },
@@ -154,7 +154,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": -3,
     "sold": 0,
     "limitedStock": false
   },
@@ -3532,7 +3532,7 @@
     "in_stock": true,
     "sold": 10,
     "weight": 0,
-    "stock": -5,
+    "stock": -7,
     "limitedStock": false
   },
   {
@@ -5165,7 +5165,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "weight": 8,
-    "stock": 10,
+    "stock": 0,
     "sold": 4,
     "limitedStock": false
   },
@@ -5462,7 +5462,7 @@
     "original_price": "BDT 430",
     "in_stock": true,
     "weight": 95,
-    "stock": 1,
+    "stock": 0,
     "sold": 2,
     "limitedStock": false
   },
@@ -6005,7 +6005,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 20,
-    "stock": 10,
+    "stock": 8,
     "sold": 18,
     "limitedStock": false
   },
@@ -6188,7 +6188,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 100,
-    "stock": 3,
+    "stock": 2,
     "sold": 4,
     "limitedStock": false
   },
@@ -6481,10 +6481,10 @@
     "brand": "RC Product BD",
     "price": "BDT 255",
     "original_price": "BDT 380",
-    "in_stock": true,
+    "in_stock": false,
     "sales_count": 1,
     "weight": 15,
-    "stock": 2,
+    "stock": 0,
     "sold": 5,
     "limitedStock": true
   },
@@ -7009,7 +7009,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 2,
-    "stock": 114,
+    "stock": 111,
     "sold": 77,
     "limitedStock": false
   },
