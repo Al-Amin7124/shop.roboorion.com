@@ -1,5 +1,27 @@
 [
   {
+    "id": "RBO-1497",
+    "title": "Portable Rechargeable Mini Drill Machine – 27-Piece Rotary Tool Kit - Electric Grinder",
+    "url": "products/1497-portable-rechargeable-mini-drill-machine-27-piece-rotary-tool-kit-robo-orion-bangladesh.html",
+    "image": "img/product/1497-portable-rechargeable-mini-drill-machine-27-piece-rotary-tool-kit-robo-orion-bangladesh.jpg",
+    "alt": "Portable Rechargeable Mini Drill Machine – 27-Piece Rotary Tool Kit",
+    "categories": [
+      "repair-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 800",
+    "rating": 5,
+    "reviews": 7,
+    "brand": "Generic",
+    "price": "BDT 1450",
+    "original_price": "BDT 2250",
+    "in_stock": true,
+    "weight": 0.3,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1496",
     "title": "115mm PVC Heat Shrink Tube (Blue) – Battery Pack Wrap (1 Feet)",
     "url": "products/1496-115mm-pvc-heat-shrink-tube-blue-battery-pack-wrap-robo-orion-bangladesh.html",
@@ -16,7 +38,7 @@
     "price": "BDT 25",
     "original_price": "BDT 45",
     "in_stock": true,
-    "weight": 0.02,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": false
@@ -488,9 +510,9 @@
     "brand": "Generic",
     "price": "BDT 170",
     "original_price": "BDT 280",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 25,
-    "stock": 1,
+    "stock": 0,
     "sold": 1,
     "limitedStock": true
   },
@@ -1402,7 +1424,7 @@
     "original_price": "BDT 290",
     "in_stock": true,
     "weight": 47,
-    "stock": 6,
+    "stock": -6,
     "sold": 4,
     "limitedStock": false
   },
@@ -3201,7 +3223,7 @@
     "price": "BDT 7",
     "original_price": "BDT 12",
     "in_stock": true,
-    "stock": 1,
+    "stock": -24,
     "sold": 30,
     "sales_count": 15,
     "weight": 1,
@@ -6118,7 +6140,7 @@
     "original_price": "BDT 70",
     "in_stock": true,
     "sales_count": 1,
-    "stock": 5,
+    "stock": -7,
     "sold": 5,
     "weight": 0,
     "limitedStock": false
@@ -7250,7 +7272,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 160,
-    "stock": 2,
+    "stock": -10,
     "sold": 11,
     "limitedStock": false
   },
@@ -8402,7 +8424,7 @@
     "in_stock": true,
     "sales_count": 18,
     "weight": 2,
-    "stock": 27,
+    "stock": -23,
     "sold": 21,
     "limitedStock": false
   },
@@ -8449,7 +8471,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 3,
-    "stock": 66,
+    "stock": 16,
     "sold": 51,
     "limitedStock": false
   },
