@@ -1,5 +1,49 @@
 [
   {
+    "id": "RBO-1499",
+    "title": "Metal Soldering Iron Stand Holder – High Temperature Resistant",
+    "url": "products/1499-metal-soldering-iron-stand-holder-high-temperature-resistant-robo-orion-bangladesh.html",
+    "image": "img/product/1499-metal-soldering-iron-stand-holder-high-temperature-resistant-robo-orion-bangladesh.jpg",
+    "alt": "Metal Soldering Iron Stand Holder – High Temperature Resistant",
+    "categories": [
+      "repair-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 70",
+    "rating": 5,
+    "reviews": 14,
+    "brand": "Generic",
+    "price": "BDT 80",
+    "original_price": "BDT 150",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 2,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
+    "id": "RBO-1498",
+    "title": "NCR 18650 Battery 2600mAh 3.7V – Rechargeable Li-ion Cell",
+    "url": "products/1498-ncr-18650-battery-2600mah-3.7v-rechargeable-li-ion-cell-robo-orion-bangladesh.html",
+    "image": "img/product/1498-ncr-18650-battery-2600mah-3.7v-rechargeable-li-ion-cell-robo-orion-bangladesh.jpg",
+    "alt": "NCR 18650 Battery 2600mAh 3.7V – Rechargeable Li-ion Cell",
+    "categories": [
+      "components",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 80",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 210",
+    "original_price": "BDT 290",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1497",
     "title": "Portable Rechargeable Mini Drill Machine – 27-Piece Rotary Tool Kit - Electric Grinder",
     "url": "products/1497-portable-rechargeable-mini-drill-machine-27-piece-rotary-tool-kit-robo-orion-bangladesh.html",
@@ -308,7 +352,7 @@
     "original_price": "BDT 390",
     "in_stock": true,
     "weight": 0,
-    "stock": -2,
+    "stock": -1,
     "sold": 6,
     "limitedStock": false
   },
@@ -5071,7 +5115,7 @@
     "in_stock": true,
     "weight": 100,
     "sold": 8,
-    "stock": 50,
+    "stock": 100,
     "limitedStock": false
   },
   {
@@ -5506,7 +5550,7 @@
     "original_price": "BDT 430",
     "in_stock": false,
     "weight": 95,
-    "stock": -1,
+    "stock": 0,
     "sold": 3,
     "limitedStock": false
   },
@@ -6551,7 +6595,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 1.5,
-    "stock": 32,
+    "stock": 52,
     "sold": 14,
     "limitedStock": false
   },
@@ -6594,7 +6638,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "sales_count": 2,
-    "stock": 1,
+    "stock": 11,
     "sold": 6,
     "weight": 0,
     "limitedStock": false
@@ -7691,7 +7735,7 @@
     "sales_count": 1,
     "weight": 30,
     "sold": 2,
-    "stock": 1,
+    "stock": 4,
     "limitedStock": false
   },
   {
@@ -8629,7 +8673,7 @@
     "in_stock": true,
     "sold": 2,
     "weight": 100,
-    "stock": -1,
+    "stock": 1,
     "limitedStock": false
   },
   {
