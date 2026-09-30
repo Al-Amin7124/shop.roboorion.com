@@ -16,7 +16,7 @@
     "price": "BDT 50",
     "original_price": "BDT 120",
     "in_stock": false,
-    "weight": 0.03,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": true
@@ -104,8 +104,8 @@
     "price": "BDT 25",
     "original_price": "BDT 45",
     "in_stock": true,
-    "weight": 0,
-    "stock": 0,
+    "weight": 5,
+    "stock": 20,
     "sold": 0,
     "limitedStock": false
   },
