@@ -1166,9 +1166,9 @@
     "brand": "Generic",
     "price": "BDT 90",
     "original_price": "BDT 150",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 2,
-    "stock": 5,
+    "stock": 0,
     "sold": 0,
     "limitedStock": true
   },
@@ -3175,7 +3175,7 @@
     "original_price": "BDT 950",
     "in_stock": true,
     "weight": 0,
-    "stock": 1,
+    "stock": 0,
     "sold": 0,
     "limitedStock": false
   },
