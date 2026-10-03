@@ -1,5 +1,71 @@
 [
   {
+    "id": "RBO-1506",
+    "title": "M3 U-Type Bare Brass Fork Terminal (0.5-1.5mm²) – Wire Lug",
+    "url": "products/1506-m3-u-type-bare-brass-fork-terminal-0-5-1-5mm-wire-lug-robo-orion-bangladesh.html",
+    "image": "img/product/1506-m3-u-type-bare-brass-fork-terminal-0-5-1-5mm-wire-lug-robo-orion-bangladesh.jpg",
+    "alt": "M3 U-Type Bare Brass Fork Terminal (0.5-1.5mm²) – Wire Lug",
+    "categories": [
+      "components",
+      "cables-wires"
+    ],
+    "discount": "Save BDT 8",
+    "rating": 5,
+    "reviews": 15,
+    "brand": "Generic",
+    "price": "BDT 12",
+    "original_price": "BDT 20",
+    "in_stock": false,
+    "weight": 0.001,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
+    "id": "RBO-1505",
+    "title": "15 Compartment Plastic Box – Removable Partition Organizer",
+    "url": "products/1505-15-compartment-plastic-box-removable-partition-organizer-robo-orion-bangladesh.html",
+    "image": "img/product/1505-15-compartment-plastic-box-removable-partition-organizer-robo-orion-bangladesh.jpg",
+    "alt": "15 Compartment Plastic Box – Removable Partition Organizer",
+    "categories": [
+      "repair-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 60",
+    "rating": 5,
+    "reviews": 16,
+    "brand": "Generic",
+    "price": "BDT 70",
+    "original_price": "BDT 130",
+    "in_stock": false,
+    "weight": 0.06,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
+    "id": "RBO-1504",
+    "title": "Baku Soldering Paste – High Quality Flux for Electronics Repair",
+    "url": "products/1504-baku-soldering-paste-high-quality-flux-for-electronics-repair-robo-orion-bangladesh.html",
+    "image": "img/product/1504-baku-soldering-paste-high-quality-flux-for-electronics-repair-robo-orion-bangladesh.jpg",
+    "alt": "Baku Soldering Paste – High Quality Flux for Electronics Repair",
+    "categories": [
+      "repair-tools",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 30",
+    "rating": 5,
+    "reviews": 13,
+    "brand": "Baku",
+    "price": "BDT 35",
+    "original_price": "BDT 65",
+    "in_stock": true,
+    "weight": 0.02,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1500",
     "title": "10 Compartment Plastic Box – Removable Partition Organizer",
     "url": "products/1500-10-compartment-plastic-box-removable-partition-organizer-robo-orion-bangladesh.html",
@@ -1808,7 +1874,7 @@
     "original_price": "BDT 65",
     "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": 2,
     "sold": 0,
     "limitedStock": false
   },
@@ -3176,7 +3242,7 @@
     "in_stock": true,
     "weight": 0,
     "stock": 0,
-    "sold": 0,
+    "sold": 1,
     "limitedStock": false
   },
   {
@@ -3640,7 +3706,7 @@
     "price": "BDT 35",
     "original_price": "BDT 60",
     "in_stock": true,
-    "sold": 12,
+    "sold": 14,
     "weight": 0,
     "stock": -11,
     "limitedStock": false
@@ -4072,7 +4138,7 @@
     "sales_count": 1,
     "weight": 5,
     "stock": 4,
-    "sold": 3,
+    "sold": 6,
     "limitedStock": false
   },
   {
@@ -4762,7 +4828,7 @@
     "in_stock": true,
     "weight": 300,
     "stock": 1,
-    "sold": 2,
+    "sold": 3,
     "limitedStock": false
   },
   {
@@ -4809,7 +4875,7 @@
     "in_stock": false,
     "weight": 1,
     "stock": -6,
-    "sold": 43,
+    "sold": 44,
     "sales_count": 3,
     "limitedStock": true
   },
@@ -5022,7 +5088,7 @@
     "in_stock": true,
     "weight": 5,
     "stock": 1,
-    "sold": 8,
+    "sold": 9,
     "limitedStock": false
   },
   {
@@ -5115,7 +5181,7 @@
     "in_stock": true,
     "weight": 290,
     "stock": -8,
-    "sold": 16,
+    "sold": 28,
     "limitedStock": false
   },
   {
@@ -5687,7 +5753,7 @@
     "in_stock": true,
     "sales_count": 3,
     "stock": -25,
-    "sold": 23,
+    "sold": 25,
     "weight": 0,
     "limitedStock": false
   },
@@ -5901,7 +5967,7 @@
     "sales_count": 3,
     "weight": 15,
     "stock": 4,
-    "sold": 6,
+    "sold": 7,
     "limitedStock": false
   },
   {
@@ -6091,7 +6157,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 10,
-    "stock": 7,
+    "stock": 6,
     "sold": 25,
     "limitedStock": false
   },
@@ -6207,7 +6273,7 @@
     "in_stock": true,
     "sales_count": 1,
     "stock": 3,
-    "sold": 5,
+    "sold": 6,
     "weight": 0,
     "limitedStock": false
   },
@@ -6228,7 +6294,7 @@
     "price": "BDT 5",
     "original_price": "BDT 8",
     "in_stock": true,
-    "sold": 40,
+    "sold": 46,
     "weight": 1,
     "stock": -26,
     "limitedStock": false
@@ -6299,7 +6365,7 @@
     "sales_count": 1,
     "weight": 100,
     "stock": -2,
-    "sold": 5,
+    "sold": 6,
     "limitedStock": false
   },
   {
@@ -6389,7 +6455,7 @@
     "in_stock": true,
     "weight": 5,
     "stock": 10,
-    "sold": 4,
+    "sold": 6,
     "limitedStock": false
   },
   {
@@ -6413,7 +6479,7 @@
     "sales_count": 3,
     "sold": 22,
     "weight": 0,
-    "stock": 14,
+    "stock": 12,
     "limitedStock": false
   },
   {
@@ -6660,7 +6726,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "sales_count": 2,
-    "stock": 11,
+    "stock": 10,
     "sold": 6,
     "weight": 0,
     "limitedStock": false
@@ -6919,7 +6985,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 37,
-    "stock": -2,
+    "stock": -3,
     "sold": 15,
     "limitedStock": false
   },
@@ -7402,7 +7468,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "stock": 7,
-    "sold": 1,
+    "sold": 4,
     "weight": 0,
     "limitedStock": false
   },
@@ -7711,7 +7777,7 @@
     "in_stock": true,
     "sales_count": 7,
     "weight": 5,
-    "stock": 4,
+    "stock": 3,
     "sold": 17,
     "limitedStock": false
   },
@@ -7915,7 +7981,7 @@
     "in_stock": true,
     "weight": 3,
     "stock": 6,
-    "sold": 0,
+    "sold": 4,
     "limitedStock": false
   },
   {
@@ -8491,7 +8557,7 @@
     "sales_count": 18,
     "weight": 2,
     "stock": 23,
-    "sold": 21,
+    "sold": 25,
     "limitedStock": false
   },
   {
@@ -8537,8 +8603,8 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 3,
-    "stock": 10,
-    "sold": 54,
+    "stock": 9,
+    "sold": 58,
     "limitedStock": false
   },
   {
@@ -9071,7 +9137,7 @@
     "price": "BDT 10.5",
     "original_price": "BDT 25",
     "in_stock": true,
-    "sold": 2,
+    "sold": 6,
     "weight": 0,
     "stock": 16,
     "limitedStock": false
