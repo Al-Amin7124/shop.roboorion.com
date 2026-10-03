@@ -1,5 +1,27 @@
 [
   {
+    "id": "RBO-1509",
+    "title": "21700 Barley Paper Insulation Ring (64 Pcs) – Battery Terminal Gasket",
+    "url": "products/1509-21700-barley-paper-insulation-ring-64-pcs-battery-terminal-gasket-robo-orion-bangladesh.html",
+    "image": "img/product/1509-21700-barley-paper-insulation-ring-64-pcs-battery-terminal-gasket-robo-orion-bangladesh.jpg",
+    "alt": "21700 Barley Paper Insulation Ring (64 Pcs) – Battery Terminal Gasket",
+    "categories": [
+      "components",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 30",
+    "rating": 5,
+    "reviews": 8,
+    "brand": "Generic",
+    "price": "BDT 50",
+    "original_price": "BDT 80",
+    "in_stock": false,
+    "weight": 0.01,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1508",
     "title": "18650 Solid Barley Paper Insulation Pad (100 Pcs) – Battery Gasket",
     "url": "products/1508-18650-solid-barley-paper-insulation-pad-100-pcs-battery-gasket-robo-orion-bangladesh.html",
@@ -16,7 +38,7 @@
     "price": "BDT 60",
     "original_price": "BDT 80",
     "in_stock": false,
-    "weight": 0.01,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": true
@@ -38,7 +60,7 @@
     "price": "BDT 60",
     "original_price": "BDT 80",
     "in_stock": false,
-    "weight": 0.01,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": true
