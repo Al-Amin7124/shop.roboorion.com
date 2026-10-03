@@ -1,5 +1,49 @@
 [
   {
+    "id": "RBO-1508",
+    "title": "18650 Solid Barley Paper Insulation Pad (100 Pcs) – Battery Gasket",
+    "url": "products/1508-18650-solid-barley-paper-insulation-pad-100-pcs-battery-gasket-robo-orion-bangladesh.html",
+    "image": "img/product/1508-18650-solid-barley-paper-insulation-pad-100-pcs-battery-gasket-robo-orion-bangladesh.jpg",
+    "alt": "18650 Solid Barley Paper Insulation Pad (100 Pcs) – Battery Gasket",
+    "categories": [
+      "components",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 20",
+    "rating": 5,
+    "reviews": 10,
+    "brand": "Generic",
+    "price": "BDT 60",
+    "original_price": "BDT 80",
+    "in_stock": true,
+    "weight": 0.01,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
+    "id": "RBO-1507",
+    "title": "18650 Barley Paper Insulation Ring (100 Pcs) – Battery Terminal Gasket",
+    "url": "products/1507-18650-barley-paper-insulation-ring-100-pcs-battery-terminal-gasket-robo-orion-bangladesh.html",
+    "image": "img/product/1507-18650-barley-paper-insulation-ring-100-pcs-battery-terminal-gasket-robo-orion-bangladesh.jpg",
+    "alt": "18650 Barley Paper Insulation Ring (100 Pcs) – Battery Terminal Gasket",
+    "categories": [
+      "components",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 20",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 60",
+    "original_price": "BDT 80",
+    "in_stock": true,
+    "weight": 0.01,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1506",
     "title": "M3 U-Type Bare Brass Fork Terminal (0.5-1.5mm²) – Wire Lug",
     "url": "products/1506-m3-u-type-bare-brass-fork-terminal-0-5-1-5mm-wire-lug-robo-orion-bangladesh.html",
@@ -16,7 +60,7 @@
     "price": "BDT 12",
     "original_price": "BDT 20",
     "in_stock": false,
-    "weight": 0.001,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": false
@@ -38,7 +82,7 @@
     "price": "BDT 70",
     "original_price": "BDT 130",
     "in_stock": false,
-    "weight": 0.06,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": false
@@ -60,8 +104,8 @@
     "price": "BDT 35",
     "original_price": "BDT 65",
     "in_stock": true,
-    "weight": 0.02,
-    "stock": 0,
+    "weight": 0,
+    "stock": 5,
     "sold": 0,
     "limitedStock": false
   },
