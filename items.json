@@ -1,5 +1,27 @@
 [
   {
+    "id": "RBO-1510",
+    "title": "21700 Solid Barley Paper Insulation Pad (56 Pcs) – Battery Gasket",
+    "url": "products/1510-21700-solid-barley-paper-insulation-pad-56-pcs-battery-gasket-robo-orion-bangladesh.html",
+    "image": "img/product/1510-21700-solid-barley-paper-insulation-pad-56-pcs-battery-gasket-robo-orion-bangladesh.jpg",
+    "alt": "21700 Solid Barley Paper Insulation Pad (56 Pcs) – Battery Gasket",
+    "categories": [
+      "components",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 30",
+    "rating": 5,
+    "reviews": 9,
+    "brand": "Generic",
+    "price": "BDT 50",
+    "original_price": "BDT 80",
+    "in_stock": false,
+    "weight": 0.01,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1509",
     "title": "21700 Barley Paper Insulation Ring (64 Pcs) – Battery Terminal Gasket",
     "url": "products/1509-21700-barley-paper-insulation-ring-64-pcs-battery-terminal-gasket-robo-orion-bangladesh.html",
@@ -194,7 +216,7 @@
     "in_stock": true,
     "weight": 0,
     "stock": 11,
-    "sold": 0,
+    "sold": 1,
     "limitedStock": true
   },
   {
@@ -463,7 +485,7 @@
     "in_stock": true,
     "weight": 0,
     "stock": 14,
-    "sold": 2,
+    "sold": 6,
     "limitedStock": false
   },
   {
@@ -506,8 +528,8 @@
     "original_price": "BDT 390",
     "in_stock": true,
     "weight": 0,
-    "stock": -1,
-    "sold": 6,
+    "stock": 2,
+    "sold": 7,
     "limitedStock": false
   },
   {
@@ -595,9 +617,9 @@
     "brand": "Robo Orion",
     "price": "BDT 280",
     "original_price": "BDT 380",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 76,
-    "stock": 1,
+    "stock": 0,
     "sold": 0,
     "limitedStock": true
   },
@@ -708,9 +730,9 @@
     "brand": "Generic",
     "price": "BDT 170",
     "original_price": "BDT 280",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 25,
-    "stock": 1,
+    "stock": 0,
     "sold": 1,
     "limitedStock": true
   },
@@ -1755,9 +1777,9 @@
     "brand": "Generic",
     "price": "BDT 890",
     "original_price": "BDT 1250",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 150,
-    "stock": 1,
+    "stock": 0,
     "sold": 0,
     "limitedStock": true
   },
@@ -1963,7 +1985,7 @@
     "in_stock": true,
     "weight": 0,
     "stock": 12,
-    "sold": 7,
+    "sold": 8,
     "limitedStock": false
   },
   {
@@ -2007,7 +2029,7 @@
     "in_stock": true,
     "weight": 0,
     "stock": 19,
-    "sold": 7,
+    "sold": 9,
     "limitedStock": false
   },
   {
@@ -3056,7 +3078,7 @@
     "in_stock": true,
     "weight": 0,
     "stock": 0,
-    "sold": 3,
+    "sold": 4,
     "limitedStock": false
   },
   {
@@ -3726,7 +3748,7 @@
     "price": "BDT 25",
     "original_price": "BDT 35",
     "in_stock": true,
-    "sold": 52,
+    "sold": 53,
     "weight": 0,
     "stock": 11,
     "limitedStock": false
@@ -4459,7 +4481,7 @@
     "in_stock": false,
     "weight": 12,
     "stock": 0,
-    "sold": 2,
+    "sold": 3,
     "limitedStock": true
   },
   {
@@ -5961,8 +5983,8 @@
     "original_price": "BDT 25",
     "in_stock": true,
     "sales_count": 1,
-    "stock": -4,
-    "sold": 12,
+    "stock": 10,
+    "sold": 14,
     "weight": 0,
     "limitedStock": false
   },
@@ -6248,7 +6270,7 @@
     "sales_count": 1,
     "weight": 20,
     "stock": 5,
-    "sold": 22,
+    "sold": 23,
     "limitedStock": false
   },
   {
@@ -6431,7 +6453,7 @@
     "sales_count": 1,
     "weight": 100,
     "stock": -2,
-    "sold": 6,
+    "sold": 7,
     "limitedStock": false
   },
   {
@@ -6476,7 +6498,7 @@
     "in_stock": true,
     "sales_count": 10,
     "stock": 8,
-    "sold": 12,
+    "sold": 13,
     "weight": 0,
     "limitedStock": false
   },
@@ -7141,7 +7163,7 @@
     "in_stock": true,
     "sales_count": 1,
     "stock": 49,
-    "sold": 1,
+    "sold": 2,
     "weight": 0,
     "limitedStock": false
   },
@@ -7844,7 +7866,7 @@
     "sales_count": 7,
     "weight": 5,
     "stock": 3,
-    "sold": 17,
+    "sold": 18,
     "limitedStock": false
   },
   {
@@ -8556,7 +8578,7 @@
     "in_stock": true,
     "weight": 10,
     "stock": 6,
-    "sold": 6,
+    "sold": 7,
     "limitedStock": false
   },
   {
@@ -8670,7 +8692,7 @@
     "sales_count": 8,
     "weight": 3,
     "stock": 9,
-    "sold": 58,
+    "sold": 61,
     "limitedStock": false
   },
   {
@@ -8693,7 +8715,7 @@
     "in_stock": true,
     "weight": 15,
     "stock": 2,
-    "sold": 8,
+    "sold": 9,
     "limitedStock": false
   },
   {
@@ -9096,7 +9118,7 @@
     "price": "BDT 1.5",
     "original_price": "BDT 2",
     "in_stock": true,
-    "sold": 36,
+    "sold": 37,
     "weight": 1,
     "stock": 7,
     "limitedStock": false
@@ -9118,7 +9140,7 @@
     "price": "BDT 1.5",
     "original_price": "BDT 2",
     "in_stock": true,
-    "sold": 38,
+    "sold": 39,
     "weight": 1,
     "stock": 8,
     "limitedStock": false
