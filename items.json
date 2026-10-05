@@ -1,5 +1,27 @@
 [
   {
+    "id": "RBO-1513",
+    "title": "1S LiFePO4 BMS 3.2V (HXYP-1S-30T8) – Battery Protection Board",
+    "url": "products/1513-1s-lifepo4-bms-3.2v-hxyp-1s-30t8-battery-protection-board-robo-orion-bangladesh.html",
+    "image": "img/product/1513-1s-lifepo4-bms-3.2v-hxyp-1s-30t8-battery-protection-board-robo-orion-bangladesh.jpg",
+    "alt": "1S LiFePO4 BMS 3.2V (HXYP-1S-30T8) – Battery Protection Board",
+    "categories": [
+      "pcb-boards",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 35",
+    "rating": 5,
+    "reviews": 17,
+    "brand": "Generic",
+    "price": "BDT 85",
+    "original_price": "BDT 120",
+    "in_stock": false,
+    "weight": 0.01,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1512",
     "title": "32650 Solid Barley Paper Insulation Pad (30 Pcs) – Battery Gasket",
     "url": "products/1512-32650-solid-barley-paper-insulation-pad-30-pcs-battery-gasket-robo-orion-bangladesh.html",
@@ -16,7 +38,7 @@
     "price": "BDT 30",
     "original_price": "BDT 70",
     "in_stock": false,
-    "weight": 0.01,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": true
@@ -38,7 +60,7 @@
     "price": "BDT 30",
     "original_price": "BDT 70",
     "in_stock": false,
-    "weight": 0.01,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": true
