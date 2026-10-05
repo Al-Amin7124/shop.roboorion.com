@@ -16,7 +16,7 @@
     "price": "BDT 50",
     "original_price": "BDT 80",
     "in_stock": false,
-    "weight": 0.01,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": true
@@ -5633,11 +5633,11 @@
     "brand": "Peacefair",
     "price": "BDT 2200",
     "original_price": "BDT 3650",
-    "in_stock": true,
+    "in_stock": false,
     "sold": 0,
     "weight": 0,
     "stock": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1261",
