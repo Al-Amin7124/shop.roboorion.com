@@ -1,5 +1,27 @@
 [
   {
+    "id": "RBO-1516",
+    "title": "DC022B 5.5x2.5mm Metal DC Power Socket – Female Panel Mount Jack",
+    "url": "products/1516-dc022b-5.5x2.5mm-metal-dc-power-socket-female-panel-mount-jack-robo-orion-bangladesh.html",
+    "image": "img/product/1516-dc022b-5.5x2.5mm-metal-dc-power-socket-female-panel-mount-jack-robo-orion-bangladesh.jpg",
+    "alt": "DC022B 5.5x2.5mm Metal DC Power Socket – Female Panel Mount Jack",
+    "categories": [
+      "components",
+      "power-supply"
+    ],
+    "discount": "Save BDT 10",
+    "rating": 5,
+    "reviews": 17,
+    "brand": "Generic",
+    "price": "BDT 15",
+    "original_price": "BDT 25",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1515",
     "title": "XH2.54 2P Terminal Wire (20 AWG) – Single Head 100mm Cable",
     "url": "products/1515-xh2.54-2p-terminal-wire-20-awg-single-head-100mm-cable-robo-orion-bangladesh.html",
@@ -16,7 +38,7 @@
     "price": "BDT 18",
     "original_price": "BDT 35",
     "in_stock": true,
-    "weight": 0.02,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": false
@@ -4859,11 +4881,11 @@
       "lithium-batteries",
       "diy-kits"
     ],
-    "discount": "Save BDT 80",
+    "discount": "Save BDT 60",
     "rating": 5,
     "reviews": 16,
     "brand": "DTL Dongteng",
-    "price": "BDT 170",
+    "price": "BDT 190",
     "original_price": "BDT 250",
     "in_stock": false,
     "weight": 45,
