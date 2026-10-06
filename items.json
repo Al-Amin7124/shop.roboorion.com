@@ -1,5 +1,27 @@
 [
   {
+    "id": "RBO-1519",
+    "title": "10mm Glass Fiber Tape (50m) – Strong Battery Pack Filament Tape",
+    "url": "products/1519-10mm-glass-fiber-tape-50m-strong-battery-pack-filament-tape-robo-orion-bangladesh.html",
+    "image": "img/product/1519-10mm-glass-fiber-tape-50m-strong-battery-pack-filament-tape-robo-orion-bangladesh.jpg",
+    "alt": "10mm Glass Fiber Tape (50m) – Strong Battery Pack Filament Tape",
+    "categories": [
+      "diy-kits",
+      "repair-tools"
+    ],
+    "discount": "Save BDT 125",
+    "rating": 5,
+    "reviews": 16,
+    "brand": "Generic",
+    "price": "BDT 225",
+    "original_price": "BDT 350",
+    "in_stock": true,
+    "weight": 0.08,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1518",
     "title": "DC-099 5.5x2.5mm Metal Power Socket – Female Panel Mount Jack",
     "url": "products/1518-dc-099-5.5x2.5mm-metal-power-socket-female-panel-mount-jack-robo-orion-bangladesh.html",
@@ -16,7 +38,7 @@
     "price": "BDT 40",
     "original_price": "BDT 75",
     "in_stock": true,
-    "weight": 0.01,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": false
