@@ -1,5 +1,51 @@
 [
   {
+    "id": "RBO-1522",
+    "title": "SW3516 Fast Charging Module – Full Protocol QC4.0 PD3.0 Board",
+    "url": "products/1522-sw3516-fast-charging-module-full-protocol-qc4.0-pd3.0-board-robo-orion-bangladesh.html",
+    "image": "img/product/1522-sw3516-fast-charging-module-full-protocol-qc4.0-pd3.0-board-robo-orion-bangladesh.jpg",
+    "alt": "SW3516 Fast Charging Module – Full Protocol QC4.0 PD3.0 Board",
+    "categories": [
+      "power-supply",
+      "pcb-boards",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 135",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 255",
+    "original_price": "BDT 390",
+    "in_stock": true,
+    "weight": 0.05,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
+    "id": "RBO-1521",
+    "title": "SW3518 Fast Charging Module – Full Protocol QC4.0 PD3.0 Board",
+    "url": "products/1521-sw3518-fast-charging-module-full-protocol-qc4.0-pd3.0-board-robo-orion-bangladesh.html",
+    "image": "img/product/1521-sw3518-fast-charging-module-full-protocol-qc4.0-pd3.0-board-robo-orion-bangladesh.jpg",
+    "alt": "SW3518 Fast Charging Module – Full Protocol QC4.0 PD3.0 Board",
+    "categories": [
+      "power-supply",
+      "pcb-boards",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 175",
+    "rating": 5,
+    "reviews": 17,
+    "brand": "Generic",
+    "price": "BDT 320",
+    "original_price": "BDT 495",
+    "in_stock": false,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1520",
     "title": "20mm Glass Fiber Tape (50m) – Strong Battery Pack Filament Tape",
     "url": "products/1520-20mm-glass-fiber-tape-50m-strong-battery-pack-filament-tape-robo-orion-bangladesh.html",
@@ -16,7 +62,7 @@
     "price": "BDT 380",
     "original_price": "BDT 590",
     "in_stock": false,
-    "weight": 0.15,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": true
