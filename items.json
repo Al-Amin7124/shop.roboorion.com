@@ -1,5 +1,27 @@
 [
   {
+    "id": "RBO-1520",
+    "title": "20mm Glass Fiber Tape (50m) – Strong Battery Pack Filament Tape",
+    "url": "products/1520-20mm-glass-fiber-tape-50m-strong-battery-pack-filament-tape-robo-orion-bangladesh.html",
+    "image": "img/product/1520-20mm-glass-fiber-tape-50m-strong-battery-pack-filament-tape-robo-orion-bangladesh.jpg",
+    "alt": "20mm Glass Fiber Tape (50m) – Strong Battery Pack Filament Tape",
+    "categories": [
+      "diy-kits",
+      "repair-tools"
+    ],
+    "discount": "Save BDT 210",
+    "rating": 5,
+    "reviews": 18,
+    "brand": "Generic",
+    "price": "BDT 380",
+    "original_price": "BDT 590",
+    "in_stock": false,
+    "weight": 0.15,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1519",
     "title": "10mm Glass Fiber Tape (50m) – Strong Battery Pack Filament Tape",
     "url": "products/1519-10mm-glass-fiber-tape-50m-strong-battery-pack-filament-tape-robo-orion-bangladesh.html",
@@ -16,7 +38,7 @@
     "price": "BDT 225",
     "original_price": "BDT 350",
     "in_stock": false,
-    "weight": 0.08,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": true
