@@ -1,5 +1,27 @@
 [
   {
+    "id": "RBO-1518",
+    "title": "DC-099 5.5x2.5mm Metal Power Socket – Female Panel Mount Jack",
+    "url": "products/1518-dc-099-5.5x2.5mm-metal-power-socket-female-panel-mount-jack-robo-orion-bangladesh.html",
+    "image": "img/product/1518-dc-099-5.5x2.5mm-metal-power-socket-female-panel-mount-jack-robo-orion-bangladesh.jpg",
+    "alt": "DC-099 5.5x2.5mm Metal Power Socket – Female Panel Mount Jack",
+    "categories": [
+      "components",
+      "power-supply"
+    ],
+    "discount": "Save BDT 35",
+    "rating": 5,
+    "reviews": 23,
+    "brand": "Generic",
+    "price": "BDT 40",
+    "original_price": "BDT 75",
+    "in_stock": true,
+    "weight": 0.01,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1517",
     "title": "DC022B 5.5x2.1mm Metal DC Power Socket – Female Panel Mount",
     "url": "products/1517-dc022b-5.5x2.1mm-metal-dc-power-socket-female-panel-mount-robo-orion-bangladesh.html",
@@ -4679,9 +4701,9 @@
     "brand": "RC Product BD",
     "price": "BDT 670",
     "original_price": "BDT 750",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 180,
-    "stock": 1,
+    "stock": 0,
     "sales_count": 1,
     "sold": 4,
     "limitedStock": true
@@ -5422,7 +5444,7 @@
     "original_price": "BDT 780",
     "in_stock": true,
     "weight": 290,
-    "stock": 34,
+    "stock": 30,
     "sold": 28,
     "limitedStock": false
   },
@@ -5675,7 +5697,7 @@
     "in_stock": true,
     "sales_count": 5,
     "weight": 5,
-    "stock": 7,
+    "stock": 6,
     "sold": 7,
     "limitedStock": false
   },
@@ -6879,7 +6901,7 @@
     "sales_count": 1,
     "weight": 318,
     "sold": 1,
-    "stock": 0,
+    "stock": -1,
     "limitedStock": false
   },
   {
@@ -7689,7 +7711,7 @@
     "in_stock": true,
     "sales_count": 21,
     "weight": 2,
-    "stock": 10,
+    "stock": 8,
     "sold": 36,
     "limitedStock": false
   },
