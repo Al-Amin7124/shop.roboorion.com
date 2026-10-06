@@ -1,5 +1,27 @@
 [
   {
+    "id": "RBO-1517",
+    "title": "DC022B 5.5x2.1mm Metal DC Power Socket – Female Panel Mount",
+    "url": "products/1517-dc022b-5.5x2.1mm-metal-dc-power-socket-female-panel-mount-robo-orion-bangladesh.html",
+    "image": "img/product/1517-dc022b-5.5x2.1mm-metal-dc-power-socket-female-panel-mount-robo-orion-bangladesh.jpg",
+    "alt": "DC022B 5.5x2.1mm Metal DC Power Socket – Female Panel Mount",
+    "categories": [
+      "components",
+      "power-supply"
+    ],
+    "discount": "Save BDT 10",
+    "rating": 5,
+    "reviews": 14,
+    "brand": "Generic",
+    "price": "BDT 15",
+    "original_price": "BDT 25",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1516",
     "title": "DC022B 5.5x2.5mm Metal DC Power Socket – Female Panel Mount Jack",
     "url": "products/1516-dc022b-5.5x2.5mm-metal-dc-power-socket-female-panel-mount-jack-robo-orion-bangladesh.html",
@@ -885,7 +907,7 @@
     "original_price": "BDT 590",
     "in_stock": false,
     "weight": 0,
-    "stock": 0,
+    "stock": -2,
     "sold": 0,
     "limitedStock": true
   },
@@ -1683,11 +1705,11 @@
     "brand": "Peacefair",
     "price": "BDT 1850",
     "original_price": "BDT 2590",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 250,
     "stock": 0,
     "sold": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1441",
@@ -4612,7 +4634,7 @@
     "original_price": "BDT 385",
     "in_stock": false,
     "weight": 12,
-    "stock": 0,
+    "stock": -18,
     "sold": 3,
     "limitedStock": true
   },
@@ -5092,9 +5114,9 @@
     "brand": "Generic",
     "price": "BDT 18",
     "original_price": "BDT 35",
-    "in_stock": false,
+    "in_stock": true,
     "weight": 1,
-    "stock": -6,
+    "stock": 9,
     "sold": 44,
     "sales_count": 3,
     "limitedStock": true
@@ -5400,7 +5422,7 @@
     "original_price": "BDT 780",
     "in_stock": true,
     "weight": 290,
-    "stock": -8,
+    "stock": 30,
     "sold": 28,
     "limitedStock": false
   },
@@ -5512,12 +5534,12 @@
     "brand": "Peacefair",
     "price": "BDT 1700",
     "original_price": "BDT 2200",
-    "in_stock": true,
+    "in_stock": false,
     "sales_count": 1,
     "weight": 100,
     "sold": 1,
     "stock": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1273",
@@ -5561,7 +5583,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "weight": 8,
-    "stock": -8,
+    "stock": 2,
     "sold": 13,
     "limitedStock": false
   },
@@ -5653,7 +5675,7 @@
     "in_stock": true,
     "sales_count": 5,
     "weight": 5,
-    "stock": 9,
+    "stock": 8,
     "sold": 7,
     "limitedStock": false
   },
@@ -5972,7 +5994,7 @@
     "original_price": "BDT 680",
     "in_stock": true,
     "sales_count": 3,
-    "stock": -25,
+    "stock": -27,
     "sold": 25,
     "weight": 0,
     "limitedStock": false
@@ -6331,7 +6353,7 @@
     "original_price": "BDT 110",
     "in_stock": true,
     "weight": 5,
-    "stock": 7,
+    "stock": 6,
     "sold": 10,
     "limitedStock": false
   },
@@ -6377,7 +6399,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 10,
-    "stock": 6,
+    "stock": 5,
     "sold": 25,
     "limitedStock": false
   },
@@ -6401,7 +6423,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 20,
-    "stock": 5,
+    "stock": 4,
     "sold": 23,
     "limitedStock": false
   },
@@ -6425,7 +6447,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 15,
-    "stock": 10,
+    "stock": 9,
     "sold": 35,
     "limitedStock": false
   },
@@ -6516,7 +6538,7 @@
     "in_stock": true,
     "sold": 46,
     "weight": 1,
-    "stock": -26,
+    "stock": 50,
     "limitedStock": false
   },
   {
@@ -6584,7 +6606,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 100,
-    "stock": -2,
+    "stock": 3,
     "sold": 7,
     "limitedStock": false
   },
@@ -6742,7 +6764,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 5,
-    "stock": -10,
+    "stock": 10,
     "sold": 23,
     "limitedStock": false
   },
@@ -7158,7 +7180,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 12,
-    "stock": 2,
+    "stock": 1,
     "sold": 12,
     "limitedStock": false
   },
@@ -7181,7 +7203,7 @@
     "original_price": "BDT 85",
     "in_stock": true,
     "weight": 2,
-    "stock": 6,
+    "stock": 5,
     "sold": 2,
     "limitedStock": false
   },
@@ -7205,7 +7227,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 37,
-    "stock": -3,
+    "stock": 7,
     "sold": 15,
     "limitedStock": false
   },
@@ -8018,7 +8040,7 @@
     "price": "BDT 20",
     "original_price": "BDT 45",
     "in_stock": true,
-    "stock": 2,
+    "stock": 4,
     "sold": 1,
     "weight": 0,
     "limitedStock": false
@@ -8823,7 +8845,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 3,
-    "stock": 9,
+    "stock": 8,
     "sold": 61,
     "limitedStock": false
   },
@@ -9531,7 +9553,7 @@
     "in_stock": true,
     "sold": 30,
     "weight": 0,
-    "stock": -30,
+    "stock": 100,
     "limitedStock": false
   },
   {
