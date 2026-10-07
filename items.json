@@ -1,5 +1,28 @@
 [
   {
+    "id": "RBO-1524",
+    "title": "4S 20A LiFePO4 Balanced BMS (12.8V) – Battery Protection Board",
+    "url": "products/1524-4s-20a-lifepo4-balanced-bms-12.8v-battery-protection-board-robo-orion-bangladesh.html",
+    "image": "img/product/1524-4s-20a-lifepo4-balanced-bms-12.8v-battery-protection-board-robo-orion-bangladesh.jpg",
+    "alt": "4S 20A LiFePO4 Balanced BMS (12.8V) – Battery Protection Board",
+    "categories": [
+      "pcb-boards",
+      "power-supply",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 175",
+    "rating": 5,
+    "reviews": 23,
+    "brand": "Generic",
+    "price": "BDT 320",
+    "original_price": "BDT 495",
+    "in_stock": false,
+    "weight": 0.05,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1523",
     "title": "3S 12V 3.5A Li-ion Battery Charging Circuit Board",
     "url": "products/1523-3s-12v-3.5a-li-ion-battery-charging-circuit-board-bms-module-robo-orion-bangladesh.html",
@@ -17,7 +40,7 @@
     "price": "BDT 250",
     "original_price": "BDT 350",
     "in_stock": false,
-    "weight": 0.01,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": true
