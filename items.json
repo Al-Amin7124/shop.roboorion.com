@@ -17,7 +17,7 @@
     "price": "BDT 255",
     "original_price": "BDT 390",
     "in_stock": true,
-    "weight": 0.05,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": false
@@ -5548,11 +5548,11 @@
       "lithium-batteries",
       "diy-kits"
     ],
-    "discount": "Save BDT 30",
+    "discount": "Save BDT 60",
     "rating": 5,
     "reviews": 17,
     "brand": "Generic",
-    "price": "BDT 350",
+    "price": "BDT 320",
     "original_price": "BDT 380",
     "in_stock": true,
     "weight": 100,
