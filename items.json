@@ -1,5 +1,27 @@
 [
   {
+    "id": "RBO-1526",
+    "title": "2A PWM Speed Controller (1.8V-15V) – Mini DC Motor Module",
+    "url": "products/1526-2a-pwm-speed-controller-1.8v-15v-mini-dc-motor-module-robo-orion-bangladesh.html",
+    "image": "img/product/1526-2a-pwm-speed-controller-1.8v-15v-mini-dc-motor-module-robo-orion-bangladesh.jpg",
+    "alt": "2A PWM Speed Controller (1.8V-15V) – Mini DC Motor Module",
+    "categories": [
+      "components",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 50",
+    "rating": 5,
+    "reviews": 16,
+    "brand": "Generic",
+    "price": "BDT 95",
+    "original_price": "BDT 145",
+    "in_stock": false,
+    "weight": 0.02,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1525",
     "title": "5A PWM Speed Controller (3V-35V) – DC Motor Control Module",
     "url": "products/1525-5a-pwm-speed-controller-3v-35v-dc-motor-control-module-robo-orion-bangladesh.html",
@@ -7845,7 +7867,7 @@
     "brand": "Robo Orion",
     "price": "BDT 65",
     "original_price": "BDT 120",
-    "in_stock": true,
+    "in_stock": false,
     "sold": 0,
     "weight": 0,
     "stock": 0,
