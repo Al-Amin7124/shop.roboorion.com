@@ -16,7 +16,7 @@
     "price": "BDT 110",
     "original_price": "BDT 160",
     "in_stock": false,
-    "weight": 0.02,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": true
@@ -1748,7 +1748,7 @@
     "in_stock": true,
     "weight": 0,
     "stock": 0,
-    "sold": 0,
+    "sold": 2,
     "limitedStock": false
   },
   {
@@ -1888,7 +1888,7 @@
     "in_stock": false,
     "weight": 250,
     "stock": 0,
-    "sold": 0,
+    "sold": 1,
     "limitedStock": true
   },
   {
@@ -3366,7 +3366,7 @@
     "in_stock": true,
     "weight": 0,
     "stock": 0,
-    "sold": 1,
+    "sold": 2,
     "limitedStock": false
   },
   {
@@ -5616,11 +5616,11 @@
       "lithium-batteries",
       "diy-kits"
     ],
-    "discount": "Save BDT 60",
+    "discount": "Save BDT 50",
     "rating": 5,
     "reviews": 17,
     "brand": "Generic",
-    "price": "BDT 320",
+    "price": "BDT 330",
     "original_price": "BDT 380",
     "in_stock": true,
     "weight": 100,
@@ -8083,7 +8083,7 @@
     "original_price": "BDT 8",
     "in_stock": true,
     "stock": 905,
-    "sold": 35,
+    "sold": 85,
     "weight": 0,
     "limitedStock": false
   },
@@ -8290,7 +8290,7 @@
     "in_stock": true,
     "weight": 4,
     "stock": 22,
-    "sold": 16,
+    "sold": 26,
     "limitedStock": false
   },
   {
