@@ -1,5 +1,28 @@
 [
   {
+    "id": "RBO-1523",
+    "title": "3S 12V 3.5A Li-ion Battery Charging Circuit Board – BMS Module",
+    "url": "products/1523-3s-12v-3.5a-li-ion-battery-charging-circuit-board-bms-module-robo-orion-bangladesh.html",
+    "image": "img/product/1523-3s-12v-3.5a-li-ion-battery-charging-circuit-board-bms-module-robo-orion-bangladesh.jpg",
+    "alt": "3S 12V 3.5A Li-ion Battery Charging Circuit Board – BMS Module",
+    "categories": [
+      "pcb-boards",
+      "power-supply",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 100",
+    "rating": 5,
+    "reviews": 19,
+    "brand": "Generic",
+    "price": "BDT 250",
+    "original_price": "BDT 350",
+    "in_stock": false,
+    "weight": 0.01,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1522",
     "title": "SW3516 Fast Charging Module – Full Protocol QC4.0 PD3.0 Board",
     "url": "products/1522-sw3516-fast-charging-module-full-protocol-qc4.0-pd3.0-board-robo-orion-bangladesh.html",
@@ -5557,7 +5580,7 @@
     "in_stock": true,
     "weight": 100,
     "sold": 8,
-    "stock": 98,
+    "stock": 90,
     "limitedStock": false
   },
   {
