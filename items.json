@@ -1,5 +1,49 @@
 [
   {
+    "id": "RBO-1528",
+    "title": "Soldering Iron Tip Refresher (6g) – Resurrection & Repair Cream",
+    "url": "products/1528-soldering-iron-tip-refresher-6g-resurrection-repair-cream-robo-orion-bangladesh.html",
+    "image": "img/product/1528-soldering-iron-tip-refresher-6g-resurrection-repair-cream-robo-orion-bangladesh.jpg",
+    "alt": "Soldering Iron Tip Refresher (6g) – Resurrection & Repair Cream",
+    "categories": [
+      "repair-tools",
+      "components"
+    ],
+    "discount": "Save BDT 110",
+    "rating": 5,
+    "reviews": 17,
+    "brand": "Generic",
+    "price": "BDT 180",
+    "original_price": "BDT 290",
+    "in_stock": true,
+    "weight": 0.01,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
+    "id": "RBO-1527",
+    "title": "908 Soldering Iron Case – Replacement Handle Shell",
+    "url": "products/1527-908-soldering-iron-case-replacement-handle-shell-robo-orion-bangladesh.html",
+    "image": "img/product/1527-908-soldering-iron-case-replacement-handle-shell-robo-orion-bangladesh.jpg",
+    "alt": "908 Soldering Iron Case – Replacement Handle Shell",
+    "categories": [
+      "repair-tools",
+      "components"
+    ],
+    "discount": "Save BDT 35",
+    "rating": 5,
+    "reviews": 14,
+    "brand": "Generic",
+    "price": "BDT 60",
+    "original_price": "BDT 95",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1526",
     "title": "2A PWM Speed Controller (1.8V-15V) – Mini DC Motor Module",
     "url": "products/1526-2a-pwm-speed-controller-1.8v-15v-mini-dc-motor-module-robo-orion-bangladesh.html",
@@ -16,7 +60,7 @@
     "price": "BDT 95",
     "original_price": "BDT 145",
     "in_stock": false,
-    "weight": 0.02,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": true
