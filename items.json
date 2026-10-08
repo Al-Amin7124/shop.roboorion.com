@@ -1865,6 +1865,28 @@
     "limitedStock": false
   },
   {
+    "id": "RBO-1530",
+    "title": "3.7V 1200mAh Li-ion Battery – Rechargeable 18650 Cell",
+    "url": "products/1530-3.7v-1200mah-li-ion-battery-rechargeable-18650-cell-robo-orion-bangladesh.html",
+    "image": "img/product/1530-3.7v-1200mah-li-ion-battery-rechargeable-18650-cell-robo-orion-bangladesh.jpg",
+    "alt": "3.7V 1200mAh Li-ion Battery – Rechargeable 18650 Cell",
+    "categories": [
+      "components",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 60",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 220",
+    "original_price": "BDT 280",
+    "in_stock": true,
+    "weight": 40,
+    "stock": 100,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1446",
     "title": "5000mAh 3.7V Lithium Polymer (Li-Po) Rechargeable Battery",
     "url": "products/1446-5000mah-3-7v-lithium-polymer-li-po-rechargeable-battery-robo-orion-bangladesh.html",
