@@ -15,7 +15,7 @@
     "brand": "Generic",
     "price": "BDT 250",
     "original_price": "BDT 280",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 70,
     "stock": 100,
     "sold": 0,
@@ -1196,11 +1196,11 @@
     "brand": "EVE Energy",
     "price": "BDT 340",
     "original_price": "BDT 590",
-    "in_stock": false,
+    "in_stock": true,
     "weight": 70,
     "stock": 100,
     "sold": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1476",
