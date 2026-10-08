@@ -154,10 +154,10 @@
      NAVBAR
 ═══════════════════════════ -->
 <header class="sticky inset-0 z-50 border-b border-slate-100 bg-white/30 backdrop-blur-lg shadow-lg">
-    <nav class="mx-auto flex max-w-8xl items-center gap-0 justify-between px-6 py-0 lg:px-12 transition-all duration-200 ease-in-out z-50">
+    <nav class="mx-auto flex flex-wrap lg:flex-nowrap max-w-8xl items-center gap-0 justify-between px-4 sm:px-6 py-0 lg:px-12 transition-all duration-200 ease-in-out z-50">
 
         <!-- Left: Logo -->
-        <div class="flex items-center flex-shrink-0 pr-4 py-4">
+        <div class="flex items-center flex-shrink-0 pr-4 h-14 lg:h-auto lg:py-4">
             <a href="index.html" class="flex items-center gap-2">
                 <div class="w-9 h-9 rounded-full overflow-hidden shadow-xl ring-1 ring-gray-400">
                     <img 
@@ -174,12 +174,12 @@
         </div>
 
         <!-- Search Bar (always visible) -->
-        <div class="relative flex-grow border border-blue-400 m-0 rounded-lg">
+        <div class="relative order-last w-full basis-full h-11 mb-2.5 lg:order-none lg:w-auto lg:basis-auto lg:h-auto lg:mb-0 flex-grow border border-blue-400 rounded-lg">
             <input 
                 type="text" 
                 id="searchInput" 
                 placeholder="Search products..." 
-                class="w-full px-4 py-[14px] pl-10 pr-10 border-0 focus:outline-none focus:ring-0 transition bg-transparent text-sm"
+                class="w-full h-full lg:h-auto pl-9 pr-9 lg:pl-10 lg:pr-10 py-0 lg:py-[14px] border-0 focus:outline-none focus:ring-0 transition bg-transparent text-base lg:text-sm"
             >
             <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
             <button 
@@ -211,7 +211,7 @@
         </div>
 
         <!-- Mobile: Hamburger only -->
-        <div class="flex md:hidden items-center pl-3 py-4 flex-shrink-0">
+        <div class="flex md:hidden items-center pl-3 h-14 flex-shrink-0">
             <div class="relative">
                 <button id="menu-btn" class="flex items-center text-slate-900 focus:outline-none">
                     <svg xmlns="http://www.w3.org/2000/svg" 
@@ -253,7 +253,7 @@
 <!-- ═══════════════════════════
      HERO SECTION — ROBO ORION
 ═══════════════════════════ -->
-<section class="relative overflow-hidden bg-[#070B14] min-h-[78vh] flex items-center -mt-20">
+<section class="relative overflow-hidden bg-[#070B14] min-h-[78vh] flex items-center -mt-[122px] md:-mt-[134px] lg:-mt-20">
 
   <!-- ═════ Background System ═════ -->
 
