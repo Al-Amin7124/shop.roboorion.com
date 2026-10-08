@@ -1151,9 +1151,9 @@
     "brand": "EVE Energy",
     "price": "BDT 340",
     "original_price": "BDT 590",
-    "in_stock": false,
-    "weight": 0,
-    "stock": -2,
+    "in_stock": true,
+    "weight": 70,
+    "stock": 98,
     "sold": 0,
     "limitedStock": true
   },
@@ -3477,7 +3477,7 @@
     "original_price": "BDT 25",
     "in_stock": true,
     "weight": 0,
-    "stock": 1,
+    "stock": 9,
     "sold": 4,
     "limitedStock": false
   },
