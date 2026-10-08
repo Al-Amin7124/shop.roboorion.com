@@ -1,5 +1,27 @@
 [
   {
+    "id": "RBO-1531",
+    "title": "3.7V 4000mAh 21700 Li-ion Battery – High Capacity Rechargeable Cell",
+    "url": "products/1531-3.7v-4000mah-21700-li-ion-battery-high-capacity-rechargeable-cell-robo-orion-bangladesh.html",
+    "image": "img/product/1531-3.7v-4000mah-21700-li-ion-battery-high-capacity-rechargeable-cell-robo-orion-bangladesh.jpg",
+    "alt": "3.7V 4000mAh 21700 Li-ion Battery – High Capacity Rechargeable Cell",
+    "categories": [
+      "components",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 70",
+    "rating": 5,
+    "reviews": 15,
+    "brand": "Generic",
+    "price": "BDT 210",
+    "original_price": "BDT 280",
+    "in_stock": true,
+    "weight": 70,
+    "stock": 100,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1529",
     "title": "4S 50A LiFePO4 BMS (12V) – 1.2A Active Balance Aluminum Board",
     "url": "products/1529-4s-50a-lifepo4-bms-12v-1.2a-active-balance-aluminum-board-robo-orion-bangladesh.html",
@@ -1878,8 +1900,8 @@
     "rating": 5,
     "reviews": 12,
     "brand": "Generic",
-    "price": "BDT 220",
-    "original_price": "BDT 280",
+    "price": "BDT 120",
+    "original_price": "BDT 180",
     "in_stock": true,
     "weight": 40,
     "stock": 100,
@@ -5177,10 +5199,10 @@
     "brand": "Generic",
     "price": "BDT 210",
     "original_price": "BDT 380",
-    "in_stock": true,
+    "in_stock": false,
     "sold": 4,
     "weight": 70,
-    "stock": 100,
+    "stock": 0,
     "limitedStock": true
   },
   {
