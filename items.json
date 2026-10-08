@@ -4267,9 +4267,9 @@
     "original_price": "BDT 180",
     "in_stock": true,
     "weight": 2,
-    "stock": 5,
+    "stock": 2,
     "sold": 5,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1338",
