@@ -1,5 +1,28 @@
 [
   {
+    "id": "RBO-1529",
+    "title": "4S 50A LiFePO4 BMS (12V) – 1.2A Active Balance Aluminum Board",
+    "url": "products/1529-4s-50a-lifepo4-bms-12v-1.2a-active-balance-aluminum-board-robo-orion-bangladesh.html",
+    "image": "img/product/1529-4s-50a-lifepo4-bms-12v-1.2a-active-balance-aluminum-board-robo-orion-bangladesh.jpg",
+    "alt": "4S 50A LiFePO4 BMS (12V) – 1.2A Active Balance Aluminum Board",
+    "categories": [
+      "pcb-boards",
+      "power-supply",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 240",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "Generic",
+    "price": "BDT 650",
+    "original_price": "BDT 890",
+    "in_stock": true,
+    "weight": 0.1,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1528",
     "title": "Soldering Iron Tip Refresher (6g) – Resurrection & Repair Cream",
     "url": "products/1528-soldering-iron-tip-refresher-6g-resurrection-repair-cream-robo-orion-bangladesh.html",
