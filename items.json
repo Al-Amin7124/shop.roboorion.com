@@ -1,25 +1,26 @@
 [
   {
     "id": "RBO-1531",
-    "title": "3.7V 4500mAh 21700 Li-ion Battery – High Capacity Rechargeable Cell",
-    "url": "products/1531-3.7v-4000mah-21700-li-ion-battery-high-capacity-rechargeable-cell-robo-orion-bangladesh.html",
-    "image": "img/product/1531-3.7v-4000mah-21700-li-ion-battery-high-capacity-rechargeable-cell-robo-orion-bangladesh.jpg",
-    "alt": "3.7V 4000mAh 21700 Li-ion Battery – High Capacity Rechargeable Cell",
+    "title": "DTL 18650 Battery 2600mAh (3.7V) – Grade A 3C Li-ion Cell",
+    "url": "products/1531-dtl-18650-battery-2600mah-3.7v-grade-a-3c-li-ion-cell-robo-orion-bangladesh.html",
+    "image": "img/product/1531-dtl-18650-battery-2600mah-3.7v-grade-a-3c-li-ion-cell-robo-orion-bangladesh.jpg",
+    "alt": "DTL 18650 Battery 2600mAh (3.7V) – Grade A 3C Li-ion Cell",
     "categories": [
       "components",
+      "power-supply",
       "diy-kits"
     ],
-    "discount": "Save BDT 30",
+    "discount": "Save BDT 60",
     "rating": 5,
-    "reviews": 15,
-    "brand": "Generic",
-    "price": "BDT 250",
-    "original_price": "BDT 280",
+    "reviews": 27,
+    "brand": "DTL",
+    "price": "BDT 160",
+    "original_price": "BDT 220",
     "in_stock": false,
-    "weight": 70,
-    "stock": 100,
+    "weight": 0,
+    "stock": 0,
     "sold": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1529",
