@@ -696,15 +696,15 @@
       "components",
       "diy-kits"
     ],
-    "discount": "Save BDT 20",
+    "discount": "Save BDT 15",
     "rating": 5,
     "reviews": 16,
     "brand": "Generic",
-    "price": "BDT 25",
+    "price": "BDT 30",
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 5,
-    "stock": 10,
+    "stock": 9,
     "sold": 0,
     "limitedStock": false
   },
@@ -1190,15 +1190,15 @@
     "categories": [
       "diy-kits"
     ],
-    "discount": "Save BDT 290",
+    "discount": "Save BDT 270",
     "rating": 5,
     "reviews": 26,
     "brand": "EVE Energy",
-    "price": "BDT 300",
+    "price": "BDT 320",
     "original_price": "BDT 590",
     "in_stock": true,
     "weight": 70,
-    "stock": 96,
+    "stock": 92,
     "sold": 0,
     "limitedStock": true
   },
