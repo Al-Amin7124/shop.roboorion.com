@@ -595,7 +595,7 @@
     "original_price": "BDT 65",
     "in_stock": true,
     "weight": 0,
-    "stock": 4,
+    "stock": 3,
     "sold": 1,
     "limitedStock": false
   },
@@ -1199,7 +1199,7 @@
     "original_price": "BDT 590",
     "in_stock": true,
     "weight": 70,
-    "stock": 92,
+    "stock": 90,
     "sold": 0,
     "limitedStock": true
   },
@@ -4993,9 +4993,9 @@
     "brand": "RC Product BD",
     "price": "BDT 670",
     "original_price": "BDT 750",
-    "in_stock": false,
+    "in_stock": true,
     "weight": 180,
-    "stock": 0,
+    "stock": 2,
     "sales_count": 1,
     "sold": 4,
     "limitedStock": true
@@ -8333,7 +8333,7 @@
     "in_stock": true,
     "sales_count": 7,
     "weight": 5,
-    "stock": 3,
+    "stock": 1,
     "sold": 18,
     "limitedStock": false
   },
@@ -9182,7 +9182,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 15,
-    "stock": -1,
+    "stock": -2,
     "sold": 10,
     "limitedStock": false
   },
@@ -9317,7 +9317,7 @@
     "in_stock": true,
     "sold": 2,
     "weight": 100,
-    "stock": 1,
+    "stock": 0,
     "limitedStock": false
   },
   {
