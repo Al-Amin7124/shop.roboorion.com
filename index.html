@@ -154,19 +154,19 @@
      NAVBAR
 ═══════════════════════════ -->
 <header class="sticky inset-0 z-50 border-b border-slate-100 bg-white/30 backdrop-blur-lg shadow-lg">
-    <nav class="mx-auto flex flex-wrap lg:flex-nowrap max-w-8xl items-center gap-0 justify-between px-4 sm:px-6 py-0 lg:px-12 transition-all duration-200 ease-in-out z-50">
+    <nav class="mx-auto flex max-w-8xl items-center gap-0 justify-between px-3 sm:px-6 py-0 lg:px-12 transition-all duration-200 ease-in-out z-50">
 
         <!-- Left: Logo -->
-        <div class="flex items-center flex-shrink-0 pr-4 h-14 lg:h-auto lg:py-4">
-            <a href="index.html" class="flex items-center gap-2">
-                <div class="w-9 h-9 rounded-full overflow-hidden shadow-xl ring-1 ring-gray-400">
+        <div class="flex items-center flex-shrink-0 pr-2 sm:pr-4 py-2.5 sm:py-4">
+            <a href="index.html" class="flex items-center gap-1.5 sm:gap-2">
+                <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full overflow-hidden shadow-xl ring-1 ring-gray-400">
                     <img 
                         src="asset/img/logo.png" 
                         loading="lazy" 
                         class="w-full h-full object-cover scale-140"
                         alt="Robo Orion Logo">
                 </div>
-                <span class="self-center text-xl sm:text-2xl font-bold whitespace-nowrap dark:text-black">
+                <span class="self-center text-[15px] sm:text-2xl font-bold whitespace-nowrap dark:text-black">
                     <span class="text-blue-500 font-ubuntu text-shadow">Orion</span>
                     <span class="text-black-500 font-exo text-shadow">Shop</span>
                 </span>
@@ -174,17 +174,17 @@
         </div>
 
         <!-- Search Bar (always visible) -->
-        <div class="relative order-last w-full basis-full h-11 mb-2.5 lg:order-none lg:w-auto lg:basis-auto lg:h-auto lg:mb-0 flex-grow border border-blue-400 rounded-lg">
+        <div class="relative flex-grow min-w-0 border border-blue-400 m-0 rounded-lg">
             <input 
                 type="text" 
                 id="searchInput" 
                 placeholder="Search products..." 
-                class="w-full h-full lg:h-auto pl-9 pr-9 lg:pl-10 lg:pr-10 py-0 lg:py-[14px] border-0 focus:outline-none focus:ring-0 transition bg-transparent text-base lg:text-sm"
+                class="w-full min-w-0 py-2 pl-7 pr-6 sm:py-[14px] sm:pl-10 sm:pr-10 border-0 focus:outline-none focus:ring-0 transition bg-transparent text-base sm:text-sm"
             >
-            <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+            <i class="fa-solid fa-magnifying-glass absolute left-2.5 sm:left-3 top-1/2 -translate-y-1/2 text-xs sm:text-base text-gray-400"></i>
             <button 
                 id="clearSearch" 
-                class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 hidden transition"
+                class="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 hidden transition"
                 onclick="clearSearch()"
             >
                 <i class="fa-solid fa-xmark"></i>
@@ -192,17 +192,17 @@
         </div>
 
         <!-- Center: Nav Links (desktop only) -->
-        <ul class="hidden md:flex items-center gap-1 px-4 py-4 border-r border-gray-200">
-            <li><a href="index.html" class="px-3 py-1.5 font-dm text-sm font-bold text-blue-600 bg-blue-50 rounded-md">Home</a></li>
-            <li><a href="product.html" class="px-3 py-1.5 font-dm text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors duration-200">Shop</a></li>
-            <li><a href="https://roboorion.com/contact.html" target="_blank" class="px-3 py-1.5 font-dm text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors duration-200">Contact Us</a></li>
+        <ul class="hidden md:flex items-center gap-0 lg:gap-1 px-1 lg:px-4 py-4 border-r border-gray-200">
+            <li><a href="index.html" class="px-2 lg:px-3 py-1.5 whitespace-nowrap font-dm text-sm font-bold text-blue-600 bg-blue-50 rounded-md">Home</a></li>
+            <li><a href="product.html" class="px-2 lg:px-3 py-1.5 whitespace-nowrap font-dm text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors duration-200">Shop</a></li>
+            <li><a href="https://roboorion.com/contact.html" target="_blank" class="px-2 lg:px-3 py-1.5 whitespace-nowrap font-dm text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors duration-200">Contact Us</a></li>
         </ul>
 
         <!-- Right: Cart + Account (desktop) -->
-        <div class="hidden md:flex items-center gap-3 pl-4 py-4">
-            <button onclick="ROCart.openDrawer()" class="relative flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 shadow-sm">
+        <div class="hidden md:flex items-center gap-2 lg:gap-3 pl-2 lg:pl-4 py-4">
+            <button onclick="ROCart.openDrawer()" class="relative flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-3 lg:px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 shadow-sm" aria-label="Cart">
                 <i class="fa-solid fa-cart-shopping"></i>
-                <span>Cart</span>
+                <span class="hidden lg:inline">Cart</span>
                 <span id="nav-cart-count" class="hidden absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full min-w-[18px] h-[18px] flex items-center justify-center px-1">0</span>
             </button>
             <a class="flex items-center justify-center w-9 h-9 rounded-lg border border-gray-300 text-slate-600 hover:text-blue-600 hover:border-blue-400 transition-all duration-200">
@@ -211,13 +211,13 @@
         </div>
 
         <!-- Mobile: Hamburger only -->
-        <div class="flex md:hidden items-center pl-3 h-14 flex-shrink-0">
+        <div class="flex md:hidden items-center pl-2 sm:pl-3 py-2.5 sm:py-4 flex-shrink-0">
             <div class="relative">
                 <button id="menu-btn" class="flex items-center text-slate-900 focus:outline-none">
                     <svg xmlns="http://www.w3.org/2000/svg" 
                         fill="none" viewBox="0 0 24 24" 
                         stroke-width="1.5" stroke="currentColor" 
-                        class="h-7 w-7">
+                        class="h-6 w-6 sm:h-7 sm:w-7">
                         <path stroke-linecap="round" stroke-linejoin="round" 
                             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
                     </svg>
@@ -253,7 +253,7 @@
 <!-- ═══════════════════════════
      HERO SECTION — ROBO ORION
 ═══════════════════════════ -->
-<section class="relative overflow-hidden bg-[#070B14] min-h-[78vh] flex items-center -mt-[122px] md:-mt-[134px] lg:-mt-20">
+<section class="relative overflow-hidden bg-[#070B14] min-h-[78vh] flex items-center -mt-16 sm:-mt-20">
 
   <!-- ═════ Background System ═════ -->
 
