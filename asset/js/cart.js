@@ -18,7 +18,7 @@
     const PICKUP_LOCATION = 'Middle Badda, Dhaka';
     // Self Pickup orders below this amount (after any discount, excluding
     // delivery since pickup has none) are blocked at checkout.
-    const MIN_PICKUP_ORDER = 500;
+    const MIN_PICKUP_ORDER = 300;
     // Resolved from https://maps.app.goo.gl/U4wn2srzGbHjHmbh9 — used to embed
     // a small map under the Self Pickup option on checkout.
     const PICKUP_MAP_EMBED_URL = 'https://www.google.com/maps?q=23.777631,90.424234&output=embed';
