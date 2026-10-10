@@ -25,7 +25,7 @@
     // Below this stock count, limited-stock items start showing a
     // "Only X left in stock" note. At/above it, nothing is shown — the
     // count doesn't add useful urgency for plentiful items.
-    const LOW_STOCK_THRESHOLD = 10;
+    const LOW_STOCK_THRESHOLD = 100;
 
     const COUPONS = {
         // Store-wide example:
