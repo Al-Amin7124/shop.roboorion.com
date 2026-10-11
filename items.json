@@ -40,10 +40,10 @@
     "price": "BDT 650",
     "original_price": "BDT 890",
     "in_stock": true,
-    "weight": 0,
-    "stock": 0,
+    "weight": 30,
+    "stock": 5,
     "sold": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1528",
