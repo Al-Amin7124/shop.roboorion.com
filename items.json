@@ -353,7 +353,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 2,
-    "stock": 200,
+    "stock": 100,
     "sold": 0,
     "limitedStock": true
   },
@@ -375,7 +375,7 @@
     "original_price": "BDT 25",
     "in_stock": true,
     "weight": 2,
-    "stock": 200,
+    "stock": 100,
     "sold": 0,
     "limitedStock": true
   },
@@ -653,11 +653,11 @@
       "components",
       "diy-kits"
     ],
-    "discount": "Save BDT 80",
+    "discount": "Save BDT 100",
     "rating": 5,
     "reviews": 12,
     "brand": "Generic",
-    "price": "BDT 210",
+    "price": "BDT 190",
     "original_price": "BDT 290",
     "in_stock": true,
     "weight": 0,
