@@ -499,7 +499,7 @@
       "components",
       "diy-kits"
     ],
-    "discount": null,
+    "discount": "",
     "rating": 5,
     "reviews": 10,
     "brand": "Generic",
@@ -521,7 +521,7 @@
       "components",
       "diy-kits"
     ],
-    "discount": null,
+    "discount": "",
     "rating": 5,
     "reviews": 12,
     "brand": "Generic",
@@ -2112,7 +2112,7 @@
     "original_price": "BDT 290",
     "in_stock": true,
     "weight": 47,
-    "stock": 5,
+    "stock": 1,
     "sold": 4,
     "limitedStock": false
   },
@@ -7305,10 +7305,10 @@
     "price": "BDT 160",
     "original_price": "BDT 220",
     "in_stock": true,
-    "stock": 5,
+    "stock": 1,
     "sold": 0,
     "weight": 47,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1193",
