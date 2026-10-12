@@ -5134,7 +5134,7 @@
     "in_stock": true,
     "sales_count": 9,
     "weight": 1,
-    "stock": 5,
+    "stock": 1,
     "sold": 41,
     "limitedStock": true
   },
@@ -5157,7 +5157,7 @@
     "in_stock": true,
     "sales_count": 5,
     "weight": 2,
-    "stock": 7,
+    "stock": 2,
     "sold": 32,
     "limitedStock": true
   },
@@ -5271,7 +5271,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 1,
-    "stock": 17,
+    "stock": 16,
     "sold": 33,
     "limitedStock": true
   },
