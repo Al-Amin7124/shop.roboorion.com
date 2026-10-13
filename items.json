@@ -3749,11 +3749,11 @@
     "brand": "Generic",
     "price": "BDT 720",
     "original_price": "BDT 900",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 200,
     "stock": 0,
     "sold": 1,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1363",
