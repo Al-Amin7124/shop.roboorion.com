@@ -42,12 +42,12 @@
     "in_stock": true,
     "weight": 30,
     "stock": 1,
-    "sold": 0,
+    "sold": 4,
     "limitedStock": true
   },
   {
     "id": "RBO-1528",
-    "title": "Soldering Iron Tip Refresher (6g) – Resurrection & Repair Cream",
+    "title": "Soldering Iron Tip Cleaner Refresher (6g) – Resurrection & Repair Cream",
     "url": "products/1528-soldering-iron-tip-refresher-6g-resurrection-repair-cream-robo-orion-bangladesh.html",
     "image": "img/product/1528-soldering-iron-tip-refresher-6g-resurrection-repair-cream-robo-orion-bangladesh.jpg",
     "alt": "Soldering Iron Tip Refresher (6g) – Resurrection & Repair Cream",
@@ -618,7 +618,7 @@
     "in_stock": true,
     "weight": 0,
     "stock": 3,
-    "sold": 0,
+    "sold": 2,
     "limitedStock": true
   },
   {
@@ -1200,7 +1200,7 @@
     "in_stock": true,
     "weight": 70,
     "stock": 88,
-    "sold": 5,
+    "sold": 7,
     "limitedStock": true
   },
   {
@@ -1747,7 +1747,7 @@
     "in_stock": false,
     "weight": 2,
     "stock": 0,
-    "sold": 4,
+    "sold": 5,
     "limitedStock": true
   },
   {
@@ -1791,7 +1791,7 @@
     "in_stock": true,
     "weight": 2,
     "stock": 2,
-    "sold": 0,
+    "sold": 3,
     "limitedStock": true
   },
   {
@@ -2090,7 +2090,7 @@
     "in_stock": true,
     "weight": 2,
     "stock": 1,
-    "sold": 2,
+    "sold": 4,
     "limitedStock": true
   },
   {
@@ -2224,7 +2224,7 @@
     "in_stock": false,
     "weight": 0,
     "stock": 0,
-    "sold": 4,
+    "sold": 5,
     "limitedStock": true
   },
   {
@@ -4336,7 +4336,7 @@
     "in_stock": true,
     "weight": 2,
     "stock": 1,
-    "sold": 7,
+    "sold": 9,
     "limitedStock": true
   },
   {
@@ -5019,7 +5019,7 @@
     "in_stock": true,
     "weight": 47,
     "stock": 19,
-    "sold": 0,
+    "sold": 1,
     "limitedStock": false
   },
   {
@@ -5064,7 +5064,7 @@
     "in_stock": true,
     "weight": 2,
     "stock": 2,
-    "sold": 1,
+    "sold": 3,
     "limitedStock": false
   },
   {
@@ -5135,7 +5135,7 @@
     "sales_count": 9,
     "weight": 1,
     "stock": 1,
-    "sold": 41,
+    "sold": 46,
     "limitedStock": true
   },
   {
@@ -5158,7 +5158,7 @@
     "sales_count": 5,
     "weight": 2,
     "stock": 2,
-    "sold": 32,
+    "sold": 48,
     "limitedStock": true
   },
   {
@@ -5272,7 +5272,7 @@
     "sales_count": 4,
     "weight": 1,
     "stock": 16,
-    "sold": 33,
+    "sold": 36,
     "limitedStock": true
   },
   {
@@ -5431,7 +5431,7 @@
     "in_stock": false,
     "weight": 1,
     "stock": 0,
-    "sold": 44,
+    "sold": 48,
     "sales_count": 3,
     "limitedStock": true
   },
@@ -5596,7 +5596,7 @@
     "weight": 5,
     "stock": 3,
     "sales_count": 1,
-    "sold": 5,
+    "sold": 7,
     "limitedStock": false
   },
   {
@@ -5990,7 +5990,7 @@
     "sales_count": 5,
     "weight": 5,
     "stock": 5,
-    "sold": 9,
+    "sold": 11,
     "limitedStock": false
   },
   {
@@ -6497,7 +6497,7 @@
     "price": "BDT 120",
     "original_price": "BDT 200",
     "in_stock": true,
-    "sold": 3,
+    "sold": 5,
     "weight": 0,
     "stock": -2,
     "limitedStock": false
@@ -6668,7 +6668,7 @@
     "in_stock": true,
     "weight": 5,
     "stock": 2,
-    "sold": 14,
+    "sold": 15,
     "limitedStock": false
   },
   {
@@ -6762,7 +6762,7 @@
     "sales_count": 4,
     "weight": 15,
     "stock": 28,
-    "sold": 36,
+    "sold": 37,
     "limitedStock": false
   },
   {
@@ -7033,7 +7033,7 @@
     "original_price": "BDT 55",
     "in_stock": true,
     "sales_count": 3,
-    "sold": 24,
+    "sold": 28,
     "weight": 0,
     "stock": 10,
     "limitedStock": false
@@ -7240,7 +7240,7 @@
     "sales_count": 6,
     "weight": 1.5,
     "stock": 50,
-    "sold": 14,
+    "sold": 16,
     "limitedStock": false
   },
   {
@@ -7283,7 +7283,7 @@
     "in_stock": true,
     "sales_count": 2,
     "stock": 8,
-    "sold": 7,
+    "sold": 9,
     "weight": 0,
     "limitedStock": true
   },
@@ -7306,7 +7306,7 @@
     "original_price": "BDT 220",
     "in_stock": true,
     "stock": 1,
-    "sold": 0,
+    "sold": 1,
     "weight": 47,
     "limitedStock": true
   },
@@ -7542,7 +7542,7 @@
     "sales_count": 6,
     "weight": 37,
     "stock": 7,
-    "sold": 16,
+    "sold": 18,
     "limitedStock": true
   },
   {
@@ -7742,7 +7742,7 @@
     "sales_count": 4,
     "weight": 2,
     "stock": 105,
-    "sold": 90,
+    "sold": 92,
     "limitedStock": false
   },
   {
@@ -8424,7 +8424,7 @@
     "in_stock": true,
     "weight": 4,
     "stock": 21,
-    "sold": 26,
+    "sold": 27,
     "limitedStock": false
   },
   {
@@ -8580,7 +8580,7 @@
     "in_stock": true,
     "weight": 16,
     "stock": -1,
-    "sold": 0,
+    "sold": 3,
     "limitedStock": false
   },
   {
@@ -8601,7 +8601,7 @@
     "original_price": "BDT 150",
     "in_stock": true,
     "weight": 5,
-    "stock": 4,
+    "stock": 0,
     "sold": 8,
     "limitedStock": false
   },
