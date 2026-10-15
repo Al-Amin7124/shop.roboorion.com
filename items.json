@@ -7126,7 +7126,7 @@
     "weight": 12,
     "stock": 2,
     "sold": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1201",
@@ -7149,7 +7149,7 @@
     "weight": 5,
     "stock": 7,
     "sold": 5,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1200",
@@ -8599,11 +8599,11 @@
     "brand": "Chinese",
     "price": "BDT 75",
     "original_price": "BDT 150",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 5,
     "stock": 0,
     "sold": 8,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1140",
