@@ -6311,7 +6311,7 @@
     "stock": 20,
     "sold": 25,
     "weight": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1253",
