@@ -33,11 +33,11 @@
       "power-supply",
       "diy-kits"
     ],
-    "discount": "Save BDT 140",
+    "discount": "Save BDT 170",
     "rating": 5,
     "reviews": 12,
     "brand": "Generic",
-    "price": "BDT 750",
+    "price": "BDT 720",
     "original_price": "BDT 890",
     "in_stock": true,
     "weight": 30,
@@ -354,7 +354,7 @@
     "in_stock": true,
     "weight": 2,
     "stock": 100,
-    "sold": 0,
+    "sold": 100,
     "limitedStock": true
   },
   {
@@ -376,7 +376,7 @@
     "in_stock": true,
     "weight": 2,
     "stock": 100,
-    "sold": 0,
+    "sold": 100,
     "limitedStock": true
   },
   {
@@ -530,7 +530,7 @@
     "in_stock": true,
     "weight": 7,
     "stock": 19,
-    "sold": 0,
+    "sold": 1,
     "limitedStock": true
   },
   {
@@ -706,7 +706,7 @@
     "in_stock": true,
     "weight": 5,
     "stock": 14,
-    "sold": 1,
+    "sold": 6,
     "limitedStock": false
   },
   {
@@ -1200,7 +1200,7 @@
     "in_stock": true,
     "weight": 70,
     "stock": 88,
-    "sold": 7,
+    "sold": 9,
     "limitedStock": true
   },
   {
@@ -4949,7 +4949,7 @@
     "in_stock": true,
     "weight": 12,
     "stock": 17,
-    "sold": 3,
+    "sold": 8,
     "limitedStock": true
   },
   {
@@ -5758,7 +5758,7 @@
     "original_price": "BDT 380",
     "in_stock": true,
     "weight": 100,
-    "sold": 18,
+    "sold": 26,
     "stock": 82,
     "limitedStock": false
   },
@@ -6309,7 +6309,7 @@
     "in_stock": true,
     "sales_count": 3,
     "stock": 20,
-    "sold": 25,
+    "sold": 55,
     "weight": 0,
     "limitedStock": true
   },
@@ -6404,7 +6404,7 @@
     "price": "BDT 225",
     "original_price": "BDT 480",
     "in_stock": true,
-    "sold": 0,
+    "sold": 1,
     "weight": 0,
     "stock": -1,
     "limitedStock": false
@@ -8334,7 +8334,7 @@
     "sales_count": 7,
     "weight": 5,
     "stock": 6,
-    "sold": 20,
+    "sold": 35,
     "limitedStock": false
   },
   {
@@ -9113,7 +9113,7 @@
     "sales_count": 18,
     "weight": 2,
     "stock": 65,
-    "sold": 27,
+    "sold": 33,
     "limitedStock": false
   },
   {
@@ -9228,7 +9228,7 @@
     "sales_count": 2,
     "weight": 30,
     "stock": 5,
-    "sold": 2,
+    "sold": 3,
     "limitedStock": false
   },
   {
