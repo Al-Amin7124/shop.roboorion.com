@@ -1,5 +1,28 @@
 [
   {
+    "id": "RBO-1532",
+    "title": "Sunpower 18650 Battery 2600mAh (3.7V) – Original Li-ion Cell",
+    "url": "products/1532-sunpower-18650-battery-2600mah-3.7v-original-li-ion-cell-robo-orion-bangladesh.html",
+    "image": "img/product/1532-sunpower-18650-battery-2600mah-3.7v-original-li-ion-cell-robo-orion-bangladesh.jpg",
+    "alt": "Sunpower 18650 Battery 2600mAh (3.7V) – Original Li-ion Cell",
+    "categories": [
+      "components",
+      "power-supply",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 60",
+    "rating": 5,
+    "reviews": 41,
+    "brand": "Sunpower",
+    "price": "BDT 160",
+    "original_price": "BDT 220",
+    "in_stock": false,
+    "weight": 0.05,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1531",
     "title": "DTL 18650 Battery 2600mAh (3.7V) – Grade A 3C Li-ion Cell",
     "url": "products/1531-dtl-18650-battery-2600mah-3.7v-grade-a-3c-li-ion-cell-robo-orion-bangladesh.html",
