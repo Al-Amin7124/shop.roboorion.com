@@ -1,5 +1,28 @@
 [
   {
+    "id": "RBO-1533",
+    "title": "Sanyo 9G0812P1K091 12V 1.8A 3.15 Inch Server Cooling Fan",
+    "url": "products/1533-sanyo-9g0812p1k091-12v-1.8a-3.15-inch-server-cooling-fan-robo-orion-bangladesh.html",
+    "image": "img/product/1533-sanyo-9g0812p1k091-12v-1.8a-3.15-inch-server-cooling-fan-robo-orion-bangladesh.jpg",
+    "alt": "Sanyo 9G0812P1K091 12V 1.8A 3.15 Inch Server Cooling Fan",
+    "categories": [
+      "bldc-motors",
+      "printer-parts",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 210",
+    "rating": 5,
+    "reviews": 14,
+    "brand": "Sanyo Denki",
+    "price": "BDT 580",
+    "original_price": "BDT 790",
+    "in_stock": true,
+    "weight": 130,
+    "stock": 2,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1532",
     "title": "Sunpower 18650 Battery 2600mAh (3.7V) – Original Li-ion Cell",
     "url": "products/1532-sunpower-18650-battery-2600mah-3.7v-original-li-ion-cell-robo-orion-bangladesh.html",
@@ -17,7 +40,7 @@
     "price": "BDT 160",
     "original_price": "BDT 220",
     "in_stock": false,
-    "weight": 0.05,
+    "weight": 0,
     "stock": 0,
     "sold": 0,
     "limitedStock": true
