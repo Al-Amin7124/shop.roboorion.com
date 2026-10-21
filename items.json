@@ -1,5 +1,30 @@
 [
   {
+    "id": "RBO-1534",
+    "title": "6.4V 6Ah 2S LiFePO4 Battery Pack with 10A Balanced BMS",
+    "url": "products/1534-6-4v-6ah-2s-lifepo4-battery-pack-with-10a-balanced-bms-robo-orion-bangladesh.html",
+    "image": "img/product/1534-6-4v-6ah-2s-lifepo4-battery-pack-with-10a-balanced-bms-robo-orion-bangladesh.jpg",
+    "alt": "6.4V 6Ah 2S LiFePO4 Battery Pack with 10A Balanced BMS",
+    "categories": [
+      "battery-packs",
+      "lithium-batteries",
+      "bms-protection",
+      "power-supply",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 400",
+    "rating": 5,
+    "reviews": 17,
+    "brand": "Robo Orion",
+    "price": "BDT 850",
+    "original_price": "BDT 1250",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 5,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1533",
     "title": "Sanyo 9G0812P1K091 12V 1.8A 3.15 Inch Server Cooling Fan",
     "url": "products/1533-sanyo-9g0812p1k091-12v-1.8a-3.15-inch-server-cooling-fan-robo-orion-bangladesh.html",
