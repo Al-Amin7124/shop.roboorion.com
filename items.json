@@ -1,5 +1,30 @@
 [
   {
+    "id": "RBO-1535",
+    "title": "6.4V 15Ah 2S LiFePO4 Battery Pack with 1.2A Active Balancer",
+    "url": "products/1535-6-4v-15ah-2s-lifepo4-battery-pack-with-1-2a-active-balancer-robo-orion-bangladesh.html",
+    "image": "img/product/1535-6-4v-15ah-2s-lifepo4-battery-pack-with-1-2a-active-balancer-robo-orion-bangladesh.jpg",
+    "alt": "6.4V 15Ah 2S LiFePO4 Battery Pack with 1.2A Active Balancer",
+    "categories": [
+      "battery-packs",
+      "lithium-batteries",
+      "bms-protection",
+      "power-supply",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 500",
+    "rating": 5,
+    "reviews": 14,
+    "brand": "Robo Orion",
+    "price": "BDT 1750",
+    "original_price": "BDT 2250",
+    "in_stock": true,
+    "weight": 0,
+    "stock": 5,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1534",
     "title": "6.4V 6Ah 2S LiFePO4 Battery Pack with 10A Balanced BMS",
     "url": "products/1534-6-4v-6ah-2s-lifepo4-battery-pack-with-10a-balanced-bms-robo-orion-bangladesh.html",
