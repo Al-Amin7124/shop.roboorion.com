@@ -22,7 +22,7 @@
     "weight": 0,
     "stock": 5,
     "sold": 0,
-    "limitedStock": true
+    "limitedStock": false
   },
   {
     "id": "RBO-1533",
