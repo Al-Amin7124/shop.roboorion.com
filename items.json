@@ -1,5 +1,29 @@
 [
   {
+    "id": "RBO-1536",
+    "title": "400W 15A DC-DC Step-Up Boost Converter Module",
+    "url": "products/1536-400w-15a-dc-dc-step-up-boost-converter-module-robo-orion-bangladesh.html",
+    "image": "img/product/1536-400w-15a-dc-dc-step-up-boost-converter-module-robo-orion-bangladesh.jpg",
+    "alt": "400W 15A DC-DC Step-Up Boost Converter Module",
+    "categories": [
+      "converter-modules",
+      "power-supply",
+      "led-drivers",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 130",
+    "rating": 5,
+    "reviews": 13,
+    "brand": "Robo Orion",
+    "price": "BDT 350",
+    "original_price": "BDT 480",
+    "in_stock": false,
+    "weight": 0,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1535",
     "title": "6.4V 15Ah 2S LiFePO4 Battery Pack with 1.2A Active Balancer",
     "url": "products/1535-6-4v-15ah-2s-lifepo4-battery-pack-with-1-2a-active-balancer-robo-orion-bangladesh.html",
@@ -90,8 +114,8 @@
     "price": "BDT 160",
     "original_price": "BDT 220",
     "in_stock": false,
-    "weight": 0,
-    "stock": 0,
+    "weight": 45,
+    "stock": -100,
     "sold": 0,
     "limitedStock": true
   },
@@ -713,7 +737,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "weight": 0,
-    "stock": 3,
+    "stock": 2,
     "sold": 2,
     "limitedStock": true
   },
@@ -1295,7 +1319,7 @@
     "original_price": "BDT 590",
     "in_stock": true,
     "weight": 70,
-    "stock": 88,
+    "stock": 91,
     "sold": 9,
     "limitedStock": true
   },
@@ -1454,7 +1478,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 1,
-    "stock": 5,
+    "stock": 4,
     "sold": 0,
     "limitedStock": false
   },
@@ -1979,7 +2003,7 @@
     "original_price": "BDT 250",
     "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": -1,
     "sold": 2,
     "limitedStock": false
   },
@@ -4454,7 +4478,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "weight": 2,
-    "stock": 6,
+    "stock": 4,
     "sold": 4,
     "sales_count": 2,
     "limitedStock": true
@@ -5643,7 +5667,7 @@
     "weight": 65,
     "sales_count": 1,
     "sold": 1,
-    "stock": 1,
+    "stock": 0,
     "limitedStock": false
   },
   {
@@ -5879,7 +5903,7 @@
     "sales_count": 2,
     "sold": 2,
     "weight": 0,
-    "stock": 3,
+    "stock": 2,
     "limitedStock": false
   },
   {
@@ -7131,7 +7155,7 @@
     "sales_count": 3,
     "sold": 28,
     "weight": 0,
-    "stock": 10,
+    "stock": 8,
     "limitedStock": false
   },
   {
@@ -7174,7 +7198,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 5,
-    "stock": 10,
+    "stock": 4,
     "sold": 23,
     "limitedStock": false
   },
@@ -7335,7 +7359,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 1.5,
-    "stock": 50,
+    "stock": 49,
     "sold": 16,
     "limitedStock": false
   },
@@ -7378,7 +7402,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "sales_count": 2,
-    "stock": 8,
+    "stock": 7,
     "sold": 9,
     "weight": 0,
     "limitedStock": true
@@ -7496,7 +7520,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 50,
-    "stock": 2,
+    "stock": 1,
     "sold": 10,
     "limitedStock": false
   },
@@ -7590,7 +7614,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 12,
-    "stock": 11,
+    "stock": 10,
     "sold": 13,
     "limitedStock": false
   },
@@ -7637,7 +7661,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 37,
-    "stock": 7,
+    "stock": 6,
     "sold": 18,
     "limitedStock": true
   },
@@ -7837,7 +7861,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 2,
-    "stock": 105,
+    "stock": 103,
     "sold": 92,
     "limitedStock": false
   },
@@ -8099,7 +8123,7 @@
     "in_stock": true,
     "sales_count": 21,
     "weight": 2,
-    "stock": 4,
+    "stock": 3,
     "sold": 46,
     "limitedStock": false
   },
