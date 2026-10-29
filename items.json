@@ -1,7 +1,122 @@
 [
   {
+    "id": "RBO-1544",
+    "title": "28 AWG White Silicone Wire (1 Feet)",
+    "url": "products/1544-28-awg-white-silicone-wire-1-feet-robo-orion-bangladesh.html",
+    "image": "img/product/1544-28-awg-white-silicone-wire-1-feet-robo-orion-bangladesh.jpg",
+    "alt": "28 AWG White Silicone Wire (1 Feet)",
+    "categories": [
+      "wire-cables",
+      "jumper-wires",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 3",
+    "rating": 5,
+    "reviews": 18,
+    "brand": "Robo Orion",
+    "price": "BDT 5",
+    "original_price": "BDT 8",
+    "in_stock": true,
+    "weight": 1,
+    "stock": 20,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
+    "id": "RBO-1543",
+    "title": "28 AWG Green Silicone Wire (1 Feet)",
+    "url": "products/1543-28-awg-green-silicone-wire-1-feet-robo-orion-bangladesh.html",
+    "image": "img/product/1543-28-awg-green-silicone-wire-1-feet-robo-orion-bangladesh.jpg",
+    "alt": "28 AWG Green Silicone Wire (1 Feet)",
+    "categories": [
+      "wire-cables",
+      "jumper-wires",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 3",
+    "rating": 5,
+    "reviews": 10,
+    "brand": "Robo Orion",
+    "price": "BDT 5",
+    "original_price": "BDT 8",
+    "in_stock": true,
+    "weight": 1,
+    "stock": 20,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
+    "id": "RBO-1542",
+    "title": "28 AWG Blue Silicone Wire (1 Feet)",
+    "url": "products/1542-28-awg-blue-silicone-wire-1-feet-robo-orion-bangladesh.html",
+    "image": "img/product/1542-28-awg-blue-silicone-wire-1-feet-robo-orion-bangladesh.jpg",
+    "alt": "28 AWG Blue Silicone Wire (1 Feet)",
+    "categories": [
+      "wire-cables",
+      "jumper-wires",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 3",
+    "rating": 5,
+    "reviews": 10,
+    "brand": "Robo Orion",
+    "price": "BDT 5",
+    "original_price": "BDT 8",
+    "in_stock": true,
+    "weight": 1,
+    "stock": 20,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
+    "id": "RBO-1541",
+    "title": "28 AWG Yellow Silicone Wire (1 Feet)",
+    "url": "products/1541-28-awg-yellow-silicone-wire-1-feet-robo-orion-bangladesh.html",
+    "image": "img/product/1541-28-awg-yellow-silicone-wire-1-feet-robo-orion-bangladesh.jpg",
+    "alt": "28 AWG Yellow Silicone Wire (1 Feet)",
+    "categories": [
+      "wire-cables",
+      "jumper-wires",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 3",
+    "rating": 5,
+    "reviews": 9,
+    "brand": "Robo Orion",
+    "price": "BDT 5",
+    "original_price": "BDT 8",
+    "in_stock": true,
+    "weight": 1,
+    "stock": 20,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
+    "id": "RBO-1540",
+    "title": "28 AWG Black Flexible Silicon Wire (1 Feet)",
+    "url": "products/1540-28-awg-black-flexible-hookup-wire-1-meter-robo-orion-bangladesh.html",
+    "image": "img/product/1540-28-awg-black-flexible-hookup-wire-1-meter-robo-orion-bangladesh.jpg",
+    "alt": "28 AWG Black Flexible Hookup Wire (1 Meter)",
+    "categories": [
+      "wire-cables",
+      "jumper-wires",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 3",
+    "rating": 5,
+    "reviews": 10,
+    "brand": "Robo Orion",
+    "price": "BDT 5",
+    "original_price": "BDT 8",
+    "in_stock": true,
+    "weight": 1,
+    "stock": 50,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1539",
-    "title": "28 AWG Red Flexible Hookup Wire (1 Meter)",
+    "title": "28 AWG Red Flexible Silicon Wire (1 Feet)",
     "url": "products/1539-28-awg-red-flexible-hookup-wire-1-meter-robo-orion-bangladesh.html",
     "image": "img/product/1539-28-awg-red-flexible-hookup-wire-1-meter-robo-orion-bangladesh.jpg",
     "alt": "28 AWG Red Flexible Hookup Wire (1 Meter)",
@@ -20,7 +135,7 @@
     "weight": 1,
     "stock": 50,
     "sold": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1538",
