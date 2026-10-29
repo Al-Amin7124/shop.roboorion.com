@@ -1,5 +1,51 @@
 [
   {
+    "id": "RBO-1538",
+    "title": "AVC DBPB0428B2U 12V 1.80A 1.57 Inch Server Cooling Fan",
+    "url": "products/1538-avc-dbpb0428b2u-12v-1-80a-1-57-inch-server-cooling-fan-robo-orion-bangladesh.html",
+    "image": "img/product/1538-avc-dbpb0428b2u-12v-1-80a-1-57-inch-server-cooling-fan-robo-orion-bangladesh.jpg",
+    "alt": "AVC DBPB0428B2U 12V 1.80A 1.57 Inch Server Cooling Fan",
+    "categories": [
+      "bldc-motors",
+      "printer-parts",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 170",
+    "rating": 5,
+    "reviews": 12,
+    "brand": "AVC",
+    "price": "BDT 350",
+    "original_price": "BDT 520",
+    "in_stock": true,
+    "weight": 48,
+    "stock": 2,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
+    "id": "RBO-1537",
+    "title": "Delta TFB0412EHN 12V 0.87A 1.57 Inch Server Cooling Fan",
+    "url": "products/1537-delta-tfb0412ehn-12v-0-87a-1-57-inch-server-cooling-fan-robo-orion-bangladesh.html",
+    "image": "img/product/1537-delta-tfb0412ehn-12v-0-87a-1-57-inch-server-cooling-fan-robo-orion-bangladesh.jpg",
+    "alt": "Delta TFB0412EHN 12V 0.87A 1.57 Inch Server Cooling Fan",
+    "categories": [
+      "bldc-motors",
+      "printer-parts",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 170",
+    "rating": 5,
+    "reviews": 8,
+    "brand": "Delta",
+    "price": "BDT 320",
+    "original_price": "BDT 490",
+    "in_stock": true,
+    "weight": 48,
+    "stock": 2,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1536",
     "title": "400W 15A DC-DC Step-Up Boost Converter Module",
     "url": "products/1536-400w-15a-dc-dc-step-up-boost-converter-module-robo-orion-bangladesh.html",
@@ -1979,7 +2025,7 @@
     "original_price": "BDT 150",
     "in_stock": true,
     "weight": 0,
-    "stock": 4,
+    "stock": 5,
     "sold": 2,
     "limitedStock": false
   },
@@ -2483,7 +2529,7 @@
     "in_stock": true,
     "weight": 1,
     "stock": 8,
-    "sold": 20,
+    "sold": 22,
     "limitedStock": true
   },
   {
@@ -9369,7 +9415,7 @@
     "original_price": "BDT 18",
     "in_stock": true,
     "stock": 3,
-    "sold": 0,
+    "sold": 2,
     "weight": 0,
     "limitedStock": false
   },
