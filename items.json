@@ -1,7 +1,7 @@
 [
   {
     "id": "RBO-1550",
-    "title": "4.2V 3A AC 220V 1S Lithium Battery Charger Module",
+    "title": "1S 4.2V 3A Charging Circuit Board – Li-ion Battery Charger",
     "url": "products/1550-4-2v-3a-ac-220v-1s-lithium-battery-charger-module-robo-orion-bangladesh.html",
     "image": "img/product/1550-4-2v-3a-ac-220v-1s-lithium-battery-charger-module-robo-orion-bangladesh.jpg",
     "alt": "4.2V 3A AC 220V 1S Lithium Battery Charger Module",
@@ -1622,7 +1622,7 @@
     "original_price": "BDT 280",
     "in_stock": true,
     "weight": 25,
-    "stock": 25,
+    "stock": 15,
     "sold": 1,
     "limitedStock": true
   },
