@@ -1,5 +1,30 @@
 [
   {
+    "id": "RBO-1550",
+    "title": "4.2V 3A AC 220V 1S Lithium Battery Charger Module",
+    "url": "products/1550-4-2v-3a-ac-220v-1s-lithium-battery-charger-module-robo-orion-bangladesh.html",
+    "image": "img/product/1550-4-2v-3a-ac-220v-1s-lithium-battery-charger-module-robo-orion-bangladesh.jpg",
+    "alt": "4.2V 3A AC 220V 1S Lithium Battery Charger Module",
+    "categories": [
+      "chargers",
+      "power-supply",
+      "converter-modules",
+      "lithium-batteries",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 125",
+    "rating": 5,
+    "reviews": 19,
+    "brand": "Robo Orion",
+    "price": "BDT 155",
+    "original_price": "BDT 280",
+    "in_stock": true,
+    "weight": 25,
+    "stock": 5,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1549",
     "title": "14 AWG Red Flexible Silicone Wire (1 Feet)",
     "url": "products/1549-14-awg-red-flexible-silicone-wire-1-feet-robo-orion-bangladesh.html",
@@ -7635,7 +7660,7 @@
     "in_stock": false,
     "sales_count": 1,
     "weight": 15,
-    "stock": 1,
+    "stock": 0,
     "sold": 7,
     "limitedStock": false
   },
