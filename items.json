@@ -1,5 +1,74 @@
 [
   {
+    "id": "RBO-1547",
+    "title": "18 AWG Red Flexible Silicone Wire (1 Feet)",
+    "url": "products/1547-18-awg-red-flexible-silicone-wire-1-feet-robo-orion-bangladesh.html",
+    "image": "img/product/1547-18-awg-red-flexible-silicone-wire-1-feet-robo-orion-bangladesh.jpg",
+    "alt": "18 AWG Red Flexible Silicone Wire (1 Feet)",
+    "categories": [
+      "wire-cables",
+      "jumper-wires",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 15",
+    "rating": 5,
+    "reviews": 23,
+    "brand": "Robo Orion",
+    "price": "BDT 20",
+    "original_price": "BDT 35",
+    "in_stock": true,
+    "weight": 4,
+    "stock": 20,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
+    "id": "RBO-1546",
+    "title": "18 AWG Black Flexible Silicone Wire (1 Feet)",
+    "url": "products/1546-18-awg-black-flexible-silicone-wire-1-feet-robo-orion-bangladesh.html",
+    "image": "img/product/1546-18-awg-black-flexible-silicone-wire-1-feet-robo-orion-bangladesh.jpg",
+    "alt": "18 AWG Black Flexible Silicone Wire (1 Feet)",
+    "categories": [
+      "wire-cables",
+      "jumper-wires",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 15",
+    "rating": 5,
+    "reviews": 22,
+    "brand": "Robo Orion",
+    "price": "BDT 20",
+    "original_price": "BDT 35",
+    "in_stock": true,
+    "weight": 4,
+    "stock": 20,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
+    "id": "RBO-1545",
+    "title": "22 AWG Black Flexible Silicone Wire (1 Feet)",
+    "url": "products/1545-22-awg-black-flexible-silicone-wire-1-feet-robo-orion-bangladesh.html",
+    "image": "img/product/1545-22-awg-black-flexible-silicone-wire-1-feet-robo-orion-bangladesh.jpg",
+    "alt": "22 AWG Black Flexible Silicone Wire (1 Feet)",
+    "categories": [
+      "wire-cables",
+      "jumper-wires",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 10",
+    "rating": 5,
+    "reviews": 17,
+    "brand": "Robo Orion",
+    "price": "BDT 10",
+    "original_price": "BDT 20",
+    "in_stock": true,
+    "weight": 2,
+    "stock": 20,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1544",
     "title": "28 AWG White Silicone Wire (1 Feet)",
     "url": "products/1544-28-awg-white-silicone-wire-1-feet-robo-orion-bangladesh.html",
@@ -12,7 +81,7 @@
     ],
     "discount": "Save BDT 3",
     "rating": 5,
-    "reviews": 18,
+    "reviews": 8,
     "brand": "Robo Orion",
     "price": "BDT 5",
     "original_price": "BDT 8",
@@ -156,7 +225,7 @@
     "original_price": "BDT 520",
     "in_stock": true,
     "weight": 48,
-    "stock": 2,
+    "stock": 1,
     "sold": 0,
     "limitedStock": true
   },
@@ -4559,16 +4628,16 @@
       "wire-cables",
       "diy-kits"
     ],
-    "discount": "Save BDT 45",
+    "discount": "Save BDT 50",
     "rating": 5,
     "reviews": 11,
     "brand": "Generic",
-    "price": "BDT 15",
+    "price": "BDT 10",
     "original_price": "BDT 60",
     "in_stock": true,
     "sold": 14,
     "weight": 2,
-    "stock": 5,
+    "stock": 20,
     "limitedStock": false
   },
   {
@@ -6201,7 +6270,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "weight": 8,
-    "stock": 21,
+    "stock": 19,
     "sold": 14,
     "limitedStock": false
   },
@@ -6922,7 +6991,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 2,
-    "stock": 9,
+    "stock": 8,
     "sold": 5,
     "limitedStock": false
   },
@@ -7586,7 +7655,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "sales_count": 2,
-    "stock": 8,
+    "stock": 7,
     "sold": 9,
     "weight": 0,
     "limitedStock": true
@@ -7845,7 +7914,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 37,
-    "stock": 7,
+    "stock": 6,
     "sold": 18,
     "limitedStock": true
   },
@@ -8217,7 +8286,7 @@
     "price": "BDT 300",
     "original_price": "BDT 450",
     "in_stock": true,
-    "stock": 2,
+    "stock": 1,
     "sold": 0,
     "weight": 0,
     "limitedStock": false
