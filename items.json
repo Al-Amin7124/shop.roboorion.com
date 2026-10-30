@@ -1,5 +1,51 @@
 [
   {
+    "id": "RBO-1549",
+    "title": "14 AWG Red Flexible Silicone Wire (1 Feet)",
+    "url": "products/1549-14-awg-red-flexible-silicone-wire-1-feet-robo-orion-bangladesh.html",
+    "image": "img/product/1549-14-awg-red-flexible-silicone-wire-1-feet-robo-orion-bangladesh.jpg",
+    "alt": "14 AWG Red Flexible Silicone Wire (1 Feet)",
+    "categories": [
+      "wire-cables",
+      "jumper-wires",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 20",
+    "rating": 5,
+    "reviews": 18,
+    "brand": "Robo Orion",
+    "price": "BDT 35",
+    "original_price": "BDT 55",
+    "in_stock": true,
+    "weight": 10,
+    "stock": 10,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
+    "id": "RBO-1548",
+    "title": "14 AWG Black Flexible Silicone Wire (1 Feet)",
+    "url": "products/1548-14-awg-black-flexible-silicone-wire-1-feet-robo-orion-bangladesh.html",
+    "image": "img/product/1548-14-awg-black-flexible-silicone-wire-1-feet-robo-orion-bangladesh.jpg",
+    "alt": "14 AWG Black Flexible Silicone Wire (1 Feet)",
+    "categories": [
+      "wire-cables",
+      "jumper-wires",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 20",
+    "rating": 5,
+    "reviews": 17,
+    "brand": "Robo Orion",
+    "price": "BDT 35",
+    "original_price": "BDT 55",
+    "in_stock": true,
+    "weight": 10,
+    "stock": 10,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1547",
     "title": "18 AWG Red Flexible Silicone Wire (1 Feet)",
     "url": "products/1547-18-awg-red-flexible-silicone-wire-1-feet-robo-orion-bangladesh.html",
@@ -1237,7 +1283,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": 10,
     "sold": 0,
     "limitedStock": false
   },
@@ -1777,7 +1823,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 0,
-    "stock": 10,
+    "stock": 20,
     "sold": 5,
     "limitedStock": false
   },
