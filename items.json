@@ -551,7 +551,7 @@
     "original_price": "BDT 145",
     "in_stock": true,
     "weight": 25,
-    "stock": 4,
+    "stock": 3,
     "sold": 1,
     "limitedStock": true
   },
@@ -819,7 +819,7 @@
     "original_price": "BDT 25",
     "in_stock": true,
     "weight": 2,
-    "stock": 100,
+    "stock": 99,
     "sold": 100,
     "limitedStock": true
   },
@@ -2806,7 +2806,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 1,
-    "stock": 7,
+    "stock": 6,
     "sold": 22,
     "limitedStock": true
   },
@@ -2962,7 +2962,7 @@
     "original_price": "BDT 10",
     "in_stock": true,
     "weight": 0,
-    "stock": 3,
+    "stock": 2,
     "sold": 8,
     "limitedStock": false
   },
@@ -5575,10 +5575,10 @@
     "brand": "Generic",
     "price": "BDT 18",
     "original_price": "BDT 35",
-    "in_stock": true,
+    "in_stock": false,
     "sales_count": 9,
     "weight": 1,
-    "stock": 1,
+    "stock": 0,
     "sold": 46,
     "limitedStock": true
   },
@@ -5601,7 +5601,7 @@
     "in_stock": true,
     "sales_count": 5,
     "weight": 2,
-    "stock": 2,
+    "stock": 1,
     "sold": 48,
     "limitedStock": true
   },
@@ -5624,7 +5624,7 @@
     "in_stock": true,
     "sales_count": 5,
     "weight": 1,
-    "stock": 11,
+    "stock": 10,
     "sold": 28,
     "limitedStock": true
   },
@@ -5661,11 +5661,11 @@
       "lithium-batteries",
       "diy-kits"
     ],
-    "discount": "Save BDT 60",
+    "discount": "Save BDT 80",
     "rating": 5,
     "reviews": 16,
     "brand": "DTL Dongteng",
-    "price": "BDT 190",
+    "price": "BDT 170",
     "original_price": "BDT 250",
     "in_stock": true,
     "weight": 48,
@@ -5691,7 +5691,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 1,
-    "stock": 14,
+    "stock": 13,
     "sold": 27,
     "sales_count": 5,
     "limitedStock": true
@@ -5715,7 +5715,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 1,
-    "stock": 16,
+    "stock": 15,
     "sold": 36,
     "limitedStock": true
   },
