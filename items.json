@@ -439,7 +439,7 @@
     "original_price": "BDT 220",
     "in_stock": true,
     "weight": 45,
-    "stock": 256,
+    "stock": 356,
     "sold": 0,
     "limitedStock": true
   },
@@ -7410,7 +7410,7 @@
     "in_stock": true,
     "sales_count": 10,
     "stock": 5,
-    "sold": 14,
+    "sold": 15,
     "weight": 0,
     "limitedStock": false
   },
@@ -7455,7 +7455,7 @@
     "in_stock": true,
     "weight": 5,
     "stock": 6,
-    "sold": 8,
+    "sold": 9,
     "limitedStock": false
   },
   {
@@ -7845,7 +7845,7 @@
     "sales_count": 6,
     "weight": 50,
     "stock": 0,
-    "sold": 10,
+    "sold": 11,
     "limitedStock": false
   },
   {
@@ -8186,7 +8186,7 @@
     "sales_count": 4,
     "weight": 2,
     "stock": 93,
-    "sold": 102,
+    "sold": 104,
     "limitedStock": false
   },
   {
@@ -8448,7 +8448,7 @@
     "sales_count": 21,
     "weight": 2,
     "stock": -1,
-    "sold": 49,
+    "sold": 50,
     "limitedStock": false
   },
   {
@@ -8868,7 +8868,7 @@
     "in_stock": true,
     "weight": 4,
     "stock": 20,
-    "sold": 27,
+    "sold": 28,
     "limitedStock": false
   },
   {
@@ -9627,7 +9627,7 @@
     "in_stock": true,
     "weight": 15,
     "stock": 9,
-    "sold": 11,
+    "sold": 12,
     "limitedStock": false
   },
   {
