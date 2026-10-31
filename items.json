@@ -883,9 +883,9 @@
     "brand": "Generic",
     "price": "BDT 50",
     "original_price": "BDT 70",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 7,
-    "stock": 1,
+    "stock": 0,
     "sold": 0,
     "limitedStock": true
   },
@@ -907,7 +907,7 @@
     "original_price": "BDT 80",
     "in_stock": true,
     "weight": 7,
-    "stock": 5,
+    "stock": 4,
     "sold": 0,
     "limitedStock": true
   },
@@ -929,7 +929,7 @@
     "original_price": "BDT 80",
     "in_stock": true,
     "weight": 7,
-    "stock": 5,
+    "stock": 3,
     "sold": 0,
     "limitedStock": true
   },
@@ -973,7 +973,7 @@
     "original_price": "BDT 80",
     "in_stock": true,
     "weight": 7,
-    "stock": 19,
+    "stock": 18,
     "sold": 1,
     "limitedStock": true
   },
@@ -5368,7 +5368,7 @@
     "original_price": "BDT 520",
     "in_stock": true,
     "weight": 15,
-    "stock": 10,
+    "stock": 9,
     "sold": 0,
     "limitedStock": true
   },
@@ -6180,7 +6180,7 @@
     "original_price": "BDT 780",
     "in_stock": true,
     "weight": 290,
-    "stock": 28,
+    "stock": 20,
     "sold": 36,
     "limitedStock": true
   },
@@ -7911,7 +7911,7 @@
     "brand": "LG",
     "price": "BDT 220",
     "original_price": "BDT 320",
-    "in_stock": true,
+    "in_stock": false,
     "sales_count": 4,
     "weight": 126,
     "stock": 3,
