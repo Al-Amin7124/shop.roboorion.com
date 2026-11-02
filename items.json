@@ -158,7 +158,7 @@
     "original_price": "BDT 8",
     "in_stock": true,
     "weight": 1,
-    "stock": 15,
+    "stock": 5,
     "sold": 0,
     "limitedStock": true
   },
@@ -181,7 +181,7 @@
     "original_price": "BDT 8",
     "in_stock": true,
     "weight": 1,
-    "stock": 13,
+    "stock": 3,
     "sold": 2,
     "limitedStock": true
   },
@@ -204,7 +204,7 @@
     "original_price": "BDT 8",
     "in_stock": true,
     "weight": 1,
-    "stock": 13,
+    "stock": 3,
     "sold": 2,
     "limitedStock": true
   },
@@ -227,7 +227,7 @@
     "original_price": "BDT 8",
     "in_stock": true,
     "weight": 1,
-    "stock": 13,
+    "stock": 3,
     "sold": 2,
     "limitedStock": true
   },
@@ -250,7 +250,7 @@
     "original_price": "BDT 8",
     "in_stock": true,
     "weight": 1,
-    "stock": 33,
+    "stock": 23,
     "sold": 12,
     "limitedStock": true
   },
@@ -273,7 +273,7 @@
     "original_price": "BDT 8",
     "in_stock": true,
     "weight": 1,
-    "stock": 29,
+    "stock": 19,
     "sold": 12,
     "limitedStock": true
   },
@@ -4174,7 +4174,7 @@
     "weight": 245,
     "stock": 1,
     "sold": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1364",
@@ -6132,11 +6132,11 @@
     "brand": "MECH FANS",
     "price": "BDT 1080",
     "original_price": "BDT 1490",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 245,
     "stock": 0,
     "sold": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1280",
