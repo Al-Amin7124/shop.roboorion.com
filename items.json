@@ -159,7 +159,7 @@
     "in_stock": true,
     "weight": 1,
     "stock": 5,
-    "sold": 0,
+    "sold": 10,
     "limitedStock": true
   },
   {
@@ -182,7 +182,7 @@
     "in_stock": true,
     "weight": 1,
     "stock": 3,
-    "sold": 2,
+    "sold": 12,
     "limitedStock": true
   },
   {
@@ -205,7 +205,7 @@
     "in_stock": true,
     "weight": 1,
     "stock": 3,
-    "sold": 2,
+    "sold": 12,
     "limitedStock": true
   },
   {
@@ -228,7 +228,7 @@
     "in_stock": true,
     "weight": 1,
     "stock": 3,
-    "sold": 2,
+    "sold": 12,
     "limitedStock": true
   },
   {
@@ -251,7 +251,7 @@
     "in_stock": true,
     "weight": 1,
     "stock": 23,
-    "sold": 12,
+    "sold": 22,
     "limitedStock": true
   },
   {
@@ -274,7 +274,7 @@
     "in_stock": true,
     "weight": 1,
     "stock": 19,
-    "sold": 16,
+    "sold": 26,
     "limitedStock": true
   },
   {
@@ -341,7 +341,7 @@
     "brand": "Robo Orion",
     "price": "BDT 350",
     "original_price": "BDT 480",
-    "in_stock": false,
+    "in_stock": true,
     "weight": 0,
     "stock": 0,
     "sold": 0,
@@ -551,7 +551,7 @@
     "original_price": "BDT 145",
     "in_stock": true,
     "weight": 25,
-    "stock": 3,
+    "stock": 2,
     "sold": 2,
     "limitedStock": true
   },
@@ -775,7 +775,7 @@
     "original_price": "BDT 25",
     "in_stock": true,
     "weight": 3,
-    "stock": 100,
+    "stock": 90,
     "sold": 0,
     "limitedStock": true
   },
@@ -1105,7 +1105,7 @@
     "original_price": "BDT 290",
     "in_stock": true,
     "weight": 0,
-    "stock": 11,
+    "stock": 10,
     "sold": 1,
     "limitedStock": true
   },
@@ -5851,7 +5851,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 1,
-    "stock": 200,
+    "stock": 193,
     "sold": 51,
     "limitedStock": true
   },
@@ -5874,7 +5874,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 1,
-    "stock": 30,
+    "stock": 22,
     "sold": 48,
     "sales_count": 3,
     "limitedStock": true
@@ -6135,7 +6135,7 @@
     "in_stock": false,
     "weight": 245,
     "stock": 0,
-    "sold": 0,
+    "sold": 1,
     "limitedStock": true
   },
   {
@@ -7613,7 +7613,7 @@
     "original_price": "BDT 220",
     "in_stock": true,
     "weight": 0,
-    "stock": 3,
+    "stock": 2,
     "sold": 4,
     "limitedStock": false
   },
@@ -7844,7 +7844,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 50,
-    "stock": 0,
+    "stock": -2,
     "sold": 12,
     "limitedStock": false
   },
@@ -8185,7 +8185,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 2,
-    "stock": 93,
+    "stock": 80,
     "sold": 104,
     "limitedStock": false
   },
