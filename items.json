@@ -341,7 +341,7 @@
     "brand": "Robo Orion",
     "price": "BDT 350",
     "original_price": "BDT 480",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 0,
     "stock": 0,
     "sold": 0,
