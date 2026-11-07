@@ -1,5 +1,28 @@
 [
   {
+    "id": "RBO-1551",
+    "title": "KCD1 3-Pin Snap-in Rocker Switch 22x15mm (1 Pc)",
+    "url": "products/1551-kcd1-3-pin-snap-in-rocker-switch-22x15mm-1-pc-robo-orion-bangladesh.html",
+    "image": "img/product/1551-kcd1-3-pin-snap-in-rocker-switch-22x15mm-1-pc-robo-orion-bangladesh.jpg",
+    "alt": "KCD1 3-Pin Snap-in Rocker Switch 22x15mm (1 Pc)",
+    "categories": [
+      "switches",
+      "diy-kits",
+      "power-supply"
+    ],
+    "discount": "Save BDT 5",
+    "rating": 5,
+    "reviews": 13,
+    "brand": "Robo Orion",
+    "price": "BDT 10",
+    "original_price": "BDT 15",
+    "in_stock": true,
+    "weight": 5,
+    "stock": 20,
+    "sold": 0,
+    "limitedStock": false
+  },
+  {
     "id": "RBO-1550",
     "title": "1S 4.2V 3A Charging Circuit Board – Li-ion Battery Charger",
     "url": "products/1550-4-2v-3a-ac-220v-1s-lithium-battery-charger-module-robo-orion-bangladesh.html",
@@ -43,7 +66,7 @@
     "original_price": "BDT 55",
     "in_stock": true,
     "weight": 10,
-    "stock": 4,
+    "stock": 7,
     "sold": 3,
     "limitedStock": true
   },
@@ -66,7 +89,7 @@
     "original_price": "BDT 55",
     "in_stock": true,
     "weight": 10,
-    "stock": 4,
+    "stock": 7,
     "sold": 3,
     "limitedStock": true
   },
@@ -89,7 +112,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 4,
-    "stock": 11,
+    "stock": 16,
     "sold": 4,
     "limitedStock": true
   },
@@ -112,7 +135,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 4,
-    "stock": 11,
+    "stock": 16,
     "sold": 4,
     "limitedStock": true
   },
@@ -158,7 +181,7 @@
     "original_price": "BDT 8",
     "in_stock": true,
     "weight": 1,
-    "stock": 5,
+    "stock": 10,
     "sold": 10,
     "limitedStock": true
   },
@@ -181,7 +204,7 @@
     "original_price": "BDT 8",
     "in_stock": true,
     "weight": 1,
-    "stock": 3,
+    "stock": 8,
     "sold": 12,
     "limitedStock": true
   },
@@ -204,7 +227,7 @@
     "original_price": "BDT 8",
     "in_stock": true,
     "weight": 1,
-    "stock": 3,
+    "stock": 8,
     "sold": 12,
     "limitedStock": true
   },
@@ -227,7 +250,7 @@
     "original_price": "BDT 8",
     "in_stock": true,
     "weight": 1,
-    "stock": 3,
+    "stock": 8,
     "sold": 12,
     "limitedStock": true
   },
@@ -250,7 +273,7 @@
     "original_price": "BDT 8",
     "in_stock": true,
     "weight": 1,
-    "stock": 17,
+    "stock": 22,
     "sold": 22,
     "limitedStock": true
   },
@@ -273,7 +296,7 @@
     "original_price": "BDT 8",
     "in_stock": true,
     "weight": 1,
-    "stock": 13,
+    "stock": 18,
     "sold": 26,
     "limitedStock": true
   },
@@ -341,9 +364,9 @@
     "brand": "Robo Orion",
     "price": "BDT 350",
     "original_price": "BDT 480",
-    "in_stock": false,
-    "weight": 0,
-    "stock": 0,
+    "in_stock": true,
+    "weight": 120,
+    "stock": 3,
     "sold": 0,
     "limitedStock": true
   },
@@ -439,7 +462,7 @@
     "original_price": "BDT 220",
     "in_stock": true,
     "weight": 45,
-    "stock": 348,
+    "stock": 352,
     "sold": 40,
     "limitedStock": true
   },
@@ -619,7 +642,7 @@
     "original_price": "BDT 350",
     "in_stock": true,
     "weight": 38,
-    "stock": 26,
+    "stock": 27,
     "sold": 0,
     "limitedStock": true
   },
@@ -731,7 +754,7 @@
     "original_price": "BDT 75",
     "in_stock": true,
     "weight": 9,
-    "stock": 29,
+    "stock": 30,
     "sold": 0,
     "limitedStock": true
   },
@@ -1061,7 +1084,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "weight": 0,
-    "stock": 2,
+    "stock": 3,
     "sold": 2,
     "limitedStock": true
   },
@@ -1172,7 +1195,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 10,
-    "stock": 55,
+    "stock": 57,
     "sold": 8,
     "limitedStock": true
   },
@@ -1330,7 +1353,7 @@
     "original_price": "BDT 85",
     "in_stock": true,
     "weight": 0,
-    "stock": 4,
+    "stock": 5,
     "sold": 0,
     "limitedStock": false
   },
@@ -1643,7 +1666,7 @@
     "original_price": "BDT 590",
     "in_stock": true,
     "weight": 70,
-    "stock": 90,
+    "stock": 91,
     "sold": 9,
     "limitedStock": true
   },
@@ -3030,7 +3053,7 @@
     "original_price": "BDT 580",
     "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": 1,
     "sold": 0,
     "limitedStock": false
   },
@@ -4013,7 +4036,7 @@
     "original_price": "BDT 15",
     "in_stock": true,
     "weight": 0,
-    "stock": 0,
+    "stock": 20,
     "sold": 13,
     "limitedStock": false
   },
@@ -4708,7 +4731,7 @@
     "in_stock": true,
     "sold": 20,
     "weight": 2,
-    "stock": 18,
+    "stock": 20,
     "limitedStock": false
   },
   {
@@ -4779,7 +4802,7 @@
     "original_price": "BDT 180",
     "in_stock": true,
     "weight": 2,
-    "stock": 8,
+    "stock": 18,
     "sold": 12,
     "limitedStock": true
   },
@@ -4802,7 +4825,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "weight": 2,
-    "stock": 4,
+    "stock": 3,
     "sold": 6,
     "sales_count": 2,
     "limitedStock": true
@@ -5944,7 +5967,7 @@
     "original_price": "BDT 85",
     "in_stock": true,
     "weight": 5,
-    "stock": 31,
+    "stock": 30,
     "sold": 9,
     "limitedStock": false
   },
@@ -6111,7 +6134,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 7,
-    "stock": -11,
+    "stock": 4,
     "sold": 20,
     "limitedStock": false
   },
@@ -6227,7 +6250,7 @@
     "sales_count": 2,
     "sold": 5,
     "weight": 0,
-    "stock": 0,
+    "stock": 10,
     "limitedStock": false
   },
   {
@@ -6318,7 +6341,7 @@
     "in_stock": true,
     "sales_count": 6,
     "weight": 20,
-    "stock": 1,
+    "stock": 3,
     "sold": 8,
     "limitedStock": false
   },
@@ -6777,9 +6800,9 @@
     "in_stock": false,
     "sales_count": 3,
     "weight": 50,
-    "stock": 7,
+    "stock": 0,
     "sold": 3,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1252",
@@ -6825,7 +6848,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 100,
-    "stock": 5,
+    "stock": 6,
     "sold": 3,
     "limitedStock": false
   },
@@ -6895,7 +6918,7 @@
     "original_price": "BDT 25",
     "in_stock": true,
     "sales_count": 1,
-    "stock": 5,
+    "stock": 25,
     "sold": 19,
     "weight": 0,
     "limitedStock": false
@@ -6943,7 +6966,7 @@
     "in_stock": true,
     "sold": 5,
     "weight": 0,
-    "stock": -2,
+    "stock": 3,
     "limitedStock": false
   },
   {
@@ -7111,7 +7134,7 @@
     "original_price": "BDT 110",
     "in_stock": true,
     "weight": 5,
-    "stock": -5,
+    "stock": 6,
     "sold": 20,
     "limitedStock": false
   },
@@ -7157,7 +7180,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 10,
-    "stock": 2,
+    "stock": 12,
     "sold": 30,
     "limitedStock": false
   },
@@ -7938,7 +7961,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 12,
-    "stock": 10,
+    "stock": 15,
     "sold": 14,
     "limitedStock": false
   },
@@ -8029,7 +8052,7 @@
     "original_price": "BDT 180",
     "in_stock": true,
     "weight": 5,
-    "stock": 2,
+    "stock": 1,
     "sold": 0,
     "limitedStock": false
   },
@@ -8117,7 +8140,7 @@
     "price": "BDT 255",
     "original_price": "BDT 320",
     "in_stock": true,
-    "stock": 0,
+    "stock": 3,
     "sold": 3,
     "weight": 0,
     "limitedStock": false
@@ -8176,11 +8199,11 @@
       "bms-protection",
       "converter-modules"
     ],
-    "discount": "Save BDT 22",
+    "discount": "Save BDT 20",
     "rating": 5,
     "reviews": 24,
     "brand": "Robo Orion",
-    "price": "BDT 18",
+    "price": "BDT 20",
     "original_price": "BDT 40",
     "in_stock": true,
     "sales_count": 4,
@@ -8357,7 +8380,7 @@
     "price": "BDT 300",
     "original_price": "BDT 450",
     "in_stock": true,
-    "stock": 1,
+    "stock": 2,
     "sold": 1,
     "weight": 0,
     "limitedStock": false
@@ -8379,7 +8402,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "sales_count": 1,
-    "stock": 8,
+    "stock": 7,
     "sold": 7,
     "weight": 0,
     "limitedStock": false
@@ -8777,7 +8800,7 @@
     "in_stock": true,
     "sales_count": 7,
     "weight": 5,
-    "stock": 3,
+    "stock": 23,
     "sold": 38,
     "limitedStock": false
   },
@@ -9023,7 +9046,7 @@
     "original_price": "BDT 400",
     "in_stock": true,
     "weight": 16,
-    "stock": -1,
+    "stock": 4,
     "sold": 3,
     "limitedStock": false
   },
@@ -9043,9 +9066,9 @@
     "brand": "Chinese",
     "price": "BDT 75",
     "original_price": "BDT 150",
-    "in_stock": false,
+    "in_stock": true,
     "weight": 5,
-    "stock": 0,
+    "stock": 10,
     "sold": 8,
     "limitedStock": true
   },
@@ -9603,7 +9626,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 3,
-    "stock": -62,
+    "stock": 88,
     "sold": 232,
     "limitedStock": false
   },
@@ -9829,7 +9852,7 @@
     "original_price": "BDT 380",
     "in_stock": true,
     "weight": 80,
-    "stock": 0,
+    "stock": 1,
     "sold": 1,
     "limitedStock": false
   },
