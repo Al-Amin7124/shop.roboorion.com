@@ -250,7 +250,7 @@
     "original_price": "BDT 8",
     "in_stock": true,
     "weight": 1,
-    "stock": 23,
+    "stock": 17,
     "sold": 22,
     "limitedStock": true
   },
@@ -273,7 +273,7 @@
     "original_price": "BDT 8",
     "in_stock": true,
     "weight": 1,
-    "stock": 19,
+    "stock": 13,
     "sold": 26,
     "limitedStock": true
   },
@@ -393,7 +393,7 @@
     "original_price": "BDT 1250",
     "in_stock": true,
     "weight": 0,
-    "stock": 5,
+    "stock": 4,
     "sold": 0,
     "limitedStock": false
   },
@@ -439,7 +439,7 @@
     "original_price": "BDT 220",
     "in_stock": true,
     "weight": 45,
-    "stock": 350,
+    "stock": 348,
     "sold": 40,
     "limitedStock": true
   },
@@ -529,7 +529,7 @@
     "original_price": "BDT 95",
     "in_stock": true,
     "weight": 15,
-    "stock": 20,
+    "stock": 19,
     "sold": 0,
     "limitedStock": true
   },
@@ -619,7 +619,7 @@
     "original_price": "BDT 350",
     "in_stock": true,
     "weight": 38,
-    "stock": 27,
+    "stock": 26,
     "sold": 0,
     "limitedStock": true
   },
@@ -1635,11 +1635,11 @@
     "categories": [
       "diy-kits"
     ],
-    "discount": "Save BDT 290",
+    "discount": "Save BDT 320",
     "rating": 5,
     "reviews": 26,
     "brand": "EVE Energy",
-    "price": "BDT 300",
+    "price": "BDT 270",
     "original_price": "BDT 590",
     "in_stock": true,
     "weight": 70,
@@ -7181,7 +7181,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 20,
-    "stock": 5,
+    "stock": 3,
     "sold": 23,
     "limitedStock": false
   },
