@@ -431,11 +431,11 @@
       "power-supply",
       "diy-kits"
     ],
-    "discount": "Save BDT 60",
+    "discount": "Save BDT 80",
     "rating": 5,
     "reviews": 41,
     "brand": "Sunpower",
-    "price": "BDT 160",
+    "price": "BDT 140",
     "original_price": "BDT 220",
     "in_stock": true,
     "weight": 45,
@@ -929,7 +929,7 @@
     "original_price": "BDT 80",
     "in_stock": true,
     "weight": 7,
-    "stock": 3,
+    "stock": 2,
     "sold": 2,
     "limitedStock": true
   },
@@ -3297,7 +3297,7 @@
     "original_price": "BDT 115",
     "in_stock": true,
     "weight": 0,
-    "stock": 1,
+    "stock": 0,
     "sold": 2,
     "limitedStock": false
   },
@@ -3549,7 +3549,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "weight": 0,
-    "stock": 2,
+    "stock": 1,
     "sold": 2,
     "limitedStock": false
   },
@@ -5669,7 +5669,7 @@
     "original_price": "BDT 250",
     "in_stock": true,
     "weight": 48,
-    "stock": 100,
+    "stock": 98,
     "sold": 17,
     "limitedStock": true
   },
@@ -7111,7 +7111,7 @@
     "original_price": "BDT 110",
     "in_stock": true,
     "weight": 5,
-    "stock": -3,
+    "stock": -5,
     "sold": 20,
     "limitedStock": false
   },
