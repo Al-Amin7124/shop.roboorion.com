@@ -462,8 +462,8 @@
     "original_price": "BDT 220",
     "in_stock": true,
     "weight": 45,
-    "stock": 352,
-    "sold": 40,
+    "stock": 349,
+    "sold": 46,
     "limitedStock": true
   },
   {
@@ -574,7 +574,7 @@
     "original_price": "BDT 145",
     "in_stock": true,
     "weight": 25,
-    "stock": 2,
+    "stock": 1,
     "sold": 2,
     "limitedStock": true
   },
@@ -702,11 +702,11 @@
       "diy-kits",
       "repair-tools"
     ],
-    "discount": "Save BDT 210",
+    "discount": "Save BDT 260",
     "rating": 5,
     "reviews": 18,
     "brand": "Generic",
-    "price": "BDT 380",
+    "price": "BDT 330",
     "original_price": "BDT 590",
     "in_stock": true,
     "weight": 170,
@@ -724,11 +724,11 @@
       "diy-kits",
       "repair-tools"
     ],
-    "discount": "Save BDT 125",
+    "discount": "Save BDT 170",
     "rating": 5,
     "reviews": 16,
     "brand": "Generic",
-    "price": "BDT 225",
+    "price": "BDT 180",
     "original_price": "BDT 350",
     "in_stock": true,
     "weight": 85,
@@ -1666,7 +1666,7 @@
     "original_price": "BDT 590",
     "in_stock": true,
     "weight": 70,
-    "stock": 91,
+    "stock": 88,
     "sold": 9,
     "limitedStock": true
   },
@@ -2257,7 +2257,7 @@
     "original_price": "BDT 150",
     "in_stock": true,
     "weight": 2,
-    "stock": 2,
+    "stock": 1,
     "sold": 3,
     "limitedStock": true
   },
@@ -2364,11 +2364,11 @@
       "components",
       "diy-kits"
     ],
-    "discount": "Save BDT 60",
+    "discount": "Save BDT 100",
     "rating": 5,
     "reviews": 12,
     "brand": "Generic",
-    "price": "BDT 120",
+    "price": "BDT 80",
     "original_price": "BDT 180",
     "in_stock": true,
     "weight": 40,
@@ -2706,11 +2706,11 @@
       "battery-packs",
       "power-supply"
     ],
-    "discount": "Save BDT 360",
+    "discount": "Save BDT 430",
     "rating": 5,
     "reviews": 6,
     "brand": "Generic",
-    "price": "BDT 890",
+    "price": "BDT 820",
     "original_price": "BDT 1250",
     "in_stock": true,
     "weight": 150,
@@ -3472,11 +3472,11 @@
       "soldering",
       "diy-kits"
     ],
-    "discount": "Save BDT 130",
+    "discount": "Save BDT 200",
     "rating": 5,
     "reviews": 6,
     "brand": "Generic",
-    "price": "BDT 250",
+    "price": "BDT 180",
     "original_price": "BDT 380",
     "in_stock": true,
     "weight": 0,
@@ -5692,7 +5692,7 @@
     "original_price": "BDT 250",
     "in_stock": true,
     "weight": 48,
-    "stock": 98,
+    "stock": 95,
     "sold": 17,
     "limitedStock": true
   },
@@ -7134,7 +7134,7 @@
     "original_price": "BDT 110",
     "in_stock": true,
     "weight": 5,
-    "stock": 6,
+    "stock": 3,
     "sold": 20,
     "limitedStock": false
   },
@@ -7546,7 +7546,7 @@
     "sales_count": 4,
     "weight": 5,
     "stock": 4,
-    "sold": 28,
+    "sold": 29,
     "limitedStock": false
   },
   {
@@ -7615,7 +7615,7 @@
     "in_stock": true,
     "weight": 5,
     "stock": 5,
-    "sold": 5,
+    "sold": 7,
     "limitedStock": true
   },
   {
@@ -8208,7 +8208,7 @@
     "in_stock": true,
     "sales_count": 4,
     "weight": 2,
-    "stock": 80,
+    "stock": 79,
     "sold": 104,
     "limitedStock": false
   },
