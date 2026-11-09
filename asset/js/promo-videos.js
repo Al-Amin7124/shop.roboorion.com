@@ -26,7 +26,8 @@
     const PROMO_HEADING = 'Watch & Learn';
 
     const PROMO_VIDEOS = [
-        
+       
+        { url: 'https://youtu.be/Xx1znmOhvM0' },
         { url: 'https://youtu.be/kCN95hfRcTg' },
         { url: 'https://youtu.be/BuHLVx6NgZU' },
         { url: 'https://youtu.be/zdQyE7s17gk' },
