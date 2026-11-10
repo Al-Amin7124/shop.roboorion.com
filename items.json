@@ -1,5 +1,29 @@
 [
   {
+    "id": "RBO-1552",
+    "title": "Sunpower 21700 2600mAh 3.7V 10C High Discharge Rate Li-ion Cell",
+    "url": "products/1552-sunpower-21700-2600mah-3-7v-li-ion-cell-robo-orion-bangladesh.html",
+    "image": "img/product/1552-sunpower-21700-2600mah-3-7v-li-ion-cell-robo-orion-bangladesh.jpg",
+    "alt": "Sunpower 21700 2600mAh 3.7V Li-ion Cell",
+    "categories": [
+      "lithium-batteries",
+      "power-supply",
+      "battery-packs",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 75",
+    "rating": 5,
+    "reviews": 26,
+    "brand": "Sunpower",
+    "price": "BDT 145",
+    "original_price": "BDT 220",
+    "in_stock": false,
+    "weight": 46,
+    "stock": 0,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1551",
     "title": "KCD1 3-Pin Snap-in Rocker Switch 22x15mm (1 Pc)",
     "url": "products/1551-kcd1-3-pin-snap-in-rocker-switch-22x15mm-1-pc-robo-orion-bangladesh.html",
@@ -530,7 +554,7 @@
     "original_price": "BDT 290",
     "in_stock": true,
     "weight": 8,
-    "stock": 4,
+    "stock": 3,
     "sold": 0,
     "limitedStock": true
   },
@@ -732,7 +756,7 @@
     "original_price": "BDT 350",
     "in_stock": true,
     "weight": 85,
-    "stock": 9,
+    "stock": 8,
     "sold": 0,
     "limitedStock": true
   },
@@ -950,9 +974,9 @@
     "brand": "Generic",
     "price": "BDT 65",
     "original_price": "BDT 80",
-    "in_stock": false,
+    "in_stock": true,
     "weight": 7,
-    "stock": 0,
+    "stock": 1,
     "sold": 3,
     "limitedStock": true
   },
@@ -1666,7 +1690,7 @@
     "original_price": "BDT 590",
     "in_stock": true,
     "weight": 70,
-    "stock": 69,
+    "stock": 49,
     "sold": 12,
     "limitedStock": true
   },
@@ -4334,7 +4358,7 @@
     "original_price": "BDT 75",
     "in_stock": true,
     "weight": 2,
-    "stock": 2,
+    "stock": 0,
     "sold": 8,
     "limitedStock": false
   },
@@ -5692,7 +5716,7 @@
     "original_price": "BDT 250",
     "in_stock": true,
     "weight": 48,
-    "stock": 82,
+    "stock": 72,
     "sold": 29,
     "limitedStock": true
   },
@@ -7134,7 +7158,7 @@
     "original_price": "BDT 110",
     "in_stock": true,
     "weight": 5,
-    "stock": -11,
+    "stock": -16,
     "sold": 21,
     "limitedStock": false
   },
@@ -7891,7 +7915,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 12,
-    "stock": 0,
+    "stock": -1,
     "sold": 4,
     "limitedStock": false
   },
@@ -8707,7 +8731,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "weight": 1,
-    "stock": 9,
+    "stock": 4,
     "sold": 9,
     "limitedStock": false
   },
@@ -9649,7 +9673,7 @@
     "original_price": "BDT 35",
     "in_stock": true,
     "weight": 15,
-    "stock": 9,
+    "stock": 8,
     "sold": 12,
     "limitedStock": false
   },
@@ -9761,7 +9785,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": 0,
+    "stock": -1,
     "limitedStock": false
   },
   {
