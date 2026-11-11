@@ -15,7 +15,11 @@
       headers: opts.body ? { 'Content-Type': 'application/json' } : undefined,
       body: opts.body ? JSON.stringify(opts.body) : undefined
     }).then(function (r) {
-      return r.json().catch(function () { return {}; }).then(function (d) { d.__status = r.status; return d; });
+      return r.json().catch(function () { return {}; }).then(function (d) {
+        d.__status = r.status;
+        if (d.error && d.error.detail) d.error.message += ' [' + d.error.detail + ']';   // only present while DEBUG_ERRORS=1 is set on the server
+        return d;
+      });
     });
   }
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
