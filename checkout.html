@@ -316,6 +316,19 @@
         .co-whatsapp-btn:active { transform: scale(0.98); }
         .co-whatsapp-btn:disabled { background: #94a3b8; cursor: not-allowed; }
 
+        /* ── Website order button (secondary to WhatsApp) ── */
+        .co-online-btn {
+            display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+            width: 100%; margin-top: 0.6rem; padding: 0.8rem 1rem;
+            background: #fff; color: #2563eb; font-size: 0.9rem; font-weight: 700;
+            border: 2px solid #2563eb; border-radius: 10px; cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+        }
+        .co-online-btn:hover  { background: #eff6ff; }
+        .co-online-btn:active { transform: scale(0.98); }
+        .co-online-btn:disabled { color: #94a3b8; border-color: #cbd5e1; background: #fff; cursor: not-allowed; }
+        .co-online-hint { margin: 0.5rem 0 0; font-size: 0.72rem; color: #64748b; text-align: center; line-height: 1.4; }
+
         /* ── Back link ── */
         .co-back {
             display: inline-flex;
@@ -475,6 +488,13 @@
                             </svg>
                             Order via WhatsApp
                         </button>
+
+                        <!-- Order on the website (needs a free account; WhatsApp above needs none) -->
+                        <button class="co-online-btn" id="co-online-btn" onclick="coOrderOnline()" disabled>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span data-online-label>Log in to order on website</span>
+                        </button>
+                        <p class="co-online-hint">Prefer WhatsApp? No account needed. With an account you can see your order history and your cart follows you across devices.</p>
 
                     </div>
                 </div>

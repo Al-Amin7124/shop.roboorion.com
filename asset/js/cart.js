@@ -7,6 +7,9 @@
 (function () {
     'use strict';
 
+    // Folder this script was loaded from (used to load the optional account scripts next to it).
+    const SELF_BASE = (document.currentScript && document.currentScript.src || '').replace(/cart\.js(\?.*)?$/, '');
+
     /* ── CONFIG ──────────────────────────────────────────── */
     const WA_NUMBER    = '8801846253277';
     const CART_KEY     = 'robo_orion_cart';
@@ -108,6 +111,7 @@
     function saveCart(cart) {
         try { localStorage.setItem(CART_KEY, JSON.stringify(cart)); }
         catch (e) { console.error('ROCart: failed to save cart', e); }
+        try { document.dispatchEvent(new CustomEvent('ro:cart-saved')); } catch (e) { /* optional hook */ }
     }
 
     function isCouponExpired(expiryDateStr) {
@@ -747,6 +751,8 @@
             }
         }
         if (waBtn && belowPickupMin) waBtn.disabled = true;
+        const onlineBtn = getEl('online-btn');
+        if (onlineBtn) onlineBtn.disabled = waBtn ? waBtn.disabled : cart.length === 0;
 
         const dRow = getEl('discount-row');
         if (dRow) {
@@ -972,6 +978,88 @@
         window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`, '_blank');
     }
 
+    /* ── WEBSITE ORDER (account required) ──────────────────
+       Optional alternative to WhatsApp: the order is saved to the customer's
+       account and shows in their order history. WhatsApp ordering above is
+       unchanged and never needs an account. Prices are NOT sent from here:
+       the server prices every order itself from items.json. */
+    let onlineBusy = false;
+    let onlineRef = null;   // reused only after a network failure, so a retry can never create a second order
+
+    function deliveryKey() {
+        if (isSelfPickup()) return 'pickup';
+        const suburbs = getEl('delivery-suburbs');
+        if (suburbs && suburbs.checked) return 'suburbs';
+        const outside = getEl('delivery-outside');
+        return (outside && outside.checked) ? 'outside' : 'inside';
+    }
+
+    function finishOnlineOrder(order, info) {
+        saveCart([]);
+        removeCoupon();
+        const wa = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(`Hi ${STORE_NAME}, I placed order #${order.order_no} on the website (Total BDT ${order.total}). Please confirm.`)}`;
+        const ov = document.createElement('div');
+        ov.style.cssText = 'position:fixed;inset:0;z-index:2147483000;background:rgba(15,23,42,.6);display:flex;align-items:center;justify-content:center;padding:16px';
+        ov.innerHTML = `<div role="dialog" aria-modal="true" style="background:#fff;max-width:420px;width:100%;border-radius:14px;padding:24px;text-align:center">
+            <div style="font-size:42px;line-height:1">✅</div>
+            <h2 style="font-size:1.2rem;font-weight:700;margin:8px 0 4px;color:#0f172a">Order placed!</h2>
+            <p style="color:#475569;font-size:.9rem;margin:0 0 4px">Order number <b>#${escapeHtml(order.order_no)}</b></p>
+            <p style="color:#475569;font-size:.9rem;margin:0 0 16px">Total <b>BDT ${order.total}</b>. We will contact you on <b>${escapeHtml(info.phone)}</b> to confirm.</p>
+            <a href="${wa}" target="_blank" rel="noopener" style="display:block;background:#16a34a;color:#fff;font-weight:700;font-size:.9rem;padding:.7rem;border-radius:10px;text-decoration:none;margin-bottom:8px">Also tell us on WhatsApp</a>
+            <button type="button" data-od="orders" style="display:block;width:100%;background:#2563eb;color:#fff;font-weight:700;font-size:.9rem;padding:.7rem;border:0;border-radius:10px;cursor:pointer;margin-bottom:8px">View my orders</button>
+            <a href="product.html" style="display:block;color:#2563eb;font-size:.85rem;text-decoration:none;padding:.4rem">Continue shopping</a>
+        </div>`;
+        ov.querySelector('[data-od=orders]').addEventListener('click', () => { ov.remove(); if (window.ROAuth) ROAuth.open(); });
+        document.body.appendChild(ov);
+    }
+
+    async function orderOnline() {
+        const cart = getCart();
+        if (cart.length === 0 || onlineBusy) return;
+        const msgEl = getEl('contact-msg');
+        const say = (text) => { if (msgEl) { msgEl.className = 'co-coupon-msg error'; msgEl.textContent = '✕ ' + text; } };
+
+        const auth = window.ROAuth;
+        if (!auth) { say('Website ordering is not available right now. Please order via WhatsApp.'); return; }
+        if (!auth.user()) {
+            auth.open('login', { notice: 'Log in or create an account to place your order on the website. You can still order through WhatsApp without an account.' });
+            return;
+        }
+        if (APPLIED_COUPON) { say('Coupons currently work with WhatsApp ordering only.'); return; }
+
+        const outOfStock = cart.map(item => findProduct(item.id)).filter(p => p && p.inStock === false);
+        if (outOfStock.length > 0) { say(`Please remove out-of-stock item(s) before ordering: ${outOfStock.map(p => p.name).join(', ')}`); return; }
+        if (isSelfPickup() && cartTotal(cart) < MIN_PICKUP_ORDER) { say(`Self Pickup requires a minimum order of BDT ${MIN_PICKUP_ORDER}.`); return; }
+        if (!validateCustomerInfo()) return;
+
+        const info = getCustomerInfo();
+        saveCustomerInfo();
+        const btn = getEl('online-btn');
+        const label = btn ? btn.innerHTML : '';
+        onlineBusy = true;
+        if (btn) { btn.disabled = true; btn.textContent = 'Placing your order…'; }
+        onlineRef = onlineRef || ('w' + Date.now().toString(36) + Math.random().toString(36).slice(2, 10));
+
+        try {
+            const d = await auth.request('/api/me/orders', { method: 'POST', body: {
+                items: cart.map(i => ({ id: i.id, qty: i.qty })),
+                delivery: deliveryKey(),
+                customer: { name: info.name, phone: info.phone, location: info.location, note: info.note },
+                clientRef: onlineRef
+            }});
+            onlineRef = null;                       // we got a definite answer from the server
+            if (d.order) { finishOnlineOrder(d.order, info); }
+            else if (d.__status === 401) { say('Your session has expired. Please log in again.'); auth.open('login'); }
+            else { say((d.error && d.error.message) || 'Could not place the order. Please try again, or order via WhatsApp.'); }
+        } catch (e) {
+            say('Network problem. Your cart is safe. Please try again, or order via WhatsApp.');
+        } finally {
+            onlineBusy = false;
+            if (btn) btn.innerHTML = label;
+            updateUI();
+        }
+    }
+
     function openDrawer() {
         const drawer = document.getElementById('ro-cart-drawer');
         const overlay = document.getElementById('ro-cart-overlay');
@@ -1174,6 +1262,21 @@
         window.addEventListener('storage', (e) => {
             if (e.key === CART_KEY || e.key === COUPON_KEY) updateUI();
         });
+
+        loadAccountScripts();
+    }
+
+    // Optional accounts: if these files or the API are unavailable, nothing changes and the cart works as before.
+    function loadScript(src, onload) {
+        const el = document.createElement('script');
+        el.src = src;
+        if (onload) el.onload = onload;
+        document.head.appendChild(el);
+    }
+    function loadAccountScripts() {
+        if (!SELF_BASE) return;
+        const sync = () => { if (!window.ROCartSync) loadScript(SELF_BASE + 'cart-sync.js'); };
+        if (window.ROAuth) sync(); else loadScript(SELF_BASE + 'auth.js', sync);
     }
 
     if (document.readyState === 'loading') {
@@ -1184,11 +1287,13 @@
 
     window.ROCart = {
         addItem, changeQty, removeItem, clearCart, openDrawer, closeDrawer,
-        orderWhatsApp, applyCoupon, removeCoupon
+        orderWhatsApp, applyCoupon, removeCoupon,
+        orderOnline, refresh: updateUI, goCheckout: function () {}
     };
 
     window.coApplyCoupon = function() { ROCart.applyCoupon(); };
     window.coOrderWhatsApp = function() { ROCart.orderWhatsApp(); };
+    window.coOrderOnline = function() { ROCart.orderOnline(); };
     window.changeQty = function(id, delta) { ROCart.changeQty(id, delta); };
     window.removeItem = function(id) { ROCart.removeItem(id); };
 
