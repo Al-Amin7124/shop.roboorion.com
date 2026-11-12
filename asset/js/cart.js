@@ -22,6 +22,12 @@
     // Self Pickup orders below this amount (after any discount, excluding
     // delivery since pickup has none) are blocked at checkout.
     const MIN_PICKUP_ORDER = 300;
+    // Weight-based "Additional courier charge" — same rule as the Orion Sales
+    // Manager's Add Order page: up to 500g adds nothing, over 500g up to 1kg
+    // adds one step, over 1kg adds a second step, then one more step for every
+    // further started kg. Applies to every delivery zone, never to Self Pickup.
+    // Weight (grams) comes from each product's "weight" field in items.json.
+    const WEIGHT_CHARGE_STEP = 20;
     // Resolved from https://maps.app.goo.gl/U4wn2srzGbHjHmbh9 — used to embed
     // a small map under the Self Pickup option on checkout.
     const PICKUP_MAP_EMBED_URL = 'https://www.google.com/maps?q=23.777631,90.424234&output=embed';
@@ -205,6 +211,8 @@
                     // their "stock" number happens to be 0.
                     limitedStock: catalogItem.limitedStock === true,
                     stock: typeof catalogItem.stock === 'number' ? catalogItem.stock : 0,
+                    // Grams, kept in sync from the Orion Sales Manager; 0 = not set.
+                    weight: Number(catalogItem.weight) || 0,
                     priceSource: 'items-json',
                 };
             }
@@ -294,6 +302,32 @@
     function isSelfPickup() {
         const pickup = getEl('delivery-pickup');
         return !!(pickup && pickup.checked);
+    }
+
+    /* ── WEIGHT-BASED ADDITIONAL COURIER CHARGE ─────────── */
+
+    function cartWeightGrams(cart) {
+        return cart.reduce((s, i) => {
+            const p = findProduct(i.id);
+            return s + (p ? (Number(p.weight) || 0) * i.qty : 0);
+        }, 0);
+    }
+
+    // Same slab rule as the Orion Sales Manager's real courier charge.
+    function weightChargeFor(grams) {
+        const g = Number(grams) || 0;
+        if (g <= 500) return 0;
+        if (g <= 1000) return WEIGHT_CHARGE_STEP;
+        return WEIGHT_CHARGE_STEP + Math.ceil((g - 1000) / 1000) * WEIGHT_CHARGE_STEP;
+    }
+
+    function getWeightCharge(cart) {
+        if (isSelfPickup()) return 0;
+        return weightChargeFor(cartWeightGrams(cart));
+    }
+
+    function formatWeight(g) {
+        return g >= 1000 ? `${Math.round(g / 10) / 100} kg` : `${Math.round(g)} g`;
     }
 
     function getDeliveryLabel() {
@@ -728,12 +762,24 @@
         }
 
         const delivery = getDeliveryCharge();
+        const weightCharge = getWeightCharge(cart);
         const subtotalEl = getEl('subtotal');
         const deliveryEl = getEl('delivery-val');
         const totalEl = getEl('total');
         if (subtotalEl) subtotalEl.textContent = `BDT ${total}`;
         if (deliveryEl) deliveryEl.textContent = delivery === 0 ? 'Free' : `BDT ${delivery}`;
-        if (totalEl) totalEl.textContent = `BDT ${fmt(total - discountInfo.amount + delivery)}`;
+        if (totalEl) totalEl.textContent = `BDT ${fmt(total - discountInfo.amount + delivery + weightCharge)}`;
+
+        const weightRow = getEl('weight-row');
+        if (weightRow) {
+            weightRow.style.display = weightCharge > 0 ? 'flex' : 'none';
+            if (weightCharge > 0) {
+                const wLabel = getEl('weight-label');
+                const wVal = getEl('weight-val');
+                if (wLabel) wLabel.textContent = `Additional courier charge (${formatWeight(cartWeightGrams(cart))})`;
+                if (wVal) wVal.textContent = `BDT ${weightCharge}`;
+            }
+        }
 
         if (waBtn) waBtn.disabled = cart.length === 0 || hasOutOfStockItem;
 
@@ -958,6 +1004,7 @@
 
         const discount = discountInfo.amount;
         const delivery = getDeliveryCharge();
+        const weightCharge = getWeightCharge(cart);
         const deliveryLabel = getDeliveryLabel();
         const pickup = isSelfPickup();
 
@@ -974,7 +1021,7 @@
                 + `\n`;
         }
 
-        const message = `🛒 *Order from ${STORE_NAME}*\n\n${customerBlock}📦 *Items*\n${lines.join('\n\n')}\n\n─────────────────\n${(APPLIED_COUPON && discount > 0) ? `🎟 *Coupon: ${APPLIED_COUPON.code}* - BDT ${discount}\n` : ''}🛵 *Delivery: ${delivery === 0 ? 'Free' : `BDT ${delivery}`}*\n💰 *Total: BDT ${fmt(total - discount + delivery)}*\n─────────────────\nPlease confirm! `;
+        const message = `🛒 *Order from ${STORE_NAME}*\n\n${customerBlock}📦 *Items*\n${lines.join('\n\n')}\n\n─────────────────\n${(APPLIED_COUPON && discount > 0) ? `🎟 *Coupon: ${APPLIED_COUPON.code}* - BDT ${discount}\n` : ''}🛵 *Delivery: ${delivery === 0 ? 'Free' : `BDT ${delivery}`}*\n${weightCharge > 0 ? `⚖️ *Additional courier charge (${formatWeight(cartWeightGrams(cart))}): BDT ${weightCharge}*\n` : ''}💰 *Total: BDT ${fmt(total - discount + delivery + weightCharge)}*\n─────────────────\nPlease confirm! `;
         window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`, '_blank');
     }
 

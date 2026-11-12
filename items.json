@@ -17,9 +17,9 @@
     "brand": "Sunpower",
     "price": "BDT 140",
     "original_price": "BDT 220",
-    "in_stock": false,
+    "in_stock": true,
     "weight": 46,
-    "stock": 0,
+    "stock": 100,
     "sold": 0,
     "limitedStock": true
   },
