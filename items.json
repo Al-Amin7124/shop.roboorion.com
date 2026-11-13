@@ -1,5 +1,30 @@
 [
   {
+    "id": "RBO-1553",
+    "title": "3S 12V 10A Li-ion BMS with 4 MOSFET & Nickel Strips",
+    "url": "products/1553-3s-12v-10a-li-ion-bms-with-4-mosfet-nickel-strips-robo-orion-bangladesh.html",
+    "image": "img/product/1553-3s-12v-10a-li-ion-bms-with-4-mosfet-nickel-strips-robo-orion-bangladesh.jpg",
+    "alt": "3S 12V 10A Li-ion BMS with 4 MOSFET & Nickel Strips",
+    "categories": [
+      "bms-protection",
+      "lithium-batteries",
+      "battery-packs",
+      "power-supply",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 40",
+    "rating": 5,
+    "reviews": 17,
+    "brand": "Robo Orion",
+    "price": "BDT 80",
+    "original_price": "BDT 120",
+    "in_stock": true,
+    "weight": 18,
+    "stock": 20,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1552",
     "title": "Sunpower 18650 2600mAh 3.7V 3C High Discharge Rate Li-ion Cell",
     "url": "products/1552-sunpower-21700-2600mah-3-7v-li-ion-cell-robo-orion-bangladesh.html",
@@ -10336,7 +10361,7 @@
     "in_stock": true,
     "sold": 10,
     "weight": 0,
-    "stock": 97,
+    "stock": 96,
     "limitedStock": false
   },
   {
