@@ -1,29 +1,29 @@
 [
   {
-  "id": "RBO-1554",
-  "title": "18650 2000mAh 3.7V Rechargeable Battery",
-  "url": "products/1554-18650-2000mah-3-7v-rechargeable-battery-robo-orion-bangladesh.html",
-  "image": "img/product/1554-18650-2000mah-3-7v-rechargeable-battery-robo-orion-bangladesh.jpg",
-  "alt": "18650 2000mAh 3.7V Rechargeable Battery",
-  "categories": [
-    "18650-batteries",
-    "lithium-batteries",
-    "power-supply",
-    "battery-packs",
-    "diy-kits"
-  ],
-  "discount": "Save BDT 45",
-  "rating": 5,
-  "reviews": 22,
-  "brand": "Robo Orion",
-  "price": "BDT 105",
-  "original_price": "BDT 150",
-  "in_stock": true,
-  "weight": 0.05,
-  "stock": 250,
-  "sold": 0,
-  "limitedStock": false
-},
+    "id": "RBO-1554",
+    "title": "18650 2000mAh 3.7V Rechargeable Battery",
+    "url": "products/1554-18650-2000mah-3-7v-rechargeable-battery-robo-orion-bangladesh.html",
+    "image": "img/product/1554-18650-2000mah-3-7v-rechargeable-battery-robo-orion-bangladesh.jpg",
+    "alt": "18650 2000mAh 3.7V Rechargeable Battery",
+    "categories": [
+      "18650-batteries",
+      "lithium-batteries",
+      "power-supply",
+      "battery-packs",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 45",
+    "rating": 5,
+    "reviews": 22,
+    "brand": "Robo Orion",
+    "price": "BDT 105",
+    "original_price": "BDT 150",
+    "in_stock": true,
+    "weight": 0.05,
+    "stock": 250,
+    "sold": 0,
+    "limitedStock": false
+  },
   {
     "id": "RBO-1553",
     "title": "3S 12V 10A Li-ion BMS with 4 MOSFET & Nickel Strips",
@@ -69,8 +69,8 @@
     "original_price": "BDT 220",
     "in_stock": true,
     "weight": 46,
-    "stock": 101,
-    "sold": 24,
+    "stock": 95,
+    "sold": 29,
     "limitedStock": true
   },
   {
@@ -256,7 +256,7 @@
     "in_stock": true,
     "weight": 1,
     "stock": 9,
-    "sold": 10,
+    "sold": 11,
     "limitedStock": true
   },
   {
@@ -279,7 +279,7 @@
     "in_stock": true,
     "weight": 1,
     "stock": 7,
-    "sold": 12,
+    "sold": 13,
     "limitedStock": true
   },
   {
@@ -302,7 +302,7 @@
     "in_stock": true,
     "weight": 1,
     "stock": 7,
-    "sold": 12,
+    "sold": 13,
     "limitedStock": true
   },
   {
@@ -348,7 +348,7 @@
     "in_stock": true,
     "weight": 1,
     "stock": 18,
-    "sold": 28,
+    "sold": 29,
     "limitedStock": true
   },
   {
@@ -371,7 +371,7 @@
     "in_stock": true,
     "weight": 1,
     "stock": 14,
-    "sold": 32,
+    "sold": 33,
     "limitedStock": true
   },
   {
@@ -537,7 +537,7 @@
     "in_stock": true,
     "weight": 45,
     "stock": 287,
-    "sold": 58,
+    "sold": 63,
     "limitedStock": true
   },
   {
@@ -605,7 +605,7 @@
     "in_stock": true,
     "weight": 8,
     "stock": 3,
-    "sold": 1,
+    "sold": 2,
     "limitedStock": true
   },
   {
@@ -1115,7 +1115,7 @@
     "in_stock": true,
     "weight": 0,
     "stock": 1,
-    "sold": 2,
+    "sold": 3,
     "limitedStock": true
   },
   {
@@ -1449,7 +1449,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "weight": 0,
-    "stock": -2,
+    "stock": -3,
     "sold": 4,
     "limitedStock": false
   },
@@ -1741,7 +1741,7 @@
     "in_stock": true,
     "weight": 70,
     "stock": 43,
-    "sold": 31,
+    "sold": 33,
     "limitedStock": true
   },
   {
@@ -1969,7 +1969,7 @@
     "in_stock": true,
     "weight": 10,
     "stock": 3,
-    "sold": 0,
+    "sold": 1,
     "limitedStock": false
   },
   {
@@ -4133,7 +4133,7 @@
     "in_stock": true,
     "weight": 0,
     "stock": 0,
-    "sold": 6,
+    "sold": 10,
     "limitedStock": false
   },
   {
@@ -4224,7 +4224,7 @@
     "in_stock": true,
     "weight": 1.5,
     "stock": 52,
-    "sold": 47,
+    "sold": 48,
     "limitedStock": false
   },
   {
@@ -4409,7 +4409,7 @@
     "in_stock": true,
     "weight": 2,
     "stock": 0,
-    "sold": 8,
+    "sold": 10,
     "limitedStock": false
   },
   {
@@ -6993,7 +6993,7 @@
     "in_stock": true,
     "sales_count": 1,
     "stock": 22,
-    "sold": 21,
+    "sold": 22,
     "weight": 0,
     "limitedStock": false
   },
@@ -7160,7 +7160,7 @@
     "sales_count": 1,
     "weight": 2,
     "stock": 3,
-    "sold": 8,
+    "sold": 9,
     "limitedStock": false
   },
   {
@@ -7184,7 +7184,7 @@
     "in_stock": true,
     "sales_count": 2,
     "weight": 5,
-    "stock": 4,
+    "stock": 3,
     "sold": 7,
     "limitedStock": false
   },
@@ -7209,7 +7209,7 @@
     "in_stock": true,
     "weight": 5,
     "stock": -24,
-    "sold": 38,
+    "sold": 43,
     "limitedStock": false
   },
   {
@@ -7369,7 +7369,7 @@
     "original_price": "BDT 70",
     "in_stock": true,
     "sales_count": 1,
-    "stock": 13,
+    "stock": 12,
     "sold": 6,
     "weight": 0,
     "limitedStock": true
@@ -8059,7 +8059,7 @@
     "in_stock": true,
     "weight": 2,
     "stock": 43,
-    "sold": 4,
+    "sold": 5,
     "limitedStock": false
   },
   {
@@ -8150,7 +8150,7 @@
     "in_stock": true,
     "weight": 5,
     "stock": 0,
-    "sold": 1,
+    "sold": 2,
     "limitedStock": false
   },
   {
@@ -8782,7 +8782,7 @@
     "in_stock": true,
     "weight": 1,
     "stock": -2,
-    "sold": 9,
+    "sold": 14,
     "limitedStock": false
   },
   {
@@ -9142,8 +9142,8 @@
     "original_price": "BDT 150",
     "in_stock": true,
     "weight": 5,
-    "stock": 7,
-    "sold": 8,
+    "stock": 6,
+    "sold": 9,
     "limitedStock": true
   },
   {
@@ -9724,7 +9724,7 @@
     "in_stock": true,
     "weight": 15,
     "stock": 7,
-    "sold": 13,
+    "sold": 14,
     "limitedStock": false
   },
   {
@@ -9833,7 +9833,7 @@
     "price": "BDT 50",
     "original_price": "BDT 80",
     "in_stock": true,
-    "sold": 0,
+    "sold": 1,
     "weight": 0,
     "stock": -1,
     "limitedStock": false
@@ -9904,7 +9904,7 @@
     "original_price": "BDT 25",
     "in_stock": true,
     "stock": 9,
-    "sold": 7,
+    "sold": 11,
     "weight": 0,
     "limitedStock": false
   },
