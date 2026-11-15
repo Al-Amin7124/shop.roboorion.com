@@ -4157,9 +4157,9 @@
     "original_price": "BDT 220",
     "in_stock": true,
     "weight": 10,
-    "stock": 0,
+    "stock": 1,
     "sold": 1,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1369",
