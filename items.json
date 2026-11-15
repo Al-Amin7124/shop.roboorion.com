@@ -1,5 +1,30 @@
 [
   {
+    "id": "RBO-1555",
+    "title": "60W 24000mAh 4S LiFePO4 Router UPS & Power Bank (12V-12V-5V)",
+    "url": "products/1555-60w-24000mah-4s-lifepo4-router-ups-power-bank-12v-12v-5v-robo-orion-bangladesh.html",
+    "image": "img/product/1555-60w-24000mah-4s-lifepo4-router-ups-power-bank-12v-12v-5v-robo-orion-bangladesh.jpg",
+    "alt": "60W 24000mAh 4S LiFePO4 Router UPS & Power Bank (12V-12V-5V)",
+    "categories": [
+      "power-supply",
+      "battery-packs",
+      "lithium-batteries",
+      "chargers",
+      "diy-kits"
+    ],
+    "discount": "Save BDT 1200",
+    "rating": 5,
+    "reviews": 4,
+    "brand": "Robo Orion",
+    "price": "BDT 3050",
+    "original_price": "BDT 4250",
+    "in_stock": true,
+    "weight": 0.95,
+    "stock": 25,
+    "sold": 0,
+    "limitedStock": true
+  },
+  {
     "id": "RBO-1554",
     "title": "18650 2000mAh 3.7V Rechargeable Battery",
     "url": "products/1554-18650-2000mah-3-7v-rechargeable-battery-robo-orion-bangladesh.html",
