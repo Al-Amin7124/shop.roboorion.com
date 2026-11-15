@@ -86,7 +86,7 @@
     window.__roCatalogCache = window.__roCatalogCache || {};
     function getCatalogJSON(jsonPath) {
         if (!window.__roCatalogCache[jsonPath]) {
-            window.__roCatalogCache[jsonPath] = fetch(jsonPath, { cache: 'no-store' })
+            window.__roCatalogCache[jsonPath] = fetch(jsonPath + (jsonPath.includes('?') ? '&' : '?') + '_=' + Date.now(), { cache: 'no-store' })
                 .then(res => {
                     if (!res.ok) throw new Error(`HTTP ${res.status}`);
                     return res.json();
@@ -184,6 +184,30 @@
                 'items.json until this succeeds.',
                 err
             );
+        }
+    }
+
+    /**
+     * Re-fetches items.json and re-renders. loadCatalog() only ran once per
+     * page load, and getCatalogJSON() keeps its promise for the life of the
+     * page — so a product page that stayed open (or was restored from the
+     * back/forward cache) kept showing the stock it loaded with. This drops
+     * that page-scoped cache entry, pulls fresh data, and re-runs updateUI().
+     */
+    let catalogRefreshing = false;
+    let lastCatalogRefresh = Date.now();
+    async function refreshCatalog(force) {
+        if (catalogRefreshing) return;
+        if (!force && Date.now() - lastCatalogRefresh < 5000) return;
+        catalogRefreshing = true;
+        try {
+            const isProdPage = window.location.pathname.includes('/products/');
+            delete window.__roCatalogCache[isProdPage ? '../items.json' : 'items.json'];
+            await loadCatalog();
+            lastCatalogRefresh = Date.now();
+            updateUI();
+        } finally {
+            catalogRefreshing = false;
         }
     }
 
@@ -867,7 +891,8 @@
         if (!catalogItem || catalogItem.limitedStock !== true || catalogItem.stock >= LOW_STOCK_THRESHOLD) {
             // Not a low, limited-stock item — no cap, no note.
             if (mainPageProduct.qtyInput) mainPageProduct.qtyInput.removeAttribute('max');
-            if (mainPageProduct.addBtn) mainPageProduct.addBtn.disabled = false;
+            // ...but an item flagged out of stock in items.json must still be blocked.
+            if (mainPageProduct.addBtn) mainPageProduct.addBtn.disabled = !!catalogItem && catalogItem.in_stock === false;
             if (note) note.remove();
             return;
         }
@@ -1309,6 +1334,16 @@
         window.addEventListener('storage', (e) => {
             if (e.key === CART_KEY || e.key === COUPON_KEY) updateUI();
         });
+
+        // Keep stock/price live: refresh when the page is restored from the
+        // back/forward cache, when the tab regains focus, and (on product
+        // pages) every 30s while the tab is visible.
+        window.addEventListener('pageshow', (e) => { if (e.persisted) refreshCatalog(true); });
+        document.addEventListener('visibilitychange', () => { if (!document.hidden) refreshCatalog(); });
+        window.addEventListener('focus', () => refreshCatalog());
+        if (mainPageProduct) {
+            setInterval(() => { if (!document.hidden) refreshCatalog(true); }, 30000);
+        }
 
         loadAccountScripts();
     }

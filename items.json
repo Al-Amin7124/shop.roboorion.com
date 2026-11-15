@@ -1,5 +1,30 @@
 [
   {
+  "id": "RBO-1554",
+  "title": "18650 2000mAh 3.7V Rechargeable Battery",
+  "url": "products/1554-18650-2000mah-3-7v-rechargeable-battery-robo-orion-bangladesh.html",
+  "image": "img/product/1554-18650-2000mah-3-7v-rechargeable-battery-robo-orion-bangladesh.jpg",
+  "alt": "18650 2000mAh 3.7V Rechargeable Battery",
+  "categories": [
+    "18650-batteries",
+    "lithium-batteries",
+    "power-supply",
+    "battery-packs",
+    "diy-kits"
+  ],
+  "discount": "Save BDT 45",
+  "rating": 5,
+  "reviews": 22,
+  "brand": "Robo Orion",
+  "price": "BDT 105",
+  "original_price": "BDT 150",
+  "in_stock": true,
+  "weight": 0.05,
+  "stock": 250,
+  "sold": 0,
+  "limitedStock": false
+},
+  {
     "id": "RBO-1553",
     "title": "3S 12V 10A Li-ion BMS with 4 MOSFET & Nickel Strips",
     "url": "products/1553-3s-12v-10a-li-ion-bms-with-4-mosfet-nickel-strips-robo-orion-bangladesh.html",
