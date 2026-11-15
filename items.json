@@ -19,10 +19,10 @@
     "price": "BDT 105",
     "original_price": "BDT 150",
     "in_stock": true,
-    "weight": 0.05,
-    "stock": 250,
+    "weight": 45,
+    "stock": 89,
     "sold": 0,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1553",
