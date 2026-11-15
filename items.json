@@ -807,7 +807,7 @@
     "in_stock": true,
     "weight": 85,
     "stock": 8,
-    "sold": 1,
+    "sold": 2,
     "limitedStock": true
   },
   {
@@ -1741,7 +1741,7 @@
     "in_stock": true,
     "weight": 70,
     "stock": 43,
-    "sold": 33,
+    "sold": 51,
     "limitedStock": true
   },
   {
@@ -5767,7 +5767,7 @@
     "in_stock": true,
     "weight": 48,
     "stock": 69,
-    "sold": 38,
+    "sold": 48,
     "limitedStock": true
   },
   {
