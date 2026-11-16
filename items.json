@@ -4831,7 +4831,7 @@
     "sold": 21,
     "weight": 2,
     "stock": 19,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1341",
