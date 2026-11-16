@@ -18,11 +18,11 @@
     "brand": "Robo Orion",
     "price": "BDT 3050",
     "original_price": "BDT 4250",
-    "in_stock": false,
+    "in_stock": true,
     "weight": 0,
     "stock": 0,
     "sold": 0,
-    "limitedStock": true
+    "limitedStock": false
   },
   {
     "id": "RBO-1554",
