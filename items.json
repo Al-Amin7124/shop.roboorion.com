@@ -94,8 +94,8 @@
     "original_price": "BDT 220",
     "in_stock": true,
     "weight": 46,
-    "stock": 91,
-    "sold": 96,
+    "stock": 81,
+    "sold": 103,
     "limitedStock": true
   },
   {
@@ -118,7 +118,7 @@
     "in_stock": true,
     "weight": 5,
     "stock": 15,
-    "sold": 0,
+    "sold": 5,
     "limitedStock": false
   },
   {
@@ -148,7 +148,7 @@
   },
   {
     "id": "RBO-1549",
-    "title": "14 AWG Red Flexible Silicone Wire 20A (1 Feet)",
+    "title": "14 AWG Red Flexible Silicone Wire 20A Hard Version (1 Feet)",
     "url": "products/1549-14-awg-red-flexible-silicone-wire-1-feet-robo-orion-bangladesh.html",
     "image": "img/product/1549-14-awg-red-flexible-silicone-wire-1-feet-robo-orion-bangladesh.jpg",
     "alt": "14 AWG Red Flexible Silicone Wire (1 Feet)",
@@ -165,13 +165,13 @@
     "original_price": "BDT 55",
     "in_stock": true,
     "weight": 10,
-    "stock": 25,
-    "sold": 9,
+    "stock": 24,
+    "sold": 10,
     "limitedStock": true
   },
   {
     "id": "RBO-1548",
-    "title": "14 AWG Black Flexible Silicone Wire 20A (1 Feet)",
+    "title": "14 AWG Black Flexible Silicone Wire 20A Hard Version (1 Feet)",
     "url": "products/1548-14-awg-black-flexible-silicone-wire-1-feet-robo-orion-bangladesh.html",
     "image": "img/product/1548-14-awg-black-flexible-silicone-wire-1-feet-robo-orion-bangladesh.jpg",
     "alt": "14 AWG Black Flexible Silicone Wire (1 Feet)",
@@ -189,12 +189,12 @@
     "in_stock": true,
     "weight": 10,
     "stock": 25,
-    "sold": 9,
+    "sold": 10,
     "limitedStock": true
   },
   {
     "id": "RBO-1547",
-    "title": "18 AWG Red Flexible Silicone Wire 8A (1 Feet)",
+    "title": "18 AWG Red Flexible Silicone Wire 8A Hard Version (1 Feet)",
     "url": "products/1547-18-awg-red-flexible-silicone-wire-1-feet-robo-orion-bangladesh.html",
     "image": "img/product/1547-18-awg-red-flexible-silicone-wire-1-feet-robo-orion-bangladesh.jpg",
     "alt": "18 AWG Red Flexible Silicone Wire (1 Feet)",
@@ -217,7 +217,7 @@
   },
   {
     "id": "RBO-1546",
-    "title": "18 AWG Black Flexible Silicone Wire 8A (1 Feet)",
+    "title": "18 AWG Black Flexible Silicone Wire 8A Hard Version (1 Feet)",
     "url": "products/1546-18-awg-black-flexible-silicone-wire-1-feet-robo-orion-bangladesh.html",
     "image": "img/product/1546-18-awg-black-flexible-silicone-wire-1-feet-robo-orion-bangladesh.jpg",
     "alt": "18 AWG Black Flexible Silicone Wire (1 Feet)",
@@ -373,7 +373,7 @@
     "in_stock": true,
     "weight": 1,
     "stock": 18,
-    "sold": 29,
+    "sold": 32,
     "limitedStock": true
   },
   {
@@ -396,7 +396,7 @@
     "in_stock": true,
     "weight": 1,
     "stock": 14,
-    "sold": 33,
+    "sold": 36,
     "limitedStock": true
   },
   {
@@ -562,7 +562,7 @@
     "in_stock": true,
     "weight": 45,
     "stock": 283,
-    "sold": 112,
+    "sold": 113,
     "limitedStock": true
   },
   {
@@ -674,7 +674,7 @@
     "in_stock": false,
     "weight": 25,
     "stock": 0,
-    "sold": 4,
+    "sold": 5,
     "limitedStock": true
   },
   {
@@ -942,7 +942,7 @@
     "in_stock": true,
     "weight": 2,
     "stock": 98,
-    "sold": 101,
+    "sold": 102,
     "limitedStock": true
   },
   {
@@ -1206,7 +1206,7 @@
     "in_stock": true,
     "weight": 0,
     "stock": -2,
-    "sold": 3,
+    "sold": 4,
     "limitedStock": false
   },
   {
@@ -1766,7 +1766,7 @@
     "in_stock": true,
     "weight": 70,
     "stock": 34,
-    "sold": 55,
+    "sold": 59,
     "limitedStock": true
   },
   {
@@ -2975,7 +2975,7 @@
     "in_stock": true,
     "weight": 5,
     "stock": 21,
-    "sold": 3,
+    "sold": 4,
     "limitedStock": true
   },
   {
@@ -3041,7 +3041,7 @@
     "in_stock": true,
     "weight": 1,
     "stock": 39,
-    "sold": 50,
+    "sold": 51,
     "limitedStock": true
   },
   {
@@ -3085,7 +3085,7 @@
     "in_stock": true,
     "weight": 0,
     "stock": -9,
-    "sold": 18,
+    "sold": 22,
     "limitedStock": false
   },
   {
@@ -3512,7 +3512,7 @@
     "in_stock": true,
     "weight": 0,
     "stock": 2,
-    "sold": 3,
+    "sold": 4,
     "limitedStock": false
   },
   {
@@ -6303,7 +6303,7 @@
     "in_stock": true,
     "weight": 290,
     "stock": 18,
-    "sold": 44,
+    "sold": 45,
     "limitedStock": true
   },
   {
@@ -6324,7 +6324,7 @@
     "original_price": "BDT 380",
     "in_stock": true,
     "weight": 100,
-    "sold": 26,
+    "sold": 28,
     "stock": 78,
     "limitedStock": false
   },
@@ -6556,7 +6556,7 @@
     "sales_count": 5,
     "weight": 5,
     "stock": 4,
-    "sold": 11,
+    "sold": 12,
     "limitedStock": false
   },
   {
@@ -7185,7 +7185,7 @@
     "sales_count": 1,
     "weight": 2,
     "stock": 2,
-    "sold": 9,
+    "sold": 11,
     "limitedStock": false
   },
   {
@@ -7234,7 +7234,7 @@
     "in_stock": true,
     "weight": 5,
     "stock": -26,
-    "sold": 50,
+    "sold": 51,
     "limitedStock": false
   },
   {
@@ -7395,7 +7395,7 @@
     "in_stock": true,
     "sales_count": 1,
     "stock": 11,
-    "sold": 6,
+    "sold": 7,
     "weight": 0,
     "limitedStock": true
   },
@@ -7645,7 +7645,7 @@
     "sales_count": 4,
     "weight": 5,
     "stock": -7,
-    "sold": 39,
+    "sold": 40,
     "limitedStock": false
   },
   {
@@ -8218,7 +8218,7 @@
     "original_price": "BDT 120",
     "in_stock": true,
     "stock": 18,
-    "sold": 1,
+    "sold": 2,
     "weight": 0,
     "limitedStock": false
   },
@@ -8308,7 +8308,7 @@
     "sales_count": 4,
     "weight": 2,
     "stock": 70,
-    "sold": 122,
+    "sold": 127,
     "limitedStock": false
   },
   {
@@ -8458,7 +8458,7 @@
     "price": "BDT 70",
     "original_price": "BDT 100",
     "in_stock": true,
-    "sold": 10,
+    "sold": 11,
     "weight": 0,
     "stock": 5,
     "limitedStock": false
@@ -8807,7 +8807,7 @@
     "in_stock": true,
     "weight": 1,
     "stock": -2,
-    "sold": 18,
+    "sold": 20,
     "limitedStock": false
   },
   {
@@ -8921,7 +8921,7 @@
     "original_price": "BDT 45",
     "in_stock": true,
     "stock": 9,
-    "sold": 1,
+    "sold": 6,
     "weight": 0,
     "limitedStock": false
   },
@@ -8990,7 +8990,7 @@
     "in_stock": true,
     "weight": 4,
     "stock": 15,
-    "sold": 31,
+    "sold": 33,
     "limitedStock": false
   },
   {
@@ -9103,7 +9103,7 @@
     "in_stock": true,
     "weight": 3,
     "stock": 5,
-    "sold": 4,
+    "sold": 5,
     "limitedStock": false
   },
   {
@@ -9612,7 +9612,7 @@
     "in_stock": true,
     "weight": 10,
     "stock": 2,
-    "sold": 9,
+    "sold": 11,
     "limitedStock": false
   },
   {
