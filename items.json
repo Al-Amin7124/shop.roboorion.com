@@ -4621,7 +4621,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": 18,
+    "stock": 20,
     "limitedStock": false
   },
   {
@@ -4715,7 +4715,7 @@
     "in_stock": true,
     "sold": 0,
     "weight": 0,
-    "stock": -108,
+    "stock": -109,
     "limitedStock": false
   },
   {
@@ -7386,11 +7386,11 @@
     "categories": [
       "diy-kits"
     ],
-    "discount": "Save BDT 30",
+    "discount": "Save BDT 20",
     "rating": 5,
     "reviews": 16,
     "brand": "Generic",
-    "price": "BDT 40",
+    "price": "BDT 50",
     "original_price": "BDT 70",
     "in_stock": true,
     "sales_count": 1,
@@ -7990,7 +7990,7 @@
     "in_stock": true,
     "sales_count": 1,
     "weight": 12,
-    "stock": -1,
+    "stock": 0,
     "sold": 4,
     "limitedStock": false
   },
@@ -8060,7 +8060,7 @@
     "in_stock": true,
     "sales_count": 8,
     "weight": 12,
-    "stock": 15,
+    "stock": 14,
     "sold": 14,
     "limitedStock": false
   },
@@ -9814,7 +9814,7 @@
     "price": "BDT 7",
     "original_price": "BDT 18",
     "in_stock": true,
-    "stock": -3,
+    "stock": 3,
     "sold": 2,
     "weight": 0,
     "limitedStock": false
