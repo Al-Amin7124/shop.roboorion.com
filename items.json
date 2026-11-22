@@ -6134,11 +6134,11 @@
     "brand": "Generic",
     "price": "BDT 120",
     "original_price": "BDT 220",
-    "in_stock": true,
+    "in_stock": false,
     "weight": 5,
     "stock": 0,
     "sold": 5,
-    "limitedStock": false
+    "limitedStock": true
   },
   {
     "id": "RBO-1287",
