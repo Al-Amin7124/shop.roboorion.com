@@ -465,7 +465,7 @@
     "original_price": "BDT 480",
     "in_stock": true,
     "weight": 120,
-    "stock": 3,
+    "stock": 2,
     "sold": 0,
     "limitedStock": true
   },
@@ -6302,7 +6302,7 @@
     "original_price": "BDT 780",
     "in_stock": true,
     "weight": 290,
-    "stock": 18,
+    "stock": 12,
     "sold": 46,
     "limitedStock": true
   },
