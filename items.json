@@ -1608,7 +1608,7 @@
     "original_price": "BDT 380",
     "in_stock": false,
     "weight": 0,
-    "stock": 0,
+    "stock": -1,
     "sold": 2,
     "limitedStock": true
   },
@@ -4713,7 +4713,7 @@
     "price": "BDT 190",
     "original_price": "BDT 270",
     "in_stock": true,
-    "sold": 0,
+    "sold": 1,
     "weight": 110,
     "stock": 1,
     "limitedStock": false
@@ -5466,9 +5466,9 @@
     "brand": "Generic",
     "price": "BDT 820",
     "original_price": "BDT 1020",
-    "in_stock": false,
+    "in_stock": true,
     "weight": 30,
-    "stock": 0,
+    "stock": 1,
     "sold": 0,
     "limitedStock": true
   },
@@ -8061,7 +8061,7 @@
     "sales_count": 8,
     "weight": 12,
     "stock": 14,
-    "sold": 14,
+    "sold": 15,
     "limitedStock": false
   },
   {
