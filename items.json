@@ -1606,9 +1606,9 @@
     "brand": "Robo Orion",
     "price": "BDT 280",
     "original_price": "BDT 380",
-    "in_stock": false,
-    "weight": 0,
-    "stock": -1,
+    "in_stock": true,
+    "weight": 80,
+    "stock": 1,
     "sold": 2,
     "limitedStock": true
   },
@@ -1721,7 +1721,7 @@
     "original_price": "BDT 280",
     "in_stock": true,
     "weight": 25,
-    "stock": 9,
+    "stock": 7,
     "sold": 9,
     "limitedStock": true
   },
